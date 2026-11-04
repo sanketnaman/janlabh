@@ -40,9 +40,13 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
           
           {/* Column 1: Mission & Identity */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-500 text-slate-950 font-bold">
-                JL
+            <div className="flex items-center gap-2.5">
+              <div className="flex h-10 items-center justify-center rounded-lg bg-white p-1 border border-slate-700 shadow-sm">
+                <img
+                  src="/icons/janlabh-logo.svg"
+                  alt="JanLabh Logo"
+                  className="h-8 w-auto object-contain"
+                />
               </div>
               <span className="text-xl font-bold tracking-tight text-white">
                 JanLabh<span className="text-amber-400">.in</span>

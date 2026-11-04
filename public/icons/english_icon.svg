@@ -1,0 +1,12 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clean White Background with Subtle Border -->
+  <rect x="0.5" y="0.5" width="39" height="39" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  
+  <!-- Accent Top Bar (Gov Portal Style Accent) -->
+  <path d="M 8 7 L 32 7" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round" />
+
+  <!-- EN Typography -->
+  <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="#1E293B" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-weight="700" font-size="15" letter-spacing="0.5">
+    EN
+  </text>
+</svg>

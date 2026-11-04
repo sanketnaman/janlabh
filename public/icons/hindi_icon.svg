@@ -1,0 +1,12 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clean White Background with Subtle Border -->
+  <rect x="0.5" y="0.5" width="39" height="39" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+  
+  <!-- Accent Top Bar -->
+  <path d="M 8 7 L 32 7" stroke="#D97706" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Hindi Character (अ) -->
+  <text x="50%" y="59%" dominant-baseline="middle" text-anchor="middle" fill="#1E293B" font-family="&#39;Noto Sans Devanagari&#39;, &#39;Mukta&#39;, sans-serif" font-weight="700" font-size="17">
+    अ
+  </text>
+</svg>

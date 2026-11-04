@@ -47,10 +47,14 @@ export default function Header({
         {/* Zone 1: Single text element wordmark */}
         <button
           onClick={() => handleNavClick('home')}
-          className="flex items-center gap-2.5 text-left text-slate-900 dark:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 whitespace-nowrap shrink-0"
+          className="flex items-center gap-2.5 text-left text-slate-900 dark:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 whitespace-nowrap shrink-0 group"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-900 dark:bg-amber-600 text-white font-bold shadow-sm transition-colors">
-            JL
+          <div className="flex h-10 items-center justify-center rounded-lg bg-white p-1 border border-slate-200 dark:border-slate-700 shadow-xs transition-transform group-hover:scale-105">
+            <img
+              src="/icons/janlabh-logo.svg"
+              alt="JanLabh Logo"
+              className="h-8 w-auto object-contain"
+            />
           </div>
           <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
             JanLabh<span className="text-amber-600 dark:text-amber-400">.in</span>
@@ -104,15 +108,38 @@ export default function Header({
             )}
           </button>
 
-          {/* Clean bilingual toggle button */}
-          <button
-            onClick={onToggleLang}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-2.5 py-1.5 text-xs font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 whitespace-nowrap"
-            title="Switch Language / भाषा बदलें"
-          >
-            <Globe className="h-3.5 w-3.5 text-amber-600 dark:text-amber-400" />
-            <span>{lang === 'hi' ? 'EN' : 'हिंदी'}</span>
-          </button>
+          {/* Bilingual switcher with English & Hindi icons */}
+          <div className="flex items-center rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 p-0.5 shadow-xs">
+            <button
+              type="button"
+              onClick={() => lang !== 'hi' && onToggleLang()}
+              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold transition-all ${
+                lang === 'hi'
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs border border-slate-200/80 dark:border-slate-700'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+              title="हिन्दी"
+              aria-label="हिन्दी भाषा चुनें"
+            >
+              <img src="/icons/hindi_icon.svg" alt="हिन्दी" className="h-4 w-4 rounded-xs shrink-0" />
+              <span className="hidden sm:inline">हिंदी</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => lang !== 'en' && onToggleLang()}
+              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold transition-all ${
+                lang === 'en'
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs border border-slate-200/80 dark:border-slate-700'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+              title="English"
+              aria-label="Switch to English"
+            >
+              <img src="/icons/english_icon.svg" alt="English" className="h-4 w-4 rounded-xs shrink-0" />
+              <span className="hidden sm:inline">English</span>
+            </button>
+          </div>
 
           {/* Mobile menu hamburger */}
           <button
@@ -146,7 +173,29 @@ export default function Header({
               <ShieldCheck className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
               {lang === 'hi' ? 'सत्यापित स्वतंत्र पोर्टल' : 'Independent verified portal'}
             </span>
-            <span className="font-mono text-[11px] text-slate-400">JanLabh.in</span>
+            {/* Mobile language switch */}
+            <div className="flex items-center rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 p-0.5">
+              <button
+                type="button"
+                onClick={() => { if (lang !== 'hi') onToggleLang(); setMobileMenuOpen(false); }}
+                className={`flex items-center gap-1 px-2 py-0.5 rounded text-xs font-semibold ${
+                  lang === 'hi' ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs' : 'text-slate-500'
+                }`}
+              >
+                <img src="/icons/hindi_icon.svg" alt="हिन्दी" className="h-3.5 w-3.5 rounded-xs" />
+                <span>हिंदी</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => { if (lang !== 'en') onToggleLang(); setMobileMenuOpen(false); }}
+                className={`flex items-center gap-1 px-2 py-0.5 rounded text-xs font-semibold ${
+                  lang === 'en' ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs' : 'text-slate-500'
+                }`}
+              >
+                <img src="/icons/english_icon.svg" alt="English" className="h-3.5 w-3.5 rounded-xs" />
+                <span>EN</span>
+              </button>
+            </div>
           </div>
         </div>
       )}

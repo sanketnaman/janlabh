@@ -49,6 +49,14 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icons/favicon_svg.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -60,7 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         '@id': 'https://janlabh.in/#organization',
         'name': 'JanLabh',
         'url': 'https://janlabh.in',
-        'logo': 'https://janlabh.in/icon.png',
+        'logo': 'https://janlabh.in/icons/janlabh-logo.svg',
         'description': 'Independent civic and government scheme public information platform for Indian citizens.',
         'publishingPrinciples': 'https://janlabh.in/editorial-policy',
         'correctionsPolicy': 'https://janlabh.in/corrections-policy'
@@ -84,6 +92,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="alternate icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
