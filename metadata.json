@@ -1,0 +1,6 @@
+{
+  "name": "JanLabh – Government Schemes & Citizen Benefits",
+  "description": "Independent bilingual platform for Indian government schemes, citizen benefits, scholarships, and eligibility guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

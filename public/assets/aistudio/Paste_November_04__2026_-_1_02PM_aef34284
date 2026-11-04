@@ -1,0 +1,1812 @@
+# JANLABH.IN
+## Master Product Requirements Document (PRD)
+### SEO-First • AdSense-Ready • Bilingual • Government Schemes & Citizen Benefits Platform
+
+---
+
+# 1. DOCUMENT OVERVIEW
+
+**Product Name:** JanLabh  
+**Domain:** `JanLabh.in`  
+**Market:** India  
+**Primary Languages:** Hindi and English  
+**Primary Device:** Mobile-first  
+**Product Type:** Government Schemes, Citizen Benefits, Scholarships and Public Information Platform
+
+### Primary Business Objective
+
+Build JanLabh into a trustworthy organic-traffic platform capable of reaching an initial sustainable revenue target of:
+
+# 🎯 $100–$150 per month
+
+primarily through compliant display advertising after sufficient quality, traffic and monetization readiness are established.
+
+### Core Principle
+
+> **SEO brings users to JanLabh. Genuine usefulness, accuracy and trust give them a reason to stay and return.**
+
+---
+
+# 2. PRODUCT VISION
+
+JanLabh will help Indian citizens discover, understand and navigate government benefits.
+
+The platform should answer:
+
+> **Which government scheme may be relevant to me, do I potentially qualify, what documents are required, and where is the official website?**
+
+JanLabh is an **independent information platform**.
+
+It must never appear to be:
+
+- A Government of India website
+- An official application portal
+- An authorized government representative
+- A website that guarantees scheme approval
+
+The ideal user journey:
+
+# Google Search
+↓
+# JanLabh
+↓
+# Understand the Scheme
+↓
+# Check Potential Eligibility
+↓
+# Prepare Documents
+↓
+# Visit Official Government Portal
+
+---
+
+# 3. PROBLEM STATEMENT
+
+Government scheme information is often fragmented and difficult to understand.
+
+Users commonly face:
+
+- Information spread across multiple websites
+- Difficult official website navigation
+- Complex eligibility language
+- Unclear document requirements
+- Difficulty identifying relevant schemes
+- Outdated third-party information
+- Confusing application instructions
+- Poor Hindi explanations
+
+A user may search:
+
+- `सरकारी योजना`
+- `मेरे लिए कौन सी सरकारी योजना है`
+- `PM Kisan eligibility`
+- `PM Kisan status`
+- `Jharkhand mahila yojana`
+- `Ayushman card eligibility`
+- `scholarship last date`
+- `नई सरकारी योजना`
+
+JanLabh should transform complex information into structured, understandable guidance.
+
+---
+
+# 4. PRODUCT POSITIONING
+
+JanLabh is not just a blog.
+
+It combines four systems:
+
+## 4.1 Information Platform
+
+Comprehensive evergreen scheme pages.
+
+## 4.2 Discovery Platform
+
+Users can browse schemes by:
+
+- State
+- Category
+- Beneficiary type
+- Popular schemes
+
+## 4.3 Eligibility Utility
+
+Users answer simple questions and receive a guidance result.
+
+## 4.4 Fresh Information Platform
+
+Users can discover:
+
+- Latest scheme updates
+- Scholarship updates
+- Important government announcements
+- Selected important government job updates
+
+---
+
+# 5. BUSINESS MODEL
+
+## Initial Revenue Goal
+
+# $100–$150/month
+
+from JanLabh alone.
+
+---
+
+## Revenue Priority
+
+### Phase 1
+
+### Display Advertising
+
+Potentially Google AdSense after the website is genuinely ready.
+
+### Phase 2
+
+- Clearly labelled sponsorships
+- Relevant affiliate partnerships
+
+### Phase 3
+
+Potential future products:
+
+- Scheme deadline reminders
+- Document checklists
+- Update alerts
+- B2B tools/widgets
+
+---
+
+## Monetization Rule
+
+The website must remain useful even if all advertisements are removed.
+
+If a page exists only to generate ad impressions, it should not be created.
+
+---
+
+# 6. TARGET USERS
+
+## Persona 1 — Citizen
+
+Needs help discovering relevant schemes.
+
+### Questions:
+
+- What schemes are available?
+- Which one may help me?
+- Am I eligible?
+
+---
+
+## Persona 2 — Farmer
+
+Searches for:
+
+- PM Kisan
+- Agriculture benefits
+- Subsidies
+- State farmer schemes
+
+---
+
+## Persona 3 — Woman / Family Member
+
+Searches for:
+
+- Women's welfare schemes
+- Financial assistance
+- Health benefits
+- State schemes
+
+---
+
+## Persona 4 — Student
+
+Searches for:
+
+- Scholarships
+- Education schemes
+- Deadlines
+- Eligibility
+
+---
+
+## Persona 5 — Senior Citizen
+
+Searches for:
+
+- Pension schemes
+- Welfare benefits
+- Healthcare benefits
+
+---
+
+## Persona 6 — Government Job Seeker
+
+Searches for selected important government recruitment updates.
+
+Government jobs are a **controlled expansion category**, not the primary identity of JanLabh.
+
+---
+
+# 7. WEBSITE INFORMATION ARCHITECTURE
+
+```text
+JanLabh.in
+│
+├── Home
+│
+├── Schemes
+│   ├── Central Government Schemes
+│   ├── State Government Schemes
+│   └── Individual Scheme Pages
+│
+├── States
+│   ├── Jharkhand
+│   ├── Bihar
+│   ├── Uttar Pradesh
+│   └── Other States
+│
+├── Categories
+│   ├── Farmers
+│   ├── Women
+│   ├── Students
+│   ├── Scholarships
+│   ├── Health
+│   ├── Housing
+│   ├── Pension
+│   └── Employment & Skills
+│
+├── Eligibility Checker
+│
+├── Latest Updates
+│   ├── Scheme Updates
+│   ├── Scholarship Updates
+│   ├── Government Announcements
+│   └── Selected Government Jobs
+│
+├── Search
+│
+└── Trust & Legal
+    ├── About
+    ├── Contact
+    ├── Editorial Policy
+    ├── Fact-Checking Policy
+    ├── Corrections Policy
+    ├── Privacy Policy
+    ├── Terms
+    └── Disclaimer
+```
+
+---
+
+# 8. URL ARCHITECTURE
+
+URLs must be:
+
+- Short
+- Descriptive
+- Stable
+- Lowercase
+- Hyphen-separated
+
+---
+
+## Hindi Examples
+
+```text
+/hi/
+/hi/yojana/pm-kisan
+/hi/yojana/ayushman-bharat
+/hi/rajya/jharkhand
+/hi/category/kisan
+/hi/check
+/hi/updates
+/hi/update/pm-kisan-next-installment
+```
+
+---
+
+## English Examples
+
+```text
+/en/
+/en/schemes/pm-kisan
+/en/schemes/ayushman-bharat
+/en/state/jharkhand
+/en/category/farmers
+/en/check
+/en/updates
+```
+
+Every language version should have a corresponding alternate where possible.
+
+---
+
+# 9. HOMEPAGE REQUIREMENTS
+
+The homepage must immediately answer:
+
+> What is JanLabh and how can it help me?
+
+---
+
+## 9.1 Hero Section
+
+### Hindi
+
+**सरकारी योजनाएं खोजें, पात्रता समझें और सही आधिकारिक जानकारी पाएं।**
+
+### Supporting Text
+
+सरकारी योजनाओं, लाभों और जरूरी अपडेट्स की आसान और व्यवस्थित जानकारी।
+
+---
+
+## CTA Buttons
+
+### Primary
+
+**Check Eligibility**
+
+### Secondary
+
+**Explore Schemes**
+
+---
+
+# 10. HOMEPAGE SEO STRUCTURE
+
+The homepage should have:
+
+## One H1
+
+Example:
+
+# Government Schemes and Citizen Benefits in India
+
+Hindi equivalent for Hindi homepage.
+
+---
+
+## H2 Sections
+
+- Popular Government Schemes
+- Find Schemes for You
+- Browse by Category
+- Explore by State
+- Latest Government Updates
+- Recently Updated Information
+- Why Trust JanLabh
+
+The homepage must provide genuine editorial content, not only cards.
+
+---
+
+# 11. HOMEPAGE SECTIONS
+
+## Section 1 — Popular Schemes
+
+Display important schemes.
+
+---
+
+## Section 2 — Find Schemes for You
+
+Promote Eligibility Checker.
+
+---
+
+## Section 3 — Browse by Category
+
+- Farmers
+- Women
+- Students
+- Health
+- Housing
+- Pension
+- Scholarships
+
+---
+
+## Section 4 — Browse by State
+
+State selection.
+
+---
+
+## Section 5 — Latest Updates
+
+Latest verified updates.
+
+---
+
+## Section 6 — Recently Updated
+
+Recently reviewed scheme pages.
+
+---
+
+## Section 7 — Trust Signals
+
+Explain:
+
+- Independent platform
+- Official sources prioritized
+- Information verification
+- Last reviewed dates
+
+---
+
+# 12. SCHEME PAGE — MASTER TEMPLATE
+
+Scheme pages are the most important SEO assets.
+
+Every scheme page must follow a consistent but useful structure.
+
+---
+
+# 12.1 SEO Title
+
+Example:
+
+**PM Kisan Samman Nidhi: Eligibility, Benefits, Status & How to Apply**
+
+Avoid:
+
+- Keyword stuffing
+- Repetitive titles
+- Generic titles
+
+---
+
+# 12.2 Meta Description
+
+Must be unique.
+
+Example:
+
+> Learn about PM Kisan Samman Nidhi benefits, eligibility, required documents, application process and official status information.
+
+---
+
+# 12.3 H1
+
+Exactly one primary H1.
+
+---
+
+# 12.4 Quick Answer Box
+
+Near the top.
+
+| Information | Details |
+|---|---|
+| Benefit | Verified benefit details |
+| Who can apply | Short eligibility summary |
+| Application | Online / Offline |
+| Status | Active / Updated |
+| Last Verified | Date |
+
+---
+
+# 12.5 What Is This Scheme?
+
+Simple explanation.
+
+---
+
+# 12.6 Benefits
+
+Explain clearly:
+
+- Financial benefit
+- Service benefit
+- Subsidy
+- Frequency
+
+---
+
+# 12.7 Eligibility
+
+Clearly separate:
+
+### You may be eligible if:
+
+- Requirement 1
+- Requirement 2
+
+### You may not be eligible if:
+
+- Official exclusion where applicable
+
+Never create certainty where official approval is required.
+
+---
+
+# 12.8 Required Documents
+
+Use a clear checklist.
+
+---
+
+# 12.9 How to Apply
+
+Step-by-step.
+
+Example:
+
+1. Visit the official portal.
+2. Select the appropriate service.
+3. Check requirements.
+4. Submit information.
+5. Save acknowledgement details.
+
+---
+
+# 12.10 Important Dates
+
+Only when relevant.
+
+---
+
+# 12.11 Status Checking
+
+Where officially supported:
+
+- Explain process
+- Link to official status page
+
+Never collect government login credentials.
+
+---
+
+# 12.12 Common Problems
+
+Examples:
+
+- Application rejected
+- Payment pending
+- Status unavailable
+
+Only publish guidance supported by reliable sources.
+
+---
+
+# 12.13 FAQ
+
+Answer genuine questions.
+
+---
+
+# 12.14 Official Sources
+
+Every important scheme page must show:
+
+- Source name
+- Official authority
+- Source URL
+- Verification date
+
+---
+
+# 12.15 Related Content
+
+Show:
+
+- Related schemes
+- Relevant updates
+- Category pages
+- State pages
+
+---
+
+# 13. ON-PAGE SEO REQUIREMENTS
+
+Every indexable page must pass SEO validation.
+
+---
+
+## 13.1 Unique Title
+
+Mandatory.
+
+---
+
+## 13.2 Unique Meta Description
+
+Mandatory for important indexable pages.
+
+---
+
+## 13.3 One Primary H1
+
+Mandatory.
+
+---
+
+## 13.4 Logical Heading Hierarchy
+
+Use:
+
+H1 → H2 → H3
+
+Never skip heading levels for structure.
+
+---
+
+## 13.5 Search Intent First
+
+Every page must have:
+
+### Primary Keyword / Topic
+
+### User Intent
+
+### Secondary Supporting Topics
+
+Example:
+
+**Primary Topic:** PM Kisan status
+
+**Intent:** User wants to know how to check current status.
+
+The page must help the user perform or understand that task quickly.
+
+---
+
+# 14. ANSWER-FIRST CONTENT STRATEGY
+
+Do not write long generic introductions.
+
+For important queries:
+
+### First Screen Should Contain:
+
+1. Direct answer
+2. Important action
+3. Main eligibility/benefit summary
+
+Then detailed explanation.
+
+---
+
+# 15. KEYWORD STRATEGY
+
+Focus on:
+
+- User intent
+- Topic relevance
+- Natural language
+- Semantic coverage
+
+Not keyword density.
+
+Support:
+
+- Hindi
+- English
+- Hinglish search behaviour
+
+---
+
+# 16. KEYWORD CANNIBALIZATION CONTROL
+
+Before creating a page:
+
+1. Search existing content.
+2. Identify overlapping intent.
+3. Decide whether:
+   - Update existing page
+   - Create new distinct page
+   - Redirect/merge duplicate content
+
+The CMS should warn when:
+
+- Similar slug exists
+- Similar title exists
+- Same primary topic is already targeted
+
+---
+
+# 17. CONTENT CLUSTER STRATEGY
+
+Each major topic should have a topical cluster.
+
+Example:
+
+# PM Kisan Cluster
+
+### Pillar
+
+PM Kisan Complete Guide
+
+### Supporting Content
+
+- Eligibility
+- Registration guide
+- Status guide
+- Installment updates
+
+### Fresh Content
+
+- Latest installment announcement
+- Official deadline changes
+
+All content must link logically.
+
+---
+
+# 18. INTERNAL LINKING STRATEGY
+
+Every major page should have intentional internal links.
+
+## Scheme Page Links
+
+- Category
+- State
+- Related schemes
+- Relevant updates
+- Eligibility Checker
+
+---
+
+## Update Page Links
+
+- Main evergreen scheme page
+- Related category
+- Related state
+
+---
+
+## Anchor Text
+
+Use descriptive anchor text.
+
+Good:
+
+> Check the complete PM Kisan eligibility requirements.
+
+Avoid excessive:
+
+> Click here
+
+---
+
+# 19. STATE HUB STRATEGY
+
+Each state page must be a meaningful resource.
+
+Example:
+
+# Jharkhand Government Schemes
+
+Include:
+
+- Introductory editorial content
+- Popular schemes
+- Women schemes
+- Farmer schemes
+- Student schemes
+- Pension schemes
+- Latest updates
+
+Do not create empty pages for all states merely to increase indexed URLs.
+
+---
+
+# 20. CATEGORY HUB STRATEGY
+
+Category pages must provide editorial value.
+
+Example:
+
+# Government Schemes for Women
+
+Include:
+
+- Introduction
+- Who may benefit
+- Important schemes
+- How to choose relevant schemes
+- State-specific information
+- Related updates
+
+---
+
+# 21. BLOG / LATEST UPDATES
+
+Create a major section:
+
+# Latest Updates
+
+---
+
+## Categories
+
+### Scheme Updates
+
+- New scheme
+- Installment
+- Benefit changes
+- Eligibility changes
+
+### Scholarship Updates
+
+- New applications
+- Deadlines
+
+### Government Announcements
+
+Citizen-relevant announcements.
+
+### Selected Government Jobs
+
+Only important and relevant opportunities initially.
+
+---
+
+# 22. UPDATE ARTICLE TEMPLATE
+
+Every update should include:
+
+## H1
+
+Clear update headline.
+
+## Quick Summary
+
+What changed?
+
+## Key Information
+
+Important facts.
+
+## Important Dates
+
+Where applicable.
+
+## Who Is Affected?
+
+Explain audience.
+
+## What Should Users Do?
+
+Actionable guidance.
+
+## Official Source
+
+Mandatory where applicable.
+
+## Related Guide
+
+Internal link to evergreen pillar page.
+
+---
+
+# 23. CONTENT FRESHNESS SYSTEM
+
+Each content item must support:
+
+- Published Date
+- Updated Date
+- Last Verified Date
+
+These must have separate meanings.
+
+---
+
+## Review Status
+
+- Verified
+- Needs Review
+- Source Changed
+- Archived
+
+---
+
+## Admin Review Reminders
+
+The system should support review dates.
+
+High-change content should be reviewed more frequently.
+
+---
+
+# 24. CONTENT QUALITY STANDARD
+
+Before publishing, ask:
+
+### 1.
+
+Does this solve a real user problem?
+
+### 2.
+
+Does it add value beyond copied information?
+
+### 3.
+
+Are important facts supported?
+
+### 4.
+
+Is the information easy to understand?
+
+### 5.
+
+Would this page still be valuable without advertisements?
+
+If the answer is no, improve or reject it.
+
+---
+
+# 25. AI CONTENT POLICY
+
+AI may help with:
+
+- Drafting
+- Structure
+- Translation assistance
+- Content suggestions
+
+But AI-generated content must not be automatically mass-published.
+
+Before publishing:
+
+- Verify facts
+- Check official sources
+- Check dates
+- Check links
+- Review Hindi
+- Review English
+- Add original editorial value
+
+---
+
+# 26. TRUST AND EDITORIAL AUTHORITY
+
+JanLabh should build strong trust signals.
+
+---
+
+## Required Pages
+
+### About JanLabh
+
+Explain:
+
+- Who/what the platform is
+- Purpose
+- Independence
+
+### Editorial Policy
+
+Explain:
+
+- Content creation process
+- Source selection
+- Updates
+
+### Verification Policy
+
+Explain:
+
+- Official sources are prioritized
+- Information changes
+- Dates are displayed
+
+### Corrections Policy
+
+Users can report:
+
+- Wrong information
+- Broken links
+- Outdated information
+
+### Contact Page
+
+Provide a genuine contact method.
+
+---
+
+# 27. AUTHOR / REVIEW INFORMATION
+
+Important content should show:
+
+- Written by
+- Reviewed/verified by where applicable
+- Last updated
+- Last verified
+
+Do not invent qualifications.
+
+---
+
+# 28. REQUIRED LEGAL PAGES
+
+Before monetization readiness:
+
+- About
+- Contact
+- Privacy Policy
+- Terms of Use
+- Disclaimer
+- Editorial Policy
+- Verification Policy
+- Corrections Policy
+
+These must contain real website-specific information.
+
+No placeholder legal pages.
+
+---
+
+# 29. TECHNICAL SEO
+
+Mandatory implementation:
+
+- Server-side rendering/static generation where suitable
+- Clean URLs
+- Canonical URLs
+- XML sitemap
+- robots.txt
+- hreflang
+- Breadcrumbs
+- Correct status codes
+- 404 page
+- Redirect management
+
+---
+
+# 30. CANONICAL URL RULES
+
+Every indexable page should have one canonical version.
+
+Prevent duplicates from:
+
+- Query parameters
+- URL variations
+- Language duplication
+- Trailing slash variations
+
+---
+
+# 31. HREFLANG
+
+Hindi and English equivalents should be connected.
+
+Include:
+
+- Hindi
+- English
+- x-default where appropriate
+
+Do not use hreflang for pages without genuine equivalent content.
+
+---
+
+# 32. XML SITEMAP
+
+Include only:
+
+- Published
+- Canonical
+- Indexable URLs
+
+Exclude:
+
+- Admin
+- Search results
+- Drafts
+- User-specific pages
+- Duplicate URLs
+
+Automatically update after publishing.
+
+---
+
+# 33. ROBOTS.TXT
+
+Must:
+
+- Allow public content crawling
+- Protect appropriate private/admin areas
+- Reference sitemap
+
+Do not accidentally block essential rendering resources.
+
+---
+
+# 34. STRUCTURED DATA
+
+Use valid structured data matching visible content.
+
+Potential schemas:
+
+- Organization
+- WebSite
+- WebPage
+- Article
+- BreadcrumbList
+- FAQPage where appropriate
+
+Do not add misleading or invisible schema content.
+
+---
+
+# 35. IMAGE SEO
+
+Every important image must include:
+
+- Descriptive filename
+- Proper alt text
+- Width
+- Height
+- Optimized format
+
+Use:
+
+- AVIF
+- WebP
+
+Avoid:
+
+- Generic filenames
+- Keyword-stuffed alt text
+
+---
+
+# 36. PERFORMANCE REQUIREMENTS
+
+Target excellent Core Web Vitals.
+
+### LCP
+
+Target under 2.5 seconds.
+
+### CLS
+
+Target below 0.1.
+
+### INP
+
+Target under 200ms where practical.
+
+---
+
+## Performance Techniques
+
+- Next.js Image optimization
+- Server Components
+- Code splitting
+- Dynamic imports
+- Lazy loading
+- Optimized fonts
+- Minimal JavaScript
+
+Avoid heavy unnecessary libraries.
+
+---
+
+# 37. MOBILE-FIRST DESIGN
+
+Primary testing widths:
+
+- 360px
+- 390px
+- 412px
+
+Must avoid:
+
+- Horizontal scrolling
+- Tiny buttons
+- Layout shifts
+- Overlapping content
+
+---
+
+# 38. ELIGIBILITY CHECKER
+
+The Eligibility Checker is a core utility.
+
+---
+
+## Questions
+
+Maximum normal flow:
+
+### 5–7 questions
+
+Examples:
+
+- State
+- Age range
+- Occupation
+- Student status
+- Farmer status
+- Income range where relevant
+
+Avoid sensitive information.
+
+---
+
+## Results
+
+### 🟢 May Be Eligible
+
+### 🟡 May Need Further Verification
+
+### 🔴 Unlikely to Be Eligible
+
+Never claim official approval.
+
+---
+
+## Explanation
+
+Every result must explain why.
+
+---
+
+## Disclaimer
+
+> This result is based on publicly available information and is provided for general guidance only. Final eligibility is determined by the relevant government authority.
+
+---
+
+# 39. ELIGIBILITY CHECKER PRIVACY
+
+Never collect:
+
+- Aadhaar
+- Bank account
+- OTP
+- Government passwords
+
+Eligibility answers must not be stored on the server.
+
+---
+
+# 40. SEARCH
+
+Search must support:
+
+- Hindi
+- English
+- Hinglish
+
+Recommended initial technologies:
+
+- Fuse.js
+- FlexSearch
+
+Search ranking should prioritize:
+
+- Exact match
+- Title relevance
+- Synonyms
+- Popular alternate names
+
+---
+
+# 41. ADSENSE-READY UX
+
+Before advertisements are enabled, the website must already be complete and useful.
+
+Ads must never:
+
+- Cover important content
+- Look like official buttons
+- Look like navigation
+- Cause accidental clicks
+- Interrupt forms
+
+---
+
+# 42. AD PLACEMENT POLICY
+
+Future advertisements may appear:
+
+- After substantial introductory content
+- Between meaningful long-form sections
+- Near the end of long content
+
+Never place ads:
+
+- Inside eligibility questions
+- Inside forms
+- Beside official action buttons deceptively
+- Between every paragraph
+- Before users understand page purpose
+
+---
+
+# 43. ADMIN PANEL
+
+Admin location:
+
+`/admin`
+
+---
+
+## Roles
+
+### Admin
+
+Full access.
+
+### Editor
+
+Can:
+
+- Create
+- Edit
+- Save drafts
+- Submit for review
+
+Publishing permission controlled separately.
+
+---
+
+# 44. ADMIN CONTENT SYSTEM
+
+Manage:
+
+## Schemes
+
+- Title
+- Slug
+- Category
+- State
+- Summary
+- Benefits
+- Eligibility
+- Documents
+- Application process
+- FAQs
+- Sources
+- Dates
+
+## Updates
+
+- Title
+- Content
+- Category
+- Sources
+- Related scheme
+
+## States
+
+## Categories
+
+## Sources
+
+## Eligibility Rules
+
+---
+
+# 45. SEO CMS VALIDATION
+
+Before publishing, validate:
+
+### Required
+
+- Title
+- Meta description
+- H1
+- Slug
+- Official source
+- Last verified date
+
+### SEO
+
+- Canonical
+- Internal links
+- Proper headings
+- Image alt text
+
+### Language
+
+- Hindi version
+- English version
+
+Warnings should help editors—not encourage keyword stuffing.
+
+---
+
+# 46. DATABASE
+
+Recommended tables:
+
+```text
+profiles
+states
+categories
+
+schemes
+scheme_translations
+
+posts
+post_translations
+
+sources
+eligibility_rules
+
+media
+revisions
+audit_logs
+content_reviews
+```
+
+---
+
+# 47. SECURITY
+
+Implement:
+
+- Supabase Row Level Security
+- Protected admin routes
+- Secure authentication
+- HTTPS
+- Security headers
+- Environment variables
+- Rate limiting where required
+
+Never expose secret keys to the browser.
+
+---
+
+# 48. ANALYTICS
+
+Track privacy-conscious events:
+
+- Scheme opened
+- Search used
+- State selected
+- Checker started
+- Checker completed
+- Official link clicked
+- Related content clicked
+
+Do not store personal eligibility answers.
+
+---
+
+# 49. LAUNCH CONTENT PLAN
+
+Before applying for monetization, launch with meaningful content.
+
+Recommended initial foundation:
+
+### Evergreen Scheme Pages
+
+Approximately **15–25 strong, useful pages**.
+
+### State Hub
+
+At least one genuinely useful state hub.
+
+### Categories
+
+Major category pages.
+
+### Updates
+
+A useful initial set of fresh update articles.
+
+### Trust Pages
+
+All required pages complete.
+
+The goal is quality—not reaching an arbitrary page count.
+
+---
+
+# 50. PRE-LAUNCH SEO CHECKLIST
+
+## Indexing
+
+- [ ] No accidental `noindex`
+- [ ] Correct canonical URLs
+- [ ] Sitemap generated
+- [ ] robots.txt configured
+
+## On-Page
+
+- [ ] Unique titles
+- [ ] Unique meta descriptions
+- [ ] One H1
+- [ ] Logical headings
+- [ ] Internal links
+
+## Technical
+
+- [ ] 404 page
+- [ ] Redirect handling
+- [ ] hreflang
+- [ ] Structured data validation
+
+## Performance
+
+- [ ] Mobile audit
+- [ ] Core Web Vitals audit
+- [ ] Image optimization
+- [ ] JavaScript review
+
+---
+
+# 51. PRE-MONETIZATION CHECKLIST
+
+Before applying for AdSense or similar display advertising:
+
+### Content
+
+- [ ] Website contains genuinely useful original content
+- [ ] Major pages have official sources
+- [ ] No thin/empty pages
+- [ ] No mass-produced low-value pages
+
+### Trust
+
+- [ ] About
+- [ ] Contact
+- [ ] Privacy
+- [ ] Terms
+- [ ] Disclaimer
+- [ ] Editorial Policy
+- [ ] Verification Policy
+- [ ] Corrections Policy
+
+### UX
+
+- [ ] Mobile-friendly
+- [ ] Clear navigation
+- [ ] No intrusive popups
+- [ ] No misleading buttons
+
+### Technical
+
+- [ ] HTTPS
+- [ ] Fast loading
+- [ ] No major broken links
+- [ ] Crawlable public content
+
+---
+
+# 52. DEVELOPMENT STACK
+
+## Frontend
+
+Next.js with App Router.
+
+## Language
+
+TypeScript.
+
+## Styling
+
+Tailwind CSS.
+
+## Database
+
+Supabase PostgreSQL.
+
+## Authentication
+
+Supabase Auth.
+
+## Storage
+
+Supabase Storage.
+
+## Search
+
+Fuse.js or FlexSearch initially.
+
+---
+
+# 53. DEVELOPMENT PHASES
+
+## Phase 1 — Foundation
+
+Build:
+
+- Project architecture
+- Design system
+- Database
+- Authentication
+- i18n
+
+---
+
+## Phase 2 — CMS
+
+Build:
+
+- Schemes
+- Categories
+- States
+- Sources
+- Translations
+- Publishing
+
+---
+
+## Phase 3 — Public Website
+
+Build:
+
+- Homepage
+- Scheme pages
+- Category hubs
+- State hubs
+
+---
+
+## Phase 4 — Eligibility Tool
+
+Build:
+
+- Questions
+- Rule engine
+- Results
+- Testing
+
+---
+
+## Phase 5 — Updates
+
+Build:
+
+- Blog/update system
+- Update pages
+- Internal linking
+
+---
+
+## Phase 6 — SEO
+
+Implement and audit:
+
+- Metadata
+- Canonicals
+- Sitemap
+- Robots
+- Hreflang
+- Structured data
+
+---
+
+## Phase 7 — Quality Assurance
+
+Test:
+
+- SEO
+- Mobile
+- Accessibility
+- Performance
+- Security
+- Broken links
+
+---
+
+# 54. MVP SUCCESS CRITERIA
+
+The MVP succeeds when users can:
+
+### Discover
+
+Find relevant schemes.
+
+### Understand
+
+Quickly understand benefits and eligibility.
+
+### Check
+
+Use eligibility guidance.
+
+### Prepare
+
+Understand required documents and process.
+
+### Navigate
+
+Reach official sources.
+
+The platform should also provide:
+
+- Strong crawlability
+- High-quality on-page SEO
+- Mobile usability
+- Trust transparency
+- Monetization readiness
+
+---
+
+# 55. FINAL PRODUCT PRINCIPLE
+
+JanLabh must not become:
+
+> A website containing hundreds of thin AI-generated pages created to show ads.
+
+JanLabh should become:
+
+# A trustworthy Government Benefits Discovery Platform.
+
+The growth model is:
+
+# Useful Original Content
++
+# Strong Search Intent Coverage
++
+# Excellent On-Page SEO
++
+# Topical Authority
++
+# Fresh Verified Updates
++
+# Fast Mobile Experience
++
+# Trust Signals
++
+# Useful Tools
+
+↓
+
+# Organic Search Growth
+
+↓
+
+# Sustainable Traffic
+
+↓
+
+# AdSense-Ready Monetization
+
+↓
+
+# 🎯 $100–$150/month Initial Goal
+
+---
+
+# FINAL RULE FOR DEVELOPMENT
+
+**Every feature, page and piece of content must pass three tests:**
+
+### 1. User Value
+
+Does it genuinely help the user?
+
+### 2. SEO Value
+
+Does it satisfy a clear search intent without duplication?
+
+### 3. Trust Value
+
+Is the information accurate, transparent and supported by reliable sources?
+
+If a page fails these tests, it should not be published.
+
+---
+
+# JANLABH CORE PROMISE
+
+> **सरकारी योजनाओं की जानकारी को आसान, व्यवस्थित और भरोसेमंद बनाना — ताकि हर नागरिक सही जानकारी समझ सके और सही आधिकारिक स्रोत तक पहुंच सके।**
+
+## Final User Journey
+
+# Search
+→
+# Understand
+→
+# Check
+→
+# Prepare
+→
+# Official Portal
+
+**This is the complete foundation for JanLabh.in.**
