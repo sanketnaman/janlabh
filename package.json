@@ -1,6 +1,7 @@
 {
-  "name": "ai-studio-applet",
-  "version": "0.1.0",
+  "name": "janlabh",
+  "version": "1.0.0",
+  "description": "JanLabh – Government Schemes & Citizen Benefits Platform",
   "private": true,
   "scripts": {
     "dev": "next dev",
