@@ -104,36 +104,44 @@ export default function Header({
             )}
           </button>
 
-          {/* Bilingual switcher with English & Hindi icons */}
-          <div className="flex items-center rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 p-0.5 shadow-xs">
+          {/* Bilingual switcher with English & Hindi icons in prominent full size */}
+          <div className="flex items-center rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100/90 dark:bg-slate-800/90 p-1 shadow-xs">
             <button
               type="button"
               onClick={() => lang !== 'hi' && onToggleLang()}
-              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold transition-all ${
+              className={`flex items-center gap-2 px-2.5 py-1 rounded-lg transition-all ${
                 lang === 'hi'
-                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs border border-slate-200/80 dark:border-slate-700'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-sm ring-1.5 ring-amber-500 font-bold'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white opacity-60 hover:opacity-100'
               }`}
               title="हिन्दी"
               aria-label="हिन्दी भाषा चुनें"
             >
-              <img src="/icons/hindi_icon.svg" alt="हिन्दी" className="h-4 w-4 rounded-xs shrink-0" />
-              <span className="hidden sm:inline">हिंदी</span>
+              <img
+                src="/icons/hindi_icon.svg"
+                alt="हिंदी अ"
+                className="h-8 w-8 sm:h-8.5 sm:w-8.5 rounded-md object-contain shrink-0 shadow-xs"
+              />
+              <span className="hidden sm:inline text-xs sm:text-sm font-semibold pr-0.5">हिंदी</span>
             </button>
 
             <button
               type="button"
               onClick={() => lang !== 'en' && onToggleLang()}
-              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold transition-all ${
+              className={`flex items-center gap-2 px-2.5 py-1 rounded-lg transition-all ${
                 lang === 'en'
-                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs border border-slate-200/80 dark:border-slate-700'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-sm ring-1.5 ring-blue-500 font-bold'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white opacity-60 hover:opacity-100'
               }`}
               title="English"
               aria-label="Switch to English"
             >
-              <img src="/icons/english_icon.svg" alt="English" className="h-4 w-4 rounded-xs shrink-0" />
-              <span className="hidden sm:inline">English</span>
+              <img
+                src="/icons/english_icon.svg"
+                alt="English EN"
+                className="h-8 w-8 sm:h-8.5 sm:w-8.5 rounded-md object-contain shrink-0 shadow-xs"
+              />
+              <span className="hidden sm:inline text-xs sm:text-sm font-semibold pr-0.5">English</span>
             </button>
           </div>
 
@@ -170,26 +178,26 @@ export default function Header({
               {lang === 'hi' ? 'सत्यापित स्वतंत्र पोर्टल' : 'Independent verified portal'}
             </span>
             {/* Mobile language switch */}
-            <div className="flex items-center rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 p-0.5">
+            <div className="flex items-center rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 p-1">
               <button
                 type="button"
                 onClick={() => { if (lang !== 'hi') onToggleLang(); setMobileMenuOpen(false); }}
-                className={`flex items-center gap-1 px-2 py-0.5 rounded text-xs font-semibold ${
-                  lang === 'hi' ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs' : 'text-slate-500'
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold ${
+                  lang === 'hi' ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs ring-1 ring-amber-500' : 'text-slate-500 opacity-70'
                 }`}
               >
-                <img src="/icons/hindi_icon.svg" alt="हिन्दी" className="h-3.5 w-3.5 rounded-xs" />
+                <img src="/icons/hindi_icon.svg" alt="हिन्दी" className="h-7 w-7 rounded-md object-contain" />
                 <span>हिंदी</span>
               </button>
               <button
                 type="button"
                 onClick={() => { if (lang !== 'en') onToggleLang(); setMobileMenuOpen(false); }}
-                className={`flex items-center gap-1 px-2 py-0.5 rounded text-xs font-semibold ${
-                  lang === 'en' ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs' : 'text-slate-500'
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold ${
+                  lang === 'en' ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs ring-1 ring-blue-500' : 'text-slate-500 opacity-70'
                 }`}
               >
-                <img src="/icons/english_icon.svg" alt="English" className="h-3.5 w-3.5 rounded-xs" />
-                <span>EN</span>
+                <img src="/icons/english_icon.svg" alt="English" className="h-7 w-7 rounded-md object-contain" />
+                <span>English</span>
               </button>
             </div>
           </div>
