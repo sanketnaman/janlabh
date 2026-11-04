@@ -44,21 +44,17 @@ export default function Header({
       {/* Top Bar Contract: Zone 1, Zone 2, Zone 3 */}
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
         
-        {/* Zone 1: Single text element wordmark */}
+        {/* Zone 1: Pure Brand Logo (Transparent SVG, No English text) */}
         <button
           onClick={() => handleNavClick('home')}
-          className="flex items-center gap-2.5 text-left text-slate-900 dark:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 whitespace-nowrap shrink-0 group"
+          className="flex items-center text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 whitespace-nowrap shrink-0 group py-1"
+          aria-label="JanLabh Home"
         >
-          <div className="flex h-10 items-center justify-center rounded-lg bg-white p-1 border border-slate-200 dark:border-slate-700 shadow-xs transition-transform group-hover:scale-105">
-            <img
-              src="/icons/janlabh-logo.svg"
-              alt="JanLabh Logo"
-              className="h-8 w-auto object-contain"
-            />
-          </div>
-          <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
-            JanLabh<span className="text-amber-600 dark:text-amber-400">.in</span>
-          </span>
+          <img
+            src={isDark ? "/icons/janlabh-logo-dark.svg" : "/icons/janlabh-logo.svg"}
+            alt="जनलाभ"
+            className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
+          />
         </button>
 
         {/* Zone 2: 4–5 clean single-line text navigation links */}
