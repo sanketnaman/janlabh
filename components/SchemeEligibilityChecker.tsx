@@ -223,7 +223,7 @@ export default function SchemeEligibilityChecker({
                   </p>
                 </div>
 
-                <div className="mt-3 pt-3 border-t border-slate-100 dark:border-slate-750 flex items-center justify-between text-xs font-semibold text-emerald-700 dark:text-emerald-400">
+                <div className="mt-3 pt-3 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between text-xs font-semibold text-emerald-700 dark:text-emerald-400">
                   <span>{isHi ? 'इस योजना की पात्रता जांचें →' : 'Check Eligibility for this Scheme →'}</span>
                   <ChevronRight className="h-4 w-4" />
                 </div>
@@ -432,17 +432,17 @@ export default function SchemeEligibilityChecker({
           </div>
 
           {/* Explanation Section */}
-          <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-850 space-y-2">
+          <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800/90 space-y-2">
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">
               {isHi ? 'आपके उत्तरों का विश्लेषण (Why you received this result):' : 'Why you received this evaluation:'}
             </h3>
-            <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
               {isHi ? evaluation.explanation_hi : evaluation.explanation_en}
             </p>
           </div>
 
           {/* What This Means Box */}
-          <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/80 space-y-2">
+          <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/90 space-y-2">
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">
               {isHi ? 'इसका क्या अर्थ है (What this means):' : 'What this means:'}
             </h3>
@@ -458,7 +458,7 @@ export default function SchemeEligibilityChecker({
             </h3>
             <div className="space-y-2">
               {(isHi ? evaluation.nextSteps_hi : evaluation.nextSteps_en).map((step, idx) => (
-                <div key={idx} className="flex items-start gap-2.5 p-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-850 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+                <div key={idx} className="flex items-start gap-2.5 p-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800/90 text-xs sm:text-sm text-slate-700 dark:text-slate-200">
                   <span className="flex h-5 w-5 items-center justify-center rounded-full bg-slate-900 dark:bg-emerald-600 text-white font-mono text-[10px] font-bold shrink-0">
                     {idx + 1}
                   </span>

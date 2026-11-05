@@ -404,7 +404,7 @@ export default function SchemeFinder({
                   className={`p-4 sm:p-5 rounded-xl border transition-all ${
                     isStateSpecific
                       ? 'border-amber-300 dark:border-amber-900/80 bg-amber-50/40 dark:bg-amber-950/20'
-                      : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-850 hover:border-slate-300 dark:hover:border-slate-700'
+                      : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800/90 hover:border-slate-300 dark:hover:border-slate-700'
                   }`}
                 >
                   <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-2">
@@ -428,7 +428,7 @@ export default function SchemeFinder({
                   </div>
 
                   {/* Why it may be relevant */}
-                  <div className="mt-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-150 dark:border-slate-800 space-y-1.5 text-xs">
+                  <div className="mt-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-800 space-y-1.5 text-xs">
                     <div>
                       <span className="font-bold text-slate-900 dark:text-white">
                         {isHi ? 'यह क्यों प्रासंगिक हो सकती है:' : 'Why it may be relevant:'}{' '}
