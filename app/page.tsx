@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useState, useEffect, Suspense } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Language, Scheme, UpdateArticle, CategoryInfo, StateInfo } from '@/types';
 import { SCHEMES } from '@/data/schemes';
@@ -42,8 +42,9 @@ import {
   Lock
 } from 'lucide-react';
 
-export default function HomePage() {
+function HomePageContent() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { lang, toggleLanguage, isHi } = useLanguage();
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
@@ -63,6 +64,26 @@ export default function HomePage() {
   // Category & State filters for Schemes directory
   const [categoryFilter, setCategoryFilter] = useState<string>('all');
   const [stateFilter, setStateFilter] = useState<string>('all');
+
+  // Handle URL query parameters for nav and scheme (e.g. ?nav=checker&scheme=jharkhand-abua-awas-yojana-housing)
+  useEffect(() => {
+    const nav = searchParams.get('nav');
+    const schemeSlug = searchParams.get('scheme');
+
+    if (nav && ['home', 'schemes', 'finder', 'checker', 'states', 'updates'].includes(nav)) {
+      setActiveNav(nav);
+    }
+
+    if (schemeSlug) {
+      const found = SCHEMES.find(s => s.slug === schemeSlug || s.id === schemeSlug);
+      if (found) {
+        setSelectedEligibilityScheme(found);
+        if (!nav) {
+          setActiveNav('checker');
+        }
+      }
+    }
+  }, [searchParams]);
 
   useEffect(() => {
     const stored = localStorage.getItem('janlabh-theme');
@@ -740,6 +761,10 @@ export default function HomePage() {
             setSelectedState(null);
             handleSelectScheme(scheme);
           }}
+          onCheckEligibility={(scheme) => {
+            setSelectedState(null);
+            handleOpenEligibility(scheme);
+          }}
           allSchemes={SCHEMES}
         />
       )}
@@ -752,6 +777,10 @@ export default function HomePage() {
           onSelectScheme={(scheme) => {
             setSelectedCategory(null);
             handleSelectScheme(scheme);
+          }}
+          onCheckEligibility={(scheme) => {
+            setSelectedCategory(null);
+            handleOpenEligibility(scheme);
           }}
           allSchemes={SCHEMES}
         />
@@ -792,5 +821,17 @@ export default function HomePage() {
       />
 
     </div>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950">
+        <div className="h-8 w-8 animate-spin rounded-full border-4 border-amber-600 border-t-transparent" />
+      </div>
+    }>
+      <HomePageContent />
+    </Suspense>
   );
 }

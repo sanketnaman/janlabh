@@ -10,6 +10,7 @@ interface CategoryHubModalProps {
   onClose: () => void;
   lang: Language;
   onSelectScheme: (scheme: Scheme) => void;
+  onCheckEligibility?: (scheme: Scheme) => void;
   allSchemes: Scheme[];
 }
 
@@ -18,6 +19,7 @@ export default function CategoryHubModal({
   onClose,
   lang,
   onSelectScheme,
+  onCheckEligibility,
   allSchemes
 }: CategoryHubModalProps) {
   if (!categoryInfo) return null;
@@ -87,6 +89,10 @@ export default function CategoryHubModal({
                     onClose();
                     onSelectScheme(selected);
                   }}
+                  onCheckEligibility={onCheckEligibility ? (selected) => {
+                    onClose();
+                    onCheckEligibility(selected);
+                  } : undefined}
                 />
               ))}
             </div>

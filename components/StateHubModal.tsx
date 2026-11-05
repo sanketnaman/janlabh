@@ -10,6 +10,7 @@ interface StateHubModalProps {
   onClose: () => void;
   lang: Language;
   onSelectScheme: (scheme: Scheme) => void;
+  onCheckEligibility?: (scheme: Scheme) => void;
   allSchemes: Scheme[];
 }
 
@@ -18,6 +19,7 @@ export default function StateHubModal({
   onClose,
   lang,
   onSelectScheme,
+  onCheckEligibility,
   allSchemes
 }: StateHubModalProps) {
   if (!stateInfo) return null;
@@ -95,6 +97,10 @@ export default function StateHubModal({
                     onClose();
                     onSelectScheme(selected);
                   }}
+                  onCheckEligibility={onCheckEligibility ? (selected) => {
+                    onClose();
+                    onCheckEligibility(selected);
+                  } : undefined}
                 />
               ))}
             </div>
