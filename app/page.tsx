@@ -65,16 +65,14 @@ export default function HomePage() {
   const [stateFilter, setStateFilter] = useState<string>('all');
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleMediaChange = (e: MediaQueryListEvent) => {
-      const stored = localStorage.getItem('janlabh-theme');
-      if (!stored) {
-        document.documentElement.classList.toggle('dark', e.matches);
-        setIsDark(e.matches);
-      }
-    };
-    mediaQuery.addEventListener('change', handleMediaChange);
-    return () => mediaQuery.removeEventListener('change', handleMediaChange);
+    const stored = localStorage.getItem('janlabh-theme');
+    if (stored === 'dark') {
+      document.documentElement.classList.add('dark');
+      setIsDark(true);
+    } else if (stored === 'light') {
+      document.documentElement.classList.remove('dark');
+      setIsDark(false);
+    }
   }, []);
 
   const toggleTheme = () => {
