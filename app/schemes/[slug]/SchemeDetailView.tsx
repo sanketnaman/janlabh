@@ -1,8 +1,9 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useLanguage } from '@/hooks/useLanguage';
 import { Scheme, Language } from '@/types';
 import { SCHEMES } from '@/data/schemes';
 import Header from '@/components/Header';
@@ -24,6 +25,7 @@ import {
   Sparkles,
   ChevronRight,
   Share2,
+  Copy,
   Check,
   CheckSquare,
   Square,
@@ -36,7 +38,7 @@ interface SchemeDetailViewProps {
 
 export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
   const router = useRouter();
-  const [lang, setLang] = useState<Language>('hi');
+  const { lang, toggleLanguage, isHi } = useLanguage();
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       return document.documentElement.classList.contains('dark');
@@ -45,7 +47,23 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
   });
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [shareOpen, setShareOpen] = useState(false);
+  const shareRef = useRef<HTMLDivElement>(null);
   const [checkedDocs, setCheckedDocs] = useState<Record<number, boolean>>({});
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (shareRef.current && !shareRef.current.contains(event.target as Node)) {
+        setShareOpen(false);
+      }
+    };
+    if (shareOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [shareOpen]);
 
   useEffect(() => {
     const stored = localStorage.getItem('janlabh-theme');
@@ -72,10 +90,6 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
     });
   };
 
-  const toggleLanguage = () => {
-    setLang((prev) => (prev === 'hi' ? 'en' : 'hi'));
-  };
-
   const handleSelectNav = (navId: string) => {
     if (navId === 'home') router.push('/');
     else if (navId === 'schemes' || navId === 'finder' || navId === 'checker' || navId === 'states' || navId === 'updates') {
@@ -92,20 +106,60 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
     else if (pageId === 'contact') router.push('/contact');
   };
 
-  const handleShare = () => {
-    const url = `https://janlabh.in/schemes/${scheme.slug}`;
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(url);
+  const getShareDetails = () => {
+    const shareUrl = typeof window !== 'undefined' ? window.location.href : `https://janlabh.in/schemes/${scheme.slug}`;
+    const schemeTitle = isHi ? scheme.title_hi : scheme.title_en;
+    const shareText = isHi
+      ? `📢 *${schemeTitle}*\n\nजनलाभ पर इस सरकारी योजना की संपूर्ण जानकारी, पात्रता, मुख्य लाभ और आवेदन प्रक्रिया देखें:\n👉 ${shareUrl}`
+      : `📢 *${schemeTitle}*\n\nCheck full details, eligibility, benefits, and how to apply on JanLabh:\n👉 ${shareUrl}`;
+
+    return { shareUrl, shareText };
+  };
+
+  const handleWhatsAppShare = () => {
+    const { shareText } = getShareDetails();
+    const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+    setShareOpen(false);
+  };
+
+  const handleTelegramShare = () => {
+    const { shareUrl, shareText } = getShareDetails();
+    const tgUrl = `https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`;
+    window.open(tgUrl, '_blank', 'noopener,noreferrer');
+    setShareOpen(false);
+  };
+
+  const handleCopyLink = async () => {
+    const { shareUrl } = getShareDetails();
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(shareUrl);
+      } else {
+        const textArea = document.createElement('textarea');
+        textArea.value = shareUrl;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        textArea.style.top = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        document.execCommand('copy');
+        textArea.remove();
+      }
       setCopied(true);
-      setTimeout(() => setCopied(false), 2500);
+      setTimeout(() => {
+        setCopied(false);
+        setShareOpen(false);
+      }, 1800);
+    } catch (e) {
+      console.error('Failed to copy', e);
     }
   };
 
   const toggleDoc = (index: number) => {
     setCheckedDocs((prev) => ({ ...prev, [index]: !prev[index] }));
   };
-
-  const isHi = lang === 'hi';
 
   const relatedSchemes = SCHEMES.filter(
     (s) => s.id !== scheme.id && (s.category === scheme.category || s.state === scheme.state)
@@ -142,29 +196,163 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
             </span>
           </div>
 
-          <button
-            onClick={handleShare}
-            className="flex items-center gap-1.5 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-colors cursor-pointer"
-            title="Share this scheme guide"
-          >
-            {copied ? (
-              <>
-                <Check className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
-                <span className="text-emerald-700 dark:text-emerald-300 font-semibold">{isHi ? 'लिंक कॉपी हुआ' : 'Link Copied'}</span>
-              </>
-            ) : (
-              <>
-                <Share2 className="h-3.5 w-3.5 text-slate-600 dark:text-slate-400" />
-                <span>{isHi ? 'शेयर करें' : 'Share'}</span>
-              </>
+          {/* Share Action Dropdown */}
+          <div className="relative" ref={shareRef}>
+            <button
+              onClick={() => setShareOpen((prev) => !prev)}
+              className="flex items-center gap-1.5 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-all cursor-pointer border border-transparent hover:border-slate-300 dark:hover:border-slate-700"
+              title="Share this scheme guide"
+              aria-expanded={shareOpen}
+            >
+              <Share2 className="h-3.5 w-3.5 text-amber-600 dark:text-amber-400" />
+              <span>{isHi ? 'शेयर करें' : 'Share'}</span>
+            </button>
+
+            {shareOpen && (
+              <div className="absolute right-0 top-full mt-2 w-64 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
+                <div className="px-2.5 py-1.5 border-b border-slate-100 dark:border-slate-800/80 mb-1 flex items-center justify-between">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                    {isHi ? 'योजना शेयर करें' : 'Share Scheme'}
+                  </span>
+                  <span className="text-[10px] text-amber-600 dark:text-amber-400 font-semibold">
+                    जनलाभ JanLabh
+                  </span>
+                </div>
+
+                <div className="space-y-1">
+                  {/* WhatsApp */}
+                  <button
+                    onClick={handleWhatsAppShare}
+                    className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg text-left text-xs font-medium hover:bg-emerald-50 dark:hover:bg-emerald-950/40 text-slate-700 dark:text-slate-200 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors group cursor-pointer"
+                  >
+                    <div className="w-7 h-7 rounded-full bg-emerald-500/10 text-[#25D366] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-semibold text-slate-800 dark:text-slate-100 flex items-center justify-between">
+                        <span>WhatsApp</span>
+                        <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">चैट</span>
+                      </div>
+                      <div className="text-[11px] text-slate-400 truncate">
+                        {isHi ? 'व्हाट्सएप पर शेयर करें' : 'Share on WhatsApp'}
+                      </div>
+                    </div>
+                  </button>
+
+                  {/* Telegram */}
+                  <button
+                    onClick={handleTelegramShare}
+                    className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg text-left text-xs font-medium hover:bg-sky-50 dark:hover:bg-sky-950/40 text-slate-700 dark:text-slate-200 hover:text-sky-700 dark:hover:text-sky-300 transition-colors group cursor-pointer"
+                  >
+                    <div className="w-7 h-7 rounded-full bg-sky-500/10 text-[#229ED9] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-semibold text-slate-800 dark:text-slate-100 flex items-center justify-between">
+                        <span>Telegram</span>
+                        <span className="text-[10px] text-sky-600 dark:text-sky-400 font-medium">ग्रुप / चैनल</span>
+                      </div>
+                      <div className="text-[11px] text-slate-400 truncate">
+                        {isHi ? 'टेलीग्राम पर भेजें' : 'Share on Telegram'}
+                      </div>
+                    </div>
+                  </button>
+
+                  {/* Copy Link */}
+                  <button
+                    onClick={handleCopyLink}
+                    className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg text-left text-xs font-medium hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 transition-colors group cursor-pointer"
+                  >
+                    <div className="w-7 h-7 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      {copied ? (
+                        <Check className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+                      ) : (
+                        <Copy className="h-4 w-4" />
+                      )}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-semibold text-slate-800 dark:text-slate-100">
+                        {copied
+                          ? (isHi ? 'लिंक कॉपी हो गया!' : 'Link Copied!')
+                          : (isHi ? 'लिंक कॉपी करें' : 'Copy Link')}
+                      </div>
+                      <div className="text-[11px] text-slate-400 truncate">
+                        {isHi ? 'क्लिपबोर्ड पर कॉपी करें' : 'Copy URL to clipboard'}
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
             )}
-          </button>
+          </div>
         </div>
       </div>
 
-      <main className="flex-1 py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-5xl space-y-8">
+      <main className="flex-1 py-6 sm:py-10 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl space-y-6 sm:space-y-8">
           
+          {/* Scheme Hero Photo Banner / Placeholder */}
+          {scheme.bannerImage ? (
+            <div className="relative w-full overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm transition-all">
+              <img
+                src={scheme.bannerImage}
+                alt={isHi ? scheme.title_hi : scheme.title_en}
+                className="w-full h-auto rounded-2xl block object-contain"
+                loading="eager"
+              />
+            </div>
+          ) : (
+            <div className="relative w-full overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-950 shadow-sm aspect-[16/9] sm:aspect-[21/9] max-h-[420px] group transition-all">
+              <div className="relative w-full h-full flex flex-col justify-between p-5 sm:p-8 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 text-white overflow-hidden">
+                {/* Background SVG Watermark */}
+                <img
+                  src="/images/schemes/default-banner.svg"
+                  alt="Scheme Banner Placeholder"
+                  className="absolute inset-0 w-full h-full object-cover opacity-65 pointer-events-none"
+                />
+
+                {/* Top Badge Strip */}
+                <div className="relative z-10 flex items-center justify-between gap-2 flex-wrap">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 backdrop-blur-md">
+                    <Sparkles className="h-3.5 w-3.5" />
+                    <span>{isHi ? 'आधिकारिक योजना गाइड' : 'Official Scheme Guide'}</span>
+                  </span>
+                  <span className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300 border border-sky-400/30 backdrop-blur-md">
+                    {isHi ? 'जनलाभ गाइड' : 'JanLabh Guide'}
+                  </span>
+                </div>
+
+                {/* Center Dynamic Typography */}
+                <div className="relative z-10 text-center max-w-2xl mx-auto my-auto space-y-1.5 py-2">
+                  <div className="text-[11px] uppercase font-bold tracking-widest text-slate-400">
+                    {isHi ? scheme.stateLabel_hi : scheme.stateLabel_en} · {scheme.category.toUpperCase()}
+                  </div>
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight drop-shadow-md">
+                    {isHi ? scheme.shortTitle_hi : scheme.shortTitle_en}
+                  </h2>
+                  <p className="text-xs sm:text-sm text-slate-300 line-clamp-1 max-w-xl mx-auto font-normal">
+                    {isHi ? scheme.benefitSummary_hi : scheme.benefitSummary_en}
+                  </p>
+                </div>
+
+                {/* Bottom Spec Details */}
+                <div className="relative z-10 flex items-center justify-between text-[11px] text-slate-400 border-t border-white/10 pt-2.5">
+                  <span className="flex items-center gap-1 text-emerald-400 font-semibold">
+                    <CheckCircle2 className="h-3.5 w-3.5" />
+                    <span>{isHi ? 'सत्यापित नागरिक कल्याण गाइड' : 'Verified Civic Guidance'}</span>
+                  </span>
+                  <span className="font-medium text-slate-300 text-[10px] sm:text-[11px]">
+                    {isHi ? 'संपूर्ण पात्रता एवं आवेदन मार्गदर्शिका' : 'Complete Eligibility & Application Guide'}
+                  </span>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Top Title & Metadata Header */}
           <div className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
             <div className="flex items-center gap-2 flex-wrap">
@@ -263,6 +451,18 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
 
           {/* AdSense Unit / Advisory Slot */}
           <AdBannerSlot lang={lang} format="in-article" adSlot="scheme-detail-mid" />
+
+          {/* Secondary Scheme Infographic Banner (Below Ad Section) */}
+          {scheme.secondaryImage && (
+            <div className="relative w-full overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm transition-all">
+              <img
+                src={scheme.secondaryImage}
+                alt={isHi ? `${scheme.title_hi} विवरण एवं लाभ पोस्टर` : `${scheme.title_en} Infographic Banner`}
+                className="w-full h-auto rounded-2xl block object-contain"
+                loading="lazy"
+              />
+            </div>
+          )}
 
           {/* Eligibility Matrix */}
           <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">

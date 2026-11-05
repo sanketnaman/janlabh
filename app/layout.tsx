@@ -110,6 +110,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 } catch (_) {}
 
                 try {
+                  var storedLang = localStorage.getItem('janlabh-lang');
+                  if (storedLang === 'en' || storedLang === 'hi') {
+                    document.documentElement.lang = storedLang;
+                  }
+                } catch (_) {}
+
+                try {
                   var _fetch = window.fetch;
                   try {
                     Object.defineProperty(window, 'fetch', {

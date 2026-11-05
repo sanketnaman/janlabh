@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { useLanguage } from '@/hooks/useLanguage';
 import { Language, Scheme, UpdateArticle, CategoryInfo, StateInfo } from '@/types';
 import { SCHEMES } from '@/data/schemes';
 import { UPDATES } from '@/data/updates';
@@ -43,7 +44,7 @@ import {
 
 export default function HomePage() {
   const router = useRouter();
-  const [lang, setLang] = useState<Language>('hi');
+  const { lang, toggleLanguage, isHi } = useLanguage();
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       return document.documentElement.classList.contains('dark');
@@ -62,8 +63,6 @@ export default function HomePage() {
   // Category & State filters for Schemes directory
   const [categoryFilter, setCategoryFilter] = useState<string>('all');
   const [stateFilter, setStateFilter] = useState<string>('all');
-
-  const isHi = lang === 'hi';
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -90,10 +89,6 @@ export default function HomePage() {
       }
       return next;
     });
-  };
-
-  const toggleLanguage = () => {
-    setLang(prev => (prev === 'hi' ? 'en' : 'hi'));
   };
 
   const handleSelectNav = (navId: string) => {

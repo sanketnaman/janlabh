@@ -48,6 +48,11 @@ export interface Scheme {
   whoCanApply_en: string;
   whoCanApply_hi: string;
   applicationMode: string;
+  bannerImage?: string;
+  secondaryImage?: string;
+  bannerImage_en?: string;
+  bannerImage_hi?: string;
+  galleryImages?: string[];
   
   // Comprehensive Sections
   whatIsThis_en: string;

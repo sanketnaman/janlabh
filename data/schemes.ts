@@ -22,6 +22,7 @@ export const SCHEMES: Scheme[] = [
     whoCanApply_en: 'Small and marginal landholding farmer families with cultivable land parcels in their name.',
     whoCanApply_hi: 'छोटे व सीमांत किसान परिवार जिनके नाम पर कृषि योग्य भूमि के वैध राजस्व दस्तावेज दर्ज हैं।',
     applicationMode: 'Online & Offline',
+    bannerImage: '/images/schemes/pm-kisan-samman-nidhi.png',
     
     whatIsThis_en: 'PM Kisan Samman Nidhi is a 100% Central Government funded initiative designed to provide financial support to landholding farmer families across India to procure agricultural inputs like seeds, fertilizers, and meet household expenses without turning to high-interest moneylenders.',
     whatIsThis_hi: 'पीएम किसान सम्मान निधि भारत सरकार की 100% केंद्र-पोषित योजना है, जिसका उद्देश्य देशभर के भूमिधारक किसान परिवारों को बीज, खाद, कीटनाशक खरीदने और कृषि संबंधी प्राथमिक आवश्यकताओं को पूरा करने हेतु आर्थिक सहायता प्रदान करना है।',
@@ -209,6 +210,8 @@ export const SCHEMES: Scheme[] = [
     whoCanApply_en: 'Families listed in SECC 2011/NFSA Ration Card, and all Indian senior citizens aged 70 years and above (under Ayushman Vaya Vandana Card).',
     whoCanApply_hi: 'एसईसीसी 2011 सूची या पात्र राशन कार्डधारी परिवार, तथा 70 वर्ष या उससे अधिक आयु के सभी भारतीय नागरिक (वय वंदना कार्ड)।',
     applicationMode: 'Online & Offline',
+    bannerImage: '/images/schemes/ayushman-bharat-pmjay-health-card.png',
+    secondaryImage: '/images/schemes/ayushman-bharat-pmjay-en.png',
     
     whatIsThis_en: 'Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY) is the world’s largest government-financed health insurance scheme. It covers secondary and tertiary hospitalization costs, medicines, diagnostics, surgical packages, and pre/post-hospitalization expenses without any out-of-pocket costs at empanelled facilities.',
     whatIsThis_hi: 'आयुष्मान भारत प्रधानमंत्री जन आरोग्य योजना (PM-JAY) विश्व की सबसे बड़ी सरकारी स्वास्थ्य आश्वासन योजना है। इसके अंतर्गत गंभीर बीमारियों के ऑपरेशन, दवाएं, आईसीयू, जांच और अस्पताल में भर्ती के 3 दिन पहले तथा 15 दिन बाद तक का खर्च कैशलेस कवर होता है।',
@@ -533,6 +536,7 @@ export const SCHEMES: Scheme[] = [
     whoCanApply_en: 'Homeless households or families living in kutcha, dilapidated houses with no family member in government service.',
     whoCanApply_hi: 'बेघर परिवार या कच्चे/जीर्ण-शीर्ण मकानों में रहने वाले नागरिक जिनके परिवार में कोई सरकारी नौकरी न हो।',
     applicationMode: 'Offline & Online (via Gram Panchayat Survey & Urban Portal)',
+    bannerImage: '/images/schemes/pm-awas-yojana.webp',
     
     whatIsThis_en: 'Pradhan Mantri Awas Yojana (PMAY) is India’s flagship affordable housing mission guaranteeing pucca houses with basic amenities like water, sanitation, and electricity to all eligible homeless and kutcha-dwelling households in rural and urban sectors.',
     whatIsThis_hi: 'प्रधानमंत्री आवास योजना भारत सरकार का एक महत्वाकांक्षी मिशन है, जिसके तहत देश के सभी बेघर और कच्चे घरों में रहने वाले परिवारों को बुनियादी सुविधाओं (शौचालय, बिजली, रसोई गैस) से युक्त पक्का मकान उपलब्ध कराया जाता है।',
@@ -680,6 +684,7 @@ export const SCHEMES: Scheme[] = [
     whoCanApply_en: 'Traditional artisans and craftspeople working with their hands and tools across 18 designated family trades (Carpenters, Blacksmiths, Masons, Tailors, Barbers, Potters, Cobblers, etc.).',
     whoCanApply_hi: 'हाथ और औजारों से पारंपरिक कार्य करने वाले 18 चिन्हित व्यवसायों के कारीगर (बढ़ई, लोहार, कुम्हार, राजमिस्त्री, दर्जी, नाई, मोची, धोबी आदि)।',
     applicationMode: 'Online via CSC Centres',
+    bannerImage: '/images/schemes/pm-vishwakarma.webp',
     
     whatIsThis_en: 'PM Vishwakarma is an ambitious Central Sector initiative by the Ministry of Micro, Small and Medium Enterprises (MSME) to empower traditional craftspeople and artisans across India, providing them end-to-end support from identity recognition and skill upgradation to credit support and digital market linkages.',
     whatIsThis_hi: 'पीएम विश्वकर्मा योजना सूक्ष्म, लघु एवं मध्यम उद्यम मंत्रालय (MSME) द्वारा पारंपरिक शिल्पकारों व दस्तकारों को औपचारिक पहचान, कौशल उन्नयन, आधुनिक टूलकिट और सस्ती वित्तीय पूंजी प्रदान करने के लिए शुरू की गई राष्ट्रीय योजना है।',
@@ -962,6 +967,7 @@ export const SCHEMES: Scheme[] = [
     whoCanApply_en: 'Regular students belonging to SC, ST, OBC, EWS, and minority categories or meritorious college scholars with parental income below prescribed scheme limits (usually under ₹2.5 Lakh).',
     whoCanApply_hi: 'मान्यता प्राप्त स्कूलों, कॉलेजों और विश्वविद्यालयों में अध्ययनरत नियमित छात्र (एससी, एसटी, ओबीसी, अल्पसंख्यक व सामान्य मेधावी वर्ग)।',
     applicationMode: 'Online via NSP Portal',
+    bannerImage: '/images/schemes/national-scholarship-portal.webp',
     
     whatIsThis_en: 'National Scholarship Portal (NSP) is the digital backbone initiated by the Ministry of Electronics and Information Technology (MeitY) to standardize, verify, and disburse all Central and State government educational scholarships seamlessly using Aadhaar e-KYC and Institute-level validation.',
     whatIsThis_hi: 'राष्ट्रीय छात्रवृत्ति पोर्टल (NSP) भारत सरकार का एकीकृत डिजिटल प्लेटफॉर्म है, जिसके माध्यम से देश भर के जरूरतमंद व मेधावी छात्रों को बिना किसी बिचौलिए के सीधे बैंक खाते में छात्रवृत्ति प्रदान की जाती है।',
@@ -1113,6 +1119,7 @@ export const SCHEMES: Scheme[] = [
     whoCanApply_en: 'All Indian citizens aged between 18 and 40 years holding a savings bank account who are not income-tax payers.',
     whoCanApply_hi: '18 से 40 वर्ष की आयु के सभी भारतीय नागरिक जिनका किसी बैंक या डाकघर में बचत खाता है और जो आयकरदाता नहीं हैं।',
     applicationMode: 'Online via Netbanking & Bank Branches',
+    bannerImage: '/images/schemes/atal-pension-yojana.webp',
     
     whatIsThis_en: 'Atal Pension Yojana (APY) is a flagship social security initiative launched by the Government of India, administered by the Pension Fund Regulatory and Development Authority (PFRDA), focused on providing unorganized sector workers with guaranteed old-age financial independence.',
     whatIsThis_hi: 'अटल पेंशन योजना (APY) भारत सरकार द्वारा संचालित प्रमुख सामाजिक सुरक्षा योजना है, जिसका नियमन पीएफआरडीए (PFRDA) द्वारा किया जाता है। इसका उद्देश्य असंगठित क्षेत्र के कामगारों और युवाओं को वृद्धावस्था में सुरक्षित मासिक आय की गारंटी देना है।',
@@ -1386,6 +1393,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Parents or legal guardians of a girl child aged between 0 to 10 years (maximum 2 girls per family).",
   "whoCanApply_hi": "0 से 10 वर्ष तक की बालिकाओं के माता-पिता या कानूनी अभिभावक (प्रति परिवार अधिकतम 2 बेटियां)।",
   "applicationMode": "Offline at Post Office or Designated Bank Branches",
+    "bannerImage": "/images/schemes/sukanya-samriddhi-yojana.webp",
   "whatIsThis_en": "Sukanya Samriddhi Yojana is a flagship savings scheme under the \"Beti Bachao Beti Padhao\" mission. It empowers families to build a substantial education and marriage fund for their daughters with guaranteed high sovereign returns.",
   "whatIsThis_hi": "सुकन्या समृद्धि योजना केंद्र सरकार के \"बेटी बचाओ बेटी पढ़ाओ\" अभियान का प्रमुख हिस्सा है। यह बालिकाओं की उच्च शिक्षा और विवाह हेतु वित्तीय सुरक्षा सुनिश्चित करती है।",
   "benefitsList_en": [
@@ -1515,6 +1523,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Indian households with a valid residential electricity connection and suitable rooftop space.",
   "whoCanApply_hi": "घरेलू बिजली कनेक्शन और उपयुक्त छत (Rooftop) वाले सभी भारतीय परिवार।",
   "applicationMode": "Online via pmsuryaghar.gov.in national portal",
+    "bannerImage": "/images/schemes/pm-surya-ghar.webp",
   "whatIsThis_en": "PM Surya Ghar: Muft Bijli Yojana is a national clean energy initiative aimed at solarizing 1 crore households across India with up to ₹78,000 direct DBT subsidy.",
   "whatIsThis_hi": "पीएम सूर्य घर मुफ्त बिजली योजना देश के 1 करोड़ घरों को सौर ऊर्जा से जोड़कर बिजली बिल शून्य करने की महत्वाकांक्षी राष्ट्रीय योजना है।",
   "benefitsList_en": [
@@ -1642,6 +1651,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Non-farm micro and small entrepreneurs in manufacturing, trading, retail, transport, and service sectors.",
   "whoCanApply_hi": "गैर-कृषि सूक्ष्म उद्यम, छोटे दुकानदार, कारीगर, सर्विस प्रोवाइडर और नए स्टार्टअप उद्यमी।",
   "applicationMode": "Online via udyamimitra.in or offline at commercial/Gramin banks",
+    "bannerImage": "/images/schemes/pm-mudra-yojana.webp",
   "whatIsThis_en": "PMMY funds the unfunded by providing seamless bank finance up to ₹20 Lakh to informal micro-enterprises to generate grassroots employment without requiring property collateral.",
   "whatIsThis_hi": "प्रधानमंत्री मुद्रा योजना देश के छोटे व्यापारियों और स्वरोजगार करने वाले नागरिकों को बिना किसी संपत्ति गारंटी के आसान व्यापार ऋण उपलब्ध कराती है।",
   "benefitsList_en": [
@@ -1769,6 +1779,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "All farmers cultivating notified crops in notified areas (both loanee and non-loanee farmers).",
   "whoCanApply_hi": "अधिसूचित क्षेत्रों में अधिसूचित फसल उगाने वाले सभी किसान (बटाईदार व गैर-ऋणी किसान भी शामिल)।",
   "applicationMode": "Online via pmfby.gov.in, CSC centers, or banks",
+    "bannerImage": "/images/schemes/pm-fasal-bima-yojana.webp",
   "whatIsThis_en": "PMFBY provides uniform, affordable crop insurance cover to insulate Indian cultivators against catastrophic yield losses arising from unpredictable natural disasters.",
   "whatIsThis_hi": "प्रधानमंत्री फसल बीमा योजना प्राकृतिक आपदाओं से किसानों की फसलों के नुकसान की भरपाई करने वाली देश की सबसे बड़ी फसल सुरक्षा योजना है।",
   "benefitsList_en": [
@@ -1892,6 +1903,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Adult women belonging to BPL/poor households without any existing LPG connection in the family.",
   "whoCanApply_hi": "गरीब परिवारों की वयस्क महिलाएं (18+ वर्ष) जिनके घर में पहले से कोई गैस कनेक्शन न हो।",
   "applicationMode": "Online via pmuy.gov.in or offline at nearest LPG distributor",
+    "bannerImage": "/images/schemes/pm-ujjwala-yojana.webp",
   "whatIsThis_en": "PMUY 2.0 provides clean cooking fuel to underprivileged households, protecting women and children from hazardous indoor smoke and offering substantial refill subsidies.",
   "whatIsThis_hi": "उज्ज्वला योजना ग्रामीण महिलाओं को चूल्हे के जहरीले धुएं से मुक्ति दिलाकर स्वच्छ ईंधन उपलब्ध कराने वाली देशव्यापी सामाजिक कल्याण योजना है।",
   "benefitsList_en": [
@@ -2144,6 +2156,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Street vendors, hawkers, thelawalas, and small artisans operating in urban and peri-urban locations.",
   "whoCanApply_hi": "शहरी व कस्बाई क्षेत्रों में ठेला लगाने वाले, फेरीवाले, रेहड़ी-पटरी दुकानदार व फुटपाथ विक्रेता।",
   "applicationMode": "Online via pmsvanidhi.mohua.gov.in or Urban Local Bodies",
+    "bannerImage": "/images/schemes/pm-swanidhi-yojana.webp",
   "whatIsThis_en": "PM SVANidhi provides formal credit access to street vendors to resume and expand their livelihoods with interest subvention and escalating loan limits upon timely repayment.",
   "whatIsThis_hi": "पीएम स्वनिधि रेहड़ी-पटरी व्यवसायियों को साहूकारों के चंगुल से निकालकर औपचारिक बैंकिंग ऋण व डिजिटल लेनदेन से जोड़ने वाली केंद्रीय योजना है।",
   "benefitsList_en": [
@@ -2267,6 +2280,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Owner cultivators, tenant farmers, sharecroppers, SHGs, and animal husbandry/dairy farmers.",
   "whoCanApply_hi": "भूमि स्वामी किसान, बटाईदार, पट्टेदार, स्वयं सहायता समूह तथा पशुपालन व डेयरी पालक किसान।",
   "applicationMode": "Offline via bank branches or online via pmkisan.gov.in",
+    "bannerImage": "/images/schemes/kisan-credit-card.webp",
   "whatIsThis_en": "The Kisan Credit Card scheme simplifies access to timely formal credit for farmers to meet cultivation expenses, post-harvest needs, and allied sector investments without extortionate interest rates.",
   "whatIsThis_hi": "किसान क्रेडिट कार्ड योजना किसानों को साहूकारों के भारी ब्याज से बचाकर बीज, खाद, कृषि यंत्र और पशुपालन हेतु न्यूनतम 4% ब्याज पर सस्ता बैंक ऋण उपलब्ध कराती है।",
   "benefitsList_en": [
@@ -2394,6 +2408,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Unorganized workers aged 18 to 40 years with a monthly income of ₹15,000 or less.",
   "whoCanApply_hi": "18 से 40 वर्ष के असंगठित श्रमिक (रिक्शा चालक, घरेलू कामगार, निर्माण मजदूर) जिनकी मासिक आय ₹15,000 से कम हो।",
   "applicationMode": "Online via maandhan.in or CSC Digital Seva Kendras",
+    "bannerImage": "/images/schemes/pm-shram-yogi-maan-dhan.webp",
   "whatIsThis_en": "PM-SYM is a voluntary and contributory pension scheme offering social security and old-age financial dignity to unorganized workers with a sovereign central guarantee.",
   "whatIsThis_hi": "प्रधानमंत्री श्रम योगी मानधन योजना असंगठित क्षेत्र के दैनिक मजदूरों और श्रमिकों को बुढ़ापे में सम्मानजनक जीवन जीने के लिए पेंशन सुरक्षा देती है।",
   "benefitsList_en": [
@@ -2517,6 +2532,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Women members of registered Self-Help Groups (SHGs) under Deendayal Antyodaya Yojana-NRLM.",
   "whoCanApply_hi": "दीनदयाल अंत्योदय योजना-एनआरएलएम (DAY-NRLM) के तहत पंजीकृत स्वयं सहायता समूहों की महिला सदस्य।",
   "applicationMode": "Offline through Gram Panchayat SHG Cluster / Block Project Office",
+    "bannerImage": "/images/schemes/lakhpati-didi-yojana.webp",
   "whatIsThis_en": "Lakhpati Didi is a targeted mission to transform rural SHG women into sustainable micro-entrepreneurs across agriculture, food processing, textiles, LED manufacturing, and drone services.",
   "whatIsThis_hi": "लखपति दीदी केंद्र सरकार की ऐतिहासिक पहल है जिसका उद्देश्य देश की 3 करोड़ ग्रामीण महिलाओं को स्वावलंबी उद्यमी बनाकर लखपति बनाना है।",
   "benefitsList_en": [
@@ -2904,6 +2920,8 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Youth aged 21 to 24 years who have passed Class 10th, 12th, ITI, Polytechnic Diploma, or Graduation (BA, B.Sc, B.Com, BBA, Pharmacy).",
   "whoCanApply_hi": "21 से 24 वर्ष के युवा जिन्होंने 10वीं, 12वीं, आईटीआई, पॉलिटेक्निक डिप्लोमा अथवा स्नातक उत्तीर्ण किया हो।",
   "applicationMode": "Online via pminternship.mca.gov.in portal",
+    "bannerImage": "/images/schemes/pm-internship-scheme.webp",
+    "secondaryImage": "/images/schemes/pm-internship-scheme-secondary.webp",
   "whatIsThis_en": "PM Internship Scheme bridges the academia-industry gap by offering real corporate work exposure to 1 crore youth over 5 years in leading private and public corporations.",
   "whatIsThis_hi": "प्रधानमंत्री इंटर्नशिप योजना देश के युवाओं को देश की अग्रणी कंपनियों में काम का व्यावहारिक अनुभव और मासिक वजीफा देने की ऐतिहासिक राष्ट्रीय योजना है।",
   "benefitsList_en": [
@@ -3033,6 +3051,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Any individual above 18 years of age with a minimum Class 8 pass qualification for projects above ₹10 Lakh (Mfg) / ₹5 Lakh (Service).",
   "whoCanApply_hi": "18 वर्ष से अधिक आयु का कोई भी भारतीय नागरिक (₹10 लाख से बड़े प्रोजेक्ट हेतु न्यूनतम 8वीं पास होना अनिवार्य)।",
   "applicationMode": "Online via kviconline.gov.in (PMEGP e-Portal)",
+    "bannerImage": "/images/schemes/pm-egp-loan.webp",
   "whatIsThis_en": "PMEGP is a flagship credit-linked subsidy program administered by KVIC under the Ministry of MSME to establish micro-enterprises across rural and urban India.",
   "whatIsThis_hi": "प्रधानमंत्री रोजगार सृजन कार्यक्रम (PMEGP) सूक्ष्म, लघु और मध्यम उद्यम मंत्रालय द्वारा देश में नए कारखाने व सेवा केंद्र खोलने हेतु शुरू की गई प्रमुख योजना है।",
   "benefitsList_en": [
@@ -3160,6 +3179,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "All individual bank account holders aged 18 to 70 years.",
   "whoCanApply_hi": "18 से 70 वर्ष के सभी बैंक या डाकघर बचत खाता धारक।",
   "applicationMode": "Online via net banking or offline at any bank branch",
+    "bannerImage": "/images/schemes/pm-suraksha-bima.webp",
   "whatIsThis_en": "PMSBY is a universal social security initiative designed to protect economically vulnerable families from financial devastation caused by unforeseen accidental tragedies.",
   "whatIsThis_hi": "प्रधानमंत्री सुरक्षा बीमा योजना हर भारतीय परिवार को दुर्घटना के समय आर्थिक सुरक्षा देने वाली देश की सबसे सस्ती और सुलभ बीमा योजना है।",
   "benefitsList_en": [
@@ -3280,6 +3300,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "All individual bank account holders aged 18 to 50 years.",
   "whoCanApply_hi": "18 से 50 वर्ष के सभी बैंक या डाकघर बचत खाता धारक।",
   "applicationMode": "Online via net banking or offline at any bank branch",
+    "bannerImage": "/images/schemes/pm-jeevan-jyoti-bima.webp",
   "whatIsThis_en": "PMJJBY provides financial security to underprivileged families in the event of the breadwinner's untimely demise from disease, medical emergency, or accident.",
   "whatIsThis_hi": "प्रधानमंत्री जीवन ज्योति बीमा योजना परिवार के मुखिया की असामयिक मृत्यु की स्थिति में उसके आश्रितों को तुरंत ₹2 लाख की आर्थिक संबलता प्रदान करती है।",
   "benefitsList_en": [

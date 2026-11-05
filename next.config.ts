@@ -19,7 +19,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  output: 'standalone',
   transpilePackages: ['motion'],
   experimental: {
     cpus: 1,

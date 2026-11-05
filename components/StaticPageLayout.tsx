@@ -2,11 +2,12 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useLanguage } from '@/hooks/useLanguage';
 import { Language } from '@/types';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SearchModal from '@/components/SearchModal';
-import { useRouter } from 'next/navigation';
 
 interface StaticPageLayoutProps {
   children: (lang: Language) => React.ReactNode;
@@ -22,7 +23,7 @@ export default function StaticPageLayout({
   breadcrumbTitle_hi,
 }: StaticPageLayoutProps) {
   const router = useRouter();
-  const [lang, setLang] = useState<Language>('hi');
+  const { lang, toggleLanguage } = useLanguage();
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       return document.documentElement.classList.contains('dark');
@@ -54,10 +55,6 @@ export default function StaticPageLayout({
       }
       return next;
     });
-  };
-
-  const toggleLanguage = () => {
-    setLang((prev) => (prev === 'hi' ? 'en' : 'hi'));
   };
 
   const handleSelectNav = (navId: string) => {
