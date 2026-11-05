@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Scheme, Language } from '@/types';
 import { CheckCircle2, ChevronRight, FileText, Building2 } from 'lucide-react';
 
@@ -36,7 +37,9 @@ export default function SchemeCard({ scheme, lang, onSelect, onCheckEligibility 
 
         {/* Primary Scheme Title */}
         <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white group-hover:text-amber-800 dark:group-hover:text-amber-400 transition-colors leading-snug">
-          {isHi ? scheme.shortTitle_hi : scheme.shortTitle_en}
+          <Link href={`/schemes/${scheme.slug}`} onClick={(e) => { e.stopPropagation(); onSelect(scheme); }}>
+            {isHi ? scheme.shortTitle_hi : scheme.shortTitle_en}
+          </Link>
         </h3>
 
         {/* Core Benefit Box */}
@@ -81,10 +84,17 @@ export default function SchemeCard({ scheme, lang, onSelect, onCheckEligibility 
             {isHi ? `सत्यापन: ${scheme.lastVerified}` : `Verified: ${scheme.lastVerified}`}
           </span>
         )}
-        <span className="flex items-center gap-1 font-semibold text-amber-700 dark:text-amber-400 group-hover:text-amber-800 dark:group-hover:text-amber-300 transition-colors">
+        <Link
+          href={`/schemes/${scheme.slug}`}
+          onClick={(e) => {
+            e.stopPropagation();
+            onSelect(scheme);
+          }}
+          className="flex items-center gap-1 font-semibold text-amber-700 dark:text-amber-400 group-hover:text-amber-800 dark:group-hover:text-amber-300 transition-colors"
+        >
           <span>{isHi ? 'पूरी जानकारी देखें' : 'View Full Guide'}</span>
           <ChevronRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-        </span>
+        </Link>
       </div>
     </article>
   );

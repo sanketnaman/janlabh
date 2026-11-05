@@ -2,42 +2,52 @@
 
 import React from 'react';
 import { Language } from '@/types';
-import { ShieldCheck, Info } from 'lucide-react';
+import { ShieldCheck, Info, CheckCircle2 } from 'lucide-react';
 
 interface AdBannerSlotProps {
   lang: Language;
   format?: 'in-article' | 'sidebar' | 'footer-banner';
+  adSlot?: string;
 }
 
-export default function AdBannerSlot({ lang, format = 'in-article' }: AdBannerSlotProps) {
+export default function AdBannerSlot({ lang, format = 'in-article', adSlot }: AdBannerSlotProps) {
   const isHi = lang === 'hi';
+  const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
 
-  return (
-    <div className="w-full my-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-900/40 p-4 text-center">
-      {/* Strict compliance label per PRD §41/§42 */}
-      <div className="flex items-center justify-center gap-1.5 text-[10px] uppercase tracking-wider text-slate-400 dark:text-slate-500 font-semibold mb-2">
-        <Info className="h-3 w-3" />
-        <span>
-          {isHi ? 'प्रायोजित जानकारी (Compliant Ad Slot)' : 'Sponsored Information (AdSense Placement Slot)'}
-        </span>
-      </div>
-
-      <div className="mx-auto max-w-lg py-4 px-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs">
-        <div className="text-xs font-semibold text-slate-700 dark:text-slate-200">
-          {isHi 
-            ? 'नागरिक सेवा व बैंकिंग सहायता परामर्श' 
-            : 'Civic Services, Digital Banking & Financial Inclusion Guidance'}
+  // When live AdSense is configured
+  if (adsenseClientId && adSlot) {
+    return (
+      <div className="w-full my-6 text-center overflow-hidden">
+        <div className="text-[10px] uppercase tracking-wider text-slate-400 dark:text-slate-500 font-medium mb-1">
+          {isHi ? 'विज्ञापन' : 'Advertisement'}
         </div>
-        <p className="mt-1 text-[11px] text-slate-500 dark:text-slate-400 leading-normal">
-          {isHi
-            ? 'JanLabh पर सभी योजना मार्गदर्शन निष्पक्ष व निःशुल्क है। विज्ञापन नीति के अनुसार कोई भ्रामक बटन या पॉपअप प्रदर्शित नहीं किए जाते।'
-            : 'JanLabh content remains 100% useful without ads. Display advertising conforms to non-deceptive placement standards.'}
-        </p>
+        <ins
+          className="adsbygoogle block"
+          style={{ display: 'block' }}
+          data-ad-client={adsenseClientId}
+          data-ad-slot={adSlot}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
       </div>
+    );
+  }
 
-      <div className="mt-2 text-[10px] text-slate-400 dark:text-slate-500">
-        {isHi ? 'Google AdSense अनुपालक स्थान' : 'Google AdSense Compliant Unit'}
+  // Pre-approval fallback: Helpful civic awareness advisory
+  return (
+    <aside
+      aria-label={isHi ? 'नागरिक जागरूकता सूचना' : 'Civic Awareness Advisory'}
+      className="w-full my-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-gradient-to-r from-amber-50/50 via-white to-slate-50 dark:from-slate-900/60 dark:via-slate-900/30 dark:to-slate-950 p-4 text-left sm:text-center transition-colors"
+    >
+      <div className="flex items-center sm:justify-center gap-1.5 text-[11px] font-semibold text-amber-700 dark:text-amber-400 uppercase tracking-wider mb-1">
+        <ShieldCheck className="h-3.5 w-3.5" />
+        <span>{isHi ? 'नागरिक सुरक्षा परामर्श' : 'Citizen Safety & Official Source Notice'}</span>
       </div>
-    </div>
+      <p className="text-xs text-slate-600 dark:text-slate-300 max-w-xl sm:mx-auto leading-relaxed">
+        {isHi
+          ? 'सरकारी योजनाओं के लिए किसी भी बिचौलिए को पैसे न दें। सभी आधिकारिक आवेदन संबंधित मंत्रालय के .gov.in या .nic.in पोर्टल पर ही करें।'
+          : 'Never pay middlemen for government schemes. Access official portals (.gov.in or .nic.in) or visit your nearest CSC/BDO office.'}
+      </p>
+    </aside>
   );
 }

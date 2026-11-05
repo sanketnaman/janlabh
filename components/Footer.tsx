@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Language } from '@/types';
 import { ShieldCheck, ExternalLink, AlertTriangle, FileText, CheckCircle2 } from 'lucide-react';
 
@@ -116,36 +117,36 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
             </h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <button
-                  onClick={() => onOpenLegal('editorial')}
-                  className="hover:text-white transition-colors text-slate-400"
+                <Link
+                  href="/about"
+                  className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'संपादकीय नीति (Editorial Policy)' : 'Editorial Policy'}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onOpenLegal('verification')}
-                  className="hover:text-white transition-colors text-slate-400"
+                <Link
+                  href="/about"
+                  className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'तथ्य-जांच व सत्यापन नीति' : 'Fact-Checking & Verification Policy'}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onOpenLegal('corrections')}
-                  className="hover:text-white transition-colors text-slate-400"
+                <Link
+                  href="/contact"
+                  className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'त्रुटि सुधार नीति व रिपोर्ट (Corrections)' : 'Corrections Policy & Report Error'}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onOpenLegal('about')}
-                  className="hover:text-white transition-colors text-slate-400"
+                <Link
+                  href="/about"
+                  className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'हमारे बारे में (About JanLabh)' : 'About JanLabh'}
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -157,36 +158,36 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
             </h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <button
-                  onClick={() => onOpenLegal('privacy')}
-                  className="hover:text-white transition-colors text-slate-400"
+                <Link
+                  href="/privacy-policy"
+                  className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'गोपनीयता नीति (Privacy Policy)' : 'Privacy Policy (No Aadhaar Stored)'}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onOpenLegal('terms')}
-                  className="hover:text-white transition-colors text-slate-400"
+                <Link
+                  href="/terms"
+                  className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'उपयोग की शर्तें (Terms of Use)' : 'Terms of Use'}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onOpenLegal('disclaimer')}
-                  className="hover:text-white transition-colors text-slate-400"
+                <Link
+                  href="/disclaimer"
+                  className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'अस्वीकरण (Disclaimer)' : 'Statutory Disclaimer'}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onOpenLegal('contact')}
-                  className="hover:text-white transition-colors text-slate-400"
+                <Link
+                  href="/contact"
+                  className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'संपर्क करें (Contact Editorial Desk)' : 'Contact Editorial Desk'}
-                </button>
+                </Link>
               </li>
               <li className="pt-2">
                 <button

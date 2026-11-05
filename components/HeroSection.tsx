@@ -33,16 +33,16 @@ export default function HeroSection({
     : ['PM Kisan status', 'Ayushman 70+ Senior Card', 'Maiya Samman Yojana', 'Abua Awas', 'NSP Scholarship'];
 
   return (
-    <section className="relative overflow-hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0F172A] py-12 sm:py-16 lg:py-20 transition-colors duration-200">
-      {/* 1. Abstract Indian Tricolor SVG Background Layer */}
+    <section className="relative overflow-hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0B1326] py-12 sm:py-16 lg:py-20 transition-colors duration-200">
+      {/* 1. Abstract Indian Tricolor SVG Background Layer - High visibility & rich tones */}
       <div
-        className="absolute inset-0 bg-[url('/background/background.svg')] bg-cover bg-center bg-no-repeat pointer-events-none opacity-70 dark:opacity-30 transition-opacity duration-300"
+        className="absolute inset-0 bg-[url('/background/background.svg')] bg-cover bg-center bg-no-repeat pointer-events-none opacity-90 dark:opacity-80 transition-opacity duration-300"
         aria-hidden="true"
       />
 
-      {/* 2. Accessibility & Contrast Softening Overlay (WCAG AAA Compliant) */}
+      {/* 2. Soft readability backdrop (maintains contrast without washing out colors) */}
       <div
-        className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/90 dark:from-[#0F172A]/30 dark:via-transparent dark:to-[#0F172A] pointer-events-none"
+        className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/60 dark:from-[#0B1326]/30 dark:via-transparent dark:to-[#0B1326]/60 pointer-events-none"
         aria-hidden="true"
       />
 

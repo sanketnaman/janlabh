@@ -74,14 +74,15 @@ export default function Header({
           ))}
         </nav>
 
-        {/* Zone 3: 1 primary action cluster (Search + Theme toggle + Language toggle + Mobile trigger) */}
+        {/* Zone 3: 1 primary action cluster - Uniform h-10 height for all controls across mobile, tablet & desktop */}
         <div className="flex items-center gap-2 shrink-0">
+          {/* 1. Search Trigger Button */}
           <button
             onClick={onOpenSearch}
-            className="flex items-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-3 py-1.5 text-xs text-slate-600 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+            className="h-10 flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-3 text-xs text-slate-600 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 shadow-xs shrink-0"
             aria-label="Search schemes"
           >
-            <Search className="h-3.5 w-3.5 text-slate-500 dark:text-slate-400" />
+            <Search className="h-4 w-4 text-slate-500 dark:text-slate-400 shrink-0" />
             <span className="hidden sm:inline">
               {lang === 'hi' ? 'योजना खोजें...' : 'Search schemes...'}
             </span>
@@ -90,29 +91,29 @@ export default function Header({
             </kbd>
           </button>
 
-          {/* Theme Toggle Button */}
+          {/* 2. Theme Toggle Button */}
           <button
             onClick={onToggleTheme}
-            className="p-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+            className="h-10 w-10 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 shadow-xs shrink-0"
             aria-label={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
             title={isDark ? (lang === 'hi' ? 'लाइट मोड चालू करें' : 'Switch to Light Mode') : (lang === 'hi' ? 'डार्क मोड चालू करें' : 'Switch to Dark Mode')}
           >
             {isDark ? (
-              <Sun className="h-4 w-4 text-amber-400" />
+              <Sun className="h-4.5 w-4.5 text-amber-400" />
             ) : (
-              <Moon className="h-4 w-4 text-slate-600" />
+              <Moon className="h-4.5 w-4.5 text-slate-600" />
             )}
           </button>
 
-          {/* Bilingual switcher with English & Hindi icons in prominent full size */}
-          <div className="flex items-center rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100/90 dark:bg-slate-800/90 p-1 shadow-xs">
+          {/* 3. Bilingual switcher with English & Hindi icons - Exact h-10 matching height */}
+          <div className="h-10 flex items-center rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100/90 dark:bg-slate-800/90 p-1 shadow-xs shrink-0">
             <button
               type="button"
               onClick={() => lang !== 'hi' && onToggleLang()}
-              className={`flex items-center gap-2 px-2.5 py-1 rounded-lg transition-all ${
+              className={`h-full flex items-center gap-1.5 px-2 rounded-lg transition-all ${
                 lang === 'hi'
-                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-sm ring-1.5 ring-amber-500 font-bold'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white opacity-60 hover:opacity-100'
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs ring-1 ring-amber-500 font-bold'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white opacity-65 hover:opacity-100'
               }`}
               title="हिन्दी"
               aria-label="हिन्दी भाषा चुनें"
@@ -120,18 +121,18 @@ export default function Header({
               <img
                 src="/icons/hindi_icon.svg"
                 alt="हिंदी अ"
-                className="h-8 w-8 sm:h-8.5 sm:w-8.5 rounded-md object-contain shrink-0 shadow-xs"
+                className="h-6 w-6 sm:h-6.5 sm:w-6.5 rounded-md object-contain shrink-0 shadow-2xs"
               />
-              <span className="hidden sm:inline text-xs sm:text-sm font-semibold pr-0.5">हिंदी</span>
+              <span className="hidden sm:inline text-xs font-semibold pr-0.5">हिंदी</span>
             </button>
 
             <button
               type="button"
               onClick={() => lang !== 'en' && onToggleLang()}
-              className={`flex items-center gap-2 px-2.5 py-1 rounded-lg transition-all ${
+              className={`h-full flex items-center gap-1.5 px-2 rounded-lg transition-all ${
                 lang === 'en'
-                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-sm ring-1.5 ring-blue-500 font-bold'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white opacity-60 hover:opacity-100'
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-xs ring-1 ring-blue-500 font-bold'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white opacity-65 hover:opacity-100'
               }`}
               title="English"
               aria-label="Switch to English"
@@ -139,16 +140,16 @@ export default function Header({
               <img
                 src="/icons/english_icon.svg"
                 alt="English EN"
-                className="h-8 w-8 sm:h-8.5 sm:w-8.5 rounded-md object-contain shrink-0 shadow-xs"
+                className="h-6 w-6 sm:h-6.5 sm:w-6.5 rounded-md object-contain shrink-0 shadow-2xs"
               />
-              <span className="hidden sm:inline text-xs sm:text-sm font-semibold pr-0.5">English</span>
+              <span className="hidden sm:inline text-xs font-semibold pr-0.5">English</span>
             </button>
           </div>
 
-          {/* Mobile menu hamburger */}
+          {/* 4. Mobile menu hamburger - Exact h-10 w-10 matching size */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-1.5 text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white focus:outline-none"
+            className="md:hidden h-10 w-10 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 shadow-xs shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

@@ -11,8 +11,8 @@ interface SearchModalProps {
   lang: Language;
   onSelectScheme: (scheme: Scheme) => void;
   onSelectUpdate: (update: UpdateArticle) => void;
-  allSchemes: Scheme[];
-  allUpdates: UpdateArticle[];
+  allSchemes?: Scheme[];
+  allUpdates?: UpdateArticle[];
 }
 
 export default function SearchModal({
@@ -22,7 +22,7 @@ export default function SearchModal({
   onSelectScheme,
   onSelectUpdate,
   allSchemes,
-  allUpdates
+  allUpdates,
 }: SearchModalProps) {
   const isHi = lang === 'hi';
   const [query, setQuery] = useState('');

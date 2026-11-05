@@ -1,41 +1,57 @@
 <svg width="1440" height="600" viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Saffron Wave Gradient -->
-    <linearGradient id="saffronGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF9933" stop-opacity="0.35" />
-      <stop offset="100%" stop-color="#FF9933" stop-opacity="0.05" />
+    <!-- Deep Saffron Wave Gradients -->
+    <linearGradient id="saffronGrad1" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FF6B00" stop-opacity="0.85" />
+      <stop offset="60%" stop-color="#FF9933" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#FFAE42" stop-opacity="0.15" />
     </linearGradient>
 
-    <!-- Neutral Accent Wave Gradient -->
+    <linearGradient id="saffronGrad2" x1="100%" y1="0%" x2="30%" y2="100%">
+      <stop offset="0%" stop-color="#E65100" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#FF9933" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Neutral Center Accent Gradient -->
     <linearGradient id="whiteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.25" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#E2E8F0" stop-opacity="0.25" />
       <stop offset="100%" stop-color="#94A3B8" stop-opacity="0.05" />
     </linearGradient>
 
-    <!-- Green Wave Gradient -->
-    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#138808" stop-opacity="0.35" />
-      <stop offset="100%" stop-color="#138808" stop-opacity="0.05" />
+    <!-- Deep Green Wave Gradients -->
+    <linearGradient id="greenGrad1" x1="0%" y1="100%" x2="100%" y2="20%">
+      <stop offset="0%" stop-color="#0B6B04" stop-opacity="0.85" />
+      <stop offset="60%" stop-color="#138808" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0.15" />
+    </linearGradient>
+
+    <linearGradient id="greenGrad2" x1="0%" y1="80%" x2="70%" y2="0%">
+      <stop offset="0%" stop-color="#064E03" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#16A34A" stop-opacity="0.1" />
     </linearGradient>
     
-    <!-- Central Navy Glow -->
-    <radialGradient id="navyGlow" cx="50%" cy="0%" r="50%">
-      <stop offset="0%" stop-color="#000080" stop-opacity="0.12" />
+    <!-- Central Navy Radiant Glow -->
+    <radialGradient id="navyGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#001F5C" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#0B2559" stop-opacity="0.15" />
       <stop offset="100%" stop-color="#000080" stop-opacity="0" />
     </radialGradient>
   </defs>
 
-  <!-- Central Navy Blue Subtle Radial Glow -->
+  <!-- Central Navy Blue Radiant Ambient Glow -->
   <rect width="1440" height="600" fill="url(#navyGlow)" />
 
-  <!-- Saffron Fluid Waves -->
-  <path d="M 400 0 C 700 80, 1000 20, 1440 180 V 0 H 400 Z" fill="url(#saffronGrad)" />
-  <path d="M 600 0 C 850 120, 1150 40, 1440 260 V 0 H 600 Z" fill="#FF9933" fill-opacity="0.08" />
+  <!-- Saffron Fluid Waves (Top-Right Depth) -->
+  <path d="M 300 0 C 650 110, 950 30, 1440 220 V 0 H 300 Z" fill="url(#saffronGrad1)" />
+  <path d="M 500 0 C 800 150, 1100 60, 1440 320 V 0 H 500 Z" fill="url(#saffronGrad2)" />
+  <path d="M 800 0 C 1050 100, 1250 50, 1440 160 V 0 H 800 Z" fill="#FF7700" fill-opacity="0.35" />
 
   <!-- Middle Neutral Accent Wave -->
-  <path d="M 0 220 C 350 140, 750 320, 1440 160 V 280 C 850 380, 300 220, 0 350 Z" fill="url(#whiteGrad)" />
+  <path d="M 0 200 C 400 120, 800 340, 1440 180 V 290 C 850 400, 320 230, 0 360 Z" fill="url(#whiteGrad)" />
 
-  <!-- Green Fluid Waves -->
-  <path d="M 0 320 C 450 260, 800 480, 1200 600 H 0 V 320 Z" fill="url(#greenGrad)" />
-  <path d="M 0 220 C 300 180, 650 380, 950 600 H 0 V 220 Z" fill="#138808" fill-opacity="0.08" />
+  <!-- Green Fluid Waves (Bottom-Left Depth) -->
+  <path d="M 0 280 C 420 240, 800 460, 1280 600 H 0 V 280 Z" fill="url(#greenGrad1)" />
+  <path d="M 0 180 C 320 160, 680 390, 1020 600 H 0 V 180 Z" fill="url(#greenGrad2)" />
+  <path d="M 0 400 C 350 360, 650 520, 880 600 H 0 V 400 Z" fill="#0E8005" fill-opacity="0.35" />
 </svg>
