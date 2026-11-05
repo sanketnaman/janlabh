@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { Language, Scheme, UpdateArticle, CategoryInfo, StateInfo } from '@/types';
 import { SCHEMES } from '@/data/schemes';
 import { UPDATES } from '@/data/updates';
@@ -9,7 +10,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import SchemeCard from '@/components/SchemeCard';
-import SchemeDetailModal from '@/components/SchemeDetailModal';
 import SchemeFinder from '@/components/SchemeFinder';
 import SchemeEligibilityChecker from '@/components/SchemeEligibilityChecker';
 import SearchModal from '@/components/SearchModal';
@@ -42,6 +42,7 @@ import {
 } from 'lucide-react';
 
 export default function HomePage() {
+  const router = useRouter();
   const [lang, setLang] = useState<Language>('hi');
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
@@ -50,7 +51,6 @@ export default function HomePage() {
     return false;
   });
   const [activeNav, setActiveNav] = useState('home');
-  const [selectedScheme, setSelectedScheme] = useState<Scheme | null>(null);
   const [selectedEligibilityScheme, setSelectedEligibilityScheme] = useState<Scheme | null>(null);
   const [selectedUpdate, setSelectedUpdate] = useState<UpdateArticle | null>(null);
   const [selectedState, setSelectedState] = useState<StateInfo | null>(null);
@@ -115,11 +115,12 @@ export default function HomePage() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleSelectScheme = (scheme: Scheme) => {
+    router.push(`/schemes/${scheme.slug}`);
+  };
+
   const handleSelectSchemeBySlug = (slug: string) => {
-    const found = SCHEMES.find(s => s.slug === slug);
-    if (found) {
-      setSelectedScheme(found);
-    }
+    router.push(`/schemes/${slug}`);
   };
 
   const handleSearchSubmit = (query: string) => {
@@ -176,7 +177,7 @@ export default function HomePage() {
             </div>
             <SchemeFinder
               lang={lang}
-              onSelectScheme={setSelectedScheme}
+              onSelectScheme={handleSelectScheme}
               onCheckEligibility={handleOpenEligibility}
               allSchemes={SCHEMES}
             />
@@ -203,7 +204,7 @@ export default function HomePage() {
             <SchemeEligibilityChecker
               lang={lang}
               selectedScheme={selectedEligibilityScheme}
-              onSelectSchemeDetails={setSelectedScheme}
+              onSelectSchemeDetails={handleSelectScheme}
               onBackToFinder={() => setActiveNav('finder')}
               allSchemes={SCHEMES}
             />
@@ -267,7 +268,7 @@ export default function HomePage() {
                   key={s.id}
                   scheme={s}
                   lang={lang}
-                  onSelect={setSelectedScheme}
+                  onSelect={handleSelectScheme}
                   onCheckEligibility={handleOpenEligibility}
                 />
               ))}
@@ -422,7 +423,7 @@ export default function HomePage() {
                       key={scheme.id}
                       scheme={scheme}
                       lang={lang}
-                      onSelect={setSelectedScheme}
+                      onSelect={handleSelectScheme}
                       onCheckEligibility={handleOpenEligibility}
                     />
                   ))}
@@ -728,21 +729,6 @@ export default function HomePage() {
       </main>
 
       {/* Global Modals */}
-      {selectedScheme && (
-        <SchemeDetailModal
-          scheme={selectedScheme}
-          lang={lang}
-          onClose={() => setSelectedScheme(null)}
-          onSelectScheme={setSelectedScheme}
-          allSchemes={SCHEMES}
-          onCheckEligibility={handleOpenEligibility}
-          onOpenChecker={() => {
-            setSelectedEligibilityScheme(selectedScheme);
-            setActiveNav('checker');
-          }}
-        />
-      )}
-
       {selectedUpdate && (
         <UpdateDetailModal
           update={selectedUpdate}
@@ -757,7 +743,10 @@ export default function HomePage() {
           stateInfo={selectedState}
           lang={lang}
           onClose={() => setSelectedState(null)}
-          onSelectScheme={setSelectedScheme}
+          onSelectScheme={(scheme) => {
+            setSelectedState(null);
+            handleSelectScheme(scheme);
+          }}
           allSchemes={SCHEMES}
         />
       )}
@@ -767,7 +756,10 @@ export default function HomePage() {
           categoryInfo={selectedCategory}
           lang={lang}
           onClose={() => setSelectedCategory(null)}
-          onSelectScheme={setSelectedScheme}
+          onSelectScheme={(scheme) => {
+            setSelectedCategory(null);
+            handleSelectScheme(scheme);
+          }}
           allSchemes={SCHEMES}
         />
       )}
@@ -776,7 +768,10 @@ export default function HomePage() {
         isOpen={searchModalOpen}
         onClose={() => setSearchModalOpen(false)}
         lang={lang}
-        onSelectScheme={setSelectedScheme}
+        onSelectScheme={(scheme) => {
+          setSearchModalOpen(false);
+          handleSelectScheme(scheme);
+        }}
         onSelectUpdate={setSelectedUpdate}
         allSchemes={SCHEMES}
         allUpdates={UPDATES}

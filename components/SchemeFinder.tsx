@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Language, Scheme, SchemeState, SchemeFinderInput, SchemeFinderRecommendation } from '@/types';
 import { findRelevantSchemes } from '@/lib/schemeFinderEngine';
 import {
@@ -418,8 +419,10 @@ export default function SchemeFinder({
                           {scheme.category}
                         </span>
                       </div>
-                      <h3 className="text-base font-bold text-slate-900 dark:text-white">
-                        {isHi ? scheme.title_hi : scheme.title_en}
+                      <h3 className="text-base font-bold text-slate-900 dark:text-white hover:text-amber-700 dark:hover:text-amber-400 transition-colors">
+                        <Link href={`/schemes/${scheme.slug}`} onClick={() => onSelectScheme(scheme)}>
+                          {isHi ? scheme.title_hi : scheme.title_en}
+                        </Link>
                       </h3>
                     </div>
                   </div>
@@ -446,13 +449,14 @@ export default function SchemeFinder({
 
                   {/* Action Buttons */}
                   <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-3">
-                    <button
+                    <Link
+                      href={`/schemes/${scheme.slug}`}
                       onClick={() => onSelectScheme(scheme)}
                       className="text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white flex items-center gap-1 transition-colors"
                     >
                       <span>{isHi ? 'योजना का पूरा विवरण पढ़ें' : 'View Scheme Details'}</span>
                       <ChevronRight className="h-3.5 w-3.5" />
-                    </button>
+                    </Link>
 
                     <button
                       onClick={() => onCheckEligibility(scheme)}

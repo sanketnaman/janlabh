@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { UpdateArticle, Language, Scheme } from '@/types';
 import {
   X,
@@ -166,14 +167,15 @@ export default function UpdateDetailModal({
           </div>
 
           {/* Section 8: Related Pillar Scheme Guide */}
-          {update.relatedSchemeSlug && onSelectSchemeBySlug && (
+          {update.relatedSchemeSlug && (
             <div className="pt-2">
-              <button
+              <Link
+                href={`/schemes/${update.relatedSchemeSlug}`}
                 onClick={() => {
-                  onSelectSchemeBySlug(update.relatedSchemeSlug!);
+                  if (onSelectSchemeBySlug) onSelectSchemeBySlug(update.relatedSchemeSlug!);
                   onClose();
                 }}
-                className="w-full flex items-center justify-between p-4 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/70 dark:bg-amber-950/30 hover:bg-amber-100/60 dark:hover:bg-amber-950/50 transition-colors text-left"
+                className="w-full flex items-center justify-between p-4 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/70 dark:bg-amber-950/30 hover:bg-amber-100/60 dark:hover:bg-amber-950/50 transition-colors text-left block"
               >
                 <div>
                   <div className="text-xs font-bold text-amber-900 dark:text-amber-300 uppercase tracking-wider">
@@ -184,7 +186,7 @@ export default function UpdateDetailModal({
                   </div>
                 </div>
                 <ArrowRight className="h-4 w-4 text-amber-700 dark:text-amber-400 shrink-0" />
-              </button>
+              </Link>
             </div>
           )}
 

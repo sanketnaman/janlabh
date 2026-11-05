@@ -2,26 +2,36 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Scheme, Language } from '@/types';
-import { CheckCircle2, ChevronRight, FileText, Building2 } from 'lucide-react';
+import { CheckCircle2, ChevronRight } from 'lucide-react';
 
 interface SchemeCardProps {
   scheme: Scheme;
   lang: Language;
-  onSelect: (scheme: Scheme) => void;
+  onSelect?: (scheme: Scheme) => void;
   onCheckEligibility?: (scheme: Scheme) => void;
 }
 
 export default function SchemeCard({ scheme, lang, onSelect, onCheckEligibility }: SchemeCardProps) {
+  const router = useRouter();
   const isHi = lang === 'hi';
+
+  const handleCardClick = () => {
+    if (onSelect) {
+      onSelect(scheme);
+    } else {
+      router.push(`/schemes/${scheme.slug}`);
+    }
+  };
 
   return (
     <article 
-      onClick={() => onSelect(scheme)}
+      onClick={handleCardClick}
       className="group relative flex flex-col justify-between rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 transition-all hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-md cursor-pointer"
     >
       <div>
-        {/* Unboxed metadata line with typographic separators (Zero-pill discipline) */}
+        {/* Unboxed metadata line with typographic separators */}
         <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-2">
           <span className="font-medium text-slate-700 dark:text-slate-300">
             {isHi ? scheme.stateLabel_hi : scheme.stateLabel_en}
@@ -37,7 +47,7 @@ export default function SchemeCard({ scheme, lang, onSelect, onCheckEligibility 
 
         {/* Primary Scheme Title */}
         <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white group-hover:text-amber-800 dark:group-hover:text-amber-400 transition-colors leading-snug">
-          <Link href={`/schemes/${scheme.slug}`} onClick={(e) => { e.stopPropagation(); onSelect(scheme); }}>
+          <Link href={`/schemes/${scheme.slug}`}>
             {isHi ? scheme.shortTitle_hi : scheme.shortTitle_en}
           </Link>
         </h3>
@@ -86,10 +96,6 @@ export default function SchemeCard({ scheme, lang, onSelect, onCheckEligibility 
         )}
         <Link
           href={`/schemes/${scheme.slug}`}
-          onClick={(e) => {
-            e.stopPropagation();
-            onSelect(scheme);
-          }}
           className="flex items-center gap-1 font-semibold text-amber-700 dark:text-amber-400 group-hover:text-amber-800 dark:group-hover:text-amber-300 transition-colors"
         >
           <span>{isHi ? 'पूरी जानकारी देखें' : 'View Full Guide'}</span>

@@ -4,9 +4,11 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Scheme, Language } from '@/types';
+import { SCHEMES } from '@/data/schemes';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SearchModal from '@/components/SearchModal';
+import AdBannerSlot from '@/components/AdBannerSlot';
 import {
   ShieldCheck,
   CheckCircle2,
@@ -20,7 +22,12 @@ import {
   Clock,
   ArrowRight,
   Sparkles,
-  ChevronRight
+  ChevronRight,
+  Share2,
+  Check,
+  CheckSquare,
+  Square,
+  AlertTriangle
 } from 'lucide-react';
 
 interface SchemeDetailViewProps {
@@ -37,6 +44,8 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
     return false;
   });
   const [searchModalOpen, setSearchModalOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [checkedDocs, setCheckedDocs] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
     const stored = localStorage.getItem('janlabh-theme');
@@ -83,7 +92,26 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
     else if (pageId === 'contact') router.push('/contact');
   };
 
+  const handleShare = () => {
+    const url = `https://janlabh.in/schemes/${scheme.slug}`;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    }
+  };
+
+  const toggleDoc = (index: number) => {
+    setCheckedDocs((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
+
   const isHi = lang === 'hi';
+
+  const relatedSchemes = SCHEMES.filter(
+    (s) => s.id !== scheme.id && (s.category === scheme.category || s.state === scheme.state)
+  ).slice(0, 3);
+
+  const problemsList = isHi ? scheme.commonProblems_hi : scheme.commonProblems_en;
 
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
@@ -97,20 +125,40 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
         onToggleTheme={toggleTheme}
       />
 
-      {/* Breadcrumb strip */}
+      {/* Breadcrumb strip with Share action */}
       <div className="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 py-2.5 px-4 sm:px-6 lg:px-8 text-xs text-slate-500 dark:text-slate-400">
-        <div className="mx-auto max-w-5xl flex items-center gap-2 flex-wrap">
-          <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
-            {isHi ? 'होम' : 'Home'}
-          </Link>
-          <ChevronRight className="h-3 w-3 text-slate-400" />
-          <Link href="/?nav=schemes" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
-            {isHi ? 'सभी योजनाएं' : 'All Schemes'}
-          </Link>
-          <ChevronRight className="h-3 w-3 text-slate-400" />
-          <span className="font-semibold text-slate-800 dark:text-slate-200 truncate max-w-xs">
-            {isHi ? scheme.shortTitle_hi : scheme.shortTitle_en}
-          </span>
+        <div className="mx-auto max-w-5xl flex items-center justify-between gap-4 flex-wrap">
+          <div className="flex items-center gap-2 flex-wrap">
+            <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium">
+              {isHi ? 'होम' : 'Home'}
+            </Link>
+            <ChevronRight className="h-3 w-3 text-slate-400" />
+            <Link href="/?nav=schemes" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium">
+              {isHi ? 'सभी योजनाएं' : 'All Schemes'}
+            </Link>
+            <ChevronRight className="h-3 w-3 text-slate-400" />
+            <span className="font-semibold text-slate-800 dark:text-slate-200 truncate max-w-xs">
+              {isHi ? scheme.shortTitle_hi : scheme.shortTitle_en}
+            </span>
+          </div>
+
+          <button
+            onClick={handleShare}
+            className="flex items-center gap-1.5 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg transition-colors cursor-pointer"
+            title="Share this scheme guide"
+          >
+            {copied ? (
+              <>
+                <Check className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+                <span className="text-emerald-700 dark:text-emerald-300 font-semibold">{isHi ? 'लिंक कॉपी हुआ' : 'Link Copied'}</span>
+              </>
+            ) : (
+              <>
+                <Share2 className="h-3.5 w-3.5 text-slate-600 dark:text-slate-400" />
+                <span>{isHi ? 'शेयर करें' : 'Share'}</span>
+              </>
+            )}
+          </button>
         </div>
       </div>
 
@@ -164,23 +212,28 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
               </div>
             </div>
 
-            {/* CTA Official Link */}
-            {scheme.officialSources[0] && (
-              <div className="flex items-center gap-3 pt-2">
+            {/* Action CTAs: Official Portal + Eligibility Checker */}
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              {scheme.officialSources[0] && (
                 <a
                   href={scheme.officialSources[0].url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-bold text-white bg-slate-900 hover:bg-slate-800 dark:bg-amber-600 dark:hover:bg-amber-500 shadow-sm transition-colors"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-bold text-white bg-slate-900 hover:bg-slate-800 dark:bg-amber-600 dark:hover:bg-amber-500 shadow-sm transition-colors cursor-pointer"
                 >
                   <span>{isHi ? 'आधिकारिक पोर्टल पर आवेदन करें' : 'Apply on Official Government Portal'}</span>
                   <ExternalLink className="h-3.5 w-3.5" />
                 </a>
-                <span className="text-[11px] text-slate-500 dark:text-slate-400">
-                  {isHi ? `(स्रोत: ${scheme.officialSources[0].authority})` : `(Source: ${scheme.officialSources[0].authority})`}
-                </span>
-              </div>
-            )}
+              )}
+
+              <Link
+                href="/?nav=checker"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-bold text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 hover:bg-emerald-100 transition-colors cursor-pointer"
+              >
+                <CheckCircle2 className="h-4 w-4" />
+                <span>{isHi ? 'विस्तृत पात्रता जांचें' : 'Evaluate Full Eligibility'}</span>
+              </Link>
+            </div>
           </div>
 
           {/* Scheme Overview */}
@@ -207,6 +260,9 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
               ))}
             </ul>
           </section>
+
+          {/* AdSense Unit / Advisory Slot */}
+          <AdBannerSlot lang={lang} format="in-article" adSlot="scheme-detail-mid" />
 
           {/* Eligibility Matrix */}
           <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
@@ -244,19 +300,41 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
             </div>
           </section>
 
-          {/* Required Documents */}
+          {/* Required Documents (Interactive Checkbox List) */}
           <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
-              <FileText className="h-5 w-5 text-amber-600 dark:text-amber-400" />
-              <span>{isHi ? 'आवश्यक दस्तावेज (Required Documents Checklist)' : 'Required Documents Checklist'}</span>
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-              {(isHi ? scheme.requiredDocuments_hi : scheme.requiredDocuments_en).map((doc, idx) => (
-                <div key={idx} className="p-2.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-amber-500 shrink-0" />
-                  <span className="text-slate-800 dark:text-slate-200 font-medium">{doc}</span>
-                </div>
-              ))}
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <FileText className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+                <span>{isHi ? 'आवश्यक दस्तावेज चेकलिस्ट' : 'Required Documents Checklist'}</span>
+              </h2>
+              <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                {isHi ? 'तैयार दस्तावेजों पर टिक करें' : 'Click to check off prepared documents'}
+              </span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+              {(isHi ? scheme.requiredDocuments_hi : scheme.requiredDocuments_en).map((doc, idx) => {
+                const isChecked = !!checkedDocs[idx];
+                return (
+                  <div
+                    key={idx}
+                    onClick={() => toggleDoc(idx)}
+                    className={`p-3 rounded-xl border transition-all cursor-pointer flex items-center gap-2.5 select-none ${
+                      isChecked
+                        ? 'border-emerald-300 dark:border-emerald-800 bg-emerald-50/70 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-200'
+                        : 'border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 text-slate-800 dark:text-slate-200 hover:border-slate-300 dark:hover:border-slate-700'
+                    }`}
+                  >
+                    {isChecked ? (
+                      <CheckSquare className="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                    ) : (
+                      <Square className="h-4 w-4 text-slate-400 dark:text-slate-500 shrink-0" />
+                    )}
+                    <span className={`font-medium ${isChecked ? 'line-through text-emerald-700 dark:text-emerald-400' : ''}`}>
+                      {doc}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </section>
 
@@ -288,6 +366,30 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
             </p>
           </section>
 
+          {/* Common Problems / Pitfalls (if available) */}
+          {problemsList && problemsList.length > 0 && (
+            <section className="bg-amber-50/60 dark:bg-amber-950/20 p-6 sm:p-8 rounded-2xl border border-amber-200 dark:border-amber-900/50 shadow-sm space-y-4">
+              <h2 className="text-lg font-bold text-amber-950 dark:text-amber-200 flex items-center gap-2">
+                <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+                <span>{isHi ? 'सामान्य समस्याएं व प्रमाणित समाधान' : 'Common Application Issues & Solutions'}</span>
+              </h2>
+              <div className="grid grid-cols-1 gap-3">
+                {problemsList.map((item, idx) => (
+                  <div key={idx} className="p-3.5 rounded-xl border border-amber-200/80 dark:border-amber-900/60 bg-white dark:bg-slate-900 space-y-1">
+                    <div className="text-xs font-bold text-rose-800 dark:text-rose-400 flex items-center gap-1.5">
+                      <AlertCircle className="h-3.5 w-3.5 shrink-0" />
+                      <span>{item.problem}</span>
+                    </div>
+                    <div className="text-xs text-slate-600 dark:text-slate-400 pl-5 leading-relaxed">
+                      <span className="font-semibold text-slate-800 dark:text-slate-200">{isHi ? 'समाधान: ' : 'Solution: '}</span>
+                      {item.solution}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Frequently Asked Questions */}
           {scheme.faqs_en && scheme.faqs_en.length > 0 && (
             <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
@@ -305,6 +407,40 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
                       A: {faq.a}
                     </p>
                   </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Related Schemes (Pillars) */}
+          {relatedSchemes.length > 0 && (
+            <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+              <h2 className="text-xl font-bold text-slate-900 dark:text-white">
+                {isHi ? 'संबंधित अन्य सरकारी योजनाएं' : 'Related Government Welfare Schemes'}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {relatedSchemes.map((rel) => (
+                  <Link
+                    key={rel.id}
+                    href={`/schemes/${rel.slug}`}
+                    className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-500 bg-slate-50 dark:bg-slate-800/50 hover:shadow-sm transition-all flex flex-col justify-between group"
+                  >
+                    <div>
+                      <div className="text-[10px] font-semibold uppercase text-amber-700 dark:text-amber-400 mb-1">
+                        {isHi ? rel.stateLabel_hi : rel.stateLabel_en}
+                      </div>
+                      <h3 className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors line-clamp-2">
+                        {isHi ? rel.shortTitle_hi : rel.shortTitle_en}
+                      </h3>
+                      <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">
+                        {isHi ? rel.benefitSummary_hi : rel.benefitSummary_en}
+                      </p>
+                    </div>
+                    <div className="mt-3 pt-2 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-[11px] font-semibold text-amber-700 dark:text-amber-400">
+                      <span>{isHi ? 'गाइड पढ़ें' : 'Read Guide'}</span>
+                      <ChevronRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
+                    </div>
+                  </Link>
                 ))}
               </div>
             </section>
@@ -355,6 +491,7 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
           setSearchModalOpen(false);
           router.push('/');
         }}
+        allSchemes={SCHEMES}
       />
     </div>
   );

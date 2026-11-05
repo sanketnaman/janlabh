@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import {
   Language,
   Scheme,
@@ -490,12 +491,13 @@ export default function SchemeEligibilityChecker({
 
           {/* Action CTAs */}
           <div className="pt-2 flex flex-wrap items-center justify-between gap-3">
-            <button
+            <Link
+              href={`/schemes/${activeScheme.slug}`}
               onClick={() => onSelectSchemeDetails(activeScheme)}
               className="text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white underline transition-colors"
             >
               {isHi ? '← संपूर्ण योजना विवरण व दस्तावेज पढ़ें' : '← Read Full Scheme Details & Documents'}
-            </button>
+            </Link>
 
             <div className="flex items-center gap-2">
               <button

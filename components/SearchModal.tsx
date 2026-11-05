@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 import { Language, Scheme, UpdateArticle } from '@/types';
 import { searchJanLabh, SearchItem } from '@/lib/search';
 import { Search, X, ChevronRight, FileText, Newspaper } from 'lucide-react';
@@ -97,40 +98,64 @@ export default function SearchModal({
         <div className="max-h-[60vh] overflow-y-auto p-2">
           {results.length > 0 ? (
             <div className="space-y-1">
-              {results.map((item) => (
-                <div
-                  key={item.id}
-                  onClick={() => {
-                    if (item.type === 'scheme' && item.rawScheme) {
-                      onSelectScheme(item.rawScheme);
-                      onClose();
-                    } else if (item.type === 'update' && item.rawUpdate) {
-                      onSelectUpdate(item.rawUpdate);
-                      onClose();
-                    }
-                  }}
-                  className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-100/80 dark:hover:bg-slate-800/80 cursor-pointer transition-colors"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-600 dark:text-slate-300 mt-0.5">
-                      {item.type === 'scheme' ? (
-                        <FileText className="h-4 w-4 text-amber-700 dark:text-amber-400" />
-                      ) : (
+              {results.map((item) => {
+                if (item.type === 'scheme' && item.rawScheme) {
+                  return (
+                    <Link
+                      key={item.id}
+                      href={`/schemes/${item.rawScheme.slug}`}
+                      onClick={() => {
+                        onSelectScheme(item.rawScheme!);
+                        onClose();
+                      }}
+                      className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-100/80 dark:hover:bg-slate-800/80 cursor-pointer transition-colors"
+                    >
+                      <div className="flex items-start gap-3">
+                        <div className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-600 dark:text-slate-300 mt-0.5">
+                          <FileText className="h-4 w-4 text-amber-700 dark:text-amber-400" />
+                        </div>
+                        <div>
+                          <div className="text-xs font-bold text-slate-900 dark:text-white">
+                            {isHi ? item.title_hi : item.title}
+                          </div>
+                          <div className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5">
+                            {item.summary}
+                          </div>
+                        </div>
+                      </div>
+                      <ChevronRight className="h-4 w-4 text-slate-400 dark:text-slate-500 shrink-0" />
+                    </Link>
+                  );
+                }
+
+                return (
+                  <div
+                    key={item.id}
+                    onClick={() => {
+                      if (item.type === 'update' && item.rawUpdate) {
+                        onSelectUpdate(item.rawUpdate);
+                        onClose();
+                      }
+                    }}
+                    className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-100/80 dark:hover:bg-slate-800/80 cursor-pointer transition-colors"
+                  >
+                    <div className="flex items-start gap-3">
+                      <div className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-600 dark:text-slate-300 mt-0.5">
                         <Newspaper className="h-4 w-4 text-sky-700 dark:text-sky-400" />
-                      )}
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-slate-900 dark:text-white">
-                        {isHi ? item.title_hi : item.title}
                       </div>
-                      <div className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5">
-                        {item.summary}
+                      <div>
+                        <div className="text-xs font-bold text-slate-900 dark:text-white">
+                          {isHi ? item.title_hi : item.title}
+                        </div>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5">
+                          {item.summary}
+                        </div>
                       </div>
                     </div>
+                    <ChevronRight className="h-4 w-4 text-slate-400 dark:text-slate-500 shrink-0" />
                   </div>
-                  <ChevronRight className="h-4 w-4 text-slate-400 dark:text-slate-500 shrink-0" />
-                </div>
-              ))}
+                );
+              })}
             </div>
           ) : (
             <div className="p-8 text-center text-xs text-slate-500 dark:text-slate-400">
