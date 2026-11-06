@@ -58,15 +58,15 @@ export default function Header({
         </button>
 
         {/* Zone 2: 4–5 clean single-line text navigation links */}
-        <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700 dark:text-slate-200">
           {navItems.map(item => (
             <button
               key={item.id}
               onClick={() => handleNavClick(item.id)}
               className={`transition-colors whitespace-nowrap shrink-0 hover:text-slate-950 dark:hover:text-white ${
                 activeNav === item.id
-                  ? 'text-amber-700 dark:text-amber-400 font-semibold border-b-2 border-amber-600 dark:border-amber-400 pb-0.5'
-                  : 'hover:text-slate-900 dark:hover:text-white'
+                  ? 'text-amber-700 dark:text-amber-400 font-bold border-b-2 border-amber-600 dark:border-amber-400 pb-0.5'
+                  : 'hover:text-slate-950 dark:hover:text-white'
               }`}
             >
               {lang === 'hi' ? item.label_hi : item.label_en}
@@ -79,7 +79,7 @@ export default function Header({
           {/* 1. Search Trigger Button */}
           <button
             onClick={onOpenSearch}
-            className="h-10 flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-3 text-xs text-slate-600 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 shadow-xs shrink-0"
+            className="h-10 flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-3 text-xs font-medium text-slate-700 dark:text-slate-200 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 shadow-xs shrink-0"
             aria-label="Search schemes"
           >
             <Search className="h-4 w-4 text-slate-500 dark:text-slate-400 shrink-0" />
@@ -167,7 +167,7 @@ export default function Header({
               className={`block w-full text-left px-3 py-2 text-sm rounded-md transition-colors ${
                 activeNav === item.id
                   ? 'bg-amber-50 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 font-semibold'
-                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800'
+                  : 'text-slate-800 dark:text-slate-200 font-medium hover:bg-slate-50 dark:hover:bg-slate-800'
               }`}
             >
               {lang === 'hi' ? item.label_hi : item.label_en}

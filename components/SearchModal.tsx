@@ -84,11 +84,11 @@ export default function SearchModal({
                 ? 'योजना, कीवर्ड या विषय खोजें (उदा. PM Kisan, मंईयां सम्मान, 70+ आयुष्मान)...' 
                 : 'Search schemes, topics, or updates (e.g., PM Kisan, Ayushman 70+, Maiya Samman)...'
             }
-            className="w-full bg-transparent text-sm text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none"
+            className="w-full bg-transparent text-sm text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-slate-400 font-medium focus:outline-none"
           />
           <button
             onClick={onClose}
-            className="p-1 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 rounded-lg focus:outline-none transition-colors"
+            className="p-1 text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white rounded-lg focus:outline-none transition-colors"
           >
             <X className="h-5 w-5" />
           </button>
@@ -118,12 +118,12 @@ export default function SearchModal({
                           <div className="text-xs font-bold text-slate-900 dark:text-white">
                             {isHi ? item.title_hi : item.title}
                           </div>
-                          <div className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5">
+                          <div className="text-[12px] text-slate-600 dark:text-slate-300 font-medium line-clamp-1 mt-0.5">
                             {item.summary}
                           </div>
                         </div>
                       </div>
-                      <ChevronRight className="h-4 w-4 text-slate-400 dark:text-slate-500 shrink-0" />
+                      <ChevronRight className="h-4 w-4 text-slate-400 dark:text-slate-400 shrink-0" />
                     </Link>
                   );
                 }
@@ -147,18 +147,18 @@ export default function SearchModal({
                         <div className="text-xs font-bold text-slate-900 dark:text-white">
                           {isHi ? item.title_hi : item.title}
                         </div>
-                        <div className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5">
+                        <div className="text-[12px] text-slate-600 dark:text-slate-300 font-medium line-clamp-1 mt-0.5">
                           {item.summary}
                         </div>
                       </div>
                     </div>
-                    <ChevronRight className="h-4 w-4 text-slate-400 dark:text-slate-500 shrink-0" />
+                    <ChevronRight className="h-4 w-4 text-slate-400 dark:text-slate-400 shrink-0" />
                   </div>
                 );
               })}
             </div>
           ) : (
-            <div className="p-8 text-center text-xs text-slate-500 dark:text-slate-400">
+            <div className="p-8 text-center text-xs font-medium text-slate-600 dark:text-slate-300">
               {isHi
                 ? `"${query}" के लिए कोई परिणाम नहीं मिला। कृपया अलग शब्द खोजें।`
                 : `No results found for "${query}". Try searching with alternate keywords.`}

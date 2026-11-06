@@ -94,7 +94,7 @@ export default function SchemeFinder({
         <h1 className="mt-2 text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
           {isHi ? '🔍 योजना खोजें' : '🔍 Find Government Schemes for You'}
         </h1>
-        <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+        <p className="mt-1 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium leading-relaxed">
           {isHi
             ? 'अपने सामान्य प्रोफाइल से जुड़े कुछ सरल सवालों के उत्तर दें और जानें कि कौन सी सरकारी योजनाएं आपके लिए प्रासंगिक हो सकती हैं।'
             : 'Answer a few quick questions to discover government schemes that may be relevant to you.'}
@@ -104,9 +104,9 @@ export default function SchemeFinder({
       {/* Progress Bar */}
       {!recommendations && (
         <div className="mt-6 mb-8">
-          <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-2">
+          <div className="flex items-center justify-between text-xs text-slate-600 dark:text-slate-300 font-medium mb-2">
             <span>{isHi ? `चरण ${step} / 5` : `Question ${step} of 5`}</span>
-            <span className="font-semibold text-slate-700 dark:text-slate-300">{Math.round((step / 5) * 100)}%</span>
+            <span className="font-semibold text-slate-800 dark:text-slate-200">{Math.round((step / 5) * 100)}%</span>
           </div>
           <div className="h-2 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
             <div 

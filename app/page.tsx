@@ -407,6 +407,7 @@ function HomePageContent() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               onSearchSubmit={handleSearchSubmit}
+              onSelectScheme={handleSelectScheme}
             />
 
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 space-y-16">

@@ -32,14 +32,14 @@ export default function SchemeCard({ scheme, lang, onSelect, onCheckEligibility 
     >
       <div>
         {/* Unboxed metadata line with typographic separators */}
-        <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-2">
-          <span className="font-medium text-slate-700 dark:text-slate-300">
+        <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-300 mb-2">
+          <span className="font-semibold text-slate-800 dark:text-slate-200">
             {isHi ? scheme.stateLabel_hi : scheme.stateLabel_en}
           </span>
-          <span aria-hidden="true" className="text-slate-300 dark:text-slate-700">·</span>
+          <span aria-hidden="true" className="text-slate-400 dark:text-slate-600">·</span>
           <span>{scheme.applicationMode}</span>
-          <span aria-hidden="true" className="text-slate-300 dark:text-slate-700">·</span>
-          <span className="flex items-center gap-1 text-emerald-700 dark:text-emerald-400">
+          <span aria-hidden="true" className="text-slate-400 dark:text-slate-600">·</span>
+          <span className="flex items-center gap-1 text-emerald-700 dark:text-emerald-400 font-semibold">
             <CheckCircle2 className="h-3 w-3" />
             <span>{isHi ? 'सत्यापित' : 'Verified'}</span>
           </span>
@@ -60,14 +60,14 @@ export default function SchemeCard({ scheme, lang, onSelect, onCheckEligibility 
           <div className="text-sm font-bold text-slate-900 dark:text-white mt-0.5">
             {isHi ? scheme.benefitAmount_hi : scheme.benefitAmount_en}
           </div>
-          <p className="mt-1 text-xs text-slate-600 dark:text-slate-300 line-clamp-2">
+          <p className="mt-1 text-xs text-slate-700 dark:text-slate-200 font-medium line-clamp-2">
             {isHi ? scheme.benefitSummary_hi : scheme.benefitSummary_en}
           </p>
         </div>
 
         {/* Short Who Can Apply */}
-        <div className="mt-3 text-xs text-slate-600 dark:text-slate-300">
-          <span className="font-semibold text-slate-800 dark:text-slate-200">
+        <div className="mt-3 text-xs text-slate-700 dark:text-slate-200">
+          <span className="font-semibold text-slate-900 dark:text-white">
             {isHi ? 'पात्रता:' : 'Eligibility:'}
           </span>{' '}
           <span className="line-clamp-2">
@@ -90,7 +90,7 @@ export default function SchemeCard({ scheme, lang, onSelect, onCheckEligibility 
             <span>{isHi ? 'पात्रता जांचें →' : 'Check Eligibility →'}</span>
           </button>
         ) : (
-          <span className="text-[11px] text-slate-400 dark:text-slate-500">
+          <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">
             {isHi ? `सत्यापन: ${scheme.lastVerified}` : `Verified: ${scheme.lastVerified}`}
           </span>
         )}

@@ -63,14 +63,14 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
 
           {/* Column 2: Quick Discovery */}
           <div>
-            <h3 className="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-3">
+            <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-3">
               {lang === 'hi' ? 'योजना खोज' : 'Explore Welfare'}
             </h3>
             <ul className="space-y-2 text-xs">
               <li>
                 <button
                   onClick={() => onSelectNav('schemes')}
-                  className="hover:text-white transition-colors text-slate-400"
+                  className="hover:text-amber-400 transition-colors text-slate-300"
                 >
                   {lang === 'hi' ? 'सभी केंद्रीय व राज्य योजनाएं' : 'All Central & State Schemes'}
                 </button>
@@ -78,7 +78,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               <li>
                 <button
                   onClick={() => onSelectNav('finder')}
-                  className="hover:text-white transition-colors text-slate-400"
+                  className="hover:text-amber-400 transition-colors text-slate-300"
                 >
                   {lang === 'hi' ? 'योजना खोजें (Scheme Finder)' : 'Find Schemes for You'}
                 </button>
@@ -86,7 +86,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               <li>
                 <button
                   onClick={() => onSelectNav('checker')}
-                  className="hover:text-white transition-colors text-slate-400"
+                  className="hover:text-amber-400 transition-colors text-slate-300"
                 >
                   {lang === 'hi' ? 'पात्रता जांच कैलकुलेटर' : 'Interactive Eligibility Checker'}
                 </button>
@@ -94,7 +94,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               <li>
                 <button
                   onClick={() => onSelectNav('states')}
-                  className="hover:text-white transition-colors text-slate-400"
+                  className="hover:text-amber-400 transition-colors text-slate-300"
                 >
                   {lang === 'hi' ? 'राज्यवार योजना हब (झारखंड, बिहार, यूपी)' : 'State Hubs (Jharkhand, Bihar, UP)'}
                 </button>
@@ -102,7 +102,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               <li>
                 <button
                   onClick={() => onSelectNav('updates')}
-                  className="hover:text-white transition-colors text-slate-400"
+                  className="hover:text-amber-400 transition-colors text-slate-300"
                 >
                   {lang === 'hi' ? 'ताजा सरकारी अपडेट्स व ई-केवाईसी' : 'Latest Updates & e-KYC Deadlines'}
                 </button>

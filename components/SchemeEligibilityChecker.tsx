@@ -275,20 +275,20 @@ export default function SchemeEligibilityChecker({
             ? `${activeScheme.shortTitle_hi} पात्रता जांच` 
             : `Check ${activeScheme.shortTitle_en} Eligibility`}
         </h1>
-        <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+        <p className="mt-1 text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium leading-relaxed">
           {isHi
             ? 'इस योजना के प्रकाशित आधिकारिक पात्रता नियमों के आधार पर प्रश्नों के उत्तर दें और जानें कि क्या आपके उत्तर आवश्यकताओं को पूरा करते प्रतीत होते हैं।'
             : 'Answer questions based on the published eligibility criteria for this scheme to understand whether your answers appear to meet the requirements.'}
         </p>
 
-        <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+        <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-slate-600 dark:text-slate-300">
           <div className="flex items-center gap-1 font-medium">
-            <Lock className="h-3 w-3 text-slate-400" />
+            <Lock className="h-3 w-3 text-slate-500 dark:text-slate-400" />
             <span>{isHi ? '🔒 कोई डेटा संग्रहीत नहीं' : '🔒 Zero Data Stored'}</span>
           </div>
           <span>·</span>
           <div className="flex items-center gap-1">
-            <Calendar className="h-3 w-3 text-slate-400" />
+            <Calendar className="h-3 w-3 text-slate-500 dark:text-slate-400" />
             <span>{isHi ? `सत्यापित: ${activeScheme.lastVerified}` : `Verified: ${activeScheme.lastVerified}`}</span>
           </div>
         </div>
@@ -297,9 +297,9 @@ export default function SchemeEligibilityChecker({
       {/* Progress Bar (During Questionnaire) */}
       {!evaluation && (
         <div className="mt-6 mb-8">
-          <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-2">
+          <div className="flex items-center justify-between text-xs text-slate-600 dark:text-slate-300 font-medium mb-2">
             <span>{isHi ? `प्रश्न ${currentQuestionIndex + 1} / ${totalQuestions}` : `Question ${currentQuestionIndex + 1} of ${totalQuestions}`}</span>
-            <span className="font-semibold text-slate-700 dark:text-slate-300">
+            <span className="font-semibold text-slate-800 dark:text-slate-200">
               {Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100)}%
             </span>
           </div>
@@ -340,7 +340,7 @@ export default function SchemeEligibilityChecker({
                       className={`p-4 text-left rounded-xl border text-xs sm:text-sm font-medium transition-all flex items-center justify-between ${
                         isSelected
                           ? 'border-emerald-600 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-300 font-semibold shadow-xs'
-                          : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700'
+                          : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800/80 text-slate-800 dark:text-slate-100 font-medium hover:border-slate-300 dark:hover:border-slate-700'
                       }`}
                     >
                       <span>{isHi ? option.label_hi : option.label_en}</span>
