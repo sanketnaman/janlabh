@@ -18,7 +18,7 @@ export function useLanguage() {
         // In case localStorage is blocked
       }
     }
-    return 'hi';
+    return 'en';
   });
 
   useEffect(() => {

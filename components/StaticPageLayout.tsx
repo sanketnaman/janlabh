@@ -31,8 +31,16 @@ export default function StaticPageLayout({
   const handleSelectNav = (navId: string) => {
     if (navId === 'home') {
       router.push('/');
-    } else if (navId === 'schemes' || navId === 'finder' || navId === 'checker' || navId === 'states' || navId === 'updates') {
-      router.push(`/?nav=${navId}`);
+    } else if (navId === 'schemes') {
+      router.push('/schemes');
+    } else if (navId === 'finder') {
+      router.push('/finder');
+    } else if (navId === 'checker') {
+      router.push('/checker');
+    } else if (navId === 'states') {
+      router.push('/states');
+    } else if (navId === 'updates') {
+      router.push('/updates');
     } else if (navId === 'trust' || navId === 'editorial') {
       router.push('/about');
     }

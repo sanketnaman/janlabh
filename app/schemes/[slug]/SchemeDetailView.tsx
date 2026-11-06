@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useLanguage } from '@/hooks/useLanguage';
 import { useTheme } from '@/hooks/useTheme';
 import { Scheme, Language } from '@/types';
 import { SCHEMES } from '@/data/schemes';
@@ -40,10 +39,10 @@ interface SchemeDetailViewProps {
   initialLang?: Language;
 }
 
-export default function SchemeDetailView({ scheme, initialLang }: SchemeDetailViewProps) {
+export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeDetailViewProps) {
   const router = useRouter();
-  const { lang, toggleLanguage } = useLanguage();
-  const currentLang = initialLang || lang;
+  const currentLang = initialLang;
+  const lang = currentLang;
   const isHi = currentLang === 'hi';
   const { isDark, toggleTheme } = useTheme();
   const [searchModalOpen, setSearchModalOpen] = useState(false);
@@ -181,12 +180,10 @@ export default function SchemeDetailView({ scheme, initialLang }: SchemeDetailVi
       <Header
         lang={currentLang}
         onToggleLang={() => {
-          if (initialLang === 'hi') {
+          if (isHi) {
             router.push(`/schemes/${scheme.slug}`);
-          } else if (initialLang === 'en') {
-            router.push(`/hi/schemes/${scheme.slug}`);
           } else {
-            toggleLanguage();
+            router.push(`/hi/schemes/${scheme.slug}`);
           }
         }}
         onOpenSearch={() => setSearchModalOpen(true)}
@@ -735,11 +732,13 @@ export default function SchemeDetailView({ scheme, initialLang }: SchemeDetailVi
         lang={lang}
         onSelectScheme={(s) => {
           setSearchModalOpen(false);
-          router.push(`/schemes/${s.slug}`);
+          const prefix = isHi ? '/hi' : '';
+          router.push(`${prefix}/schemes/${s.slug}`);
         }}
         onSelectUpdate={() => {
           setSearchModalOpen(false);
-          router.push('/');
+          const prefix = isHi ? '/hi' : '';
+          router.push(prefix || '/');
         }}
         allSchemes={SCHEMES}
       />

@@ -3,7 +3,6 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useLanguage } from '@/hooks/useLanguage';
 import { useTheme } from '@/hooks/useTheme';
 import { Scheme, Language } from '@/types';
 import { CATEGORIES, STATES } from '@/data/categories';
@@ -31,13 +30,12 @@ interface SchemesDirectoryClientProps {
 
 export default function SchemesDirectoryClient({
   schemes,
-  initialLang,
+  initialLang = 'en',
   initialCategory = 'all',
   initialState = 'all',
 }: SchemesDirectoryClientProps) {
   const router = useRouter();
-  const { lang, toggleLanguage, isHi } = useLanguage();
-  const currentLang = initialLang || lang;
+  const currentLang = initialLang;
   const isHindi = currentLang === 'hi';
 
   const { isDark, toggleTheme } = useTheme();
@@ -87,7 +85,13 @@ export default function SchemesDirectoryClient({
     <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
       <Header
         lang={currentLang}
-        onToggleLang={toggleLanguage}
+        onToggleLang={() => {
+          if (isHindi) {
+            router.push('/schemes');
+          } else {
+            router.push('/hi/schemes');
+          }
+        }}
         onOpenSearch={() => setSearchModalOpen(true)}
         onSelectNav={(nav) => {
           const prefix = isHindi ? '/hi' : '';

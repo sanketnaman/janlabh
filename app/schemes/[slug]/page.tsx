@@ -140,7 +140,7 @@ export default async function SchemePage({ params }: SchemePageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <SchemeDetailView scheme={scheme} />
+      <SchemeDetailView scheme={scheme} initialLang="en" />
     </>
   );
 }
