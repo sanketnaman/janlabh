@@ -765,150 +765,247 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'pm-awas-yojana',
     slug: 'pm-awas-yojana-pmay-housing',
-    title_en: 'PM Awas Yojana (PMAY-G & PMAY-U 2.0): Subsidy, Beneficiary List & Eligibility',
-    title_hi: 'प्रधानमंत्री आवास योजना (PMAY): पक्का मकान सहायता, नई सूची व पात्रता',
-    shortTitle_en: 'PM Awas Yojana (PMAY)',
+    title_en: 'PM Awas Yojana 2026 (PMAY 2.0): New Gramin & Urban List, Status Check & Apply',
+    title_hi: 'पीएम आवास योजना 2026: नई ग्रामीण/शहरी लिस्ट में नाम देखें, ₹1.20-₹2.50 लाख व स्टेटस',
+    shortTitle_en: 'PM Awas Yojana (PMAY 2.0)',
     shortTitle_hi: 'प्रधानमंत्री आवास योजना (PMAY)',
     category: 'housing',
     state: 'all-india',
     stateLabel_en: 'Central (All India)',
     stateLabel_hi: 'केंद्र सरकार (अखिल भारतीय)',
     status: 'Updated',
-    lastVerified: 'October 26, 2026',
+    lastVerified: 'November 2026',
     
-    benefitSummary_en: 'Financial assistance of ₹1,20,000 (plain areas) to ₹1,30,000 (hilly/difficult areas) for rural construction + 90/95 days of MGNREGA wages and ₹12,000 for toilet construction. PMAY-Urban 2.0 provides interest subsidy and affordable housing grants up to ₹2.5 Lakh.',
-    benefitSummary_hi: 'ग्रामीण क्षेत्रों में पक्का मकान बनाने हेतु ₹1,20,000 (मैदानी) से ₹1,30,000 (पहाड़ी/दुर्गम) की सीधी सहायता, 90-95 दिनों की मनरेगा मजदूरी और ₹12,000 शौचालय सहायता। शहरी 2.0 में ₹2.5 लाख तक की ब्याज सब्सिडी व अनुदान।',
+    benefitSummary_en: 'Financial grant of ₹1,20,000 (plain areas) to ₹1,30,000 (hilly/NE states) for rural pucca house construction + 90-95 days of MGNREGA wages (₹25,000+) and ₹12,000 toilet grant. PMAY-Urban 2.0 provides interest subsidies and construction grants up to ₹2.5 Lakh.',
+    benefitSummary_hi: 'ग्रामीण क्षेत्रों में पक्का मकान बनाने हेतु ₹1,20,000 (मैदानी) से ₹1,30,000 (पहाड़ी/पूर्वोत्तर) की सीधी आर्थिक सहायता, 90-95 दिनों की मनरेगा मजदूरी (₹25,000+) और ₹12,000 शौचालय सहायता। शहरी 2.0 में ₹2.5 लाख तक की ब्याज सब्सिडी व अनुदान।',
     benefitAmount_en: '₹1.2 Lakh to ₹2.5 Lakh grant/subsidy',
     benefitAmount_hi: '₹1.20 लाख से ₹2.50 लाख तक का अनुदान/सब्सिडी',
     whoCanApply_en: 'Homeless households or families living in kutcha, dilapidated houses with no family member in government service.',
-    whoCanApply_hi: 'बेघर परिवार या कच्चे/जीर्ण-शीर्ण मकानों में रहने वाले नागरिक जिनके परिवार में कोई सरकारी नौकरी न हो।',
-    applicationMode: 'Offline & Online (via Gram Panchayat Survey & Urban Portal)',
+    whoCanApply_hi: 'बेघर परिवार या कच्चे/जीर्ण-शीर्ण मकानों में रहने वाले नागरिक जिनके पूरे परिवार में कोई सरकारी नौकरी या पक्का मकान न हो।',
+    applicationMode: 'Offline (Gram Panchayat Awaas+ Survey) & Online (pmaymis.gov.in)',
     bannerImage: '/images/schemes/pm-awas-yojana.webp',
     
-    whatIsThis_en: 'Pradhan Mantri Awas Yojana (PMAY) is India’s flagship affordable housing mission guaranteeing pucca houses with basic amenities like water, sanitation, and electricity to all eligible homeless and kutcha-dwelling households in rural and urban sectors.',
-    whatIsThis_hi: 'प्रधानमंत्री आवास योजना भारत सरकार का एक महत्वाकांक्षी मिशन है, जिसके तहत देश के सभी बेघर और कच्चे घरों में रहने वाले परिवारों को बुनियादी सुविधाओं (शौचालय, बिजली, रसोई गैस) से युक्त पक्का मकान उपलब्ध कराया जाता है।',
+    whatIsThis_en: 'Pradhan Mantri Awas Yojana (PMAY-G & PMAY-U 2.0) is India’s flagship affordable housing mission ensuring that every homeless and kutcha-dwelling family receives a durable, hygienic pucca house equipped with clean tap water, sanitary toilet, electricity connection, and LPG cylinder under central convergent schemes.',
+    whatIsThis_hi: 'प्रधानमंत्री आवास योजना (ग्रामीण व शहरी 2.0) भारत सरकार का राष्ट्रीय आवास मिशन है, जिसका उद्देश्य देश के सभी बेघर और कच्चे/टूटे-फूटे मकानों में रहने वाले जरूरतमंद परिवारों को बुनियादी सुविधाओं (शौचालय, नल से जल, बिजली और उज्ज्वला गैस) से युक्त सुरक्षित पक्का मकान उपलब्ध कराना है।',
     
     benefitsList_en: [
-      'Direct installment releases pegged to geo-tagged physical construction stages (Plinth, Lintel, Roof level).',
-      'Additional 90 to 95 days of unskilled wage employment under MGNREGS (approx. ₹20,000–₹25,000).',
-      '₹12,000 dedicated financial assistance for toilet construction under Swachh Bharat Mission (Grameen).',
-      'Free LPG connection under PM Ujjwala Yojana and electricity tap under Saubhagya.'
+      'Direct stage-wise DBT bank transfers pegged to verified geo-tagged physical construction milestones (Plinth, Lintel, Roof level).',
+      'Additional 90 to 95 days of unskilled wage employment under MGNREGA credited directly to the beneficiary (approx. ₹20,000–₹25,000).',
+      '₹12,000 dedicated financial grant for toilet construction under Swachh Bharat Mission (Grameen).',
+      'Free LPG connection under PM Ujjwala Yojana and priority electricity connection under Saubhagya.',
+      'PMAY-U 2.0: Up to ₹2.5 Lakh interest subsidy on affordable home loans for EWS/LIG families in urban municipal jurisdictions.'
     ],
     benefitsList_hi: [
-      'मकान निर्माण के विभिन्न स्तरों (नींव, लिंटेल, छत) की जियो-टैगिंग के बाद सीधे बैंक में किस्तों का भुगतान।',
-      'मनरेगा के तहत 90 से 95 दिनों की अकुशल मजदूरी का अतिरिक्त लाभ (लगभग ₹20,000 से ₹25,000)।',
-      'स्वच्छ भारत मिशन के तहत शौचालय निर्माण के लिए ₹12,000 की अलग सरकारी सहायता।',
-      'उज्ज्वला योजना के तहत मुफ्त गैस कनेक्शन और सौभाग्य योजना से बिजली कनेक्शन की प्राथमिकता।'
+      'मकान निर्माण के विभिन्न चरणों (नींव, लिंटेल, छत ढलाई) के पारदर्शी जियो-टैग सत्यापन के बाद सीधे बैंक खाते में DBT किस्तों का भुगतान।',
+      'मनरेगा के अंतर्गत 90 से 95 दिनों की अकुशल मजदूरी का अतिरिक्त आर्थिक लाभ (लगभग ₹20,000 से ₹25,000 सीधे खाते में)।',
+      'स्वच्छ भारत मिशन के तहत शौचालय निर्माण हेतु ₹12,000 की अलग निःशुल्क सरकारी सहायता।',
+      'उज्ज्वला योजना के तहत मुफ्त गैस कनेक्शन और सौभाग्य योजना से निःशुल्क बिजली कनेक्शन।',
+      'पीएम आवास शहरी 2.0: मध्यम और निम्न आय वर्ग (EWS/LIG) के परिवारों हेतु होम लोन पर ₹2.50 लाख तक की ब्याज सब्सिडी।'
     ],
     
     eligibility: {
       eligibleIf_en: [
-        'Family does not own a pucca house anywhere in India.',
+        'Family does not own a pucca house anywhere in India in the name of any family member.',
         'Household living in houses with zero, one, or two rooms with kutcha walls and kutcha roof.',
-        'Identified through Awaas+ surveys or SECC priority deprivation criteria.',
-        'Landless households deriving a major part of their income from manual casual labor.'
+        'Identified through Awaas+ priority survey database or SECC deprivation criteria.',
+        'Landless households deriving a major part of their income from manual casual labor.',
+        'Female-headed households, SC/ST, minority, and differently-abled (PwD) families receive special priority.'
       ],
       eligibleIf_hi: [
-        'पूरे देश में परिवार के किसी भी सदस्य के नाम पर कोई पक्का मकान न हो।',
-        'परिवार कच्चे छप्पर/दीवारों वाले एक या दो कमरों के मकान में रहता हो।',
-        'आवास प्लस (Awaas+) सर्वे या एसईसीसी प्राथमिकता सूची में नाम दर्ज हो।',
-        'भूमिहीन परिवार जिनकी आय का मुख्य स्रोत दिहाड़ी मजदूरी हो।'
+        'पूरे देश में परिवार के किसी भी सदस्य के नाम पर कोई पक्का मकान पंजीकृत न हो।',
+        'परिवार कच्चे छप्पर, मिट्टी या घास-फूस की दीवारों वाले एक या दो कमरों के मकान में रहता हो।',
+        'आवास प्लस (Awaas+) आधिकारिक सर्वे या एसईसीसी प्राथमिकता सूची में नाम दर्ज हो।',
+        'भूमिहीन परिवार जिनकी आजीविका का मुख्य साधन दिहाड़ी मजदूरी हो।',
+        'महिला मुखिया वाले परिवार, अनुसूचित जाति/जनजाति (SC/ST), अल्पसंख्यक और दिव्यांगजन परिवारों को प्राथमिकता।'
       ],
       notEligibleIf_en: [
-        'Households owning motorized two/three/four wheelers, mechanized three/four wheeler agricultural equipment.',
-        'Families with any member who is a government servant or income tax payer.',
-        'Households holding Kisan Credit Card with credit limit of ₹50,000 or above.',
-        'Households with any member earning more than ₹15,000 per month.'
+        'Households owning motorized two/three/four wheelers, motorized fishing boats, or mechanized agricultural equipment like tractors.',
+        'Families with any member who is a regular government employee or pays income/professional tax.',
+        'Households holding a Kisan Credit Card (KCC) with credit limit of ₹50,000 or above.',
+        'Households with any member earning more than ₹15,000 per month.',
+        'Families who have previously received housing assistance under Indira Awaas Yojana or PMAY.'
       ],
       notEligibleIf_hi: [
-        'जिनके पास मोटरयुक्त दो/तीन/चार पहिया वाहन या ट्रैक्टर जैसे कृषि उपकरण हों।',
-        'परिवार में कोई भी सदस्य सरकारी कर्मचारी हो या आयकर देता हो।',
-        '₹50,000 या अधिक की सीमा वाला किसान क्रेडिट कार्ड धारक परिवार।',
-        'परिवार का कोई सदस्य ₹15,000 से अधिक मासिक कमाता हो।'
+        'जिनके पास मोटरयुक्त दो/तीन/चार पहिया वाहन, नाव या ट्रैक्टर/हार्वेस्टर जैसे कृषि उपकरण हों।',
+        'परिवार में कोई भी सदस्य नियमित सरकारी/पीएसयू कर्मचारी हो या आयकर/प्रोफेशनल टैक्स देता हो।',
+        '₹50,000 या अधिक की क्रेडिट सीमा वाला किसान क्रेडिट कार्ड (KCC) धारक परिवार।',
+        'परिवार का कोई सदस्य ₹15,000 से अधिक मासिक कमाता हो या व्यापार में पंजीकृत हो।',
+        'जिन परिवारों को पहले कभी इंदिरा आवास योजना अथवा पीएम आवास योजना का लाभ मिल चुका हो।'
       ]
     },
     
     requiredDocuments_en: [
-      'Aadhaar Card of all family members',
-      'Bank Account Passbook (Aadhaar linked for DBT installments)',
-      'Job Card number (MGNREGA) to claim unskilled wage entitlement',
-      'Consent letter and land title or certificate of possession',
-      'Photograph of existing kutcha dwelling'
+      'Aadhaar Card of all family members (mandatory for biometric & DBT linkage)',
+      'Bank Account Passbook (Account must be Aadhaar-seeded / NPCI active for DBT fund transfer)',
+      'Job Card number (MGNREGA) to claim 90-95 days of unskilled construction wages',
+      'Proof of land ownership, Pattadar passbook, or local Gram Panchayat possession certificate',
+      'Clear photograph of existing kutcha house before commencement of construction',
+      'Active Mobile number for status updates and OTP verification'
     ],
     requiredDocuments_hi: [
-      'परिवार के सभी सदस्यों का आधार कार्ड',
-      'बैंक खाता पासबुक (डीबीटी से जुड़ा सक्रिय खाता)',
-      'मनरेगा जॉब कार्ड संख्या (मजदूरी भुगतान हेतु)',
-      'जमीन का स्वामित्व प्रमाण या पट्टा/दखल प्रमाण पत्र',
-      'वर्तमान कच्चे मकान की स्पष्ट तस्वीर'
+      'परिवार के सभी सदस्यों का आधार कार्ड (पहचान व डीबीटी सत्यापन हेतु अनिवार्य)',
+      'बैंक खाता पासबुक (खाता एनपीसीआई आधार सीडेड होना चाहिए ताकि किस्त सीधे क्रेडिट हो)',
+      'मनरेगा जॉब कार्ड (90-95 दिनों की मजदूरी का भुगतान पाने हेतु)',
+      'जमीन का स्वामित्व प्रमाण पत्र, खतियान, पर्चा या ग्राम पंचायत द्वारा निर्गत दखल प्रमाण पत्र',
+      'वर्तमान कच्चे मकान की स्पष्ट तस्वीर (जियो-टैगिंग से पहले की)',
+      'सक्रिय मोबाइल नंबर (एसएमएस अलर्ट व ओटीपी हेतु)'
     ],
     
     howToApply_en: [
-      'For PMAY-G (Rural): Beneficiary selection is conducted through official Gram Sabha verification and Awaas+ survey conducted by the Panchayat Secretary / Mukhiya.',
-      'Check your name in the official Gram Panchayat Awaas+ waiting list.',
-      'For PMAY-U 2.0 (Urban): Visit pmaymis.gov.in and click "Citizen Assessment" or apply via your local Urban Local Body / Nagar Palika office.',
-      'Complete biometric e-KYC and upload identity and property possession documents.',
-      'A physical survey and geo-tagging will be conducted by authorized municipal or block officials before approval.'
+      'For PMAY-G (Rural): Beneficiary identification is done through the official Awaas+ 2024-2026 mobile app survey conducted by your local Panchayat Secretary and Gram Rozgar Sahayak.',
+      'Check your name in the Gram Panchayat Permanent Waiting List (PWL) published at your Block / Panchayat office.',
+      'Submit your Aadhaar, bank passbook, and land ownership document to the Panchayat Secretary for registration on the AwaasSoft portal.',
+      'For PMAY-U 2.0 (Urban): Visit the official portal pmaymis.gov.in and click on "Citizen Assessment" or apply at your local Municipal Corporation / Nagar Palika office.',
+      'Municipal and block officials conduct physical verification and geo-tag your kutcha house before sanctioning the financial grant.'
     ],
     howToApply_hi: [
-      'पीएम आवास ग्रामीण (PMAY-G): चयन ग्राम सभा और आवास प्लस सर्वे के आधार पर पंचायत सचिव/मुखिया द्वारा किया जाता है।',
-      'अपनी ग्राम पंचायत की स्थायी प्रतीक्षा सूची (Waitlist) में अपना नाम देखें।',
-      'पीएम आवास शहरी (PMAY-U): pmaymis.gov.in पर जाएं और "Citizen Assessment" पर क्लिक करें अथवा नगरपालिका कार्यालय जाएं।',
-      'बायोमेट्रिक ई-केवाईसी पूर्ण करें और पहचान व भूमि दस्तावेज संलग्न करें।',
-      'ब्लॉक या नगरपालिका के अधिकारियों द्वारा मौके पर जाकर कच्चे मकान की जियो-टैगिंग की जाएगी।'
+      'पीएम आवास ग्रामीण (PMAY-G): चयन पंचायत सचिव और ग्राम रोजगार सेवक द्वारा आवास प्लस (Awaas+ 2024-2026) ऐप पर किए गए सर्वे द्वारा होता है।',
+      'अपनी ग्राम पंचायत या प्रखंड कार्यालय में प्रकाशित स्थायी प्रतीक्षा सूची (Waiting List) में अपना नाम देखें।',
+      'अपना आधार कार्ड, बैंक पासबुक और जमीन के कागजात पंचायत सचिव को सौंपें ताकि आवास-सॉफ्ट (AwaasSoft) पोर्टल पर आपका रजिस्ट्रेशन हो सके।',
+      'पीएम आवास शहरी (PMAY-U 2.0): आधिकारिक पोर्टल pmaymis.gov.in पर जाएं और "Citizen Assessment" विकल्प से ऑनलाइन फॉर्म भरें अथवा नजदीकी नगर निगम/नगर पालिका कार्यालय जाएं।',
+      'ब्लॉक या नगर पालिका के अधिकारी मौके पर जाकर कच्चे मकान की पहली जियो-टैगिंग करेंगे, जिसके बाद स्वीकृति आदेश जारी होता है।'
     ],
     
-    statusCheckGuide_en: 'Visit rhreporting.nic.in (for Rural) and click on "Report > Physical Progress > High Level Physical Progress Report" or enter your Registration Number. For Urban, visit pmaymis.gov.in > "Search Beneficiary".',
-    statusCheckGuide_hi: 'ग्रामीण आवास का स्टेटस देखने के लिए rhreporting.nic.in पर जाएं और अपना रजिस्ट्रेशन नंबर दर्ज करें। शहरी आवास के लिए pmaymis.gov.in पर "Search Beneficiary" पर जाएं।',
+    statusCheckGuide_en: 'To check your PMAY application status: 1. For Rural: Visit rhreporting.nic.in > Stakeholders > click "IAY/PMAYG Beneficiary". Enter your Registration Number (or click "Advanced Search" by State, District, Block, and Name) to view installment credit dates and FTO status. 2. For Urban: Visit pmaymis.gov.in > Search Beneficiary.',
+    statusCheckGuide_hi: 'पीएम आवास का स्टेटस देखने के लिए: 1. ग्रामीण: आधिकारिक पोर्टल rhreporting.nic.in पर जाएं > Stakeholders मेनू में "IAY/PMAYG Beneficiary" पर क्लिक करें। अपना रजिस्ट्रेशन नंबर दर्ज करें (रजिस्ट्रेशन नंबर न पता हो तो "Advanced Search" से राज्य, जिला, ब्लॉक और नाम चुनकर खोजें)। यहाँ आपको किस्तों का भुगतान और FTO स्टेटस दिखाई देगा। 2. शहरी: pmaymis.gov.in पर जाकर Search Beneficiary पर क्लिक करें।',
     officialStatusUrl: 'https://rhreporting.nic.in',
     
     commonProblems_en: [
       {
-        problem: 'Installment delayed after plinth completion',
-        solution: 'Contact your Panchayat Secretary or Block Coordinator to schedule the physical geo-tag photo upload on the AwaasSoft mobile app.'
+        problem: 'Second or Third installment delayed after construction milestone',
+        solution: 'Immediately contact your Panchayat Secretary or Block Housing Coordinator to schedule the physical geo-tag photo upload on the AwaasSoft mobile app. The next fund transfer order (FTO) is generated within 7 days of geo-tag approval.'
+      },
+      {
+        problem: 'FTO generated but installment money not received in bank account',
+        solution: 'Ensure your bank account is active and mapped to NPCI Aadhaar DBT. If the account is dormant or has an old IFSC code after bank mergers, visit your bank to re-seed Aadhaar.'
+      },
+      {
+        problem: 'Name missing from Awaas+ 2026 rural waiting list',
+        solution: 'Submit a representation during the special Gram Sabha meeting or appeal to the Block Development Officer (BDO) with photographic proof of your kutcha dwelling.'
       }
     ],
     commonProblems_hi: [
       {
-        problem: 'नींव (Plinth) बनने के बाद अगली किस्त नहीं आई',
-        solution: 'अपने पंचायत सचिव या आवास समन्वयक से संपर्क कर आवास-सॉफ्ट (AwaasSoft) ऐप पर निर्माण की अगली जियो-टैग फोटो अपलोड करवाएं।'
+        problem: 'नींव या लिंटेल बनने के बाद दूसरी/तीसरी किस्त खाते में नहीं आई',
+        solution: 'तुरंत अपने पंचायत सचिव या आवास समन्वयक से मिलें और आवास-सॉफ्ट (AwaasSoft) ऐप पर निर्माण की अगली जियो-टैग फोटो अपलोड करवाएं। फोटो स्वीकृत होने के 7 से 15 दिनों में अगली किस्त जारी हो जाती है।'
+      },
+      {
+        problem: 'FTO बन गया है लेकिन बैंक खाते में पैसा क्रेडिट नहीं हुआ',
+        solution: 'जांचें कि आपका बैंक खाता आधार से एनपीसीआई (NPCI DBT) मैप है या नहीं। यदि खाता इनएक्टिव है, तो बैंक शाखा जाकर नया आधार सीडिंग फॉर्म जमा करें।'
+      },
+      {
+        problem: 'आवास प्लस की नई सूची में नाम नहीं दिख रहा',
+        solution: 'विशेष ग्राम सभा बैठक में अपनी आपत्ति दर्ज कराएं या कच्चे मकान की फोटो व पहचान पत्र के साथ प्रखंड विकास पदाधिकारी (BDO) को आवेदन दें।'
       }
     ],
     
     faqs_en: [
       {
-        q: 'Can a person who already received Indira Awaas apply for PMAY?',
-        a: 'No. Any household that has previously benefited from government housing schemes (Indira Awaas or PMAY) is strictly excluded.'
+        q: 'How to check your name in the PM Awas Yojana 2026 Gramin & Urban list online?',
+        a: 'For Rural (PMAY-G): Visit rhreporting.nic.in > click "High Level Physical Progress Report" or "Category-wise SECC data verification summary" > select your State, District, Block, and Gram Panchayat to view the complete list with sanctioned amounts. For Urban (PMAY-U): Visit pmaymis.gov.in > Search Beneficiary by Aadhaar.'
+      },
+      {
+        q: 'How much total financial assistance is provided under PM Awas Yojana in 2026?',
+        a: 'In rural areas (PMAY-G), plain areas receive ₹1,20,000 and hilly/difficult/North-Eastern states receive ₹1,30,000. Additionally, beneficiaries receive 90–95 days of MGNREGA wages (approx. ₹20,000–₹25,000) and ₹12,000 for toilet construction, taking total assistance to over ₹1.50 Lakh. Urban PMAY 2.0 provides grants and interest subsidies up to ₹2.50 Lakh.'
+      },
+      {
+        q: 'When will the PM Awas Yojana 2nd and 3rd installments be released?',
+        a: 'The 1st installment is released immediately upon sanction for foundation excavation. The 2nd installment is released within 7–15 days after plinth-level completion and official geo-tagged photo verification on AwaasSoft. The 3rd and final installment is credited upon reaching the roof lintel level.'
+      },
+      {
+        q: 'How to check PM Awas payment status using Aadhaar Card or Mobile Number?',
+        a: 'Go to rhreporting.nic.in > Stakeholders > IAY/PMAYG Beneficiary. If you do not have your registration number, click "Advanced Search", choose your State, District, Block, Panchayat, and search by Aadhaar Number or Applicant Name to see all FTOs and account credit details.'
+      },
+      {
+        q: 'What is PM Awas Yojana 2.0 and who will benefit from the 3 Crore new houses?',
+        a: 'The Union Cabinet has approved PMAY 2.0 to construct 3 Crore additional pucca houses across India (2 Crore in rural areas and 1 Crore in urban areas). PMAY 2.0 expands coverage to neo-middle class families, eligible tenants, and urban poor with interest subsidies on home loans.'
+      },
+      {
+        q: 'How to apply for PM Awas Yojana online and offline in 2026?',
+        a: 'Rural: Eligible families are enrolled via the Awaas+ door-to-door survey by Panchayat officials. Urban: Eligible individuals can apply online directly at pmaymis.gov.in under "Citizen Assessment" or submit forms at local CSC centers or municipal offices.'
+      },
+      {
+        q: 'Can a family who previously received Indira Awaas Yojana benefit from PMAY?',
+        a: 'No. Government housing rules strictly exclude any family that has previously received assistance under Indira Awaas Yojana, PM Awas Yojana, or any state government housing scheme.'
+      },
+      {
+        q: 'What is the official toll-free helpline number for PM Awas Yojana?',
+        a: 'For PMAY Gramin: Toll-free numbers are 1800-11-6446 and 1800-11-3444 (Email: support-pmayg@gov.in). For PMAY Urban: Toll-free number is 1800-11-6163.'
       }
     ],
     faqs_hi: [
       {
-        q: 'जिन्हें पहले इंदिरा आवास मिला था, क्या वे दोबारा आवेदन कर सकते हैं?',
-        a: 'नहीं। जिन परिवारों को पहले सरकारी आवास योजना का लाभ मिल चुका है, वे दोबारा पात्र नहीं हैं।'
+        q: 'पीएम आवास योजना 2026 की नई ग्रामीण व शहरी लिस्ट में अपना नाम कैसे देखें?',
+        a: 'ग्रामीण आवास लिस्ट देखने के लिए rhreporting.nic.in पर जाएं > "Physical Progress Reports" में Category-wise लिस्ट पर क्लिक करें > अपना राज्य, जिला, ब्लॉक और ग्राम पंचायत चुनें। आपके गाँव के सभी चयनित लाभार्थियों के नाम और स्वीकृत राशि की सूची आ जाएगी। शहरी आवास हेतु pmaymis.gov.in पर "Search Beneficiary" पर जाएं।'
+      },
+      {
+        q: 'पीएम आवास योजना में कुल कितना पैसा मिलता है 2026 में?',
+        a: 'ग्रामीण क्षेत्रों में मैदानी इलाकों के लिए ₹1,20,000 और पहाड़ी/दुर्गम राज्यों में ₹1,30,000 की नकद सहायता मिलती है। इसके अलावा 90-95 दिनों की मनरेगा मजदूरी (₹20,000 से ₹25,000) और स्वच्छ भारत मिशन से ₹12,000 शौचालय अनुदान मिलता है, जिससे कुल लाभ ₹1.50 लाख से अधिक हो जाता है। शहरी 2.0 में ₹2.50 लाख तक की सहायता/सब्सिडी मिलती है।'
+      },
+      {
+        q: 'पीएम आवास योजना की दूसरी और तीसरी किस्त कब आएगी?',
+        a: 'पहली किस्त स्वीकृति के तुरंत बाद नींव खुदाई हेतु जारी होती है। दूसरी किस्त नींव (Plinth level) पूरी होने और आवास-सॉफ्ट (AwaasSoft) पर अधिकारी द्वारा जियो-टैग फोटो अपलोड करने के 7 से 15 दिनों के भीतर खाते में भेजी जाती है। तीसरी किस्त छत ढलाई (Roof level) पूरा होने पर जारी की जाती है।'
+      },
+      {
+        q: 'आधार कार्ड और मोबाइल नंबर से पीएम आवास का स्टेटस कैसे चेक करें?',
+        a: 'rhreporting.nic.in पर जाएं > Stakeholders मेनू में "IAY/PMAYG Beneficiary" चुनें। यदि रजिस्ट्रेशन नंबर नहीं है, तो "Advanced Search" पर क्लिक करें। अपना राज्य, जिला, ब्लॉक, पंचायत चुनें और आधार नंबर या नाम से सर्च करें। यहाँ आपको किस्तों का भुगतान और FTO स्टेटस दिखाई देगा।'
+      },
+      {
+        q: 'पीएम आवास योजना 2.0 क्या है और 3 करोड़ नए मकान किन्हें मिलेंगे?',
+        a: 'केंद्रीय मंत्रिमंडल ने 3 करोड़ अतिरिक्त परिवारों (2 करोड़ ग्रामीण और 1 करोड़ शहरी) को पक्का मकान देने हेतु PMAY 2.0 को मंजूरी दी है। इसके तहत आवास प्लस 2024-2026 के नए पात्र परिवारों तथा शहरी किराएदारों और मध्यम वर्ग (MIG) को किफायती होम लोन ब्याज सब्सिडी का लाभ दिया जा रहा है।'
+      },
+      {
+        q: 'पीएम आवास योजना में नया आवेदन कैसे करें (ऑनलाइन व ऑफलाइन)?',
+        a: 'ग्रामीण: पंचायत स्तर पर आवास प्लस (Awaas+) सर्वे के तहत पंचायत सचिव/मुखिया के माध्यम से नाम दर्ज कराया जाता है। शहरी: pmaymis.gov.in पोर्टल पर "Citizen Assessment" में जाकर ऑनलाइन फॉर्म भर सकते हैं या नजदीकी नगर पालिका/सीएससी केंद्र में आवेदन जमा कर सकते हैं।'
+      },
+      {
+        q: 'जिन्हें पहले इंदिरा आवास या सरकारी मकान मिला था, क्या वे दोबारा आवेदन कर सकते हैं?',
+        a: 'नहीं। सरकारी नियमों के अनुसार यदि परिवार के किसी भी सदस्य को पहले इंदिरा आवास, पीएम आवास या किसी राज्यीय आवास योजना का लाभ मिल चुका है, तो वह परिवार दोबारा पात्र नहीं होगा।'
+      },
+      {
+        q: 'पीएम आवास योजना का आधिकारिक हेल्पलाइन और शिकायत नंबर क्या है?',
+        a: 'पीएम आवास ग्रामीण की आधिकारिक टोल-फ्री हेल्पलाइन 1800-11-6446 एवं 1800-11-3444 है (ईमेल: support-pmayg@gov.in)। शहरी आवास योजना हेतु टोल-फ्री हेल्पलाइन 1800-11-6163 है।'
       }
     ],
     
     officialSources: [
       {
-        name: 'Ministry of Rural Development Official Portal',
+        name: 'Ministry of Rural Development Official Portal (PMAY-G)',
         authority: 'Ministry of Rural Development, Govt. of India',
         url: 'https://pmayg.nic.in',
-        verificationDate: 'October 26, 2026'
+        verificationDate: 'November 2026'
       },
       {
-        name: 'Ministry of Housing and Urban Affairs (MoHUA)',
+        name: 'Ministry of Housing and Urban Affairs (PMAY-U)',
         authority: 'Government of India',
         url: 'https://pmaymis.gov.in',
-        verificationDate: 'October 20, 2026'
+        verificationDate: 'November 2026'
       }
     ],
     keywords: [
-      'pm awas yojana', 'pmay g list', 'pm awas status', 'pmay subsidy',
-      'pm awas online apply', 'awaassoft rhreporting', 'pmay urban 2.0',
-      'प्रधानमंत्री आवास योजना', 'पीएम आवास लिस्ट', 'आवास स्टेटस'
+      'pm awas yojana', 'pmay', 'pm awas yojana gramin', 'pmay gramin', 'pm awas yojana urban',
+      'pmay urban', 'pm awas yojana 2.0', 'pmay 2.0', 'pm awas yojana 2026', 'pm awas yojana 2025',
+      'pmay scheme', 'pm awas yojana portal', 'pmayg nic in', 'pmaymis gov in', 'pmay urban gov in',
+      'pmayg dord gov in', 'awaassoft rhreporting', 'rhreporting nic in',
+      'pm awas yojana list', 'pm awas yojana gramin list', 'pm awas yojana 2026 list',
+      'pm awas yojana 2026 new list', 'pm awas yojana gramin list 2026', 'pm awas yojana 2026 list pdf download',
+      'pmay list', 'pmay gramin list', 'pmay beneficiary list check 2026', 'pmayg nic in list 2026',
+      'pm awas yojana 2026 list kaise check kare', 'pm awas yojana bihar list 2026', 'pm awas yojana up list',
+      'pmay apply online', 'pm awas yojana apply online', 'pm awas yojana online apply',
+      'pm awas yojana online apply 2026', 'pmay 2.0 apply online', 'pm awas yojana 2.0 apply online',
+      'how to apply for pm awas yojana', 'how to apply pm awas yojana gramin', 'pm awas yojana ka form kaise bharen',
+      'pmay applicant login', 'apply for pmay 2.0',
+      'pm awas yojana status', 'pm awas yojana status check', 'pmay status by application id',
+      'pmay status check with mobile number', 'how to check pm awas yojana status',
+      'pm awas yojana 2 kist kab aayegi 2026', 'pm awas yojana 2 kist kab aayegi 2026 last date',
+      'pm awas yojana kitna paisa milta hai 2026', 'pm awas yojana subsidy amount',
+      'पीएम आवास योजना', 'पीएम आवास योजना ग्रामीण', 'प्रधानमंत्री आवास योजना 2026',
+      'पीएम आवास योजना लिस्ट', 'पीएम आवास योजना 2026 की नई लिस्ट', 'पीएम आवास योजना में कितना पैसा मिलता है',
+      'पीएम आवास योजना ऑनलाइन आवेदन', 'पीएम आवास योजना स्टेटस', 'पीएम आवास 2 किस्त कब आएगी',
+      'पीएम आवास योजना 2.0', 'आवास प्लस नई लिस्ट 2026', 'प्रधानमंत्री ग्रामीण आवास योजना'
     ],
-    metaDescription_en: 'PM Awas Yojana (PMAY-G & Urban 2.0): check ₹1.2–₹2.5 Lakh housing grants, new beneficiary lists, eligibility criteria, and official status tracking portal.',
-    metaDescription_hi: 'प्रधानमंत्री आवास योजना (PMAY): ₹1.20 से ₹2.50 लाख तक की मकान सहायता, आवास प्लस नई लाभार्थी सूची, नियम, आवश्यक दस्तावेज व स्टेटस जांचें।'
+    metaDescription_en: '✅ PM Awas Yojana 2026 (PMAY 2.0): Check your name in new Gramin/Urban list online. Know ₹1.20–₹2.50 Lakh assistance, 2nd installment date, Aadhaar status & apply.',
+    metaDescription_hi: '✅ पीएम आवास योजना 2026: ग्रामीण व शहरी नई लिस्ट में अपना नाम कैसे देखें? जानिए ₹1.20 लाख से ₹2.50 लाख सहायता, दूसरी किस्त की तारीख, आधार स्टेटस व ऑनलाइन आवेदन।'
   },
   {
     id: 'pm-vishwakarma',
