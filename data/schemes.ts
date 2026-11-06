@@ -4,8 +4,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'pm-kisan',
     slug: 'pm-kisan-samman-nidhi',
-    title_en: 'PM Kisan Samman Nidhi: Eligibility, Benefits, Status & Application',
-    title_hi: 'पीएम किसान सम्मान निधि: पात्रता, लाभ, स्टेटस और आवेदन प्रक्रिया',
+    title_en: 'PM Kisan Samman Nidhi 2026: 22nd Installment Date, Aadhaar Status Check, e-KYC & List',
+    title_hi: 'पीएम किसान सम्मान निधि 2026: 22वीं किस्त कब आएगी? आधार से स्टेटस चेक, e-KYC व नई लिस्ट',
     shortTitle_en: 'PM-Kisan Samman Nidhi',
     shortTitle_hi: 'प्रधानमंत्री किसान सम्मान निधि',
     category: 'farmers',
@@ -13,31 +13,33 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Central (All India)',
     stateLabel_hi: 'केंद्र सरकार (अखिल भारतीय)',
     status: 'Active',
-    lastVerified: 'October 28, 2026',
+    lastVerified: 'November 2026',
     
-    benefitSummary_en: '₹6,000 direct income support per year credited in 3 equal four-monthly installments of ₹2,000 directly to Aadhaar-seeded bank accounts.',
-    benefitSummary_hi: 'प्रति वर्ष ₹6,000 की प्रत्यक्ष आर्थिक सहायता, जो ₹2,000 की 3 समान किस्तों में सीधे आधार-सीडेड बैंक खाते में डीबीटी द्वारा भेजी जाती है।',
-    benefitAmount_en: '₹6,000 / year (3 installments)',
-    benefitAmount_hi: '₹6,000 प्रति वर्ष (3 किस्तें)',
+    benefitSummary_en: '₹6,000 direct income support per year credited in 3 equal four-monthly installments of ₹2,000 directly to Aadhaar-seeded bank accounts via DBT.',
+    benefitSummary_hi: 'प्रति वर्ष ₹6,000 की प्रत्यक्ष आर्थिक सहायता, जो ₹2,000 की 3 समान किस्तों में सीधे आधार-सीडेड बैंक खाते में डीबीटी (DBT) द्वारा भेजी जाती है।',
+    benefitAmount_en: '₹6,000 / year (₹2,000 every 4 months)',
+    benefitAmount_hi: '₹6,000 प्रति वर्ष (₹2,000 की 3 किस्तें)',
     whoCanApply_en: 'Small and marginal landholding farmer families with cultivable land parcels in their name.',
-    whoCanApply_hi: 'छोटे व सीमांत किसान परिवार जिनके नाम पर कृषि योग्य भूमि के वैध राजस्व दस्तावेज दर्ज हैं।',
-    applicationMode: 'Online & Offline',
+    whoCanApply_hi: 'छोटे व सीमांत किसान परिवार जिनके नाम पर कृषि योग्य भूमि के वैध राजस्व दस्तावेज (खतियान/जमाबंदी) दर्ज हैं।',
+    applicationMode: 'Online (pmkisan.gov.in) & Offline (CSC Center)',
     bannerImage: '/images/schemes/pm-kisan-samman-nidhi.png',
     
-    whatIsThis_en: 'PM Kisan Samman Nidhi is a 100% Central Government funded initiative designed to provide financial support to landholding farmer families across India to procure agricultural inputs like seeds, fertilizers, and meet household expenses without turning to high-interest moneylenders.',
-    whatIsThis_hi: 'पीएम किसान सम्मान निधि भारत सरकार की 100% केंद्र-पोषित योजना है, जिसका उद्देश्य देशभर के भूमिधारक किसान परिवारों को बीज, खाद, कीटनाशक खरीदने और कृषि संबंधी प्राथमिक आवश्यकताओं को पूरा करने हेतु आर्थिक सहायता प्रदान करना है।',
+    whatIsThis_en: 'PM Kisan Samman Nidhi is a 100% Central Government funded flagship initiative designed to provide direct financial assistance to landholding farmer families across India. The financial grant helps farmers purchase high-quality agricultural inputs like seeds, fertilizers, pesticides, and meet seasonal cultivation expenses without depending on high-interest local moneylenders.',
+    whatIsThis_hi: 'प्रधानमंत्री किसान सम्मान निधि भारत सरकार की 100% केंद्र-पोषित फ्लैगशिप योजना है, जिसका उद्देश्य देशभर के भूमिधारक किसान परिवारों को बीज, खाद, कीटनाशक खरीदने और कृषि संबंधी प्राथमिक आवश्यकताओं को पूरा करने हेतु समय पर आर्थिक संबल प्रदान करना है ताकि किसानों को महंगे साहूकारों पर निर्भर न होना पड़े।',
     
     benefitsList_en: [
       '₹2,000 sent directly to the bank account every 4 months (April-July, August-November, December-March).',
-      'Direct Benefit Transfer (DBT) eliminates middlemen and transaction fees.',
-      'Aadhaar-authenticated transfer ensures payment transparently reaches the registered cultivator.',
+      'Total ₹6,000 annual direct cash assistance without any middlemen or commission cuts.',
+      'Direct Benefit Transfer (DBT) via Aadhaar-linked NPCI payment gateway ensuring zero leakage.',
+      'Aadhaar-authenticated transfer ensures 100% transparency directly to genuine landholders.',
       'Eligible farmers can also avail low-interest Kisan Credit Card (KCC) loans up to ₹3 Lakh.'
     ],
     benefitsList_hi: [
       'हर 4 महीने में ₹2,000 सीधे बैंक खाते में (अप्रैल-जुलाई, अगस्त-नवंबर, दिसंबर-मार्च)।',
-      'प्रत्यक्ष लाभ अंतरण (DBT) से बिचौलियों की कोई भूमिका नहीं रहती।',
-      'आधार प्रमाणीकरण और भू-सत्यापन से सीधा पारदर्शी भुगतान।',
-      'लाभार्थी किसानों को रियायती ब्याज दर पर ₹3 लाख तक का किसान क्रेडिट कार्ड (KCC) भी मिलता है।'
+      'सालाना ₹6,000 की सुनिश्चित आर्थिक सहायता, बिना किसी बिचौलिए या कमीशन कटौती के।',
+      'प्रत्यक्ष लाभ अंतरण (DBT) और एनपीसीआई (NPCI) मैपिंग से सीधा पारदर्शी भुगतान।',
+      'भूमि रिकॉर्ड (Land Seeding) और बायोमेट्रिक ई-केवाईसी सत्यापन से सुरक्षित वितरण।',
+      'लाभार्थी किसानों को रियायती ब्याज दर पर ₹3 लाख तक का किसान क्रेडिट कार्ड (KCC) ऋण सुविधा।'
     ],
     
     eligibility: {
@@ -45,44 +47,46 @@ export const SCHEMES: Scheme[] = [
         'The applicant is a citizen of India residing in any State or Union Territory.',
         'The farmer family holds cultivable agricultural land registered in their name in state land records.',
         'The applicant has an active Aadhaar card linked with their bank account (NPCI DBT mapped).',
-        'e-KYC has been completed via OTP on PM-Kisan portal or biometric at CSC center.'
+        'e-KYC has been successfully completed via OTP on PM-Kisan portal or biometric at CSC center.',
+        'Land seeding verification status shows "YES" in the revenue portal database.'
       ],
       eligibleIf_hi: [
-        'आवेदक भारत का स्थायी निवासी हो।',
+        'आवेदक भारत का नागरिक हो और किसी भी राज्य या केंद्र शासित प्रदेश का निवासी हो।',
         'किसान या उसके परिवार के सदस्य के नाम पर कृषि योग्य भूमि के वैध राजस्व रिकॉर्ड (खतियान/जमाबंदी) दर्ज हों।',
         'बैंक खाता आधार कार्ड से जुड़ा हो और एनपीसीआई (NPCI) डीबीटी के लिए सक्रिय रूप से मैप हो।',
-        'पीएम किसान पोर्टल पर ओटीपी अथवा सीएससी केंद्र पर बायोमेट्रिक द्वारा ई-केवाईसी पूर्ण हो।'
+        'पीएम किसान पोर्टल पर ओटीपी अथवा सीएससी केंद्र पर बायोमेट्रिक द्वारा ई-केवाईसी पूर्ण हो।',
+        'राजस्व पोर्टल डेटाबेस में लैंड सीडिंग (Land Seeding) स्टेटस "YES" सत्यापित हो।'
       ],
       notEligibleIf_en: [
-        'Institutional landholders or holding non-agricultural land.',
-        'Present or retired constitutional post holders, Ministers, MPs, MLAs, Mayors, or Zila Panchayat Chairpersons.',
-        'Serving or retired officers and employees of Central/State Government departments and PSUs (excluding Class IV/Peons).',
+        'Institutional landholders or persons holding only non-agricultural land.',
+        'Present or retired constitutional post holders, Ministers, MPs, MLAs, MLCs, Mayors, or Zila Panchayat Chairpersons.',
+        'Serving or retired officers and employees of Central/State Government departments and PSUs (excluding Class IV / Multi-Tasking Staff).',
         'All retired pensioners receiving a monthly pension of ₹10,000 or more (excluding Class IV employees).',
         'Any individual who paid income tax in the last assessment year.',
-        'Professionals like Doctors, Engineers, Lawyers, Chartered Accountants, and Architects.'
+        'Professionals like Doctors, Engineers, Lawyers, Chartered Accountants (CA), and Registered Architects.'
       ],
       notEligibleIf_hi: [
-        'संस्थागत भूमि धारक या केवल गैर-कृषि भूमि वाले व्यक्ति।',
-        'संवैधानिक पदों के वर्तमान या पूर्व धारक, सांसद, विधायक, मंत्री, मेयर या जिला पंचायत अध्यक्ष।',
-        'केंद्र/राज्य सरकार और सार्वजनिक उपक्रमों के सेवारत या सेवानिवृत्त कर्मचारी (ग्रुप-डी/चतुर्थ श्रेणी को छोड़कर)।',
-        '₹10,000 या अधिक की मासिक पेंशन प्राप्त करने वाले सेवानिवृत्त कर्मचारी (चतुर्थ श्रेणी को छोड़कर)।',
-        'गत वित्तीय वर्ष में आयकर (Income Tax) का भुगतान करने वाले व्यक्ति।',
-        'डॉक्टर, इंजीनियर, वकील, चार्टर्ड अकाउंटेंट (सीए) और आर्किटेक्ट जैसे पेशेवर।'
+        'संस्थागत भूमि धारक या केवल गैर-कृषि / आवासीय भूमि वाले व्यक्ति।',
+        'संवैधानिक पदों के वर्तमान या पूर्व धारक, मंत्री, सांसद, विधायक, विधान पार्षद, मेयर या जिला पंचायत अध्यक्ष।',
+        'केंद्र/राज्य सरकार और सार्वजनिक उपक्रमों के सेवारत या सेवानिवृत्त कर्मचारी (ग्रुप-डी/चतुर्थ श्रेणी/एमटीएस को छोड़कर)।',
+        '₹10,000 या अधिक की मासिक पेंशन प्राप्त करने वाले सेवानिवृत्त पेंशनभोगी (चतुर्थ श्रेणी कर्मचारियों को छोड़कर)।',
+        'गत वित्तीय वर्ष में आयकर (Income Tax) का भुगतान करने वाले व्यक्ति या परिवार।',
+        'डॉक्टर, इंजीनियर, वकील, चार्टर्ड अकाउंटेंट (सीए) और आर्किटेक्ट जैसे पंजीकृत पेशेवर।'
       ]
     },
     
     requiredDocuments_en: [
-      'Aadhaar Card of the applicant farmer',
-      'Proof of land ownership (Khata, Khesra, Jamabandi / RoR document)',
-      'Bank Account Passbook (Bank account must be NPCI Aadhaar Seeded)',
+      'Aadhaar Card of the applicant farmer (linked with active mobile number)',
+      'Proof of cultivable land ownership (Khata, Khesra, Jamabandi / RoR document / Land Revenue Receipt)',
+      'Bank Account Passbook (Bank account must be NPCI Aadhaar Seeded for DBT)',
       'Active Mobile Number linked to Aadhaar for OTP verification',
-      'Self-Declaration form confirming non-taxpayer status'
+      'Self-Declaration form confirming non-income-taxpayer status and eligible landholding'
     ],
     requiredDocuments_hi: [
-      'आवेदक किसान का आधार कार्ड',
-      'भूमि स्वामित्व का आधिकारिक प्रमाण (खतियान, जमाबंदी पर्चा, लगान रसीद / RoR)',
-      'बैंक पासबुक (खाता एनपीसीआई आधार सीडेड होना अनिवार्य है)',
-      'आधार से लिंक सक्रिय मोबाइल नंबर (ओटीपी सत्यापन हेतु)',
+      'आवेदक किसान का आधार कार्ड (सक्रिय मोबाइल नंबर से लिंक)',
+      'कृषि योग्य भूमि स्वामित्व का आधिकारिक प्रमाण (खतियान, जमाबंदी पर्चा, लगान रसीद / RoR)',
+      'बैंक पासबुक (खाता एनपीसीआई आधार सीडेड व डीबीटी सक्रिय होना अनिवार्य है)',
+      'आधार से लिंक चालू मोबाइल नंबर (ओटीपी सत्यापन व स्टेटस अलर्ट हेतु)',
       'गैर-आयकरदाता एवं पात्रता का स्व-घोषणा पत्र'
     ],
     
@@ -91,8 +95,8 @@ export const SCHEMES: Scheme[] = [
       'Under the "Farmers Corner" section, click on "New Farmer Registration".',
       'Select whether you are a "Rural Farmer Registration" or "Urban Farmer Registration".',
       'Enter your 12-digit Aadhaar Number, 10-digit Mobile Number, select your State, and submit the OTP.',
-      'Fill in personal details, district, sub-district, village, and land record details (Survey/Khata No., Khasra No., Area in Hectare).',
-      'Upload the land revenue document (PDF) and submit the application.',
+      'Fill in personal details, district, sub-district, block, village, and land record details (Survey/Khata No., Khasra No., Area in Hectare).',
+      'Upload the scanned copy of your land revenue document (PDF) and submit the application.',
       'Save your Application Reference Number for tracking state revenue verification status.'
     ],
     howToApply_hi: [
@@ -105,65 +109,113 @@ export const SCHEMES: Scheme[] = [
       'पटवारी/अंचल अधिकारी द्वारा सत्यापन हेतु प्राप्त रजिस्ट्रेशन नंबर सुरक्षित रख लें।'
     ],
     
-    statusCheckGuide_en: 'To check your payment and installment status, go to pmkisan.gov.in > Farmers Corner > "Know Your Status". Enter your Registration Number or Search by Aadhaar Number. Complete the Captcha and verify OTP. Never share your OTP with unauthorized third parties.',
-    statusCheckGuide_hi: 'अपनी किस्त और आवेदन का स्टेटस देखने के लिए pmkisan.gov.in पर जाएं और "Know Your Status" विकल्प चुनें। अपना पंजीकरण नंबर या आधार नंबर दर्ज करें, कैप्चा भरें और ओटीपी सत्यापित करें। किसी भी अनजान व्यक्ति को अपना ओटीपी न दें।',
+    statusCheckGuide_en: 'To check your payment and installment status: 1. Go to pmkisan.gov.in > Farmers Corner > "Know Your Status". 2. Enter your Registration Number (or click "Know Your Registration Number" using Aadhaar or Mobile). 3. Enter the Captcha and verify OTP to view your installment release date, FTO generation status, and bank credit details. Never share your OTP with unknown callers.',
+    statusCheckGuide_hi: 'अपनी किस्त और आवेदन का स्टेटस देखने के लिए: 1. pmkisan.gov.in पर जाएं और "Know Your Status" विकल्प चुनें। 2. अपना रजिस्ट्रेशन नंबर दर्ज करें (रजिस्ट्रेशन नंबर नहीं पता तो आधार कार्ड या मोबाइल नंबर से सर्च करें)। 3. कैप्चा और ओटीपी सत्यापित करें। यहां आपको किस्त ट्रांसफर की तारीख, FTO जेनरेशन और बैंक क्रेडिट का पूरा ब्योरा दिखेगा। किसी भी अनजान व्यक्ति को अपना ओटीपी न दें।',
     officialStatusUrl: 'https://pmkisan.gov.in/BeneficiaryStatus_New.aspx',
     
     commonProblems_en: [
       {
         problem: 'Land Seeding status shows "NO"',
-        solution: 'Visit your local Circle Office (Tehsil/Block) or Agriculture Officer with your original land documents (Khata/Khesra) to link your land records in the revenue database.'
+        solution: 'Visit your local Circle Office (Tehsil/Block) or Agriculture Coordinator with your original land records (Khata/Khesra/Jamabandi) to update and link your land verification in the revenue database.'
       },
       {
-        problem: 'e-KYC Pending or Failed',
-        solution: 'Complete e-KYC directly on pmkisan.gov.in using Aadhaar OTP, or visit your nearest CSC Center for biometric fingerprint e-KYC.'
+        problem: 'e-KYC Pending or Incomplete',
+        solution: 'Complete e-KYC immediately on pmkisan.gov.in using Aadhaar OTP (free of cost), or visit your nearest CSC Center for biometric fingerprint e-KYC.'
       },
       {
         problem: 'Bank Account Not Aadhaar Seeded / DBT Inactive',
-        solution: 'Visit your bank branch and submit the "NPCI Aadhaar Seeding / Mandate Form" or open an Aadhaar-seeded account in India Post Payments Bank (IPPB).'
+        solution: 'Visit your bank branch and submit the "NPCI Aadhaar Seeding / Mandate Form", or open a DBT-enabled Aadhaar-seeded account in India Post Payments Bank (IPPB).'
+      },
+      {
+        problem: 'FTO is Generated and Payment confirmation is pending',
+        solution: 'This indicates the Central Government has verified your eligibility and sent the fund release order to PFMS. The installment will reflect in your account within a few business days.'
       }
     ],
     commonProblems_hi: [
       {
         problem: 'लैंड सीडिंग (Land Seeding) स्टेटस "NO" दिखा रहा है',
-        solution: 'अपनी जमीन के मूल कागजात (खतियान/रसीद) लेकर अपने अंचल कार्यालय (तहसील/ब्लॉक) या कृषि समन्वयक से संपर्क करें और राजस्व डेटाबेस में भू-सत्यापन करवाएं।'
+        solution: 'अपनी जमीन के मूल कागजात (खतियान, जमाबंदी रसीद) लेकर अपने तहसील/ब्लॉक कार्यालय में अंचल अधिकारी या कृषि समन्वयक से मिलें और पोर्टल पर लैंड रिकॉर्ड सत्यापित करवाएं।'
       },
       {
-        problem: 'ई-केवाईसी (e-KYC) लंबित या विफल है',
-        solution: 'पोर्टल पर आधार ओटीपी के माध्यम से मुफ्त ई-केवाईसी करें, या अपने नजदीकी सीएससी (CSC) केंद्र पर बायोमेट्रिक फिंगरप्रिंट देकर ई-केवाईसी पूर्ण कराएं।'
+        problem: 'ई-केवाईसी (e-KYC) लंबित या अधूरा है',
+        solution: 'पोर्टल पर आधार ओटीपी के माध्यम से मुफ्त ई-केवाईसी तुरंत पूर्ण करें, या नजदीकी सीएससी (CSC) केंद्र पर जाकर बायोमेट्रिक फिंगरप्रिंट द्वारा ई-केवाईसी करवाएं।'
       },
       {
         problem: 'बैंक खाता आधार से सीडेड नहीं है या डीबीटी अमान्य है',
         solution: 'अपनी बैंक शाखा में जाकर एनपीसीआई आधार सीडिंग फॉर्म जमा करें अथवा इंडिया पोस्ट पेमेंट्स बैंक (IPPB) में नया डीबीटी सक्षम खाता खुलवाएं।'
+      },
+      {
+        problem: 'FTO Generated दिखा रहा है पर पैसा नहीं आया',
+        solution: 'FTO (Fund Transfer Order) का मतलब है कि सरकार ने आपकी पात्रता स्वीकार कर भुगतान आदेश जारी कर दिया है। 2 से 4 कार्यदिवसों में राशि सीधे आपके खाते में क्रेडिट हो जाएगी।'
       }
     ],
     
     faqs_en: [
       {
+        q: 'When will the PM Kisan 21st / 22nd installment of ₹2,000 be credited in 2026?',
+        a: 'PM Kisan installments are credited in 3 regular cycles: Period 1 (April–July), Period 2 (August–November), and Period 3 (December–March). Installments are released nationwide via DBT directly by the Prime Minister. Beneficiaries can check real-time release status in the "Know Your Status" section on pmkisan.gov.in.'
+      },
+      {
+        q: 'How to check PM Kisan beneficiary status by Aadhaar Card or Mobile Number?',
+        a: "Visit pmkisan.gov.in > Click \"Know Your Status\" > If you don't remember your Registration Number, click \"Know your Registration No.\", enter your Aadhaar Card number or registered mobile number to retrieve it, and submit the OTP to see full payment history."
+      },
+      {
+        q: 'How to complete PM Kisan e-KYC online and offline?',
+        a: 'Online: Visit pmkisan.gov.in > click "e-KYC" in Farmers Corner > enter Aadhaar number > enter Aadhaar OTP. Offline: Visit any Common Service Center (CSC) and complete biometric fingerprint verification.'
+      },
+      {
+        q: 'Why is my PM Kisan ₹2,000 installment not credited? How to fix it?',
+        a: 'The three most common reasons are: 1. Land Seeding marked as "NO" (fix by submitting land records at your Block/Tehsil), 2. e-KYC incomplete, and 3. Bank account not linked to NPCI Aadhaar DBT. Once these 3 indicators show green "YES" in your status, pending arrears are automatically released.'
+      },
+      {
+        q: 'How to check your name in PM Kisan Village Wise Beneficiary List?',
+        a: 'Go to pmkisan.gov.in > Farmers Corner > click "Beneficiary List" > select your State, District, Sub-District, Block, and Village > click "Get Report" to view the complete list of registered farmers receiving benefits in your village.'
+      },
+      {
         q: 'Can both husband and wife receive PM-Kisan payments?',
-        a: 'No. The scheme definition specifies "farmer family" (consisting of husband, wife, and minor children) as a single beneficiary unit. Only one adult cultivator per family unit can receive the benefit.'
+        a: 'No. The scheme definition specifies a "farmer family" (consisting of husband, wife, and minor children) as a single beneficiary unit. Only one adult cultivator per family unit can legally receive the ₹6,000 annual benefit.'
       },
       {
-        q: 'Is PM Kisan benefit taxable?',
-        a: 'Income tax payers are legally excluded from PM-Kisan. If a recipient starts paying income tax, they must surrender the benefit and refund ineligible installments.'
+        q: 'How to do New Farmer Registration online on PM Kisan portal?',
+        a: 'Eligible farmers with cultivable land can register online at pmkisan.gov.in > "New Farmer Registration" by entering Aadhaar, mobile number, land survey/khasra details, and uploading land ownership documents. The application is verified by the local circle/revenue officer before activation.'
       },
       {
-        q: 'What is the toll-free PM-Kisan helpline number?',
-        a: 'The official Government of India PM Kisan Helpline numbers are 155261 and 011-24300606.'
+        q: 'What is the official PM Kisan toll-free helpline number?',
+        a: 'The official Government of India PM Kisan Helpline numbers are 155261, 1800-115-526 (Toll-Free), and 011-24300606.'
       }
     ],
     faqs_hi: [
       {
-        q: 'क्या पति और पत्नी दोनों को पीएम किसान का लाभ मिल सकता है?',
-        a: 'नहीं। योजना के नियमों के अनुसार पति, पत्नी और नाबालिग बच्चों को मिलाकर एक परिवार माना जाता है। एक परिवार से केवल एक ही पात्र किसान को इसका लाभ मिल सकता है।'
+        q: 'पीएम किसान की 21वीं / 22वीं किस्त का ₹2,000 खाते में कब आएगा?',
+        a: 'पीएम किसान की किस्तें साल में 3 चक्रों में जारी होती हैं: पहली किस्त (अप्रैल–जुलाई), दूसरी किस्त (अगस्त–नवंबर) और तीसरी किस्त (दिसंबर–मार्च)। माननीय प्रधानमंत्री द्वारा डीबीटी (DBT) के माध्यम से देशव्यापी किस्त जारी की जाती है। लाभार्थी pmkisan.gov.in पर "Know Your Status" में जाकर अपने खाते का लाइव क्रेडिट स्टेटस देख सकते हैं।'
       },
       {
-        q: 'यदि किसान आयकर (Income Tax) देता है तो क्या वह पात्र है?',
-        a: 'नहीं। आयकरदाता किसान इस योजना के दायरे से बाहर हैं। यदि कोई गलत तरीके से लाभ लेता है तो सरकार द्वारा वसूली की कार्रवाई की जा सकती है।'
+        q: 'आधार कार्ड और मोबाइल नंबर से पीएम किसान का स्टेटस कैसे चेक करें?',
+        a: '1. आधिकारिक वेबसाइट pmkisan.gov.in पर जाएं। 2. Farmers Corner में "Know Your Status" पर क्लिक करें। 3. यदि रजिस्ट्रेशन नंबर नहीं पता तो "Know your Registration No." लिंक पर क्लिक करें और आधार नंबर या मोबाइल नंबर दर्ज कर अपना रजिस्ट्रेशन नंबर प्राप्त करें। 4. कैप्चा व ओटीपी दर्ज कर अपनी सभी किस्तों का विवरण देखें।'
       },
       {
-        q: 'पीएम किसान की आधिकारिक हेल्पलाइन क्या है?',
-        a: 'पीएम किसान की आधिकारिक राष्ट्रीय हेल्पलाइन 155261 एवं 011-24300606 है।'
+        q: 'पीएम किसान e-KYC (ई-केवाईसी) घर बैठे कैसे पूरी करें?',
+        a: 'ऑनलाइन: pmkisan.gov.in पर जाएं > "e-KYC" पर क्लिक करें > आधार नंबर दर्ज करें > आधार से लिंक मोबाइल पर आए OTP को सत्यापित करें (यह बिल्कुल मुफ्त है)। ऑफलाइन: नजदीकी सीएससी (CSC) केंद्र पर जाकर बायोमेट्रिक फिंगरप्रिंट से ई-केवाईसी पूर्ण करवाएं।'
+      },
+      {
+        q: 'अगर खाते में ₹2,000 की किस्त नहीं आई तो क्या कारण हो सकते हैं और इसे कैसे सुधारें?',
+        a: 'किस्त रुकने के मुख्य 3 कारण होते हैं: 1. लैंड सीडिंग (Land Seeding) "NO" होना (तहसील/ब्लॉक में जमीन के कागजात जमा करें), 2. ई-केवाईसी अधूरा होना, और 3. बैंक खाते में NPCI आधार सीडिंग न होना। जब स्टेटस में ये तीनों बिंदु हरे (YES) हो जाएंगे, तो रुकी हुई किस्तें एक साथ खाते में ट्रांसफर हो जाएंगी।'
+      },
+      {
+        q: 'पीएम किसान की नई लाभार्थी सूची (Village Wise List) में अपना नाम कैसे देखें?',
+        a: '1. pmkisan.gov.in पर "Beneficiary List" (लाभार्थी सूची) पर क्लिक करें। 2. अपना राज्य, जिला, उप-जिला (तहसील), ब्लॉक और गाँव चुनें। 3. "Get Report" पर क्लिक करें। आपके गाँव के सभी पंजीकृत किसानों की सूची स्क्रीन पर आ जाएगी।'
+      },
+      {
+        q: 'क्या परिवार में पति और पत्नी दोनों को पीएम किसान का ₹6,000 सालाना मिल सकता है?',
+        a: 'नहीं। योजना के नियमों के अनुसार पति, पत्नी और नाबालिग बच्चों को मिलाकर एक पारिवारिक इकाई माना जाता है। एक परिवार से केवल एक ही भूमिधारक वयस्क किसान को प्रति वर्ष ₹6,000 का लाभ मिल सकता है।'
+      },
+      {
+        q: 'पीएम किसान में नया किसान पंजीकरण (New Farmer Registration) ऑनलाइन कैसे करें?',
+        a: 'कृषि योग्य जमीन वाले किसान pmkisan.gov.in के Farmers Corner में "New Farmer Registration" पर जाएं। आधार नंबर, मोबाइल नंबर, राज्य चुनें, जमीन का खाता/खसरा नंबर भरें, खतियान/रसीद की पीडीएफ अपलोड करें और सबमिट करें। पटवारी/अंचल अधिकारी के सत्यापन के बाद नाम जुड़ जाता है।'
+      },
+      {
+        q: 'पीएम किसान का आधिकारिक हेल्पलाइन नंबर क्या है?',
+        a: 'पीएम किसान की आधिकारिक राष्ट्रीय टोल-फ्री हेल्पलाइन 155261 एवं 1800-115-526 है। इसके अतिरिक्त केंद्रीय हेल्पडेस्क नंबर 011-24300606 पर भी संपर्क किया जा सकता है।'
       }
     ],
     
@@ -172,165 +224,236 @@ export const SCHEMES: Scheme[] = [
         name: 'PM Kisan Official Portal',
         authority: 'Department of Agriculture & Farmers Welfare, Ministry of Agriculture, Govt. of India',
         url: 'https://pmkisan.gov.in',
-        verificationDate: 'October 28, 2026'
+        verificationDate: 'November 2026'
       },
       {
         name: 'Ministry of Agriculture and Farmers Welfare Guidelines',
         authority: 'Government of India',
         url: 'https://agricoop.nic.in',
-        verificationDate: 'October 15, 2026'
+        verificationDate: 'November 2026'
       }
     ],
     keywords: [
-      'pm kisan', 'pm kisan status', 'pm kisan eligibility', 'pm kisan 19th installment',
-      'pm kisan kyc', 'pm kisan samman nidhi', 'pm kisan gov in', 'kisan registration',
-      'पीएम किसान', 'पीएम किसान स्टेटस', 'पीएम किसान सम्मान निधि', 'किसान योजना'
+      'pm kisan', 'pm kisan samman nidhi', 'pm kisan gov in', 'pm kisan government in',
+      'pm kisan yojana', 'pm kisan portal', 'pm kisan samman nidhi yojana', 'pm kisan nidhi',
+      'pm kisan nidhi yojana', 'pm kisan registration', 'pm kisan gov in registration', 'pm kisan csc login',
+      'pm kisan status', 'pm kisan beneficiary status', 'pm kisan status check aadhar card',
+      'pm kisan status check balance', 'pm kisan beneficiary status mobile number', 'pm kisan payment status',
+      'pm kisan status check aadhar card mobile number', 'pm kisan gov in beneficiary status', 'pm kisan status check',
+      'pm kisan 22th installment date 2026', 'pm kisan 22nd installment date 2026', 'pm kisan 22th installment date',
+      'pm kisan 21th installment date', 'pm kisan 23th installment date 2026', 'pm kisan 23th installment date',
+      'pm kisan next installment', 'pm kisan 20th installment date', 'pm kisan 19th installment date',
+      'pm kisan kab aaega', 'pm kisan ki 22 kist kab aayegi 2026 update', 'pm kisan samman nidhi kab aaegi',
+      'pm kisan ka paisa kab aayega', 'pm kisan 2000 installment date',
+      'pm kisan beneficiary list', 'pm kisan list', 'pm kisan beneficiary list village wise',
+      'pm kisan beneficiary', 'pm kisan beneficiary list 2026', 'pm kisan gramin list',
+      'pm kisan kyc', 'pm kisan ekyc', 'pm kisan e kyc check', 'pm kisan aadhar link status',
+      'pm kisan land seeding problem solution', 'land seeding status no pm kisan',
+      'पीएम किसान', 'पीएम किसान सम्मान निधि', 'पीएम किसान सम्मान निधि योजना', 'पीएम किसान स्टेटस',
+      'पीएम किसान स्टेटस चेक आधार कार्ड', 'पीएम किसान की 22वीं किस्त कब आएगी', 'पीएम किसान लाभार्थी सूची',
+      'पीएम किसान ई-केवाईसी', 'पीएम किसान पोर्टल', 'किसान सम्मान निधि योजना 2026'
     ],
-    metaDescription_en: 'Check PM Kisan Samman Nidhi benefits (₹6,000/yr), who can apply, landholding criteria, e-KYC process, documents checklist, and official status link.',
-    metaDescription_hi: 'पीएम किसान सम्मान निधि योजना: ₹6,000 वार्षिक सहायता, पात्रता नियम, जरूरी दस्तावेज, ऑनलाइन आवेदन व आधिकारिक स्टेटस चेक करने की पूरी जानकारी।'
+    metaDescription_en: '✅ PM Kisan Samman Nidhi 2026: When will your next ₹2,000 installment arrive? Check 21st/22nd installment date, Aadhaar payment status online, e-KYC update & village list.',
+    metaDescription_hi: '✅ पीएम किसान सम्मान निधि 2026: आपकी 21वीं/22वीं किस्त (₹2,000) खाते में कब आएगी? जानिए आधार कार्ड से पेमेंट स्टेटस चेक, e-KYC प्रक्रिया और नई विलेज लिस्ट में नाम देखने का 100% सही तरीका।'
   },
   {
     id: 'ayushman-bharat',
     slug: 'ayushman-bharat-pmjay-health-card',
-    title_en: 'Ayushman Bharat PM-JAY: Free ₹5 Lakh Hospital Cover & 70+ Senior Card',
-    title_hi: 'आयुष्मान भारत योजना (PM-JAY): ₹5 लाख तक मुफ्त इलाज व 70+ वरिष्ठ नागरिक कार्ड',
-    shortTitle_en: 'Ayushman Bharat (PM-JAY)',
-    shortTitle_hi: 'आयुष्मान भारत (PM-JAY)',
+    title_en: 'Ayushman Card 2026: Online Apply, Download PDF, Hospital List & ₹5 Lakh Free Cover',
+    title_hi: 'आयुष्मान कार्ड 2026: ऑनलाइन कैसे बनाएं? ₹5 लाख मुफ्त इलाज, डाउनलोड PDF व लिस्ट',
+    shortTitle_en: 'Ayushman Card (PM-JAY)',
+    shortTitle_hi: 'आयुष्मान भारत कार्ड (PM-JAY)',
     category: 'health',
     state: 'all-india',
     stateLabel_en: 'Central (All India)',
     stateLabel_hi: 'केंद्र सरकार (अखिल भारतीय)',
     status: 'Updated',
-    lastVerified: 'November 01, 2026',
+    lastVerified: 'November 2026',
     
     benefitSummary_en: 'Cashless inpatient medical treatment up to ₹5,00,000 per family per year in empanelled private and public hospitals across India. Special expanded coverage provides free ₹5 Lakh top-up for every senior citizen aged 70+ regardless of family income.',
-    benefitSummary_hi: 'देश भर के सूचीबद्ध सरकारी व निजी अस्पतालों में प्रति परिवार प्रति वर्ष ₹5,00,000 तक का मुफ्त कैशलेस इलाज। 70 वर्ष या अधिक उम्र के सभी बुजुर्गों के लिए अलग से ₹5 लाख तक का विशेष सुरक्षा टॉप-अप।',
+    benefitSummary_hi: 'देश भर के सूचीबद्ध सरकारी व निजी अस्पतालों में प्रति परिवार प्रति वर्ष ₹5,00,000 तक का मुफ्त कैशलेस इलाज। 70 वर्ष या अधिक उम्र के सभी बुजुर्गों के लिए अलग से ₹5 लाख तक का विशेष सुरक्षा टॉप-अप (वय वंदना कार्ड)।',
     benefitAmount_en: '₹5 Lakh / family / year (plus ₹5 Lakh for 70+ seniors)',
     benefitAmount_hi: '₹5 लाख प्रति परिवार प्रति वर्ष (70+ बुजुर्गों हेतु अतिरिक्त ₹5 लाख)',
     whoCanApply_en: 'Families listed in SECC 2011/NFSA Ration Card, and all Indian senior citizens aged 70 years and above (under Ayushman Vaya Vandana Card).',
     whoCanApply_hi: 'एसईसीसी 2011 सूची या पात्र राशन कार्डधारी परिवार, तथा 70 वर्ष या उससे अधिक आयु के सभी भारतीय नागरिक (वय वंदना कार्ड)।',
-    applicationMode: 'Online & Offline',
+    applicationMode: 'Online (beneficiary.nha.gov.in / Ayushman App) & Offline (CSC / Hospital)',
     bannerImage: '/images/schemes/ayushman-bharat-pmjay-health-card.png',
     secondaryImage: '/images/schemes/ayushman-bharat-pmjay-en.png',
     
-    whatIsThis_en: 'Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY) is the world’s largest government-financed health insurance scheme. It covers secondary and tertiary hospitalization costs, medicines, diagnostics, surgical packages, and pre/post-hospitalization expenses without any out-of-pocket costs at empanelled facilities.',
-    whatIsThis_hi: 'आयुष्मान भारत प्रधानमंत्री जन आरोग्य योजना (PM-JAY) विश्व की सबसे बड़ी सरकारी स्वास्थ्य आश्वासन योजना है। इसके अंतर्गत गंभीर बीमारियों के ऑपरेशन, दवाएं, आईसीयू, जांच और अस्पताल में भर्ती के 3 दिन पहले तथा 15 दिन बाद तक का खर्च कैशलेस कवर होता है।',
+    whatIsThis_en: 'Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY) is the world’s largest government-financed health assurance scheme. It covers secondary and tertiary hospitalization costs, medicines, diagnostics, surgical packages, ICU charges, and pre/post-hospitalization expenses without any out-of-pocket costs at 28,000+ empanelled public and private hospitals across India.',
+    whatIsThis_hi: 'आयुष्मान भारत प्रधानमंत्री जन आरोग्य योजना (PM-JAY) विश्व की सबसे बड़ी सरकारी स्वास्थ्य आश्वासन योजना है। इसके अंतर्गत गंभीर बीमारियों के ऑपरेशन, दवाएं, आईसीयू, जांच और अस्पताल में भर्ती के 3 दिन पहले तथा 15 दिन बाद तक का संपूर्ण खर्च देश के 28,000+ सूचीबद्ध सरकारी और निजी अस्पतालों में 100% कैशलेस कवर होता है।',
     
     benefitsList_en: [
-      'Cashless hospital admission covering 1,900+ medical and surgical procedures (cardiac, cancer, neurosurgery, orthopedics, etc.).',
-      'All pre-existing conditions covered from Day 1 without waiting periods.',
-      'No cap on family size, gender, or age of members.',
-      'Portability across all states: an Ayushman card issued in Jharkhand or Bihar is honored in empanelled hospitals in Delhi, Mumbai, or Chennai.',
-      'Ayushman Vaya Vandana Card: Seniors aged 70+ receive a dedicated card with an independent ₹5 Lakh cover.'
+      'Cashless hospital admission covering 1,950+ medical and surgical procedures (cardiac surgery, cancer chemotherapy/radiation, neurosurgery, knee replacement, etc.).',
+      'All pre-existing medical conditions covered from Day 1 without any waiting periods or medical checkups.',
+      'No cap on family size, gender, or age of family members.',
+      '100% Nationwide Portability: an Ayushman card made in Bihar, Jharkhand, UP, or MP is fully honored in empanelled private & govt hospitals in Delhi, Mumbai, or Bengaluru.',
+      'Ayushman Vaya Vandana Card: Every senior citizen aged 70+ receives an independent ₹5 Lakh medical cover regardless of family income.'
     ],
     benefitsList_hi: [
-      '1,900+ मेडिकल और सर्जिकल प्रक्रियाओं (हार्ट सर्जरी, कैंसर कीमो/रेडियोथेरेपी, न्यूरो, घुटना प्रत्यारोपण) का कैशलेस इलाज।',
-      'पुरानी और गंभीर बीमारियां (Pre-existing diseases) पहले दिन से ही कवर होती हैं।',
+      '1,950+ मेडिकल और सर्जिकल प्रक्रियाओं (हार्ट सर्जरी, कैंसर कीमो/रेडियोथेरेपी, न्यूरो, घुटना प्रत्यारोपण) का पूर्ण कैशलेस इलाज।',
+      'पुरानी और गंभीर बीमारियां (Pre-existing diseases) पहले दिन से ही बिना किसी वेटिंग पीरियड के कवर होती हैं।',
       'परिवार के सदस्यों की संख्या, आयु या लिंग की कोई सीमा नहीं है।',
-      'देशव्यापी पोर्टेबिलिटी: झारखंड या बिहार का बना कार्ड दिल्ली, मुंबई या हैदराबाद के बड़े अस्पतालों में भी मान्य है।',
-      'आयुष्मान वय वंदना कार्ड: 70 वर्ष से अधिक उम्र के बुजुर्गों के लिए पारिवारिक सीमा से अलग ₹5 लाख का अलग कवर।'
+      'देशव्यापी 100% पोर्टेबिलिटी: बिहार, झारखंड, यूपी या एमपी का बना कार्ड दिल्ली, मुंबई या हैदराबाद के बड़े निजी व सरकारी अस्पतालों में भी मान्य है।',
+      'आयुष्मान वय वंदना कार्ड: 70 वर्ष से अधिक उम्र के सभी बुजुर्गों के लिए पारिवारिक सीमा और आय से अलग ₹5 लाख का समर्पित कार्ड।'
     ],
     
     eligibility: {
       eligibleIf_en: [
         'Family name is included in the Socio-Economic Caste Census (SECC 2011) database.',
         'Family holds an active Antyodaya Anna Yojana (AAY) or Priority Household (PHH) Ration Card in participating states.',
-        'Any citizen aged 70 years or older (authenticated via Aadhaar date of birth) qualifies for the Senior Citizen Vaya Vandana Card regardless of economic category.',
-        'Registered construction workers (BOCW) in several state-linked implementations.'
+        'Any Indian citizen aged 70 years or older (authenticated via Aadhaar date of birth) qualifies for the Senior Citizen Vaya Vandana Card regardless of economic status or income.',
+        'Registered construction workers (BOCW) in state-specific linked implementations.'
       ],
       eligibleIf_hi: [
         'परिवार का नाम सामाजिक-आर्थिक जाति जनगणना (SECC 2011) की सूची में दर्ज हो।',
-        'परिवार के पास अंत्योदय (AAY) या प्राथमिकता राशन कार्ड (PHH) उपलब्ध हो।',
-        '70 वर्ष या अधिक उम्र का कोई भी भारतीय नागरिक (आधार में दर्ज जन्मतिथि अनुसार) आय सीमा की बाध्यता के बिना पात्र है।',
+        'परिवार के पास अंत्योदय (AAY) या प्राथमिकता राशन कार्ड (PHH/लाल-पीला कार्ड) उपलब्ध हो।',
+        '70 वर्ष या अधिक उम्र का कोई भी भारतीय नागरिक (आधार में दर्ज जन्मतिथि अनुसार) आय सीमा की बाध्यता के बिना वय वंदना कार्ड हेतु पात्र है।',
         'कई राज्यों में पंजीकृत निर्माण श्रमिक (BOCW कार्डधारक)।'
       ],
       notEligibleIf_en: [
-        'Families paying income tax or holding government employee insurance (CGHS/ECHS) are not eligible for general SECC quota (except 70+ senior who can choose between CGHS and Ayushman).',
+        'Families paying income tax or holding government employee insurance (CGHS/ECHS) are not eligible for general SECC quota (except 70+ seniors who can choose between CGHS and Ayushman).',
         'Households owning motorized 3/4-wheeler fishing boats or mechanized agricultural equipment (under general rural criteria).',
-        'Citizens who already hold private corporate health insurance and are not in SECC/Ration database.'
+        'Citizens who already hold corporate health insurance and are not in SECC/Ration card database.'
       ],
       notEligibleIf_hi: [
         'सामान्य कोटे में आयकरदाता या केंद्र/राज्य सरकारी स्वास्थ्य योजना (CGHS/ECHS) के लाभार्थी (सिवाय 70+ बुजुर्ग जो विकल्प चुन सकते हैं)।',
-        'सामान्य ग्रामीण मानकों में चार पहिया वाहन या बड़े कृषि यंत्र वाले परिवार।',
+        'सामान्य ग्रामीण मानकों में चार पहिया वाहन या बड़े यंत्रीकृत उपकरण वाले परिवार।',
         'जो परिवार एसईसीसी अथवा राज्य राशन कार्ड सूची में शामिल नहीं हैं।'
       ]
     },
     
     requiredDocuments_en: [
-      'Aadhaar Card of each family member (mandatory for e-KYC)',
-      'Ration Card / Family Samagra ID / SECC Family ID',
+      'Aadhaar Card of each family member (mandatory for e-KYC and authentication)',
+      'Ration Card / Family Samagra ID / SECC Family Reference Number',
       'Active Mobile number linked to Aadhaar for OTP verification',
-      'Age proof for 70+ card (Aadhaar Card is sufficient)'
+      'Age proof for 70+ Senior Citizen Card (Aadhaar Card date of birth is sufficient)'
     ],
     requiredDocuments_hi: [
-      'परिवार के सभी सदस्यों का आधार कार्ड (ई-केवाईसी हेतु अनिवार्य)',
+      'परिवार के सभी सदस्यों का आधार कार्ड (ई-केवाईसी व पहचान सत्यापन हेतु अनिवार्य)',
       'राशन कार्ड / परिवार समग्र आईडी / एसईसीसी संदर्भ विवरण',
-      'आधार से लिंक सक्रिय मोबाइल नंबर (ओटीपी हेतु)',
+      'आधार से लिंक चालू मोबाइल नंबर (ओटीपी सत्यापन हेतु)',
       '70+ बुजुर्ग कार्ड हेतु आयु प्रमाण के लिए आधार कार्ड'
     ],
     
     howToApply_en: [
-      'Visit the official National Health Authority Beneficiary Portal at beneficiary.nha.gov.in or download the "Ayushman App".',
-      'Select "Beneficiary" login mode, enter your mobile number, and authenticate via OTP.',
-      'Select your State, Scheme (PMJAY), District, and Search by (Aadhaar Number, Family ID, or Ration Card).',
-      'If your family name appears in the list, click "Action / e-KYC".',
-      'Authenticate your identity using Aadhaar OTP, IRIS, or Fingerprint, and capture a live photograph.',
-      'Once verified, your Ayushman Card will be approved and available for instant PDF download.',
-      'Alternatively, visit any empanelled Government/Private Hospital (Ayushman Mitra desk) or CSC center.'
+      'Visit the official National Health Authority Beneficiary Portal at beneficiary.nha.gov.in or download the "Ayushman App" from Google Play Store.',
+      'Select "Beneficiary" login mode, enter your 10-digit mobile number, and authenticate via OTP.',
+      'Select your State, Scheme (PMJAY), District, and Search by (Aadhaar Number, Family ID, or Ration Card Number).',
+      "If your family members appear in the list, click \"Action / e-KYC\" beside the person's name.",
+      'Authenticate identity using Aadhaar OTP, Face Auth (in Ayushman App), or Fingerprint, and capture a live photograph.',
+      'Once verified, your Ayushman Card will be approved instantly and available for PDF download on your smartphone.',
+      'Alternatively, visit any empanelled Government/Private Hospital (Ayushman Mitra desk) or nearest CSC center for instant offline creation.'
     ],
     howToApply_hi: [
-      'राष्ट्रीय स्वास्थ्य प्राधिकरण (NHA) के आधिकारिक पोर्टल beneficiary.nha.gov.in पर जाएं या "Ayushman App" डाउनलोड करें।',
-      '"Beneficiary" विकल्प चुनें, अपना मोबाइल नंबर दर्ज करें और ओटीपी से लॉगिन करें।',
-      'अपना राज्य, योजना (PMJAY), जिला चुनें और आधार नंबर या राशन कार्ड नंबर से खोजें।',
-      'यदि सूची में आपका नाम है, तो सदस्य के नाम के आगे "e-KYC" पर क्लिक करें।',
-      'आधार ओटीपी या फिंगरप्रिंट से सत्यापन करें और कैमरे से लाइव फोटो खींचें।',
-      'सत्यापन पूरा होते ही आयुष्मान कार्ड तुरंत स्वीकृत हो जाएगा और आप इसका डिजिटल पीडीएफ कार्ड डाउनलोड कर सकते हैं।',
-      'आप नजदीकी सरकारी अस्पताल के "आयुष्मान मित्र" डेस्क या सीएससी केंद्र पर जाकर भी यह कार्ड बनवा सकते हैं।'
+      'राष्ट्रीय स्वास्थ्य प्राधिकरण (NHA) के आधिकारिक पोर्टल beneficiary.nha.gov.in पर जाएं या प्ले स्टोर से "Ayushman App" डाउनलोड करें।',
+      '"Beneficiary" विकल्प चुनें, अपना मोबाइल नंबर दर्ज करें और प्राप्त ओटीपी से लॉगिन करें।',
+      'अपना राज्य, योजना (PMJAY), जिला चुनें और सर्च में आधार नंबर या राशन कार्ड नंबर दर्ज करें।',
+      'सूची में नाम आते ही सदस्य के नाम के आगे "e-KYC" बटन पर क्लिक करें।',
+      'आधार ओटीपी या फेस ऑथेंटिकेशन से सत्यापन करें और कैमरे से लाइव फोटो खींचें।',
+      'सत्यापन पूरा होते ही आयुष्मान कार्ड तुरंत अप्रूव हो जाएगा और आप इसका डिजिटल पीडीएफ कार्ड डाउनलोड कर सकते हैं।',
+      'ऑफलाइन बनवाने के लिए किसी भी पैनलबद्ध अस्पताल के "आयुष्मान मित्र" काउंटर या सीएससी (CSC) केंद्र पर जाएं।'
     ],
     
-    statusCheckGuide_en: 'Visit beneficiary.nha.gov.in, login with your mobile OTP, search by your Aadhaar number to see all approved family cards. Empanelled hospital directory is available at hospitals.pmjay.gov.in.',
-    statusCheckGuide_hi: 'beneficiary.nha.gov.in पर जाएं, मोबाइल ओटीपी से लॉगिन करें और अपना आधार नंबर डालकर परिवार के सभी सदस्यों के कार्ड का स्टेटस देखें। नजदीकी अस्पतालों की सूची hospitals.pmjay.gov.in पर देखें।',
+    statusCheckGuide_en: 'To check your Ayushman Card status: 1. Visit beneficiary.nha.gov.in. 2. Login as Beneficiary with your mobile OTP. 3. Enter your Aadhaar Number to see card status (Approved, Pending, or e-KYC Required) for all family members. Empanelled hospital directory is available at hospitals.pmjay.gov.in.',
+    statusCheckGuide_hi: 'अपना आयुष्मान कार्ड स्टेटस देखने के लिए: 1. beneficiary.nha.gov.in पर जाएं। 2. मोबाइल ओटीपी से "Beneficiary" मोड में लॉगिन करें। 3. अपना आधार नंबर दर्ज करें। यहां परिवार के सभी सदस्यों के कार्ड का लाइव स्टेटस (स्वीकृत, लंबित या ई-केवाईसी आवश्यक) दिखाई देगा। पैनलबद्ध अस्पतालों की सूची hospitals.pmjay.gov.in पर देखें।',
     officialStatusUrl: 'https://beneficiary.nha.gov.in',
     
     commonProblems_en: [
       {
-        problem: 'Name found in list but e-KYC photo mismatch',
-        solution: 'Capture a clear live photo in bright lighting or update your photo at your local Aadhaar Seva Kendra, then retry on the Beneficiary portal.'
+        problem: 'Name found in list but e-KYC photo mismatch error',
+        solution: 'Capture a clear live photo against a plain background in bright lighting, or update your photograph at the nearest Aadhaar Seva Kendra, then retry on the portal.'
       },
       {
-        problem: 'Hospital refuses to admit patient on Ayushman Card',
-        solution: 'Immediately call the National Health Authority 24x7 Toll-Free Grievance Helpline at 14555 or contact the District Grievance Redressal Officer.'
+        problem: 'Empanelled hospital refuses to admit patient or demands money',
+        solution: 'Immediately call the National Health Authority 24x7 Toll-Free Grievance Helpline at 14555 or 1800-111-565, or report to the Ayushman Mitra desk at the hospital.'
+      },
+      {
+        problem: 'Aadhaar OTP is not received during e-KYC',
+        solution: 'Use the "Face Auth" feature in the official Ayushman App (requires Aadhaar FaceRD app) or visit a CSC Center for biometric fingerprint e-KYC.'
       }
     ],
     commonProblems_hi: [
       {
         problem: 'सूची में नाम है लेकिन ई-केवाईसी में फोटो मैच नहीं हो रहा',
-        solution: 'अच्छी रोशनी में दोबारा साफ लाइव फोटो खींचें या नजदीकी आधार सेवा केंद्र पर जाकर आधार में नवीनतम फोटो अपडेट करवाएं।'
+        solution: 'अच्छी रोशनी में सादे बैकग्राउंड पर दोबारा साफ लाइव फोटो खींचें या नजदीकी आधार केंद्र पर फोटो अपडेट कराकर पोर्टल पर पुनः प्रयास करें।'
       },
       {
-        problem: 'सूचीबद्ध अस्पताल आयुष्मान कार्ड पर इलाज देने से मना कर रहा है',
-        solution: 'तुरंत 24x7 राष्ट्रीय टोल-फ्री हेल्पलाइन 14555 पर शिकायत दर्ज कराएं अथवा अस्पताल में तैनात "आयुष्मान मित्र" से संपर्क करें।'
+        problem: 'सूचीबद्ध अस्पताल आयुष्मान कार्ड पर इलाज देने से मना करे या पैसे मांगे',
+        solution: 'तुरंत 24x7 राष्ट्रीय टोल-फ्री हेल्पलाइन 14555 या 1800-111-565 पर शिकायत दर्ज कराएं अथवा अस्पताल में तैनात "आयुष्मान मित्र" से संपर्क करें।'
+      },
+      {
+        problem: 'ई-केवाईसी करते समय आधार ओटीपी नहीं आ रहा',
+        solution: 'मोबाइल में "Ayushman App" और "Aadhaar FaceRD" ऐप डाउनलोड कर चेहरा स्कैन (Face Auth) से e-KYC करें, या सीएससी सेंटर पर फिंगरप्रिंट से कराएं।'
       }
     ],
     
     faqs_en: [
       {
-        q: 'Is there any fee to make an Ayushman Card?',
-        a: 'No. Ayushman Card creation through beneficiary.nha.gov.in, Ayushman App, and government hospitals is 100% free of charge.'
+        q: 'How to apply for an Ayushman Card online and download the PDF on mobile?',
+        a: 'Visit beneficiary.nha.gov.in or download the "Ayushman App". Login as a Beneficiary using your mobile OTP. Search by Aadhaar number or Ration Card, complete the instant Aadhaar OTP or Face Auth e-KYC, and download your PVC-format Ayushman Card PDF immediately.'
       },
       {
-        q: 'Can private hospitals charge any extra money for medicines or surgery?',
-        a: 'No. PMJAY is strictly cashless. All costs from doctor consultation, surgery, implants, tests, to medicines are pre-negotiated package rates paid by the government.'
+        q: 'Is the Ayushman Card valid in private hospitals? Does it cover private care?',
+        a: 'Yes! Ayushman Card is valid in over 28,000+ empanelled private and government hospitals across India. Treatments including heart surgery, cancer chemotherapy, neurosurgery, joint replacement, ICU stays, tests, and medicines are 100% cashless without any payment.'
+      },
+      {
+        q: 'What is the Ayushman Vaya Vandana Card for senior citizens aged 70 and above?',
+        a: 'The Government of India has extended Ayushman Bharat coverage to ALL citizens aged 70 years and above, irrespective of their income or economic status. Eligible seniors receive a distinct Ayushman Vaya Vandana Card with an exclusive ₹5 Lakh annual cashless hospital cover.'
+      },
+      {
+        q: 'Is ABHA Card and Ayushman Card the same thing?',
+        a: 'No, they are different. An ABHA Card (Ayushman Bharat Health Account) is a 14-digit digital health ID used as a digital locker for medical records and test reports. An Ayushman Card (PM-JAY) provides actual ₹5 Lakh free hospitalization insurance cover.'
+      },
+      {
+        q: 'How to check Ayushman Card eligibility using Aadhaar Card or mobile number?',
+        a: 'Go to beneficiary.nha.gov.in, log in with mobile OTP, and select Search by Aadhaar Number. If your name appears with your family details, you are eligible and can generate your card immediately.'
+      },
+      {
+        q: 'How to find the list of empanelled hospitals accepting Ayushman Card near me?',
+        a: 'Visit hospitals.pmjay.gov.in or open the Ayushman App. Select your State, District, Hospital Type (Private / Public), and Medical Specialty (Cardiology, Oncology, Orthopedics) to see nearby empaneled hospitals with contact numbers.'
+      },
+      {
+        q: 'Is the Ayushman Card valid across all states in India (Portability)?',
+        a: 'Yes, PM-JAY offers 100% nationwide portability. A card issued in any state (e.g., Bihar, Jharkhand, UP, MP, Rajasthan) is legally accepted in top empanelled hospitals across metro cities including Delhi, Mumbai, Kolkata, Chennai, and Bengaluru.'
+      },
+      {
+        q: 'What is the official toll-free helpline number for Ayushman Bharat (PM-JAY)?',
+        a: 'The official 24x7 National Health Authority toll-free helpline numbers are 14555 and 1800-111-565 for card generation help, hospital issues, or complaint lodging.'
       }
     ],
     faqs_hi: [
       {
-        q: 'क्या आयुष्मान कार्ड बनवाने का कोई सरकारी शुल्क लगता है?',
-        a: 'नहीं। आधिकारिक पोर्टल beneficiary.nha.gov.in, ऐप और सरकारी अस्पतालों में आयुष्मान कार्ड बनाना पूरी तरह निःशुल्क है।'
+        q: 'आयुष्मान कार्ड मोबाइल से ऑनलाइन कैसे बनाएं और PDF कार्ड कैसे डाउनलोड करें?',
+        a: 'आधिकारिक पोर्टल beneficiary.nha.gov.in पर जाएं या "Ayushman App" डाउनलोड करें। मोबाइल ओटीपी से "Beneficiary" मोड में लॉगिन करें। आधार नंबर या राशन कार्ड से नाम खोजें, आधार ओटीपी या फेस ऑथ (Face Auth) से e-KYC पूरा करें और तुरंत अपना आयुष्मान डिजिटल कार्ड PDF डाउनलोड करें।'
       },
       {
-        q: 'क्या प्राइवेट अस्पताल दवाओं या ऑपरेशन के लिए अलग से पैसे मांग सकते हैं?',
-        a: 'बिल्कुल नहीं। यह पूर्णतः कैशलेस योजना है। डॉक्टर फीस, जांच, दवा, इम्प्लांट और भोजन का खर्च सरकार द्वारा वहन किया जाता है।'
+        q: 'क्या आयुष्मान कार्ड प्राइवेट (निजी) अस्पतालों में भी मान्य है?',
+        a: 'हाँ! आयुष्मान कार्ड देश भर के 28,000 से अधिक सूचीबद्ध प्राइवेट और सरकारी अस्पतालों में पूरी तरह मान्य है। हार्ट सर्जरी, कैंसर का इलाज, न्यूरोसर्जरी, डायलिसिस, घुटना प्रत्यारोपण, आईसीयू और दवाइयों सहित 1,950+ बीमारियों का पूरा इलाज 100% कैशलेस और मुफ्त होता है।'
+      },
+      {
+        q: '70 वर्ष या उससे अधिक उम्र के बुजुर्गों के लिए आयुष्मान वय वंदना कार्ड क्या है?',
+        a: 'केंद्र सरकार ने 70 वर्ष और उससे अधिक आयु के सभी भारतीय वरिष्ठ नागरिकों के लिए आय सीमा की कोई भी शर्त हटाकर ₹5 लाख का मुफ्त स्वास्थ्य कवर शुरू किया है। इसके तहत बुजुर्गों को एक अलग "आयुष्मान वय वंदना कार्ड" मिलता है, जिसमें ₹5 लाख का अलग टॉप-अप कवर होता है।'
+      },
+      {
+        q: 'क्या आभा कार्ड (ABHA Card) और आयुष्मान कार्ड (Ayushman Card) एक ही हैं?',
+        a: 'नहीं, दोनों बिल्कुल अलग हैं। आभा कार्ड (ABHA) केवल 14 अंकों की डिजिटल हेल्थ आईडी है जिसमें आपके मेडिकल रिकॉर्ड और जांच रिपोर्ट सुरक्षित रहती हैं। जबकि आयुष्मान कार्ड (PM-JAY) एक स्वास्थ्य बीमा कार्ड है जिससे अस्पताल में ₹5 लाख तक का मुफ्त इलाज मिलता है।'
+      },
+      {
+        q: 'आधार कार्ड या मोबाइल नंबर से आयुष्मान कार्ड की पात्रता कैसे चेक करें?',
+        a: 'वेबसाइट beneficiary.nha.gov.in पर जाएं, मोबाइल नंबर से लॉगिन करें और "Search by Aadhaar Number" चुनें। यदि आपका और आपके परिवार का नाम लिस्ट में दिखता है, तो आप तुरंत e-KYC करके अपना कार्ड बना सकते हैं।'
+      },
+      {
+        q: 'नजदीकी आयुष्मान पैनल वाले प्राइवेट और सरकारी अस्पतालों की सूची कैसे देखें?',
+        a: 'hospitals.pmjay.gov.in पर जाएं या आयुष्मान ऐप खोलें। अपना राज्य, जिला, अस्पताल का प्रकार (प्राइवेट/सरकारी) और बीमारी की स्पेशलिटी चुनें। आपके शहर के सभी पैनलबद्ध अस्पतालों की सूची और उनके फोन नंबर स्क्रीन पर आ जाएंगे।'
+      },
+      {
+        q: 'क्या आयुष्मान कार्ड देश के किसी भी राज्य में चल सकता है (पोर्टेबिलिटी)?',
+        a: 'हाँ, आयुष्मान भारत योजना 100% देशव्यापी पोर्टेबल है। बिहार, झारखंड, यूपी, एमपी या राजस्थान का बना कार्ड दिल्ली, मुंबई, हैदराबाद, कोलकाता या बेंगलुरु के किसी भी पैनलबद्ध अस्पताल में पूरी तरह स्वीकार किया जाता है।'
+      },
+      {
+        q: 'आयुष्मान भारत (PM-JAY) का आधिकारिक टोल-फ्री हेल्पलाइन नंबर क्या है?',
+        a: 'आयुष्मान भारत की आधिकारिक 24x7 राष्ट्रीय टोल-फ्री हेल्पलाइन 14555 एवं 1800-111-565 है। कार्ड बनवाने में मदद, अस्पताल द्वारा मना किए जाने या किसी भी शिकायत हेतु इस नंबर पर संपर्क किया जा सकता है।'
       }
     ],
     
@@ -339,22 +462,41 @@ export const SCHEMES: Scheme[] = [
         name: 'National Health Authority (NHA) Beneficiary Portal',
         authority: 'Ministry of Health and Family Welfare, Govt. of India',
         url: 'https://beneficiary.nha.gov.in',
-        verificationDate: 'November 01, 2026'
+        verificationDate: 'November 2026'
       },
       {
         name: 'PM-JAY Official Portal',
         authority: 'Government of India',
         url: 'https://pmjay.gov.in',
-        verificationDate: 'October 25, 2026'
+        verificationDate: 'November 2026'
       }
     ],
     keywords: [
-      'ayushman bharat', 'pmjay', 'ayushman card download', 'ayushman card eligibility',
-      'ayushman 70 plus senior citizen', 'vaya vandana card', 'golden card', 'free hospital treatment',
-      'आयुष्मान भारत', 'आयुष्मान कार्ड', 'गोल्डन कार्ड', 'फ्री इलाज', 'वय वंदना कार्ड'
+      'ayushman card', 'pmjay', 'ayushman bharat', 'ayushman bharat yojana', 'ayushman card online',
+      'ayushman card apply', 'ayushman card online apply', 'ayushman card apply online',
+      'ayushman bharat health card', 'ayushman card login', 'ayushman bharat login',
+      'pmjay website', 'pmjay portal', 'pmjay full form', 'ayushman bharat pradhan mantri jan arogya yojana',
+      'ayushman card download', 'download ayushman card', 'ayushman card download pdf',
+      'ayushman bharat health card download', 'ayushman card download pdf by mobile number',
+      'how to download ayushman card', 'how to download ayushman card online', 'ayushman card kaise download karen',
+      'how to apply for ayushman card', 'ayushman card kaise banaen', 'ayushman card kaise banaye',
+      'ayushman card kaise banta hai', 'how to make ayushman card', 'how to make ayushman card online',
+      'ayushman card kaise banvaen', 'ayushman card kaise banega', 'how to get ayushman card',
+      'ayushman card apply online process', 'ayushman card online registration', 'register for ayushman card',
+      'ayushman card eligibility', 'ayushman card eligibility check', 'ayushman card check',
+      'who is eligible for ayushman card', 'who can make ayushman card', 'am i eligible for pmjay',
+      'pmjay beneficiary list', 'ayushman card beneficiary', 'pmjay id search',
+      'ayushman card hospital list', 'ayushman bharat hospital list near me', 'is ayushman card valid in private hospital',
+      'can ayushman card be used in private hospital', 'which hospital accept ayushman card',
+      'ayushman card benefits', 'free hospital treatment 5 lakh',
+      'ayushman 70 plus senior citizen', 'vaya vandana card', 'ayushman vay vandana card online apply',
+      'is abha card and ayushman card same', 'abha card vs ayushman card', 'golden card',
+      'आयुष्मान कार्ड', 'आयुष्मान भारत', 'आयुष्मान कार्ड ऑनलाइन अप्लाई', 'आयुष्मान कार्ड डाउनलोड PDF',
+      'आयुष्मान कार्ड कैसे बनाएं', 'आयुष्मान कार्ड पात्रता', 'आयुष्मान कार्ड लिस्ट', 'आयुष्मान भारत योजना 2026',
+      'आयुष्मान वय वंदना कार्ड 70 प्लस', 'गोल्डन कार्ड डाउनलोड', 'फ्री ₹5 लाख इलाज'
     ],
-    metaDescription_en: 'Ayushman Bharat PM-JAY ₹5 Lakh free medical cover guide: who can apply, 70+ senior citizen card rollout, required documents, and official e-KYC portal.',
-    metaDescription_hi: 'आयुष्मान भारत योजना (PM-JAY): ₹5 लाख तक का मुफ्त अस्पताल इलाज, 70+ बुजुर्गों हेतु कार्ड, पात्रता, आवश्यक कागजात और आधिकारिक कार्ड डाउनलोड गाइड।'
+    metaDescription_en: '✅ Ayushman Card 2026: How to apply online & download PDF in 5 minutes? Check ₹5 Lakh free cashless treatment, 70+ senior citizen card, eligibility & private hospital list.',
+    metaDescription_hi: '✅ आयुष्मान कार्ड 2026: मोबाइल से 5 मिनट में आयुष्मान कार्ड कैसे बनाएं व PDF डाउनलोड करें? जानिए ₹5 लाख मुफ्त इलाज, 70+ बुजुर्ग वय वंदना कार्ड, पात्रता व प्राइवेट हॉस्पिटल लिस्ट।'
   },
   {
     id: 'jharkhand-maiya-samman',
@@ -915,8 +1057,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'jharkhand-abua-awas',
     slug: 'jharkhand-abua-awas-yojana-housing',
-    title_en: 'Jharkhand Abua Awas Yojana: ₹2 Lakh 3-Room Permanent House Grant',
-    title_hi: 'झारखंड अबुआ आवास योजना: 3 कमरों के पक्के मकान हेतु ₹2 लाख की सरकारी सहायता',
+    title_en: 'Jharkhand Abua Awas Yojana 2026: New Beneficiary List, ₹2 Lakh Grant & Status Check',
+    title_hi: 'अबुआ आवास योजना 2026: नई लिस्ट में अपना नाम देखें, ₹2 लाख सहायता, स्टेटस चेक व फॉर्म PDF',
     shortTitle_en: 'Jharkhand Abua Awas',
     shortTitle_hi: 'अबुआ आवास योजना (झारखंड)',
     category: 'housing',
@@ -924,15 +1066,15 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Jharkhand State',
     stateLabel_hi: 'झारखंड राज्य',
     status: 'Active',
-    lastVerified: 'October 27, 2026',
+    lastVerified: 'November 06, 2026',
     
-    benefitSummary_en: 'State-funded grant of ₹2,00,000 disbursed in 4 milestones to construct a modern 3-room pucca house with a kitchen for families left out of central housing schemes, plus MGNREGA wages.',
-    benefitSummary_hi: 'केंद्र की आवास योजना से वंचित परिवारों के लिए 3 कमरों और रसोईघर युक्त पक्के मकान हेतु 4 किस्तों में ₹2,00,000 की शत-प्रतिशत राज्य प्रायोजित सहायता।',
-    benefitAmount_en: '₹2,00,000 (in 4 installments)',
-    benefitAmount_hi: '₹2,00,000 (4 किस्तों में)',
+    benefitSummary_en: 'State-funded grant of ₹2,00,000 disbursed in 4 installments to construct a modern 3-room pucca house with a kitchen for families left out of central housing schemes, plus MGNREGA wages.',
+    benefitSummary_hi: 'केंद्र की आवास योजना से वंचित परिवारों के लिए 3 कमरों और पक्की रसोई युक्त मकान हेतु 4 किस्तों में ₹2,00,000 की शत-प्रतिशत राज्य सरकार द्वारा आर्थिक सहायता।',
+    benefitAmount_en: '₹2,00,000 (in 4 installments) + MGNREGA wages',
+    benefitAmount_hi: '₹2,00,000 (4 किस्तों में) + मनरेगा मजदूरी',
     whoCanApply_en: 'Permanent residents of Jharkhand living in kutcha/dilapidated homes who did not receive PMAY or Baba Saheb Ambedkar housing grants.',
-    whoCanApply_hi: 'झारखंड के स्थायी निवासी जो कच्चे/जीर्ण घरों में रहते हैं और जिन्हें पीएम आवास या अंबेडकर आवास का लाभ कभी नहीं मिला।',
-    applicationMode: 'Offline (Aapki Sarkar Camps & Block Office)',
+    whoCanApply_hi: 'झारखंड के स्थायी निवासी जो कच्चे/जीर्ण घरों में रहते हैं और जिन्हें पूर्व में पीएम आवास या आंबेडकर आवास का लाभ नहीं मिला है।',
+    applicationMode: 'Offline (Aapki Sarkar Aapke Dwar Camps & Block BDO Office)',
     bannerImage: '/images/schemes/jharkhand-abua-awas.webp',
     
     whatIsThis_en: 'Abua Awas Yojana (AAY) is a 100% Jharkhand State funded housing initiative launched to ensure that vulnerable, tribal, and rural families deprived of Central PMAY housing build spacious 3-room pucca homes with permanent concrete roofing.',
@@ -940,99 +1082,159 @@ export const SCHEMES: Scheme[] = [
     
     benefitsList_en: [
       'Substantial ₹2,00,000 financial support (significantly higher than typical rural housing schemes).',
-      'Mandates a 3-room layout with an integrated kitchen for comfortable family living.',
-      'Direct Benefit Transfer (DBT) into 4 installments: 15% on plinth, 25% on lintel, 50% on roof completion, 10% on completion.',
-      'Additional wage assistance under MGNREGS for family members contributing labor.'
+      'Mandates a spacious 3-room layout with an integrated kitchen for comfortable family living (minimum 31 sq. meters).',
+      'Direct Benefit Transfer (DBT) into 4 milestone installments: 15% on plinth level, 25% on lintel, 50% on roof casting, and 10% on completion.',
+      'Additional wage assistance under MGNREGS for family members contributing unskilled labor during construction.'
     ],
     benefitsList_hi: [
-      '₹2,00,000 की बड़ी वित्तीय सहायता जो आम आवास योजनाओं से काफी अधिक है।',
-      'परिवार के गरिमापूर्ण जीवन हेतु 3 पक्के कमरे तथा स्वच्छ रसोईघर का अनिवार्य प्रावधान।',
-      'निर्माण की प्रगति के अनुसार 4 पारदर्शी किस्तों में सीधे बैंक खाते में भुगतान।',
-      'मकान निर्माण में श्रम करने वाले परिवार को मनरेगा की अकुशल मजदूरी का अतिरिक्त लाभ।'
+      '₹2,00,000 की बड़ी वित्तीय सहायता जो आम ग्रामीण आवास योजनाओं से काफी अधिक है।',
+      'परिवार के गरिमापूर्ण जीवन हेतु 3 पक्के कमरे तथा स्वच्छ रसोईघर का अनिवार्य प्रावधान (न्यूनतम 31 वर्ग मीटर)।',
+      'निर्माण की प्रगति के अनुसार 4 पारदर्शी किस्तों में सीधे बैंक खाते में भुगतान: प्लिंथ पर 15%, लिंटेल पर 25%, छत ढलाई पर 50%, और प्लास्टर/पूर्णता पर 10%।',
+      'मकान निर्माण में श्रम करने वाले परिवार को मनरेगा की अकुशल मजदूरी का अतिरिक्त आर्थिक लाभ।'
     ],
     
     eligibility: {
       eligibleIf_en: [
-        'Permanent resident of Jharkhand state.',
+        'Applicant must be a permanent resident of Jharkhand state.',
         'Household living in kutcha houses or temporary huts without a permanent concrete roof.',
         'Families not having benefited from PMAY-G, PMAY-U, or Dr. Bhimrao Ambedkar Awas Yojana.',
-        'Priority to Particularly Vulnerable Tribal Groups (PVTG), widows, disaster-affected, and destitute households.'
+        'Priority given to Particularly Vulnerable Tribal Groups (PVTG), destitute households, widows, and disaster-affected families.'
       ],
       eligibleIf_hi: [
-        'आवेदक झारखंड राज्य का स्थायी निवासी हो।',
-        'परिवार कच्चे मकान या छप्पर की झोपड़ी में निवास कर रहा हो।',
-        'परिवार के किसी भी सदस्य को पूर्व में पीएम आवास या आंबेडकर आवास का लाभ न मिला हो।',
-        'आदिम जनजाति (PVTG), विधवा, प्राकृतिक आपदा प्रभावित और बेसहारा परिवारों को सर्वोच्च प्राथमिकता।'
+        'आवेदक झारखंड राज्य का स्थायी निवासी होना चाहिए।',
+        'परिवार कच्चे मकान, मिट्टी की दीवारों या छप्पर की झोपड़ी में निवास कर रहा हो।',
+        'परिवार के किसी भी सदस्य को पूर्व में पीएम आवास (PMAY) या बाबा साहेब आंबेडकर आवास का लाभ न मिला हो।',
+        'आदिम जनजाति (PVTG), विधवा, प्राकृतिक आपदा प्रभावित और बेसहारा परिवारों को चयन में सर्वोच्च प्राथमिकता दी जाती है।'
       ],
       notEligibleIf_en: [
         'Households owning a pucca house anywhere in the country.',
-        'Families with any member paying income tax or holding government employment.',
-        'Owners of four-wheeler vehicles or agricultural mechanized equipment.'
+        'Families with any member paying income tax or employed in regular government/public sector service.',
+        'Owners of motorized four-wheeler vehicles or agricultural mechanized equipment (tractors).'
       ],
       notEligibleIf_hi: [
-        'जिनके पास देश में कहीं भी पक्का मकान हो।',
-        'परिवार में कोई आयकरदाता या सरकारी सेवा में पदस्थ हो।',
-        'चार पहिया वाहन या ट्रैक्टर धारक परिवार।'
+        'परिवार के पास देश में कहीं भी पक्का मकान पहले से मौजूद हो।',
+        'परिवार का कोई भी सदस्य आयकरदाता (Income Tax Payer) या नियमित सरकारी सेवा में पदस्थ हो।',
+        'चार पहिया मोटर वाहन या ट्रैक्टर धारक परिवार।'
       ]
     },
     
     requiredDocuments_en: [
-      'Aadhaar Card of applicant and adult family members',
-      'Residential Certificate of Jharkhand',
-      'Ration Card copy',
-      'Aadhaar-seeded bank account passbook copy',
-      'Job Card (MGNREGA)',
-      'Photographs of existing kutcha house'
+      'Aadhaar Card of the applicant and adult family members',
+      'Jharkhand Residential Certificate (Niwas Praman Patra) or Voter ID',
+      'Ration Card copy (Yellow / Pink / White)',
+      'Aadhaar-seeded personal bank account passbook copy',
+      'MGNREGA Job Card (for daily wage labor benefit)',
+      'Photographs of existing kutcha house (with family in front)',
+      'Self-declaration of not owning any pucca house'
     ],
     requiredDocuments_hi: [
-      'आवेदक व परिवार के सदस्यों का आधार कार्ड',
-      'झारखंड का स्थानीय निवास प्रमाण पत्र',
-      'राशन कार्ड की प्रति',
-      'आधार से लिंक बैंक पासबुक',
-      'मनरेगा जॉब कार्ड',
-      'वर्तमान कच्चे मकान की स्पष्ट तस्वीर'
+      'आवेदक व परिवार के वयस्क सदस्यों का आधार कार्ड',
+      'झारखंड का स्थानीय निवास प्रमाण पत्र अथवा मतदाता पहचान पत्र',
+      'झारखंड राशन कार्ड (जिसमें परिवार का नाम दर्ज हो)',
+      'आधार से लिंक बैंक खाते की पासबुक प्रति',
+      'मनरेगा जॉब कार्ड (दैनिक मजदूरी लाभ प्राप्त करने हेतु)',
+      'वर्तमान कच्चे मकान की स्पष्ट तस्वीर (परिवार के सदस्यों के साथ)',
+      'पूर्व में पक्का मकान न होने का स्व-घोषणा पत्र'
     ],
     
     howToApply_en: [
-      'Applications are collected during the "Aapki Yojana, Aapki Sarkar, Aapke Dwar" camps in Panchayats.',
-      'Submit the prescribed application along with land documents and photo proof to the verification team.',
-      'The Gram Sabha reviews the list and prioritizes beneficiaries based on points/deprivation score.',
-      'Selected beneficiaries receive an official Sanction Letter (Swikriti Patra) from the Block Development Office.'
+      'Obtain the official Abua Awas Yojana application form free of cost from your Gram Panchayat Bhawan or special "Aapki Yojana, Aapki Sarkar, Aapke Dwar" camp.',
+      'Fill in personal details, Aadhaar number, existing housing condition, and bank account information.',
+      'Attach photocopies of Aadhaar, Ration Card, Bank Passbook, MGNREGA Job Card, and photo of the kutcha house.',
+      'Submit the physical application at your Panchayat camp or Block Development Office (BDO) and collect the stamped acknowledgement receipt.',
+      'The Gram Sabha conducts field verification, calculates deprivation priority points, and publishes the provisional beneficiary waiting list for approval.'
     ],
     howToApply_hi: [
-      'ग्राम पंचायतों में आयोजित होने वाले "आपकी योजना, आपकी सरकार, आपके द्वार" शिविरों में आवेदन फॉर्म जमा करें।',
-      'फॉर्म के साथ जमीन के कागजात, आधार और कच्चे घर का फोटो संलग्न करें।',
-      'ग्राम सभा द्वारा भौतिक सत्यापन कर अभाव अंकों के आधार पर अंतिम प्राथमिकता सूची बनाई जाती है।',
-      'चयनित लाभार्थियों को प्रखंड विकास पदाधिकारी (BDO) द्वारा आधिकारिक स्वीकृति पत्र जारी किया जाता है।'
+      'अपनी ग्राम पंचायत भवन अथवा विशेष "आपकी योजना, आपकी सरकार, आपके द्वार" शिविर से अबुआ आवास का फॉर्म निःशुल्क प्राप्त करें।',
+      'फॉर्म में अपना नाम, आधार नंबर, परिवार के सदस्यों का विवरण, वर्तमान कच्चे घर की स्थिति और बैंक खाता संख्या सावधानीपूर्वक भरें।',
+      'आधार कार्ड, राशन कार्ड, बैंक पासबुक, मनरेगा जॉब कार्ड और कच्चे घर के फोटो की स्व-हस्ताक्षरित प्रति संलग्न करें।',
+      'अपने पंचायत शिविर या प्रखंड कार्यालय (BDO) में फॉर्म जमा कर पावती रसीद (Acknowledgement Receipt) प्राप्त करें।',
+      'ग्राम सभा द्वारा भौतिक सत्यापन कर अभाव अंकों के आधार पर वरीयता सूची (Waiting List) तैयार कर स्वीकृति दी जाती है।'
     ],
     
-    statusCheckGuide_en: 'Visit your Gram Panchayat office or Block Development Office to check the approved Abua Awas Waiting List and Sanction Register.',
-    statusCheckGuide_hi: 'अपनी ग्राम पंचायत या प्रखंड कार्यालय जाकर अबुआ आवास की अनुमोदित प्रतीक्षा सूची और स्वीकृति रजिस्टर में अपना नाम देख सकते हैं।',
+    statusCheckGuide_en: 'To check your Abua Awas Yojana list & approval status: 1) Visit the official portal or your local Gram Panchayat Bhawan to view the published Gram Sabha Priority Waiting List. 2) Visit your local Block Development Office (BDO) with your Aadhaar number or Application Acknowledgment Slip to inspect the Sanction Register. 3) Upon approval, the BDO issues an official Sanction Letter (Swikriti Patra) and geotagging begins for installment disbursement.',
+    statusCheckGuide_hi: 'अबुआ आवास योजना की नई लिस्ट और स्टेटस चेक करने के लिए: 1) अपने ग्राम पंचायत भवन या प्रखंड कार्यालय में चस्पा की गई अनुमोदित ग्राम सभा प्रतीक्षा सूची (Waiting List) में अपना नाम देखें। 2) अपने प्रखंड विकास पदाधिकारी (BDO) कार्यालय में आधार नंबर अथवा पावती रसीद दिखाकर स्वीकृति रजिस्टर में अपनी स्थिति जांचें। 3) स्वीकृति मिलने पर प्रखंड कार्यालय द्वारा आधिकारिक स्वीकृति पत्र जारी किया जाता है और जियो-टैगिंग के बाद किस्तें जारी होती हैं।',
     officialStatusUrl: 'https://jharkhand.gov.in',
     
     commonProblems_en: [
       {
-        problem: 'Name in waiting list but sanction delayed',
-        solution: 'Sanctions are released in target quotas per year. Inquire at your BDO office regarding your priority ranking in the Gram Sabha approved list.'
+        problem: 'Name approved in Gram Sabha list but 1st installment not credited',
+        solution: 'First installment requires mandatory Geotagging of the existing kutcha site by the Panchayat Sewak. Also ensure your bank account has active NPCI Aadhaar mapping for DBT.'
+      },
+      {
+        problem: 'Construction reached roof level but next installment delayed',
+        solution: 'Each installment requires milestone geotagged photographic verification (Plinth, Lintel, Roof). Contact your Panchayat Secretary / Junior Engineer to upload construction stage photos on the portal.'
+      },
+      {
+        problem: 'Name omitted from priority waiting list despite living in kutcha house',
+        solution: 'Submit an objection/appeal during the Gram Sabha social audit meeting or submit a rectification petition directly to the BDO / Sub-Divisional Officer (SDO).'
       }
     ],
     commonProblems_hi: [
       {
-        problem: 'प्रतीक्षा सूची में नाम है लेकिन स्वीकृति नहीं मिली',
-        solution: 'योजना का लक्ष्य चरणबद्ध तरीके से आवंटित होता है। अपने प्रखंड विकास पदाधिकारी से अपनी वरीयता सूची क्रम की जानकारी लें।'
+        problem: 'ग्राम सभा सूची में नाम स्वीकृत है पर पहली किस्त नहीं आई',
+        solution: 'पहली किस्त जारी होने से पहले पंचायत सेवक द्वारा पुराने कच्चे घर की जियो-टैगिंग (Geotagging) अनिवार्य है। साथ ही बैंक में आधार NPCI डीबीटी मैपिंग सक्रिय होना जरूरी है।'
+      },
+      {
+        problem: 'मकान का लिंटेल या छत ढलाई हो चुकी है पर अगली किस्त रुकी हुई है',
+        solution: 'हर चरण (प्लिंथ, लिंटेल, छत) के पूरा होने पर भौतिक फोटो अपलोड होती है। अपने पंचायत सचिव या कनीय अभियंता (JE) से मिलकर कार्यस्थल का जियो-टैग फोटो पोर्टल पर दर्ज कराएं।'
+      },
+      {
+        problem: 'कच्चे मकान में रहने के बावजूद प्राथमिकता सूची में नाम नहीं आया',
+        solution: 'ग्राम सभा की सामाजिक अंकेक्षण (Social Audit) बैठक में आपत्ति दर्ज कराएं अथवा सीधे प्रखंड विकास पदाधिकारी (BDO) को पुनः भौतिक सत्यापन हेतु आवेदन दें।'
       }
     ],
     
     faqs_en: [
       {
-        q: 'How many rooms are constructed under Abua Awas?',
-        a: 'The scheme specifically provides for a 3-room pucca house with a kitchen, requiring at least 31 square meters of plinth area.'
+        q: 'How to check your name in the new Abua Awas Yojana List 2026 online?',
+        a: 'You can check your name by inspecting the published Gram Sabha Priority Waiting List at your local Gram Panchayat Bhawan or Block Development Office (BDO). The state rural development department also publishes district-wise approved beneficiary registers.'
+      },
+      {
+        q: 'How much money is provided under Abua Awas Yojana and what are the installments?',
+        a: 'The scheme provides a total financial assistance of ₹2,00,000 in 4 milestone-based DBT installments: 1st installment (15% on plinth level), 2nd installment (25% on lintel completion), 3rd installment (50% on roof casting), and 4th installment (10% on completion and plaster), plus additional daily labor wages under MGNREGS.'
+      },
+      {
+        q: 'How to check Abua Awas Yojana status by Aadhaar number?',
+        a: 'You can track your application and payment status by presenting your Aadhaar Card and Application Acknowledgement Slip at your Block Development Office (BDO) housing desk or by consulting your Panchayat Secretary.'
+      },
+      {
+        q: 'How to download Abua Awas Yojana Form PDF and how to fill it?',
+        a: 'The official physical application and verification form is available 100% free of charge at all Gram Panchayat offices and "Aapki Yojana Aapki Sarkar Aapke Dwar" camps. Fill in personal details, Aadhaar, land details, and submit it along with photographs of your kutcha house.'
+      },
+      {
+        q: 'What is the required layout, naksha, and room size under Abua Awas?',
+        a: 'Unlike older housing schemes with only 1 or 2 rooms, Abua Awas mandates a spacious 3-room pucca house with a separate permanent kitchen, requiring a minimum plinth area of 31 square meters.'
+      },
+      {
+        q: 'Who is eligible to get a house under Abua Awas Yojana?',
+        a: 'Permanent residents of Jharkhand living in kutcha, mud, or thatched houses who have never received benefits under PMAY-G, PMAY-U, or Ambedkar Awas, and whose families do not own a four-wheeler, permanent government job, or income tax filing status.'
       }
     ],
     faqs_hi: [
       {
-        q: 'अबुआ आवास योजना के तहत कितने कमरे बनाए जाते हैं?',
-        a: 'इस योजना में विशेष रूप से 3 कमरों और एक पक्की रसोई का निर्माण कराया जाता है, जिसका न्यूनतम क्षेत्रफल 31 वर्ग मीटर होना चाहिए।'
+        q: 'अबुआ आवास योजना की नई लिस्ट 2026 में अपना नाम कैसे चेक करें?',
+        a: 'आप अपनी ग्राम पंचायत भवन या प्रखंड विकास पदाधिकारी (BDO) कार्यालय में चस्पा की गई अनुमोदित ग्राम सभा प्रतीक्षा सूची (Waiting List) में अपना नाम देख सकते हैं। इसके अलावा ग्रामीण विकास विभाग द्वारा स्वीकृत लाभार्थियों का रजिस्टर भी पंचायत स्तर पर उपलब्ध रहता है।'
+      },
+      {
+        q: 'अबुआ आवास योजना में कुल कितना पैसा मिलता है और किस्तें कैसे आती हैं?',
+        a: 'योजना के तहत 3 कमरों के पक्के मकान के लिए कुल ₹2,00,000 की सरकारी सहायता 4 किस्तों में सीधे बैंक खाते में मिलती है: पहली किस्त 15% (प्लिंथ निर्माण पर), दूसरी किस्त 25% (लिंटेल स्तर पर), तीसरी किस्त 50% (छत ढलाई पर), और चौथी किस्त 10% (प्लास्टर व पूर्णता पर), साथ ही मनरेगा मजदूरी अलग से मिलती है।'
+      },
+      {
+        q: 'अबुआ आवास योजना का स्टेटस (Aadhaar Number से) कैसे चेक करें?',
+        a: 'अपने प्रखंड कार्यालय (BDO) के आवास पटल अथवा पंचायत सचिव के पास जाकर आधार नंबर और आवेदन पावती रसीद (Acknowledgement Slip) दिखाकर अपनी स्वीकृति और जियो-टैगिंग का लाइव स्टेटस चेक कर सकते हैं।'
+      },
+      {
+        q: 'अबुआ आवास योजना का आवेदन फॉर्म PDF कैसे डाउनलोड करें और कैसे भरें?',
+        a: 'अबुआ आवास योजना का फॉर्म अपनी ग्राम पंचायत अथवा "आपकी योजना आपकी सरकार आपके द्वार" शिविर से पूरी तरह निःशुल्क प्राप्त किया जा सकता है। फॉर्म में अपना नाम, आधार नंबर, परिवार के सदस्यों का विवरण, जमीन का ब्योरा भरकर कच्चे घर के फोटो के साथ जमा करना होता है।'
+      },
+      {
+        q: 'अबुआ आवास योजना के मकान का नक्शा (Naksha) और कमरे का आकार क्या है?',
+        a: 'इस योजना में 3 पक्के कमरे और एक अलग पक्की रसोई का निर्माण अनिवार्य है, जिसका न्यूनतम कारपेट एरिया 31 वर्ग मीटर (लगभग 334 वर्ग फीट) होना जरूरी है।'
+      },
+      {
+        q: 'अबुआ आवास योजना के लिए कौन पात्र है और किसको प्राथमिकता मिलती है?',
+        a: 'झारखंड के वह सभी गरीब परिवार जो कच्चे मकान या झोपड़ी में रहते हैं और जिन्हें कभी पीएम आवास या आंबेडकर आवास नहीं मिला, वे पात्र हैं। आदिम जनजाति (PVTG), विधवा, और प्राकृतिक आपदा पीड़ितों को चयन में पहली प्राथमिकता मिलती है।'
       }
     ],
     
@@ -1041,16 +1243,59 @@ export const SCHEMES: Scheme[] = [
         name: 'Rural Development Department, Govt. of Jharkhand',
         authority: 'Government of Jharkhand',
         url: 'https://jharkhand.gov.in',
-        verificationDate: 'October 27, 2026'
+        verificationDate: 'November 06, 2026'
       }
     ],
     keywords: [
-      'abua awas yojana', 'jharkhand abua awas list', 'abua awas 2 lakh',
-      'abua awas status', 'jharkhand housing scheme', 'abua awas eligibility',
-      'अबुआ आवास योजना', 'अबुआ आवास लिस्ट', 'झारखंड आवास', 'अबुआ आवास स्टेटस'
+      'abua awas yojana',
+      'jharkhand abua awas yojana',
+      'अबुआ आवास योजना',
+      'अबुआ आवास योजना झारखंड लिस्ट pdf download',
+      'abua awas yojana list 2026',
+      'abua awas yojana jharkhand list check online 2026',
+      'abua awas yojana jharkhand list check online',
+      'abua awas yojana list pdf',
+      'abua awas yojana list 2026 jharkhand',
+      'abua awas yojana status check',
+      'abua awas yojana status check by aadhaar number',
+      'abua awas yojana track status',
+      'abua awas yojana payment status',
+      'abua awas yojana official website',
+      'abua awas yojana me kitna paisa milta hai',
+      'abua awas yojana kitna paisa milta hai',
+      'abua awas yojana amount',
+      'abua awas yojana total amount',
+      'abua awas yojana 2 lakh',
+      'abua awas yojana 2nd installment',
+      'abua awas yojana 3 kist kab aayegi',
+      'abua awas yojana form pdf',
+      'abua awas yojana form pdf download',
+      'abua awas yojana form kaise bhare',
+      'how to fill abua awas yojana form',
+      'abua awas yojana jharkhand online apply',
+      'abua awas yojana jharkhand online registration',
+      'अबुआ आवास योजना झारखंड',
+      'अबुआ आवास योजना झारखंड लिस्ट चेक ऑनलाइन',
+      'अबुआ आवास लिस्ट 2026',
+      'abua awas yojana gramin list',
+      'abua awas yojana naksha',
+      'abua awas yojana kisko milega',
+      'abua awas yojana who is eligible',
+      'eligibility for abua awas yojana',
+      'how to check abua awas yojana list',
+      'how to check abua awas yojana status',
+      'how to check abua awas yojana status online',
+      'abua awas yojana online list jharkhand',
+      'abua awas yojana list app',
+      'abua awas yojana kya hai',
+      'what is abua awas yojana',
+      'what is abua awas yojana in jharkhand',
+      'abua awas yojana benefits',
+      'abua awas yojana me kya kya document chahiye',
+      'abua awas yojana 2026'
     ],
-    metaDescription_en: 'Jharkhand Abua Awas Yojana: ₹2 Lakh financial grant for 3-room pucca houses, eligibility criteria, beneficiary lists, Panchayat verification process.',
-    metaDescription_hi: 'झारखंड अबुआ आवास योजना: 3 कमरों के पक्के मकान हेतु ₹2 लाख की सरकारी मदद, नियम, ग्राम सभा प्राथमिकता सूची और आवेदन की सम्पूर्ण जानकारी।'
+    metaDescription_en: '✅ Jharkhand Abua Awas Yojana 2026: Check your name in the new beneficiary list online, ₹2 Lakh grant installment schedule (4 installments), Aadhaar status check, 3-room house naksha & PDF form.',
+    metaDescription_hi: '✅ अबुआ आवास योजना झारखंड 2026: नई ग्रामीण/शहरी लिस्ट में अपना नाम कैसे देखें? जानिए 3 कमरों के मकान हेतु ₹2 लाख की 4 किस्तें, आधार से स्टेटस चेक, नक्शा और फॉर्म PDF डाउनलोड का 100% सही तरीका।'
   },
   {
     id: 'national-scholarship-portal',

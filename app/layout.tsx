@@ -101,6 +101,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        {/* Google tag (gtag.js / GTM) */}
+        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NM3KWCTG" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            `,
+          }}
+        />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
         <link rel="alternate icon" href="/favicon.ico?v=2" />
         <link rel="apple-touch-icon" href="/favicon.svg?v=2" />
