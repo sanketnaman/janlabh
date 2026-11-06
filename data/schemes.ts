@@ -1010,8 +1010,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'pm-vishwakarma',
     slug: 'pm-vishwakarma-yojana-artisan-support',
-    title_en: 'PM Vishwakarma Scheme: ₹3 Lakh Loan at 5%, Free Toolkit & Skill Stipend',
-    title_hi: 'पीएम विश्वकर्मा योजना: 5% ब्याज पर ₹3 लाख ऋण, मुफ्त ₹15,000 टूलकिट व दैनिक भत्ता',
+    title_en: 'PM Vishwakarma Yojana 2026: Online Apply, ₹15,000 Toolkit & ₹3 Lakh Loan',
+    title_hi: 'पीएम विश्वकर्मा योजना 2026: ऑनलाइन रजिस्ट्रेशन, ₹15,000 टूलकिट व ₹3 लाख लोन',
     shortTitle_en: 'PM Vishwakarma Scheme',
     shortTitle_hi: 'पीएम विश्वकर्मा योजना',
     category: 'employment',
@@ -1019,137 +1019,233 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Central (All India)',
     stateLabel_hi: 'केंद्र सरकार (अखिल भारतीय)',
     status: 'Active',
-    lastVerified: 'October 24, 2026',
+    lastVerified: 'November 2026',
     
-    benefitSummary_en: 'Collateral-free enterprise loans up to ₹3,00,000 at a subsidized 5% interest rate (₹1 Lakh in 1st tranche, ₹2 Lakh in 2nd tranche), ₹15,000 e-voucher for modern toolkit, 5–7 days free basic skill training with ₹500/day stipend, and official PM Vishwakarma Certificate & ID card.',
-    benefitSummary_hi: '5% की रियायती ब्याज दर पर बिना किसी गारंटी (कोलैटरल) के ₹3,00,000 तक का लोन (पहली बार ₹1 लाख, दूसरी बार ₹2 लाख), आधुनिक टूलकिट हेतु ₹15,000 का ई-वाउचर, 5-7 दिन का मुफ्त प्रशिक्षण व ₹500 प्रतिदिन का स्टाइपेंड।',
-    benefitAmount_en: 'Up to ₹3 Lakh loan + ₹15,000 toolkit voucher',
-    benefitAmount_hi: '₹3 लाख तक का सस्ता लोन + ₹15,000 टूलकिट वाउचर',
+    benefitSummary_en: 'Collateral-free business loans up to ₹3,00,000 at a subsidized 5% interest rate (₹1 Lakh in 1st tranche, ₹2 Lakh in 2nd tranche), ₹15,000 e-RUPI voucher for advanced modern toolkit, 5–7 days free basic skill training with ₹500/day daily stipend, and official PM Vishwakarma Certificate & Digital ID Card.',
+    benefitSummary_hi: '5% की रियायती ब्याज दर पर बिना किसी गारंटी (कोलैटरल-फ्री) के ₹3,00,000 तक का लोन (पहली बार ₹1 लाख, दूसरी बार ₹2 लाख), आधुनिक टूलकिट हेतु ₹15,000 का ई-वाउचर, 5-7 दिन का मुफ्त प्रशिक्षण व ₹500 प्रतिदिन का दैनिक भत्ता।',
+    benefitAmount_en: 'Up to ₹3 Lakh loan (5% interest) + ₹15,000 toolkit voucher',
+    benefitAmount_hi: '₹3 लाख तक का सस्ता लोन (5% ब्याज) + ₹15,000 टूलकिट वाउचर',
     whoCanApply_en: 'Traditional artisans and craftspeople working with their hands and tools across 18 designated family trades (Carpenters, Blacksmiths, Masons, Tailors, Barbers, Potters, Cobblers, etc.).',
-    whoCanApply_hi: 'हाथ और औजारों से पारंपरिक कार्य करने वाले 18 चिन्हित व्यवसायों के कारीगर (बढ़ई, लोहार, कुम्हार, राजमिस्त्री, दर्जी, नाई, मोची, धोबी आदि)।',
-    applicationMode: 'Online via CSC Centres',
+    whoCanApply_hi: 'हाथ और पारंपरिक औजारों से कार्य करने वाले 18 चिन्हित व्यवसायों के कारीगर व दस्तकार (बढ़ई, लोहार, कुम्हार, राजमिस्त्री, दर्जी, नाई, मोची, धोबी आदि)।',
+    applicationMode: 'Online (via CSC Centers / pmvishwakarma.gov.in)',
     bannerImage: '/images/schemes/pm-vishwakarma.webp',
     
-    whatIsThis_en: 'PM Vishwakarma is an ambitious Central Sector initiative by the Ministry of Micro, Small and Medium Enterprises (MSME) to empower traditional craftspeople and artisans across India, providing them end-to-end support from identity recognition and skill upgradation to credit support and digital market linkages.',
-    whatIsThis_hi: 'पीएम विश्वकर्मा योजना सूक्ष्म, लघु एवं मध्यम उद्यम मंत्रालय (MSME) द्वारा पारंपरिक शिल्पकारों व दस्तकारों को औपचारिक पहचान, कौशल उन्नयन, आधुनिक टूलकिट और सस्ती वित्तीय पूंजी प्रदान करने के लिए शुरू की गई राष्ट्रीय योजना है।',
+    whatIsThis_en: 'PM Vishwakarma is an ambitious Central Sector scheme spearheaded by the Ministry of Micro, Small and Medium Enterprises (MSME) to formally recognize and empower traditional craftspeople and artisans across India. The scheme provides holistic end-to-end support including national identity recognition, free advanced skill upgradation, ₹15,000 modern toolkits, low-interest collateral-free loans, and digital marketing linkages.',
+    whatIsThis_hi: 'पीएम विश्वकर्मा योजना सूक्ष्म, लघु एवं मध्यम उद्यम मंत्रालय (MSME) द्वारा पारंपरिक शिल्पकारों व दस्तकारों को औपचारिक पहचान, कौशल उन्नयन, आधुनिक टूलकिट और सस्ती वित्तीय पूंजी प्रदान करने के लिए शुरू की गई राष्ट्रीय योजना है, ताकि वे अपने हुनर को आधुनिक बाजार से जोड़कर आत्मनिर्भर बन सकें।',
     
     benefitsList_en: [
-      'Official PM Vishwakarma Certificate and Digital ID Card recognizing the artisan.',
-      'Free Basic Skill Training (5–7 days) with ₹500 daily stipend deposited to bank.',
-      '₹15,000 Digital Incentive grant / e-voucher for purchasing modern trade toolkits.',
-      'Subsidized loan: ₹1,00,000 (repayable in 18 months), followed by ₹2,00,000 (repayable in 30 months) at just 5% interest.',
-      'Incentive of ₹1 per transaction for up to 100 digital transactions monthly.'
+      'Official PM Vishwakarma Certificate and Digital ID Card recognizing the artisan across India.',
+      'Free 5–7 days Basic Skill Training (and optional 15+ days Advanced Training) with ₹500 daily stipend deposited directly to bank.',
+      '₹15,000 Digital Incentive grant (e-RUPI voucher) for purchasing modern specialized trade toolkits.',
+      'Subsidized enterprise loan: First tranche of ₹1,00,000 (repayable in 18 months), followed by second tranche of ₹2,00,000 (repayable in 30 months) at just 5% interest with zero collateral.',
+      'Digital transaction incentive of ₹1 per transaction for up to 100 eligible digital transactions every month.'
     ],
     benefitsList_hi: [
-      'आधिकारिक पीएम विश्वकर्मा प्रमाण पत्र और डिजिटल आईडी कार्ड की मान्यता।',
-      '5 से 7 दिनों का मुफ्त बुनियादी कौशल प्रशिक्षण और ₹500 प्रतिदिन का दैनिक भत्ता।',
-      'उन्नत औजार खरीदने के लिए ₹15,000 का निःशुल्क टूलकिट ई-वाउचर।',
-      'बिना गारंटी लोन: प्रथम चरण में ₹1,00,000 (18 महीने) और दूसरे चरण में ₹2,00,000 (30 महीने) मात्र 5% ब्याज पर।',
+      'आधिकारिक पीएम विश्वकर्मा प्रमाण पत्र और डिजिटल आईडी कार्ड, जिससे देश भर में मान्यता मिलती है।',
+      '5 से 7 दिनों का मुफ्त बुनियादी कौशल प्रशिक्षण और प्रतिदिन ₹500 का स्टाइपेंड सीधे बैंक खाते में।',
+      'उन्नत आधुनिक औजार खरीदने के लिए ₹15,000 का निःशुल्क टूलकिट ई-वाउचर (e-RUPI)।',
+      'बिना किसी गारंटी (कोलैटरल-फ्री) लोन: प्रथम चरण में ₹1,00,000 (18 महीने) और समय पर भुगतान के बाद दूसरे चरण में ₹2,00,000 (30 महीने) मात्र 5% ब्याज पर।',
       'डिजिटल लेन-देन करने पर प्रति ट्रांजेक्शन ₹1 का प्रोत्साहन (अधिकतम 100 ट्रांजेक्शन प्रतिमाह)।'
     ],
     
     eligibility: {
       eligibleIf_en: [
-        'Applicant must be an artisan or craftsperson engaged in one of the 18 specified trades on self-employment basis.',
-        'Minimum age of 18 years on the date of registration.',
-        'The applicant must not have availed similar credit-based schemes like PMEGP, PM SVANidhi, or Mudra in the past 5 years (except where loans are fully repaid).',
-        'Only one member per family is eligible for benefits under this scheme.'
+        'Applicant must be an artisan or craftsperson engaged in one of the 18 designated traditional family trades on a self-employment basis.',
+        'Minimum age of 18 years on the date of online registration.',
+        'The applicant must not have availed similar central credit schemes like PMEGP, PM SVANidhi, or Mudra loans in the past 5 years (except where existing loans are fully cleared).',
+        'Benefit is restricted to only one adult member per family unit (husband, wife, and unmarried children).'
       ],
       eligibleIf_hi: [
-        'आवेदक स्वरोजगार के आधार पर 18 निर्दिष्ट पारंपरिक व्यवसायों में से किसी एक में कार्यरत कारीगर हो।',
+        'आवेदक स्वरोजगार के आधार पर 18 निर्दिष्ट पारंपरिक शिल्पों/व्यवसायों में से किसी एक में कार्यरत कारीगर हो।',
         'पंजीकरण की तिथि पर न्यूनतम आयु 18 वर्ष पूर्ण हो चुकी हो।',
-        'आवेदक ने पिछले 5 वर्षों में पीएमईजीपी, स्वनिधि या मुद्रा जैसी सरकारी लोन योजनाओं से कोई बकाया लोन न लिया हो।',
-        'परिवार में से केवल एक ही सदस्य (पति/पत्नी/अविवाहित संतान) इस योजना का लाभ ले सकता है।'
+        'आवेदक ने पिछले 5 वर्षों में पीएमईजीपी, स्वनिधि या मुद्रा जैसी सरकारी योजनाओं से कोई बकाया लोन न लिया हो (पूरी तरह चुकता लोन वाले पात्र हैं)।',
+        'परिवार में से केवल एक ही सदस्य (पति, पत्नी और अविवाहित संतान) इस योजना का लाभ ले सकता है।'
       ],
       notEligibleIf_en: [
-        'Persons in government service and their family members.',
-        'Persons working on salary in private factories without traditional craftsmanship.',
-        'Individuals engaged outside the 18 declared trades.'
+        'Persons in regular government service (Central/State/PSU) and their immediate family members.',
+        'Individuals working on fixed salaried employment in private factories or commercial companies without self-employed traditional craftsmanship.',
+        'Individuals engaged outside the 18 officially designated traditional trades.'
       ],
       notEligibleIf_hi: [
-        'सरकारी सेवा में कार्यरत कर्मचारी और उनके परिवार के सदस्य।',
+        'सरकारी सेवा (केंद्र/राज्य/पीएसयू) में कार्यरत नियमित कर्मचारी और उनके परिवार के सदस्य।',
         'कंपनियों या कारखानों में नियमित वेतन पर कार्य करने वाले गैर-हस्तशिल्पी।',
-        'योजना में सूचीबद्ध 18 पारंपरिक व्यवसायों से बाहर के कार्य।'
+        'योजना में शामिल 18 आधिकारिक पारंपरिक व्यवसायों से बाहर के कार्य।'
       ]
     },
     
     requiredDocuments_en: [
-      'Aadhaar Card of the applicant artisan',
-      'Active Mobile number linked with Aadhaar (biometric verification required)',
-      'Bank Account Passbook details (Aadhaar seeded)',
-      'Ration Card / Proof of family identity',
-      'Trade Skill verification during CSC biometric registration'
+      'Aadhaar Card of the artisan (mandatory for biometric authentication)',
+      'Active Mobile number linked to Aadhaar for OTP and e-RUPI voucher delivery',
+      'Bank Account Passbook details (account must be Aadhaar-seeded / NPCI active for stipend and loan)',
+      'Ration Card / Family Samagra ID / Family Identity Proof',
+      'Trade skill self-declaration during CSC biometric registration'
     ],
     requiredDocuments_hi: [
-      'आवेदक कारीगर का आधार कार्ड',
-      'आधार से लिंक सक्रिय मोबाइल नंबर (बायोमेट्रिक सत्यापन अनिवार्य)',
-      'बैंक खाता पासबुक विवरण (आधार से लिंक)',
+      'आवेदक कारीगर का आधार कार्ड (बायोमेट्रिक फिंगरप्रिंट सत्यापन हेतु अनिवार्य)',
+      'आधार से लिंक चालू मोबाइल नंबर (ओटीपी और ₹15,000 ई-वाउचर एसएमएस प्राप्त करने हेतु)',
+      'बैंक खाता पासबुक विवरण (खाता एनपीसीआई आधार सीडेड होना चाहिए ताकि स्टाइपेंड व लोन क्रेडिट हो)',
       'राशन कार्ड / परिवार का पहचान प्रमाण',
       'व्यवसाय और हुनर का स्व-प्रमाणीकरण'
     ],
     
     howToApply_en: [
-      'Visit your nearest Common Service Centre (CSC) with your Aadhaar and bank details.',
-      'The CSC VLE operator logs into pmvishwakarma.gov.in using their official credentials.',
-      'Complete biometric Aadhaar authentication and enter trade and family details.',
-      'Select your trade from the 18 eligible categories (e.g. Carpenter, Tailor, Barber, Mason).',
-      'Submit the application for three-stage verification: Gram Panchayat / ULB level, District Implementation Committee, and Screening Committee.',
-      'Upon approval, attend training and receive the toolkit voucher and loan disbursement.'
+      'Visit your nearest Common Service Centre (CSC) with your Aadhaar Card, linked mobile, and bank passbook.',
+      'The CSC VLE operator logs into pmvishwakarma.gov.in using their verified credentials.',
+      'Undergo biometric Aadhaar fingerprint authentication to create and verify your digital artisan profile.',
+      'Select your trade from the 18 eligible traditional categories (e.g., Carpenter, Tailor, Barber, Mason, Potter).',
+      'Submit the application for three-stage official verification: Gram Panchayat / Urban Local Body level, District Implementation Committee, and National Screening Committee.',
+      'Once verified, complete the 5-7 days basic skill training, receive your ₹15,000 toolkit voucher, and apply for the 5% collateral-free loan.'
     ],
     howToApply_hi: [
-      'अपने नजदीकी सीएससी (CSC) प्रज्ञा केंद्र पर अपने आधार कार्ड और बैंक पासबुक के साथ जाएं।',
-      'सीएससी संचालक pmvishwakarma.gov.in पोर्टल पर आपका ऑनलाइन पंजीकरण प्रारंभ करेगा।',
-      'बायोमेट्रिक फिंगरप्रिंट सत्यापन करवाएं और अपने परिवार व कार्य का विवरण भरें।',
-      '18 ट्रेडों में से अपने काम (जैसे बढ़ई, दर्जी, राजमिस्त्री, धोबी आदि) का चयन करें।',
-      'आवेदन जमा होने पर ग्राम पंचायत/शहरी निकाय, जिला कार्यान्वयन समिति द्वारा सत्यापन किया जाएगा।',
-      'सत्यापन के उपरांत प्रशिक्षण में भाग लें और टूलकिट वाउचर व कम ब्याज के लोन का लाभ उठाएं।'
+      'अपने नजदीकी सीएससी (CSC) प्रज्ञा केंद्र पर अपने आधार कार्ड, लिंक मोबाइल नंबर और बैंक पासबुक के साथ जाएं।',
+      'सीएससी संचालक आधिकारिक पोर्टल pmvishwakarma.gov.in पर आपका ऑनलाइन पंजीकरण शुरू करेगा।',
+      'बायोमेट्रिक फिंगरप्रिंट से आधार सत्यापन करवाएं और अपने परिवार व हुनर का विवरण दर्ज करें।',
+      '18 श्रेणियों में से अपने काम (जैसे बढ़ई, दर्जी, राजमिस्त्री, धोबी, मोची आदि) का सही चुनाव करें।',
+      'आवेदन जमा होने पर ग्राम पंचायत/शहरी निकाय, जिला कार्यान्वयन समिति तथा स्क्रीनिंग समिति द्वारा तीन-स्तरीय सत्यापन होगा।',
+      'सत्यापन पूरा होते ही 5-7 दिन की ट्रेनिंग में भाग लें, ₹15,000 का टूलकिट वाउचर प्राप्त करें और 5% ब्याज पर लोन के लिए आवेदन करें।'
     ],
     
-    statusCheckGuide_en: 'Check registration and verification stage at pmvishwakarma.gov.in by clicking "Login > Applicant / Beneficiary Login" and entering your Aadhaar OTP.',
-    statusCheckGuide_hi: 'pmvishwakarma.gov.in पर जाकर "Login > Applicant Login" पर क्लिक करें और आधार ओटीपी से अपने आवेदन व लोन की स्थिति देखें।',
+    statusCheckGuide_en: 'To check your PM Vishwakarma application status: 1. Visit pmvishwakarma.gov.in > click "Login > Applicant / Beneficiary Login". 2. Enter your registered mobile number and verify via OTP. 3. Your dashboard will display real-time verification stages (Panchayat, District, Screening), training schedule, and loan disbursement status.',
+    statusCheckGuide_hi: 'पीएम विश्वकर्मा आवेदन का स्टेटस देखने के लिए: 1. pmvishwakarma.gov.in पर जाएं और "Login > Applicant / Beneficiary Login" पर क्लिक करें। 2. अपना पंजीकृत मोबाइल नंबर और प्राप्त ओटीपी दर्ज करें। 3. डैशबोर्ड पर आपको ग्राम पंचायत, जिला समिति के सत्यापन का स्तर, ट्रेनिंग की तारीख और लोन स्वीकृति का लाइव स्टेटस दिखेगा।',
     officialStatusUrl: 'https://pmvishwakarma.gov.in',
     
     commonProblems_en: [
       {
-        problem: 'Pending verification at Gram Panchayat level',
-        solution: 'Contact your Village Mukhiya / Panchayat Secretary or Ward Councillor to approve your trade identity in their official PM Vishwakarma portal queue.'
+        problem: 'Application status shows "Pending at Gram Panchayat / ULB Level"',
+        solution: 'Contact your Village Mukhiya, Gram Panchayat Secretary, or Ward Councillor to approve your trade verification in their official PM Vishwakarma portal dashboard queue.'
+      },
+      {
+        problem: 'How to redeem the ₹15,000 toolkit e-RUPI voucher',
+        solution: 'The e-RUPI voucher code and QR link is delivered via SMS upon completing basic training. Present this SMS/QR code at authorized hardware vendors and registered tool supply stores to purchase your trade toolkit.'
+      },
+      {
+        problem: 'Aadhaar biometric fingerprint mismatch at CSC',
+        solution: 'Clean fingers thoroughly, update your biometric data at the nearest Aadhaar Seva Kendra, or use IRIS eye-scan authentication at the CSC center.'
       }
     ],
     commonProblems_hi: [
       {
-        problem: 'ग्राम पंचायत स्तर पर सत्यापन लंबित है',
-        solution: 'अपने ग्राम प्रधान/मुखिया या वार्ड पार्षद से संपर्क करें और उन्हें आधिकारिक पोर्टल पर आपका सत्यापन अनुमोदित (Approve) करने का अनुरोध करें।'
+        problem: 'स्टेटस में "Pending at Gram Panchayat / ULB Level" दिख रहा है',
+        solution: 'अपने ग्राम प्रधान/मुखिया या वार्ड पार्षद से संपर्क करें और उन्हें आधिकारिक पोर्टल पर अपने लॉगिन से आपका सत्यापन स्वीकृत (Approve) करने का अनुरोध करें।'
+      },
+      {
+        problem: '₹15,000 का टूलकिट ई-वाउचर कैसे भुनाएं (Redeem करें)',
+        solution: 'ट्रेनिंग पूरी होने पर मोबाइल पर एसएमएस के जरिए e-RUPI वाउचर कोड प्राप्त होता है। इसे अधिकृत टूलकिट दुकानों या हार्डवेयर स्टोर पर दिखाकर अपने काम के औजार खरीदें।'
+      },
+      {
+        problem: 'सीएससी केंद्र पर बायोमेट्रिक फिंगरप्रिंट मैच नहीं हो रहा',
+        solution: 'नजदीकी आधार सेवा केंद्र पर जाकर अपना बायोमेट्रिक अपडेट करवाएं अथवा सीएससी सेंटर पर आईरिस (आंखों की पुतली) स्कैन से सत्यापन करवाएं।'
       }
     ],
     
     faqs_en: [
       {
-        q: 'Do I need to submit property papers to get the ₹1 Lakh loan?',
-        a: 'No. The loan under PM Vishwakarma is 100% collateral-free and backed by the Credit Guarantee Fund Trust.'
+        q: 'What is PM Vishwakarma Yojana and what are the main benefits in 2026?',
+        a: 'PM Vishwakarma is a flagship Central Government scheme supporting traditional artisans with: 1. Official National Certificate & ID Card, 2. Free 5-7 days basic skill training with ₹500/day stipend, 3. ₹15,000 digital e-RUPI voucher for modern toolkits, 4. Up to ₹3 Lakh collateral-free loan at just 5% interest (₹1 Lakh in 1st stage, ₹2 Lakh in 2nd stage), and 5. Digital transaction cashback.'
+      },
+      {
+        q: 'Which 18 traditional artisan trades are eligible for PM Vishwakarma Scheme?',
+        a: 'The 18 covered trades are: 1. Carpenter (Suthar), 2. Boat Maker, 3. Armourer, 4. Blacksmith (Lohar), 5. Hammer & Tool Kit Maker, 6. Locksmith, 7. Sculptor (Moortikar/Stone Carver), 8. Goldsmith (Sonar), 9. Potter (Kumhaar), 10. Cobbler (Charmakar/Footwear artisan), 11. Mason (Rajmistri), 12. Basket/Mat/Broom Maker/Coir Weaver, 13. Doll & Toy Maker (Traditional), 14. Barber (Naai), 15. Garland Maker (Malakaar), 16. Washerman (Dhobi), 17. Tailor (Darzi), and 18. Fishing Net Maker.'
+      },
+      {
+        q: 'How to get and redeem the ₹15,000 modern toolkit e-voucher?',
+        a: 'After completing 5–7 days of basic skill training with satisfactory evaluation, an e-RUPI digital voucher worth ₹15,000 is issued by the government directly to your registered mobile number via SMS. You can redeem this voucher at empaneled tool suppliers and hardware stores to purchase certified trade equipment.'
+      },
+      {
+        q: 'How to get a ₹3 Lakh collateral-free loan at 5% interest under PM Vishwakarma?',
+        a: 'Eligible artisans who complete basic skill training are eligible for an enterprise loan: Stage 1 provides up to ₹1,00,000 repayable in 18 months. Upon successful timely repayment, Stage 2 offers an additional ₹2,00,000 repayable in 30 months. The effective interest rate for the artisan is just 5% per annum, with the remaining interest subsidized by the Central Government.'
+      },
+      {
+        q: 'How to apply for PM Vishwakarma Yojana online through CSC?',
+        a: "Artisans can register through any local Common Service Center (CSC). The CSC operator enters the applicant's Aadhaar, conducts biometric fingerprint e-KYC, captures trade proof, and submits the application to the Gram Panchayat / Urban local body for official verification."
+      },
+      {
+        q: 'How to download the PM Vishwakarma Certificate and Digital ID Card?',
+        a: 'Visit pmvishwakarma.gov.in > click "Login > Applicant Login" > log in using your registered mobile number and Aadhaar OTP. Once your application is officially approved by the committee, you can view and download your high-resolution PM Vishwakarma Certificate and ID card PDF.'
+      },
+      {
+        q: 'How to check PM Vishwakarma application and loan status online?',
+        a: 'Go to pmvishwakarma.gov.in and log in to the Applicant/Beneficiary portal with mobile OTP. The dashboard displays the live stage of your application (Stage 1 Gram Panchayat, Stage 2 District Committee, Stage 3 Screening Committee) and bank loan sanction status.'
+      },
+      {
+        q: 'What is the official toll-free helpline number for PM Vishwakarma Yojana?',
+        a: 'The official Government of India PM Vishwakarma toll-free helpline numbers are 1800-267-7777 and 17923. The MSME Champions desk can be reached at 011-23061500 or by email at champions@gov.in.'
       }
     ],
     faqs_hi: [
       {
-        q: 'क्या ₹1 लाख का लोन लेने के लिए कोई जमीन या संपत्ति गिरवी रखनी होगी?',
-        a: 'नहीं। यह ऋण पूरी तरह कोलैटरल-फ्री (बिना किसी गारंटी) है और भारत सरकार द्वारा गारंटीकृत है।'
+        q: 'पीएम विश्वकर्मा योजना क्या है और इसमें क्या-क्या बड़े लाभ मिलते हैं?',
+        a: 'पीएम विश्वकर्मा केंद्र सरकार की फ्लैगशिप योजना है जिसमें पारंपरिक कारीगरों को: 1. राष्ट्रीय विश्वकर्मा प्रमाण पत्र व आईडी कार्ड, 2. ₹500 प्रतिदिन भत्ते के साथ 5-7 दिन की मुफ्त ट्रेनिंग, 3. आधुनिक औजारों के लिए ₹15,000 का फ्री ई-वाउचर (e-RUPI), 4. 5% ब्याज पर ₹3 लाख तक का बिना गारंटी लोन (पहले ₹1 लाख, फिर ₹2 लाख), और 5. डिजिटल ट्रांजेक्शन पर कैशबैक मिलता है।'
+      },
+      {
+        q: 'पीएम विश्वकर्मा योजना में कौन-कौन से 18 पारंपरिक काम (Trades) शामिल हैं?',
+        a: 'शामिल 18 व्यवसाय: 1. बढ़ई (सुथार), 2. नाव निर्माता, 3. अस्त्रकार, 4. लोहार, 5. हथौड़ा व टूलकिट निर्माता, 6. ताला बनाने वाले, 7. मूर्तिकार (पत्थर तराशने वाले), 8. सुनार, 9. कुम्हार, 10. मोची (जूता बनाने वाले), 11. राजमिस्त्री, 12. टोकरी/चटाई/झाड़ू निर्माता, 13. पारंपरिक गुड़िया व खिलौना निर्माता, 14. नाई, 15. मालाकार (फूल विक्रेता), 16. धोबी, 17. दर्जी, और 18. मछली का जाल बनाने वाले।'
+      },
+      {
+        q: '₹15,000 का फ्री टूलकिट ई-वाउचर कैसे मिलता है और इसे कैसे भुनाएं?',
+        a: '5 से 7 दिनों का बेसिक कौशल प्रशिक्षण पूरा होने पर सरकार द्वारा आपके रजिस्टर्ड मोबाइल नंबर पर ₹15,000 का e-RUPI डिजिटल वाउचर भेजा जाता है। इस वाउचर/क्यूआर कोड को अधिकृत हार्डवेयर स्टोर्स पर दिखाकर आप अपने काम के उन्नत आधुनिक औजार बिल्कुल मुफ्त खरीद सकते हैं।'
+      },
+      {
+        q: 'पीएम विश्वकर्मा में 5% ब्याज पर ₹3 लाख का लोन कैसे मिलता है?',
+        a: 'ट्रेनिंग पूरी करने वाले कारीगरों को प्रथम चरण में ₹1,00,000 का लोन (18 महीने की अवधि) बिना किसी गारंटी के मात्र 5% ब्याज पर मिलता है। इस लोन को समय पर चुकाने के बाद द्वितीय चरण में व्यवसाय विस्तार हेतु ₹2,00,000 का अतिरिक्त लोन (30 महीने की अवधि) दिया जाता है।'
+      },
+      {
+        q: 'पीएम विश्वकर्मा योजना में ऑनलाइन आवेदन (Registration) कैसे करें?',
+        a: 'कारीगर नजदीकी सीएससी (CSC) प्रज्ञा केंद्र पर जाकर आवेदन कर सकते हैं। सीएससी संचालक आपके आधार नंबर से बायोमेट्रिक फिंगरप्रिंट ई-केवाईसी करेगा, आपके हुनर का विवरण भरेगा और फॉर्म को ग्राम पंचायत/शहरी निकाय सत्यापन हेतु सबमिट करेगा।'
+      },
+      {
+        q: 'पीएम विश्वकर्मा का सर्टिफिकेट और डिजिटल आईडी कार्ड कैसे डाउनलोड करें?',
+        a: 'pmvishwakarma.gov.in पोर्टल पर जाएं > "Login > Applicant Login" पर क्लिक करें > अपने मोबाइल नंबर और ओटीपी से लॉगिन करें। सत्यापन पूरा होते ही डैशबोर्ड पर "Download Certificate" और "Download ID Card" का विकल्प मिल जाएगा।'
+      },
+      {
+        q: 'पीएम विश्वकर्मा एप्लीकेशन का स्टेटस (Status Check) ऑनलाइन कैसे देखें?',
+        a: 'आधिकारिक पोर्टल pmvishwakarma.gov.in पर जाकर "Applicant Login" करें। यहाँ आपको तीनों चरणों के सत्यापन (ग्राम पंचायत, जिला समिति, स्क्रीनिंग समिति) और बैंक लोन की स्वीकृति का लाइव स्टेटस दिखाई देगा।'
+      },
+      {
+        q: 'पीएम विश्वकर्मा योजना का आधिकारिक हेल्पलाइन और टोल-फ्री नंबर क्या है?',
+        a: 'पीएम विश्वकर्मा की आधिकारिक राष्ट्रीय टोल-फ्री हेल्पलाइन 1800-267-7777 एवं 17923 है। इसके अलावा एमएसएमई हेल्पडेस्क नंबर 011-23061500 और ईमेल champions@gov.in पर भी सहायता प्राप्त की जा सकती है।'
       }
     ],
     
     officialSources: [
       {
         name: 'PM Vishwakarma Official Portal',
-        authority: 'Ministry of MSME and Ministry of Skill Development, Govt. of India',
+        authority: 'Ministry of Micro, Small and Medium Enterprises (MSME), Govt. of India',
         url: 'https://pmvishwakarma.gov.in',
-        verificationDate: 'October 24, 2026'
+        verificationDate: 'November 2026'
+      },
+      {
+        name: 'Ministry of Skill Development and Entrepreneurship',
+        authority: 'Government of India',
+        url: 'https://msde.gov.in',
+        verificationDate: 'November 2026'
       }
     ],
     keywords: [
-      'pm vishwakarma', 'vishwakarma loan status', 'vishwakarma toolkit voucher',
-      'pm vishwakarma eligibility', '18 trades list', 'vishwakarma certificate',
-      'पीएम विश्वकर्मा', 'विश्वकर्मा योजना लोन', 'टूलकिट वाउचर', 'विश्वकर्मा रजिस्ट्रेशन'
+      'pm vishwakarma', 'pm vishwakarma yojana', 'vishwakarma yojana', 'pm vishwakarma scheme',
+      'pm vishwakarma portal', 'pmvishwakarma gov in', 'pm vishwakarma gov in registration online login',
+      'pm vishwakarma login', 'pm vishwakarma yojana login', 'pm vishwakarma beneficiary login',
+      'pm vishwakarma csc login', 'pm vishwakarma app', 'pm vishwakarma gov in login',
+      'pm vishwakarma yojana online apply', 'pm vishwakarma online apply', 'pm vishwakarma registration',
+      'vishwakarma yojana online apply', 'pm vishwakarma yojana online apply 2026', 'pm vishwakarma online apply 2026',
+      'pm vishwakarma yojana online apply last date', 'how to apply pm vishwakarma yojana',
+      'pm vishwakarma yojana registration', 'vishwakarma yojana online form', 'how to register pm vishwakarma',
+      'pm vishwakarma loan apply', 'pm vishwakarma loan', 'pm vishwakarma loan apply online',
+      'vishwakarma yojana loan apply', 'how to apply pm vishwakarma loan', 'vishwakarma scheme 3 lakh loan',
+      'pm vishwakarma loan interest rate', 'collateral free loan 5 percent',
+      'pm vishwakarma tool kit', 'pm vishwakarma toolkit voucher', 'pm vishwakarma tool kit apply online',
+      'how to get pm vishwakarma toolkit', 'how to redeem pm vishwakarma voucher', 'pm vishwakarma toolkit pdf',
+      'pm vishwakarma status', 'pm vishwakarma yojana status', 'pm vishwakarma application status',
+      'pm vishwakarma certificate download', 'pm vishwakarma id card download',
+      'pm vishwakarma yojana kya hai', 'pm vishwakarma yojana kiske liye hai', 'pm vishwakarma 18 trades list',
+      'pm vishwakarma yojana benefits', 'pm vishwakarma helpline number', 'pm vishwakarma toll free number',
+      'पीएम विश्वकर्मा योजना', 'पीएम विश्वकर्मा योजना 2026', 'विश्वकर्मा योजना ऑनलाइन आवेदन',
+      'पीएम विश्वकर्मा लोन', 'विश्वकर्मा टूलकिट ₹15000', 'पीएम विश्वकर्मा स्टेटस चेक',
+      'पीएम विश्वकर्मा सर्टिफिकेट डाउनलोड', 'विश्वकर्मा योजना क्या है', 'विश्वकर्मा 18 ट्रेड लिस्ट',
+      'पीएम विश्वकर्मा सीएससी लॉगिन', 'पीएम विश्वकर्मा हेल्पलाइन नंबर'
     ],
-    metaDescription_en: 'PM Vishwakarma Scheme details: 5% subsidized ₹3 Lakh loan, ₹15,000 free toolkit voucher, 18 eligible trades, daily stipend, and CSC registration process.',
-    metaDescription_hi: 'पीएम विश्वकर्मा योजना: 5% ब्याज पर ₹3 लाख का लोन, ₹15,000 टूलकिट वाउचर, 18 पारंपरिक कारीगर ट्रेड, पात्रता और ऑनलाइन रजिस्ट्रेशन की पूरी जानकारी।'
+    metaDescription_en: '✅ PM Vishwakarma Yojana 2026: Apply online for ₹15,000 free toolkit voucher, ₹3 Lakh collateral-free loan at 5%, ₹500/day skill stipend & certificate download.',
+    metaDescription_hi: '✅ पीएम विश्वकर्मा योजना 2026: 18 पारंपरिक कारीगरों को ₹15,000 फ्री टूलकिट, 5% ब्याज पर ₹3 लाख का बिना गारंटी लोन, ₹500 दैनिक भत्ता व ऑनलाइन रजिस्ट्रेशन की पूरी गाइड।'
   },
   {
     id: 'jharkhand-abua-awas',
