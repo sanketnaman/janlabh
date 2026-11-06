@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Language, Scheme, UpdateArticle, CategoryInfo, StateInfo } from '@/types';
+import { useTheme } from '@/hooks/useTheme';
 import { SCHEMES } from '@/data/schemes';
 import { UPDATES } from '@/data/updates';
 import { CATEGORIES, STATES } from '@/data/categories';
@@ -48,40 +49,9 @@ export default function HomePageClient({ initialLang = 'en' }: HomePageClientPro
   const router = useRouter();
   const isHi = initialLang === 'hi';
   const lang: Language = initialLang;
-
-  const [isDark, setIsDark] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      return document.documentElement.classList.contains('dark');
-    }
-    return false;
-  });
+  const { isDark, toggleTheme } = useTheme();
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [adminCmsOpen, setAdminCmsOpen] = useState(false);
-
-  useEffect(() => {
-    const stored = localStorage.getItem('janlabh-theme');
-    if (stored === 'dark') {
-      document.documentElement.classList.add('dark');
-      setIsDark(true);
-    } else if (stored === 'light') {
-      document.documentElement.classList.remove('dark');
-      setIsDark(false);
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    setIsDark((prev) => {
-      const next = !prev;
-      if (next) {
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('janlabh-theme', 'dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('janlabh-theme', 'light');
-      }
-      return next;
-    });
-  };
 
   const handleToggleLang = () => {
     if (isHi) {

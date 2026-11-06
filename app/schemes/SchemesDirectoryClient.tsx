@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/hooks/useLanguage';
+import { useTheme } from '@/hooks/useTheme';
 import { Scheme, Language } from '@/types';
 import { CATEGORIES, STATES } from '@/data/categories';
 import Header from '@/components/Header';
@@ -37,32 +38,11 @@ export default function SchemesDirectoryClient({
   const currentLang = initialLang || lang;
   const isHindi = currentLang === 'hi';
 
-  const [isDark, setIsDark] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      return document.documentElement.classList.contains('dark');
-    }
-    return false;
-  });
+  const { isDark, toggleTheme } = useTheme();
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
   const [selectedState, setSelectedState] = useState<string>(initialState);
-
-  const toggleTheme = () => {
-    setIsDark(prev => {
-      const next = !prev;
-      if (typeof window !== 'undefined') {
-        if (next) {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('janlabh-theme', 'dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-          localStorage.setItem('janlabh-theme', 'light');
-        }
-      }
-      return next;
-    });
-  };
 
   const filteredSchemes = useMemo(() => {
     return schemes.filter((s) => {

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { UpdateArticle, Language, Scheme } from '@/types';
+import { useTheme } from '@/hooks/useTheme';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SearchModal from '@/components/SearchModal';
@@ -37,30 +38,9 @@ export default function UpdateDetailView({
   const router = useRouter();
   const isHi = initialLang === 'hi';
 
-  const [isDark, setIsDark] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      return document.documentElement.classList.contains('dark');
-    }
-    return false;
-  });
+  const { isDark, toggleTheme } = useTheme();
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [copied, setCopied] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDark((prev) => {
-      const next = !prev;
-      if (typeof window !== 'undefined') {
-        if (next) {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('janlabh-theme', 'dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-          localStorage.setItem('janlabh-theme', 'light');
-        }
-      }
-      return next;
-    });
-  };
 
   const handleShare = () => {
     if (typeof window !== 'undefined') {

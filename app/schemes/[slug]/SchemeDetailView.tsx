@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
+import { useTheme } from '@/hooks/useTheme';
 import { Scheme, Language } from '@/types';
 import { SCHEMES } from '@/data/schemes';
 import Header from '@/components/Header';
@@ -44,12 +45,7 @@ export default function SchemeDetailView({ scheme, initialLang }: SchemeDetailVi
   const { lang, toggleLanguage } = useLanguage();
   const currentLang = initialLang || lang;
   const isHi = currentLang === 'hi';
-  const [isDark, setIsDark] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      return document.documentElement.classList.contains('dark');
-    }
-    return false;
-  });
+  const { isDark, toggleTheme } = useTheme();
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [eligibilityModalOpen, setEligibilityModalOpen] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -77,31 +73,6 @@ export default function SchemeDetailView({ scheme, initialLang }: SchemeDetailVi
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [shareOpen]);
-
-  useEffect(() => {
-    const stored = localStorage.getItem('janlabh-theme');
-    if (stored === 'dark') {
-      document.documentElement.classList.add('dark');
-      setIsDark(true);
-    } else if (stored === 'light') {
-      document.documentElement.classList.remove('dark');
-      setIsDark(false);
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    setIsDark((prev) => {
-      const next = !prev;
-      if (next) {
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('janlabh-theme', 'dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('janlabh-theme', 'light');
-      }
-      return next;
-    });
-  };
 
   const handleSelectNav = (navId: string) => {
     const prefix = isHi ? '/hi' : '';

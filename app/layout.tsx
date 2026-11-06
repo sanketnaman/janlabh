@@ -99,7 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Google tag (gtag.js / GTM) */}
         <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NM3KWCTG" />
@@ -121,7 +121,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               (function() {
                 try {
                   var stored = localStorage.getItem('janlabh-theme');
-                  if (stored === 'dark') {
+                  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  if (stored === 'dark' || (!stored && prefersDark)) {
                     document.documentElement.classList.add('dark');
                   } else {
                     document.documentElement.classList.remove('dark');
@@ -134,28 +135,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     document.documentElement.lang = storedLang;
                   }
                 } catch (_) {}
-
-                try {
-                  var _fetch = window.fetch;
-                  try {
-                    Object.defineProperty(window, 'fetch', {
-                      configurable: true,
-                      enumerable: true,
-                      get: function() { return _fetch; },
-                      set: function(v) { _fetch = v; }
-                    });
-                  } catch (_) {}
-                  if (typeof Window !== 'undefined' && Window.prototype) {
-                    try {
-                      Object.defineProperty(Window.prototype, 'fetch', {
-                        configurable: true,
-                        enumerable: true,
-                        get: function() { return _fetch; },
-                        set: function(v) { _fetch = v; }
-                      });
-                    } catch (_) {}
-                  }
-                } catch (e) {}
               })();
             `
           }}

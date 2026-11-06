@@ -4,6 +4,7 @@ import React, { useState, useMemo, Suspense } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Language, Scheme } from '@/types';
+import { useTheme } from '@/hooks/useTheme';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SchemeEligibilityChecker from '@/components/SchemeEligibilityChecker';
@@ -20,13 +21,7 @@ function CheckerContent({ schemes, initialLang = 'en' }: CheckerClientProps) {
   const searchParams = useSearchParams();
   const schemeParam = searchParams.get('scheme');
   const isHi = initialLang === 'hi';
-
-  const [isDark, setIsDark] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      return document.documentElement.classList.contains('dark');
-    }
-    return false;
-  });
+  const { isDark, toggleTheme } = useTheme();
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
   const initialScheme = useMemo(() => {
@@ -35,22 +30,6 @@ function CheckerContent({ schemes, initialLang = 'en' }: CheckerClientProps) {
       schemes.find((s) => s.id === schemeParam || s.slug === schemeParam) || null
     );
   }, [schemeParam, schemes]);
-
-  const toggleTheme = () => {
-    setIsDark((prev) => {
-      const next = !prev;
-      if (typeof window !== 'undefined') {
-        if (next) {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('janlabh-theme', 'dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-          localStorage.setItem('janlabh-theme', 'light');
-        }
-      }
-      return next;
-    });
-  };
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors">
