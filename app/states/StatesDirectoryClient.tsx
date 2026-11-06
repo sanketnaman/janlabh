@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { StateInfo, Language } from '@/types';
+import { SCHEMES } from '@/data/schemes';
 import { useTheme } from '@/hooks/useTheme';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -108,7 +109,7 @@ export default function StatesDirectoryClient({
                       {isHi ? `राजधानी: ${st.capital_hi}` : `Capital: ${st.capital_en}`}
                     </span>
                     <span className="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 font-bold text-slate-700 dark:text-slate-300">
-                      {isHi ? `${st.activeSchemesCount}+ योजनाएं` : `${st.activeSchemesCount}+ Schemes`}
+                      {SCHEMES.filter((s) => s.state === st.id || s.state === 'all-india').length} {isHi ? 'सत्यापित योजनाएं' : 'Verified Schemes'}
                     </span>
                   </div>
 

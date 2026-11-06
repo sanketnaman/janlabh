@@ -90,11 +90,11 @@ export const STATES: StateInfo[] = [
     name_hi: 'केंद्र सरकार (अखिल भारतीय)',
     capital_en: 'New Delhi',
     capital_hi: 'नई दिल्ली',
-    activeSchemesCount: 45,
+    activeSchemesCount: 19,
     description_en: 'Flagship nationwide welfare schemes funded fully or centrally sponsored by Ministries of Government of India.',
     description_hi: 'भारत सरकार के मंत्रालयों द्वारा देश भर के पात्र नागरिकों के लिए संचालित केंद्रीय योजनाएं।',
-    flagshipPrograms_en: ['PM-Kisan', 'Ayushman Bharat', 'PM Awas Yojana', 'PM Vishwakarma', 'Atal Pension Yojana'],
-    flagshipPrograms_hi: ['पीएम किसान', 'आयुष्मान भारत', 'पीएम आवास योजना', 'पीएम विश्वकर्मा', 'अटल पेंशन']
+    flagshipPrograms_en: ['PM-Kisan', 'Ayushman Bharat', 'PM Awas Yojana', 'PM Vishwakarma', 'PM Surya Ghar'],
+    flagshipPrograms_hi: ['पीएम किसान', 'आयुष्मान भारत', 'पीएम आवास योजना', 'पीएम विश्वकर्मा', 'पीएम सूर्य घर']
   },
   {
     id: 'jharkhand',
@@ -102,11 +102,11 @@ export const STATES: StateInfo[] = [
     name_hi: 'झारखंड',
     capital_en: 'Ranchi',
     capital_hi: 'राँची',
-    activeSchemesCount: 28,
+    activeSchemesCount: 21,
     description_en: 'Comprehensive state-funded welfare programs focusing on tribal welfare, women monthly support, and housing.',
     description_hi: 'महिला सम्मान, अबुआ आवास, मरांग गोमके छात्रवृत्ति और सर्वजन पेंशन जैसे प्रमुख राज्य कल्याणकारी कार्यक्रम।',
-    flagshipPrograms_en: ['Mukhyamantri Maiya Samman Yojana', 'Abua Awas Yojana', 'Guruji Student Credit Card', 'Sarvajan Pension'],
-    flagshipPrograms_hi: ['मुख्यमंत्री मंईयां सम्मान योजना', 'अबुआ आवास योजना', 'गुरुजी स्टूडेंट क्रेडिट कार्ड', 'सर्वजन पेंशन योजना']
+    flagshipPrograms_en: ['Mukhyamantri Maiya Samman', 'Abua Awas Yojana', 'PM-Kisan', 'Ayushman Bharat'],
+    flagshipPrograms_hi: ['मुख्यमंत्री मंईयां सम्मान योजना', 'अबुआ आवास योजना', 'पीएम किसान', 'आयुष्मान भारत']
   },
   {
     id: 'bihar',
@@ -114,11 +114,11 @@ export const STATES: StateInfo[] = [
     name_hi: 'बिहार',
     capital_en: 'Patna',
     capital_hi: 'पटना',
-    activeSchemesCount: 24,
+    activeSchemesCount: 21,
     description_en: 'Saat Nischay-II flagship youth, higher education, women employment, and entrepreneurship initiatives.',
     description_hi: 'सात निश्चय-2 के तहत बिहार स्टूडेंट क्रेडिट कार्ड, मुख्यमंत्री कन्या उत्थान और उद्यमी सहायता योजनाएं।',
-    flagshipPrograms_en: ['Bihar Student Credit Card', 'Mukhyamantri Kanya Utthan', 'Udyami Yojana', 'Laxmi Bai Social Security Pension'],
-    flagshipPrograms_hi: ['बिहार स्टूडेंट क्रेडिट कार्ड', 'मुख्यमंत्री कन्या उत्थान', 'मुख्यमंत्री उद्यमी योजना', 'लक्ष्मीबाई सामाजिक सुरक्षा पेंशन']
+    flagshipPrograms_en: ['Bihar Student Credit Card', 'Mukhyamantri Kanya Utthan', 'PM-Kisan', 'Ayushman Bharat'],
+    flagshipPrograms_hi: ['बिहार स्टूडेंट क्रेडिट कार्ड', 'मुख्यमंत्री कन्या उत्थान', 'पीएम किसान', 'आयुष्मान भारत']
   },
   {
     id: 'uttar-pradesh',
@@ -126,11 +126,11 @@ export const STATES: StateInfo[] = [
     name_hi: 'उत्तर प्रदेश',
     capital_en: 'Lucknow',
     capital_hi: 'लखनऊ',
-    activeSchemesCount: 32,
+    activeSchemesCount: 20,
     description_en: 'Social security pensions, rural banking correspondent (BC Sakhi) livelihood, and daughter marriage aid.',
     description_hi: 'वृद्धावस्था पेंशन, बीसी सखी, शादी अनुदान, मुख्यमंत्री कन्या सुमंगला और अभ्युदय मुफ्त कोचिंग।',
-    flagshipPrograms_en: ['Kanya Sumangala Yojana', 'BC Sakhi Yojana', 'UP Shadi Anudan', 'Abhyudaya Free Coaching'],
-    flagshipPrograms_hi: ['कन्या सुमंगला योजना', 'बीसी सखी योजना', 'शादी अनुदान योजना', 'अभ्युदय निशुल्क कोचिंग']
+    flagshipPrograms_en: ['UP Kanya Sumangala', 'PM Awas Yojana', 'PM-Kisan', 'Ayushman Bharat'],
+    flagshipPrograms_hi: ['कन्या सुमंगला योजना', 'पीएम आवास योजना', 'पीएम किसान', 'आयुष्मान भारत']
   },
   {
     id: 'rajasthan',
@@ -138,11 +138,11 @@ export const STATES: StateInfo[] = [
     name_hi: 'राजस्थान',
     capital_en: 'Jaipur',
     capital_hi: 'जयपुर',
-    activeSchemesCount: 22,
+    activeSchemesCount: 20,
     description_en: 'Direct social security pensions, free medicine programs, and agricultural subsidy schemes.',
     description_hi: 'सामाजिक सुरक्षा पेंशन, निःशुल्क दवा योजना और किसान साथी सब्सिडी कार्यक्रम।',
-    flagshipPrograms_en: ['Jan Samman Pension', 'Kisan Seva Portal', 'Anuprati Coaching'],
-    flagshipPrograms_hi: ['जन सम्मान पेंशन', 'किसान सेवा पोर्टल', 'अनुप्रति कोचिंग योजना']
+    flagshipPrograms_en: ['Mukhyamantri Anupriti Coaching', 'PM-Kisan', 'PM Awas Yojana', 'Ayushman Bharat'],
+    flagshipPrograms_hi: ['मुख्यमंत्री अनुप्रति कोचिंग योजना', 'पीएम किसान', 'पीएम आवास योजना', 'आयुष्मान भारत']
   },
   {
     id: 'madhya-pradesh',
@@ -150,11 +150,11 @@ export const STATES: StateInfo[] = [
     name_hi: 'मध्य प्रदेश',
     capital_en: 'Bhopal',
     capital_hi: 'भोपाल',
-    activeSchemesCount: 25,
+    activeSchemesCount: 20,
     description_en: 'Direct cash transfer schemes for rural and urban women, crop loss compensation, and education incentives.',
     description_hi: 'लाडली बहना योजना, किसान कल्याण और मेधावी विद्यार्थी प्रोत्साहन योजना।',
-    flagshipPrograms_en: ['Ladli Behna Yojana', 'Kalyan Yojana for Farmers', 'Medhavi Vidyarthi'],
-    flagshipPrograms_hi: ['लाड़ली बहना योजना', 'किसान कल्याण योजना', 'मेधावी विद्यार्थी योजना']
+    flagshipPrograms_en: ['Ladli Behna Yojana', 'PM-Kisan', 'PM Awas Yojana', 'Ayushman Bharat'],
+    flagshipPrograms_hi: ['लाड़ली बहना योजना', 'पीएम किसान', 'पीएम आवास योजना', 'आयुष्मान भारत']
   },
   {
     id: 'maharashtra',
@@ -162,10 +162,10 @@ export const STATES: StateInfo[] = [
     name_hi: 'महाराष्ट्र',
     capital_en: 'Mumbai',
     capital_hi: 'मुंबई',
-    activeSchemesCount: 21,
+    activeSchemesCount: 20,
     description_en: 'Majhi Ladki Bahin direct financial assistance, crop insurance, and state youth apprenticeship stipend.',
     description_hi: 'माझी लाडकी बहीण योजना, ₹1 में फसल बीमा और युवा कार्यप्रशिक्षण योजना।',
-    flagshipPrograms_en: ['Majhi Ladki Bahin Yojana', 'Namo Shetkari Mahasanman', 'Yuva Karya Prashikshan'],
-    flagshipPrograms_hi: ['माझी लाडकी बहीण योजना', 'नमो शेतकरी महासन्मान', 'युवा कार्यप्रशिक्षण योजना']
+    flagshipPrograms_en: ['Majhi Ladki Bahin Yojana', 'PM-Kisan', 'PM Awas Yojana', 'Ayushman Bharat'],
+    flagshipPrograms_hi: ['माझी लाडकी बहीण योजना', 'पीएम किसान', 'पीएम आवास योजना', 'आयुष्मान भारत']
   }
 ];

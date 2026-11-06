@@ -362,7 +362,7 @@ export default function HeroSection({
                   onClick={onExploreSchemes}
                   className="font-bold text-amber-700 dark:text-amber-400 hover:underline flex items-center gap-1 cursor-pointer"
                 >
-                  <span>{isHi ? 'सभी 27+ योजनाएं देखें →' : 'View all 27+ Schemes →'}</span>
+                  <span>{isHi ? `सभी ${SCHEMES.length} योजनाएं देखें →` : `View all ${SCHEMES.length} Schemes →`}</span>
                 </button>
               </div>
             </div>

@@ -273,7 +273,7 @@ export default function HomePageClient({ initialLang = 'en' }: HomePageClientPro
                         <span>{isHi ? `राजधानी: ${st.capital_hi}` : `Capital: ${st.capital_en}`}</span>
                       </div>
                       <span className="font-semibold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[11px]">
-                        {st.activeSchemesCount}+ {isHi ? 'योजनाएं' : 'Schemes'}
+                        {SCHEMES.filter((s) => s.state === st.id || s.state === 'all-india').length} {isHi ? 'सत्यापित योजनाएं' : 'Verified Schemes'}
                       </span>
                     </div>
                     <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
