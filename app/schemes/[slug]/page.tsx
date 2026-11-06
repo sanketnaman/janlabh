@@ -24,20 +24,39 @@ export async function generateMetadata({ params }: SchemePageProps): Promise<Met
     };
   }
 
+  const pageTitle = `${scheme.title_en} | Eligibility, Benefits & How to Apply | JanLabh`;
+  const pageDescription = scheme.metaDescription_en || scheme.benefitSummary_en;
+  const bannerImgUrl = scheme.bannerImage || '/images/schemes/default-banner.svg';
+  const fullImgUrl = bannerImgUrl.startsWith('http') ? bannerImgUrl : `https://janlabh.in${bannerImgUrl}`;
+
   return {
-    title: `${scheme.title_en} | Eligibility, Benefits & How to Apply | JanLabh`,
-    description: scheme.metaDescription_en || scheme.benefitSummary_en,
+    title: pageTitle,
+    description: pageDescription,
     keywords: scheme.keywords,
     alternates: {
       canonical: `https://janlabh.in/schemes/${scheme.slug}`,
     },
     openGraph: {
-      title: `${scheme.title_en} – JanLabh Guidance Portal`,
-      description: scheme.benefitSummary_en,
+      title: `${scheme.shortTitle_en} – Eligibility, Benefits & Apply | JanLabh`,
+      description: pageDescription,
       url: `https://janlabh.in/schemes/${scheme.slug}`,
       siteName: 'JanLabh.in',
       locale: 'en_IN',
       type: 'article',
+      images: [
+        {
+          url: fullImgUrl,
+          width: 1200,
+          height: 630,
+          alt: `${scheme.shortTitle_en} - JanLabh Official Guidance Banner`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${scheme.shortTitle_en} – Eligibility, Benefits & Apply | JanLabh`,
+      description: pageDescription,
+      images: [fullImgUrl],
     },
   };
 }
@@ -82,6 +101,7 @@ export default async function SchemePage({ params }: SchemePageProps) {
         'name': scheme.title_en,
         'alternateName': scheme.title_hi,
         'description': scheme.benefitSummary_en,
+        'image': scheme.bannerImage ? `https://janlabh.in${scheme.bannerImage}` : undefined,
         'provider': {
           '@type': 'GovernmentOrganization',
           'name': scheme.officialSources[0]?.authority || 'Government of India',

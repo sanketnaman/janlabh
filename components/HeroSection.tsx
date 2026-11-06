@@ -139,16 +139,16 @@ export default function HeroSection({
   };
 
   return (
-    <section className="relative overflow-hidden border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-[#070E1E] py-12 sm:py-16 lg:py-20 transition-colors duration-200">
-      {/* 1. Indian Tricolor SVG Texture - Ambient background layer */}
+    <section className="relative overflow-hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0B1326] py-12 sm:py-16 lg:py-20 transition-colors duration-200">
+      {/* 1. Abstract Indian Tricolor SVG Background Layer - High visibility & rich tones */}
       <div
-        className="absolute inset-0 bg-[url('/background/background.svg')] bg-cover bg-center bg-no-repeat pointer-events-none opacity-25 dark:opacity-35 transition-opacity duration-300"
+        className="absolute inset-0 bg-[url('/background/background.svg')] bg-cover bg-center bg-no-repeat pointer-events-none opacity-90 dark:opacity-80 transition-opacity duration-300"
         aria-hidden="true"
       />
 
-      {/* 2. High-Contrast Readability Backdrop (Guarantees AAA/AA text contrast in Light & Dark modes) */}
+      {/* 2. Soft readability backdrop (maintains contrast without washing out colors) */}
       <div
-        className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white dark:from-[#070E1E]/95 dark:via-[#070E1E]/85 dark:to-[#070E1E] pointer-events-none"
+        className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/60 dark:from-[#0B1326]/30 dark:via-transparent dark:to-[#0B1326]/60 pointer-events-none"
         aria-hidden="true"
       />
 

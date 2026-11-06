@@ -32,11 +32,20 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     alternateLocale: ['hi_IN'],
     type: 'website',
+    images: [
+      {
+        url: 'https://janlabh.in/images/schemes/pm-kisan-samman-nidhi.png',
+        width: 1200,
+        height: 630,
+        alt: 'JanLabh – Government Schemes & Citizen Benefits Guidance Platform',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'JanLabh – Government Schemes & Citizen Benefits in India',
     description: 'Independent civic guidance platform for Central & State welfare benefits.',
+    images: ['https://janlabh.in/images/schemes/pm-kisan-samman-nidhi.png'],
   },
   robots: {
     index: true,

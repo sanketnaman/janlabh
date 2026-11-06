@@ -51,8 +51,15 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
   const [eligibilityModalOpen, setEligibilityModalOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [shareOpen, setShareOpen] = useState(false);
+  const [canNativeShare, setCanNativeShare] = useState(false);
   const shareRef = useRef<HTMLDivElement>(null);
   const [checkedDocs, setCheckedDocs] = useState<Record<number, boolean>>({});
+
+  useEffect(() => {
+    if (typeof navigator !== 'undefined' && typeof navigator.share === 'function') {
+      setCanNativeShare(true);
+    }
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -135,6 +142,22 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
     setShareOpen(false);
   };
 
+  const handleNativeShare = async () => {
+    const { shareUrl, shareText } = getShareDetails();
+    if (typeof navigator !== 'undefined' && navigator.share) {
+      try {
+        await navigator.share({
+          title: isHi ? scheme.title_hi : scheme.title_en,
+          text: shareText,
+          url: shareUrl,
+        });
+        setShareOpen(false);
+      } catch {
+        // User dismissed system share dialog
+      }
+    }
+  };
+
   const handleCopyLink = async () => {
     const { shareUrl } = getShareDetails();
     try {
@@ -214,7 +237,7 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
             </button>
 
             {shareOpen && (
-              <div className="absolute right-0 top-full mt-2 w-64 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
+              <div className="absolute left-0 sm:left-auto sm:right-0 top-full mt-2 w-72 max-w-[calc(100vw-2.5rem)] rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
                 <div className="px-2.5 py-1.5 border-b border-slate-100 dark:border-slate-800/80 mb-1 flex items-center justify-between">
                   <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
                     {isHi ? 'योजना शेयर करें' : 'Share Scheme'}
@@ -266,6 +289,27 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
                       </div>
                     </div>
                   </button>
+
+                  {/* Native Device Share (Available on mobile devices) */}
+                  {canNativeShare && (
+                    <button
+                      onClick={handleNativeShare}
+                      className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg text-left text-xs font-medium hover:bg-amber-50 dark:hover:bg-amber-950/40 text-slate-700 dark:text-slate-200 hover:text-amber-700 dark:hover:text-amber-300 transition-colors group cursor-pointer"
+                    >
+                      <div className="w-7 h-7 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                        <Share2 className="w-3.5 h-3.5" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="font-semibold text-slate-800 dark:text-slate-100 flex items-center justify-between">
+                          <span>{isHi ? 'अन्य ऐप्स पर शेयर' : 'More Apps'}</span>
+                          <span className="text-[10px] text-amber-600 dark:text-amber-400 font-medium">{isHi ? 'शेयर' : 'Share'}</span>
+                        </div>
+                        <div className="text-[11px] text-slate-400 truncate">
+                          {isHi ? 'सिस्टम शेयर डायलॉग खोलें' : 'Open device share sheet'}
+                        </div>
+                      </div>
+                    </button>
+                  )}
 
                   {/* Copy Link */}
                   <button
