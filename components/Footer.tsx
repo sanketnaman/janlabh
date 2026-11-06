@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Language } from '@/types';
-import { ShieldCheck, ExternalLink, AlertTriangle, FileText, CheckCircle2 } from 'lucide-react';
+import { AlertTriangle, CheckCircle2 } from 'lucide-react';
 
 interface FooterProps {
   lang: Language;
@@ -189,15 +189,6 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
                   {lang === 'hi' ? 'संपर्क करें (Contact Editorial Desk)' : 'Contact Editorial Desk'}
                 </Link>
               </li>
-              <li className="pt-2">
-                <button
-                  onClick={() => onSelectNav('admin')}
-                  className="text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-1 font-mono text-[11px]"
-                >
-                  <span>CMS Portal (/admin)</span>
-                  <ExternalLink className="h-3 w-3" />
-                </button>
-              </li>
             </ul>
           </div>
         </div>
@@ -208,16 +199,14 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
             &copy; {currentYear} JanLabh.in · {lang === 'hi' ? 'सर्वाधिकार सुरक्षित।' : 'All rights reserved.'}
           </div>
           <div className="flex items-center gap-4 text-[11px]">
-            <span>Canonical: https://janlabh.in</span>
-            <span>·</span>
-            <span>hreflang: en-IN / hi-IN</span>
-            <span>·</span>
-            <button
-              onClick={() => onOpenLegal('sitemap')}
-              className="hover:text-white underline"
+            <a
+              href="/sitemap.xml"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors underline"
             >
               sitemap.xml
-            </button>
+            </a>
           </div>
         </div>
       </div>

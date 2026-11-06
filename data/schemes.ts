@@ -359,8 +359,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'jharkhand-maiya-samman',
     slug: 'jharkhand-mukhyamantri-maiya-samman-yojana',
-    title_en: 'Jharkhand Mukhyamantri Maiya Samman Yojana (JMMSY): Financial Aid & Status',
-    title_hi: 'झारखंड मुख्यमंत्री मंईयां सम्मान योजना (JMMSY): आर्थिक सहायता, पात्रता व स्टेटस',
+    title_en: 'Jharkhand Maiya Samman Yojana 2026: Payment Date, DBT Status Check & Form PDF',
+    title_hi: 'मंईयां सम्मान योजना 2026: पैसा कब मिलेगा? अगली किस्त तारीख, DBT स्टेटस चेक व फॉर्म PDF',
     shortTitle_en: 'Jharkhand Maiya Samman Yojana',
     shortTitle_hi: 'मुख्यमंत्री मंईयां सम्मान योजना (झारखंड)',
     category: 'women',
@@ -368,135 +368,185 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Jharkhand State',
     stateLabel_hi: 'झारखंड राज्य',
     status: 'Updated',
-    lastVerified: 'October 30, 2026',
+    lastVerified: 'November 06, 2026',
     
-    benefitSummary_en: 'Direct monthly financial assistance transferred via DBT to eligible women aged 18 to 50 residing in Jharkhand to support financial autonomy, nutrition, and family health.',
-    benefitSummary_hi: 'झारखंड की 18 से 50 वर्ष की पात्र महिलाओं को आर्थिक स्वावलंबन और पोषण सुधार हेतु प्रतिमाह बैंक खाते में सीधी आर्थिक सहायता।',
-    benefitAmount_en: 'Direct Monthly DBT Assistance',
-    benefitAmount_hi: 'प्रतिमाह डीबीटी आर्थिक सहायता',
-    whoCanApply_en: 'Women permanent residents of Jharkhand aged 18–50 years from non-taxpayer families holding an active Ration Card and Aadhaar-seeded bank account.',
-    whoCanApply_hi: 'झारखंड की स्थायी निवासी 18 से 50 वर्ष की महिलाएं, जिनके परिवार का कोई सदस्य आयकरदाता या सरकारी सेवा में न हो।',
-    applicationMode: 'Offline (Panchayat / Camp) & Online Portal',
+    benefitSummary_en: 'Direct monthly financial assistance of ₹1,000 (up to ₹2,500) transferred via DBT to eligible women aged 18 to 50 in Jharkhand to support financial independence, nutrition, and family health.',
+    benefitSummary_hi: 'झारखंड की 18 से 50 वर्ष की पात्र महिलाओं के बैंक खाते में ₹1,000 से ₹2,500 प्रतिमाह सीधे डीबीटी (DBT) के माध्यम से आर्थिक सहायता।',
+    benefitAmount_en: '₹1,000 – ₹2,500 / Month (DBT Transfer)',
+    benefitAmount_hi: '₹1,000 से ₹2,500 प्रतिमाह (सीधा डीबीटी)',
+    whoCanApply_en: 'Women permanent residents of Jharkhand aged 18–50 years from non-taxpayer families holding an active Ration Card (Yellow/Pink/White) and Aadhaar-seeded DBT bank account.',
+    whoCanApply_hi: 'झारखंड की स्थायी निवासी 18 से 50 वर्ष की महिलाएं, जिनके पास राशन कार्ड और आधार से लिंक बैंक खाता हो तथा परिवार में कोई आयकरदाता न हो।',
+    applicationMode: 'Offline (Panchayat / Camp / Pragya Kendra) & Online Portal',
     bannerImage: '/images/schemes/jharkhand-maiya-samman.webp',
     
-    whatIsThis_en: 'Mukhyamantri Maiya Samman Yojana (JMMSY) is a flagship state welfare program launched by the Government of Jharkhand. It provides recurring financial security to millions of women in both rural and urban areas, promoting dignified living and women empowerment at the grassroots.',
-    whatIsThis_hi: 'मुख्यमंत्री मंईयां सम्मान योजना झारखंड सरकार की प्रमुख जनकल्याणकारी योजना है। इसका मुख्य उद्देश्य राज्य की करोड़ों बहन-बेटियों को सीधे आर्थिक सहायता पहुंचाकर उन्हें आत्मनिर्भर बनाना और परिवार के पोषण व स्वास्थ्य में सहयोग देना है।',
+    whatIsThis_en: 'Mukhyamantri Maiya Samman Yojana (JMMSY) is a flagship women empowerment initiative by the Government of Jharkhand. It provides assured monthly financial support (₹1,000 to ₹2,500) directly into beneficiaries’ bank accounts through Direct Benefit Transfer (DBT), ensuring dignity and economic security.',
+    whatIsThis_hi: 'मुख्यमंत्री मंईयां सम्मान योजना (JMMSY) झारखंड सरकार की महत्वाकांक्षी योजना है। इसके तहत राज्य की 18 से 50 वर्ष की करोड़ों महिलाओं के बैंक खाते में हर महीने निश्चित आर्थिक सहायता (₹1,000 से ₹2,500) सीधी डीबीटी के जरिए भेजी जाती है ताकि वे आर्थिक रूप से सशक्त बन सकें।',
     
     benefitsList_en: [
-      'Assured monthly financial support deposited directly into the woman’s personal bank account.',
-      'No collateral, loan repayment, or intermediaries involved.',
-      'Comprehensive coverage across all 24 districts of Jharkhand.',
-      'Single DBT authentication eliminates paperwork delays once approved.'
+      'Assured monthly assistance (₹1,000 to ₹2,500) credited directly to the woman’s personal bank account.',
+      '100% transparent Direct Benefit Transfer (DBT) with zero middleman deduction.',
+      'Statewide coverage across all 24 districts, rural Panchayats, and urban wards in Jharkhand.',
+      'Paperless recurring transfer once the initial verification and Aadhaar-NPCI seeding is complete.'
     ],
     benefitsList_hi: [
-      'महिला के निजी बैंक खाते में प्रतिमाह निश्चित आर्थिक संबल।',
-      'कोई ऋण या वापसी की बाध्यता नहीं, पूर्णतः अनुदान स्वरूप।',
-      'झारखंड के सभी 24 जिलों के ग्रामीण एवं शहरी क्षेत्रों में समान क्रियान्वयन।',
-      'एक बार स्वीकृति के बाद नियमित डीबीटी भुगतान।'
+      'महिला के निजी बैंक खाते में ₹1,000 से ₹2,500 प्रतिमाह सीधे डीबीटी से भुगतान।',
+      'बिचौलियों और दलालों से पूरी तरह मुक्त, 100% पारदर्शी सरकारी सहायता।',
+      'झारखंड के सभी 24 जिलों के ग्रामीण पंचायतों और शहरी वार्डों में समान रूप से लागू।',
+      'एक बार आधार व बैंक सत्यापन होने पर हर महीने बिना दोबारा फॉर्म भरे स्वतः भुगतान।'
     ],
     
     eligibility: {
       eligibleIf_en: [
         'Applicant woman must be a permanent resident of Jharkhand state.',
         'Age must be between 18 and 50 years on the date of application.',
-        'Applicant must have an individual bank account mapped to Aadhaar with DBT enabled.',
+        'Applicant must have an individual bank account mapped with Aadhaar and active NPCI DBT status.',
         'Family must hold an Antyodaya (Yellow), Priority (Pink), or White Ration card issued by Jharkhand Government.',
-        'Total annual family income must not exceed the prescribed state poverty guidelines.'
+        'Family members must not be permanent government employees or income tax payers.'
       ],
       eligibleIf_hi: [
-        'आवेदक महिला झारखंड राज्य की स्थायी निवासी हो।',
-        'आवेदन तिथि को उम्र 18 वर्ष से अधिक तथा 50 वर्ष से कम हो।',
-        'महिला का स्वयं का एकल बैंक खाता हो जो आधार से सीडेड और डीबीटी सक्षम हो।',
-        'परिवार के पास झारखंड खाद्य आपूर्ति विभाग द्वारा जारी अंत्योदय (पीला) या प्राथमिकता (गुलाबी) राशन कार्ड हो।',
-        'पारिवारिक आय सीमा राज्य द्वारा निर्धारित गरीबी रेखा के अंतर्गत हो।'
+        'आवेदक महिला झारखंड राज्य की स्थायी निवासी होनी चाहिए।',
+        'आवेदन के समय महिला की आयु 18 वर्ष से 50 वर्ष के बीच होनी चाहिए।',
+        'महिला का स्वयं का एकल बैंक खाता हो, जो आधार कार्ड से लिंक और NPCI DBT सक्रिय हो।',
+        'परिवार के पास झारखंड का अंत्योदय (पीला), प्राथमिकता (गुलाबी) अथवा सफेद राशन कार्ड होना आवश्यक है।',
+        'परिवार का कोई भी सदस्य सरकारी नौकरी या आयकरदाता (Income Tax Payer) नहीं होना चाहिए।'
       ],
       notEligibleIf_en: [
         'Applicant or family member pays income tax.',
-        'Applicant or spouse is employed in permanent Central/State Government, public enterprise, or drawing government pension.',
-        'Women already receiving other state old age or disability pensions of equivalent or higher value.',
-        'Applicants under 18 years or above 50 years of age.'
+        'Applicant or spouse is employed in permanent Central/State Government, public sector undertaking, or drawing pension.',
+        'Women already receiving higher-value state social pensions (such as Old Age or Disability Pension).',
+        'Applicants under 18 years or over 50 years of age.'
       ],
       notEligibleIf_hi: [
-        'आवेदक या उसके परिवार का कोई सदस्य आयकरदाता हो।',
-        'आवेदक या उसका पति केंद्र/राज्य सरकार अथवा उपक्रमों में नियमित कर्मचारी/पेंशनर हो।',
-        'महिला को पहले से राज्य की किसी अन्य समकक्ष या अधिक राशि वाली पेंशन का लाभ मिल रहा हो।',
-        '18 वर्ष से कम या 50 वर्ष से अधिक आयु की महिलाएं।'
+        'आवेदक या उसके परिवार का कोई सदस्य आयकर (Income Tax) भरता हो।',
+        'आवेदक या पति केंद्र/राज्य सरकार अथवा सरकारी उपक्रम में नियमित कर्मचारी या पेंशनधारक हों।',
+        'महिला पहले से किसी अन्य समकक्ष अथवा अधिक राशि वाली सरकारी सामाजिक पेंशन का लाभ ले रही हो।',
+        '18 वर्ष से कम या 50 वर्ष से अधिक उम्र की महिलाएं।'
       ]
     },
     
     requiredDocuments_en: [
-      'Aadhaar Card of the applicant woman',
-      'Jharkhand Residential Certificate (Niwas Praman Patra) or voter card',
-      'Ration Card (Yellow/Pink) showing applicant’s name',
-      'Personal Bank Passbook (Aadhaar linked with DBT status active)',
-      'Self-declaration of family income and non-taxpayer status'
+      'Aadhaar Card of the applicant woman (clear photocopy & original for verification)',
+      'Jharkhand Residential Certificate (Niwas Praman Patra) or Voter ID',
+      'Jharkhand Ration Card (Yellow/Pink/White) with applicant woman’s name listed',
+      'Personal Bank Passbook (Bank account must be Aadhaar-NPCI seeded for DBT)',
+      'Passport-size photographs and Mobile number linked with Aadhaar',
+      'Self-declaration form of income and non-taxpayer status (Satyapan Form)'
     ],
     requiredDocuments_hi: [
-      'आवेदक महिला का आधार कार्ड',
-      'झारखंड का स्थानीय निवास प्रमाण पत्र या मतदाता पहचान पत्र',
-      'राशन कार्ड (जिसमें आवेदिका का नाम दर्ज हो)',
-      'स्वयं का बैंक पासबुक (खाता डीबीटी से जुड़ा होना अनिवार्य)',
-      'आय एवं गैर-सरकारी नौकरी का स्व-घोषणा पत्र'
+      'आवेदक महिला का आधार कार्ड (स्पष्ट फोटोकॉपी व मूल प्रति)',
+      'झारखंड का स्थानीय निवास प्रमाण पत्र अथवा मतदाता पहचान पत्र',
+      'झारखंड राशन कार्ड (जिसमें महिला का नाम दर्ज हो)',
+      'महिला का स्वयं का बैंक पासबुक (खाता आधार व NPCI DBT से लिंक होना अनिवार्य)',
+      'पासपोर्ट साइज फोटो और आधार से लिंक सक्रिय मोबाइल नंबर',
+      'स्व-घोषणा व सत्यापन पत्र (सत्यापन फॉर्म PDF)'
     ],
     
     howToApply_en: [
-      'Obtain the JMMSY application form free of cost from your local Gram Panchayat Bhawan, Ward Office, or special Aapki Yojana Camp.',
-      'Carefully fill in your personal details, Aadhaar number, Ration card number, and Bank account IFSC code.',
-      'Attach photocopies of your Aadhaar card, Ration card, and Bank passbook.',
-      'Submit the physical application at your Panchayat Camp or CSC VLE operator for digital data entry.',
-      'Collect the stamped acknowledgement receipt containing your Application Tracking ID.'
+      'Obtain the official JMMSY Application / Satyapan Form free of cost from your local Gram Panchayat Bhawan, Ward Office, CSC Pragya Kendra, or download the official form PDF.',
+      'Carefully fill in your personal details, Aadhaar number, Ration Card number, and individual Bank account number with IFSC code.',
+      'Attach self-attested photocopies of your Aadhaar card, Ration card, and Bank passbook.',
+      'Submit the application form at your local Panchayat Camp or nearest CSC Pragya Kendra for digital entry into the state portal.',
+      'Receive your official stamped Acknowledgement Slip with Application Tracking Number to monitor your verification and payment status.'
     ],
     howToApply_hi: [
-      'अपनी ग्राम पंचायत भवन, वार्ड कार्यालय या "आपकी योजना आपकी सरकार आपके द्वार" शिविर से निःशुल्क आवेदन फॉर्म प्राप्त करें।',
-      'फॉर्म में अपना नाम, आधार नंबर, राशन कार्ड संख्या, और बैंक खाता संख्या व आईएफएससी कोड सावधानीपूर्वक भरें।',
-      'आधार कार्ड, राशन कार्ड और बैंक पासबुक की स्व-हस्ताक्षरित प्रति संलग्न करें।',
-      'पंचायत शिविर या सीएससी प्रज्ञा केंद्र में जाकर डेटा एंट्री करवाएं और फॉर्म जमा करें।',
-      'आवेदन संख्या युक्त पावती रसीद (Acknowledgement Receipt) प्राप्त करें और संभाल कर रखें।'
+      'अपनी ग्राम पंचायत भवन, वार्ड कार्यालय, सीएससी प्रज्ञा केंद्र अथवा आधिकारिक पोर्टल से मंईयां सम्मान योजना का सत्यापन फॉर्म PDF निःशुल्क प्राप्त करें।',
+      'फॉर्म में अपना नाम, पिता/पति का नाम, आधार संख्या, राशन कार्ड नंबर और बैंक खाता विवरण सावधानीपूर्वक भरें।',
+      'आधार कार्ड, राशन कार्ड और बैंक पासबुक की स्व-हस्ताक्षरित फोटोकॉपी फॉर्म के साथ संलग्न करें।',
+      'अपने पंचायत शिविर (आपकी योजना आपकी सरकार आपके द्वार) या प्रज्ञा केंद्र में फॉर्म जमा कर डिजिटल पोर्टल पर एंट्री करवाएं।',
+      'आवेदन जमा करने के बाद पावती रसीद (Acknowledgement Slip) अनिवार्य रूप से प्राप्त करें, जिस पर आपका आवेदन क्रमांक (Tracking ID) लिखा होता है।'
     ],
     
-    statusCheckGuide_en: 'Application and payment status can be verified by visiting your local Block Development Office (BDO) / CDPO desk with your Aadhaar number or via the official state social welfare tracking desk.',
-    statusCheckGuide_hi: 'आवेदन व भुगतान की स्थिति अपने प्रखंड विकास पदाधिकारी (BDO) या बाल विकास परियोजना पदाधिकारी (CDPO) कार्यालय में आधार नंबर दिखाकर जांची जा सकती है।',
+    statusCheckGuide_en: 'To check your Maiya Samman Yojana payment & DBT status: 1) Verify that your bank account is Aadhaar-NPCI mapped by visiting your bank branch or checking via Aadhaar DBT portal. 2) Visit your local Block Development Office (BDO) or CDPO desk with your Aadhaar number or Application ID to check your approval list status. 3) For payment credit alerts, ensure SMS service is active on your registered mobile number.',
+    statusCheckGuide_hi: 'मंईयां सम्मान योजना का पेमेंट और डीबीटी स्टेटस चेक करने के लिए: 1) अपनी बैंक शाखा में जाकर सुनिश्चित करें कि आपका खाता आधार से एनपीसीआई (NPCI) मैप्ड है। 2) अपने प्रखंड विकास पदाधिकारी (BDO) या बाल विकास परियोजना (CDPO) कार्यालय में आधार नंबर अथवा पावती रसीद दिखाकर लाभार्थी सूची में नाम जांचें। 3) बैंक खाते में डीबीटी राशि क्रेडिट होते ही पंजीकृत मोबाइल नंबर पर एसएमएस प्राप्त होता है।',
     officialStatusUrl: 'https://jharkhand.gov.in',
     
     commonProblems_en: [
       {
-        problem: 'Application submitted but payment not credited',
-        solution: 'Check if your bank account has active NPCI Aadhaar Mapping. If the account is dormant or not mapped, DBT transfers automatically fail.'
+        problem: 'Form submitted but monthly DBT payment not credited to bank account',
+        solution: '90% of payment failures occur due to inactive NPCI Aadhaar Seeding. Visit your bank branch and submit the "Aadhaar NPCI Mandate Form", or open an instant DBT-enabled account at India Post Payments Bank (IPPB).'
       },
       {
-        problem: 'Name in Ration card differs from Aadhaar',
-        solution: 'Submit an affidavit of identity clarification along with a revised ration card amendment request at your local Block Supply Office (BSO).'
+        problem: 'Name in Ration Card differs from Aadhaar Card spelling',
+        solution: 'Submit an identity affidavit along with a name rectification request at your local Block Supply Office (BSO) or Panchayat Camp to synchronize your data.'
+      },
+      {
+        problem: 'Application rejected during Panchayat verification',
+        solution: 'Visit your Block CDPO / Social Welfare desk to identify the exact rejection ground (age limit, document mismatch, or tax status), submit corrected documents, and request re-verification.'
       }
     ],
     commonProblems_hi: [
       {
-        problem: 'फॉर्म जमा हो चुका है पर बैंक में पैसा नहीं आया',
-        solution: 'बैंक जाकर जांचें कि खाता एनपीसीआई (NPCI) से मैप है या नहीं। यदि खाता इनएक्टिव या डीबीटी बंद है तो भुगतान विफल हो जाता है।'
+        problem: 'फॉर्म जमा हो चुका है पर खाते में ₹1000/₹2500 का पैसा नहीं आया',
+        solution: '90% मामलों में बैंक खाते में NPCI आधार मैपिंग न होने से डीबीटी फेल होता है। अपनी बैंक शाखा में जाकर "NPCI Aadhaar Seeding Form" जमा करें अथवा पोस्ट ऑफिस बैंक (IPPB) में नया डीबीटी खाता खुलवाएं।'
       },
       {
-        problem: 'राशन कार्ड में नाम की स्पेलिंग आधार से अलग है',
-        solution: 'प्रखंड आपूर्ति कार्यालय (BSO) में जाकर राशन कार्ड में नाम सुधार का आवेदन दें अथवा शपथ पत्र जमा करें।'
+        problem: 'राशन कार्ड और आधार कार्ड में नाम की स्पेलिंग में अंतर है',
+        solution: 'प्रखंड आपूर्ति कार्यालय (BSO) या पंचायत कैंप में जाकर राशन कार्ड में नाम सुधार का आवेदन दें अथवा नोटरी शपथ पत्र प्रस्तुत करें।'
+      },
+      {
+        problem: 'आवेदन सत्यापन के दौरान रिजेक्ट (अस्वीकृत) हो गया है',
+        solution: 'अपने प्रखंड के CDPO या समाज कल्याण कार्यालय में जाकर रिजेक्शन का कारण पता करें (दस्तावेज की कमी, उम्र सीमा या पात्रता), सही कागजात लगाकर पुनः सत्यापन करवाएं।'
       }
     ],
     
     faqs_en: [
       {
-        q: 'Can unmarried daughters aged 18+ apply?',
-        a: 'Yes, unmarried girls aged 18 and above residing in Jharkhand who satisfy family income and ration card criteria can apply.'
+        q: 'When will Maiya Samman Yojana payment come into the bank account?',
+        a: 'Approved beneficiaries receive their monthly DBT payment directly into their Aadhaar-linked bank accounts between the 7th and 15th of every month. If payment is delayed, verify your bank’s active NPCI Aadhaar seeding status.'
       },
       {
-        q: 'Is any private agency authorized to charge an application fee?',
-        a: 'No. Application forms and submission under JMMSY are completely free of charge. Report any extortion to the local Block office.'
+        q: 'How to check Maiya Samman Yojana payment and DBT status online?',
+        a: 'You can verify your approval and DBT status by presenting your Aadhaar number or Application ID at your local Block Development Office (BDO), CDPO office, or Gram Panchayat camp. Also check your bank passbook/SMS for DBT credit under JMMSY.'
+      },
+      {
+        q: 'How to download Maiya Samman Yojana Satyapan Form PDF and apply?',
+        a: 'The physical application and verification form (सत्यापन फॉर्म) can be collected 100% free of charge from any Gram Panchayat Bhawan, Ward Office, or Pragya Kendra camp across Jharkhand. Completed forms with Aadhaar, Ration card, and bank passbook copies are submitted at Panchayat camps for digital entry.'
+      },
+      {
+        q: 'How much financial assistance is provided under Maiya Samman Yojana?',
+        a: 'The scheme provides ₹1,000 per month directly via DBT to eligible women aged 18 to 50 years. The state government has also proposed enhancing this financial assistance up to ₹2,500 per month.'
+      },
+      {
+        q: 'Who is eligible to receive benefits under Maiya Samman Yojana?',
+        a: 'Women who are permanent residents of Jharkhand, aged between 18 and 50 years, whose families hold an active state ration card and have no member employed in permanent government service or paying income tax.'
+      },
+      {
+        q: 'Is Maiya Samman Yojana closed or still accepting applications?',
+        a: 'No, the scheme is NOT closed. It is an active, ongoing flagship welfare program in Jharkhand. Eligible women can register at special Panchayat camps or through their local CDPO / Block administration.'
+      },
+      {
+        q: 'What is the official helpline or toll-free number for Maiya Samman Yojana?',
+        a: 'Beneficiaries can contact the official state welfare helpline or visit their local Block Development Office (BDO) and Child Development Project Office (CDPO) for immediate assistance with rejected forms or pending DBT payments.'
       }
     ],
     faqs_hi: [
       {
-        q: 'क्या 18 वर्ष से अधिक आयु की अविवाहित बेटियां भी आवेदन कर सकती हैं?',
-        a: 'हाँ, 18 से 50 वर्ष की आयु सीमा में आने वाली अविवाहित युवतियां भी पात्रता शर्तों के अनुसार आवेदन कर सकती हैं।'
+        q: 'मंईयां सम्मान योजना का पैसा कब मिलेगा और अगली किस्त कब आएगी?',
+        a: 'स्वीकृत पात्र महिलाओं के बैंक खाते में योजना का पैसा हर महीने की 7 से 15 तारीख के बीच सीधे डीबीटी (DBT) के जरिए भेजा जाता है। यदि आपके खाते में किस्त नहीं आई है, तो तुरंत अपनी बैंक शाखा में जाकर आधार-एनपीसीआई सीडिंग की जांच करवाएं।'
       },
       {
-        q: 'क्या इस योजना का फॉर्म भरने के लिए कोई सरकारी फीस लगती है?',
-        a: 'नहीं। फॉर्म और आवेदन प्रक्रिया 100% निःशुल्क है। किसी भी बिचौलिए को कोई शुल्क न दें।'
+        q: 'मंईयां सम्मान योजना का पेमेंट और डीबीटी स्टेटस ऑनलाइन कैसे चेक करें?',
+        a: 'आप अपने आधार नंबर अथवा पावती रसीद (Acknowledgement ID) के माध्यम से अपने नजदीकी प्रखंड विकास कार्यालय (BDO), बाल विकास परियोजना (CDPO) अथवा पंचायत कैंप में जाकर अपना नाम व भुगतान स्टेटस देख सकते हैं।'
+      },
+      {
+        q: 'मंईयां सम्मान योजना का सत्यापन फॉर्म PDF कैसे डाउनलोड करें और आवेदन कैसे करें?',
+        a: 'मंईयां सम्मान योजना का आवेदन व सत्यापन फॉर्म (Satyapan Form) अपनी ग्राम पंचायत, वार्ड कार्यालय अथवा प्रज्ञा केंद्र से पूरी तरह निःशुल्क प्राप्त किया जा सकता है। फॉर्म भरकर आधार, राशन कार्ड और बैंक पासबुक की प्रति के साथ पंचायत शिविर में जमा करना होता है।'
+      },
+      {
+        q: 'मंईयां सम्मान योजना में कितनी राशि मिलती है (₹1000 या ₹2500)?',
+        a: 'योजना के तहत पात्र महिलाओं को ₹1,000 प्रतिमाह सीधे बैंक खाते में प्रदान किया जाता है। राज्य सरकार द्वारा इस सहायता राशि को बढ़ाकर ₹2,500 प्रतिमाह करने की घोषणा की गई है।'
+      },
+      {
+        q: 'मंईयां सम्मान योजना किसको मिलेगी और क्या पात्रता है?',
+        a: 'झारखंड की 18 से 50 वर्ष की वह महिलाएं जिनके पास राज्य का राशन कार्ड (पीला/गुलाबी/सफेद) है और जिनके परिवार का कोई सदस्य आयकरदाता या सरकारी सेवा में नहीं है, वे सभी इस योजना के पात्र हैं।'
+      },
+      {
+        q: 'क्या मंईयां सम्मान योजना बंद हो गई है?',
+        a: 'नहीं, मंईयां सम्मान योजना बिल्कुल बंद नहीं हुई है। यह झारखंड सरकार की निरंतर चलने वाली प्रमुख कल्याणकारी योजना है और पात्र महिलाओं के खाते में नियमित रूप से किस्तें भेजी जा रही हैं।'
+      },
+      {
+        q: 'मंईयां सम्मान योजना का आधिकारिक हेल्पलाइन या शिकायत नंबर क्या है?',
+        a: 'योजना से जुड़ी किसी भी समस्या, पेंडिंग पेमेंट या रिजेक्टेड फॉर्म की शिकायत के लिए लाभार्थी अपने प्रखंड के BDO अथवा CDPO कार्यालय के समाज कल्याण पटल पर संपर्क कर सकते हैं।'
       }
     ],
     
@@ -505,16 +555,70 @@ export const SCHEMES: Scheme[] = [
         name: 'Government of Jharkhand Official Portal',
         authority: 'Department of Women, Child Development and Social Security, Govt. of Jharkhand',
         url: 'https://jharkhand.gov.in',
-        verificationDate: 'October 30, 2026'
+        verificationDate: 'November 06, 2026'
       }
     ],
     keywords: [
-      'jharkhand maiya samman yojana', 'jmmsy status', 'jharkhand mahila yojana',
-      'maiya samman form', 'jharkhand women financial aid', 'mukhyamantri maiya samman',
-      'मंईयां सम्मान योजना', 'झारखंड महिला योजना', 'मंईयां सम्मान स्टेटस'
+      'maiya samman yojana',
+      'jharkhand maiya samman yojana',
+      'mukhyamantri maiya samman yojana',
+      'मंईयां सम्मान योजना',
+      'मैया सम्मान योजना झारखंड ऑनलाइन अप्लाई',
+      'मंईयां सम्मान योजना झारखंड',
+      'jmmsy',
+      'maiya samman yojana ka paisa kab milega',
+      'maiya samman yojana kab milega',
+      'maiya samman yojana ka paisa kab aaega',
+      'maiya samman yojana paisa kab milega',
+      'maiya samman yojana 2500 kab milega',
+      'maiya samman yojana next installment date',
+      'maiya samman yojana kist kab aayegi',
+      'maiya samman yojana 18 kist kab aayegi',
+      'maiya samman yojana 16 kist kab aayegi',
+      'maiya samman yojana 6th installment date',
+      'maiya samman yojana 6 kist kab aayegi',
+      'maiya samman yojana 17 kist kab aayegi',
+      'maiya samman yojana 19 kist kab aayegi',
+      'maiya samman yojana 20 kist kab aayegi',
+      'maiya samman yojana 21 kist kab aayegi',
+      'मंईयां सम्मान योजना का पैसा कब मिलेगा',
+      'मंईयां सम्मान योजना की अगली किस्त कब आएगी',
+      'maiya samman yojana status check',
+      'maiya samman yojana jharkhand status check',
+      'how to check maiya samman yojana status',
+      'how to check maiya samman yojana status online',
+      'how to check maiya samman yojana payment status',
+      'how to check maiya samman yojana dbt status',
+      'maiya samman yojana payment status',
+      'मंईयां सम्मान योजना स्टेटस चेक',
+      'maiya samman yojana online apply',
+      'maiya samman yojana online apply 2026',
+      'maiya samman yojana online apply last date 2026',
+      'maiya samman yojana jharkhand online apply',
+      'maiya samman yojana form pdf',
+      'maiya samman yojana form pdf download',
+      'maiya samman yojana satyapan form pdf download',
+      'maiya samman yojana satyapan form 2026',
+      'मंईयां सम्मान योजना फॉर्म pdf',
+      'maiya samman yojana list',
+      'maiya samman yojana list pdf',
+      'maiya samman yojana beneficiary list pdf',
+      'how to check maiya samman yojana list',
+      'maiya samman yojana list check',
+      'maiya samman yojana kisko milega',
+      'eligibility for maiya samman yojana',
+      'documents required for maiya samman yojana',
+      'is maiya samman yojana closed',
+      'maiya samman yojana helpline number',
+      'maiya samman yojana toll free number',
+      'what is maiya samman yojana',
+      'maiya samman yojana update',
+      'maiya samman yojana news',
+      'maiya samman yojana news today',
+      'maiya samman yojana today news'
     ],
-    metaDescription_en: 'Jharkhand Mukhyamantri Maiya Samman Yojana (JMMSY): monthly financial aid for women 18–50, eligibility rules, required documents, Panchayat camps & tracking.',
-    metaDescription_hi: 'झारखंड मुख्यमंत्री मंईयां सम्मान योजना (JMMSY): 18-50 वर्ष की महिलाओं हेतु सहायता, पात्रता, आवश्यक दस्तावेज, आवेदन फॉर्म और आधिकारिक स्टेटस।'
+    metaDescription_en: '✅ Jharkhand Maiya Samman Yojana 2026: When will your ₹1,000/₹2,500 DBT payment arrive? Check next installment date, Aadhaar payment status online, new beneficiary list & download PDF form.',
+    metaDescription_hi: '✅ मंईयां सम्मान योजना 2026: आपका ₹1000/₹2500 का पैसा खाते में कब आएगा? जानिए अगली किस्त की तारीख, आधार से DBT पेमेंट स्टेटस चेक, नई लिस्ट व सत्यापन फॉर्म PDF डाउनलोड की 100% सही जानकारी।'
   },
   {
     id: 'pm-awas-yojana',

@@ -24,7 +24,9 @@ export async function generateMetadata({ params }: SchemePageProps): Promise<Met
     };
   }
 
-  const pageTitle = `${scheme.title_en} | Eligibility, Benefits & How to Apply | JanLabh`;
+  const pageTitle = scheme.title_en.includes('JanLabh')
+    ? scheme.title_en
+    : `${scheme.title_en} | JanLabh`;
   const pageDescription = scheme.metaDescription_en || scheme.benefitSummary_en;
   const bannerImgUrl = scheme.bannerImage || '/images/schemes/default-banner.svg';
   const fullImgUrl = bannerImgUrl.startsWith('http') ? bannerImgUrl : `https://janlabh.in${bannerImgUrl}`;
