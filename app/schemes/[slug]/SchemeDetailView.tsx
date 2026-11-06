@@ -36,11 +36,14 @@ import {
 
 interface SchemeDetailViewProps {
   scheme: Scheme;
+  initialLang?: Language;
 }
 
-export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
+export default function SchemeDetailView({ scheme, initialLang }: SchemeDetailViewProps) {
   const router = useRouter();
-  const { lang, toggleLanguage, isHi } = useLanguage();
+  const { lang, toggleLanguage } = useLanguage();
+  const currentLang = initialLang || lang;
+  const isHi = currentLang === 'hi';
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       return document.documentElement.classList.contains('dark');
@@ -101,13 +104,20 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
   };
 
   const handleSelectNav = (navId: string) => {
-    if (navId === 'home') router.push('/');
+    const prefix = isHi ? '/hi' : '';
+    if (navId === 'home') router.push(prefix || '/');
     else if (navId === 'checker') {
-      setEligibilityModalOpen(true);
-    } else if (navId === 'schemes' || navId === 'finder' || navId === 'states' || navId === 'updates') {
-      router.push(`/?nav=${navId}`);
+      router.push(`${prefix}/checker?scheme=${scheme.slug}`);
+    } else if (navId === 'schemes') {
+      router.push(`${prefix}/schemes`);
+    } else if (navId === 'finder') {
+      router.push(`${prefix}/finder`);
+    } else if (navId === 'states') {
+      router.push(`${prefix}/states`);
+    } else if (navId === 'updates') {
+      router.push(`${prefix}/updates`);
     } else if (navId === 'trust' || navId === 'editorial') {
-      router.push('/about');
+      router.push(`${prefix}/about`);
     }
   };
 
@@ -198,8 +208,16 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
       <Header
-        lang={lang}
-        onToggleLang={toggleLanguage}
+        lang={currentLang}
+        onToggleLang={() => {
+          if (initialLang === 'hi') {
+            router.push(`/schemes/${scheme.slug}`);
+          } else if (initialLang === 'en') {
+            router.push(`/hi/schemes/${scheme.slug}`);
+          } else {
+            toggleLanguage();
+          }
+        }}
         onOpenSearch={() => setSearchModalOpen(true)}
         onSelectNav={handleSelectNav}
         activeNav="schemes"
@@ -211,11 +229,11 @@ export default function SchemeDetailView({ scheme }: SchemeDetailViewProps) {
       <div className="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 py-2.5 px-4 sm:px-6 lg:px-8 text-xs text-slate-500 dark:text-slate-400">
         <div className="mx-auto max-w-5xl flex items-center justify-between gap-4 flex-wrap">
           <div className="flex items-center gap-2 flex-wrap">
-            <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium">
+            <Link href={isHi ? '/hi' : '/'} className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium">
               {isHi ? 'होम' : 'Home'}
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
-            <Link href="/?nav=schemes" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium">
+            <Link href={isHi ? '/hi/schemes' : '/schemes'} className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium">
               {isHi ? 'सभी योजनाएं' : 'All Schemes'}
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />

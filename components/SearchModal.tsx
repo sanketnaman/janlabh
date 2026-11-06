@@ -11,7 +11,7 @@ interface SearchModalProps {
   onClose: () => void;
   lang: Language;
   onSelectScheme: (scheme: Scheme) => void;
-  onSelectUpdate: (update: UpdateArticle) => void;
+  onSelectUpdate?: (update: UpdateArticle) => void;
   allSchemes?: Scheme[];
   allUpdates?: UpdateArticle[];
 }
@@ -128,33 +128,36 @@ export default function SearchModal({
                   );
                 }
 
-                return (
-                  <div
-                    key={item.id}
-                    onClick={() => {
-                      if (item.type === 'update' && item.rawUpdate) {
-                        onSelectUpdate(item.rawUpdate);
+                if (item.type === 'update' && item.rawUpdate) {
+                  return (
+                    <Link
+                      key={item.id}
+                      href={isHi ? `/hi/updates/${item.rawUpdate.slug}` : `/updates/${item.rawUpdate.slug}`}
+                      onClick={() => {
+                        onSelectUpdate?.(item.rawUpdate!);
                         onClose();
-                      }
-                    }}
-                    className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-100/80 dark:hover:bg-slate-800/80 cursor-pointer transition-colors"
-                  >
-                    <div className="flex items-start gap-3">
-                      <div className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-600 dark:text-slate-300 mt-0.5">
-                        <Newspaper className="h-4 w-4 text-sky-700 dark:text-sky-400" />
-                      </div>
-                      <div>
-                        <div className="text-xs font-bold text-slate-900 dark:text-white">
-                          {isHi ? item.title_hi : item.title}
+                      }}
+                      className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-100/80 dark:hover:bg-slate-800/80 cursor-pointer transition-colors"
+                    >
+                      <div className="flex items-start gap-3">
+                        <div className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-600 dark:text-slate-300 mt-0.5">
+                          <Newspaper className="h-4 w-4 text-sky-700 dark:text-sky-400" />
                         </div>
-                        <div className="text-[12px] text-slate-600 dark:text-slate-300 font-medium line-clamp-1 mt-0.5">
-                          {item.summary}
+                        <div>
+                          <div className="text-xs font-bold text-slate-900 dark:text-white">
+                            {isHi ? item.title_hi : item.title}
+                          </div>
+                          <div className="text-[12px] text-slate-600 dark:text-slate-300 font-medium line-clamp-1 mt-0.5">
+                            {item.summary}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <ChevronRight className="h-4 w-4 text-slate-400 dark:text-slate-400 shrink-0" />
-                  </div>
-                );
+                      <ChevronRight className="h-4 w-4 text-slate-400 dark:text-slate-400 shrink-0" />
+                    </Link>
+                  );
+                }
+
+                return null;
               })}
             </div>
           ) : (

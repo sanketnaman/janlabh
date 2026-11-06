@@ -37,6 +37,11 @@ export async function generateMetadata({ params }: SchemePageProps): Promise<Met
     keywords: scheme.keywords,
     alternates: {
       canonical: `https://janlabh.in/schemes/${scheme.slug}`,
+      languages: {
+        'en': `https://janlabh.in/schemes/${scheme.slug}`,
+        'hi': `https://janlabh.in/hi/schemes/${scheme.slug}`,
+        'x-default': `https://janlabh.in/schemes/${scheme.slug}`,
+      },
     },
     openGraph: {
       title: `${scheme.shortTitle_en} – Eligibility, Benefits & Apply | JanLabh`,

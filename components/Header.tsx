@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Language } from '@/types';
 import { Search, Globe, ShieldCheck, Menu, X, Sun, Moon } from 'lucide-react';
 
@@ -34,6 +35,17 @@ export default function Header({
     { id: 'trust', label_en: 'Why JanLabh', label_hi: 'भरोसा व नीतियां' },
   ];
 
+  const getNavHref = (id: string) => {
+    const prefix = lang === 'hi' ? '/hi' : '';
+    if (id === 'schemes') return `${prefix}/schemes`;
+    if (id === 'finder') return `${prefix}/finder`;
+    if (id === 'checker') return `${prefix}/checker`;
+    if (id === 'states') return `${prefix}/states`;
+    if (id === 'updates') return `${prefix}/updates`;
+    if (id === 'trust') return '/about';
+    return prefix || '/';
+  };
+
   const handleNavClick = (id: string) => {
     onSelectNav(id);
     setMobileMenuOpen(false);
@@ -45,8 +57,9 @@ export default function Header({
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
         
         {/* Zone 1: Pure Brand Logo (Transparent SVG, No English text) */}
-        <button
-          onClick={() => handleNavClick('home')}
+        <Link
+          href={lang === 'hi' ? '/hi' : '/'}
+          onClick={() => setMobileMenuOpen(false)}
           className="flex items-center text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 whitespace-nowrap shrink-0 group py-1"
           aria-label="JanLabh Home"
         >
@@ -55,14 +68,15 @@ export default function Header({
             alt="जनलाभ"
             className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
           />
-        </button>
+        </Link>
 
         {/* Zone 2: 4–5 clean single-line text navigation links */}
         <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700 dark:text-slate-200">
           {navItems.map(item => (
-            <button
+            <Link
               key={item.id}
-              onClick={() => handleNavClick(item.id)}
+              href={getNavHref(item.id)}
+              onClick={() => onSelectNav(item.id)}
               className={`transition-colors whitespace-nowrap shrink-0 hover:text-slate-950 dark:hover:text-white ${
                 activeNav === item.id
                   ? 'text-amber-700 dark:text-amber-400 font-bold border-b-2 border-amber-600 dark:border-amber-400 pb-0.5'
@@ -70,7 +84,7 @@ export default function Header({
               }`}
             >
               {lang === 'hi' ? item.label_hi : item.label_en}
-            </button>
+            </Link>
           ))}
         </nav>
 
@@ -161,9 +175,13 @@ export default function Header({
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 py-3 space-y-2 shadow-lg">
           {navItems.map(item => (
-            <button
+            <Link
               key={item.id}
-              onClick={() => handleNavClick(item.id)}
+              href={getNavHref(item.id)}
+              onClick={() => {
+                onSelectNav(item.id);
+                setMobileMenuOpen(false);
+              }}
               className={`block w-full text-left px-3 py-2 text-sm rounded-md transition-colors ${
                 activeNav === item.id
                   ? 'bg-amber-50 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 font-semibold'
@@ -171,7 +189,7 @@ export default function Header({
               }`}
             >
               {lang === 'hi' ? item.label_hi : item.label_en}
-            </button>
+            </Link>
           ))}
           <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 px-3">
             <span className="flex items-center gap-1">

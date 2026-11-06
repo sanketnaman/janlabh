@@ -7,8 +7,10 @@ import { AlertTriangle, CheckCircle2 } from 'lucide-react';
 
 interface FooterProps {
   lang: Language;
-  onOpenLegal: (pageId: string) => void;
-  onSelectNav: (nav: string) => void;
+  onOpenLegal?: (pageId: string) => void;
+  onSelectNav?: (nav: string) => void;
+  onSelectCategory?: (catId: string) => void;
+  onSelectState?: (stId: string) => void;
 }
 
 export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) {
@@ -64,48 +66,56 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
           {/* Column 2: Quick Discovery */}
           <div>
             <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-3">
-              {lang === 'hi' ? 'योजना खोज' : 'Explore Welfare'}
+              {lang === 'hi' ? 'योजना खोज व पोर्टल' : 'Explore Welfare'}
             </h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <button
-                  onClick={() => onSelectNav('schemes')}
-                  className="hover:text-amber-400 transition-colors text-slate-300"
+                <Link
+                  href={lang === 'hi' ? '/hi/schemes' : '/schemes'}
+                  className="hover:text-amber-400 transition-colors text-slate-300 block"
                 >
                   {lang === 'hi' ? 'सभी केंद्रीय व राज्य योजनाएं' : 'All Central & State Schemes'}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onSelectNav('finder')}
-                  className="hover:text-amber-400 transition-colors text-slate-300"
+                <Link
+                  href={lang === 'hi' ? '/hi/finder' : '/finder'}
+                  className="hover:text-amber-400 transition-colors text-slate-300 block"
                 >
                   {lang === 'hi' ? 'योजना खोजें (Scheme Finder)' : 'Find Schemes for You'}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onSelectNav('checker')}
-                  className="hover:text-amber-400 transition-colors text-slate-300"
+                <Link
+                  href={lang === 'hi' ? '/hi/checker' : '/checker'}
+                  className="hover:text-amber-400 transition-colors text-slate-300 block"
                 >
                   {lang === 'hi' ? 'पात्रता जांच कैलकुलेटर' : 'Interactive Eligibility Checker'}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onSelectNav('states')}
-                  className="hover:text-amber-400 transition-colors text-slate-300"
+                <Link
+                  href={lang === 'hi' ? '/hi/states' : '/states'}
+                  className="hover:text-amber-400 transition-colors text-slate-300 block"
                 >
-                  {lang === 'hi' ? 'राज्यवार योजना हब (झारखंड, बिहार, यूपी)' : 'State Hubs (Jharkhand, Bihar, UP)'}
-                </button>
+                  {lang === 'hi' ? 'राज्यवार योजना हब' : 'State Scheme Hubs'}
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => onSelectNav('updates')}
-                  className="hover:text-amber-400 transition-colors text-slate-300"
+                <Link
+                  href={lang === 'hi' ? '/hi/categories' : '/categories'}
+                  className="hover:text-amber-400 transition-colors text-slate-300 block"
+                >
+                  {lang === 'hi' ? 'श्रेणी अनुसार योजनाएं' : 'Welfare Categories'}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={lang === 'hi' ? '/hi/updates' : '/updates'}
+                  className="hover:text-amber-400 transition-colors text-slate-300 block"
                 >
                   {lang === 'hi' ? 'ताजा सरकारी अपडेट्स व ई-केवाईसी' : 'Latest Updates & e-KYC Deadlines'}
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -190,6 +200,32 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
                 </Link>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* State Hubs Quick Index Bar */}
+        <div className="mt-10 pt-6 border-t border-slate-800">
+          <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
+            {lang === 'hi' ? 'राज्यवार योजना डायरेक्टरी' : 'State-Wise Scheme Hubs'}
+          </div>
+          <div className="flex flex-wrap items-center gap-2 text-xs">
+            {[
+              { id: 'all-india', en: 'Central Govt (All-India)', hi: 'केंद्र सरकार (अखिल भारतीय)' },
+              { id: 'jharkhand', en: 'Jharkhand Schemes', hi: 'झारखंड योजनाएं' },
+              { id: 'bihar', en: 'Bihar Schemes', hi: 'बिहार योजनाएं' },
+              { id: 'uttar-pradesh', en: 'Uttar Pradesh Schemes', hi: 'उत्तर प्रदेश योजनाएं' },
+              { id: 'madhya-pradesh', en: 'Madhya Pradesh Schemes', hi: 'मध्य प्रदेश योजनाएं' },
+              { id: 'maharashtra', en: 'Maharashtra Schemes', hi: 'महाराष्ट्र योजनाएं' },
+              { id: 'rajasthan', en: 'Rajasthan Schemes', hi: 'राजस्थान योजनाएं' },
+            ].map((st) => (
+              <Link
+                key={st.id}
+                href={lang === 'hi' ? `/hi/states/${st.id}` : `/states/${st.id}`}
+                className="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors border border-slate-700/60"
+              >
+                {lang === 'hi' ? st.hi : st.en}
+              </Link>
+            ))}
           </div>
         </div>
 

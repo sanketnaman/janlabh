@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://janlabh.in',
     languages: {
-      'en': 'https://janlabh.in/en',
+      'en': 'https://janlabh.in',
       'hi': 'https://janlabh.in/hi',
       'x-default': 'https://janlabh.in',
     },
