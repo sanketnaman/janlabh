@@ -377,6 +377,7 @@ export const SCHEMES: Scheme[] = [
     whoCanApply_en: 'Women permanent residents of Jharkhand aged 18–50 years from non-taxpayer families holding an active Ration Card and Aadhaar-seeded bank account.',
     whoCanApply_hi: 'झारखंड की स्थायी निवासी 18 से 50 वर्ष की महिलाएं, जिनके परिवार का कोई सदस्य आयकरदाता या सरकारी सेवा में न हो।',
     applicationMode: 'Offline (Panchayat / Camp) & Online Portal',
+    bannerImage: '/images/schemes/jharkhand-maiya-samman.webp',
     
     whatIsThis_en: 'Mukhyamantri Maiya Samman Yojana (JMMSY) is a flagship state welfare program launched by the Government of Jharkhand. It provides recurring financial security to millions of women in both rural and urban areas, promoting dignified living and women empowerment at the grassroots.',
     whatIsThis_hi: 'मुख्यमंत्री मंईयां सम्मान योजना झारखंड सरकार की प्रमुख जनकल्याणकारी योजना है। इसका मुख्य उद्देश्य राज्य की करोड़ों बहन-बेटियों को सीधे आर्थिक सहायता पहुंचाकर उन्हें आत्मनिर्भर बनाना और परिवार के पोषण व स्वास्थ्य में सहयोग देना है।',
@@ -828,6 +829,7 @@ export const SCHEMES: Scheme[] = [
     whoCanApply_en: 'Permanent residents of Jharkhand living in kutcha/dilapidated homes who did not receive PMAY or Baba Saheb Ambedkar housing grants.',
     whoCanApply_hi: 'झारखंड के स्थायी निवासी जो कच्चे/जीर्ण घरों में रहते हैं और जिन्हें पीएम आवास या अंबेडकर आवास का लाभ कभी नहीं मिला।',
     applicationMode: 'Offline (Aapki Sarkar Camps & Block Office)',
+    bannerImage: '/images/schemes/jharkhand-abua-awas.webp',
     
     whatIsThis_en: 'Abua Awas Yojana (AAY) is a 100% Jharkhand State funded housing initiative launched to ensure that vulnerable, tribal, and rural families deprived of Central PMAY housing build spacious 3-room pucca homes with permanent concrete roofing.',
     whatIsThis_hi: 'अबुआ आवास योजना झारखंड सरकार द्वारा शुरू की गई 100% राज्य-पोषित योजना है। इसका उद्देश्य केंद्र सरकार की प्रधानमंत्री आवास योजना से छूट गए जरूरतमंद, गरीब और ग्रामीण परिवारों को 3 कमरों का पक्का मकान उपलब्ध कराना है।',
@@ -1254,6 +1256,7 @@ export const SCHEMES: Scheme[] = [
     whoCanApply_en: '12th pass permanent residents of Bihar aged up to 25 years enrolled in recognized colleges or technical institutes across India.',
     whoCanApply_hi: 'बिहार के स्थायी निवासी 12वीं उत्तीर्ण छात्र जिनकी आयु 25 वर्ष से कम हो और जो देश भर के मान्यता प्राप्त संस्थानों में नामांकित हों।',
     applicationMode: 'Online via MNSSBY Portal + DRCC Verification',
+    bannerImage: '/images/schemes/bihar-student-credit-card.webp',
     
     whatIsThis_en: 'Bihar Student Credit Card Scheme is a flagship scheme under Bihar Chief Minister Nitish Kumar’s "Saat Nischay" initiative (Aarthik Hal, Yuvaon Ko Bal), managed by the Bihar State Education Finance Corporation (BSEFC) to eliminate financial barriers to higher education.',
     whatIsThis_hi: 'बिहार स्टूडेंट क्रेडिट कार्ड योजना मुख्यमंत्री के सात निश्चय कार्यक्रम के तहत संचालित है। इसका उद्देश्य राज्य के गरीब और मेधावी युवाओं को उच्च शिक्षण संस्थानों में प्रवेश के समय आर्थिक तंगी के कारण पढ़ाई छोड़ने से बचाना है।',
@@ -2027,6 +2030,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Resident women of Madhya Pradesh aged 21 to 60 years whose family annual income is below ₹2.5 Lakh.",
   "whoCanApply_hi": "मध्य प्रदेश की स्थायी निवासी महिलाएं (21-60 वर्ष) जिनके परिवार की वार्षिक आय ₹2.5 लाख से कम हो।",
   "applicationMode": "Gram Panchayat & Ward Camps via cmladlibahna.mp.gov.in",
+  "bannerImage": "/images/schemes/ladli-behna-yojana.webp",
   "whatIsThis_en": "Mukhyamantri Ladli Behna Yojana is Madhya Pradesh's landmark direct benefit transfer scheme empowering women economically and supporting healthcare and nutritional autonomy.",
   "whatIsThis_hi": "लाड़ली बहना योजना मध्य प्रदेश शासन की प्रमुख योजना है जिसका उद्देश्य प्रदेश की बहनों को आर्थिक रूप से स्वावलंबी और सशक्त बनाना है।",
   "benefitsList_en": [
@@ -2654,6 +2658,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Permanent residents of UP with a family annual income of less than ₹3 Lakh (maximum 2 daughters per family).",
   "whoCanApply_hi": "उत्तर प्रदेश के मूल निवासी परिवार जिनकी वार्षिक आय ₹3 लाख से कम हो (प्रति परिवार अधिकतम 2 बेटियां)।",
   "applicationMode": "Online via mksy.up.gov.in",
+  "bannerImage": "/images/schemes/up-kanya-sumangala-yojana.webp",
   "whatIsThis_en": "Kanya Sumangala Yojana is a milestone-based conditional cash transfer program by the Government of Uttar Pradesh to eradicate female foeticide and promote girls' higher education.",
   "whatIsThis_hi": "कन्या सुमंगला योजना उत्तर प्रदेश सरकार की बालिकाओं के जन्म, टीकाकरण, प्राथमिक, माध्यमिक व उच्च शिक्षा को प्रोत्साहित करने वाली ऐतिहासिक योजना है।",
   "benefitsList_en": [
@@ -2789,6 +2794,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Resident women of Maharashtra aged 21 to 65 years whose family annual income is up to ₹2.5 Lakh.",
   "whoCanApply_hi": "महाराष्ट्र की स्थायी निवासी महिलाएं (21 से 65 वर्ष) जिनकी पारिवारिक वार्षिक आय ₹2.5 लाख तक हो।",
   "applicationMode": "Online via ladkibahin.maharashtra.gov.in or Nari Shakti Doot App",
+  "bannerImage": "/images/schemes/maharashtra-ladki-bahin.webp",
   "whatIsThis_en": "Mukhyamantri Majhi Ladki Bahin Yojana is Maharashtra's pioneering social welfare scheme providing direct financial independence and nutritional safety net to over 2 crore women.",
   "whatIsThis_hi": "माझी लाड़की बहिन योजना महाराष्ट्र सरकार की प्रमुख पहल है जिसका उद्देश्य महिलाओं को आर्थिक स्वावलंबन और सामाजिक सुरक्षा प्रदान करना है।",
   "benefitsList_en": [
@@ -3421,6 +3427,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Permanent resident girl students of Bihar studying in recognized schools, colleges, and state universities.",
   "whoCanApply_hi": "बिहार की स्थायी निवासी छात्राएं जिन्होंने राज्य के मान्यता प्राप्त कॉलेज/विश्वविद्यालय से इंटरमीडिएट अथवा स्नातक उत्तीर्ण किया हो।",
   "applicationMode": "Online via medhasoft.bih.nic.in portal",
+  "bannerImage": "/images/schemes/bihar-kanya-utthan.webp",
   "whatIsThis_en": "Mukhyamantri Kanya Utthan Yojana is Bihar's flagship initiative to reduce maternal/infant mortality, eradicate child marriage, and achieve universal higher education for women.",
   "whatIsThis_hi": "कन्या उत्थान योजना बिहार सरकार की क्रांतिकारी योजना है जिसका उद्देश्य बाल विवाह रोकना, कन्या भ्रूण हत्या समाप्त करना और बेटियों को उच्च शिक्षा दिलाना है।",
   "benefitsList_en": [
@@ -3548,6 +3555,7 @@ export const SCHEMES: Scheme[] = [
   "whoCanApply_en": "Meritorious SC, ST, OBC, MBC, EWS, and minority students of Rajasthan with family annual income up to ₹8 Lakh.",
   "whoCanApply_hi": "राजस्थान के मूल निवासी एससी, एसटी, ओबीसी, एमबीसी, ईडब्ल्यूएस व अल्पसंख्यक छात्र जिनकी पारिवारिक वार्षिक आय ₹8 लाख तक हो।",
   "applicationMode": "Online via sso.rajasthan.gov.in (SJMS Portal)",
+  "bannerImage": "/images/schemes/rajasthan-anupriti-coaching.webp",
   "whatIsThis_en": "Mukhyamantri Anupriti Coaching Yojana breaks financial barriers for underprivileged youth in Rajasthan, granting merit seats in top coaching centers with state-funded fees.",
   "whatIsThis_hi": "अनुप्रति कोचिंग योजना राजस्थान सरकार की अनूठी पहल है जो आर्थिक रूप से कमजोर मेधावी युवाओं को सिविल सेवा व मेडिकल-इंजीनियरिंग की मुफ्त तैयारी कराती है।",
   "benefitsList_en": [
