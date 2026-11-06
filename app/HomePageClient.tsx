@@ -97,7 +97,7 @@ export default function HomePageClient({ initialLang = 'en' }: HomePageClientPro
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+    <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
       {/* Top Header */}
       <Header
         lang={lang}

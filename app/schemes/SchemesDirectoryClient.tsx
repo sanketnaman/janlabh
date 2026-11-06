@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useTheme } from '@/hooks/useTheme';
 import { Scheme, Language } from '@/types';
@@ -34,6 +35,7 @@ export default function SchemesDirectoryClient({
   initialCategory = 'all',
   initialState = 'all',
 }: SchemesDirectoryClientProps) {
+  const router = useRouter();
   const { lang, toggleLanguage, isHi } = useLanguage();
   const currentLang = initialLang || lang;
   const isHindi = currentLang === 'hi';
@@ -82,19 +84,20 @@ export default function SchemesDirectoryClient({
   }, [schemes, selectedCategory, selectedState, searchQuery]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors">
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
       <Header
         lang={currentLang}
         onToggleLang={toggleLanguage}
         onOpenSearch={() => setSearchModalOpen(true)}
         onSelectNav={(nav) => {
-          if (nav === 'home') window.location.href = isHindi ? '/hi' : '/';
-          else if (nav === 'schemes') window.location.href = isHindi ? '/hi/schemes' : '/schemes';
-          else if (nav === 'finder') window.location.href = isHindi ? '/hi/finder' : '/finder';
-          else if (nav === 'checker') window.location.href = isHindi ? '/hi/checker' : '/checker';
-          else if (nav === 'states') window.location.href = isHindi ? '/hi/states' : '/states';
-          else if (nav === 'updates') window.location.href = isHindi ? '/hi/updates' : '/updates';
-          else if (nav === 'trust') window.location.href = isHindi ? '/hi/about' : '/about';
+          const prefix = isHindi ? '/hi' : '';
+          if (nav === 'home') router.push(prefix || '/');
+          else if (nav === 'schemes') router.push(`${prefix}/schemes`);
+          else if (nav === 'finder') router.push(`${prefix}/finder`);
+          else if (nav === 'checker') router.push(`${prefix}/checker`);
+          else if (nav === 'states') router.push(`${prefix}/states`);
+          else if (nav === 'updates') router.push(`${prefix}/updates`);
+          else if (nav === 'trust') router.push(`${prefix}/about`);
         }}
         activeNav="schemes"
         isDark={isDark}
@@ -250,10 +253,10 @@ export default function SchemesDirectoryClient({
                 scheme={scheme}
                 lang={currentLang}
                 onSelect={() => {
-                  window.location.href = isHindi ? `/hi/schemes/${scheme.slug}` : `/schemes/${scheme.slug}`;
+                  router.push(isHindi ? `/hi/schemes/${scheme.slug}` : `/schemes/${scheme.slug}`);
                 }}
                 onCheckEligibility={() => {
-                  window.location.href = isHindi ? `/hi/checker?scheme=${scheme.slug}` : `/checker?scheme=${scheme.slug}`;
+                  router.push(isHindi ? `/hi/checker?scheme=${scheme.slug}` : `/checker?scheme=${scheme.slug}`);
                 }}
               />
             ))}
@@ -293,7 +296,7 @@ export default function SchemesDirectoryClient({
           lang={currentLang}
           onSelectScheme={(s) => {
             setSearchModalOpen(false);
-            window.location.href = isHindi ? `/hi/schemes/${s.slug}` : `/schemes/${s.slug}`;
+            router.push(isHindi ? `/hi/schemes/${s.slug}` : `/schemes/${s.slug}`);
           }}
         />
       )}

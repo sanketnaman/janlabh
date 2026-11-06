@@ -33,7 +33,7 @@ export default function StatesDirectoryClient({
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors">
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
       <Header
         lang={initialLang || 'en'}
         onToggleLang={() => {
@@ -158,7 +158,7 @@ export default function StatesDirectoryClient({
           lang={initialLang || 'en'}
           onSelectScheme={(s) => {
             setSearchModalOpen(false);
-            window.location.href = isHi ? `/hi/schemes/${s.slug}` : `/schemes/${s.slug}`;
+            router.push(isHi ? `/hi/schemes/${s.slug}` : `/schemes/${s.slug}`);
           }}
         />
       )}

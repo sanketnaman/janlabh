@@ -52,7 +52,7 @@ export default function Header({
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md transition-colors duration-200">
+    <header className="sticky top-0 z-40 w-full border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md">
       {/* Top Bar Contract: Zone 1, Zone 2, Zone 3 */}
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
         
@@ -63,10 +63,16 @@ export default function Header({
           className="flex items-center text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 whitespace-nowrap shrink-0 group py-1"
           aria-label="JanLabh Home"
         >
+          {/* Dual SVG logo: Pure CSS-switched based on html.dark with zero JS flash */}
           <img
-            src={isDark ? "/icons/janlabh-logo-dark.svg" : "/icons/janlabh-logo.svg"}
+            src="/icons/janlabh-logo-dark.svg"
             alt="जनलाभ"
-            className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
+            className="hidden dark:block h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
+          />
+          <img
+            src="/icons/janlabh-logo.svg"
+            alt="जनलाभ"
+            className="block dark:hidden h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
           />
         </Link>
 
@@ -76,8 +82,7 @@ export default function Header({
             <Link
               key={item.id}
               href={getNavHref(item.id)}
-              onClick={() => onSelectNav(item.id)}
-              className={`transition-colors whitespace-nowrap shrink-0 hover:text-slate-950 dark:hover:text-white ${
+              className={`whitespace-nowrap shrink-0 hover:text-slate-950 dark:hover:text-white ${
                 activeNav === item.id
                   ? 'text-amber-700 dark:text-amber-400 font-bold border-b-2 border-amber-600 dark:border-amber-400 pb-0.5'
                   : 'hover:text-slate-950 dark:hover:text-white'

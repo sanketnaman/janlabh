@@ -53,7 +53,7 @@ export default function StateDetailView({
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors">
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
       <Header
         lang={initialLang || 'en'}
         onToggleLang={() => {
@@ -186,10 +186,10 @@ export default function StateDetailView({
                   scheme={scheme}
                   lang={initialLang || 'en'}
                   onSelect={() => {
-                    window.location.href = isHi ? `/hi/schemes/${scheme.slug}` : `/schemes/${scheme.slug}`;
+                    router.push(isHi ? `/hi/schemes/${scheme.slug}` : `/schemes/${scheme.slug}`);
                   }}
                   onCheckEligibility={() => {
-                    window.location.href = isHi ? `/hi/checker?scheme=${scheme.slug}` : `/checker?scheme=${scheme.slug}`;
+                    router.push(isHi ? `/hi/checker?scheme=${scheme.slug}` : `/checker?scheme=${scheme.slug}`);
                   }}
                 />
               ))}
@@ -220,7 +220,7 @@ export default function StateDetailView({
           lang={initialLang || 'en'}
           onSelectScheme={(s) => {
             setSearchModalOpen(false);
-            window.location.href = isHi ? `/hi/schemes/${s.slug}` : `/schemes/${s.slug}`;
+            router.push(isHi ? `/hi/schemes/${s.slug}` : `/schemes/${s.slug}`);
           }}
         />
       )}

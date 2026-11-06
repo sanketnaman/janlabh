@@ -177,7 +177,7 @@ export default function SchemeDetailView({ scheme, initialLang }: SchemeDetailVi
   const problemsList = isHi ? scheme.commonProblems_hi : scheme.commonProblems_en;
 
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+    <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
       <Header
         lang={currentLang}
         onToggleLang={() => {
