@@ -12,8 +12,6 @@ export async function GET() {
     lastmod: string;
     changefreq: 'daily' | 'weekly' | 'monthly';
     priority: string;
-    altEn?: string;
-    altHi?: string;
   }
 
   const entries: SitemapEntry[] = [];
@@ -36,8 +34,6 @@ export async function GET() {
       lastmod: today,
       changefreq: p.freq,
       priority: p.priority,
-      altEn: `${baseUrl}${p.path}`,
-      altHi: `${baseUrl}/hi${p.path}`,
     });
     // Hindi
     entries.push({
@@ -45,8 +41,6 @@ export async function GET() {
       lastmod: today,
       changefreq: p.freq,
       priority: p.priority,
-      altEn: `${baseUrl}${p.path}`,
-      altHi: `${baseUrl}/hi${p.path}`,
     });
   });
 
@@ -73,8 +67,6 @@ export async function GET() {
       lastmod: schemeDate,
       changefreq: 'weekly',
       priority: '0.9',
-      altEn: `${baseUrl}/schemes/${scheme.slug}`,
-      altHi: `${baseUrl}/hi/schemes/${scheme.slug}`,
     });
 
     // HI scheme
@@ -83,8 +75,6 @@ export async function GET() {
       lastmod: schemeDate,
       changefreq: 'weekly',
       priority: '0.9',
-      altEn: `${baseUrl}/schemes/${scheme.slug}`,
-      altHi: `${baseUrl}/hi/schemes/${scheme.slug}`,
     });
   });
 
@@ -96,8 +86,6 @@ export async function GET() {
       lastmod: today,
       changefreq: 'weekly',
       priority: '0.85',
-      altEn: `${baseUrl}/states/${st.id}`,
-      altHi: `${baseUrl}/hi/states/${st.id}`,
     });
 
     // HI state
@@ -106,8 +94,6 @@ export async function GET() {
       lastmod: today,
       changefreq: 'weekly',
       priority: '0.85',
-      altEn: `${baseUrl}/states/${st.id}`,
-      altHi: `${baseUrl}/hi/states/${st.id}`,
     });
   });
 
@@ -119,8 +105,6 @@ export async function GET() {
       lastmod: today,
       changefreq: 'weekly',
       priority: '0.85',
-      altEn: `${baseUrl}/categories/${cat.id}`,
-      altHi: `${baseUrl}/hi/categories/${cat.id}`,
     });
 
     // HI category
@@ -129,8 +113,6 @@ export async function GET() {
       lastmod: today,
       changefreq: 'weekly',
       priority: '0.85',
-      altEn: `${baseUrl}/categories/${cat.id}`,
-      altHi: `${baseUrl}/hi/categories/${cat.id}`,
     });
   });
 
@@ -146,8 +128,6 @@ export async function GET() {
       lastmod: updateDate,
       changefreq: 'weekly',
       priority: '0.8',
-      altEn: `${baseUrl}/updates/${up.slug}`,
-      altHi: `${baseUrl}/hi/updates/${up.slug}`,
     });
 
     // HI update
@@ -156,30 +136,21 @@ export async function GET() {
       lastmod: updateDate,
       changefreq: 'weekly',
       priority: '0.8',
-      altEn: `${baseUrl}/updates/${up.slug}`,
-      altHi: `${baseUrl}/hi/updates/${up.slug}`,
     });
   });
 
-  // Build XML string
+  // Build XML string matching standard Sitemap 0.9 protocol (no XHTML namespace)
   const xmlUrls = entries
-    .map((e) => {
-      const alternateTags =
-        e.altEn && e.altHi
-          ? `\n    <xhtml:link rel="alternate" hreflang="en" href="${e.altEn}" />\n    <xhtml:link rel="alternate" hreflang="hi" href="${e.altHi}" />`
-          : '';
-
-      return `  <url>
-    <loc>${e.loc}</loc>${alternateTags}
+    .map((e) => `  <url>
+    <loc>${e.loc}</loc>
     <lastmod>${e.lastmod}</lastmod>
     <changefreq>${e.changefreq}</changefreq>
     <priority>${e.priority}</priority>
-  </url>`;
-    })
+  </url>`)
     .join('\n');
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${xmlUrls}
 </urlset>`;
 
