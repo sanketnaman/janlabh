@@ -3,11 +3,9 @@ import { SCHEMES } from '@/data/schemes';
 import { STATES, CATEGORIES } from '@/data/categories';
 import { UPDATES } from '@/data/updates';
 
-export async function GET(request: Request) {
+export async function GET() {
   const baseUrl = 'https://janlabh.in';
   const today = new Date().toISOString().split('T')[0];
-  const userAgent = request.headers.get('user-agent') || '';
-  const isSearchBot = /googlebot|bingbot|yandex|duckduckbot/i.test(userAgent);
 
   interface SitemapEntry {
     loc: string;
@@ -180,11 +178,8 @@ export async function GET(request: Request) {
     })
     .join('\n');
 
-  const stylesheetInstruction = isSearchBot
-    ? ''
-    : '<?xml-stylesheet type="text/xsl" href="https://janlabh.in/sitemap.xsl"?>\n';
-
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n${stylesheetInstruction}<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${xmlUrls}
 </urlset>`;
 
