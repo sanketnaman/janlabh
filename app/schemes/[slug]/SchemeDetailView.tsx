@@ -31,6 +31,7 @@ import {
   CheckSquare,
   Square,
   AlertTriangle,
+  UserCheck,
   X
 } from 'lucide-react';
 
@@ -406,6 +407,28 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
               {isHi ? scheme.title_hi : scheme.title_en}
             </h1>
+
+            {/* E-E-A-T Author & Fact-Check Byline */}
+            <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs text-slate-600 dark:text-slate-400 border-y border-slate-100 dark:border-slate-800/80 py-2.5">
+              <span className="flex items-center gap-1.5 font-medium">
+                <UserCheck className="h-3.5 w-3.5 text-amber-600 dark:text-amber-400" />
+                <span>{isHi ? 'अनुसंधान एवं समीक्षा:' : 'Researched & Reviewed by:'}</span>
+                <Link
+                  href={isHi ? '/hi/about' : '/about'}
+                  className="font-bold text-slate-900 dark:text-slate-200 hover:text-amber-600 dark:hover:text-amber-400 underline decoration-amber-500/40 underline-offset-2"
+                >
+                  Sanket Sinha
+                </Link>
+                <span className="text-[11px] text-slate-400 dark:text-slate-500">
+                  ({isHi ? 'मुख्य नीति विश्लेषक' : 'Lead Policy Analyst'})
+                </span>
+              </span>
+              <span className="hidden sm:inline text-slate-300 dark:text-slate-700">•</span>
+              <span className="flex items-center gap-1.5 text-emerald-700 dark:text-emerald-400 font-medium">
+                <ShieldCheck className="h-3.5 w-3.5" />
+                <span>{isHi ? `सरकारी गजट से सत्यापित: ${scheme.lastVerified}` : `Verified via Official Gazette: ${scheme.lastVerified}`}</span>
+              </span>
+            </div>
 
             {/* Quick Answer Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 text-xs">

@@ -131,6 +131,41 @@ export default async function SchemePage({ params }: SchemePageProps) {
           },
         })),
       },
+      {
+        '@type': 'Article',
+        'headline': scheme.title_en,
+        'description': scheme.benefitSummary_en,
+        'image': scheme.bannerImage ? `https://janlabh.in${scheme.bannerImage}` : 'https://janlabh.in/images/schemes/default-banner.svg',
+        'datePublished': '2026-01-01',
+        'dateModified': scheme.lastVerified ? new Date(scheme.lastVerified).toISOString().split('T')[0] : '2026-11-01',
+        'mainEntityOfPage': `https://janlabh.in/schemes/${scheme.slug}`,
+        'author': {
+          '@type': 'Person',
+          'name': 'Sanket Sinha',
+          'jobTitle': 'Lead Policy Analyst & Founder',
+          'url': 'https://janlabh.in/about',
+        },
+        'publisher': {
+          '@type': 'Organization',
+          'name': 'JanLabh',
+          'url': 'https://janlabh.in',
+          'logo': {
+            '@type': 'ImageObject',
+            'url': 'https://janlabh.in/favicon.ico',
+          },
+        },
+      },
+      {
+        '@type': 'HowTo',
+        'name': `How to Apply for ${scheme.shortTitle_en}`,
+        'description': `Official step-by-step application procedure for ${scheme.shortTitle_en}.`,
+        'step': scheme.howToApply_en.map((stepText, idx) => ({
+          '@type': 'HowToStep',
+          'position': idx + 1,
+          'name': `Step ${idx + 1}: ${stepText.slice(0, 50)}...`,
+          'text': stepText,
+        })),
+      },
     ],
   };
 

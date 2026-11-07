@@ -131,6 +131,41 @@ export default async function HindiSchemePage({ params }: HindiSchemePageProps) 
           },
         })),
       },
+      {
+        '@type': 'Article',
+        'headline': scheme.title_hi,
+        'description': scheme.benefitSummary_hi,
+        'image': scheme.bannerImage ? `https://janlabh.in${scheme.bannerImage}` : 'https://janlabh.in/images/schemes/default-banner.svg',
+        'datePublished': '2026-01-01',
+        'dateModified': scheme.lastVerified ? new Date(scheme.lastVerified).toISOString().split('T')[0] : '2026-11-01',
+        'mainEntityOfPage': `https://janlabh.in/hi/schemes/${scheme.slug}`,
+        'author': {
+          '@type': 'Person',
+          'name': 'संकेत सिन्हा (Sanket Sinha)',
+          'jobTitle': 'Lead Policy Analyst & Founder',
+          'url': 'https://janlabh.in/hi/about',
+        },
+        'publisher': {
+          '@type': 'Organization',
+          'name': 'जनलाभ (JanLabh)',
+          'url': 'https://janlabh.in',
+          'logo': {
+            '@type': 'ImageObject',
+            'url': 'https://janlabh.in/favicon.ico',
+          },
+        },
+      },
+      {
+        '@type': 'HowTo',
+        'name': `${scheme.shortTitle_hi} के लिए ऑनलाइन व ऑफलाइन आवेदन कैसे करें?`,
+        'description': `${scheme.shortTitle_hi} हेतु संपूर्ण चरणबद्ध आवेदन प्रक्रिया और नियम।`,
+        'step': scheme.howToApply_hi.map((stepText, idx) => ({
+          '@type': 'HowToStep',
+          'position': idx + 1,
+          'name': `चरण ${idx + 1}: ${stepText.slice(0, 50)}...`,
+          'text': stepText,
+        })),
+      },
     ],
   };
 
