@@ -1,7 +1,8 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { SCHEMES } from '@/data/schemes';
 import FinderClient from '@/app/finder/FinderClient';
+
+export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
   title: 'सरकारी योजना खोजें: अपनी पात्रता के अनुसार योजनाएं जानें | Scheme Finder | JanLabh',
@@ -47,7 +48,7 @@ export default function HindiFinderPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <FinderClient schemes={SCHEMES} initialLang="hi" />
+      <FinderClient initialLang="hi" />
     </>
   );
 }

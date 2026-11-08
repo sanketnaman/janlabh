@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { SCHEMES } from '@/data/schemes';
 import CheckerClient from '@/app/checker/CheckerClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'सरकारी योजना पात्रता जांचें 2026: कैलकुलेटर | Scheme Eligibility | JanLabh',
   description: 'पीएम किसान, आयुष्मान कार्ड, पीएम आवास योजना, लाडली बहना, मंईयां सम्मान योजना की ऑनलाइन पात्रता जांचें। 4-5 सीधे सवालों के जवाब देकर रिजेक्शन से बचें।',

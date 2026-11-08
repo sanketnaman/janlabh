@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { UPDATES } from '@/data/updates';
 import UpdatesDirectoryClient from './UpdatesDirectoryClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Government Scheme Updates 2026: e-KYC Deadlines, Installment Dates & Orders | JanLabh',
   description: 'Stay updated on Indian government welfare schemes. Check PM Kisan 19th installment status, Ayushman Vaya Vandana card rules, Ladli Behna updates, and eKYC deadlines.',

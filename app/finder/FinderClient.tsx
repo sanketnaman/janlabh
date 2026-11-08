@@ -12,11 +12,11 @@ import SearchModal from '@/components/SearchModal';
 import { ChevronRight, Home, Sparkles } from 'lucide-react';
 
 interface FinderClientProps {
-  schemes: Scheme[];
+  schemes?: Scheme[];
   initialLang?: Language;
 }
 
-export default function FinderClient({ schemes, initialLang = 'en' }: FinderClientProps) {
+export default function FinderClient({ schemes = [], initialLang = 'en' }: FinderClientProps) {
   const router = useRouter();
   const isHi = initialLang === 'hi';
   const { isDark, toggleTheme } = useTheme();

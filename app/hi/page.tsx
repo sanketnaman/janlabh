@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import HomePageClient from '@/app/HomePageClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'जनलाभ (JanLabh): सभी सरकारी योजनाएं, पात्रता जांच व ऑनलाइन आवेदन 2026 | Sarkari Yojana',
   description: 'भारत सरकार और राज्य सरकारों (झारखंड, उत्तर प्रदेश, बिहार, राजस्थान, मध्य प्रदेश, महाराष्ट्र) की जनकल्याणकारी योजनाओं की संपूर्ण जानकारी। पीएम किसान, आयुष्मान भारत, पीएम आवास, लाडली बहना की पात्रता, दस्तावेज और ऑनलाइन आवेदन लिंक।',

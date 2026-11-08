@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { SCHEMES } from '@/data/schemes';
 import CheckerClient from './CheckerClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Check Scheme Eligibility 2026: Instant Calculator | सरकारी योजना पात्रता जांचें | JanLabh',
   description: 'Check your eligibility for PM Kisan, Ayushman Bharat, PM Awas Yojana, Ladli Behna, Maiya Samman, and Vishwakarma schemes. Avoid application rejections with official criteria.',

@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import HomePageClient from './HomePageClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'JanLabh – Government Schemes & Citizen Benefits in India 2026: Eligibility & Apply | सरकारी योजनाएं',
   description: 'Discover all Central and State government welfare schemes in India (PM Kisan, Ayushman Bharat, PMAY, Ladli Behna, Vishwakarma). Check instant eligibility, required documents, and apply online.',

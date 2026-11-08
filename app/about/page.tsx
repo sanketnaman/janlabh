@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import AboutView from './AboutView';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'About Us & Editorial Standards | JanLabh.in',
   description: 'Learn about JanLabh.in, our mission to bridge information asymmetry in government schemes, our strict editorial policy, fact-checking methodology, and team.',

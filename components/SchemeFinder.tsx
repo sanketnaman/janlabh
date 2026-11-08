@@ -22,14 +22,14 @@ interface SchemeFinderProps {
   lang: Language;
   onSelectScheme: (scheme: Scheme) => void;
   onCheckEligibility: (scheme: Scheme) => void;
-  allSchemes: Scheme[];
+  allSchemes?: Scheme[];
 }
 
 export default function SchemeFinder({
   lang,
   onSelectScheme,
   onCheckEligibility,
-  allSchemes
+  allSchemes = []
 }: SchemeFinderProps) {
   const isHi = lang === 'hi';
 

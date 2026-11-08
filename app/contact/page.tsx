@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import ContactView from './ContactView';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Contact Us & Editorial Grievance Desk | JanLabh.in',
   description: 'Contact the JanLabh research and editorial team. Submit questions, report corrections on government welfare schemes, or seek citizen support.',

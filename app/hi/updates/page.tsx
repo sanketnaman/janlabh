@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { UPDATES } from '@/data/updates';
 import UpdatesDirectoryClient from '@/app/updates/UpdatesDirectoryClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'सरकारी योजना ताजा अपडेट्स 2026: ई-केवाईसी, अगली किस्त व नियम | JanLabh',
   description: 'सरकारी योजनाओं की ताजा खबरें व सरकारी आदेश। पीएम किसान 19वीं किस्त, लाडली बहना, मंईयां सम्मान योजना, आयुष्मान कार्ड और ई-केवाईसी की अंतिम तिथि की जानकारी हिंदी में।',

@@ -4,6 +4,8 @@ import { CATEGORIES } from '@/data/categories';
 import { SCHEMES } from '@/data/schemes';
 import CategoriesDirectoryClient from '@/app/categories/CategoriesDirectoryClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'सरकारी योजना श्रेणियां 2026: किसान, महिला, छात्र, स्वास्थ्य व आवास | JanLabh',
   description: 'सरकारी जनकल्याण योजनाओं की संपूर्ण श्रेणी सूची। किसान कल्याण, महिला सशक्तिकरण, छात्रवृत्ति, आयुष्मान भारत स्वास्थ्य कार्ड, आवास योजना एवं पेंशन की जानकारी हिंदी में।',

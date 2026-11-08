@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { STATES } from '@/data/categories';
 import StatesDirectoryClient from '@/app/states/StatesDirectoryClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'राज्य अनुसार सरकारी योजनाएं 2026: सभी राज्यों की योजना लिस्ट | State Schemes | JanLabh',
   description: 'भारत के सभी राज्यों (झारखंड, उत्तर प्रदेश, मध्य प्रदेश, महाराष्ट्र, बिहार, राजस्थान एवं केंद्र सरकार) की जन कल्याणकारी योजनाएं। राज्यवार सब्सिडी, पेंशन और पात्रता चेक करें।',

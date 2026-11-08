@@ -4,6 +4,8 @@ import { CATEGORIES } from '@/data/categories';
 import { SCHEMES } from '@/data/schemes';
 import CategoriesDirectoryClient from './CategoriesDirectoryClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Government Scheme Categories 2026: Farmers, Women, Students, Health & Housing | JanLabh',
   description: 'Browse government welfare schemes by category: Farmers & Agriculture, Women Empowerment, Students, Scholarships, Health (Ayushman Bharat), Housing (PMAY), Pensions, and Employment.',

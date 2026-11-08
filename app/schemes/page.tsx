@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { SCHEMES } from '@/data/schemes';
 import SchemesDirectoryClient from './SchemesDirectoryClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'All Government Schemes in India 2026: Search & Check Eligibility | सभी सरकारी योजनाएं | JanLabh',
   description: 'Explore all Central and State government schemes in India. Check eligibility, benefits (PM Kisan, Ayushman Bharat, PMAY, Maiya Samman, Vishwakarma), required documents, and apply online.',

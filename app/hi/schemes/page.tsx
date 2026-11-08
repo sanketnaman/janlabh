@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { SCHEMES } from '@/data/schemes';
 import SchemesDirectoryClient from '@/app/schemes/SchemesDirectoryClient';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'सभी सरकारी योजनाएं 2026: नई लिस्ट, पात्रता नियम व ऑनलाइन आवेदन | JanLabh',
   description: 'भारत सरकार एवं सभी राज्य सरकारों की प्रमुख कल्याणकारी योजनाओं (पीएम किसान, आयुष्मान भारत, पीएम आवास, मंईयां सम्मान, विश्वकर्मा योजना) की पूरी जानकारी, पात्रता व आवेदन लिंक।',

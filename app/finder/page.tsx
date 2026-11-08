@@ -1,7 +1,8 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { SCHEMES } from '@/data/schemes';
 import FinderClient from './FinderClient';
+
+export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
   title: 'Government Scheme Finder: Discover Eligible Welfare Schemes | सरकारी योजना खोजें | JanLabh',
@@ -48,7 +49,7 @@ export default function FinderPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <FinderClient schemes={SCHEMES} initialLang="en" />
+      <FinderClient initialLang="en" />
     </>
   );
 }
