@@ -9,7 +9,6 @@ import { SCHEMES } from '@/data/schemes';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SearchModal from '@/components/SearchModal';
-import SchemeEligibilityChecker from '@/components/SchemeEligibilityChecker';
 import AdBannerSlot from '@/components/AdBannerSlot';
 import {
   ShieldCheck,
@@ -31,8 +30,7 @@ import {
   CheckSquare,
   Square,
   AlertTriangle,
-  UserCheck,
-  X
+  UserCheck
 } from 'lucide-react';
 
 interface SchemeDetailViewProps {
@@ -45,9 +43,9 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
   const currentLang = initialLang;
   const lang = currentLang;
   const isHi = currentLang === 'hi';
+  const prefix = isHi ? '/hi' : '';
   const { isDark, toggleTheme } = useTheme();
   const [searchModalOpen, setSearchModalOpen] = useState(false);
-  const [eligibilityModalOpen, setEligibilityModalOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [shareOpen, setShareOpen] = useState(false);
   const [canNativeShare, setCanNativeShare] = useState(false);
@@ -472,14 +470,13 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                 </a>
               )}
 
-              <button
-                type="button"
-                onClick={() => setEligibilityModalOpen(true)}
+              <Link
+                href={`${prefix}/checker?scheme=${scheme.slug}`}
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-bold text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 transition-colors cursor-pointer shadow-xs"
               >
                 <CheckCircle2 className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
                 <span>{isHi ? 'विस्तृत पात्रता जांचें' : 'Evaluate Full Eligibility'}</span>
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -559,14 +556,13 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
             </div>
 
             <div className="pt-2 flex justify-start">
-              <button
-                type="button"
-                onClick={() => setEligibilityModalOpen(true)}
+              <Link
+                href={`${prefix}/checker?scheme=${scheme.slug}`}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 transition-colors cursor-pointer shadow-xs"
               >
                 <CheckCircle2 className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
                 <span>{isHi ? 'क्या आप पात्र हैं? अपनी पात्रता तुरंत जांचें →' : 'Are You Eligible? Test Your Eligibility Now →'}</span>
-              </button>
+              </Link>
             </div>
           </section>
 
@@ -765,57 +761,6 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
         }}
         allSchemes={SCHEMES}
       />
-
-      {/* Interactive Scheme Eligibility Checker Modal */}
-      {eligibilityModalOpen && (
-        <div
-          className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/70 dark:bg-slate-950/85 backdrop-blur-sm p-3 sm:p-6 lg:p-8 flex justify-center items-start animate-in fade-in duration-150"
-          role="dialog"
-          aria-modal="true"
-        >
-          <div className="relative w-full max-w-3xl my-2 sm:my-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden flex flex-col">
-            {/* Top Modal Header */}
-            <div className="flex items-center justify-between px-5 py-3.5 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/90 sticky top-0 z-10">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
-                <span className="font-bold text-sm text-slate-900 dark:text-white">
-                  {isHi ? 'पात्रता मूल्यांकन' : 'Eligibility Evaluation'}
-                </span>
-                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium hidden sm:inline">
-                  — {isHi ? scheme.shortTitle_hi : scheme.shortTitle_en}
-                </span>
-              </div>
-              <button
-                type="button"
-                onClick={() => setEligibilityModalOpen(false)}
-                className="p-1.5 rounded-lg text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors cursor-pointer"
-                aria-label="Close"
-              >
-                <X className="h-5 w-5" />
-              </button>
-            </div>
-
-            {/* Checker Body */}
-            <div className="p-3 sm:p-6 max-h-[82vh] overflow-y-auto">
-              <SchemeEligibilityChecker
-                lang={lang}
-                selectedScheme={scheme}
-                allSchemes={SCHEMES}
-                onSelectSchemeDetails={(s) => {
-                  setEligibilityModalOpen(false);
-                  if (s.slug !== scheme.slug) {
-                    router.push(`/schemes/${s.slug}`);
-                  }
-                }}
-                onBackToFinder={() => {
-                  setEligibilityModalOpen(false);
-                  router.push('/?nav=finder');
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
