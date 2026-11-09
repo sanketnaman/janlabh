@@ -142,13 +142,14 @@ export default function PrivacyPolicyView() {
               </div>
               <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
                 {isHi
-                  ? 'यदि आपके पास इस गोपनीयता नीति या हमारी प्रथाओं के संबंध में कोई प्रश्न या सुझाव है, तो कृपया हमारी संपादकीय एवं डेटा डेस्क से संपर्क करें:'
-                  : 'For questions, feedback, or grievance redressal regarding our privacy policy, contact our Data & Editorial Desk:'}
+                  ? 'यदि आपके पास इस गोपनीयता नीति या डेटा सुरक्षा के संबंध में कोई प्रश्न या शिकायत है, तो कृपया हमारे संपर्क सूत्र से संपर्क करें:'
+                  : 'For questions, feedback, or grievance redressal regarding our privacy policy, contact our privacy contact:'}
               </p>
               <div className="p-4 bg-slate-50 dark:bg-slate-800/80 rounded-xl text-xs space-y-1 font-mono text-slate-800 dark:text-slate-200">
+                <div><strong>Contact:</strong> Sanket Sinha, Founder & Editor</div>
                 <div><strong>Email:</strong> privacy@janlabh.in / contact@janlabh.in</div>
-                <div><strong>Portal:</strong> JanLabh.in – Independent Citizen Welfare Guidance Desk</div>
-                <div><strong>Location:</strong> New Delhi & Ranchi, India</div>
+                <div><strong>Website:</strong> JanLabh.in</div>
+                <div><strong>Location:</strong> India</div>
               </div>
             </section>
           </article>

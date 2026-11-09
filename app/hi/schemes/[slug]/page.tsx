@@ -142,7 +142,7 @@ export default async function HindiSchemePage({ params }: HindiSchemePageProps) 
         'author': {
           '@type': 'Person',
           'name': 'संकेत सिन्हा (Sanket Sinha)',
-          'jobTitle': 'Lead Policy Analyst & Founder',
+          'jobTitle': 'Founder & Editor',
           'url': 'https://janlabh.in/hi/about',
         },
         'publisher': {

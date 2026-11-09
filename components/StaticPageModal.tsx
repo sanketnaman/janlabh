@@ -272,7 +272,7 @@ export default function StaticPageModal({ pageId, onClose, lang }: StaticPageMod
                   <span className="font-semibold text-slate-800 dark:text-slate-200">
                     {isHi ? 'कार्यक्षेत्र:' : 'Location:'}
                   </span>{' '}
-                  <span className="text-slate-700 dark:text-slate-300">New Delhi & Ranchi, India</span>
+                  <span className="text-slate-700 dark:text-slate-300">India</span>
                 </div>
               </div>
             </div>

@@ -15,6 +15,7 @@ interface StaticPageLayoutProps {
   activeNav?: string;
   breadcrumbTitle_en: string;
   breadcrumbTitle_hi: string;
+  forcedLang?: Language;
 }
 
 export default function StaticPageLayout({
@@ -22,9 +23,11 @@ export default function StaticPageLayout({
   activeNav = '',
   breadcrumbTitle_en,
   breadcrumbTitle_hi,
+  forcedLang,
 }: StaticPageLayoutProps) {
   const router = useRouter();
   const { lang, toggleLanguage } = useLanguage();
+  const effectiveLang = forcedLang || lang;
   const { isDark, toggleTheme } = useTheme();
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
@@ -56,8 +59,14 @@ export default function StaticPageLayout({
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
       <Header
-        lang={lang}
-        onToggleLang={toggleLanguage}
+        lang={effectiveLang}
+        onToggleLang={() => {
+          if (forcedLang === 'hi') {
+            router.push('/contact');
+          } else {
+            toggleLanguage();
+          }
+        }}
         onOpenSearch={() => setSearchModalOpen(true)}
         onSelectNav={handleSelectNav}
         activeNav={activeNav}
@@ -68,24 +77,24 @@ export default function StaticPageLayout({
       {/* Breadcrumb strip */}
       <div className="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 py-2.5 px-4 sm:px-6 lg:px-8 text-xs text-slate-500 dark:text-slate-400">
         <div className="mx-auto max-w-5xl flex items-center gap-2">
-          <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
-            {lang === 'hi' ? 'होम' : 'Home'}
+          <Link href={effectiveLang === 'hi' ? '/hi' : '/'} className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
+            {effectiveLang === 'hi' ? 'होम' : 'Home'}
           </Link>
           <span>/</span>
           <span className="font-semibold text-slate-800 dark:text-slate-200">
-            {lang === 'hi' ? breadcrumbTitle_hi : breadcrumbTitle_en}
+            {effectiveLang === 'hi' ? breadcrumbTitle_hi : breadcrumbTitle_en}
           </span>
         </div>
       </div>
 
       <main className="flex-1 py-10 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          {children(lang)}
+          {children(effectiveLang)}
         </div>
       </main>
 
       <Footer
-        lang={lang}
+        lang={effectiveLang}
         onOpenLegal={handleOpenLegal}
         onSelectNav={handleSelectNav}
       />

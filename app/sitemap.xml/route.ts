@@ -45,7 +45,7 @@ export async function GET() {
   });
 
   // 2. Legal & Trust Pages
-  const legalPages = ['/about', '/privacy-policy', '/terms', '/contact', '/disclaimer'];
+  const legalPages = ['/about', '/privacy-policy', '/terms', '/contact', '/hi/contact', '/disclaimer'];
   legalPages.forEach((route) => {
     entries.push({
       loc: `${baseUrl}${route}`,

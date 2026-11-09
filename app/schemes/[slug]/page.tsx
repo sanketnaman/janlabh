@@ -142,7 +142,7 @@ export default async function SchemePage({ params }: SchemePageProps) {
         'author': {
           '@type': 'Person',
           'name': 'Sanket Sinha',
-          'jobTitle': 'Lead Policy Analyst & Founder',
+          'jobTitle': 'Founder & Editor',
           'url': 'https://janlabh.in/about',
         },
         'publisher': {

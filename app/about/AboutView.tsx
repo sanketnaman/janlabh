@@ -83,13 +83,13 @@ export default function AboutView() {
                     <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mt-1">
                       <span className="flex items-center gap-1">
                         <MapPin className="h-3.5 w-3.5 text-amber-600" />
-                        <span>New Delhi, India</span>
+                        <span>India</span>
                       </span>
                       <span>•</span>
                       <span className="flex items-center gap-1">
                         <Mail className="h-3.5 w-3.5 text-amber-600" />
-                        <a href="mailto:nick.sanket2007@gmail.com" className="hover:text-amber-700 dark:hover:text-amber-400 font-mono">
-                          nick.sanket2007@gmail.com
+                        <a href="mailto:contact@janlabh.in" className="hover:text-amber-700 dark:hover:text-amber-400 font-mono">
+                          contact@janlabh.in
                         </a>
                       </span>
                     </div>
@@ -99,13 +99,13 @@ export default function AboutView() {
                 <div className="space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
                   <p>
                     {isHi
-                      ? 'संकेत सिन्हा जनलाभ (JanLabh.in) के संस्थापक एवं संपादक (Founder & Editor) हैं। नई दिल्ली में स्थित, संकेत लोक प्रशासन, ई-गवर्नेंस और सामाजिक कल्याणकारी योजनाओं के स्वतंत्र अनुसंधान और तथ्य-जांच का नेतृत्व करते हैं।'
-                      : 'Sanket Sinha is the Founder & Editor of JanLabh. Based in New Delhi, India, Sanket oversees editorial integrity, civic research, and public welfare guides across Central and State government programs.'}
+                      ? 'संकेत सिन्हा जनलाभ (JanLabh.in) के संस्थापक एवं संपादक (Founder & Editor) हैं। भारत से संचालित, संकेत लोक प्रशासन, ई-गवर्नेंस और सामाजिक कल्याणकारी योजनाओं के स्वतंत्र अनुसंधान और तथ्य-जांच का नेतृत्व करते हैं।'
+                      : 'Sanket Sinha is the Founder & Editor of JanLabh. Based in India, Sanket oversees editorial integrity, civic research, and public welfare guides across Central and State government programs.'}
                   </p>
                   <p>
                     {isHi
                       ? 'भारत सरकार के मंत्रालयों और राज्य विभागों के आधिकारिक राजपत्रों (Statutory Gazettes), नीतिगत संकल्पों और प्रत्यक्ष लाभ अंतरण (DBT) नियमों के विश्लेषण में उनकी विशेषज्ञता है। उनका प्राथमिक मिशन जटिल नौकरशाही शब्दावली और बिचौलियों की निर्भरता को समाप्त कर भारत के प्रत्येक नागरिक तक उनके कानूनी अधिकारों और कल्याणकारी योजनाओं की पारदर्शी व सटीक जानकारी पहुंचाना है।'
-                      : 'With extensive experience dissecting statutory gazette notifications, ministry circulars, and Direct Benefit Transfer (DBT) protocols, Sanket oversees JanLabh\'s strict verification desk. His objective is to dismantle bureaucratic gatekeeping and eliminate predatory middlemen by delivering verified, transparent, and step-by-step digital guidance to every eligible Indian citizen.'}
+                      : 'With extensive experience dissecting statutory gazette notifications, ministry circulars, and Direct Benefit Transfer (DBT) protocols, Sanket oversees JanLabh\'s strict verification methodology. His objective is to dismantle bureaucratic gatekeeping and eliminate predatory middlemen by delivering verified, transparent, and step-by-step digital guidance to every eligible Indian citizen.'}
                   </p>
                 </div>
 
@@ -171,24 +171,22 @@ export default function AboutView() {
               </div>
             </section>
 
-            {/* Editorial Desk Details & Direct Contact */}
+            {/* Editorial Contact */}
             <section className="space-y-3 border-t border-slate-200 dark:border-slate-800 pt-6 not-prose">
               <h2 className="text-base font-bold text-slate-900 dark:text-white">
-                {isHi ? 'संपादकीय संपर्क एवं कार्यालय' : 'Editorial Desk & Office Correspondence'}
+                {isHi ? 'संपादकीय संपर्क' : 'Editorial Contact'}
               </h2>
               <div className="p-4 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 space-y-2">
                 <p>
-                  <strong>{isHi ? 'संपादकीय कार्यालय:' : 'Editorial Desk:'}</strong> JanLabh Public Policy & Civic Research Desk, Connaught Place, New Delhi - 110001, India.
+                  {isHi
+                    ? 'जनलाभ भारत से संकेत सिन्हा (संस्थापक एवं संपादक) द्वारा संचालित एक स्वतंत्र परियोजना है।'
+                    : 'JanLabh is an independent project run from India by Sanket Sinha (Founder & Editor).'}
                 </p>
                 <p>
                   <strong>{isHi ? 'ईमेल संपर्क:' : 'Direct Inquiries:'}</strong>{' '}
                   <a href="mailto:contact@janlabh.in" className="text-amber-700 dark:text-amber-400 font-mono font-semibold hover:underline">
                     contact@janlabh.in
-                  </a>{' '}
-                  ({isHi ? 'अथवा मुख्य विश्लेषक:' : 'or direct:'}{' '}
-                  <a href="mailto:nick.sanket2007@gmail.com" className="text-amber-700 dark:text-amber-400 font-mono hover:underline">
-                    nick.sanket2007@gmail.com
-                  </a>)
+                  </a>
                 </p>
                 <div className="pt-2">
                   <Link

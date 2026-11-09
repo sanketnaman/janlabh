@@ -32,7 +32,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
           <div className="flex items-center gap-1.5 text-emerald-400 shrink-0">
             <CheckCircle2 className="h-3.5 w-3.5" />
             <span>
-              {lang === 'hi' ? 'आधिकारिक स्रोतों से सत्यापित' : 'Verified from official gazettes & portals'}
+              {lang === 'hi' ? 'आधिकारिक सरकारी पोर्टलों से सत्यापित' : 'Verified against official government portals'}
             </span>
           </div>
         </div>
