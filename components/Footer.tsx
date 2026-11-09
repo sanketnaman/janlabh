@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Language } from '@/types';
 import { AlertTriangle, CheckCircle2 } from 'lucide-react';
+import CommunityCallout from '@/components/CommunityCallout';
 
 interface FooterProps {
   lang: Language;
@@ -201,6 +202,11 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* Community Alert Network (WhatsApp & Telegram) */}
+        <div className="mt-12 pt-8 border-t border-slate-800">
+          <CommunityCallout lang={lang} variant="banner" />
         </div>
 
         {/* State Hubs Quick Index Bar */}

@@ -23,6 +23,7 @@ import {
   Share2,
   Check
 } from 'lucide-react';
+import CommunityCallout from '@/components/CommunityCallout';
 
 interface UpdateDetailViewProps {
   update: UpdateArticle;
@@ -226,6 +227,9 @@ export default function UpdateDetailView({
               </Link>
             </div>
           )}
+
+          {/* Community Channel Alert Box */}
+          <CommunityCallout lang={isHi ? 'hi' : 'en'} variant="card" />
 
           {/* Official Verification Citation Box */}
           <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl p-5 border border-slate-200 dark:border-slate-700 space-y-2">

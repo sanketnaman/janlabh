@@ -10,6 +10,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SearchModal from '@/components/SearchModal';
 import AdBannerSlot from '@/components/AdBannerSlot';
+import CommunityCallout from '@/components/CommunityCallout';
 import {
   ShieldCheck,
   CheckCircle2,
@@ -681,6 +682,9 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               </div>
             </section>
           )}
+
+          {/* Community Channel Alert Box */}
+          <CommunityCallout lang={isHi ? 'hi' : 'en'} variant="card" />
 
           {/* Related Schemes (Pillars) */}
           {relatedSchemes.length > 0 && (
