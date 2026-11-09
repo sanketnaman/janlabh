@@ -2,6 +2,61 @@ import { UpdateArticle } from '@/types';
 
 export const UPDATES: UpdateArticle[] = [
   {
+    id: 'pm-kisan-24th-installment-released-25th-status',
+    slug: 'pm-kisan-24th-installment-released-25th-status',
+    title_en: 'PM-Kisan 24th Installment Released: ₹18,690+ Cr Transferred, 25th Installment Date Status & 3-Point Checklist',
+    title_hi: 'पीएम किसान 24वीं किस्त जारी: ₹18,690+ करोड़ ट्रांसफर, 25वीं किस्त की स्थिति व 3-पॉइंट चेकलिस्ट',
+    category: 'scheme-update',
+    publishedDate: 'November 09, 2026',
+    updatedDate: 'November 09, 2026',
+    lastVerified: 'November 09, 2026',
+    summary_en: 'Prime Minister Narendra Modi released the 24th installment of PM-KISAN on 30 October 2026 from Banaskantha, Gujarat, transferring over ₹18,690 crore to 9.34+ crore farmers. As of 9 November 2026, the 25th installment date is not officially announced. Check reasons and solutions if your ₹2,000 is delayed.',
+    summary_hi: 'प्रधानमंत्री नरेंद्र मोदी ने 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से पीएम-किसान की 24वीं किस्त जारी कर दी है, जिसके तहत 9.34 करोड़ से अधिक किसानों को ₹18,690 करोड़ से ज्यादा सीधे डीबीटी द्वारा भेजे गए। 9 नवंबर 2026 तक 25वीं किस्त की आधिकारिक तारीख घोषित नहीं हुई है। यदि ₹2,000 नहीं मिले, तो तुरंत यह चेकलिस्ट देखें।',
+    keyFacts_en: [
+      '24th installment was released on 30 October 2026 from Banaskantha, Gujarat, disbursing over ₹18,690 crore directly to 9.34+ crore farmers.',
+      'Cumulative disbursals under PM-KISAN have officially crossed ₹4.64 lakh crore across 24 installments.',
+      '25th installment date is NOT officially announced as of 9 November 2026 (expected between December 2026 and March 2027 based on 4-month cycle).',
+      'Mandatory 4-pillar compliance for payment credit: OTP/Biometric/Face e-KYC, Land Seeding = YES, Bank Aadhaar NPCI seeding, and AgriStack Farmer ID linkage.'
+    ],
+    keyFacts_hi: [
+      '24वीं किस्त 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से जारी हुई, जिसमें 9.34 करोड़ से अधिक किसानों को ₹18,690 करोड़ से अधिक भेजे गए।',
+      'योजना के तहत अब तक कुल संचयी सहायता राशि ₹4.64 लाख करोड़ के पार पहुँच चुकी है।',
+      '9 नवंबर 2026 तक 25वीं किस्त की आधिकारिक तिथि घोषित नहीं हुई है (4 महीने के नियमित चक्र अनुसार दिसंबर 2026 से मार्च 2027 के बीच संभावित)।',
+      'डीबीटी भुगतान हेतु 4 अनिवार्य शर्तें: ई-केवाईसी (ओटीपी/बायोमेट्रिक/फेस ऑथ), लैंड सीडिंग YES, एनपीसीआई बैंक सीडिंग और एग्रीस्टैक फार्मर आईडी।'
+    ],
+    importantDates_en: [
+      '24th Installment Release Date: 30 October 2026 (Disbursed nationwide)',
+      '25th Installment Release Date: Not officially announced as of 9 November 2026 (Expected Period: Dec 2026 – Mar 2027)',
+      'Correction Window: Active on pmkisan.gov.in & PM-KISAN App'
+    ],
+    importantDates_hi: [
+      '24वीं किस्त जारी होने की तिथि: 30 अक्टूबर 2026 (सफलतापूर्वक वितरित)',
+      '25वीं किस्त जारी होने की तिथि: 9 नवंबर 2026 तक आधिकारिक घोषणा नहीं (संभावित अवधि: दिसंबर 2026 – मार्च 2027)',
+      'स्टेटस सुधार व ई-केवाईसी विंडो: pmkisan.gov.in व पीएम-किसान ऐप पर सक्रिय'
+    ],
+    whoIsAffected_en: 'All enrolled landholding farmers in India awaiting verification or seeking confirmation of their 24th/25th installment DBT payment status.',
+    whoIsAffected_hi: 'देश भर के सभी पंजीकृत भूमिधारक किसान जो अपनी 24वीं किस्त के क्रेडिट स्टेटस अथवा 25वीं किस्त के नियमों की पुष्टि करना चाहते हैं।',
+    whatShouldUsersDo_en: [
+      'Visit pmkisan.gov.in and select "Know Your Status" using your Registration Number.',
+      'Confirm that e-KYC, Land Seeding, and Aadhaar Bank Account Seeding all show green "YES".',
+      'Use Face Authentication on the official PM-KISAN mobile app if fingerprint or OTP e-KYC is failing.',
+      'If your bank account is not NPCI mapped, visit your bank branch for DBT mandate submission or open an IPPB account.'
+    ],
+    whatShouldUsersDo_hi: [
+      'pmkisan.gov.in पर "Know Your Status" में जाकर अपना रजिस्ट्रेशन नंबर दर्ज करें।',
+      'जांचें कि e-KYC, Land Seeding, और Aadhaar Bank Account Seeding तीनों में हरा "YES" दिखाई दे रहा है।',
+      'यदि बायोमेट्रिक या ओटीपी में समस्या आ रही है, तो आधिकारिक PM-KISAN ऐप में फेस ऑथेंटिकेशन का उपयोग करें।',
+      'यदि बैंक खाता एनपीसीआई से मैप नहीं है, तो बैंक शाखा में डीबीटी मैंडेट जमा करें या डाकघर (IPPB) में खाता खुलवाएं।'
+    ],
+    officialSource: {
+      name: 'Press Information Bureau (PIB) & Ministry of Agriculture Press Release',
+      authority: 'Ministry of Agriculture & Farmers Welfare, Govt. of India',
+      url: 'https://pib.gov.in',
+      verificationDate: 'November 09, 2026'
+    },
+    relatedSchemeSlug: 'pm-kisan-samman-nidhi'
+  },
+  {
     id: 'pm-kisan-19th-installment',
     slug: 'pm-kisan-19th-installment-release-ekyc-deadline',
     title_en: 'PM-Kisan 19th Installment: e-KYC Deadline, Land Seeding Check & DBT Verification',
