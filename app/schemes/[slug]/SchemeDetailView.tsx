@@ -418,13 +418,17 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                   Sanket Sinha
                 </Link>
                 <span className="text-[11px] text-slate-400 dark:text-slate-500">
-                  ({isHi ? 'मुख्य नीति विश्लेषक' : 'Lead Policy Analyst'})
+                  ({isHi ? 'संस्थापक एवं संपादक' : 'Founder & Editor'})
                 </span>
               </span>
               <span className="hidden sm:inline text-slate-300 dark:text-slate-700">•</span>
               <span className="flex items-center gap-1.5 text-emerald-700 dark:text-emerald-400 font-medium">
                 <ShieldCheck className="h-3.5 w-3.5" />
-                <span>{isHi ? `सरकारी गजट से सत्यापित: ${scheme.lastVerified}` : `Verified via Official Gazette: ${scheme.lastVerified}`}</span>
+                <span>
+                  {isHi
+                    ? `${scheme.officialSources[0]?.url ? new URL(scheme.officialSources[0].url).hostname : 'pmkisan.gov.in'} से सत्यापित: ${scheme.lastVerified}`
+                    : `Verified against ${scheme.officialSources[0]?.url ? new URL(scheme.officialSources[0].url).hostname : 'pmkisan.gov.in'} on ${scheme.lastVerified}`}
+                </span>
               </span>
             </div>
 

@@ -16,13 +16,13 @@ export const UPDATES: UpdateArticle[] = [
       '24th installment was released on 30 October 2026 from Banaskantha, Gujarat, disbursing over ₹18,690 crore directly to 9.34+ crore farmers.',
       'Cumulative disbursals under PM-KISAN have officially crossed ₹4.64 lakh crore across 24 installments.',
       '25th installment date is NOT officially announced as of 9 November 2026 (expected between December 2026 and March 2027 based on 4-month cycle).',
-      'Mandatory 4-pillar compliance for payment credit: OTP/Biometric/Face e-KYC, Land Seeding = YES, Bank Aadhaar NPCI seeding, and AgriStack Farmer ID linkage.'
+      'Primary prerequisites: active e-KYC (OTP/Biometric/Face Auth), Land Seeding = YES, and Aadhaar-Bank NPCI mapping. In participating states, AgriStack Farmer ID is being linked to simplify ongoing records.'
     ],
     keyFacts_hi: [
       '24वीं किस्त 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से जारी हुई, जिसमें 9.34 करोड़ से अधिक किसानों को ₹18,690 करोड़ से अधिक भेजे गए।',
       'योजना के तहत अब तक कुल संचयी सहायता राशि ₹4.64 लाख करोड़ के पार पहुँच चुकी है।',
       '9 नवंबर 2026 तक 25वीं किस्त की आधिकारिक तिथि घोषित नहीं हुई है (4 महीने के नियमित चक्र अनुसार दिसंबर 2026 से मार्च 2027 के बीच संभावित)।',
-      'डीबीटी भुगतान हेतु 4 अनिवार्य शर्तें: ई-केवाईसी (ओटीपी/बायोमेट्रिक/फेस ऑथ), लैंड सीडिंग YES, एनपीसीआई बैंक सीडिंग और एग्रीस्टैक फार्मर आईडी।'
+      'प्राथमिक अनिवार्य शर्तें: सक्रिय e-KYC, लैंड सीडिंग (YES) और एनपीसीआई बैंक सीडिंग। जिन राज्यों में फार्मर रजिस्ट्री लागू हो रही है, वहां एग्रीस्टैक फार्मर आईडी को जोड़ा जा रहा है।'
     ],
     importantDates_en: [
       '24th Installment Release Date: 30 October 2026 (Disbursed nationwide)',
@@ -49,61 +49,10 @@ export const UPDATES: UpdateArticle[] = [
       'यदि बैंक खाता एनपीसीआई से मैप नहीं है, तो बैंक शाखा में डीबीटी मैंडेट जमा करें या डाकघर (IPPB) में खाता खुलवाएं।'
     ],
     officialSource: {
-      name: 'Press Information Bureau (PIB) & Ministry of Agriculture Press Release',
-      authority: 'Ministry of Agriculture & Farmers Welfare, Govt. of India',
-      url: 'https://pib.gov.in',
+      name: 'PIB Press Release: PM releases 24th instalment of PM-KISAN from Banaskantha, Gujarat (PRID 2330171)',
+      authority: 'Press Information Bureau, Government of India',
+      url: 'https://www.pib.gov.in/PressReleasePage.aspx?PRID=2330171',
       verificationDate: 'November 09, 2026'
-    },
-    relatedSchemeSlug: 'pm-kisan-samman-nidhi'
-  },
-  {
-    id: 'pm-kisan-19th-installment',
-    slug: 'pm-kisan-19th-installment-release-ekyc-deadline',
-    title_en: 'PM-Kisan 19th Installment: e-KYC Deadline, Land Seeding Check & DBT Verification',
-    title_hi: 'पीएम किसान 19वीं किस्त: ई-केवाईसी अंतिम तिथि, लैंड सीडिंग जांच व बैंक खाता नियम',
-    category: 'scheme-update',
-    publishedDate: 'November 02, 2026',
-    updatedDate: 'November 03, 2026',
-    lastVerified: 'November 03, 2026',
-    summary_en: 'The Ministry of Agriculture has issued fresh operational guidelines for the upcoming 19th installment of PM Kisan Samman Nidhi. Farmers with pending e-KYC or unlinked land records risk non-credit.',
-    summary_hi: 'कृषि मंत्रालय ने पीएम किसान सम्मान निधि की 19वीं किस्त के लिए नए निर्देश जारी किए हैं। जिन किसानों की ई-केवाईसी अधूरी है या बैंक खाता आधार से सीडेड नहीं है, उनकी किस्त रुक सकती है।',
-    keyFacts_en: [
-      'Over 9.5 crore eligible landholding farmers to receive ₹2,000 direct bank transfer.',
-      'Mandatory three-step compliance: e-KYC status must be "YES", Land Seeding must be "YES", and Bank Aadhaar Mapping must be active.',
-      'OTP-based eKYC remains 100% free on the official portal pmkisan.gov.in.'
-    ],
-    keyFacts_hi: [
-      '9.5 करोड़ से अधिक पात्र किसान परिवारों को ₹2,000 की राशि सीधे डीबीटी द्वारा भेजी जाएगी।',
-      'तीन अनिवार्य शर्तें: ई-केवाईसी स्टेटस "YES", लैंड सीडिंग "YES", और बैंक आधार मैपिंग एक्टिव होना चाहिए।',
-      'पीएम किसान पोर्टल पर आधार ओटीपी से ई-केवाईसी अभी भी पूरी तरह निःशुल्क है।'
-    ],
-    importantDates_en: [
-      'e-KYC Completion Window: Active now',
-      'Expected Fund Transfer Window: November – December 2026',
-      'Next Grievance Camp at Circle Offices: Every Wednesday'
-    ],
-    importantDates_hi: [
-      'ई-केवाईसी पूर्ण करने की अंतिम अवधि: वर्तमान में जारी',
-      'किस्त जारी होने की संभावित समय-सीमा: नवंबर – दिसंबर 2026',
-      'अंचल/ब्लॉक कार्यालयों में समाधान दिवस: प्रत्येक बुधवार'
-    ],
-    whoIsAffected_en: 'All small and marginal farmers across India enrolled in PM Kisan Samman Nidhi who have not completed biometric or OTP-based e-KYC.',
-    whoIsAffected_hi: 'पीएम किसान में पंजीकृत सभी किसान जिन्होंने अभी तक अपना बायोमेट्रिक या ओटीपी सत्यापन नहीं कराया है।',
-    whatShouldUsersDo_en: [
-      'Go to pmkisan.gov.in and click "Know Your Status".',
-      'Confirm that all 3 flags (eKYC, Land Seeding, Aadhaar Bank Account) display green checkmarks.',
-      'If Land Seeding is "NO", immediately visit your local Tehsildar / Circle Officer with your Jamabandi/Khata copy.'
-    ],
-    whatShouldUsersDo_hi: [
-      'pmkisan.gov.in पर जाकर "Know Your Status" में अपनी स्थिति देखें।',
-      'जांचें कि ई-केवाईसी, लैंड सीडिंग और आधार बैंक खाता तीनों के आगे "YES" लिखा है या नहीं।',
-      'यदि लैंड सीडिंग "NO" है, तो तुरंत अपने अंचल अधिकारी/लेखपाल से मिलकर जमीन की रसीद जमा करें।'
-    ],
-    officialSource: {
-      name: 'Department of Agriculture & Farmers Welfare Press Release',
-      authority: 'Ministry of Agriculture, Govt. of India',
-      url: 'https://pmkisan.gov.in',
-      verificationDate: 'November 03, 2026'
     },
     relatedSchemeSlug: 'pm-kisan-samman-nidhi'
   },

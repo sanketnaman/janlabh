@@ -4,8 +4,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'pm-kisan',
     slug: 'pm-kisan-samman-nidhi',
-    title_en: 'PM Kisan Samman Nidhi 2026: 24th Installment Released, 25th Date Status, e-KYC & Status Check',
-    title_hi: 'पीएम किसान सम्मान निधि 2026: 24वीं किस्त जारी, 25वीं किस्त कब आएगी? e-KYC, स्टेटस चेक व नई लिस्ट',
+    title_en: 'PM Kisan 24th Installment Released: 25th Date Status, e-KYC',
+    title_hi: 'पीएम किसान 24वीं किस्त जारी: 25वीं किस्त की स्थिति व e-KYC',
     shortTitle_en: 'PM-Kisan Samman Nidhi',
     shortTitle_hi: 'प्रधानमंत्री किसान सम्मान निधि',
     category: 'farmers',
@@ -13,9 +13,9 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Central (All India)',
     stateLabel_hi: 'केंद्र सरकार (अखिल भारतीय)',
     status: 'Active',
-    lastVerified: 'November 09, 2026',
+    lastVerified: '9 Nov 2026',
     
-    benefitSummary_en: '₹6,000 direct income support per year credited in 3 equal four-monthly installments of ₹2,000 directly to Aadhaar-seeded bank accounts via DBT. 24th installment was released on 30 October 2026 from Banaskantha, Gujarat.',
+    benefitSummary_en: '₹6,000 direct income support per year in 3 equal installments of ₹2,000 directly to Aadhaar-seeded bank accounts via DBT. 24th installment was released on 30 October 2026 from Banaskantha, Gujarat.',
     benefitSummary_hi: 'प्रति वर्ष ₹6,000 की प्रत्यक्ष आर्थिक सहायता, जो ₹2,000 की 3 समान किस्तों में सीधे आधार-सीडेड बैंक खाते में डीबीटी (DBT) द्वारा भेजी जाती है। 24वीं किस्त 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से जारी की गई।',
     benefitAmount_en: '₹6,000 / year (₹2,000 every 4 months)',
     benefitAmount_hi: '₹6,000 प्रति वर्ष (₹2,000 की 3 किस्तें)',
@@ -24,20 +24,20 @@ export const SCHEMES: Scheme[] = [
     applicationMode: 'Online (pmkisan.gov.in) & Offline (CSC Center)',
     bannerImage: '/images/schemes/pm-kisan-samman-nidhi.png',
     
-    whatIsThis_en: 'PM Kisan Samman Nidhi is a 100% Central Government funded flagship initiative designed to provide direct financial assistance of ₹6,000 per year to landholding farmer families across India. The 24th installment was released on 30 October 2026 from Banaskantha, Gujarat, transferring over ₹18,690 crore directly to more than 9.34 crore farmers. As of 9 November 2026, the 25th installment date has not been officially announced. Beneficiaries must complete e-KYC, Land Seeding, Aadhaar-Bank NPCI mapping, and AgriStack Digital Farmer ID integration.',
-    whatIsThis_hi: 'प्रधानमंत्री किसान सम्मान निधि भारत सरकार की 100% केंद्र-पोषित फ्लैगशिप योजना है, जिसके तहत देश भर के पात्र भूमिधारक किसान परिवारों को ₹6,000 प्रति वर्ष (₹2,000 की 3 किस्तों में) प्रत्यक्ष आर्थिक सहायता दी जाती है। योजना की 24वीं किस्त 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से जारी की गई, जिसके तहत 9.34 करोड़ से अधिक किसानों को ₹18,690 करोड़ से ज्यादा सीधे डीबीटी द्वारा भेजे गए। 9 नवंबर 2026 की स्थिति के अनुसार 25वीं किस्त की आधिकारिक तारीख घोषित नहीं हुई है। योजना का निर्बाध लाभ पाने के लिए ई-केवाईसी, लैंड सीडिंग, एनपीसीआई आधार मैपिंग और एग्रीस्टैक फार्मर आईडी अनिवार्य है।',
+    whatIsThis_en: 'PM Kisan Samman Nidhi is a 100% Central Government funded flagship initiative providing ₹6,000 annual direct income support to landholding farmer families across India. The 24th installment was released on 30 October 2026 from Banaskantha, Gujarat, transferring over ₹18,690 crore directly to more than 9.34 crore eligible farmers. As of 9 November 2026, the 25th installment date has not been officially announced. Beneficiaries must maintain active e-KYC, Land Seeding (YES), and Aadhaar-Bank NPCI mapping. In participating states where digital registries are active, linking the unique AgriStack Farmer ID is being rolled out to streamline ongoing verifications.',
+    whatIsThis_hi: 'प्रधानमंत्री किसान सम्मान निधि भारत सरकार की 100% केंद्र-पोषित फ्लैगशिप योजना है, जिसके तहत पात्र भूमिधारक किसान परिवारों को ₹6,000 प्रति वर्ष (₹2,000 की 3 किस्तों में) प्रत्यक्ष आर्थिक सहायता दी जाती है। योजना की 24वीं किस्त 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से जारी की गई, जिसके तहत 9.34 करोड़ से अधिक किसानों को ₹18,690 करोड़ से ज्यादा सीधे डीबीटी द्वारा भेजे गए। 9 नवंबर 2026 की स्थिति के अनुसार 25वीं किस्त की आधिकारिक तारीख घोषित नहीं हुई है। योजना की निरंतरता हेतु ई-केवाईसी, लैंड सीडिंग (YES) और एनपीसीआई बैंक सीडिंग प्राथमिक अनिवार्य शर्तें हैं। जिन राज्यों में डिजिटल फार्मर रजिस्ट्री सक्रिय हो रही है, वहां सत्यापन को सुगम बनाने के लिए एग्रीस्टैक फार्मर आईडी को चरणबद्ध तरीके से जोड़ा जा रहा है।',
     
     benefitsList_en: [
       '₹2,000 sent directly to the bank account every 4 months (April-July, August-November, December-March).',
       'Total ₹6,000 annual direct cash assistance without middlemen or commission cuts.',
-      'Direct Benefit Transfer (DBT) via Aadhaar-linked NPCI payment gateway ensuring zero leakage.',
+      'Direct Benefit Transfer (DBT) via Aadhaar-linked NPCI payment gateway to reduce leakage and middlemen intervention.',
       'Face Authentication feature in the official PM-KISAN mobile app for seamless biometric e-KYC without fingerprint scanner.',
       'Integration with Digital Agriculture Mission (AgriStack Farmer ID) and low-interest Kisan Credit Card (KCC) loans up to ₹3 Lakh.'
     ],
     benefitsList_hi: [
       'हर 4 महीने में ₹2,000 सीधे बैंक खाते में (अप्रैल-जुलाई, अगस्त-नवंबर, दिसंबर-मार्च)।',
       'सालाना ₹6,000 की सुनिश्चित आर्थिक सहायता, बिना किसी बिचौलिए या कमीशन कटौती के।',
-      'प्रत्यक्ष लाभ अंतरण (DBT) और एनपीसीआई (NPCI) मैपिंग से सीधा पारदर्शी भुगतान।',
+      'प्रत्यक्ष लाभ अंतरण (DBT) और एनपीसीआई (NPCI) मैपिंग से पारदर्शी भुगतान, जिससे बिचौलियों और रिसाव (leakage) में भारी कमी आती है।',
       'आधिकारिक PM-KISAN मोबाइल ऐप में फेस ऑथेंटिकेशन (Face Auth) से बिना फिंगरप्रिंट घर बैठे ई-केवाईसी की सुविधा।',
       'डिजिटल कृषि मिशन (एग्रीस्टैक फार्मर आईडी) से जुड़ाव और रियायती ब्याज दर पर ₹3 लाख तक का किसान क्रेडिट कार्ड (KCC) ऋण।'
     ],
@@ -84,7 +84,7 @@ export const SCHEMES: Scheme[] = [
       'Proof of cultivable land ownership (Khata, Khesra, Jamabandi / RoR document / Land Revenue Receipt)',
       'Bank Account Passbook (Bank account must be NPCI Aadhaar Seeded for DBT)',
       'Active Mobile Number linked to Aadhaar for OTP verification and FaceRD',
-      'Digital Farmer ID (AgriStack) where mandated by State Agriculture Department',
+      'Digital Farmer ID (AgriStack) — where mandated by the respective State Agriculture Department',
       'Self-Declaration form confirming non-income-taxpayer status and eligible landholding'
     ],
     requiredDocuments_hi: [
@@ -92,7 +92,7 @@ export const SCHEMES: Scheme[] = [
       'कृषि योग्य भूमि स्वामित्व का आधिकारिक प्रमाण (खतियान, जमाबंदी पर्चा, लगान रसीद / RoR)',
       'बैंक पासबुक (खाता एनपीसीआई आधार सीडेड व डीबीटी सक्रिय होना अनिवार्य है)',
       'आधार से लिंक चालू मोबाइल नंबर (ओटीपी सत्यापन व फेस ऑथेंटिकेशन हेतु)',
-      'डिजिटल फार्मर आईडी (AgriStack) जहाँ राज्य कृषि विभाग द्वारा लागू किया गया है',
+      'डिजिटल फार्मर आईडी (AgriStack) — केवल उन राज्यों में जहाँ राज्य कृषि विभाग द्वारा अनिवार्य किया गया हो',
       'गैर-आयकरदाता एवं पात्रता का स्व-घोषणा पत्र'
     ],
     
@@ -175,7 +175,7 @@ export const SCHEMES: Scheme[] = [
       },
       {
         q: 'What is AgriStack and is Farmer ID mandatory for PM Kisan?',
-        a: 'AgriStack is the Digital Public Infrastructure for Agriculture launched by the Government of India. Under this system, states are creating a unique 14-digit digital Farmer ID linked to land records. Linking Farmer ID with PM-KISAN eliminates paperwork, automates land verification, and provides single-window access to Kisan Credit Card and crop insurance.'
+        a: 'AgriStack is the Digital Public Infrastructure for Agriculture launched by the Government of India. Under this system, states are creating a unique 14-digit digital Farmer ID linked to land records. Where rolled out by state governments, linking Farmer ID with PM-KISAN automates land verification and simplifies access to Kisan Credit Card and crop insurance.'
       },
       {
         q: 'How to check your name in PM Kisan Village Wise Beneficiary List?',
@@ -209,7 +209,7 @@ export const SCHEMES: Scheme[] = [
       },
       {
         q: 'एग्रीस्टैक (AgriStack) क्या है और क्या फार्मर आईडी पीएम किसान के लिए जरूरी है?',
-        a: 'एग्रीस्टैक भारत सरकार का डिजिटल कृषि मिशन है, जिसके तहत प्रत्येक किसान की 14 अंकों की डिजिटल फार्मर आईडी (किसान पहचान पत्र) बनाई जा रही है। इससे जमीन का ब्योरा स्वतः सत्यापित हो जाता है और भविष्य में पीएम किसान, फसल बीमा और केसीसी ऋण का लाभ बिना कागजी झंझट के तुरंत मिलता है।'
+        a: 'एग्रीस्टैक भारत सरकार का डिजिटल कृषि मिशन है, जिसके तहत प्रत्येक किसान की 14 अंकों की डिजिटल फार्मर आईडी बनाई जा रही है। जिन राज्यों में यह प्रणाली लागू हो रही है, वहां इससे जमीन का ब्योरा स्वतः सत्यापित हो जाता है और भविष्य में किसान क्रेडिट कार्ड और फसल बीमा का लाभ भी सुगम हो जाता है।'
       },
       {
         q: 'पीएम किसान की नई लाभार्थी सूची (Village Wise List) में अपना नाम कैसे देखें?',
@@ -230,37 +230,18 @@ export const SCHEMES: Scheme[] = [
         name: 'PM Kisan Official Portal',
         authority: 'Department of Agriculture & Farmers Welfare, Ministry of Agriculture, Govt. of India',
         url: 'https://pmkisan.gov.in',
-        verificationDate: 'November 09, 2026'
+        verificationDate: '9 Nov 2026'
       },
       {
-        name: 'Press Information Bureau (PIB) Release on 24th Installment',
-        authority: 'Government of India',
-        url: 'https://pib.gov.in',
-        verificationDate: 'November 09, 2026'
+        name: 'PIB Press Release: PM releases 24th instalment of PM-KISAN from Banaskantha, Gujarat (PRID 2330171)',
+        authority: 'Press Information Bureau, Government of India',
+        url: 'https://www.pib.gov.in/PressReleasePage.aspx?PRID=2330171',
+        verificationDate: '30 October 2026'
       }
     ],
-    keywords: [
-      'pm kisan', 'pm kisan samman nidhi', 'pm kisan gov in', 'pm kisan government in',
-      'pm kisan yojana', 'pm kisan portal', 'pm kisan samman nidhi yojana', 'pm kisan nidhi',
-      'pm kisan nidhi yojana', 'pm kisan registration', 'pm kisan gov in registration', 'pm kisan csc login',
-      'pm kisan status', 'pm kisan beneficiary status', 'pm kisan status check aadhar card',
-      'pm kisan status check balance', 'pm kisan beneficiary status mobile number', 'pm kisan payment status',
-      'pm kisan status check aadhar card mobile number', 'pm kisan gov in beneficiary status', 'pm kisan status check',
-      'pm kisan 24th installment date 2026', 'pm kisan 24th installment date', 'pm kisan 24th installment release date',
-      'pm kisan 25th installment date 2026', 'pm kisan 25th installment date', 'pm kisan next installment',
-      'pm kisan 24 kist kab aayi', 'pm kisan 25 kist kab aayegi 2026', 'pm kisan samman nidhi kab aaegi',
-      'pm kisan ka paisa kab aayega', 'pm kisan 2000 installment date',
-      'pm kisan beneficiary list', 'pm kisan list', 'pm kisan beneficiary list village wise',
-      'pm kisan beneficiary', 'pm kisan beneficiary list 2026', 'pm kisan gramin list',
-      'pm kisan kyc', 'pm kisan ekyc', 'pm kisan e kyc check', 'pm kisan aadhar link status',
-      'pm kisan face authentication', 'pm kisan agristack farmer id',
-      'pm kisan land seeding problem solution', 'land seeding status no pm kisan',
-      'पीएम किसान', 'पीएम किसान सम्मान निधि', 'पीएम किसान सम्मान निधि योजना', 'पीएम किसान स्टेटस',
-      'पीएम किसान स्टेटस चेक आधार कार्ड', 'पीएम किसान की 24वीं किस्त', 'पीएम किसान की 25वीं किस्त कब आएगी',
-      'पीएम किसान लाभार्थी सूची', 'पीएम किसान ई-केवाईसी', 'पीएम किसान पोर्टल', 'किसान सम्मान निधि योजना 2026'
-    ],
-    metaDescription_en: '✅ PM Kisan Samman Nidhi 2026: 24th installment released on 30 Oct 2026 (₹18,690+ Cr). Check 25th installment status, Aadhaar payment status online, e-KYC update & village list.',
-    metaDescription_hi: '✅ पीएम किसान सम्मान निधि 2026: 24वीं किस्त (₹18,690+ करोड़) जारी। 25वीं किस्त की आधिकारिक स्थिति, आधार पेमेंट स्टेटस चेक, e-KYC प्रक्रिया और नई विलेज लिस्ट।'
+    keywords: [],
+    metaDescription_en: 'PM Kisan 24th installment released on 30 Oct 2026. Check 25th installment status, Aadhaar payment credit status, e-KYC update and village list.',
+    metaDescription_hi: 'पीएम किसान 24वीं किस्त 30 अक्टूबर 2026 को जारी। 25वीं किस्त की आधिकारिक स्थिति, आधार पेमेंट स्टेटस चेक, e-KYC और विलेज लिस्ट।'
   },
   {
     id: 'ayushman-bharat',

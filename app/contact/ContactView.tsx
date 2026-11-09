@@ -124,7 +124,7 @@ export default function ContactView() {
                   <span>{isHi ? 'कार्य समय एवं अनुसंधानकर्ता' : 'Desk Hours & Lead'}</span>
                 </div>
                 <div className="text-xs text-slate-800 dark:text-slate-200 font-medium">
-                  <strong>Sanket Sinha</strong> (Lead Policy Analyst)<br />
+                  <strong>Sanket Sinha</strong> (Founder & Editor)<br />
                   {isHi ? 'सोमवार - शुक्रवार: 9:30 AM - 6:00 PM' : 'Mon – Fri: 9:30 AM – 6:00 PM IST'}
                 </div>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400 pt-1">

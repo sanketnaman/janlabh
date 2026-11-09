@@ -77,7 +77,7 @@ export default function AboutView() {
                     <h3 className="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
                       <span>Sanket Sinha</span>
                       <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-900 dark:text-amber-300 font-semibold border border-amber-300 dark:border-amber-800">
-                        {isHi ? 'संस्थापक एवं मुख्य नीति विश्लेषक' : 'Founder & Lead Policy Analyst'}
+                        {isHi ? 'संस्थापक एवं संपादक' : 'Founder & Editor'}
                       </span>
                     </h3>
                     <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mt-1">
@@ -99,8 +99,8 @@ export default function AboutView() {
                 <div className="space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
                   <p>
                     {isHi
-                      ? 'संकेत सिन्हा जनलाभ (JanLabh.in) के संस्थापक और मुख्य नीति विश्लेषक (Lead Policy Analyst) हैं। नई दिल्ली में स्थित, संकेत लोक प्रशासन, ई-गवर्नेंस और सामाजिक कल्याणकारी योजनाओं के गहन अनुसंधान और तथ्य-जांच का नेतृत्व करते हैं।'
-                      : 'Sanket Sinha is the Founder and Lead Policy Analyst at JanLabh. Based in New Delhi, India, Sanket specializes in public administration, digital governance frameworks, and citizen welfare entitlement programs across Central and State jurisdictions.'}
+                      ? 'संकेत सिन्हा जनलाभ (JanLabh.in) के संस्थापक एवं संपादक (Founder & Editor) हैं। नई दिल्ली में स्थित, संकेत लोक प्रशासन, ई-गवर्नेंस और सामाजिक कल्याणकारी योजनाओं के स्वतंत्र अनुसंधान और तथ्य-जांच का नेतृत्व करते हैं।'
+                      : 'Sanket Sinha is the Founder & Editor of JanLabh. Based in New Delhi, India, Sanket oversees editorial integrity, civic research, and public welfare guides across Central and State government programs.'}
                   </p>
                   <p>
                     {isHi
