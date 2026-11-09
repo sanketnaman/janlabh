@@ -4,7 +4,6 @@ export interface CommunityConfig {
 }
 
 export const COMMUNITY_CONFIG: CommunityConfig = {
-  // Update these URLs with your actual WhatsApp Channel & Telegram Channel links
-  whatsappChannelUrl: 'https://whatsapp.com/channel/placeholder-janlabh',
-  telegramChannelUrl: 'https://t.me/placeholder_janlabh',
+  whatsappChannelUrl: 'https://whatsapp.com/channel/0029VbE4FDb4SpkDqh7umQ3k',
+  telegramChannelUrl: 'https://t.me/janlabhindia',
 };
