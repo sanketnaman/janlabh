@@ -6,15 +6,14 @@ import UpdatesDirectoryClient from './UpdatesDirectoryClient';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'Government Scheme Updates 2026: e-KYC Deadlines, Installment Dates & Orders | JanLabh',
-  description: 'Stay updated on Indian government welfare schemes. Check PM Kisan 19th installment status, Ayushman Vaya Vandana card rules, Ladli Behna updates, and eKYC deadlines.',
+  title: 'Government Scheme Updates 2026: e-KYC & Installments | JanLabh',
+  description: 'Verified updates on Indian welfare schemes. Check PM Kisan 24th release, 25th installment status, Ayushman Vaya Vandana card rules, and e-KYC deadlines.',
   keywords: [
     'government scheme updates 2026',
-    'PM Kisan 19th installment date',
+    'PM Kisan 24th installment release',
+    'PM Kisan 25th installment date',
     'Ayushman card update',
-    'Ladli Behna payment status',
-    'e-KYC deadline sarkari yojana',
-    'सरकारी योजना ताजा अपडेट'
+    'e-KYC deadline'
   ],
   alternates: {
     canonical: 'https://janlabh.in/updates',
@@ -26,9 +25,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Government Scheme Updates 2026 | JanLabh',
-    description: 'Verified policy announcements, installment release dates, and compliance alerts directly from government gazettes.',
+    description: 'Verified policy announcements, installment release dates, and compliance alerts directly from official portals.',
     url: 'https://janlabh.in/updates',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh',
     locale: 'en_IN',
     type: 'website',
   },

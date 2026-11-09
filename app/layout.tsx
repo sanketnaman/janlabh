@@ -130,10 +130,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 } catch (_) {}
 
                 try {
+                  var isHindiPath = window.location.pathname.startsWith('/hi');
                   var storedLang = localStorage.getItem('janlabh-lang');
-                  if (storedLang === 'en' || storedLang === 'hi') {
-                    document.documentElement.lang = storedLang;
-                  }
+                  var effectiveLang = isHindiPath ? 'hi' : (storedLang === 'hi' ? 'hi' : 'en');
+                  document.documentElement.lang = effectiveLang;
                 } catch (_) {}
               })();
             `

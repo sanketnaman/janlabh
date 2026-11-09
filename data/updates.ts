@@ -4,8 +4,8 @@ export const UPDATES: UpdateArticle[] = [
   {
     id: 'pm-kisan-24th-installment-released-25th-status',
     slug: 'pm-kisan-24th-installment-released-25th-status',
-    title_en: 'PM-Kisan 24th Installment Released: ₹18,690+ Cr Transferred, 25th Installment Date Status & 3-Point Checklist',
-    title_hi: 'पीएम किसान 24वीं किस्त जारी: ₹18,690+ करोड़ ट्रांसफर, 25वीं किस्त की स्थिति व 3-पॉइंट चेकलिस्ट',
+    title_en: 'PM Kisan 24th Installment Released: ₹18,690 Cr, 25th Date Status',
+    title_hi: 'पीएम किसान 24वीं किस्त जारी: ₹18,690 करोड़ ट्रांसफर, 25वीं किस्त की स्थिति',
     category: 'scheme-update',
     publishedDate: 'November 09, 2026',
     updatedDate: 'November 09, 2026',

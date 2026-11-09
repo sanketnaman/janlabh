@@ -25,7 +25,9 @@ export async function generateMetadata({ params }: HindiUpdatePageProps): Promis
     };
   }
 
-  const pageTitle = `${update.title_hi} | सरकारी योजना ताजा अपडेट | JanLabh`;
+  const pageTitle = update.title_hi.length > 55
+    ? update.title_hi
+    : `${update.title_hi} | JanLabh`;
   const pageDescription = update.summary_hi.slice(0, 155);
 
   return {
@@ -99,9 +101,10 @@ export default async function HindiUpdatePage({ params }: HindiUpdatePageProps) 
         'dateModified': update.updatedDate || update.publishedDate,
         'publisher': {
           '@type': 'Organization',
-          'name': 'JanLabh.in',
+          'name': 'JanLabh',
           'url': 'https://janlabh.in',
         },
+        'inLanguage': 'hi-IN',
       },
     ],
   };

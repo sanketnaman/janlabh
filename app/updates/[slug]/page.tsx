@@ -25,7 +25,9 @@ export async function generateMetadata({ params }: UpdatePageProps): Promise<Met
     };
   }
 
-  const pageTitle = `${update.title_en} | Government Scheme Notice 2026 | JanLabh`;
+  const pageTitle = update.title_en.length > 55
+    ? update.title_en
+    : `${update.title_en} | JanLabh`;
   const pageDescription = update.summary_en.slice(0, 155);
 
   return {
@@ -99,9 +101,10 @@ export default async function UpdatePage({ params }: UpdatePageProps) {
         'dateModified': update.updatedDate || update.publishedDate,
         'publisher': {
           '@type': 'Organization',
-          'name': 'JanLabh.in',
+          'name': 'JanLabh',
           'url': 'https://janlabh.in',
         },
+        'inLanguage': 'en-IN',
       },
     ],
   };
