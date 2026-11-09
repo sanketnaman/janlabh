@@ -4208,4 +4208,283 @@ export const SCHEMES: Scheme[] = [
   "metaDescription_en": "Mukhyamantri Anupriti Coaching Yojana Rajasthan: Free coaching for UPSC, NEET, IIT-JEE, and ₹40,000 living allowance. Eligibility criteria, SSO online application.",
   "metaDescription_hi": "मुख्यमंत्री अनुप्रति कोचिंग योजना राजस्थान: यूपीएससी, नीट, जेईई की मुफ्त कोचिंग व ₹40,000 आवास भत्ता, पात्रता व एसएसओ ऑनलाइन फॉर्म।"
 }
+,
+{
+  "id": "mgnrega-job-card",
+  "slug": "mgnrega-job-card-list-online-apply",
+  "title_en": "MGNREGA Job Card List 2026: Online Apply, Check Name in NREGA List, Download PDF, Muster Roll & Payment Status",
+  "title_hi": "मनरेगा जॉब कार्ड लिस्ट 2026: ऑनलाइन आवेदन, नरेगा लिस्ट में नाम देखें, PDF डाउनलोड, मस्टर रोल व पेमेंट स्टेटस",
+  "shortTitle_en": "MGNREGA Job Card",
+  "shortTitle_hi": "मनरेगा जॉब कार्ड (NREGA)",
+  "category": "employment",
+  "state": "all-india",
+  "stateLabel_en": "Central (All India)",
+  "stateLabel_hi": "केंद्र सरकार (अखिल भारतीय)",
+  "status": "Active",
+  "lastVerified": "November 2026",
+  "benefitSummary_en": "Guaranteed 100 days of wage employment per financial year for rural households at government-notified daily wages (₹234 to ₹374/day), paid directly into Aadhaar-seeded bank accounts via ABPS DBT.",
+  "benefitSummary_hi": "ग्रामीण परिवारों के वयस्क सदस्यों को प्रति वित्तीय वर्ष 100 दिनों के अकुशल शारीरिक रोजगार की कानूनी गारंटी, सरकारी अधिसूचित दैनिक मजदूरी (₹234 से ₹374/दिन) पर सीधे आधार-सीडेड बैंक खाते में डीबीटी (DBT) द्वारा भुगतान।",
+  "benefitAmount_en": "100 Days Guaranteed Wage Work (₹234 to ₹374/day state-wise) + Statutory Unemployment Allowance",
+  "benefitAmount_hi": "100 दिनों का कानूनी गारंटी रोजगार (₹234 से ₹374 प्रतिदिन राज्यवार) + 15 दिनों में काम न मिलने पर बेरोजगारी भत्ता",
+  "whoCanApply_en": "Adult members (aged 18+) of rural households residing in Gram Panchayats willing to do unskilled manual physical work.",
+  "whoCanApply_hi": "ग्राम पंचायत के ग्रामीण परिवारों के 18 वर्ष या उससे अधिक आयु के वयस्क सदस्य जो अकुशल शारीरिक श्रम करने के इच्छुक हों।",
+  "applicationMode": "Online (nrega.nic.in / UMANG) & Offline (Gram Panchayat / Block Office / CSC)",
+  "bannerImage": "/images/schemes/mgnrega-job-card.svg",
+  "whatIsThis_en": "The Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA / NREGA) is India’s landmark social security and rural wage employment guarantee program passed under the MGNREGA Act 2005. It legally guarantees 100 days of unskilled manual wage employment every financial year to every rural household whose adult members volunteer for public community works such as water conservation, check dams, canal digging, rural road connectivity, tree plantation, and land development. A NREGA Job Card is issued within 15 days of application, serving as a statutory identity card and proof of employment demand. Under the Act, if the government fails to provide employment within 15 days of submitting Form 6 (Work Demand Application), the worker is legally entitled to a daily Unemployment Allowance paid by the State Government directly into their bank account.",
+  "whatIsThis_hi": "महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार गारंटी अधिनियम (मनरेगा / MGNREGA) भारत सरकार का ऐतिहासिक ग्रामीण आजीविका व सामाजिक सुरक्षा कानून है। इसके तहत देश के प्रत्येक ग्रामीण परिवार के 18 वर्ष से अधिक उम्र के इच्छुक वयस्क सदस्यों को एक वित्तीय वर्ष में कम से कम 100 दिनों के अकुशल शारीरिक रोजगार की कानूनी गारंटी दी जाती है। जल संरक्षण, चेक डैम निर्माण, नहर व तालाब खुदाई, ग्रामीण संपर्क मार्ग, पौधरोपण और भूमि सुधार जैसे सार्वजनिक कार्यों के लिए जॉब कार्ड जारी किया जाता है। आवेदन जमा करने के 15 दिनों के भीतर ग्राम पंचायत द्वारा मनरेगा जॉब कार्ड जारी करना अनिवार्य है। यदि काम की मांग (फॉर्म-6) जमा करने के 15 दिनों के अंदर रोजगार उपलब्ध नहीं कराया जाता है, तो अधिनियम के तहत आवेदक को प्रतिदिन बेरोजगारी भत्ता (Unemployment Allowance) पाने का कानूनी अधिकार प्राप्त है।",
+  "benefitsList_en": [
+    "Legal guarantee of 100 days of wage employment per rural household in every financial year.",
+    "State-notified daily wage rates revised up to ₹234 to ₹374 per day (highest in Haryana and Sikkim; ₹245+ in UP, Bihar, Jharkhand, MP, and Rajasthan).",
+    "Statutory Unemployment Allowance paid if the administration fails to provide employment within 15 days of applying through Form 6.",
+    "Direct Benefit Transfer (DBT) directly into worker bank or post office savings account via Aadhaar Based Payment System (ABPS).",
+    "Mandatory worksite facilities: clean drinking water, shade for rest, medical first-aid kit, and crèche facility for workers with children under 6 years.",
+    "Extra 10% wage bonus as travel allowance if the allotted work site is beyond 5 kilometers from the worker residence.",
+    "Equal wages for men and women without gender wage discrimination, with special priority for single women, widows, and persons with disabilities (Divyangjan)."
+  ],
+  "benefitsList_hi": [
+    "प्रत्येक ग्रामीण परिवार को प्रति वित्तीय वर्ष 100 दिनों के सुनिश्चित रोजगार की कानूनी गारंटी।",
+    "राज्यवार संशोधित दैनिक मजदूरी ₹234 से ₹374 प्रतिदिन (हरियाणा/सिक्किम में उच्चतम, यूपी, बिहार, झारखंड, एमपी, राजस्थान में ₹245 से अधिक)।",
+    "काम की मांग (फॉर्म-6) जमा करने के 15 दिनों के भीतर काम न मिलने पर राज्य सरकार द्वारा कानूनी बेरोजगारी भत्ता।",
+    "बिना किसी बिचौलिए या ठेकेदार के, आधार आधारित भुगतान प्रणाली (ABPS) व डीबीटी द्वारा सीधे बैंक या डाकघर खाते में मजदूरी अंतरण।",
+    "कार्यस्थल पर स्वच्छ पेयजल, छायादार विश्राम स्थल, प्राथमिक उपचार किट और 6 वर्ष से छोटे बच्चों हेतु शिशु गृह (क्रेश) की अनिवार्य सुविधा।",
+    "गाँव या निवास स्थान से 5 किलोमीटर से अधिक दूरी पर काम मिलने पर 10% अतिरिक्त यात्रा भत्ता।",
+    "पुरुष व महिला श्रमिकों को बिना किसी भेदभाव के समान काम के लिए समान मजदूरी, तथा एकल महिलाओं व दिव्यांगों हेतु विशेष कार्य आवंटन प्राथमिकता।"
+  ],
+  "eligibility": {
+    "eligibleIf_en": [
+      "The applicant is a citizen of India and permanent resident of a rural area (Gram Panchayat jurisdiction).",
+      "The applicant is an adult member of the household (completed 18 years of age or older).",
+      "The applicant is willing to undertake unskilled manual physical labor for public works projects.",
+      "The applicant holds an active Bank or Post Office Savings Account linked to Aadhaar (NPCI mapped for ABPS payment).",
+      "All adult members of the household agree to register their names under the single household Job Card unit."
+    ],
+    "eligibleIf_hi": [
+      "आवेदक भारत का नागरिक हो और किसी ग्रामीण क्षेत्र/ग्राम पंचायत का स्थायी निवासी हो।",
+      "परिवार का वयस्क सदस्य हो (उम्र 18 वर्ष या उससे अधिक पूर्ण हो चुकी हो)।",
+      "ग्रामीण विकास व सार्वजनिक निर्माण कार्यों में अकुशल शारीरिक श्रम (मैनुअल लेबर) करने के लिए स्वेच्छा से तैयार हो।",
+      "आवेदक के पास आधार से लिंक और डीबीटी/ABPS सक्षम बैंक या डाकघर बचत खाता हो।",
+      "परिवार के सभी वयस्क सदस्य एक ही पारिवारिक जॉब कार्ड इकाई के अंतर्गत अपना नाम दर्ज कराने के लिए सहमत हों।"
+    ],
+    "notEligibleIf_en": [
+      "Residents of urban statutory areas (Municipal Corporations, Nagar Palikas, or Cantonment Boards).",
+      "Minors under 18 years of age (child labor is strictly prohibited under the MGNREGA Act).",
+      "Individuals looking only for clerical, managerial, desk, or skilled contractor work (MGNREGA is exclusively for unskilled manual work).",
+      "Households that already possess an active Job Card (only one Job Card is issued per rural household unit).",
+      "Private contractors, labor intermediaries, or brokers attempting proxy enrollment."
+    ],
+    "notEligibleIf_hi": [
+      "शहरी क्षेत्रों (नगर निगम, नगरपालिका परिषद, नगर पंचायत या छावनी बोर्ड) के निवासी।",
+      "18 वर्ष से कम आयु के नाबालिग (मनरेगा कानून के तहत बाल श्रम पूर्णतः अवैध व प्रतिबंधित है)।",
+      "केवल क्लर्क, पर्यवेक्षक, डेस्क वर्क या कुशल ठेकेदारी कार्य चाहने वाले व्यक्ति (मनरेगा केवल अकुशल शारीरिक श्रम हेतु है)।",
+      "जिन ग्रामीण परिवारों का पहले से सक्रिय जॉब कार्ड बना हुआ है (एक परिवार का केवल एक ही कार्ड जारी होता है)।",
+      "निजी ठेकेदार, दलाल या बिचौलिए जो फर्जी या प्रॉक्सी पंजीकरण कराने का प्रयास करते हैं।"
+    ]
+  },
+  "requiredDocuments_en": [
+    "Aadhaar Card of all adult household members applying for the Job Card",
+    "Recent passport-sized photographs of all applying adult members",
+    "Proof of Rural Residence (Ration Card, Voter ID / EPIC Card, or Electricity Bill)",
+    "Bank Account Passbook / Post Office Savings Account (must be Aadhaar-seeded for ABPS payments)",
+    "Active Mobile Number linked to Aadhaar for receiving muster roll notifications and DBT wage alerts",
+    "Duly filled and signed Form 4 Application for Job Card registration (submitted to Gram Panchayat or CSC)"
+  ],
+  "requiredDocuments_hi": [
+    "जॉब कार्ड में शामिल होने वाले सभी वयस्क पारिवारिक सदस्यों का आधार कार्ड",
+    "आवेदन करने वाले सभी वयस्क सदस्यों की हालिया पासपोर्ट साइज फोटो",
+    "ग्रामीण निवास का वैध प्रमाण (राशन कार्ड, वोटर आईडी कार्ड अथवा बिजली बिल)",
+    "बैंक या डाकघर पासबुक (खाता आधार से सीडेड व ABPS डीबीटी हेतु सक्रिय होना अनिवार्य)",
+    "मस्टर रोल सूचना व मजदूरी भुगतान एसएमएस प्राप्त करने हेतु आधार से लिंक चालू मोबाइल नंबर",
+    "ग्राम पंचायत या सीएससी में जमा करने हेतु विधिवत हस्ताक्षरित जॉब कार्ड आवेदन पत्र (फॉर्म 4)"
+  ],
+  "howToApply_en": [
+    "Offline via Gram Panchayat (Fastest): Visit your local Gram Panchayat office or meet your Gram Rozgar Sahayak (GRS) / Panchayat Secretary.",
+    "Collect Form 4 (Application Form for Registration under MGNREGA) free of cost, fill in personal details, age, caste, and Aadhaar numbers of all adult family members.",
+    "Attach passport photos, copies of Aadhaar cards, and bank passbooks, then submit it to the Gram Panchayat.",
+    "Collect the dated acknowledgment receipt. By law, the Gram Panchayat must verify records and issue your NREGA Job Card within 15 days.",
+    "Online via UMANG Portal: Download the UMANG App or visit web.umang.gov.in > Search \"MGNREGA\" > Select \"Apply for Job Card\" > Enter father/husband name, address, category, Aadhaar, and upload photos > Submit to generate tracking reference.",
+    "State Rural Portals: In states with e-Panchayat facilities (e.g. VB-GRAM-G, e-GramSwaraj, or State PRD portals), apply through CSC Common Service Centers with biometric verification.",
+    "Requesting Work (Form 6): Once your Job Card is issued, submit Form 6 (Application for Work) specifying dates and days of employment needed. The administration must allot work within 15 days or pay unemployment allowance."
+  ],
+  "howToApply_hi": [
+    "ग्राम पंचायत द्वारा ऑफलाइन आवेदन (सबसे सरल): अपनी ग्राम पंचायत कार्यालय में जाएं अथवा ग्राम रोजगार सहायक (GRS) या पंचायत सचिव से मिलें।",
+    "फॉर्म-4 (मनरेगा पंजीकरण आवेदन पत्र) निःशुल्क प्राप्त करें और परिवार के सभी 18+ वर्ष के वयस्क सदस्यों का नाम, उम्र, जाति और आधार नंबर भरें।",
+    "पासपोर्ट फोटो, आधार कार्ड की छायाप्रति और बैंक पासबुक संलग्न कर ग्राम पंचायत में जमा करें।",
+    "आवेदन जमा करने की तारीख वाली पावती (रसीद) अवश्य प्राप्त करें। कानूनन 15 दिनों के अंदर ग्राम पंचायत द्वारा जॉब कार्ड जारी करना अनिवार्य है।",
+    "उमंग (UMANG) ऐप से ऑनलाइन आवेदन: उमंग ऐप या web.umang.gov.in पर जाएं > \"MGNREGA\" सर्च करें > \"Apply for Job Card\" चुनें > व्यक्तिगत विवरण, पता, बैंक खाता व आधार विवरण भरकर फोटो अपलोड करें और सबमिट करें।",
+    "राज्य ग्रामीण पोर्टल/सीएससी: अपने नजदीकी जन सेवा केंद्र (CSC) पर जाकर ई-ग्रामस्वराज या संबंधित राज्य के पंचायती राज पोर्टल से बायोमेट्रिक सत्यापन के साथ आवेदन करें।",
+    "काम की मांग (फॉर्म-6): जॉब कार्ड बनने के बाद रोजगार पाने के लिए फॉर्म-6 भरकर ग्राम पंचायत में जमा करें। ग्राम पंचायत को 15 दिनों में काम देना होगा अन्यथा बेरोजगारी भत्ता देना पड़ेगा।"
+  ],
+  "statusCheckGuide_en": "To check your NREGA Job Card List 2026, Job Card Number, Muster Roll Attendance, and DBT Payment Status: 1. Visit the official portal at nrega.nic.in (or state-level VB-GRAM-G / e-GramSwaraj portals). 2. Under the \"Quick Navigation\" section, select \"Gram Panchayats\" > click \"Generate Reports\". 3. Select your State (e.g. Uttar Pradesh, Bihar, Jharkhand, Rajasthan, Madhya Pradesh, West Bengal, Odisha, Maharashtra). 4. Select Financial Year (2025-2026 or 2026-2027), District, Block, and Panchayat. 5. Under R1. Job Card/Registration, click \"Job Card/Employment Register\". 6. Your entire village list with Job Card Numbers and Worker Names will appear. Click your Job Card Number (blue link) to view and download your full Job Card PDF, worked days history, muster roll numbers, and direct payment transfer dates.",
+  "statusCheckGuide_hi": "मनरेगा जॉब कार्ड लिस्ट 2026, जॉब कार्ड नंबर, मस्टर रोल हाजिरी और बैंक पेमेंट स्टेटस चेक करने का तरीका: 1. आधिकारिक वेबसाइट nrega.nic.in (या राज्य स्तरीय VB-GRAM-G/ई-ग्रामस्वराज) पर जाएं। 2. होमपेज पर \"Gram Panchayats\" अनुभाग में \"Generate Reports\" पर क्लिक करें। 3. अपना राज्य चुनें (जैसे उत्तर प्रदेश, बिहार, झारखंड, राजस्थान, मध्य प्रदेश, पश्चिम बंगाल आदि)। 4. वित्तीय वर्ष (2025-2026 / 2026-2027), जिला, ब्लॉक और ग्राम पंचायत चुनें। 5. R1. Job Card/Registration के तहत \"Job Card/Employment Register\" लिंक पर क्लिक करें। 6. आपके गाँव के सभी पंजीकृत श्रमिकों की सूची खुल जाएगी। अपने जॉब कार्ड नंबर (नीले लिंक) पर क्लिक करें—यहाँ आपका जॉब कार्ड PDF, कुल काम किए गए दिन, मस्टर रोल संख्या और खाते में भेजी गई मजदूरी का पूरा ब्योरा दिख जाएगा।",
+  "officialStatusUrl": "https://nrega.nic.in/netnrega/sthome.aspx",
+  "commonProblems_en": [
+    {
+      "problem": "Job Card Marked Inactive or Name Deleted from NREGA List",
+      "solution": "During nationwide Aadhaar verification drives, job cards without Aadhaar linking or suspected duplicate entries were flagged inactive. Visit your Gram Panchayat Secretary or Program Officer (PO) at the Block office with your original Aadhaar card, ration card, and bank passbook to submit a Re-verification & Re-activation application."
+    },
+    {
+      "problem": "Payment Failed or Rejected due to ABPS (Aadhaar Based Payment System)",
+      "solution": "MGNREGA wages are disbursed strictly through ABPS. If your bank account is not seeded with NPCI or your Aadhaar details have name/spelling mismatches, payment fails. Visit your bank branch immediately, fill the NPCI Aadhaar Seeding Mandate Form, or open an Aadhaar-seeded account in India Post Payments Bank (IPPB)."
+    },
+    {
+      "problem": "Form 6 Work Demand Submitted but No Work Allotted in 15 Days",
+      "solution": "Under Section 7 of the MGNREGA Act 2005, if employment is not provided within 15 days of submitting Form 6, you are entitled to daily Unemployment Allowance (1/4th of daily wage for first 30 days, 1/2 thereafter). File a written claim for Unemployment Allowance with your dated Form 6 receipt before the Block Development Officer (BDO)."
+    },
+    {
+      "problem": "Attendance Mismatch in NMMS (National Mobile Monitoring System) Muster Roll",
+      "solution": "NREGA worksite attendance is captured twice daily through the NMMS mobile app with geotagged worker photos. If your attendance was missed due to network glitch or supervisor oversight, file an objection with your Gram Rozgar Sahayak (GRS) before the weekly muster roll is closed and signed."
+    }
+  ],
+  "commonProblems_hi": [
+    {
+      "problem": "जॉब कार्ड निष्क्रिय (Inactive) दिखा रहा है या लिस्ट से नाम कट गया है",
+      "solution": "राष्ट्रव्यापी आधार सत्यापन अभियान के दौरान जिन कार्डों में आधार सीडिंग नहीं थी या दोहरी प्रविष्टि की आशंका थी, उन्हें निष्क्रिय कर दिया गया था। अपने मूल आधार कार्ड, राशन कार्ड और बैंक पासबुक के साथ ग्राम रोजगार सहायक या ब्लॉक कार्यालय में कार्यक्रम अधिकारी (PO) से मिलकर पुनः सत्यापन व री-एक्टिवेशन का फॉर्म भरें।"
+    },
+    {
+      "problem": "एबीपीएस (ABPS) के कारण मजदूरी भुगतान विफल (Payment Rejected)",
+      "solution": "मनरेगा मजदूरी का भुगतान केवल आधार आधारित भुगतान प्रणाली (ABPS) से होता है। यदि बैंक खाता एनपीसीआई से लिंक नहीं है या नाम की स्पेलिंग में अंतर है, तो पेमेंट रुक जाता है। अपनी बैंक शाखा में जाकर आधार सीडिंग फॉर्म जमा करें अथवा नजदीकी डाकघर (IPPB) में नया डीबीटी सक्षम खाता खुलवाएं।"
+    },
+    {
+      "problem": "काम की मांग (फॉर्म 6) जमा की लेकिन 15 दिनों में काम नहीं मिला",
+      "solution": "मनरेगा कानून की धारा 7 के अनुसार, फॉर्म 6 जमा करने के 15 दिनों के भीतर काम न मिलने पर राज्य सरकार द्वारा बेरोजगारी भत्ता देना अनिवार्य है। अपने आवेदन की प्राप्ति रसीद के साथ प्रखंड विकास पदाधिकारी (BDO) या कार्यक्रम अधिकारी को बेरोजगारी भत्ते हेतु लिखित आवेदन दें।"
+    },
+    {
+      "problem": "एनएमएमएस (NMMS) मोबाइल ऐप हाजिरी या मस्टर रोल में अनुपस्थिति दर्ज होना",
+      "solution": "कार्यस्थल पर श्रमिकों की फोटो युक्त लाइव हाजिरी NMMS ऐप से दिन में दो बार ली जाती है। यदि नेटवर्क समस्या या मेट की गलती से हाजिरी छूट गई है, तो मस्टर रोल क्लोज होने से पहले अपने ग्राम रोजगार सहायक को सूचित करें और आपत्ति दर्ज करवाएं।"
+    }
+  ],
+  "faqs_en": [
+    {
+      "q": "How to check NREGA Job Card List 2026 online state-wise on nrega.nic.in?",
+      "a": "Go to nrega.nic.in > Select \"Gram Panchayats\" > Click \"Generate Reports\" > Select your State (UP, Bihar, Jharkhand, MP, Rajasthan, etc.) > Choose Financial Year 2025-2026 / 2026-2027, District, Block, and Panchayat > Click \"Job Card/Employment Register\" to see the full village worker list."
+    },
+    {
+      "q": "How to download NREGA Job Card PDF online?",
+      "a": "When you open your Panchayat’s Job Card List on nrega.nic.in, click on your blue Job Card Number (e.g. UP-01-002-...). Your complete official Job Card will open showing family member details, registration photo, and work history. Press Ctrl+P or use the print option to save it as a PDF."
+    },
+    {
+      "q": "What is the MGNREGA daily wage rate in 2026 for different states?",
+      "a": "The central government revises MGNREGA wages annually based on CPI-AL (Consumer Price Index for Agricultural Laborers). In 2026, daily wages range from ₹234 to ₹374 per day across states: Haryana and Sikkim have the highest rates (₹374/day), while states like Uttar Pradesh, Bihar, Jharkhand, Madhya Pradesh, and Rajasthan range between ₹237 and ₹275 per day."
+    },
+    {
+      "q": "How to check NREGA payment status and DBT account credit online?",
+      "a": "Open your Job Card on nrega.nic.in and scroll to the employment details table. Click on the Muster Roll Number next to your work period. The system displays the Wage List Number, FTO (Fund Transfer Order) Number, and credit date. You can also track the transaction on the PFMS portal (pfms.nic.in) using your Aadhaar number."
+    },
+    {
+      "q": "What is NREGA muster roll and how to check online attendance (NMMS)?",
+      "a": "A muster roll is the official statutory attendance and wage register for each sanctioned work project. Attendance is captured live via the NMMS (National Mobile Monitoring System) mobile application twice a day. Workers can view filled and e-muster rolls under the \"Muster Roll\" section of their Gram Panchayat report on nrega.nic.in."
+    },
+    {
+      "q": "What is the VB-GRAM-G portal and how is it related to NREGA job cards?",
+      "a": "VB-GRAM-G (Village Beneficiary Gram Panchayat Gateway) is a dedicated state-level rural reporting interface used in several states to fetch Village Wise Job Card Lists, public work assets, and Panchayat muster roll statuses directly synced with the central NIC NREGA server."
+    },
+    {
+      "q": "Can a rural household get more than 100 days of work under MGNREGA?",
+      "a": "Normally, the legal guarantee under Section 3(1) of the Act is 100 days per rural household per financial year. However, in officially notified drought-affected or natural calamity-hit rural areas, or for Scheduled Tribe (ST) households living in Forest Rights Act areas, the central government extends this limit up to 150 days of guaranteed wage employment."
+    },
+    {
+      "q": "What should you do if NREGA wages are delayed beyond 15 days?",
+      "a": "Under the MGNREGA Act, wages must be credited within 15 days of the closure of the muster roll. If wages are delayed beyond this period, workers are legally entitled to Delay Compensation at the rate of 0.05% of the unpaid wages per day of delay. You can file a grievance on nrega.nic.in under \"Lodge Public Grievance\" or call the rural helpline 1800-345-6500."
+    }
+  ],
+  "faqs_hi": [
+    {
+      "q": "मनरेगा जॉब कार्ड लिस्ट 2026 में अपना नाम ऑनलाइन कैसे देखें (nrega.nic.in)?",
+      "a": "1. आधिकारिक पोर्टल nrega.nic.in पर जाएं। 2. \"Gram Panchayats\" > \"Generate Reports\" पर क्लिक करें। 3. अपना राज्य चुनें (जैसे उत्तर प्रदेश, बिहार, झारखंड, राजस्थान, मध्य प्रदेश आदि)। 4. वित्तीय वर्ष (2025-2026 / 2026-2027), जिला, ब्लॉक और ग्राम पंचायत सेलेक्ट करें। 5. \"Job Card/Employment Register\" पर क्लिक करते ही पूरे गाँव की जॉब कार्ड लिस्ट स्क्रीन पर आ जाएगी।"
+    },
+    {
+      "q": "नरेगा जॉब कार्ड ऑनलाइन PDF कैसे डाउनलोड करें?",
+      "a": "जब आप nrega.nic.in पर अपनी पंचायत की लिस्ट खोलते हैं, तो अपने नाम के आगे दिए गए नीले रंग के जॉब कार्ड नंबर पर क्लिक करें। आपका डिजिटल जॉब कार्ड खुल जाएगा, जिसमें परिवार के सदस्यों के नाम, फोटो और काम का इतिहास दर्ज होगा। ब्राउज़र में \"Print\" (Ctrl+P) दबाकर इसे PDF फॉर्मेट में सेव कर लें।"
+    },
+    {
+      "q": "साल 2026 में मनरेगा की दैनिक मजदूरी (Wage Rate) कितनी है?",
+      "a": "केंद्र सरकार कृषि मजदूरों के उपभोक्ता मूल्य सूचकांक (CPI-AL) के आधार पर हर वर्ष मजदूरी दरों में संशोधन करती है। 2026 में विभिन्न राज्यों में दैनिक मजदूरी ₹234 से लेकर ₹374 प्रतिदिन तक है। हरियाणा और सिक्किम में यह सर्वाधिक (₹374/दिन) है, जबकि यूपी, बिहार, झारखंड, एमपी और राजस्थान में यह ₹237 से ₹275 प्रतिदिन के बीच है।"
+    },
+    {
+      "q": "नरेगा मजदूरी का पेमेंट स्टेटस (डीबीटी ट्रांसफर) कैसे चेक करें?",
+      "a": "nrega.nic.in पर अपना जॉब कार्ड खोलें और नीचे कार्य विवरण तालिका में जाएं। संबंधित कार्य अवधि के मस्टर रोल नंबर पर क्लिक करें। यहाँ आपको वेज लिस्ट नंबर, FTO (फंड ट्रांसफर ऑर्डर) नंबर और बैंक में राशि क्रेडिट होने की तारीख दिख जाएगी। इसे आप PFMS पोर्टल पर भी आधार से चेक कर सकते हैं।"
+    },
+    {
+      "q": "नरेगा मस्टर रोल क्या है और ऑनलाइन हाजिरी (NMMS) कैसे चेक करें?",
+      "a": "मस्टर रोल कार्यस्थल का आधिकारिक उपस्थिति और मजदूरी रजिस्टर होता है। श्रमिकों की हाजिरी नेशनल मोबाइल मॉनिटरिंग सिस्टम (NMMS) ऐप के माध्यम से दिन में दो बार लाइव फोटो के साथ ली जाती है। nrega.nic.in पर अपनी ग्राम पंचायत रिपोर्ट के तहत \"Muster Roll\" विकल्प में जाकर आप चालू और बंद मस्टर रोल की हाजिरी देख सकते हैं।"
+    },
+    {
+      "q": "VB-GRAM-G पोर्टल क्या है और यह नरेगा जॉब कार्ड से कैसे जुड़ा है?",
+      "a": "VB-GRAM-G (विलेज बेनिफिशियरी ग्राम पंचायत गेटवे) कई राज्यों में इस्तेमाल होने वाला ग्रामीण सेवा इंटरफ़ेस है, जिससे ग्रामीण नागरिक सीधे अपने गाँव की जॉब कार्ड लिस्ट, स्वीकृत निर्माण कार्य और मस्टर रोल रिपोर्ट केंद्रीय NIC सर्वर से रियल-टाइम देख सकते हैं।"
+    },
+    {
+      "q": "क्या एक परिवार को मनरेगा में 100 दिन से ज्यादा का काम मिल सकता है?",
+      "a": "सामान्यतः प्रति परिवार प्रति वर्ष 100 दिनों के काम की कानूनी गारंटी होती है। परंतु सूखाग्रस्त या प्राकृतिक आपदा प्रभावित घोषित ग्रामीण क्षेत्रों में, तथा वन अधिकार अधिनियम के तहत आने वाले अनुसूचित जनजाति (ST) परिवारों को सरकार 150 दिनों तक के रोजगार का विशेष प्रावधान करती है।"
+    },
+    {
+      "q": "यदि नरेगा का पैसा 15 दिनों में खाते में न आए तो क्या करें?",
+      "a": "मनरेगा कानून के अनुसार मस्टर रोल बंद होने के 15 दिनों के भीतर मजदूरी का भुगतान अनिवार्य है। 15 दिन से अधिक देरी होने पर श्रमिक को प्रतिदिन 0.05% की दर से देरी का मुआवजा (Delay Compensation) पाने का कानूनी अधिकार है। आप nrega.nic.in पर \"Lodge Public Grievance\" में जाकर ऑनलाइन शिकायत दर्ज करा सकते हैं या टोल-फ्री हेल्पलाइन पर कॉल कर सकते हैं।"
+    }
+  ],
+  "officialSources": [
+    {
+      "name": "MGNREGA National Official Portal",
+      "authority": "Ministry of Rural Development, Government of India",
+      "url": "https://nrega.nic.in",
+      "verificationDate": "November 2026"
+    },
+    {
+      "name": "Department of Rural Development Guidelines",
+      "authority": "Government of India",
+      "url": "https://rural.gov.in",
+      "verificationDate": "November 2026"
+    }
+  ],
+  "keywords": [
+    "nrega job card list",
+    "mgnrega job card list 2026",
+    "nrega nic in",
+    "nrega job card",
+    "nrega job card list 2026 up",
+    "nrega job card list bihar",
+    "nrega job card jharkhand",
+    "nrega job card mp",
+    "nrega job card rajasthan",
+    "nrega job card list odisha",
+    "nrega job card west bengal",
+    "nrega job card list haryana",
+    "nrega job card chhattisgarh",
+    "vb gram g job card list",
+    "vbgramg",
+    "vb gram g nrega portal",
+    "nrega nic in online apply",
+    "nrega online apply",
+    "nrega job card online apply",
+    "job card download pdf",
+    "nrega job card download",
+    "mgnrega job card download pdf",
+    "job card status",
+    "nrega payment status check",
+    "nrega payment status check aadhar card",
+    "mgnrega payment status",
+    "nrega muster roll online",
+    "mgnrega muster roll check",
+    "nrega attendance online check",
+    "nmms nrega attendance",
+    "nrega wage rate 2026",
+    "mgnrega daily wage 2026",
+    "nrega form 6 download",
+    "nrega unemployment allowance",
+    "abps nrega payment",
+    "मनरेगा जॉब कार्ड लिस्ट 2026",
+    "नरेगा जॉब कार्ड लिस्ट",
+    "नरेगा जॉब कार्ड कैसे देखें",
+    "नरेगा हाजिरी चेक ऑनलाइन",
+    "नरेगा पेमेंट चेक आधार कार्ड",
+    "मनरेगा मस्टर रोल ऑनलाइन",
+    "जॉब कार्ड कैसे बनाएं ऑनलाइन",
+    "नरेगा जॉब कार्ड डाउनलोड",
+    "मनरेगा मजदूरी दर 2026",
+    "नरेगा काम की मांग फॉर्म 6",
+    "नरेगा बेरोजगारी भत्ता नियम",
+    "नरेगा लिस्ट में अपना नाम कैसे देखें"
+  ],
+  "metaDescription_en": "✅ MGNREGA Job Card List 2026: Check your name in NREGA village list, download Job Card PDF, check NMMS muster roll attendance, ABPS payment status & wage rates at nrega.nic.in.",
+  "metaDescription_hi": "✅ मनरेगा जॉब कार्ड लिस्ट 2026: नरेगा ग्राम पंचायत लिस्ट में अपना नाम देखें, जॉब कार्ड PDF डाउनलोड करें, मस्टर रोल हाजिरी और खाते में मजदूरी पेमेंट स्टेटस nrega.nic.in से चेक करें।"
+}
 ];

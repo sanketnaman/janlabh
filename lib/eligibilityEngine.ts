@@ -293,5 +293,38 @@ export function evaluateEligibility(input: UserEligibilityInput): EligibilityRes
     }
   }
 
+  // 9. MGNREGA Job Card
+  const mgnrega = SCHEMES.find(s => s.id === 'mgnrega-job-card');
+  if (mgnrega) {
+    const isAdult = input.ageGroup !== 'under-18';
+    const isRuralWorkerOrFarmer = input.primaryIdentity === 'farmer' || input.primaryIdentity === 'worker-other';
+
+    if (isAdult && (isRuralWorkerOrFarmer || isLowIncome)) {
+      results.push({
+        schemeId: mgnrega.id,
+        schemeTitle: mgnrega.shortTitle_en,
+        schemeSlug: mgnrega.slug,
+        rating: 'eligible',
+        reason_en: 'Adult member of household eligible for 100 days statutory wage employment.',
+        reason_hi: 'परिवार के वयस्क सदस्य प्रति वर्ष 100 दिनों के कानूनी गारंटी रोजगार के पात्र हैं।',
+        benefit_en: mgnrega.benefitAmount_en,
+        benefit_hi: mgnrega.benefitAmount_hi,
+        officialUrl: 'https://nrega.nic.in'
+      });
+    } else if (!isAdult) {
+      results.push({
+        schemeId: mgnrega.id,
+        schemeTitle: mgnrega.shortTitle_en,
+        schemeSlug: mgnrega.slug,
+        rating: 'unlikely',
+        reason_en: 'Applicants must be at least 18 years old to hold a Job Card under MGNREGA Act.',
+        reason_hi: 'मनरेगा कानून के तहत जॉब कार्ड हेतु आवेदक की न्यूनतम आयु 18 वर्ष होना अनिवार्य है।',
+        benefit_en: mgnrega.benefitAmount_en,
+        benefit_hi: mgnrega.benefitAmount_hi,
+        officialUrl: 'https://nrega.nic.in'
+      });
+    }
+  }
+
   return results;
 }

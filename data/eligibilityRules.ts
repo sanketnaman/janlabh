@@ -935,6 +935,121 @@ export const SCHEME_ELIGIBILITY_CONFIGS: Record<string, SchemeEligibilityConfig>
         ]
       };
     }
+  },
+
+  // 10. MGNREGA Job Card
+  'mgnrega-job-card': {
+    schemeId: 'mgnrega-job-card',
+    schemeSlug: 'mgnrega-job-card-list-online-apply',
+    schemeTitle_en: 'MGNREGA Job Card',
+    schemeTitle_hi: 'मनरेगा जॉब कार्ड (NREGA)',
+    questions: [
+      {
+        id: 'rural_residence',
+        question_en: 'Do you or your household permanently reside in a rural area under a Gram Panchayat jurisdiction?',
+        question_hi: 'क्या आप या आपका परिवार किसी ग्राम पंचायत के अंतर्गत ग्रामीण क्षेत्र में स्थायी रूप से निवास करते हैं?',
+        helpText_en: 'MGNREGA is a rural employment act. Urban municipal residents are not covered by this scheme.',
+        helpText_hi: 'मनरेगा केवल ग्रामीण क्षेत्रों के लिए है। नगर निगम या नगर पालिका के शहरी निवासी इसके पात्र नहीं हैं।',
+        options: [
+          { label_en: 'Yes (We live in a rural Gram Panchayat village)', label_hi: 'हाँ (हम ग्रामीण ग्राम पंचायत में रहते हैं)', value: 'yes' },
+          { label_en: 'No (We reside in an urban / municipal area)', label_hi: 'नहीं (हम नगर निगम/शहरी क्षेत्र में रहते हैं)', value: 'no' },
+          { label_en: 'Not sure of municipal boundary status', label_hi: 'निश्चित नहीं (पंचायत या नगर परिषद सीमा की स्पष्ट जानकारी नहीं)', value: 'not-sure' }
+        ]
+      },
+      {
+        id: 'adult_age',
+        question_en: 'Are the family members applying for the Job Card at least 18 years of age or older?',
+        question_hi: 'क्या जॉब कार्ड में नाम दर्ज कराने वाले आवेदक परिवार के सदस्य 18 वर्ष या उससे अधिक आयु के हैं?',
+        helpText_en: 'Under the MGNREGA Act, only adult members (18+) can be registered and assigned wage work.',
+        helpText_hi: 'मनरेगा कानून के अनुसार केवल 18 वर्ष या उससे अधिक आयु के वयस्क सदस्यों का ही पंजीकरण हो सकता है।',
+        options: [
+          { label_en: 'Yes (Applying members are 18 years or older)', label_hi: 'हाँ (आवेदक सदस्यों की उम्र 18 वर्ष या अधिक है)', value: 'yes' },
+          { label_en: 'No (Applicant is under 18 years of age)', label_hi: 'नहीं (आवेदक की आयु 18 वर्ष से कम है)', value: 'no' },
+          { label_en: 'Not sure / Date of birth proof pending', label_hi: 'निश्चित नहीं / जन्म प्रमाण पत्र या आधार में उम्र सत्यापन बाकी', value: 'not-sure' }
+        ]
+      },
+      {
+        id: 'unskilled_work',
+        question_en: 'Are adult household members willing to undertake unskilled manual physical work for rural development projects?',
+        question_hi: 'क्या वयस्क सदस्य ग्रामीण सार्वजनिक निर्माण कार्यों में अकुशल शारीरिक श्रम (मैनुअल लेबर) करने के इच्छुक हैं?',
+        helpText_en: 'The scheme provides legal guarantee exclusively for unskilled manual physical work (e.g. water conservation, earth digging, road works).',
+        helpText_hi: 'मनरेगा में तालाब खुदाई, जल संरक्षण, सड़क निर्माण जैसे अकुशल शारीरिक श्रम की कानूनी गारंटी दी जाती है।',
+        options: [
+          { label_en: 'Yes (Willing to do manual physical labor)', label_hi: 'हाँ (शारीरिक श्रम/मैनुअल काम करने के लिए तैयार हैं)', value: 'yes' },
+          { label_en: 'No (Looking only for clerical, office or skilled work)', label_hi: 'नहीं (केवल ऑफिस, क्लर्क या कुशल कार्य की तलाश है)', value: 'no' },
+          { label_en: 'Not sure about the nature of work', label_hi: 'निश्चित नहीं (काम के प्रकार को लेकर संशय है)', value: 'not-sure' }
+        ]
+      }
+    ],
+    evaluate: (answers) => {
+      const { rural_residence, adult_age, unskilled_work } = answers;
+
+      if (rural_residence === 'no' || adult_age === 'no' || unskilled_work === 'no') {
+        let reason_en = '';
+        let reason_hi = '';
+
+        if (rural_residence === 'no') {
+          reason_en = 'You indicated that you reside in an urban or municipal area. The MGNREGA scheme legally covers only rural households under Gram Panchayat jurisdiction.';
+          reason_hi = 'आपने संकेत दिया कि आप शहरी क्षेत्र में रहते हैं। मनरेगा कानून केवल ग्राम पंचायत के ग्रामीण परिवारों पर लागू होता है।';
+        } else if (adult_age === 'no') {
+          reason_en = 'You indicated that the applicant is under 18 years of age. Under the MGNREGA Act 2005, only adult individuals aged 18+ can be registered for wage labor.';
+          reason_hi = 'आपने संकेत दिया कि आवेदक 18 वर्ष से कम आयु का है। मनरेगा कानून के तहत केवल 18 वर्ष या उससे अधिक आयु के वयस्क ही काम कर सकते हैं।';
+        } else {
+          reason_en = 'You indicated that household members are unwilling to do unskilled manual physical labor. MGNREGA is designed exclusively for unskilled manual public works.';
+          reason_hi = 'आपने संकेत दिया कि आप अकुशल शारीरिक श्रम करने के इच्छुक नहीं हैं। मनरेगा केवल अकुशल मैनुअल शारीरिक कार्यों हेतु कानूनी गारंटी देता है।';
+        }
+
+        return {
+          resultState: 'potentially_not_eligible',
+          explanation_en: reason_en,
+          explanation_hi: reason_hi,
+          whatThisMeans_en: 'Statutory criteria under the MGNREGA Act 2005 require rural residency, adult age (18+), and willingness to perform unskilled manual physical labor.',
+          whatThisMeans_hi: 'मनरेगा अधिनियम 2005 के अनुसार ग्रामीण निवास, 18+ वर्ष वयस्क आयु और अकुशल शारीरिक श्रम करने की तत्परता अनिवार्य कानूनी शर्तें हैं।',
+          nextSteps_en: [
+            'If you live in an urban municipality, explore urban employment guarantee schemes in your state or PM SVANidhi.',
+            'If you seek skilled or office employment, explore PM Internship Scheme or Skill India Mission training programs.'
+          ],
+          nextSteps_hi: [
+            'यदि आप शहरी क्षेत्र में हैं, तो अपने राज्य की शहरी रोजगार गारंटी योजना अथवा पीएम स्वनिधि का लाभ उठाएं।',
+            'यदि आप कुशल कार्य या ऑफिस जॉब चाहते हैं, तो पीएम इंटर्नशिप स्कीम या स्किल इंडिया मिशन के प्रशिक्षण कार्यक्रमों का अन्वेषण करें।'
+          ]
+        };
+      }
+
+      if (rural_residence === 'not-sure' || adult_age === 'not-sure' || unskilled_work === 'not-sure') {
+        return {
+          resultState: 'needs_verification',
+          explanation_en: 'Some of your answers require local Gram Panchayat verification, especially your rural voter/ration card registration and age proof (Aadhaar).',
+          explanation_hi: 'आपके कुछ उत्तरों के लिए ग्राम पंचायत स्तर पर सत्यापन आवश्यक है, विशेषकर ग्रामीण निवास प्रमाण और आधार कार्ड में दर्ज आयु।',
+          whatThisMeans_en: 'You may meet basic requirements, but the Gram Panchayat must verify your rural residence and biometric Aadhaar status before issuing a Job Card.',
+          whatThisMeans_hi: 'आप बुनियादी मानदंडों को पूरा कर सकते हैं, परंतु ग्राम पंचायत और ग्राम रोजगार सहायक द्वारा भौतिक व आधार सत्यापन आवश्यक है।',
+          nextSteps_en: [
+            'Visit your local Gram Panchayat office or meet your Gram Rozgar Sahayak (GRS).',
+            'Take your Aadhaar Card, Ration Card, and bank account passbook for on-the-spot verification.'
+          ],
+          nextSteps_hi: [
+            'अपनी ग्राम पंचायत कार्यालय जाएं अथवा ग्राम रोजगार सहायक (GRS) से संपर्क करें।',
+            'आधार कार्ड, राशन कार्ड और बैंक पासबुक लेकर जाएं ताकि मौके पर सत्यापन हो सके।'
+          ]
+        };
+      }
+
+      return {
+        resultState: 'potentially_eligible',
+        explanation_en: 'You satisfy all primary statutory requirements for MGNREGA: adult rural resident (18+) willing to do manual physical work.',
+        explanation_hi: 'आप मनरेगा के सभी प्राथमिक कानूनी मानदंडों को पूरा करते हैं: 18+ वयस्क, ग्रामीण पंचायत निवासी और शारीरिक श्रम करने के इच्छुक।',
+        whatThisMeans_en: 'Your rural household is legally entitled to a Job Card within 15 days of Form 4 submission, and 100 days of guaranteed wage employment every financial year.',
+        whatThisMeans_hi: 'आवेदन (फॉर्म 4) जमा करने के 15 दिनों के भीतर आपके परिवार को मनरेगा जॉब कार्ड पाने और प्रति वर्ष 100 दिनों के गारंटी रोजगार का कानूनी अधिकार है।',
+        nextSteps_en: [
+          'Submit Form 4 (free of cost) at your local Gram Panchayat office with Aadhaar and photos of all adult members.',
+          'Once your Job Card is issued, submit Form 6 to demand work; if work is not given in 15 days, you are legally entitled to Unemployment Allowance.'
+        ],
+        nextSteps_hi: [
+          'अपनी ग्राम पंचायत में सभी वयस्क सदस्यों के आधार व फोटो के साथ फॉर्म-4 (निःशुल्क) भरकर जमा करें।',
+          'जॉब कार्ड जारी होने के बाद काम की मांग हेतु फॉर्म-6 जमा करें; 15 दिनों में काम न मिलने पर आप बेरोजगारी भत्ता पाने के हकदार होंगे।'
+        ]
+      };
+    }
   }
 };
 

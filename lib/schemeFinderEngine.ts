@@ -54,6 +54,12 @@ export function findRelevantSchemes(input: SchemeFinderInput): SchemeFinderRecom
       reasons_hi.push('पारंपरिक कारीगरों और सूक्ष्म उद्यमियों के लिए तैयार की गई योजना');
     }
 
+    if (scheme.id === 'mgnrega-job-card' && (input.identity === 'farmer' || input.identity === 'self-employed')) {
+      score += 35;
+      reasons_en.push('Statutory 100-day guaranteed wage employment for rural households');
+      reasons_hi.push('ग्रामीण परिवारों हेतु 100 दिनों के सुनिश्चित कानूनी रोजगार की गारंटी');
+    }
+
     // Age suitability
     if (input.ageGroup === '18-25' && scheme.id === 'bihar-student-credit-card' && isStateMatch) {
       score += 30;

@@ -90,11 +90,11 @@ export const STATES: StateInfo[] = [
     name_hi: 'केंद्र सरकार (अखिल भारतीय)',
     capital_en: 'New Delhi',
     capital_hi: 'नई दिल्ली',
-    activeSchemesCount: 19,
+    activeSchemesCount: 20,
     description_en: 'Flagship nationwide welfare schemes funded fully or centrally sponsored by Ministries of Government of India.',
     description_hi: 'भारत सरकार के मंत्रालयों द्वारा देश भर के पात्र नागरिकों के लिए संचालित केंद्रीय योजनाएं।',
-    flagshipPrograms_en: ['PM-Kisan', 'Ayushman Bharat', 'PM Awas Yojana', 'PM Vishwakarma', 'PM Surya Ghar'],
-    flagshipPrograms_hi: ['पीएम किसान', 'आयुष्मान भारत', 'पीएम आवास योजना', 'पीएम विश्वकर्मा', 'पीएम सूर्य घर']
+    flagshipPrograms_en: ['MGNREGA Job Card', 'PM-Kisan', 'Ayushman Bharat', 'PM Awas Yojana', 'PM Vishwakarma', 'PM Surya Ghar'],
+    flagshipPrograms_hi: ['मनरेगा जॉब कार्ड', 'पीएम किसान', 'आयुष्मान भारत', 'पीएम आवास योजना', 'पीएम विश्वकर्मा', 'पीएम सूर्य घर']
   },
   {
     id: 'jharkhand',
