@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Government Scheme Finder | JanLabh',
     description: 'Find welfare schemes tailored to your profile in 3 simple steps.',
     url: 'https://janlabh.in/finder',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'en_IN',
     type: 'website',
   },

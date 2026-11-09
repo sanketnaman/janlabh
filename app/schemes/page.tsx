@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'All Government Schemes in India 2026 | JanLabh',
     description: 'Explore all Central and State government schemes in India with official application links and verified eligibility rules.',
     url: 'https://janlabh.in/schemes',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'en_IN',
     type: 'website',
   },

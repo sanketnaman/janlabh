@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: UpdatePageProps): Promise<Met
       title: pageTitle,
       description: pageDescription,
       url: `https://janlabh.in/updates/${update.slug}`,
-      siteName: 'JanLabh.in',
+      siteName: 'JanLabh India',
       locale: 'en_IN',
       type: 'article',
       publishedTime: update.publishedDate,

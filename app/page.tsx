@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'JanLabh – Government Schemes & Citizen Benefits in India 2026',
     description: 'Empowering Indian citizens to discover welfare schemes, understand eligibility, prepare required documents, and access official government portals.',
     url: 'https://janlabh.in',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'en_IN',
     type: 'website',
   },
@@ -40,8 +40,9 @@ export default function HomePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    'name': 'JanLabh.in',
-    'url': 'https://janlabh.in',
+    'name': 'JanLabh India',
+    'alternateName': ['JanLabh', 'जनलाभ', 'JanLabh.in'],
+    'url': 'https://janlabh.in/',
     'inLanguage': 'en-IN',
     'description': 'Independent public information platform for Indian Central and State government schemes.',
     'potentialAction': {

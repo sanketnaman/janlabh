@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: 'राज्य अनुसार सरकारी योजनाएं 2026: सभी राज्यों की योजना लिस्ट | JanLabh',
     description: 'भारत के सभी राज्यों की जन कल्याणकारी योजनाएं, ऑनलाइन आवेदन और पात्रता की संपूर्ण जानकारी हिंदी में।',
     url: 'https://janlabh.in/hi/states',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'hi_IN',
     type: 'website',
   },

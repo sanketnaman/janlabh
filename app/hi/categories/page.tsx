@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: 'सरकारी योजना श्रेणियां 2026 | JanLabh',
     description: 'अपनी आवश्यकता के अनुसार सरकारी योजनाएं खोजें। किसानों, महिलाओं, छात्रों और बुजुर्गों के लिए प्रमुख योजनाएं।',
     url: 'https://janlabh.in/hi/categories',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'hi_IN',
     type: 'website',
   },

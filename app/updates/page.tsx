@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Government Scheme Updates 2026 | JanLabh',
     description: 'Verified policy announcements, installment release dates, and compliance alerts directly from official portals.',
     url: 'https://janlabh.in/updates',
-    siteName: 'JanLabh',
+    siteName: 'JanLabh India',
     locale: 'en_IN',
     type: 'website',
   },

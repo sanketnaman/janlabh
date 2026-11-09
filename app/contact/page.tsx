@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Contact JanLabh | Report an Error or Send Feedback',
     description: 'Contact JanLabh to report outdated scheme details, broken official links, or share feedback. We verify corrections against government sources.',
     url: 'https://janlabh.in/contact',
-    siteName: 'JanLabh',
+    siteName: 'JanLabh India',
     locale: 'en_IN',
     type: 'website',
   },

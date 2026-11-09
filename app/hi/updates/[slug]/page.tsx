@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: HindiUpdatePageProps): Promis
       title: pageTitle,
       description: pageDescription,
       url: `https://janlabh.in/hi/updates/${update.slug}`,
-      siteName: 'JanLabh.in',
+      siteName: 'JanLabh India',
       locale: 'hi_IN',
       type: 'article',
       publishedTime: update.publishedDate,

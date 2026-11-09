@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: HindiCategoryPageProps): Prom
       title: pageTitle,
       description: pageDescription,
       url: `https://janlabh.in/hi/categories/${categoryInfo.id}`,
-      siteName: 'JanLabh.in',
+      siteName: 'JanLabh India',
       locale: 'hi_IN',
       type: 'website',
     },

@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: SchemePageProps): Promise<Met
       title: `${scheme.shortTitle_en} – Eligibility, Benefits & Apply | JanLabh`,
       description: pageDescription,
       url: `https://janlabh.in/schemes/${scheme.slug}`,
-      siteName: 'JanLabh.in',
+      siteName: 'JanLabh India',
       locale: 'en_IN',
       type: 'article',
       images: [

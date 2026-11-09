@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: StatePageProps): Promise<Meta
       title: pageTitle,
       description: pageDescription,
       url: `https://janlabh.in/states/${stateInfo.id}`,
-      siteName: 'JanLabh.in',
+      siteName: 'JanLabh India',
       locale: 'en_IN',
       type: 'website',
     },

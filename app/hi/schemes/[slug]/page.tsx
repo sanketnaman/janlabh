@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: HindiSchemePageProps): Promis
       title: `${scheme.shortTitle_hi} – पात्रता, लाभ और ऑनलाइन आवेदन | JanLabh`,
       description: pageDescription,
       url: `https://janlabh.in/hi/schemes/${scheme.slug}`,
-      siteName: 'JanLabh.in',
+      siteName: 'JanLabh India',
       locale: 'hi_IN',
       type: 'article',
       images: [

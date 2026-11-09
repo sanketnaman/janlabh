@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'सरकारी योजना ताजा अपडेट्स 2026 | JanLabh',
     description: 'केंद्र एवं राज्य सरकारों द्वारा जारी नवीनतम अधिसूचनाएं और किस्त जारी होने की तिथियां।',
     url: 'https://janlabh.in/hi/updates',
-    siteName: 'JanLabh',
+    siteName: 'JanLabh India',
     locale: 'hi_IN',
     type: 'website',
   },

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'JanLabh – Government Schemes & Citizen Benefits in India',
     description: 'Understand government schemes, verify potential eligibility, prepare required documents, and access official government portals directly.',
     url: 'https://janlabh.in',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'en_IN',
     alternateLocale: ['hi_IN'],
     type: 'website',
@@ -76,7 +76,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {
         '@type': 'Organization',
         '@id': 'https://janlabh.in/#organization',
-        'name': 'JanLabh',
+        'name': 'JanLabh India',
+        'alternateName': ['JanLabh', 'जनलाभ', 'JanLabh.in'],
         'url': 'https://janlabh.in',
         'logo': 'https://janlabh.in/icons/janlabh-logo.svg',
         'description': 'Independent civic and government scheme public information platform for Indian citizens.',
@@ -86,13 +87,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {
         '@type': 'WebSite',
         '@id': 'https://janlabh.in/#website',
-        'url': 'https://janlabh.in',
-        'name': 'JanLabh',
+        'url': 'https://janlabh.in/',
+        'name': 'JanLabh India',
+        'alternateName': ['JanLabh', 'जनलाभ', 'JanLabh.in'],
         'publisher': { '@id': 'https://janlabh.in/#organization' },
         'inLanguage': ['en-IN', 'hi-IN'],
         'potentialAction': {
           '@type': 'SearchAction',
-          'target': 'https://janlabh.in/search?q={search_term_string}',
+          'target': 'https://janlabh.in/schemes?search={search_term_string}',
           'query-input': 'required name=search_term_string'
         }
       }

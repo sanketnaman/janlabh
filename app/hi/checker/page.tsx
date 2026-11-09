@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'सरकारी योजना पात्रता जांचें 2026: कैलकुलेटर | JanLabh',
     description: 'आधिकारिक नियमों के आधार पर सरकारी योजनाओं के लिए अपनी पात्रता ऑनलाइन चेक करें।',
     url: 'https://janlabh.in/hi/checker',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'hi_IN',
     type: 'website',
   },

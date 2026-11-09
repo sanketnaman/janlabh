@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: 'सभी सरकारी योजनाएं 2026 | JanLabh',
     description: 'भारत सरकार एवं सभी राज्य सरकारों की प्रमुख कल्याणकारी योजनाओं की प्रामाणिक सूची, पात्रता व आवेदन लिंक।',
     url: 'https://janlabh.in/hi/schemes',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'hi_IN',
     type: 'website',
   },

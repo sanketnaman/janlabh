@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: 'Government Scheme Categories 2026 | JanLabh',
     description: 'Find welfare schemes tailored to your profile: farmers, women, students, seniors, artisans, and low-income families.',
     url: 'https://janlabh.in/categories',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'en_IN',
     type: 'website',
   },

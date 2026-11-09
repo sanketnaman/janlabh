@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'जनलाभ से संपर्क करें | त्रुटि सुधार या सुझाव',
     description: 'जनलाभ से संपर्क करें। किसी योजना में त्रुटि, पुराने नियम या टूटे लिंक की सूचना दें या अपना सुझाव भेजें।',
     url: 'https://janlabh.in/hi/contact',
-    siteName: 'जनलाभ (JanLabh)',
+    siteName: 'JanLabh India',
     locale: 'hi_IN',
     type: 'website',
   },

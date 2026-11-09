@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: 'State Government Schemes 2026: State-Wise Yojana Directory | JanLabh',
     description: 'Explore state-wise government welfare schemes across India. Find cash benefits, student subsidies, farmer assistance, and direct welfare links.',
     url: 'https://janlabh.in/states',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'en_IN',
     type: 'website',
   },

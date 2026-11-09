@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'सरकारी योजना खोजें: अपनी पात्रता के अनुसार योजनाएं जानें | JanLabh',
     description: '3 आसान चरणों में अपने लिए योग्य सरकारी योजनाएं खोजें।',
     url: 'https://janlabh.in/hi/finder',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'hi_IN',
     type: 'website',
   },

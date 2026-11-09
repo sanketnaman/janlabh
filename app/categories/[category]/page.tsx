@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       title: pageTitle,
       description: pageDescription,
       url: `https://janlabh.in/categories/${categoryInfo.id}`,
-      siteName: 'JanLabh.in',
+      siteName: 'JanLabh India',
       locale: 'en_IN',
       type: 'website',
     },

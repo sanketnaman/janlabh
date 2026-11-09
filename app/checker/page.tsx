@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'Check Government Scheme Eligibility 2026 | JanLabh',
     description: 'Instant multi-point eligibility validation for Indian government welfare schemes.',
     url: 'https://janlabh.in/checker',
-    siteName: 'JanLabh.in',
+    siteName: 'JanLabh India',
     locale: 'en_IN',
     type: 'website',
   },
