@@ -3,13 +3,15 @@
 import React from 'react';
 import StaticPageLayout from '@/components/StaticPageLayout';
 import { ShieldCheck, Lock, Cookie, AlertCircle, Mail } from 'lucide-react';
+import { Language } from '@/types';
 
-export default function PrivacyPolicyView() {
+export default function PrivacyPolicyView({ forcedLang }: { forcedLang?: Language } = {}) {
   return (
     <StaticPageLayout
       breadcrumbTitle_en="Privacy Policy"
       breadcrumbTitle_hi="गोपनीयता नीति"
       activeNav="trust"
+      forcedLang={forcedLang}
     >
       {(lang) => {
         const isHi = lang === 'hi';

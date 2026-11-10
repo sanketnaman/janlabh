@@ -2,6 +2,61 @@ import { UpdateArticle } from '@/types';
 
 export const UPDATES: UpdateArticle[] = [
   {
+    id: 'mp-ladli-behna-yojana-monthly-installment-status',
+    slug: 'mp-ladli-behna-yojana-monthly-installment-status',
+    title_en: 'MP Ladli Behna Yojana: Monthly ₹1,250 Installment Status, e-KYC',
+    title_hi: 'लाड़ली बहना योजना: ₹1,250 मासिक किस्त स्थिति, समग्र DBT e-KYC गाइड',
+    category: 'scheme-update',
+    publishedDate: 'November 10, 2026',
+    updatedDate: 'November 10, 2026',
+    lastVerified: 'November 10, 2026',
+    summary_en: 'Under Madhya Pradesh Mukhyamantri Ladli Behna Yojana, eligible women receive monthly ₹1,250 direct cash assistance via Aadhaar-linked DBT. As verified on cmladlibahna.mp.gov.in, beneficiaries must have active Samagra e-KYC and NPCI bank seeding to avoid payment delays. Step-by-step official status check guide.',
+    summary_hi: 'मध्य प्रदेश शासन की मुख्यमंत्री लाड़ली बहना योजना के तहत पात्र बहनों को प्रति माह ₹1,250 की आर्थिक सहायता सीधे बैंक खाते में DBT द्वारा भेजी जाती है। cmladlibahna.mp.gov.in पर सत्यापित नियमानुसार, किस्त प्राप्त करने के लिए समग्र आईडी में आधार ई-केवाईसी और बैंक खाते में एनपीसीआई डीबीटी सक्रिय होना अनिवार्य है।',
+    keyFacts_en: [
+      'Monthly assistance of ₹1,250 is transferred via Aadhaar DBT directly to eligible women (annual benefit ₹15,000).',
+      'Monthly disbursals are processed through Aadhaar Payment Bridge (APB) directly to bank accounts having active NPCI seeding.',
+      'Verification requires valid Samagra Member ID (9 digits) and registered mobile OTP verification on cmladlibahna.mp.gov.in.',
+      'Ineligible categories: Any family member paying income tax, owning more than 5 acres of agricultural land, or having a 4-wheeler (tractor excluded).'
+    ],
+    keyFacts_hi: [
+      'पात्र महिलाओं को आधार डीबीटी (DBT) के माध्यम से सीधे बैंक खाते में प्रति माह ₹1,250 (सालाना ₹15,000) का अंतरण किया जाता है।',
+      'मासिक किस्त का भुगतान राज्य शासन द्वारा आधार पेमेंट ब्रिज (APB) के जरिए केवल सक्रिय एनपीसीआई-सीडेड खातों में भेजा जाता है।',
+      'भुगतान स्थिति जांचने के लिए 9 अंकों की समग्र सदस्य आईडी और पंजीकृत मोबाइल नंबर पर ओटीपी सत्यापन आवश्यक है।',
+      'अपात्र श्रेणियां: परिवार का कोई सदस्य आयकरदाता हो, संयुक्त रूप से 5 एकड़ से अधिक कृषि भूमि हो, या चार पहिया वाहन (ट्रैक्टर छोड़कर) हो।'
+    ],
+    importantDates_en: [
+      'Monthly Disbursal Cycle: Typically 10th – 14th of every month as per state government schedule',
+      'Portal Status Check Window: Active 24x7 on cmladlibahna.mp.gov.in',
+      'Samagra Aadhaar e-KYC Linkage: Ongoing on samagra.gov.in or local CSC / Gram Panchayat'
+    ],
+    importantDates_hi: [
+      'मासिक अंतरण चक्र: सामान्यतः प्रत्येक माह की 10 से 14 तारीख (मध्य प्रदेश शासन के आदेशानुसार)',
+      'ऑनलाइन स्टेटस विंडो: cmladlibahna.mp.gov.in पोर्टल पर निरंतर 24 घंटे उपलब्ध',
+      'समग्र आधार ई-केवाईसी: samagra.gov.in अथवा नजदीकी सीएससी/ग्राम पंचायत में निरंतर जारी'
+    ],
+    whoIsAffected_en: 'Resident women of Madhya Pradesh aged 21–60 years registered under Mukhyamantri Ladli Behna Yojana checking monthly credit confirmation or resolving pending DBT payment errors.',
+    whoIsAffected_hi: 'मध्य प्रदेश की 21 से 60 वर्ष की पंजीकृत लाड़ली बहनें जो अपनी मासिक किस्त के भुगतान की पुष्टि करना चाहती हैं अथवा जिनका भुगतान इनएक्टिव डीबीटी के कारण रुका हुआ है।',
+    whatShouldUsersDo_en: [
+      'Visit the official portal at cmladlibahna.mp.gov.in and click on "आवेदन एवं भुगतान की स्थिति" (Application & Payment Status).',
+      'Enter your 9-digit Samagra Member ID or Ladli Behna Application Number and solve the security captcha.',
+      'Click "ओटीपी भेजें" (Send OTP) and enter the 6-digit verification code sent to your registered mobile number.',
+      'Review the monthly credit table. If status shows failure or pending due to DBT, visit your bank branch to submit the Aadhaar-NPCI mandate form or check status on samagra.gov.in.'
+    ],
+    whatShouldUsersDo_hi: [
+      'आधिकारिक वेबसाइट cmladlibahna.mp.gov.in पर जाएं और मेनू में "आवेदन एवं भुगतान की स्थिति" विकल्प पर क्लिक करें।',
+      'अपनी 9 अंकों की समग्र सदस्य आईडी या लाड़ली बहना आवेदन क्रमांक दर्ज करें और कैप्चा कोड भरें।',
+      '"ओटीपी भेजें" पर क्लिक करके अपने समग्र पंजीकृत मोबाइल नंबर पर आया 6 अंकों का ओटीपी दर्ज कर सत्यापित करें।',
+      'स्क्रीन पर मासिक भुगतान विवरण देखें। यदि स्थिति में भुगतान विफल दिखे, तो तुरंत अपनी बैंक शाखा जाकर एनपीसीआई आधार सीडिंग मैंडेट जमा करें या samagra.gov.in पर ई-केवाईसी जांचें।'
+    ],
+    officialSource: {
+      name: 'Mukhyamantri Ladli Behna Yojana Official Portal & Status Directory',
+      authority: 'Women and Child Development Department, Government of Madhya Pradesh',
+      url: 'https://cmladlibahna.mp.gov.in',
+      verificationDate: 'November 10, 2026'
+    },
+    relatedSchemeSlug: 'ladli-behna-yojana-madhya-pradesh'
+  },
+  {
     id: 'pm-kisan-24th-installment-released-25th-status',
     slug: 'pm-kisan-24th-installment-released-25th-status',
     title_en: 'PM Kisan 24th Installment Released: ₹18,690 Cr, 25th Date Status',

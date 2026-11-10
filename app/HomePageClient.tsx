@@ -53,6 +53,22 @@ export default function HomePageClient({ initialLang = 'en' }: HomePageClientPro
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [adminCmsOpen, setAdminCmsOpen] = useState(false);
 
+  const FEATURED_SLUGS = [
+    'pm-kisan-samman-nidhi',
+    'ayushman-bharat-pmjay-health-card',
+    'pm-awas-yojana-pmay-housing',
+    'ladli-behna-yojana-madhya-pradesh',
+    'jharkhand-mukhyamantri-maiya-samman-yojana',
+    'pm-vishwakarma-yojana-artisan-support',
+    'national-scholarship-portal-nsp-guide',
+    'pm-swanidhi-street-vendor-loan',
+    'atal-pension-yojana-apy-retirement'
+  ];
+
+  const featuredSchemes = FEATURED_SLUGS
+    .map(slug => SCHEMES.find(s => s.slug === slug))
+    .filter((s): s is NonNullable<typeof s> => s !== undefined);
+
   const handleToggleLang = () => {
     if (isHi) {
       router.push('/');
@@ -180,7 +196,7 @@ export default function HomePageClient({ initialLang = 'en' }: HomePageClientPro
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {SCHEMES.slice(0, 6).map((scheme) => (
+              {featuredSchemes.map((scheme) => (
                 <SchemeCard
                   key={scheme.id}
                   scheme={scheme}

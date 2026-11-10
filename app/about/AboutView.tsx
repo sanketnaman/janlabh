@@ -4,13 +4,15 @@ import React from 'react';
 import StaticPageLayout from '@/components/StaticPageLayout';
 import { Building, ShieldCheck, CheckCircle2, Award, Users, BookOpen, UserCheck, MapPin, Mail, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
+import { Language } from '@/types';
 
-export default function AboutView() {
+export default function AboutView({ forcedLang }: { forcedLang?: Language } = {}) {
   return (
     <StaticPageLayout
       breadcrumbTitle_en="About JanLabh"
       breadcrumbTitle_hi="जनलाभ के बारे में"
       activeNav="trust"
+      forcedLang={forcedLang}
     >
       {(lang) => {
         const isHi = lang === 'hi';

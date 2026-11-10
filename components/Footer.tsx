@@ -129,7 +129,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
             <ul className="space-y-2 text-xs">
               <li>
                 <Link
-                  href="/about"
+                  href={lang === 'hi' ? '/hi/about' : '/about'}
                   className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'संपादकीय नीति (Editorial Policy)' : 'Editorial Policy'}
@@ -137,7 +137,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href={lang === 'hi' ? '/hi/about' : '/about'}
                   className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'तथ्य-जांच व सत्यापन नीति' : 'Fact-Checking & Verification Policy'}
@@ -145,7 +145,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href={lang === 'hi' ? '/hi/contact' : '/contact'}
                   className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'त्रुटि सुधार नीति व रिपोर्ट (Corrections)' : 'Corrections Policy & Report Error'}
@@ -153,7 +153,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href={lang === 'hi' ? '/hi/about' : '/about'}
                   className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'हमारे बारे में (About JanLabh)' : 'About JanLabh'}
@@ -170,7 +170,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
             <ul className="space-y-2 text-xs">
               <li>
                 <Link
-                  href="/privacy-policy"
+                  href={lang === 'hi' ? '/hi/privacy-policy' : '/privacy-policy'}
                   className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'गोपनीयता नीति (Privacy Policy)' : 'Privacy Policy (No Aadhaar Stored)'}
@@ -178,7 +178,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               </li>
               <li>
                 <Link
-                  href="/terms"
+                  href={lang === 'hi' ? '/hi/terms' : '/terms'}
                   className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'उपयोग की शर्तें (Terms of Use)' : 'Terms of Use'}
@@ -186,7 +186,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               </li>
               <li>
                 <Link
-                  href="/disclaimer"
+                  href={lang === 'hi' ? '/hi/disclaimer' : '/disclaimer'}
                   className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'अस्वीकरण (Disclaimer)' : 'Statutory Disclaimer'}
@@ -194,7 +194,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href={lang === 'hi' ? '/hi/contact' : '/contact'}
                   className="hover:text-white transition-colors text-slate-400 block"
                 >
                   {lang === 'hi' ? 'संपर्क करें (Contact Editorial Desk)' : 'Contact Editorial Desk'}

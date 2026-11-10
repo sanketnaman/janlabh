@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   description: 'Terms of Service and Statutory Legal Disclaimer of JanLabh.in. Understand our independent status, non-government affiliation, and terms governing content use.',
   alternates: {
     canonical: 'https://janlabh.in/terms',
+    languages: {
+      'en': 'https://janlabh.in/terms',
+      'hi': 'https://janlabh.in/hi/terms',
+      'x-default': 'https://janlabh.in/terms',
+    },
+  },
+  openGraph: {
+    title: 'Terms of Use & Statutory Disclaimer | JanLabh',
+    description: 'Terms of Service and Statutory Legal Disclaimer of JanLabh.in. Understand our independent status, non-government affiliation, and terms governing content use.',
+    url: 'https://janlabh.in/terms',
+    siteName: 'JanLabh India',
+    locale: 'en_IN',
+    type: 'website',
   },
 };
 

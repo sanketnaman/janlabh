@@ -3,13 +3,15 @@
 import React from 'react';
 import StaticPageLayout from '@/components/StaticPageLayout';
 import { AlertTriangle } from 'lucide-react';
+import { Language } from '@/types';
 
-export default function DisclaimerView() {
+export default function DisclaimerView({ forcedLang }: { forcedLang?: Language } = {}) {
   return (
     <StaticPageLayout
       breadcrumbTitle_en="Statutory Disclaimer"
       breadcrumbTitle_hi="वैधानिक अस्वीकरण"
       activeNav="trust"
+      forcedLang={forcedLang}
     >
       {(lang) => {
         const isHi = lang === 'hi';

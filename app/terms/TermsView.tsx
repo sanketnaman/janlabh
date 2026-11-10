@@ -3,13 +3,15 @@
 import React from 'react';
 import StaticPageLayout from '@/components/StaticPageLayout';
 import { AlertTriangle, FileText, CheckCircle2, ShieldAlert } from 'lucide-react';
+import { Language } from '@/types';
 
-export default function TermsView() {
+export default function TermsView({ forcedLang }: { forcedLang?: Language } = {}) {
   return (
     <StaticPageLayout
       breadcrumbTitle_en="Terms of Use & Disclaimer"
       breadcrumbTitle_hi="नियम व वैधानिक अस्वीकरण"
       activeNav="trust"
+      forcedLang={forcedLang}
     >
       {(lang) => {
         const isHi = lang === 'hi';

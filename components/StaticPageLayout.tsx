@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useTheme } from '@/hooks/useTheme';
 import { Language } from '@/types';
@@ -26,47 +26,55 @@ export default function StaticPageLayout({
   forcedLang,
 }: StaticPageLayoutProps) {
   const router = useRouter();
+  const pathname = usePathname() || '';
   const { lang, toggleLanguage } = useLanguage();
-  const effectiveLang = forcedLang || lang;
+  const effectiveLang = forcedLang || (pathname.startsWith('/hi') ? 'hi' : lang);
+  const prefix = effectiveLang === 'hi' ? '/hi' : '';
   const { isDark, toggleTheme } = useTheme();
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
   const handleSelectNav = (navId: string) => {
     if (navId === 'home') {
-      router.push('/');
+      router.push(prefix || '/');
     } else if (navId === 'schemes') {
-      router.push('/schemes');
+      router.push(`${prefix}/schemes`);
     } else if (navId === 'finder') {
-      router.push('/finder');
+      router.push(`${prefix}/finder`);
     } else if (navId === 'checker') {
-      router.push('/checker');
+      router.push(`${prefix}/checker`);
     } else if (navId === 'states') {
-      router.push('/states');
+      router.push(`${prefix}/states`);
     } else if (navId === 'updates') {
-      router.push('/updates');
+      router.push(`${prefix}/updates`);
     } else if (navId === 'trust' || navId === 'editorial') {
-      router.push('/about');
+      router.push(`${prefix}/about`);
     }
   };
 
   const handleOpenLegal = (pageId: string) => {
-    if (pageId === 'privacy') router.push('/privacy-policy');
-    else if (pageId === 'terms' || pageId === 'disclaimer') router.push('/terms');
-    else if (pageId === 'about' || pageId === 'editorial' || pageId === 'verification' || pageId === 'corrections') router.push('/about');
-    else if (pageId === 'contact') router.push('/contact');
+    if (pageId === 'privacy') router.push(`${prefix}/privacy-policy`);
+    else if (pageId === 'terms') router.push(`${prefix}/terms`);
+    else if (pageId === 'disclaimer') router.push(`${prefix}/disclaimer`);
+    else if (pageId === 'about' || pageId === 'editorial' || pageId === 'verification' || pageId === 'corrections') router.push(`${prefix}/about`);
+    else if (pageId === 'contact') router.push(`${prefix}/contact`);
+  };
+
+  const handleToggleLang = () => {
+    toggleLanguage();
+    if (pathname.startsWith('/hi')) {
+      const target = pathname.replace(/^\/hi/, '') || '/';
+      router.push(target);
+    } else {
+      const target = '/hi' + (pathname === '/' ? '' : pathname);
+      router.push(target);
+    }
   };
 
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
       <Header
         lang={effectiveLang}
-        onToggleLang={() => {
-          if (forcedLang === 'hi') {
-            router.push('/contact');
-          } else {
-            toggleLanguage();
-          }
-        }}
+        onToggleLang={handleToggleLang}
         onOpenSearch={() => setSearchModalOpen(true)}
         onSelectNav={handleSelectNav}
         activeNav={activeNav}

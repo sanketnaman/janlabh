@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   description: 'Learn about JanLabh.in, our mission to bridge information asymmetry in government schemes, our strict editorial policy, fact-checking methodology, and founder.',
   alternates: {
     canonical: 'https://janlabh.in/about',
+    languages: {
+      'en': 'https://janlabh.in/about',
+      'hi': 'https://janlabh.in/hi/about',
+      'x-default': 'https://janlabh.in/about',
+    },
+  },
+  openGraph: {
+    title: 'About Us & Editorial Standards | JanLabh.in',
+    description: 'Learn about JanLabh.in, our mission to bridge information asymmetry in government schemes, our strict editorial policy, fact-checking methodology, and founder.',
+    url: 'https://janlabh.in/about',
+    siteName: 'JanLabh India',
+    locale: 'en_IN',
+    type: 'website',
   },
 };
 

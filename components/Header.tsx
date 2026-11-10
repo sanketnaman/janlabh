@@ -42,7 +42,7 @@ export default function Header({
     if (id === 'checker') return `${prefix}/checker`;
     if (id === 'states') return `${prefix}/states`;
     if (id === 'updates') return `${prefix}/updates`;
-    if (id === 'trust') return '/about';
+    if (id === 'trust') return `${prefix}/about`;
     return prefix || '/';
   };
 

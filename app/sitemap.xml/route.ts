@@ -44,8 +44,19 @@ export async function GET() {
     });
   });
 
-  // 2. Legal & Trust Pages
-  const legalPages = ['/about', '/privacy-policy', '/terms', '/contact', '/hi/contact', '/disclaimer'];
+  // 2. Legal & Trust Pages (EN & HI)
+  const legalPages = [
+    '/about',
+    '/hi/about',
+    '/privacy-policy',
+    '/hi/privacy-policy',
+    '/terms',
+    '/hi/terms',
+    '/contact',
+    '/hi/contact',
+    '/disclaimer',
+    '/hi/disclaimer',
+  ];
   legalPages.forEach((route) => {
     entries.push({
       loc: `${baseUrl}${route}`,
