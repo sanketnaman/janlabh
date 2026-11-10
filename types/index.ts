@@ -17,7 +17,8 @@ export type SchemeState =
   | 'uttar-pradesh'
   | 'rajasthan'
   | 'madhya-pradesh'
-  | 'maharashtra';
+  | 'maharashtra'
+  | 'gujarat';
 
 export interface OfficialSource {
   name: string;

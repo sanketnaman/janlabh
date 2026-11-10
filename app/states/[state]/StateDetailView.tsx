@@ -35,6 +35,7 @@ const STATE_OFFICIAL_PORTALS: Record<string, { name: string; url: string }> = {
   'madhya-pradesh': { name: 'MP State Government Portal', url: 'https://mp.gov.in' },
   'rajasthan': { name: 'Government of Rajasthan Portal', url: 'https://rajasthan.gov.in' },
   'maharashtra': { name: 'Government of Maharashtra Portal', url: 'https://maharashtra.gov.in' },
+  'gujarat': { name: 'Government of Gujarat Official Portal', url: 'https://gujaratindia.gov.in' },
 };
 
 export default function StateDetailView({

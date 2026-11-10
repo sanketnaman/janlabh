@@ -1050,6 +1050,153 @@ export const SCHEME_ELIGIBILITY_CONFIGS: Record<string, SchemeEligibilityConfig>
         ]
       };
     }
+  },
+
+  // 30. Gujarat Mukhyamantri Mahila Utkarsh Yojana (MMUY)
+  'gujarat-mukhyamantri-mahila-utkarsh-yojana': {
+    schemeId: 'gujarat-mukhyamantri-mahila-utkarsh-yojana',
+    schemeSlug: 'gujarat-mukhyamantri-mahila-utkarsh-yojana',
+    schemeTitle_en: 'Mukhyamantri Mahila Utkarsh Yojana (MMUY) Gujarat',
+    schemeTitle_hi: 'मुख्यमंत्री महिला उत्कर्ष योजना (MMUY) गुजरात',
+    questions: [
+      {
+        id: 'residence',
+        question_en: 'Are you a permanent resident of Gujarat state?',
+        question_hi: 'क्या आप गुजरात राज्य की स्थायी निवासी हैं?',
+        helpText_en: 'MMUY is a 100% Gujarat state-funded welfare initiative open only to resident women.',
+        helpText_hi: 'यह योजना केवल गुजरात की स्थायी निवासी महिलाओं के लिए है।',
+        options: [
+          { label_en: 'Yes (Permanent resident of Gujarat)', label_hi: 'हाँ (गुजरात की स्थायी निवासी)', value: 'yes' },
+          { label_en: 'No (Resident of another state)', label_hi: 'नहीं (अन्य राज्य की निवासी)', value: 'no' }
+        ]
+      },
+      {
+        id: 'age_limit',
+        question_en: 'Is your age between 18 and 59 years?',
+        question_hi: 'क्या आपकी आयु 18 से 59 वर्ष के बीच है?',
+        helpText_en: 'Group members must be between 18 and 59 years old at the time of application.',
+        helpText_hi: 'आवेदन के समय समूह के सभी सदस्यों की आयु 18 से 59 वर्ष के मध्य होनी चाहिए।',
+        options: [
+          { label_en: 'Yes (Between 18 and 59 years)', label_hi: 'हाँ (18 से 59 वर्ष के बीच)', value: 'yes' },
+          { label_en: 'No (Under 18 or 60 and above)', label_hi: 'नहीं (18 से कम या 60+ वर्ष)', value: 'no' }
+        ]
+      },
+      {
+        id: 'group_formation',
+        question_en: 'Are you organized into an active 10-women Joint Liability Earning and Saving Group (JLESG / Sakhi Mandal / SHG) or ready to form one?',
+        question_hi: 'क्या आप 10 महिलाओं के संयुक्त देयता समूह (सखी मंडल / स्वयं सहायता समूह / JLESG) से जुड़ी हैं अथवा नया समूह बनाने को तैयार हैं?',
+        helpText_en: 'Under scheme rules, individual personal loans are not given; credit is provided strictly to 10-women groups.',
+        helpText_hi: 'नियमों के अनुसार अकेले व्यक्ति को लोन नहीं मिलता; केवल 10 महिलाओं के संगठित समूह को ऋण दिया जाता है।',
+        options: [
+          { label_en: 'Yes (We have an active 10-woman group / Sakhi Mandal)', label_hi: 'हाँ (हमारा 10 महिलाओं का सक्रिय समूह/सखी मंडल है)', value: 'yes' },
+          { label_en: 'Group is in process of being formed / Not yet organized', label_hi: 'समूह अभी बनने की प्रक्रिया में है', value: 'not-sure' },
+          { label_en: 'No (Looking for an individual personal loan only)', label_hi: 'नहीं (मैं अकेले व्यक्तिगत लोन चाहती हूँ)', value: 'no' }
+        ]
+      },
+      {
+        id: 'bank_aadhaar',
+        question_en: 'Do all group members possess valid Aadhaar cards and bank accounts for direct disbursement?',
+        question_hi: 'क्या समूह के सभी सदस्यों के पास आधार कार्ड और सक्रिय बैंक खाता उपलब्ध है?',
+        helpText_en: 'Bank account with Aadhaar linkage is mandatory for opening the JLESG joint account.',
+        helpText_hi: 'समूह का संयुक्त खाता खोलने और ब्याज अनुदान के लिए आधार अनिवार्य है।',
+        options: [
+          { label_en: 'Yes (All members have Aadhaar & bank accounts)', label_hi: 'हाँ (सभी के पास आधार व बैंक खाता है)', value: 'yes' },
+          { label_en: 'No / Pending (Some members lack account or Aadhaar)', label_hi: 'नहीं / लंबित (कुछ सदस्यों के खाते या आधार बाकी हैं)', value: 'no' },
+          { label_en: 'Not sure of member bank/Aadhaar status', label_hi: 'निश्चित नहीं (बैंक या आधार स्थिति स्पष्ट नहीं)', value: 'not-sure' }
+        ]
+      }
+    ],
+    evaluate: (answers) => {
+      const { residence, age_limit, group_formation, bank_aadhaar } = answers;
+
+      if (residence === 'no') {
+        return {
+          resultState: 'potentially_not_eligible',
+          explanation_en: 'Mukhyamantri Mahila Utkarsh Yojana (MMUY) is exclusively funded by the Government of Gujarat for permanent resident women of Gujarat.',
+          explanation_hi: 'मुख्यमंत्री महिला उत्कर्ष योजना केवल गुजरात की स्थायी निवासी महिलाओं के लिए है। अन्य राज्य की निवासी महिलाएं इसके लिए पात्र नहीं हैं।',
+          whatThisMeans_en: 'You cannot receive MMUY credit if your permanent residence is outside Gujarat. However, you may explore central schemes like Lakhpati Didi or PM Mudra Yojana.',
+          whatThisMeans_hi: 'गुजरात के बाहर के निवासी इसमें आवेदन नहीं कर सकते। आप लखपति दीदी या पीएम मुद्रा योजना जैसी केंद्रीय योजनाओं के लिए पात्रता जांच सकते हैं।',
+          nextSteps_en: [
+            'Explore central all-India women credit schemes such as PM Mudra Yojana or Lakhpati Didi on JanLabh.'
+          ],
+          nextSteps_hi: [
+            'जनलाभ पर पूरे भारत के लिए उपलब्ध पीएम मुद्रा योजना या लखपति दीदी योजना की पात्रता देखें।'
+          ]
+        };
+      }
+
+      if (age_limit === 'no') {
+        return {
+          resultState: 'potentially_not_eligible',
+          explanation_en: 'Statutory guidelines mandate that all group members must be within the 18 to 59 age group at the time of loan application.',
+          explanation_hi: 'योजना के नियमानुसार समूह की सभी महिला सदस्यों की आयु 18 से 59 वर्ष के बीच होना अनिवार्य है।',
+          whatThisMeans_en: 'Members younger than 18 or aged 60 and above cannot be enrolled in the 10-member joint liability group.',
+          whatThisMeans_hi: '18 से कम या 60 वर्ष से अधिक आयु की महिलाएं 10 सदस्यों वाले ऋण समूह में शामिल नहीं हो सकतीं।',
+          nextSteps_en: [
+            'Ensure all 10 members in your JLESG meet the 18–59 years age threshold before submission.'
+          ],
+          nextSteps_hi: [
+            'आवेदन से पूर्व सुनिश्चित करें कि समूह के सभी 10 सदस्यों की उम्र 18 से 59 वर्ष के बीच हो।'
+          ]
+        };
+      }
+
+      if (group_formation === 'no') {
+        return {
+          resultState: 'potentially_not_eligible',
+          explanation_en: 'MMUY strictly does not offer individual personal loans. Financial assistance is exclusively sanctioned to 10-women Joint Liability Earning and Saving Groups (JLESGs).',
+          explanation_hi: 'महिला उत्कर्ष योजना में अकेले (व्यक्तिगत रूप से) लोन नहीं मिलता। यह सहायता केवल 10 महिलाओं के संयुक्त देयता समूह (सखी मंडल / JLESG) को दी जाती है।',
+          whatThisMeans_en: 'To benefit from the 0% interest ₹1 Lakh loan and ₹3,000 bonus, you must unite with 9 other eligible women in your neighborhood or village to form a group.',
+          whatThisMeans_hi: '0% ब्याज पर ₹1 लाख का ऋण और ₹3,000 बोनस पाने के लिए आपको अपने पड़ोस या गाँव की 9 अन्य महिलाओं के साथ मिलकर 10 का समूह बनाना होगा।',
+          nextSteps_en: [
+            'Connect with 9 other women in your village or ward interested in small businesses (tailoring, dairy, food, retail).',
+            'Meet your local Mission Mangalam (GLPC) coordinator or NULM supervisor to register your group.'
+          ],
+          nextSteps_hi: [
+            'अपने गाँव या वार्ड में स्वरोजगार की इच्छुक 9 अन्य महिलाओं को जोड़कर 10 का सखी मंडल बनाएं।',
+            'समूह पंजीकरण हेतु तालुका पंचायत में मिशन मंगलम (GLPC) अथवा नगर पालिका NULM सेल से संपर्क करें।'
+          ]
+        };
+      }
+
+      if (group_formation === 'not-sure' || bank_aadhaar === 'no' || bank_aadhaar === 'not-sure' || residence === 'not-sure' || age_limit === 'not-sure') {
+        return {
+          resultState: 'needs_verification',
+          explanation_en: 'You meet the fundamental residency and age requirements, but formal group registration and Aadhaar-linked bank accounts must be completed.',
+          explanation_hi: 'आप निवास और आयु की बुनियादी शर्तें पूरी करती हैं, परंतु समूह का विधिवत गठन और बैंक खाता खुलवाना अभी बाकी है।',
+          whatThisMeans_en: 'Your group is on track. Once the 10 members finalize the group resolution and open a joint savings account, your application can be formally sanctioned.',
+          whatThisMeans_hi: 'आपकी पात्रता सही दिशा में है। जैसे ही 10 सदस्य मिलकर समूह का प्रस्ताव पारित कर बैंक खाता खुलवा लेंगे, ऋण की प्रक्रिया पूरी हो जाएगी।',
+          nextSteps_en: [
+            'Formalize the 10-woman group by conducting a meeting, electing a President and Secretary, and signing the resolution book.',
+            'Visit the nearest public sector, rural (e.g. Baroda Gujarat Gramin Bank), or cooperative bank to open a joint account.',
+            'Submit the complete dossier to your Taluka Mission Mangalam (GLPC) coordinator or Municipal NULM officer.'
+          ],
+          nextSteps_hi: [
+            '10 महिलाओं की बैठक कर अध्यक्ष व सचिव चुनें और कार्यवाही पुस्तिका (Resolution Book) में प्रस्ताव दर्ज करें।',
+            'नजदीकी बैंक (राष्ट्रीयकृत, बड़ौदा गुजरात ग्रामीण बैंक या सहकारी बैंक) में समूह का संयुक्त बचत खाता खुलवाएं।',
+            'सभी आवश्यक दस्तावेज अपनी तालुका पंचायत के मिशन मंगलम समन्वयक या नगर पालिका NULM सेल में जमा करें।'
+          ]
+        };
+      }
+
+      return {
+        resultState: 'potentially_eligible',
+        explanation_en: 'You satisfy all core eligibility conditions for Gujarat Mukhyamantri Mahila Utkarsh Yojana (MMUY): Gujarat resident, eligible age (18–59), active 10-women group, and banking readiness.',
+        explanation_hi: 'आप गुजरात मुख्यमंत्री महिला उत्कर्ष योजना की सभी मुख्य शर्तों को पूरा करती हैं: गुजरात की निवासी, 18-59 वर्ष आयु, 10 महिलाओं का सक्रिय समूह और आधार-लिंक्ड बैंक खाता।',
+        whatThisMeans_en: 'Your group is eligible to apply for up to ₹1,00,000 at 0% interest (full interest borne by Gujarat Government), with 100% stamp duty waiver and ₹3,000 incentive bonus upon timely 12-month repayment.',
+        whatThisMeans_hi: 'आपका समूह 0% ब्याज पर ₹1,00,000 तक के ऋण, 100% स्टाम्प शुल्क छूट और समय पर चुकाने पर ₹3,000 के अतिरिक्त सरकारी बोनस के लिए पूरी तरह पात्र है।',
+        nextSteps_en: [
+          'Collect the MMUY Application Form from your Taluka Panchayat (GLPC) in rural areas or Municipal Corporation / Municipality (NULM) in urban areas.',
+          'Attach the JLESG Group Resolution, Aadhaar copies, bank passbook, and photos of all 10 members.',
+          'Submit the dossier for immediate bank linkage and loan sanction.'
+        ],
+        nextSteps_hi: [
+          'ग्रामीण क्षेत्र में अपनी तालुका पंचायत (GLPC मिशन मंगलम) अथवा शहरी क्षेत्र में नगर पालिका (NULM) से MMUY आवेदन फॉर्म प्राप्त करें।',
+          'समूह का संकल्प पत्र, सभी 10 सदस्यों के आधार कार्ड, फोटो और समूह बैंक पासबुक की प्रति संलग्न करें।',
+          'सत्यापन कराकर नजदीकी बैंक शाखा से बिना किसी गारंटी के ₹1 लाख का ब्याज-मुक्त ऋण स्वीकृत कराएं।'
+        ]
+      };
+    }
   }
 };
 

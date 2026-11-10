@@ -223,6 +223,7 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               { id: 'uttar-pradesh', en: 'Uttar Pradesh Schemes', hi: 'उत्तर प्रदेश योजनाएं' },
               { id: 'madhya-pradesh', en: 'Madhya Pradesh Schemes', hi: 'मध्य प्रदेश योजनाएं' },
               { id: 'maharashtra', en: 'Maharashtra Schemes', hi: 'महाराष्ट्र योजनाएं' },
+              { id: 'gujarat', en: 'Gujarat Schemes', hi: 'गुजरात योजनाएं' },
               { id: 'rajasthan', en: 'Rajasthan Schemes', hi: 'राजस्थान योजनाएं' },
             ].map((st) => (
               <Link

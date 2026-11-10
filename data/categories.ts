@@ -167,5 +167,17 @@ export const STATES: StateInfo[] = [
     description_hi: 'माझी लाडकी बहीण योजना, ₹1 में फसल बीमा और युवा कार्यप्रशिक्षण योजना।',
     flagshipPrograms_en: ['Majhi Ladki Bahin Yojana', 'PM-Kisan', 'PM Awas Yojana', 'Ayushman Bharat'],
     flagshipPrograms_hi: ['माझी लाडकी बहीण योजना', 'पीएम किसान', 'पीएम आवास योजना', 'आयुष्मान भारत']
+  },
+  {
+    id: 'gujarat',
+    name_en: 'Gujarat',
+    name_hi: 'गुजरात',
+    capital_en: 'Gandhinagar',
+    capital_hi: 'गांधीनगर',
+    activeSchemesCount: 21,
+    description_en: 'Flagship women empowerment with 0% interest-free group loans, farmers support, and citizen health security initiatives.',
+    description_hi: 'मुख्यमंत्री महिला उत्कर्ष योजना के तहत 0% ब्याज-मुक्त समूह ऋण, किसान कल्याण और व्यापक स्वास्थ्य सुरक्षा कार्यक्रम।',
+    flagshipPrograms_en: ['Mukhyamantri Mahila Utkarsh Yojana', 'PM-Kisan', 'PM Awas Yojana', 'Ayushman Bharat'],
+    flagshipPrograms_hi: ['मुख्यमंत्री महिला उत्कर्ष योजना', 'पीएम किसान', 'पीएम आवास योजना', 'आयुष्मान भारत']
   }
 ];

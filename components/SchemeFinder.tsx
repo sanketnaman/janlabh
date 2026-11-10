@@ -135,6 +135,7 @@ export default function SchemeFinder({
                   { id: 'rajasthan', name_en: 'Rajasthan', name_hi: 'राजस्थान' },
                   { id: 'madhya-pradesh', name_en: 'Madhya Pradesh', name_hi: 'मध्य प्रदेश' },
                   { id: 'maharashtra', name_en: 'Maharashtra', name_hi: 'महाराष्ट्र' },
+                  { id: 'gujarat', name_en: 'Gujarat', name_hi: 'गुजरात' },
                   { id: 'all-india', name_en: 'Other State / Central Schemes', name_hi: 'अन्य राज्य / केंद्रीय योजनाएं' },
                 ].map((st) => (
                   <button

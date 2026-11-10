@@ -7,10 +7,12 @@ export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
   title: 'State Government Schemes 2026: State-Wise Yojana Directory | राज्य सरकार योजनाएं | JanLabh',
-  description: 'Explore state-wise government welfare schemes across India (Jharkhand, Uttar Pradesh, Madhya Pradesh, Maharashtra, Bihar, Rajasthan & Central Schemes). Check local subsidies, pensions, and eligibility.',
+  description: 'Explore state-wise government welfare schemes across India (Gujarat, Jharkhand, Uttar Pradesh, Madhya Pradesh, Maharashtra, Bihar, Rajasthan & Central Schemes). Check local subsidies, pensions, and eligibility.',
   keywords: [
     'state government schemes India',
     'state wise yojana list 2026',
+    'gujarat government schemes',
+    'gujarat yojana list',
     'jharkhand government schemes',
     'up yojana list',
     'mp sarkari yojana',

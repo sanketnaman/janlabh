@@ -60,6 +60,12 @@ export function findRelevantSchemes(input: SchemeFinderInput): SchemeFinderRecom
       reasons_hi.push('ग्रामीण परिवारों हेतु 100 दिनों के सुनिश्चित कानूनी रोजगार की गारंटी');
     }
 
+    if (scheme.id === 'gujarat-mukhyamantri-mahila-utkarsh-yojana' && isStateMatch) {
+      score += 30;
+      reasons_en.push('0% interest-free ₹1 Lakh credit support for women self-help & joint earning groups');
+      reasons_hi.push('महिला स्वयं सहायता समूहों हेतु ₹1 लाख का 0% ब्याज-मुक्त ऋण व आजीविका सहायता');
+    }
+
     // Age suitability
     if (input.ageGroup === '18-25' && scheme.id === 'bihar-student-credit-card' && isStateMatch) {
       score += 30;

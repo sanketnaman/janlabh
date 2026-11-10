@@ -4473,5 +4473,279 @@ export const SCHEMES: Scheme[] = [
   ],
   "metaDescription_en": "✅ MGNREGA Job Card List 2026: Check your name in NREGA village list, download Job Card PDF, check NMMS muster roll attendance, ABPS payment status & wage rates at nrega.nic.in.",
   "metaDescription_hi": "✅ मनरेगा जॉब कार्ड लिस्ट 2026: नरेगा ग्राम पंचायत लिस्ट में अपना नाम देखें, जॉब कार्ड PDF डाउनलोड करें, मस्टर रोल हाजिरी और खाते में मजदूरी पेमेंट स्टेटस nrega.nic.in से चेक करें।"
+},
+{
+  "id": "gujarat-mukhyamantri-mahila-utkarsh-yojana",
+  "slug": "gujarat-mukhyamantri-mahila-utkarsh-yojana",
+  "title_en": "Gujarat Mukhyamantri Mahila Utkarsh Yojana (MMUY)",
+  "title_hi": "गुजरात मुख्यमंत्री महिला उत्कर्ष योजना (MMUY)",
+  "shortTitle_en": "Mahila Utkarsh Yojana",
+  "shortTitle_hi": "महिला उत्कर्ष योजना",
+  "category": "women",
+  "state": "gujarat",
+  "stateLabel_en": "Gujarat",
+  "stateLabel_hi": "गुजरात",
+  "status": "Active",
+  "lastVerified": "November 2026",
+  "benefitSummary_en": "0% interest-free, collateral-free group loans up to ₹1,00,000 for women Joint Liability Earning and Saving Groups (JLESG / Sakhi Mandal) of 10 members. The Government of Gujarat pays the complete bank interest as subvention, waives 100% stamp duty, and provides a ₹3,000 incentive bonus directly to the group account upon on-time repayment over 12 months.",
+  "benefitSummary_hi": "10 महिलाओं के संयुक्त देयता समूह (सखी मंडल / JLESG) को ₹1,00,000 (1 लाख) तक का 0% ब्याज-मुक्त व बिना गारंटी ऋण। बैंक के पूरे ब्याज का भुगतान गुजरात सरकार सीधे वहन करती है, स्टाम्प शुल्क 100% माफ है तथा 12 माह में नियमित किश्तें चुकाने पर समूह के खाते में ₹3,000 की अतिरिक्त प्रोत्साहन राशि मिलती है।",
+  "benefitAmount_en": "Up to ₹1,00,000 (0% Interest-Free Loan) + ₹3,000 Incentive",
+  "benefitAmount_hi": "₹1,00,000 तक (0% ब्याज-मुक्त समूह ऋण) + ₹3,000 प्रोत्साहन बोनस",
+  "whoCanApply_en": "Permanent resident women of Gujarat aged 18 to 59 years organized into a 10-member Joint Liability Earning & Saving Group (JLESG / Sakhi Mandal) in rural or urban areas.",
+  "whoCanApply_hi": "गुजरात की 18 से 59 वर्ष की स्थायी निवासी महिलाएं जो ग्रामीण या शहरी क्षेत्र में 10 सदस्यों वाले संयुक्त देयता समूह (सखी मंडल / JLESG) से जुड़ी हैं।",
+  "applicationMode": "Offline via Taluka Panchayat (GLPC) / Urban Local Body (NULM) & Online mmuy.gujarat.gov.in",
+  "bannerImage": "/images/schemes/gujarat-mukhyamantri-mahila-utkarsh-yojana.webp",
+  "whatIsThis_en": "Mukhyamantri Mahila Utkarsh Yojana (MMUY), popularly searched as Mahila Utkarsh Yojana Gujarat, is a flagship women economic empowerment initiative by the Government of Gujarat. Designed to provide 0% interest-free institutional capital to women from poor and middle-class families, the scheme is implemented through the Gujarat Livelihood Promotion Company (GLPC - Mission Mangalam) in rural areas and Gujarat Urban Development Mission (GUDM - NULM) in urban areas. Under the scheme, women are organized into 10-member Joint Liability Earning and Saving Groups (JLESGs / Sakhi Mandals). Participating commercial banks, cooperative banks, and regional rural banks disburse loans of up to ₹1,00,000 per group with 0% interest to the beneficiaries, as the entire interest burden is reimbursed directly to the bank by the state government through an interest subvention grant. To further ease credit access, stamp duties are 100% waived, and groups that repay all 12 equal monthly installments (EMIs) on schedule receive an additional ₹3,000 incentive credited to their group savings account. (Note on State: MMUY is strictly an initiative of Gujarat State and is not applicable in Uttar Pradesh, Maharashtra, or other states).",
+  "whatIsThis_hi": "मुख्यमंत्री महिला उत्कर्ष योजना (MMUY), जिसे आम बोलचाल में 'गुजरात महिला उत्कर्ष योजना' भी कहा जाता है, गुजरात सरकार की एक ऐतिहासिक महिला सशक्तिकरण पहल है। इसका मुख्य उद्देश्य ग्रामीण एवं शहरी क्षेत्रों की गरीब व मध्यमवर्गीय महिलाओं को आत्मनिर्भर बनाकर छोटे उद्यम, स्वरोजगार और आजीविका गतिविधियों हेतु बिना किसी ब्याज के संस्थागत ऋण उपलब्ध कराना है। ग्रामीण क्षेत्रों में इसे गुजरात लाइवलीहुड प्रमोशन कंपनी (GLPC - मिशन मंगलम) तथा शहरी क्षेत्रों में गुजरात अर्बन डेवलपमेंट मिशन (GUDM - NULM) द्वारा संचालित किया जाता है। योजना के अंतर्गत 10-10 महिलाओं के 'संयुक्त देयता एवं बचत समूह' (JLESG / सखी मंडल) बनाए जाते हैं। राष्ट्रीयकृत, सहकारी एवं ग्रामीण बैंकों के माध्यम से प्रति समूह ₹1,00,000 तक का ऋण स्वीकृत किया जाता है, जिस पर ब्याज दर 0% होती है क्योंकि पूरे बैंक ब्याज का भुगतान गुजरात सरकार सीधे वहन करती है। इसके अतिरिक्त स्टाम्प ड्यूटी 100% माफ है तथा 12 माह में समय पर ऋण चुकाने वाले समूहों को ₹3,000 का नकद प्रोत्साहन बोनस दिया जाता है। (स्पष्टीकरण: यह योजना केवल गुजरात राज्य के निवासियों के लिए है; उत्तर प्रदेश या महाराष्ट्र जैसे अन्य राज्यों में यह लागू नहीं है)।",
+  "benefitsList_en": [
+    "Collateral-Free Institutional Credit: Up to ₹1,00,000 per 10-women group (effective ₹10,000 per member) without mortgaging any land or personal asset.",
+    "100% Interest Subvention (0% Interest Rate): Complete interest charges assessed by lending banks are directly paid by the Government of Gujarat.",
+    "Zero Stamp Duty & Fee Waiver: All stamp duty charges on loan agreements and bank documentation are fully exempted by the state government.",
+    "Timely Repayment Bonus: Groups that repay all 12 monthly installments on or before the due date receive a ₹3,000 performance incentive directly in their group bank account.",
+    "Shield Against Predatory Lenders: Protects rural and semi-urban women from high-interest private moneylenders and microfinance traps.",
+    "Micro-Enterprise Support: Facilitates group businesses such as handicrafts, tailoring, dairy farming, food processing, beauty parlours, and retail shops.",
+    "Integrated Skill Training: Technical guidance and capacity building support via Mission Mangalam (GLPC) and urban self-employment cells (NULM)."
+  ],
+  "benefitsList_hi": [
+    "बिना किसी गारंटी (Collateral-Free) बैंक लोन: 10 महिलाओं के समूह को बिना किसी जमीन, मकान या जेवर गिरवी रखे ₹1,00,000 तक का संस्थागत ऋण।",
+    "0% ब्याज दर (100% सरकारी ब्याज अनुदान): बैंक द्वारा लिए जाने वाले पूरे ब्याज का भुगतान गुजरात सरकार द्वारा सीधे बैंक को किया जाता है।",
+    "100% स्टाम्प शुल्क व प्रोसेसिंग छूट: ऋण अनुबंध और बैंक दस्तावेजीकरण पर लगने वाला पूरा स्टाम्प शुल्क सरकार द्वारा माफ है।",
+    "₹3,000 नियमित भुगतान प्रोत्साहन: 12 महीने में समय पर सभी किश्तें (EMI) चुकाने वाले सखी मंडलों को ₹3,000 का अतिरिक्त नकद बोनस।",
+    "निजी साहूकारों के कर्जजाल से मुक्ति: महिलाओं को अत्यधिक ब्याज वसूलने वाले स्थानीय साहूकारों व निजी माइक्रोफाइनेंस कंपनियों से सुरक्षा।",
+    "छोटे कारोबार व स्वरोजगार को बढ़ावा: सिलाई, ब्यूटी पार्लर, डेयरी, हस्तशिल्प, खान-पान कैटरिंग और किराना जैसे आजीविका कार्यों हेतु कार्यशील पूंजी।",
+    "मिशन मंगलम से कौशल प्रशिक्षण: ग्रामीण क्षेत्रों में GLPC और शहरी क्षेत्रों में NULM द्वारा व्यवसाय प्रबंधन व खाता संचालन का व्यावहारिक मार्गदर्शन।"
+  ],
+  "eligibility": {
+    "eligibleIf_en": [
+      "Applicant must be a permanent resident woman of Gujarat (strictly Gujarat state only).",
+      "Age of all participating group members must be between 18 and 59 years.",
+      "Applicants must form or belong to an active Joint Liability Earning and Saving Group (JLESG / Sakhi Mandal) consisting of exactly 10 women.",
+      "Rural Beneficiaries: Women from priority households under SECC-2011, BPL lists, or active NRLM Self-Help Groups (SHGs).",
+      "Urban Beneficiaries: Women organized through Area Level Federations (ALFs) or Self-Help Groups under Deendayal Antyodaya Yojana - NULM.",
+      "All 10 members must hold valid Aadhaar cards and individual/joint bank savings accounts with active mobile linkages."
+    ],
+    "eligibleIf_hi": [
+      "आवेदक महिला गुजरात राज्य की स्थायी निवासी होनी चाहिए (केवल गुजरात राज्य हेतु मान्य)।",
+      "समूह के सभी 10 महिला सदस्यों की आयु 18 से 59 वर्ष के मध्य होनी आवश्यक है।",
+      "महिलाओं का 10 सदस्यों वाले संयुक्त देयता एवं बचत समूह (सखी मंडल / JLESG / स्वयं सहायता समूह) से जुड़ा होना अनिवार्य है (अकेले व्यक्ति को ऋण नहीं मिलता)।",
+      "ग्रामीण क्षेत्र: सामाजिक-आर्थिक जाति जनगणना (SECC-2011), बीपीएल प्राथमिकता सूची अथवा मिशन मंगलम (NRLM) समूहों से जुड़ी महिलाएं।",
+      "शहरी क्षेत्र: दीनदयाल अंत्योदय योजना - NULM और स्थानीय नगर पालिका/महानगर पालिका क्षेत्र में गठित महिला समूह।",
+      "सभी 10 सदस्यों के पास वैध आधार कार्ड, बैंक बचत खाता और आधार-लिंक्ड मोबाइल नंबर होना अनिवार्य है।"
+    ],
+    "notEligibleIf_en": [
+      "Individual women applying without forming a 10-member group are not eligible.",
+      "Residents of states outside Gujarat (such as Uttar Pradesh, Maharashtra, Rajasthan, etc.).",
+      "Women younger than 18 years or aged 60 years and above at the time of group loan application.",
+      "Households having regular government employees or institutional taxpayers in executive grades.",
+      "Groups or individual members who have defaulted on earlier bank loans or NRLM/NULM credit lines until prior dues are regularized."
+    ],
+    "notEligibleIf_hi": [
+      "अकेले (व्यक्तिगत रूप से) आवेदन करने वाली महिलाएं पात्र नहीं हैं (10 का समूह अनिवार्य है)।",
+      "गुजरात से बाहर के अन्य राज्यों (जैसे उत्तर प्रदेश, महाराष्ट्र, राजस्थान आदि) के निवासी।",
+      "18 वर्ष से कम अथवा 60 वर्ष या उससे अधिक आयु की महिलाएं।",
+      "जिन परिवारों में कोई सदस्य नियमित सरकारी सेवा में कार्यरत हो अथवा उच्च आयकर श्रेणी में आता हो।",
+      "पूर्व में किसी बैंक या सरकारी ऋण योजना में डिफ़ॉल्टर (बकायादार) घोषित समूह अथवा सदस्य।"
+    ]
+  },
+  "requiredDocuments_en": [
+    "Aadhaar Card of all 10 group members",
+    "Gujarat Residence Proof (Ration Card / Voter ID / Electricity Bill / Domicile Certificate)",
+    "Group Bank Account Passbook (joint account of Group Leader/Secretary with IFSC and account number)",
+    "Individual Bank Passbooks and Passport-size Photographs of all 10 members",
+    "Group Resolution / Resolution Book (JLESG Samiti Resolution consenting to joint liability loan)",
+    "Self-Declaration regarding age, residence, and non-default status",
+    "Duly filled Mukhyamantri Mahila Utkarsh Yojana Gujarat Application Form PDF"
+  ],
+  "requiredDocuments_hi": [
+    "समूह के सभी 10 सदस्यों के आधार कार्ड की छायाप्रति",
+    "गुजरात निवास प्रमाण (राशन कार्ड / वोटर कार्ड / बिजली बिल / मूल निवास प्रमाण पत्र)",
+    "सखी मंडल/समूह का बैंक खाता पासबुक (समूह अध्यक्ष व सचिव के संयुक्त हस्ताक्षर वाला खाता)",
+    "सभी 10 सदस्यों की व्यक्तिगत बैंक पासबुक और पासपोर्ट आकार की नवीनतम फोटो",
+    "समूह का संकल्प पत्र (JLESG बैठक की कार्यवाही पुस्तिका जिसमें ऋण लेने और संयुक्त जिम्मेदारी की सहमति दर्ज हो)",
+    "आयु, निवास और किसी बैंक में डिफ़ॉल्ट न होने का स्व-घोषणा पत्र",
+    "विधिवत भरा हुआ मुख्यमंत्री महिला उत्कर्ष योजना गुजरात आवेदन पत्र (PDF Form)"
+  ],
+  "howToApply_en": [
+    "Group Formation (Step 1): Organize a 10-woman Joint Liability Earning and Saving Group (JLESG / Sakhi Mandal) in your village or ward. Choose a Group Leader (Pradhyaksh) and Secretary (Sachiv).",
+    "Contact Nodal Coordinator (Step 2): Rural applicants must visit the Taluka Panchayat office and contact the GLPC (Mission Mangalam) Block Coordinator. Urban applicants must visit the Municipal Corporation / Municipality and meet the NULM Community Organizer.",
+    "Bank Account Opening (Step 3): Open a joint savings bank account in the name of your JLESG at a local participating public sector, regional rural (e.g. Baroda Gujarat Gramin Bank, Saurashtra Gramin Bank), or cooperative bank.",
+    "Form Submission & Online Registration (Step 4): Fill out the MMUY Loan Application Form (available online at mmuy.gujarat.gov.in or from Taluka office) and attach members' Aadhaar cards, bank details, and the group resolution. The nodal coordinator verifies documents and forwards the dossier to the branch manager.",
+    "Loan Sanction & EMI Repayment (Step 5): The bank disburses up to ₹1,00,000 into the group account. The group repays the principal in 12 equal monthly installments (~₹8,333/month). The state government reimburses all interest to the bank. After 12 on-time EMIs, collect your ₹3,000 performance incentive."
+  ],
+  "howToApply_hi": [
+    "समूह गठन (चरण 1): अपने गाँव या वार्ड में 10 महिलाओं का एक संयुक्त देयता समूह (JLESG / सखी मंडल) बनाएं। समूह में एक अध्यक्ष और एक सचिव का चुनाव करें।",
+    "नोडल अधिकारी से संपर्क (चरण 2): ग्रामीण महिलाएं अपनी तालुका पंचायत में जाकर GLPC (मिशन मंगलम) ब्लॉक समन्वयक से मिलें। शहरी महिलाएं अपनी नगर पालिका या महानगर पालिका में NULM कम्युनिटी ऑर्गेनाइजर से संपर्क करें।",
+    "समूह का बैंक खाता (चरण 3): किसी भी राष्ट्रीयकृत, क्षेत्रीय ग्रामीण बैंक (उदा. बड़ौदा गुजरात ग्रामीण बैंक, सौराष्ट्र ग्रामीण बैंक) या सहकारी बैंक में समूह के नाम पर संयुक्त खाता खुलवाएं।",
+    "आवेदन पत्र व ऑनलाइन रजिस्ट्रेशन (चरण 4): MMUY आवेदन पत्र भरें (पोर्टल mmuy.gujarat.gov.in से डाउनलोड करें या तालुका कार्यालय से लें), उसमें सभी 10 सदस्यों के आधार कार्ड, फोटो और समूह का संकल्प पत्र संलग्न कर जमा करें।",
+    "ऋण स्वीकृति और किश्त भुगतान (चरण 5): बैंक द्वारा ₹1 लाख तक का ऋण समूह के खाते में जमा किया जाता है। समूह को 12 आसान मासिक किश्तों (~₹8,333/माह) में केवल मूलधन चुकाना होता है (ब्याज 0%)। सभी 12 किश्तें समय पर चुकाने पर ₹3,000 का बोनस सीधे खाते में आता है।"
+  ],
+  "statusCheckGuide_en": "To track your Mukhyamantri Mahila Utkarsh Yojana application status in Gujarat: 1. Visit the official portal mmuy.gujarat.gov.in. 2. Log in using your registered mobile number and OTP. 3. Enter your JLESG Group Reference ID generated during submission. 4. Alternatively, inquire with your Taluka Mission Mangalam Block Project Coordinator (rural) or City NULM Project Officer (urban) with your group name and bank account details.",
+  "statusCheckGuide_hi": "गुजरात मुख्यमंत्री महिला उत्कर्ष योजना में अपने आवेदन और ऋण की स्थिति चेक करने का तरीका: 1. आधिकारिक पोर्टल mmuy.gujarat.gov.in पर जाएं। 2. पंजीकृत मोबाइल नंबर और ओटीपी के माध्यम से लॉगिन करें। 3. आवेदन के समय मिली JLESG संदर्भ संख्या (Application ID) दर्ज करें। 4. अथवा ग्रामीण क्षेत्र में अपने तालुका पंचायत के मिशन मंगलम ब्लॉक समन्वयक तथा शहरी क्षेत्र में नगर पालिका NULM सेल में जाकर अपने समूह के नाम व बैंक खाता नंबर से स्थिति पता करें।",
+  "officialStatusUrl": "https://mmuy.gujarat.gov.in",
+  "commonProblems_en": [
+    {
+      "problem": "Loan Application Rejected Due to Fewer than 10 Members in the Group",
+      "solution": "Operational guidelines strictly mandate that a JLESG under MMUY must comprise exactly 10 eligible women members. If any member withdraws or is disqualified, coordinate with your GLPC/NULM coordinator to induct a new eligible resident member and re-submit the updated resolution."
+    },
+    {
+      "problem": "Bank Charging Commercial Interest or EMI Delay Charges",
+      "solution": "Under MMUY, the loan is 100% interest-free for beneficiaries, provided installments are paid on time. If a commercial rate appears on your passbook, verify with your branch manager that the account has been tagged under 'Gujarat MMUY Subvention Scheme'. Ensure all 12 EMIs are paid before the due date each month so the state government can automatically clear the interest subsidy."
+    }
+  ],
+  "commonProblems_hi": [
+    {
+      "problem": "समूह में 10 से कम सदस्य होने के कारण आवेदन रुकना",
+      "solution": "MMUY मार्गदर्शिका के अनुसार समूह में ठीक 10 पात्र महिला सदस्य होना अनिवार्य है। यदि कोई सदस्य हट जाती है, तो अपनी तालुका पंचायत के मिशन मंगलम समन्वयक से संपर्क करके नई पात्र स्थानीय महिला को जोड़ें और संशोधित बैठक प्रस्ताव के साथ पुनः जमा करें।"
+    },
+    {
+      "problem": "बैंक खाते में ब्याज कटना या सबवेंशन न मिलना",
+      "solution": "MMUY योजना में 0% ब्याज का लाभ तभी मिलता है जब किश्तें समय पर जमा की जाएं। यदि पासबुक में ब्याज दर्ज दिख रहा है, तो शाखा प्रबंधक से मिलकर पुष्टि करें कि खाता 'Gujarat MMUY Scheme Code' के तहत टैग है या नहीं। हर महीने तय तारीख से पहले मूलधन किश्त जमा करें ताकि सरकार सीधे ब्याज की भरपाई बैंक को कर सके।"
+    }
+  ],
+  "faqs_en": [
+    {
+      "q": "Mukhyamantri Mahila Utkarsh Yojana belongs to which state? Is it available in Uttar Pradesh or Maharashtra?",
+      "a": "Mukhyamantri Mahila Utkarsh Yojana (MMUY) is exclusively an initiative of the Government of Gujarat. It is NOT available in Uttar Pradesh, Maharashtra, or any other state. Only permanent resident women of Gujarat can apply. Women from other states can explore central initiatives like PM Mudra Yojana or Lakhpati Didi."
+    },
+    {
+      "q": "What is the official website for Mukhyamantri Mahila Utkarsh Yojana online application?",
+      "a": "The official portal for MMUY is mmuy.gujarat.gov.in. Applicants can also check announcements via the Gujarat Livelihood Promotion Company (glpc.gujarat.gov.in) and Gujarat Urban Development Mission (gudm.gujarat.gov.in)."
+    },
+    {
+      "q": "How to apply online for Mukhyamantri Mahila Utkarsh Yojana (MMUY) Gujarat?",
+      "a": "To apply, form a 10-woman Joint Liability Earning and Saving Group (JLESG). Visit mmuy.gujarat.gov.in for registration, or approach your Taluka Panchayat Mission Mangalam (GLPC) coordinator in rural areas or Municipal Corporation (NULM) office in urban areas with your group resolution, Aadhaar cards, and bank passbooks."
+    },
+    {
+      "q": "Where to download Mukhyamantri Mahila Utkarsh Yojana Gujarat PDF application form?",
+      "a": "The MMUY Gujarat Application Form PDF and group resolution format can be obtained directly from your Taluka Panchayat office free of cost, downloaded from the official mmuy.gujarat.gov.in portal, or collected from local Mission Mangalam coordinators."
+    },
+    {
+      "q": "What is the maximum loan amount under Mukhyamantri Mahila Utkarsh Yojana?",
+      "a": "The maximum loan sanctioned under MMUY is up to ₹1,00,000 (one lakh rupees) per Joint Liability Earning and Saving Group (JLESG) consisting of 10 women members (effective ₹10,000 per member). The loan is disbursed directly into the joint bank account of the group."
+    },
+    {
+      "q": "What is the interest rate for the loan under MMUY Gujarat?",
+      "a": "The effective interest rate for eligible women groups is 0% (zero interest). While the lending bank assesses interest, the complete interest amount is reimbursed directly to the bank by the Government of Gujarat as an interest subvention grant."
+    },
+    {
+      "q": "Can an individual woman apply alone without a group?",
+      "a": "No. Individual personal applications are strictly not admissible under MMUY. Beneficiaries must form a Joint Liability Earning and Saving Group (JLESG) of 10 women to avail of this scheme."
+    },
+    {
+      "q": "What is the ₹3,000 incentive bonus and how is it paid?",
+      "a": "If the group repays all 12 equal monthly installments (approx ₹8,333/month) on time without any default or delay, the Gujarat Government awards a one-time cash incentive of ₹3,000 directly into the group's savings bank account."
+    }
+  ],
+  "faqs_hi": [
+    {
+      "q": "मुख्यमंत्री महिला उत्कर्ष योजना किस राज्य की है? क्या यह उत्तर प्रदेश या महाराष्ट्र में भी है?",
+      "a": "मुख्यमंत्री महिला उत्कर्ष योजना (MMUY) केवल और केवल 'गुजरात' सरकार की योजना है। यह उत्तर प्रदेश, महाराष्ट्र या किसी अन्य राज्य में लागू नहीं है। इसका लाभ केवल गुजरात की स्थायी निवासी महिलाएं ही ले सकती हैं। अन्य राज्यों की महिलाएं केंद्र सरकार की लखपति दीदी या पीएम मुद्रा योजना का लाभ ले सकती हैं।"
+    },
+    {
+      "q": "मुख्यमंत्री महिला उत्कर्ष योजना की ऑफिशियल वेबसाइट (Official Website) कौन सी है?",
+      "a": "इस योजना का आधिकारिक सरकारी वेब पोर्टल mmuy.gujarat.gov.in है। इसके अलावा ग्रामीण क्षेत्रों के लिए GLPC (glpc.gujarat.gov.in) तथा शहरी क्षेत्रों के लिए GUDM (gudm.gujarat.gov.in) इसके नोडल क्रियान्वयन पोर्टल हैं।"
+    },
+    {
+      "q": "मुख्यमंत्री महिला उत्कर्ष योजना गुजरात में ऑनलाइन आवेदन (How to Apply Online) कैसे करें?",
+      "a": "आवेदन करने के लिए पहले अपने क्षेत्र की 10 महिलाओं का सखी मंडल (JLESG) बनाएं। आधिकारिक पोर्टल mmuy.gujarat.gov.in पर जाएं अथवा ग्रामीण महिलाएं तालुका पंचायत (मिशन मंगलम GLPC) और शहरी महिलाएं नगर पालिका (NULM सेल) में जाकर सभी सदस्यों के आधार कार्ड, फोटो और समूह संकल्प पत्र के साथ फॉर्म जमा करें।"
+    },
+    {
+      "q": "मुख्यमंत्री महिला उत्कर्ष योजना गुजरात फॉर्म पीडीएफ (PDF Form) कहाँ से डाउनलोड करें?",
+      "a": "MMUY योजना का आवेदन फॉर्म और सखी मंडल बैठक संकल्प पत्र पीडीएफ आप आधिकारिक पोर्टल mmuy.gujarat.gov.in से डाउनलोड कर सकते हैं अथवा अपनी तालुका पंचायत कार्यालय या मिशन मंगलम ब्लॉक समन्वयक से निःशुल्क प्राप्त कर सकते हैं।"
+    },
+    {
+      "q": "मुख्यमंत्री महिला उत्कर्ष योजना के तहत कितना ऋण मिलता है?",
+      "a": "इस योजना के अंतर्गत 10 महिलाओं के संयुक्त देयता समूह (JLESG / सखी मंडल) को अधिकतम ₹1,00,000 (1 लाख रुपये) तक का ऋण स्वीकृत किया जाता है, जो सीधे समूह के संयुक्त बैंक खाते में अंतरित होता है।"
+    },
+    {
+      "q": "क्या इस लोन पर कोई ब्याज देना होता है?",
+      "a": "नहीं, महिलाओं के लिए यह लोन बिल्कुल 0% ब्याज-मुक्त होता है। बैंक का जो भी सामान्य ब्याज बनता है, उसका पूरा भुगतान गुजरात सरकार सीधे बैंक को सब्सिडी के रूप में करती है।"
+    },
+    {
+      "q": "क्या कोई महिला अकेले व्यक्तिगत रूप से लोन ले सकती है?",
+      "a": "नहीं, इस योजना में व्यक्तिगत लोन का कोई प्रावधान नहीं है। लाभ केवल 10 महिलाओं के संयुक्त समूह (सखी मंडल / JLESG) को ही दिया जाता है ताकि आपसी सहयोग से समय पर ऋण अदायगी सुनिश्चित हो सके।"
+    },
+    {
+      "q": "समय पर लोन चुकाने पर ₹3,000 का बोनस कैसे मिलता है?",
+      "a": "यदि महिला समूह 12 महीने में सभी किश्तें बिना किसी देरी के समय पर चुका देता है, तो गुजरात सरकार समूह के अच्छे वित्तीय अनुशासन के लिए ₹3,000 का अतिरिक्त प्रोत्साहन बोनस सीधे समूह के बैंक खाते में जमा करती है।"
+    }
+  ],
+  "officialSources": [
+    {
+      "name": "Mukhyamantri Mahila Utkarsh Yojana Official Portal",
+      "authority": "Government of Gujarat",
+      "url": "https://mmuy.gujarat.gov.in",
+      "verificationDate": "November 2026"
+    },
+    {
+      "name": "Gujarat Livelihood Promotion Company (GLPC - Mission Mangalam)",
+      "authority": "Panchayats, Rural Housing and Rural Development Department, Government of Gujarat",
+      "url": "https://glpc.gujarat.gov.in",
+      "verificationDate": "November 2026"
+    },
+    {
+      "name": "Gujarat Urban Development Mission (GUDM)",
+      "authority": "Urban Development & Urban Housing Department, Government of Gujarat",
+      "url": "https://gudm.gujarat.gov.in",
+      "verificationDate": "November 2026"
+    }
+  ],
+  "keywords": [
+    "mukhyamantri mahila utkarsh yojana",
+    "मुख्यमंत्री महिला उत्कर्ष योजना",
+    "mahila utkarsh yojana",
+    "mahila utkarsh yojana gujarat",
+    "mukhyamantri mahila utkarsh yojana gujarat",
+    "mukhyamantri mahila utkarsh yojana (mmuy)",
+    "mukhyamantri mahila utkarsh yojana mmuy",
+    "mukhya mantri mahila utkarsh yojana",
+    "mukhyamantri mahila utkarsh yojana how to apply",
+    "how to apply for mukhyamantri mahila utkarsh yojana",
+    "mukhyamantri mahila utkarsh yojana eligibility",
+    "mukhyamantri mahila utkarsh yojana how to apply online",
+    "mukhyamantri mahila utkarsh yojana apply online",
+    "mukhyamantri mahila utkarsh yojana online apply",
+    "mahila utkarsh yojana online application",
+    "mukhyamantri mahila utkarsh yojana in gujarat",
+    "mukhyamantri mahila utkarsh yojana official website",
+    "mukhyamantri mahila utkarsh yojana online registration",
+    "mukhyamantri mahila utkarsh yojana gujarat pdf",
+    "mahila utkarsh yojana form pdf",
+    "mahila utkarsh yojana loan",
+    "what is mukhyamantri mahila utkarsh yojana",
+    "mukhyamantri mahila utkarsh yojana which state",
+    "mukhyamantri mahila utkarsh yojana in hindi",
+    "mukhyamantri mahila utkarsh yojana in gujarati",
+    "mukhyamantri mahila utkarsh yojana 2026",
+    "mukhyamantri mahila utkarsh yojana 2025",
+    "mukhyamantri mahila utkarsh yojana 2024",
+    "mukhyamantri mahila utkarsh yojana 2023",
+    "mukhyamantri mahila utkarsh yojana uttar pradesh",
+    "mukhyamantri mahila utkarsh yojana maharashtra",
+    "mmuy gujarat gov in",
+    "mmuy portal gujarat",
+    "sakhi mandal loan gujarat",
+    "gujarat mahila loan yojana",
+    "gujarat 1 lakh interest free loan",
+    "mission mangalam gujarat loan",
+    "glpc gujarat gov in mmuy",
+    "gudm mahila utkarsh yojana",
+    "gujarat women self help group loan",
+    "jlesg mahila utkarsh yojana",
+    "chief minister mahila utkarsh yojana 2026",
+    "गुजरात मुख्यमंत्री महिला उत्कर्ष योजना",
+    "महिला उत्कर्ष योजना गुजरात",
+    "सखी मंडल 1 लाख लोन गुजरात",
+    "गुजरात महिला ब्याज मुक्त ऋण",
+    "मिशन मंगलम महिला उत्कर्ष योजना",
+    "गुजरात सरकारी योजनाएं 2026",
+    "mmuy फॉर्म पीडीएफ डाउनलोड",
+    "महिला उत्कर्ष योजना पात्रता",
+    "गुजरात महिला स्वरोजगार लोन",
+    "मुख्यमंत्री महिला उत्कर्ष योजना किस राज्य की है",
+    "महिला उत्कर्ष योजना ऑनलाइन आवेदन"
+  ],
+  "metaDescription_en": "✅ Mukhyamantri Mahila Utkarsh Yojana (MMUY) Gujarat 2026: Get 0% interest-free group loan up to ₹1 Lakh for women Sakhi Mandals (JLESG). Check eligibility, which state, official website mmuy.gujarat.gov.in, PDF form & how to apply online.",
+  "metaDescription_hi": "✅ गुजरात मुख्यमंत्री महिला उत्कर्ष योजना (MMUY) 2026: 10 महिलाओं के सखी मंडल को ₹1 लाख का 0% ब्याज-मुक्त लोन और ₹3,000 बोनस। जानिए पात्रता, ऑफिशियल वेबसाइट mmuy.gujarat.gov.in, फॉर्म पीडीएफ व ऑनलाइन आवेदन की पूरी जानकारी।"
 }
 ];
