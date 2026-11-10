@@ -50,6 +50,22 @@ export async function generateMetadata({ params }: HindiUpdatePageProps): Promis
       type: 'article',
       publishedTime: update.publishedDate,
       modifiedTime: update.updatedDate || update.publishedDate,
+      images: update.bannerImage
+        ? [
+            {
+              url: `https://janlabh.in${update.bannerImage}`,
+              width: 1024,
+              height: 536,
+              alt: pageTitle,
+            },
+          ]
+        : undefined,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: pageTitle,
+      description: pageDescription,
+      images: update.bannerImage ? [`https://janlabh.in${update.bannerImage}`] : undefined,
     },
   };
 }

@@ -139,6 +139,18 @@ export default function UpdateDetailView({
             </p>
           </div>
 
+          {/* Banner Image */}
+          {update.bannerImage && (
+            <div className="overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm bg-slate-100 dark:bg-slate-900">
+              <img
+                src={update.bannerImage}
+                alt={isHi ? update.title_hi : update.title_en}
+                className="w-full h-auto object-cover max-h-[500px]"
+                loading="eager"
+              />
+            </div>
+          )}
+
           {/* Key Facts Box */}
           <div className="bg-amber-50/60 dark:bg-slate-800/80 rounded-xl p-5 sm:p-6 border border-amber-200/80 dark:border-slate-700 space-y-3">
             <h2 className="text-xs font-bold uppercase tracking-wider text-amber-900 dark:text-amber-300 flex items-center gap-2">

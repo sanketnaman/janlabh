@@ -54,7 +54,8 @@ export const UPDATES: UpdateArticle[] = [
       url: 'https://cmladlibahna.mp.gov.in',
       verificationDate: 'November 10, 2026'
     },
-    relatedSchemeSlug: 'ladli-behna-yojana-madhya-pradesh'
+    relatedSchemeSlug: 'ladli-behna-yojana-madhya-pradesh',
+    bannerImage: '/images/updates/ladli-behna-installment-status-banner.webp'
   },
   {
     id: 'pm-kisan-24th-installment-released-25th-status',

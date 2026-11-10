@@ -110,6 +110,7 @@ export interface UpdateArticle {
   whatShouldUsersDo_hi: string[];
   officialSource: OfficialSource;
   relatedSchemeSlug?: string;
+  bannerImage?: string;
 }
 
 export interface CategoryInfo {
