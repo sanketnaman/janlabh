@@ -82,7 +82,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         'logo': 'https://janlabh.in/icons/janlabh-logo.svg',
         'description': 'Independent civic and government scheme public information platform for Indian citizens.',
         'publishingPrinciples': 'https://janlabh.in/editorial-policy',
-        'correctionsPolicy': 'https://janlabh.in/corrections-policy'
+        'correctionsPolicy': 'https://janlabh.in/corrections-policy',
+        'sameAs': [
+          'https://www.facebook.com/janlabh',
+          'https://t.me/janlabhindia',
+          'https://whatsapp.com/channel/0029VbE4FDb4SpkDqh7umQ3k'
+        ]
       },
       {
         '@type': 'WebSite',

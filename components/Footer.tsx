@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Language } from '@/types';
 import { AlertTriangle, CheckCircle2 } from 'lucide-react';
 import CommunityCallout from '@/components/CommunityCallout';
+import { COMMUNITY_CONFIG } from '@/data/community';
 
 interface FooterProps {
   lang: Language;
@@ -236,10 +237,52 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>
             &copy; {currentYear} JanLabh.in · {lang === 'hi' ? 'सर्वाधिकार सुरक्षित।' : 'All rights reserved.'}
           </div>
+
+          {/* Social Channels */}
+          <div className="flex flex-wrap items-center gap-4 text-xs">
+            <span className="text-slate-500 font-semibold">{lang === 'hi' ? 'सोशल मीडिया:' : 'Official Channels:'}</span>
+            <a
+              href={COMMUNITY_CONFIG.facebookPageUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-300 hover:text-blue-400 transition-colors flex items-center gap-1.5 font-medium"
+              aria-label="JanLabh India on Facebook"
+            >
+              <svg className="h-4 w-4 fill-current text-blue-500" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+              <span>Facebook</span>
+            </a>
+            <a
+              href={COMMUNITY_CONFIG.whatsappChannelUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 font-medium"
+              aria-label="JanLabh on WhatsApp"
+            >
+              <svg className="h-4 w-4 fill-current text-emerald-500" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.301-.15-1.782-.879-2.058-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.18-.176.2-.352.226-.653.076-.301-.15-1.272-.469-2.423-1.496-.895-.798-1.5-1.784-1.676-2.085-.176-.301-.019-.464.132-.614.136-.135.301-.352.452-.527.15-.176.2-.301.301-.502.101-.201.05-.377-.025-.527-.075-.15-.678-1.634-.929-2.237-.245-.588-.493-.508-.678-.517-.176-.01-.377-.01-.578-.01s-.527.075-.803.377c-.276.301-1.054 1.03-1.054 2.511s1.079 2.912 1.229 3.113c.15.201 2.124 3.243 5.146 4.55.719.311 1.28.497 1.718.636.722.23 1.378.197 1.898.12.58-.088 1.782-.728 2.033-1.431.251-.703.251-1.305.176-1.431-.076-.126-.277-.201-.578-.352zM12.04 2C6.527 2 2.04 6.487 2.04 12c0 1.942.554 3.754 1.517 5.289L2 22l4.862-1.522A9.914 9.914 0 0012.04 22c5.514 0 10-4.487 10-10s-4.486-10-10-10zm0 18.25c-1.674 0-3.235-.494-4.549-1.344l-.326-.21-2.88.902.924-2.809-.229-.344A8.195 8.195 0 013.79 12c0-4.549 3.701-8.25 8.25-8.25 4.549 0 8.25 3.701 8.25 8.25 0 4.549-3.701 8.25-8.25 8.25z" />
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+            <a
+              href={COMMUNITY_CONFIG.telegramChannelUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-300 hover:text-sky-400 transition-colors flex items-center gap-1.5 font-medium"
+              aria-label="JanLabh on Telegram"
+            >
+              <svg className="h-4 w-4 fill-current text-sky-400" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.63 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 4-1.74 6.67-2.89 8.02-3.45 3.82-1.6 4.62-1.88 5.14-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.21-.04.34z" />
+              </svg>
+              <span>Telegram</span>
+            </a>
+          </div>
+
           <div className="flex items-center gap-4 text-[11px]">
             <a
               href="/sitemap.xml"

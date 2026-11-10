@@ -5,6 +5,7 @@ import StaticPageLayout from '@/components/StaticPageLayout';
 import { Building, ShieldCheck, CheckCircle2, Award, Users, BookOpen, UserCheck, MapPin, Mail, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import { Language } from '@/types';
+import { COMMUNITY_CONFIG } from '@/data/community';
 
 export default function AboutView({ forcedLang }: { forcedLang?: Language } = {}) {
   return (
@@ -190,6 +191,38 @@ export default function AboutView({ forcedLang }: { forcedLang?: Language } = {}
                     contact@janlabh.in
                   </a>
                 </p>
+                <div className="pt-2 border-t border-slate-200 dark:border-slate-700/60 mt-3 flex flex-wrap items-center gap-2.5">
+                  <span className="font-semibold text-slate-900 dark:text-white">{isHi ? 'सोशल मीडिया व कम्युनिटी:' : 'Follow JanLabh:'}</span>
+                  <a
+                    href={COMMUNITY_CONFIG.facebookPageUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 font-medium hover:underline flex items-center gap-1"
+                  >
+                    <span>Facebook</span>
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                  <span>·</span>
+                  <a
+                    href={COMMUNITY_CONFIG.whatsappChannelUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-600 dark:text-emerald-400 font-medium hover:underline flex items-center gap-1"
+                  >
+                    <span>WhatsApp</span>
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                  <span>·</span>
+                  <a
+                    href={COMMUNITY_CONFIG.telegramChannelUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-600 dark:text-sky-400 font-medium hover:underline flex items-center gap-1"
+                  >
+                    <span>Telegram</span>
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </div>
                 <div className="pt-2">
                   <Link
                     href={isHi ? '/hi/contact' : '/contact'}

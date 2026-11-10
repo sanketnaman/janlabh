@@ -26,6 +26,14 @@ function TelegramIcon({ className = 'h-5 w-5' }: { className?: string }) {
   );
 }
 
+function FacebookIcon({ className = 'h-5 w-5' }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+    </svg>
+  );
+}
+
 export default function CommunityCallout({
   lang = 'hi',
   variant = 'card',
@@ -43,12 +51,12 @@ export default function CommunityCallout({
             </div>
             <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white">
               {isHi
-                ? 'नई किस्त व लाभार्थी सूची की सूचना सीधे WhatsApp व Telegram पर पाएं'
-                : 'Get Instant Installment Dates & Beneficiary Lists on WhatsApp & Telegram'}
+                ? 'नई किस्त व लाभार्थी सूची की सूचना WhatsApp, Telegram व Facebook पर पाएं'
+                : 'Get Instant Installment Dates & Beneficiary Lists on WhatsApp, Telegram & Facebook'}
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
               {isHi
-                ? 'पीएम किसान, आवास योजना, छात्रवृत्ति व राज्य योजनाओं के नए आदेश और ई-केवाईसी की अंतिम तिथि कभी न चूकें।'
+                ? 'पीएम किसान, आवास योजना, लाड़ली बहना, छात्रवृत्ति व राज्य योजनाओं के नए आदेश और ई-केवाईसी की अंतिम तिथि कभी न चूकें।'
                 : 'Never miss government welfare notices, e-KYC deadlines, or direct benefit transfer announcements.'}
             </p>
           </div>
@@ -58,10 +66,10 @@ export default function CommunityCallout({
               href={COMMUNITY_CONFIG.whatsappChannelUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all"
+              className="inline-flex items-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all"
             >
-              <WhatsAppIcon className="h-5 w-5" />
-              <span>{isHi ? 'WhatsApp चैनल से जुड़ें' : 'Join WhatsApp'}</span>
+              <WhatsAppIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+              <span>{isHi ? 'WhatsApp' : 'WhatsApp'}</span>
               <ArrowUpRight className="h-4 w-4" />
             </a>
 
@@ -69,10 +77,21 @@ export default function CommunityCallout({
               href={COMMUNITY_CONFIG.telegramChannelUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all"
+              className="inline-flex items-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all"
             >
-              <TelegramIcon className="h-5 w-5" />
-              <span>{isHi ? 'Telegram चैनल से जुड़ें' : 'Join Telegram'}</span>
+              <TelegramIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+              <span>{isHi ? 'Telegram' : 'Telegram'}</span>
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
+
+            <a
+              href={COMMUNITY_CONFIG.facebookPageUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all"
+            >
+              <FacebookIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+              <span>{isHi ? 'Facebook' : 'Facebook'}</span>
               <ArrowUpRight className="h-4 w-4" />
             </a>
           </div>
@@ -107,27 +126,38 @@ export default function CommunityCallout({
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
         <a
           href={COMMUNITY_CONFIG.whatsappChannelUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-colors shadow-xs"
+          className="flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-colors shadow-xs"
         >
-          <WhatsAppIcon className="h-4 w-4" />
-          <span>{isHi ? 'WhatsApp चैनल जॉइन करें' : 'Join WhatsApp Channel'}</span>
-          <ArrowUpRight className="h-3.5 w-3.5 ml-auto" />
+          <WhatsAppIcon className="h-4 w-4 shrink-0" />
+          <span>{isHi ? 'WhatsApp चैनल' : 'WhatsApp'}</span>
+          <ArrowUpRight className="h-3.5 w-3.5 ml-auto opacity-75" />
         </a>
 
         <a
           href={COMMUNITY_CONFIG.telegramChannelUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2.5 px-4 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs transition-colors shadow-xs"
+          className="flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs transition-colors shadow-xs"
         >
-          <TelegramIcon className="h-4 w-4" />
-          <span>{isHi ? 'Telegram चैनल जॉइन करें' : 'Join Telegram Channel'}</span>
-          <ArrowUpRight className="h-3.5 w-3.5 ml-auto" />
+          <TelegramIcon className="h-4 w-4 shrink-0" />
+          <span>{isHi ? 'Telegram चैनल' : 'Telegram'}</span>
+          <ArrowUpRight className="h-3.5 w-3.5 ml-auto opacity-75" />
+        </a>
+
+        <a
+          href={COMMUNITY_CONFIG.facebookPageUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs transition-colors shadow-xs"
+        >
+          <FacebookIcon className="h-4 w-4 shrink-0" />
+          <span>{isHi ? 'Facebook पेज' : 'Facebook Page'}</span>
+          <ArrowUpRight className="h-3.5 w-3.5 ml-auto opacity-75" />
         </a>
       </div>
     </div>

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import StaticPageLayout from '@/components/StaticPageLayout';
 import { Mail, Send, CheckCircle2, MapPin, Clock, AlertCircle, Loader2, ExternalLink, ShieldCheck, Info } from 'lucide-react';
 import { Language } from '@/types';
+import { COMMUNITY_CONFIG } from '@/data/community';
 
 // Postal address configuration constant - set to a real postal address only if one exists
 const PUBLIC_ADDRESS: string | null = null;
@@ -164,6 +165,52 @@ export default function ContactView({ forcedLang }: ContactViewProps) {
                   <Clock className="h-3 w-3 text-slate-400 shrink-0" />
                   <span>{isHi ? 'हम 2–3 कार्य दिवसों में ईमेल का जवाब देते हैं।' : 'We reply to emails within 2–3 working days.'}</span>
                 </p>
+              </div>
+
+              {/* Official Social & Community Channels */}
+              <div className="p-4 bg-slate-50 dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2.5">
+                <div className="flex items-center gap-2 text-amber-600 dark:text-amber-400 font-bold text-xs uppercase tracking-wider">
+                  <ExternalLink className="h-4 w-4" />
+                  <span>{isHi ? 'आधिकारिक सोशल मीडिया व चैनल' : 'Official Social Channels'}</span>
+                </div>
+                <div className="flex flex-col gap-2 pt-1 text-xs">
+                  <a
+                    href={COMMUNITY_CONFIG.facebookPageUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+                  >
+                    <span className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-blue-600" />
+                      Facebook: /janlabh
+                    </span>
+                    <ExternalLink className="h-3.5 w-3.5 opacity-60" />
+                  </a>
+                  <a
+                    href={COMMUNITY_CONFIG.whatsappChannelUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors font-medium"
+                  >
+                    <span className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-emerald-600" />
+                      WhatsApp Channel
+                    </span>
+                    <ExternalLink className="h-3.5 w-3.5 opacity-60" />
+                  </a>
+                  <a
+                    href={COMMUNITY_CONFIG.telegramChannelUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 hover:border-sky-500 hover:text-sky-600 dark:hover:text-sky-400 transition-colors font-medium"
+                  >
+                    <span className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-sky-500" />
+                      Telegram: @janlabhindia
+                    </span>
+                    <ExternalLink className="h-3.5 w-3.5 opacity-60" />
+                  </a>
+                </div>
               </div>
 
               {/* Optional Physical Postal Address (Only rendered if PUBLIC_ADDRESS is non-null) */}
