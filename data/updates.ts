@@ -115,51 +115,58 @@ export const UPDATES: UpdateArticle[] = [
   {
     id: 'ayushman-70-plus-card',
     slug: 'ayushman-vaya-vandana-card-seniors-70-plus-rollout',
-    title_en: 'Ayushman Vaya Vandana Card: Free ₹5 Lakh Health Cover for All Citizens Aged 70+',
-    title_hi: 'आयुष्मान वय वंदना कार्ड: 70 वर्ष से अधिक के सभी बुजुर्गों को ₹5 लाख का मुफ्त इलाज',
+    title_en: 'Ayushman Vay Vandana Card (70+): How to Apply Online 2026',
+    title_hi: '70+ आयुष्मान कार्ड: राशन कार्ड नहीं, सिर्फ आधार से अप्लाई करें',
     category: 'scheme-update',
     publishedDate: 'October 31, 2026',
-    updatedDate: 'November 02, 2026',
-    lastVerified: 'November 02, 2026',
-    summary_en: 'Government of India has officially rolled out the Ayushman Vaya Vandana Card, extending a separate ₹5,00,000 annual hospitalization cover to every senior citizen aged 70 and above, regardless of income bracket.',
-    summary_hi: 'केंद्र सरकार ने आयुष्मान वय वंदना कार्ड योजना को राष्ट्रव्यापी रूप से लागू कर दिया है। इसके तहत 70 वर्ष और उससे अधिक आयु के सभी वरिष्ठ नागरिकों को आय सीमा के बिना ₹5 लाख का अलग मुफ्त इलाज मिलेगा।',
+    updatedDate: 'November 13, 2026',
+    lastVerified: 'November 13, 2026',
+    summary_en: 'All citizens aged 70+ are eligible for ₹5 lakh/year cashless cover, with no income limit. How to apply for the Vay Vandana Card with Aadhaar e-KYC.',
+    summary_hi: '70+ बुजुर्गों का वय वंदना कार्ड कैसे बनता है? पात्रता, ज़रूरी दस्तावेज़, आधार e-KYC के स्टेप और CGHS/ECHS वालों के लिए नियम।',
     keyFacts_en: [
-      'Universal coverage: No income limit, no ration card requirement for 70+ age group.',
-      'Senior citizens in existing Ayushman families receive an additional distinct ₹5 Lakh top-up dedicated strictly for their individual medical needs.',
-      'Enrolment takes less than 5 minutes using the "Ayushman App" or beneficiary.nha.gov.in via Aadhaar e-KYC.'
+      'Universal coverage: No income limit, no ration card requirement for 70+ age group (statutory verification strictly via Aadhaar birth year 1956 or earlier).',
+      'Senior citizens in existing Ayushman families receive an additional distinct ₹5 Lakh top-up dedicated strictly for their individual medical needs, preserving the family quota.',
+      'Seniors holding private health insurance can also apply and use this universal ₹5 Lakh card as secondary or top-up coverage.',
+      'Enrolment takes less than 5 minutes using the official "Ayushman App" or portal beneficiary.nha.gov.in via Aadhaar OTP, Biometric, or Face Authentication.'
     ],
     keyFacts_hi: [
-      'सार्वभौमिक योजना: 70+ आयु वर्ग के लिए कोई आय सीमा या राशन कार्ड की बाध्यता नहीं है।',
-      'पहले से आयुष्मान कवर वाले परिवारों के बुजुर्गों को पारिवारिक ₹5 लाख के अलावा अलग से ₹5 लाख का टॉप-अप मिलेगा।',
-      'beneficiary.nha.gov.in या आयुष्मान ऐप से आधार ई-केवाईसी के माध्यम से 5 मिनट में डिजिटल कार्ड बन जाता है।'
+      'सार्वभौमिक योजना: 70+ आयु वर्ग के लिए कोई आय सीमा या राशन कार्ड की बाध्यता नहीं है (आधार कार्ड में जन्म वर्ष 1956 या उससे पूर्व होना अनिवार्य)।',
+      'पहले से आयुष्मान कवर वाले परिवारों के बुजुर्गों को पारिवारिक ₹5 लाख के अलावा अलग से ₹5 लाख का विशेष टॉप-अप मिलेगा, जिससे परिवार का मूल कोटा सुरक्षित रहेगा।',
+      'प्राइवेट हेल्थ इंश्योरेंस वाले बुजुर्ग भी पात्र हैं और इसे अतिरिक्त टॉप-अप सुरक्षा कवच के रूप में इस्तेमाल कर सकते हैं।',
+      'beneficiary.nha.gov.in या आयुष्मान ऐप से आधार ई-केवाईसी या फेस-ऑथ के माध्यम से 5 मिनट में डिजिटल कार्ड बन जाता है।'
     ],
     importantDates_en: [
-      'National Rollout: Active across participating states',
-      'Immediate Card Generation: Instant PDF download post Aadhaar authentication'
+      'National Rollout: Active across all participating states and UTs nationwide',
+      'Immediate Card Generation: Instant digital Golden Card PDF download post Aadhaar authentication',
+      'Aadhaar Age Cutoff: Must be born in or before 1956 (turning 70 or above)'
     ],
     importantDates_hi: [
-      'राष्ट्रव्यापी शुरुआत: सभी सहभागी राज्यों में तत्काल प्रभावी',
-      'कार्ड निर्माण: आधार सत्यापन के तुरंत बाद डिजिटल कार्ड डाउनलोड'
+      'राष्ट्रव्यापी शुरुआत: देश के सभी सहभागी राज्यों व केंद्र शासित प्रदेशों में तत्काल प्रभावी',
+      'कार्ड निर्माण: आधार सत्यापन के तुरंत बाद डिजिटल गोल्डन कार्ड डाउनलोड व प्रिंट',
+      'आयु कट-ऑफ: आधार में जन्म वर्ष 1956 या उससे पहले का होना आवश्यक'
     ],
-    whoIsAffected_en: 'Every Indian citizen whose Aadhaar card indicates an age of 70 years or above (born in or before 1956).',
-    whoIsAffected_hi: 'प्रत्येक भारतीय नागरिक जिनका आधार कार्ड 70 वर्ष या उससे अधिक की आयु प्रमाणित करता है।',
+    whoIsAffected_en: 'Every Indian citizen whose Aadhaar card indicates an age of 70 years or above (born in or before 1956), and families seeking to add their elderly parents or grandparents to Ayushman Bharat.',
+    whoIsAffected_hi: 'प्रत्येक भारतीय नागरिक जिनका आधार कार्ड 70 वर्ष या उससे अधिक की आयु प्रमाणित करता है (जन्म वर्ष 1956 या पूर्व), तथा वे परिवार जो अपने बुजुर्ग माता-पिता या दादा-दादी का नाम आयुष्मान कार्ड में जोड़ना चाहते हैं।',
     whatShouldUsersDo_en: [
-      'Download the "Ayushman App" or visit beneficiary.nha.gov.in.',
-      'Select "Beneficiary", enter mobile OTP, and click on "Enrol for Ayushman Vaya Vandana".',
-      'Provide your Aadhaar number, complete face/OTP authentication, take a live selfie, and download the card.'
+      'Online Application (Fresh Card): Visit beneficiary.nha.gov.in or install the "Ayushman App". Select "Beneficiary", log in via mobile OTP, and click the "Enrolment for Ayushman Vaya Vandana (70+)" banner.',
+      'Aadhaar e-KYC: Enter the senior citizen’s Aadhaar number. Complete instant authentication via Aadhaar OTP, Fingerprint, or Face RD (phone camera live selfie).',
+      'How to Add Name in Existing Card: If your family already has an Ayushman Card, search your family PMJAY ID or Ration Card on beneficiary.nha.gov.in, select "Add Member", enter the senior citizen’s Aadhaar, and complete e-KYC to add them with their dedicated ₹5 Lakh pool.',
+      'Download & Print Card: Once e-KYC is validated, click "Download Card" to save the official distinct Golden Ayushman Vaya Vandana Card PDF with its verified QR code.'
     ],
     whatShouldUsersDo_hi: [
-      'beneficiary.nha.gov.in खोलें या मोबाइल में "Ayushman App" इंस्टॉल करें।',
-      'मोबाइल नंबर से ओटीपी लॉगिन करें और "Enrol for Ayushman Vaya Vandana" विकल्प चुनें।',
-      'आधार नंबर दर्ज कर ओटीपी या फेस-ऑथ से सत्यापन करें, सेल्फी लें और तुरंत कार्ड डाउनलोड करें।'
+      'ऑनलाइन आवेदन (नया कार्ड): beneficiary.nha.gov.in खोलें या मोबाइल में "Ayushman App" इंस्टॉल करें। "Beneficiary" विकल्प चुनकर मोबाइल ओटीपी से लॉगिन करें और "70+ वरिष्ठ नागरिकों के लिए आयुष्मान वय वंदना नामांकन" बैनर पर क्लिक करें।',
+      'आधार ई-केवाईसी: बुजुर्ग का आधार नंबर दर्ज करें। आधार ओटीपी, बायोमेट्रिक अथवा फेस आरडी (स्मार्टफोन कैमरे से लाइव सेल्फी) द्वारा तुरंत ई-केवाईसी सत्यापित करें।',
+      'पुराने कार्ड में नाम कैसे जोड़ें (Add Name): यदि परिवार के पास पहले से आयुष्मान कार्ड है, तो पोर्टल पर फैमिली आईडी या राशन कार्ड सर्च करें, "Add Member" विकल्प चुनें, बुजुर्ग का आधार नंबर दर्ज कर ई-केवाईसी पूरी करें। इससे उनका अलग ₹5 लाख टॉप-अप जुड़ जाएगा।',
+      'कार्ड डाउनलोड व प्रिंट: सत्यापन होते ही स्क्रीन पर "Download Card" पर क्लिक करें और विशिष्ट क्यूआर कोड युक्त गोल्डन आयुष्मान वय वंदना कार्ड पीडीएफ डाउनलोड कर प्रिंट कराएं।'
     ],
     officialSource: {
-      name: 'National Health Authority Notification',
+      name: 'National Health Authority Notification & Beneficiary Directory',
       authority: 'Ministry of Health & Family Welfare, Govt. of India',
       url: 'https://beneficiary.nha.gov.in',
-      verificationDate: 'November 02, 2026'
+      verificationDate: 'November 12, 2026'
     },
-    relatedSchemeSlug: 'ayushman-bharat-pmjay-health-card'
+    relatedSchemeSlug: 'senior-citizen-ayushman-card-70-plus',
+    bannerImage: '/images/schemes/senior-citizen-ayushman-card-70-plus.webp'
   },
   {
     id: 'nsp-otr-biometric-update',

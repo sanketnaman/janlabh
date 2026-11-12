@@ -42,10 +42,10 @@ export function findRelevantSchemes(input: SchemeFinderInput): SchemeFinderRecom
       reasons_hi.push('महिलाओं व गृहणियों के आर्थिक सशक्तिकरण हेतु समर्पित');
     }
 
-    if ((input.identity === 'senior' || input.ageGroup === '60-plus') && (scheme.category === 'health' || scheme.id === 'ayushman-bharat')) {
-      score += 45;
-      reasons_en.push('Senior citizens receive high-priority universal health coverage (Ayushman 70+)');
-      reasons_hi.push('वरिष्ठ नागरिकों हेतु उच्च प्राथमिकता मुफ्त स्वास्थ्य सुरक्षा');
+    if ((input.identity === 'senior' || input.ageGroup === '60-plus') && (scheme.category === 'health' || scheme.id === 'ayushman-bharat' || scheme.id === 'senior-citizen-ayushman-card-70-plus')) {
+      score += 55;
+      reasons_en.push('Senior citizens receive high-priority universal health coverage (Ayushman Vaya Vandana 70+)');
+      reasons_hi.push('वरिष्ठ नागरिकों हेतु उच्च प्राथमिकता मुफ्त स्वास्थ्य सुरक्षा (आयुष्मान वय वंदना 70+)');
     }
 
     if (input.identity === 'self-employed' && scheme.id === 'pm-vishwakarma') {

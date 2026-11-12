@@ -1197,7 +1197,128 @@ export const SCHEME_ELIGIBILITY_CONFIGS: Record<string, SchemeEligibilityConfig>
         ]
       };
     }
-  }
+  },
+  // 31. Senior Citizen Ayushman Card (70+ Age)
+  'senior-citizen-ayushman-card-70-plus': {
+    schemeId: 'senior-citizen-ayushman-card-70-plus',
+    schemeSlug: 'senior-citizen-ayushman-card-70-plus',
+    schemeTitle_en: 'Senior Citizen Ayushman Card (70+ Age)',
+    schemeTitle_hi: 'सीनियर सिटीजन आयुष्मान कार्ड (70+ आयु)',
+    questions: [
+      {
+        id: 'age_70_plus',
+        question_en: 'Is the senior citizen 70 years of age or older as per the birth date in their Aadhaar card (born in 1956 or earlier)?',
+        question_hi: 'क्या वरिष्ठ नागरिक की आयु आधार कार्ड में दर्ज जन्मतिथि के अनुसार 70 वर्ष या उससे अधिक है (जन्म वर्ष 1956 या उससे पूर्व)?',
+        helpText_en: 'Universal eligibility under Ayushman Vaya Vandana is strictly determined by Aadhaar date of birth without income or ration card barriers.',
+        helpText_hi: 'आयुष्मान वय वंदना योजना में बिना किसी आय या राशन कार्ड की बाध्यता के केवल आधार जन्म वर्ष से 70+ आयु तय होती है।',
+        options: [
+          { label_en: 'Yes (Age 70 or older, born 1956 or earlier)', label_hi: 'हाँ (उम्र 70 वर्ष या अधिक, जन्म वर्ष 1956 या पूर्व)', value: 'yes' },
+          { label_en: 'No (Age is below 70 years)', label_hi: 'नहीं (उम्र 70 वर्ष से कम है)', value: 'no' },
+          { label_en: 'Not sure / Aadhaar date of birth needs verification', label_hi: 'निश्चित नहीं / आधार में जन्मतिथि जांचनी होगी', value: 'not-sure' }
+        ]
+      },
+      {
+        id: 'aadhaar_readiness',
+        question_en: 'Do you have an active Aadhaar card and a mobile number for OTP (or a smartphone for Face Authentication)?',
+        question_hi: 'क्या आपके पास सक्रिय आधार कार्ड और ओटीपी हेतु मोबाइल (अथवा फेस-स्कैन हेतु स्मार्टफोन) उपलब्ध है?',
+        helpText_en: 'Paperless digital registration requires instant e-KYC through Aadhaar OTP, Biometric, or Face RD.',
+        helpText_hi: 'कागजरहित डिजिटल रजिस्ट्रेशन के लिए आधार ओटीपी, बायोमेट्रिक अथवा फेस आरडी ई-केवाईसी आवश्यक है।',
+        options: [
+          { label_en: 'Yes (Aadhaar ready & mobile/face scan available)', label_hi: 'हाँ (आधार और मोबाइल ओटीपी/फेस-स्कैन उपलब्ध है)', value: 'yes' },
+          { label_en: 'No (Mobile not linked with Aadhaar)', label_hi: 'नहीं (आधार से मोबाइल नंबर लिंक नहीं है)', value: 'no' },
+          { label_en: 'Not sure / Need offline CSC or hospital assistance', label_hi: 'निश्चित नहीं / सीएससी या अस्पताल जाकर मदद लेंगे', value: 'not-sure' }
+        ]
+      },
+      {
+        id: 'cghs_echs_opt',
+        question_en: 'Is the senior citizen currently benefiting from central contributory healthcare schemes like CGHS, ECHS (ex-servicemen), or CAPF?',
+        question_hi: 'क्या वरिष्ठ नागरिक वर्तमान में केंद्र सरकार की CGHS, पूर्व सैनिकों की ECHS अथवा CAPF स्वास्थ्य योजना के लाभार्थी हैं?',
+        isExclusionCheck: true,
+        helpText_en: 'Senior citizens with CGHS/ECHS have a one-time choice to either retain their existing scheme or switch to Ayushman Vaya Vandana. Private insurance holders are fully eligible.',
+        helpText_hi: 'CGHS/ECHS लाभार्थियों को अपनी पुरानी योजना रखने या आयुष्मान में आने का एक बार विकल्प मिलता है। प्राइवेट इंश्योरेंस वाले सीधे पात्र हैं।',
+        options: [
+          { label_en: 'No (Not enrolled in CGHS/ECHS/CAPF, or holds private insurance)', label_hi: 'नहीं (CGHS/ECHS नहीं है, या केवल प्राइवेट इंश्योरेंस है)', value: 'no' },
+          { label_en: 'Yes (Currently enrolled in CGHS / ECHS / CAPF)', label_hi: 'हाँ (वर्तमान में CGHS / ECHS / CAPF के लाभार्थी हैं)', value: 'yes' },
+          { label_en: 'Not sure about government health coverage status', label_hi: 'निश्चित नहीं (सरकारी स्वास्थ्य योजना के दर्जे की जानकारी नहीं)', value: 'not-sure' }
+        ]
+      }
+    ],
+    evaluate: (answers) => {
+      const { age_70_plus, aadhaar_readiness, cghs_echs_opt } = answers;
+
+      if (age_70_plus === 'no') {
+        return {
+          resultState: 'potentially_not_eligible',
+          explanation_en: 'The universal ₹5 Lakh Ayushman Vaya Vandana coverage is strictly reserved for senior citizens aged 70 years and above (born in 1956 or earlier).',
+          explanation_hi: 'सार्वभौमिक ₹5 लाख की आयुष्मान वय वंदना योजना विशेष रूप से 70 वर्ष या उससे अधिक आयु के वरिष्ठ नागरिकों (जन्म वर्ष 1956 या पूर्व) के लिए है।',
+          whatThisMeans_en: 'Individuals aged below 70 cannot apply under this universal scheme without income criteria. However, if your household meets general SECC / state ration card criteria, you may still be eligible for the standard family Ayushman Card.',
+          whatThisMeans_hi: '70 वर्ष से कम उम्र के व्यक्ति बिना आय सीमा वाली इस विशेष योजना में पात्र नहीं हैं। हालांकि यदि आपका परिवार सामान्य राशन कार्ड या सामाजिक-आर्थिक सूची में आता है, तो आप सामान्य पारिवारिक आयुष्मान कार्ड के पात्र हो सकते हैं।',
+          nextSteps_en: [
+            'Check standard Ayushman Bharat PM-JAY eligibility based on family ration card / SECC status.',
+            'Wait until reaching 70 years of age as recorded in Aadhaar to apply under this universal senior benefit.'
+          ],
+          nextSteps_hi: [
+            'परिवार के राशन कार्ड अथवा सामाजिक-आर्थिक स्थिति के आधार पर सामान्य आयुष्मान भारत योजना की पात्रता जांचें।',
+            'आधार कार्ड में 70 वर्ष की आयु पूर्ण होने पर इस सार्वभौमिक योजना में सीधे आवेदन करें।'
+          ]
+        };
+      }
+
+      if (cghs_echs_opt === 'yes') {
+        return {
+          resultState: 'needs_verification',
+          explanation_en: 'Beneficiaries of CGHS, ECHS (military veterans), or CAPF medical cover cannot claim dual cashless benefits simultaneously.',
+          explanation_hi: 'केंद्र सरकार की CGHS, पूर्व सैनिकों की ECHS अथवा CAPF योजना के लाभार्थी दोनों योजनाओं से एक साथ दोहरा कैशलेस लाभ नहीं ले सकते।',
+          whatThisMeans_en: 'You are eligible to enroll, but government rules require a one-time choice: you may either continue with your existing CGHS/ECHS coverage or opt out and switch over to Ayushman Vaya Vandana.',
+          whatThisMeans_hi: 'आप आवेदन के पात्र हैं, परंतु सरकारी नियमानुसार आपको एक बार विकल्प चुनना होगा: या तो पुरानी CGHS/ECHS योजना चालू रखें या उसे छोड़कर आयुष्मान वय वंदना कार्ड अपनाएं।',
+          nextSteps_en: [
+            'Compare benefits of your existing CGHS/ECHS network versus Ayushman empanelled private/public hospitals.',
+            'If opting for Ayushman Vaya Vandana, submit the migration/opt-in choice during registration on beneficiary.nha.gov.in.'
+          ],
+          nextSteps_hi: [
+            'अपने मौजूदा CGHS/ECHS नेटवर्क और आयुष्मान के 29,000+ सूचीबद्ध अस्पतालों की सुविधाओं की तुलना करें।',
+            'यदि आयुष्मान वय वंदना चुनना चाहते हैं, तो beneficiary.nha.gov.in पर आवेदन करते समय स्विचिंग विकल्प चुनें।'
+          ]
+        };
+      }
+
+      if (age_70_plus === 'not-sure' || aadhaar_readiness === 'no' || aadhaar_readiness === 'not-sure') {
+        return {
+          resultState: 'needs_verification',
+          explanation_en: 'You meet the fundamental criteria, but Aadhaar age verification or mobile/biometric authentication readiness is required.',
+          explanation_hi: 'आप बुनियादी पात्रता के दायरे में हैं, परंतु आधार कार्ड में जन्मतिथि का सत्यापन और ओटीपी/फेस-स्कैन की तैयारी आवश्यक है।',
+          whatThisMeans_en: 'Universal approval is instant once the Senior Citizen’s Aadhaar shows birth year 1956 or earlier and authentication succeeds.',
+          whatThisMeans_hi: 'जैसे ही बुजुर्ग के आधार कार्ड में 1956 या उससे पहले का जन्म वर्ष सत्यापित होगा और ई-केवाईसी होगी, तुरंत कार्ड बन जाएगा।',
+          nextSteps_en: [
+            'Verify that the senior citizen’s Aadhaar card clearly shows birth year 1956 or earlier.',
+            'If mobile is not linked, install the official "Ayushman App" along with "Aadhaar Face RD" for camera face scan, or visit the nearest CSC / Hospital Ayushman Mitra desk.'
+          ],
+          nextSteps_hi: [
+            'जांचें कि बुजुर्ग के आधार कार्ड में जन्म वर्ष 1956 या उससे पहले का दर्ज है।',
+            'यदि मोबाइल लिंक नहीं है, तो स्मार्टफोन में "Ayushman App" और "Aadhaar Face RD" से चेहरे का स्कैन करें, या नजदीकी सीएससी/अस्पताल के आयुष्मान मित्र से संपर्क करें।'
+          ]
+        };
+      }
+
+      return {
+        resultState: 'potentially_eligible',
+        explanation_en: 'You satisfy all conditions for the 70+ Universal Senior Citizen Ayushman Vaya Vandana Card: Age 70+, active Aadhaar, and no exclusion barriers.',
+        explanation_hi: 'आप 70+ सार्वभौमिक सीनियर सिटीजन आयुष्मान वय वंदना कार्ड की सभी शर्तों को पूरा करते हैं: 70+ आयु, वैध आधार और कोई अपात्रता नहीं।',
+        whatThisMeans_en: 'You are eligible to immediately generate the Golden Ayushman Vaya Vandana Card offering ₹5,00,000 annual free hospitalization across 29,000+ hospitals with zero income barrier.',
+        whatThisMeans_hi: 'आप देश के 29,000+ अस्पतालों में ₹5,00,000 के वार्षिक मुफ्त कैशलेस इलाज हेतु तुरंत गोल्डन आयुष्मान वय वंदना कार्ड प्राप्त करने के पात्र हैं।',
+        nextSteps_en: [
+          'Visit beneficiary.nha.gov.in or open the "Ayushman App" on your phone.',
+          'Select "Beneficiary" login via mobile OTP and click "Enrolment for Ayushman Vaya Vandana (70+)" banner.',
+          'Input the Senior Citizen Aadhaar number, complete OTP/Face e-KYC, and instantly download the Card PDF.'
+        ],
+        nextSteps_hi: [
+          'beneficiary.nha.gov.in पर जाएं या मोबाइल में "Ayushman App" खोलें।',
+          'मोबाइल ओटीपी से "Beneficiary" लॉगिन करें और "70+ वरिष्ठ नागरिकों के लिए आयुष्मान वय वंदना कार्ड नामांकन" बैनर पर क्लिक करें।',
+          'बुजुर्ग का आधार नंबर दर्ज करें, ओटीपी या फेस ई-केवाईसी पूरा करें और तुरंत कार्ड पीडीएफ डाउनलोड करें।'
+        ]
+      };
+    }
+  },
 };
 
 export function getSchemeEligibilityConfig(schemeIdOrSlug: string): SchemeEligibilityConfig | undefined {
