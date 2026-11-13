@@ -113,6 +113,14 @@ export default function Footer({ lang, onOpenLegal, onSelectNav }: FooterProps) 
               </li>
               <li>
                 <Link
+                  href={lang === 'hi' ? '/hi/articles' : '/articles'}
+                  className="hover:text-amber-400 transition-colors text-slate-300 block"
+                >
+                  {lang === 'hi' ? 'नागरिक गाइड्स व समाधान' : 'Citizen Guides & How-To'}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={lang === 'hi' ? '/hi/updates' : '/updates'}
                   className="hover:text-amber-400 transition-colors text-slate-300 block"
                 >

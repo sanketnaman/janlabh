@@ -31,7 +31,8 @@ export default function Header({
     { id: 'finder', label_en: 'Find Schemes', label_hi: 'योजना खोजें' },
     { id: 'checker', label_en: 'Check Eligibility', label_hi: 'पात्रता जांचें' },
     { id: 'states', label_en: 'States', label_hi: 'राज्य' },
-    { id: 'updates', label_en: 'Latest Updates', label_hi: 'ताजा अपडेट' },
+    { id: 'articles', label_en: 'Articles', label_hi: 'गाइड्स व समाधान' },
+    { id: 'updates', label_en: 'Updates', label_hi: 'ताजा अपडेट' },
     { id: 'trust', label_en: 'Why JanLabh', label_hi: 'भरोसा व नीतियां' },
   ];
 
@@ -41,6 +42,7 @@ export default function Header({
     if (id === 'finder') return `${prefix}/finder`;
     if (id === 'checker') return `${prefix}/checker`;
     if (id === 'states') return `${prefix}/states`;
+    if (id === 'articles') return `${prefix}/articles`;
     if (id === 'updates') return `${prefix}/updates`;
     if (id === 'trust') return `${prefix}/about`;
     return prefix || '/';

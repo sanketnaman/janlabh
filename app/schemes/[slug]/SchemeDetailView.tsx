@@ -31,8 +31,10 @@ import {
   CheckSquare,
   Square,
   AlertTriangle,
-  UserCheck
+  UserCheck,
+  BookOpen
 } from 'lucide-react';
+import { ARTICLES } from '@/data/articles';
 
 interface SchemeDetailViewProps {
   scheme: Scheme;
@@ -52,6 +54,16 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
   const [canNativeShare, setCanNativeShare] = useState(false);
   const shareRef = useRef<HTMLDivElement>(null);
   const [checkedDocs, setCheckedDocs] = useState<Record<number, boolean>>({});
+
+  const relevantArticles = React.useMemo(() => {
+    return ARTICLES.filter((a) => {
+      if (a.relatedSchemeSlug === scheme.slug) return true;
+      if (a.relatedStateId && a.relatedStateId === scheme.state) return true;
+      const isDbtScheme = ['farmers', 'women', 'pension', 'scholarships', 'employment'].includes(scheme.category);
+      if (isDbtScheme && a.id === 'bank-account-aadhaar-npci-link-dbt-status-check-online') return true;
+      return false;
+    });
+  }, [scheme.slug, scheme.state, scheme.category]);
 
   useEffect(() => {
     if (typeof navigator !== 'undefined' && typeof navigator.share === 'function') {
@@ -713,6 +725,58 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                     <div className="mt-3 pt-2 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-[11px] font-semibold text-amber-700 dark:text-amber-400">
                       <span>{isHi ? 'गाइड पढ़ें' : 'Read Guide'}</span>
                       <ChevronRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Related Official Guides & PDF Forms (Internal Linking) */}
+          {relevantArticles.length > 0 && (
+            <section className="bg-gradient-to-r from-emerald-50/70 via-teal-50/40 to-slate-50 dark:from-slate-900 dark:via-emerald-950/20 dark:to-slate-900 p-6 rounded-2xl border border-emerald-200 dark:border-emerald-800/80 space-y-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <BookOpen className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                  <h2 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">
+                    {isHi ? 'संबंधित आधिकारिक गाइड्स व डाउनलोड प्रपत्र' : 'Related Official Guides & PDF Forms'}
+                  </h2>
+                </div>
+                <Link
+                  href={isHi ? '/hi/articles' : '/articles'}
+                  className="text-xs font-bold text-emerald-700 dark:text-emerald-400 hover:underline flex items-center gap-1"
+                >
+                  <span>{isHi ? 'सभी गाइड्स' : 'All Guides'}</span>
+                  <ChevronRight className="h-3 w-3" />
+                </Link>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                {relevantArticles.map((art) => (
+                  <Link
+                    key={art.id}
+                    href={isHi ? `/hi/articles/${art.slug}` : `/articles/${art.slug}`}
+                    className="group p-4 rounded-xl bg-white dark:bg-slate-800 border border-emerald-100 dark:border-slate-700 hover:border-emerald-500/60 hover:shadow-md transition-all flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300">
+                          {isHi ? art.categoryLabel_hi : art.categoryLabel_en}
+                        </span>
+                        <span className="text-[10px] text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                          <Clock className="h-2.5 w-2.5" />
+                          {isHi ? art.readTime_hi : art.readTime_en}
+                        </span>
+                      </div>
+                      <h3 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 line-clamp-2 transition-colors">
+                        {isHi ? art.title_hi : art.title_en}
+                      </h3>
+                      <p className="mt-1 text-[11px] text-slate-600 dark:text-slate-400 line-clamp-2">
+                        {isHi ? art.summary_hi : art.summary_en}
+                      </p>
+                    </div>
+                    <div className="mt-3 flex items-center gap-1 text-[11px] font-bold text-emerald-700 dark:text-emerald-400">
+                      <span>{isHi ? 'गाइड व फॉर्म डाउनलोड करें' : 'Read Guide & Download PDF'}</span>
+                      <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </Link>
                 ))}

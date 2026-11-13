@@ -229,3 +229,75 @@ export interface SchemeEligibilityConfig {
     nextSteps_hi: string[];
   };
 }
+
+export type ArticleCategory = 
+  | 'how-to'
+  | 'problem-solution'
+  | 'documents'
+  | 'status-guide';
+
+export interface ArticleSection {
+  heading_en: string;
+  heading_hi: string;
+  content_en: string;
+  content_hi: string;
+  callout_en?: string;
+  callout_hi?: string;
+}
+
+export interface ArticleDownloadablePdf {
+  title_en: string;
+  title_hi: string;
+  description_en: string;
+  description_hi: string;
+  fileSize: string;
+  fileUrl: string;
+  isOfficialGovt?: boolean;
+  officialSourceLabel?: string;
+}
+
+export interface Article {
+  id: string;
+  slug: string;
+  title_en: string;
+  title_hi: string;
+  category: ArticleCategory;
+  categoryLabel_en: string;
+  categoryLabel_hi: string;
+  publishedDate: string;
+  updatedDate: string;
+  lastVerified: string;
+  readTime_en: string;
+  readTime_hi: string;
+  summary_en: string;
+  summary_hi: string;
+  metaDescription_en: string;
+  metaDescription_hi: string;
+  keywords: string[];
+  bannerImage?: string;
+  
+  // Quick Highlight Box
+  problemHighlight_en?: string;
+  problemHighlight_hi?: string;
+  solutionSummary_en?: string;
+  solutionSummary_hi?: string;
+  
+  // Structured Article Body
+  sections: ArticleSection[];
+  
+  // Step-by-Step Action List
+  steps_en?: string[];
+  steps_hi?: string[];
+  
+  // Frequently Asked Questions
+  faqs_en?: { q: string; a: string }[];
+  faqs_hi?: { q: string; a: string }[];
+  
+  // Cross Links
+  relatedSchemeSlug?: string;
+  relatedStateId?: string;
+  officialLinks?: { title_en: string; title_hi: string; url: string }[];
+  
+  // Downloadable PDFs & Forms
+  downloadablePdfs?: ArticleDownloadablePdf[];
+}

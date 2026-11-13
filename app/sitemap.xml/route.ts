@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { SCHEMES } from '@/data/schemes';
 import { STATES, CATEGORIES } from '@/data/categories';
 import { UPDATES } from '@/data/updates';
+import { ARTICLES } from '@/data/articles';
 
 export async function GET() {
   const baseUrl = 'https://janlabh.in';
@@ -24,6 +25,7 @@ export async function GET() {
     { path: '/categories', priority: '0.9', freq: 'weekly' as const },
     { path: '/finder', priority: '0.8', freq: 'weekly' as const },
     { path: '/checker', priority: '0.8', freq: 'weekly' as const },
+    { path: '/articles', priority: '0.9', freq: 'daily' as const },
     { path: '/updates', priority: '0.9', freq: 'daily' as const },
   ];
 
@@ -147,6 +149,29 @@ export async function GET() {
       lastmod: updateDate,
       changefreq: 'weekly',
       priority: '0.8',
+    });
+  });
+
+  // 7. Dynamic Citizen Guides & Problem Solving Articles (EN & HI)
+  ARTICLES.forEach((art) => {
+    const artDate = art.updatedDate
+      ? new Date(art.updatedDate).toISOString().split('T')[0]
+      : today;
+
+    // EN article
+    entries.push({
+      loc: `${baseUrl}/articles/${art.slug}`,
+      lastmod: artDate,
+      changefreq: 'weekly',
+      priority: '0.85',
+    });
+
+    // HI article
+    entries.push({
+      loc: `${baseUrl}/hi/articles/${art.slug}`,
+      lastmod: artDate,
+      changefreq: 'weekly',
+      priority: '0.85',
     });
   });
 
