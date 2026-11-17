@@ -11,6 +11,7 @@ import Footer from '@/components/Footer';
 import SearchModal from '@/components/SearchModal';
 import AdBannerSlot from '@/components/AdBannerSlot';
 import CommunityCallout from '@/components/CommunityCallout';
+import DocumentSlipModal from '@/components/DocumentSlipModal';
 import {
   ShieldCheck,
   CheckCircle2,
@@ -33,7 +34,8 @@ import {
   AlertTriangle,
   UserCheck,
   BookOpen,
-  MapPin
+  MapPin,
+  Printer
 } from 'lucide-react';
 import { ARTICLES } from '@/data/articles';
 
@@ -55,6 +57,7 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
   const [canNativeShare, setCanNativeShare] = useState(false);
   const shareRef = useRef<HTMLDivElement>(null);
   const [checkedDocs, setCheckedDocs] = useState<Record<number, boolean>>({});
+  const [slipModalOpen, setSlipModalOpen] = useState(false);
 
   const relevantArticles = React.useMemo(() => {
     return ARTICLES.filter((a) => {
@@ -611,14 +614,28 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
 
           {/* Required Documents (Interactive Checkbox List) */}
           <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                <FileText className="h-5 w-5 text-amber-600 dark:text-amber-400" />
-                <span>{isHi ? 'आवश्यक दस्तावेज चेकलिस्ट' : 'Required Documents Checklist'}</span>
-              </h2>
-              <span className="text-[11px] text-slate-500 dark:text-slate-400">
-                {isHi ? 'तैयार दस्तावेजों पर टिक करें' : 'Click to check off prepared documents'}
-              </span>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-2 border-b border-slate-100 dark:border-slate-800">
+              <div>
+                <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                  <FileText className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+                  <span>{isHi ? 'आवश्यक दस्तावेज चेकलिस्ट' : 'Required Documents Checklist'}</span>
+                </h2>
+                <span className="text-[11px] text-slate-500 dark:text-slate-400">
+                  {isHi ? 'तैयार दस्तावेजों पर टिक करें या CSC / साइबर कैफे हेतु पर्ची प्रिंट करें' : 'Click to check off prepared documents or print slip for CSC / cyber cafe'}
+                </span>
+              </div>
+
+              <div className="flex items-center gap-2 flex-wrap">
+                <button
+                  type="button"
+                  onClick={() => setSlipModalOpen(true)}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-xs transition-all hover:shadow cursor-pointer"
+                  title={isHi ? 'दस्तावेज़ पर्ची A4 प्रिंट करें या पीडीएफ सेव करें' : 'Print Document Slip or Save as PDF'}
+                >
+                  <Printer className="h-3.5 w-3.5" />
+                  <span>{isHi ? 'दस्तावेज़ पर्ची प्रिंट / PDF' : 'Print / Download Slip'}</span>
+                </button>
+              </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
               {(isHi ? scheme.requiredDocuments_hi : scheme.requiredDocuments_en).map((doc, idx) => {
@@ -841,6 +858,14 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
         lang={lang}
         onOpenLegal={handleOpenLegal}
         onSelectNav={handleSelectNav}
+      />
+
+      <DocumentSlipModal
+        isOpen={slipModalOpen}
+        onClose={() => setSlipModalOpen(false)}
+        scheme={scheme}
+        isHi={isHi}
+        checkedDocs={checkedDocs}
       />
 
       <SearchModal
