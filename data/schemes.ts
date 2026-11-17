@@ -4,8 +4,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'pm-kisan',
     slug: 'pm-kisan-samman-nidhi',
-    title_en: 'PM Kisan 24th Installment Released: 25th Date Status, e-KYC',
-    title_hi: 'पीएम किसान 24वीं किस्त जारी: 25वीं किस्त की स्थिति व e-KYC',
+    title_en: 'PM Kisan 2026: ₹2,000 Next Installment Status Check, Beneficiary List & eKYC',
+    title_hi: 'पीएम किसान सम्मान निधि 2026: ₹2,000 अगली किस्त स्टेटस, नई लाभार्थी लिस्ट व e-KYC',
     shortTitle_en: 'PM-Kisan Samman Nidhi',
     shortTitle_hi: 'प्रधानमंत्री किसान सम्मान निधि',
     category: 'farmers',
@@ -240,8 +240,8 @@ export const SCHEMES: Scheme[] = [
       }
     ],
     keywords: [],
-    metaDescription_en: 'PM Kisan 24th installment released on 30 Oct 2026. Check 25th installment status, Aadhaar payment credit status, e-KYC update and village list.',
-    metaDescription_hi: 'पीएम किसान 24वीं किस्त 30 अक्टूबर 2026 को जारी। 25वीं किस्त की आधिकारिक स्थिति, आधार पेमेंट स्टेटस चेक, e-KYC और विलेज लिस्ट।'
+    metaDescription_en: 'PM Kisan Samman Nidhi 2026: Check ₹2,000 installment payment status, new farmer beneficiary list, Aadhaar e-KYC, and registration on pmkisan.gov.in.',
+    metaDescription_hi: 'पीएम किसान सम्मान निधि 2026: ₹2,000 अगली किस्त की स्थिति, नई लाभार्थी सूची, आधार e-KYC और pmkisan.gov.in पर ऑनलाइन आवेदन की पूरी जानकारी।'
   },
   {
     id: 'ayushman-bharat',
@@ -744,10 +744,12 @@ export const SCHEMES: Scheme[] = [
       'maiya samman yojana update',
       'maiya samman yojana news',
       'maiya samman yojana news today',
-      'maiya samman yojana today news'
+      'maiya samman yojana today news',
+      'is maiya samman yojana closed',
+      'क्या मंईयां सम्मान योजना बंद हो गई है'
     ],
-    metaDescription_en: '✅ Jharkhand Maiya Samman Yojana 2026: When will your ₹1,000/₹2,500 DBT payment arrive? Check next installment date, Aadhaar payment status online, new beneficiary list & download PDF form.',
-    metaDescription_hi: '✅ मंईयां सम्मान योजना 2026: आपका ₹1000/₹2500 का पैसा खाते में कब आएगा? जानिए अगली किस्त की तारीख, आधार से DBT पेमेंट स्टेटस चेक, नई लिस्ट व सत्यापन फॉर्म PDF डाउनलोड की 100% सही जानकारी।'
+    metaDescription_en: '✅ Jharkhand Maiya Samman Yojana 2026: Is scheme closed? No, ₹2,500 DBT assistance is active! Check next installment payment date, Aadhaar status online & download PDF form.',
+    metaDescription_hi: '✅ मंईयां सम्मान योजना 2026: क्या योजना बंद है? नहीं, ₹2,500 सहायता चालू है! जानिए अगली किस्त कब आएगी, DBT पेमेंट स्टेटस चेक, नई लिस्ट व सत्यापन फॉर्म PDF डाउनलोड करें।'
   },
   {
     id: 'pm-awas-yojana',
@@ -1472,10 +1474,13 @@ export const SCHEMES: Scheme[] = [
       'what is abua awas yojana in jharkhand',
       'abua awas yojana benefits',
       'abua awas yojana me kya kya document chahiye',
-      'abua awas yojana 2026'
+      'abua awas yojana 2026',
+      'abua awas yojana - ग्रामीण list',
+      'abua awas ka paisa kab milega 2026',
+      'abua awas yojana list pdf'
     ],
-    metaDescription_en: '✅ Jharkhand Abua Awas Yojana 2026: Check your name in the new beneficiary list online, ₹2 Lakh grant installment schedule (4 installments), Aadhaar status check, 3-room house naksha & PDF form.',
-    metaDescription_hi: '✅ अबुआ आवास योजना झारखंड 2026: नई ग्रामीण/शहरी लिस्ट में अपना नाम कैसे देखें? जानिए 3 कमरों के मकान हेतु ₹2 लाख की 4 किस्तें, आधार से स्टेटस चेक, नक्शा और फॉर्म PDF डाउनलोड का 100% सही तरीका।'
+    metaDescription_en: '✅ Jharkhand Abua Awas Yojana 2026: Check your name in new Gramin list PDF online, ₹2 Lakh grant installment dates, paisa kab milega, Aadhaar status check & PDF form.',
+    metaDescription_hi: '✅ अबुआ आवास योजना झारखंड 2026: नई ग्रामीण लिस्ट PDF डाउनलोड करें, अगली किस्त का पैसा कब मिलेगा, 3 कमरों हेतु ₹2 लाख सहायता व स्टेटस चेक करने की पूरी जानकारी।'
   },
   {
     id: 'national-scholarship-portal',

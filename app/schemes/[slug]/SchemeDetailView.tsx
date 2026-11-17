@@ -32,7 +32,8 @@ import {
   Square,
   AlertTriangle,
   UserCheck,
-  BookOpen
+  BookOpen,
+  MapPin
 } from 'lucide-react';
 import { ARTICLES } from '@/data/articles';
 
@@ -216,6 +217,17 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
             <Link href={isHi ? '/hi/schemes' : '/schemes'} className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium">
               {isHi ? 'सभी योजनाएं' : 'All Schemes'}
             </Link>
+            {scheme.state && scheme.state !== 'all-india' && (
+              <>
+                <ChevronRight className="h-3 w-3 text-slate-400" />
+                <Link
+                  href={isHi ? `/hi/states/${scheme.state}` : `/states/${scheme.state}`}
+                  className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-medium"
+                >
+                  {isHi ? scheme.stateLabel_hi : scheme.stateLabel_en}
+                </Link>
+              </>
+            )}
             <ChevronRight className="h-3 w-3 text-slate-400" />
             <span className="font-semibold text-slate-800 dark:text-slate-200 truncate max-w-xs">
               {isHi ? scheme.shortTitle_hi : scheme.shortTitle_en}
@@ -403,9 +415,23 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
           {/* Top Title & Metadata Header */}
           <div className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="px-2.5 py-1 text-xs font-semibold rounded-md bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300">
-                {isHi ? scheme.stateLabel_hi : scheme.stateLabel_en}
-              </span>
+              {scheme.state && scheme.state !== 'all-india' ? (
+                <Link
+                  href={isHi ? `/hi/states/${scheme.state}` : `/states/${scheme.state}`}
+                  className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-md bg-amber-100 dark:bg-amber-950/70 text-amber-900 dark:text-amber-300 hover:bg-amber-200 dark:hover:bg-amber-900 transition-colors"
+                >
+                  <MapPin className="h-3 w-3 text-amber-700 dark:text-amber-400" />
+                  <span>{isHi ? `${scheme.stateLabel_hi} कल्याण हब` : `${scheme.stateLabel_en} Welfare Hub`}</span>
+                  <ChevronRight className="h-3 w-3" />
+                </Link>
+              ) : (
+                <Link
+                  href={isHi ? '/hi/states/all-india' : '/states/all-india'}
+                  className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-md bg-amber-100 dark:bg-amber-950/70 text-amber-900 dark:text-amber-300 hover:bg-amber-200 dark:hover:bg-amber-900 transition-colors"
+                >
+                  <span>{isHi ? scheme.stateLabel_hi : scheme.stateLabel_en}</span>
+                </Link>
+              )}
               <span className="px-2.5 py-1 text-xs font-semibold rounded-md bg-blue-100 dark:bg-blue-950/70 text-blue-800 dark:text-blue-300 uppercase">
                 {scheme.category}
               </span>

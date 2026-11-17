@@ -8,6 +8,7 @@ import { useTheme } from '@/hooks/useTheme';
 import { SCHEMES } from '@/data/schemes';
 import { UPDATES } from '@/data/updates';
 import { CATEGORIES, STATES } from '@/data/categories';
+import { ARTICLES } from '@/data/articles';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
@@ -38,7 +39,10 @@ import {
   Tag,
   Layers,
   FileCheck2,
-  Bell
+  Bell,
+  FileText,
+  Download,
+  Clock
 } from 'lucide-react';
 
 interface HomePageClientProps {
@@ -204,6 +208,87 @@ export default function HomePageClient({ initialLang = 'en' }: HomePageClientPro
                   onSelect={(s) => router.push(isHi ? `/hi/schemes/${s.slug}` : `/schemes/${s.slug}`)}
                   onCheckEligibility={(s) => router.push(isHi ? `/hi/checker?scheme=${s.id}` : `/checker?scheme=${s.id}`)}
                 />
+              ))}
+            </div>
+          </section>
+
+          {/* Section: Featured Guides & Downloadable PDF Directory */}
+          <section aria-labelledby="articles-title" className="mb-14">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-6">
+              <div>
+                <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">
+                  <FileText className="h-3.5 w-3.5" />
+                  <span>{isHi ? 'मार्गदर्शिका एवं आधिकारिक पीडीएफ' : 'Citizen Guides & Verified PDFs'}</span>
+                </div>
+                <h2 id="articles-title" className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+                  {isHi ? 'महत्वपूर्ण सरकारी गाइड्स व फॉर्म डाउनलोड 2026' : 'Featured Welfare Guides & Official Form Downloads'}
+                </h2>
+              </div>
+              <Link
+                href={isHi ? '/hi/articles' : '/articles'}
+                className="text-xs font-bold text-emerald-700 dark:text-emerald-400 hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors flex items-center gap-1"
+              >
+                <span>{isHi ? 'सभी गाइड्स देखें' : 'View All Guides'}</span>
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {ARTICLES.map((art) => (
+                <Link
+                  key={art.id}
+                  href={isHi ? `/hi/articles/${art.slug}` : `/articles/${art.slug}`}
+                  className="group bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between"
+                >
+                  <div>
+                    {art.bannerImage && (
+                      <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-950">
+                        <img
+                          src={art.bannerImage}
+                          alt={isHi ? art.title_hi : art.title_en}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+                        <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+                          <span className="px-2.5 py-1 rounded-full bg-emerald-600/90 text-white font-bold backdrop-blur-md text-[11px]">
+                            {isHi ? art.categoryLabel_hi : art.categoryLabel_en}
+                          </span>
+                          {art.downloadablePdfs && art.downloadablePdfs.length > 0 && (
+                            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-900/90 text-amber-300 font-bold text-[11px] backdrop-blur-md border border-amber-400/30">
+                              <Download className="h-3 w-3" />
+                              <span>{isHi ? 'PDF फॉर्म' : 'PDF Form'}</span>
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                    <div className="p-5 sm:p-6">
+                      <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-2">
+                        <span className="flex items-center gap-1 font-medium">
+                          <Clock className="h-3 w-3 text-slate-400" />
+                          <span>{isHi ? art.readTime_hi : art.readTime_en}</span>
+                        </span>
+                        <span>·</span>
+                        <span>{art.publishedDate}</span>
+                        <span>·</span>
+                        <span className="text-emerald-600 dark:text-emerald-400 font-semibold">
+                          {isHi ? 'सत्यापित गाइड' : 'Verified Guide'}
+                        </span>
+                      </div>
+                      <h3 className="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors line-clamp-2 leading-snug">
+                        {isHi ? art.title_hi : art.title_en}
+                      </h3>
+                      <p className="mt-2.5 text-xs sm:text-sm text-slate-600 dark:text-slate-400 line-clamp-2 leading-relaxed">
+                        {isHi ? art.summary_hi : art.summary_en}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="px-5 sm:px-6 pb-5 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                    <span>{isHi ? 'पूरा आर्टिकल व फॉर्म पढ़ें' : 'Read Full Guide & Forms'}</span>
+                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
               ))}
             </div>
           </section>
