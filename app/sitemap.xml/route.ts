@@ -8,6 +8,19 @@ export async function GET() {
   const baseUrl = 'https://janlabh.in';
   const today = new Date().toISOString().split('T')[0];
 
+  // Static dates for pages that don't change on every request.
+  // Update these manually whenever you make a significant edit to that section.
+  const DATES = {
+    // Core aggregation pages (schemes listing, homepage) genuinely change daily
+    // as new content is added — keep 'today' for these.
+    // State hubs: last significantly updated 2026-11-17 (e-governance revamp)
+    stateHub: '2026-11-17',
+    // Category hubs: stable since launch, minor tweaks 2026-11-10
+    categoryHub: '2026-11-10',
+    // Legal/trust pages: rarely edited
+    legal: '2026-11-05',
+  };
+
   interface SitemapEntry {
     loc: string;
     lastmod: string;
@@ -17,7 +30,7 @@ export async function GET() {
 
   const entries: SitemapEntry[] = [];
 
-  // 1. Core Pillar Pages (EN & HI)
+  // 1. Core Pillar Pages (EN & HI) — aggregation pages, genuinely daily
   const corePillars = [
     { path: '', priority: '1.0', freq: 'daily' as const },
     { path: '/schemes', priority: '0.9', freq: 'daily' as const },
@@ -30,14 +43,12 @@ export async function GET() {
   ];
 
   corePillars.forEach((p) => {
-    // English
     entries.push({
       loc: `${baseUrl}${p.path}`,
       lastmod: today,
       changefreq: p.freq,
       priority: p.priority,
     });
-    // Hindi
     entries.push({
       loc: `${baseUrl}/hi${p.path}`,
       lastmod: today,
@@ -46,7 +57,7 @@ export async function GET() {
     });
   });
 
-  // 2. Legal & Trust Pages (EN & HI)
+  // 2. Legal & Trust Pages — static content, monthly changefreq
   const legalPages = [
     '/about',
     '/hi/about',
@@ -62,7 +73,7 @@ export async function GET() {
   legalPages.forEach((route) => {
     entries.push({
       loc: `${baseUrl}${route}`,
-      lastmod: today,
+      lastmod: DATES.legal,
       changefreq: 'monthly',
       priority: '0.5',
     });
@@ -92,38 +103,34 @@ export async function GET() {
   });
 
   // 4. Dynamic State Hub Pages (EN & HI)
+  // lastmod = DATES.stateHub (last major content update: 2026-11-17 e-governance revamp)
   STATES.forEach((st) => {
-    // EN state
     entries.push({
       loc: `${baseUrl}/states/${st.id}`,
-      lastmod: today,
+      lastmod: DATES.stateHub,
       changefreq: 'weekly',
       priority: '0.85',
     });
-
-    // HI state
     entries.push({
       loc: `${baseUrl}/hi/states/${st.id}`,
-      lastmod: today,
+      lastmod: DATES.stateHub,
       changefreq: 'weekly',
       priority: '0.85',
     });
   });
 
   // 5. Dynamic Category Hub Pages (EN & HI)
+  // lastmod = DATES.categoryHub (stable since 2026-11-10)
   CATEGORIES.forEach((cat) => {
-    // EN category
     entries.push({
       loc: `${baseUrl}/categories/${cat.id}`,
-      lastmod: today,
+      lastmod: DATES.categoryHub,
       changefreq: 'weekly',
       priority: '0.85',
     });
-
-    // HI category
     entries.push({
       loc: `${baseUrl}/hi/categories/${cat.id}`,
-      lastmod: today,
+      lastmod: DATES.categoryHub,
       changefreq: 'weekly',
       priority: '0.85',
     });
