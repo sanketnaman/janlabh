@@ -614,6 +614,292 @@ IPPB का सीधा डिजिटल कनेक्शन NPCI सर्
         officialSourceLabel: 'Government of Jharkhand (jharkhand.gov.in)'
       }
     ]
+  },
+  {
+    id: 'ayushman-card-status-check-download-online',
+    slug: 'ayushman-card-status-check-download-online',
+    title_en: 'Ayushman Card Status Check & PDF Download (Aadhaar)',
+    title_hi: 'आयुष्मान कार्ड स्टेटस चेक और आधार से PDF डाउनलोड 2026',
+    category: 'status-guide',
+    categoryLabel_en: 'Status & Download',
+    categoryLabel_hi: 'स्टेटस व डाउनलोड',
+    publishedDate: 'November 18, 2026',
+    updatedDate: 'November 18, 2026',
+    lastVerified: 'November 18, 2026',
+    readTime_en: '5 min read',
+    readTime_hi: '5 मिनट पढ़ें',
+    summary_en: 'Step-by-step citizen guide to check your Ayushman Card and Ayushman Vay Vandana Card application status online using your Aadhaar number at beneficiary.nha.gov.in and download the verified PDF card.',
+    summary_hi: 'beneficiary.nha.gov.in पोर्टल पर आधार नंबर से आयुष्मान भारत व 70+ वय वंदना कार्ड का स्टेटस ऑनलाइन चेक करने और अप्रूव्ड गोल्डन कार्ड पीडीएफ डाउनलोड करने की पूरी प्रक्रिया।',
+    metaDescription_en: 'How to check your Ayushman card or Vay Vandana status and download the PDF using your Aadhaar number at beneficiary.nha.gov.in. National helpline: 14555.',
+    metaDescription_hi: 'beneficiary.nha.gov.in पर आधार नंबर से आयुष्मान भारत व वय वंदना कार्ड का स्टेटस चेक करें और ओरिजिनल PDF डाउनलोड करें। हेल्पलाइन 14555 पर संपर्क करें।',
+    keywords: [
+      'ayushman vay vandana card status check',
+      'ayushman card status check',
+      'ayushman card download aadhaar number se',
+      'ayushman card pdf download',
+      'ayushman card application status kaise dekhe',
+      'ayushman card download online',
+      'beneficiary nha gov in card status'
+    ],
+    bannerImage: '/images/schemes/ayushman-bharat-pmjay-health-card.png',
+    problemHighlight_en: 'Many applicants apply for Ayushman Card or 70+ Vay Vandana Card but do not know how to track whether their e-KYC was approved by the State Health Authority or how to save the final PDF card.',
+    problemHighlight_hi: 'कई नागरिक व 70+ बुजुर्ग आयुष्मान या वय वंदना कार्ड हेतु आवेदन करने के बाद यह नहीं जान पाते कि उनका कार्ड अप्रूव हुआ या पेंडिंग है, और मूल डिजिटल कार्ड कैसे डाउनलोड करें।',
+    solutionSummary_en: 'Log in to beneficiary.nha.gov.in with mobile OTP, search by Aadhaar number, verify your card status badge (Approved / Pending / Action Required), and click the download icon to save the verified PDF card.',
+    solutionSummary_hi: 'beneficiary.nha.gov.in पर मोबाइल ओटीपी से लॉगिन करें, आधार नंबर से सर्च कर स्टेटस (Approved / Pending) देखें और डाउनलोड आइकन पर क्लिक कर ओरिजिनल पीडीएफ कार्ड सेव करें।',
+    sections: [
+      {
+        heading_en: 'Official Portal for Ayushman Card Status Check & Download',
+        heading_hi: 'आयुष्मान कार्ड स्टेटस चेक और डाउनलोड का आधिकारिक पोर्टल',
+        content_en: 'The National Health Authority (NHA) operates the unified Beneficiary Portal at beneficiary.nha.gov.in for both general Ayushman Bharat PM-JAY and the newly launched Ayushman Vay Vandana Card for senior citizens aged 70+. You do not need to visit any government office or cyber cafe to check whether your card is generated; the entire verification and PDF download process is free and accessible on any smartphone or computer.',
+        content_hi: 'राष्ट्रीय स्वास्थ्य प्राधिकरण (NHA) द्वारा सामान्य आयुष्मान भारत (PM-JAY) और 70+ वरिष्ठ नागरिकों के "आयुष्मान वय वंदना कार्ड" दोनों के लिए साझा आधिकारिक पोर्टल beneficiary.nha.gov.in संचालित किया जाता है। कार्ड बना या नहीं, यह जांचने के लिए किसी ब्लॉक या सरकारी कार्यालय जाने की आवश्यकता नहीं है; यह पूरी प्रक्रिया स्मार्टफोन या कंप्यूटर से घर बैठे निःशुल्क की जा सकती है।'
+      },
+      {
+        heading_en: 'How to Check Card Status Using Aadhaar Number (Step-by-Step)',
+        heading_hi: 'आधार नंबर से आयुष्मान कार्ड स्टेटस कैसे चेक करें (क्रमबद्ध प्रक्रिया)',
+        content_en: '1. Visit beneficiary.nha.gov.in on your web browser or open the official "Ayushman App".\n2. On the login screen, select "Beneficiary", enter your 10-digit mobile number, and enter the OTP received via SMS.\n3. In the search dashboard, choose your State, Scheme (select PMJAY or PMJAY-VAYU VANDANA for 70+ seniors), and District.\n4. Under "Search By", select "Aadhaar Number" and input the 12-digit Aadhaar number of the beneficiary.\n5. Click the search magnifying glass icon. The system will display the beneficiary details along with their real-time card status.',
+        content_hi: '1. अपने ब्राउज़र में beneficiary.nha.gov.in खोलें या "Ayushman App" इस्तेमाल करें।\n2. लॉगिन विंडो पर "Beneficiary" (लाभार्थी) विकल्प चुनें, अपना मोबाइल नंबर दर्ज करें और ओटीपी भरें।\n3. राज्य, योजना (सामान्य हेतु PMJAY या 70+ बुजुर्गों हेतु VAYU VANDANA) और अपना जिला चुनें।\n4. "Search By" में "Aadhaar Number" चुनें और 12 अंकों का आधार नंबर दर्ज करें।\n5. सर्च आइकन पर क्लिक करें। स्क्रीन पर लाभार्थी का नाम और कार्ड का लाइव स्टेटस दिखाई देगा।'
+      },
+      {
+        heading_en: 'Understanding Status Badges: Approved, Pending, or Action Required',
+        heading_hi: 'स्टेटस का मतलब समझें: Approved, Pending या Action Required',
+        content_en: 'The portal displays one of three distinct status badges:\n• Approved (Green): Your e-KYC has been successfully matched and validated by the State Health Authority. The card is fully active, and you can download the PDF immediately.\n• Pending Approval (Yellow): Your application is submitted and undergoing automated matching or district verification. This usually resolves within 24 to 72 hours.\n• Action Required / e-KYC Pending (Red/Orange): Your Aadhaar e-KYC was not submitted or encountered an authentication error. You must click "e-KYC" to re-authenticate with live photo capture.',
+        content_hi: 'सर्च परिणाम में तीन प्रकार के स्टेटस दिखाई देते हैं:\n• Approved (हरा): आपकी ई-केवाईसी पूरी तरह सही पाई गई है और कार्ड सक्रिय है। आप इसे तुरंत डाउनलोड कर सकते हैं।\n• Pending Approval (पीला): आवेदन जमा हो चुका है और सत्यापन प्रक्रिया में है। यह आमतौर पर 24 से 72 घंटों में अप्रूव हो जाता है।\n• Action Required / e-KYC Pending (लाल/नारंगी): ई-केवाईसी अधूरी है या फोटो/ओटीपी मिलान नहीं हो सका। आपको "e-KYC" बटन पर क्लिक करके दोबारा सत्यापन करना होगा।'
+      },
+      {
+        heading_en: 'How to Download the Official PDF Golden Card',
+        heading_hi: 'आधिकारिक डिजिटल पीडीएफ कार्ड कैसे डाउनलोड करें',
+        content_en: 'Once your status displays "Approved", look at the far right column in the table labeled "Action". You will see an arrow icon pointing downward (Download Card). Clicking this will prompt a one-time Aadhaar OTP authentication for security. Upon entering the OTP, your authentic Golden Ayushman Card PDF featuring the official QR code will download directly to your device.',
+        content_hi: 'जब स्टेटस "Approved" दिखे, तो टेबल के आखिरी कॉलम (Action) में नीचे की तरफ तीर वाला डाउनलोड आइकन दिखाई देगा। सुरक्षा कारणों से इसपर क्लिक करने पर एक बार आधार ओटीपी सत्यापन मांगा जाता है। ओटीपी दर्ज करते ही विशिष्ट क्यूआर कोड युक्त ओरिजिनल गोल्डन आयुष्मान कार्ड पीडीएफ आपके फोन या कंप्यूटर में डाउनलोड हो जाएगा।'
+      },
+      {
+        heading_en: 'Related Health Coverage Guides & Assistance',
+        heading_hi: 'संबंधित स्वास्थ्य योजनाएं एवं सहायता',
+        content_en: 'If you are applying for a senior citizen aged 70 or older, refer to our comprehensive Ayushman Vay Vandana Card for seniors 70+ guide for complete income-free application steps. For family health insurance details under the regular scheme, visit our Ayushman Bharat PM-JAY (general family cover) pillar. If your status has been pending for over 7 days or rejected, read our if your application is not approved troubleshooting guide.',
+        content_hi: 'यदि आप 70 वर्ष या उससे अधिक आयु के बुजुर्ग हेतु आवेदन कर रहे हैं, तो संपूर्ण नियमों के लिए हमारा 70+ बुजुर्गों के लिए आयुष्मान वय वंदना कार्ड विशेष गाइड देखें। परिवार के 70 वर्ष से कम उम्र के सदस्यों के मुफ्त इलाज हेतु आयुष्मान भारत PM-JAY (सामान्य योजना) देखें। यदि कार्ड रिजेक्ट हो गया है या अप्रूवल नहीं मिल रहा, तो आवेदन अप्रूव न होने पर समाधान गाइड पढ़ें।'
+      }
+    ],
+    steps_en: [
+      'Open beneficiary.nha.gov.in and log in with your mobile number via OTP.',
+      'Select your State, Scheme (PMJAY or Vay Vandana), District, and Search by Aadhaar Number.',
+      'Check the status column: verify if it displays green "Approved".',
+      'Click the "Download Card" icon located next to the beneficiary name.',
+      'Authenticate with Aadhaar OTP to download the secure PDF with verified QR code.'
+    ],
+    steps_hi: [
+      'beneficiary.nha.gov.in खोलें और मोबाइल ओटीपी से "Beneficiary" मोड में लॉगिन करें।',
+      'राज्य, योजना (PMJAY या वय वंदना), जिला चुनें और आधार नंबर दर्ज करें।',
+      'स्टेटस कॉलम में देखें कि हरा "Approved" बैज दिख रहा है या नहीं।',
+      'नाम के सामने दिख रहे "Download Card" आइकन पर क्लिक करें।',
+      'आधार ओटीपी सत्यापित कर सुरक्षित क्यूआर कोड युक्त पीडीएफ कार्ड डाउनलोड करें।'
+    ],
+    faqs_en: [
+      {
+        q: 'Can I check my Ayushman Card status without a ration card?',
+        a: 'Yes. On beneficiary.nha.gov.in, you can search directly using your 12-digit Aadhaar Number or Family PMJAY ID without needing a physical ration card.'
+      },
+      {
+        q: 'How long does it take for Ayushman card approval after e-KYC?',
+        a: 'Under the standard automated algorithm, approval is typically instant or processed within 24 to 48 hours. If pending longer than 7 days, check our troubleshooting guide or contact helpline 14555.'
+      },
+      {
+        q: 'Is the downloaded PDF card valid for cashless hospital admission?',
+        a: 'Yes. The downloaded digital Ayushman Card contains an official verified QR code that empanelled hospital Ayushman Mitra desks scan for cashless admission without requiring a physical PVC card.'
+      },
+      {
+        q: 'How can senior citizens check Vay Vandana card status?',
+        a: 'Senior citizens aged 70+ follow the exact same portal flow at beneficiary.nha.gov.in by selecting the scheme and searching by their Aadhaar number.'
+      },
+      {
+        q: 'What should I do if the portal shows "No Records Found"?',
+        a: 'Ensure you selected the correct State and Scheme name. For general PM-JAY, your family must be in SECC 2011 or NFSA records. For 70+ seniors, ensure the senior\'s birth year in Aadhaar is 1956 or earlier.'
+      },
+      {
+        q: 'What is the official helpline for card download issues?',
+        a: 'Call the National Health Authority toll-free helpline at 14555 or 1800-11-0770 for assistance with status tracking and portal technical errors.'
+      }
+    ],
+    faqs_hi: [
+      {
+        q: 'क्या बिना राशन कार्ड के केवल आधार नंबर से आयुष्मान कार्ड स्टेटस चेक किया जा सकता है?',
+        a: 'हाँ, बिल्कुल। beneficiary.nha.gov.in पर "Search By" में आधार नंबर (Aadhaar Number) चुनकर बिना राशन कार्ड के सीधे स्टेटस देखा जा सकता है।'
+      },
+      {
+        q: 'e-KYC करने के बाद आयुष्मान कार्ड कितने समय में अप्रूव होता है?',
+        a: 'स्वचालित प्रणाली में कार्ड तुरंत या 24 से 48 घंटे में अप्रूव हो जाता है। यदि 7 दिनों से अधिक समय से पेंडिंग है, तो हमारा समस्या समाधान गाइड देखें या 14555 पर संपर्क करें।'
+      },
+      {
+        q: 'क्या मोबाइल से डाउनलोड किया गया पीडीएफ कार्ड अस्पताल में इलाज हेतु मान्य है?',
+        a: 'हाँ। डाउनलोड किए गए डिजिटल आयुष्मान कार्ड पर आधिकारिक क्यूआर कोड होता है, जिसे अस्पताल के आयुष्मान मित्र काउंटर पर स्कैन करके सीधे कैशलेस भर्ती की जाती है।'
+      },
+      {
+        q: '70+ बुजुर्ग अपने वय वंदना कार्ड का स्टेटस कैसे जांचें?',
+        a: '70 वर्ष या उससे अधिक उम्र के वरिष्ठ नागरिक भी beneficiary.nha.gov.in पर जाकर अपने आधार नंबर से वय वंदना कार्ड का स्टेटस देख और डाउनलोड कर सकते हैं।'
+      },
+      {
+        q: 'पोर्टल पर "No Records Found" आने का क्या कारण है?',
+        a: 'जांचें कि आपने सही राज्य चुना है। सामान्य योजना हेतु परिवार का नाम राशन कार्ड या एसईसीसी में होना आवश्यक है। 70+ बुजुर्गों हेतु आधार में जन्म वर्ष 1956 या उससे पूर्व होना अनिवार्य है।'
+      },
+      {
+        q: 'कार्ड डाउनलोड न होने पर सहायता हेतु कहां संपर्क करें?',
+        a: 'राष्ट्रीय स्वास्थ्य प्राधिकरण की 24x7 टोल-फ्री हेल्पलाइन 14555 अथवा 1800-11-0770 पर कॉल करके तकनीकी सहायता प्राप्त कर सकते हैं।'
+      }
+    ],
+    relatedSchemeSlug: 'senior-citizen-ayushman-card-70-plus',
+    officialLinks: [
+      {
+        title_en: 'Official NHA Beneficiary Status & Download Portal',
+        title_hi: 'राष्ट्रीय स्वास्थ्य प्राधिकरण (NHA) आधिकारिक लाभार्थी पोर्टल',
+        url: 'https://beneficiary.nha.gov.in'
+      },
+      {
+        title_en: 'National Health Authority (NHA) Official Website',
+        title_hi: 'राष्ट्रीय स्वास्थ्य प्राधिकरण आधिकारिक वेबसाइट',
+        url: 'https://nha.gov.in'
+      }
+    ]
+  },
+  {
+    id: 'ayushman-card-pending-rejection-ekyc-solution',
+    slug: 'ayushman-card-pending-rejection-ekyc-solution',
+    title_en: 'Ayushman Card Pending or Rejected: Fix e-KYC Errors',
+    title_hi: 'आयुष्मान कार्ड रिजेक्ट या पेंडिंग? e-KYC ऐसे सुधारें',
+    category: 'problem-solution',
+    categoryLabel_en: 'Fix Errors & Solutions',
+    categoryLabel_hi: 'समस्या व समाधान',
+    publishedDate: 'November 18, 2026',
+    updatedDate: 'November 18, 2026',
+    lastVerified: 'November 18, 2026',
+    readTime_en: '6 min read',
+    readTime_hi: '6 मिनट पढ़ें',
+    summary_en: 'Solutions for failed Ayushman card e-KYC, Aadhaar photo/name mismatch, and prolonged pending approval status. Official grievance steps via helpline 14555 and CGRMS portal.',
+    summary_hi: 'आयुष्मान कार्ड व 70+ वय वंदना आवेदन में e-KYC फेल, नाम व फोटो मिसमैच, या पेंडिंग अप्रूवल की समस्या का प्रमाणित समाधान। हेल्पलाइन 14555 व CGRMS पर शिकायत की विधि।',
+    metaDescription_en: 'Ayushman application pending or e-KYC failed? Learn how to fix Aadhaar name mismatch, redo biometric verification, and file grievances on 14555 or CGRMS.',
+    metaDescription_hi: 'आयुष्मान कार्ड e-KYC फेल, नाम मिसमैच या पेंडिंग अप्रूवल का समाधान। आधार री-वेरिफिकेशन और CGRMS / 14555 पर शिकायत दर्ज करने की आधिकारिक प्रक्रिया।',
+    keywords: [
+      'ayushman card 70 plus apply kiya par approve nahi hua',
+      'ayushman vay vandana e-kyc fail',
+      'ayushman card naam mismatch',
+      'ayushman card pending approval',
+      'ayushman card rejection reason',
+      'ayushman card e-kyc problem solution',
+      'cgrms pmjay grievance'
+    ],
+    bannerImage: '/images/schemes/ayushman-bharat-pmjay-health-card.png',
+    problemHighlight_en: 'Applicants frequently encounter e-KYC photo matching failures, Aadhaar name mismatches, or status stuck in "Pending Approval" for weeks without knowing how to rectify the error.',
+    problemHighlight_hi: 'आयुष्मान कार्ड या वय वंदना आवेदन के दौरान फोटो मिलान न होना, आधार व राशन कार्ड में नाम की स्पेलिंग में अंतर, या हफ्तों तक "Pending Approval" में फंसे रहने की समस्या आम है।',
+    solutionSummary_en: 'Understand the root cause of rejection, redo facial authentication via the Aadhaar FaceRD app, update Aadhaar demographic details at a local enrolment center, or escalate via CGRMS and helpline 14555.',
+    solutionSummary_hi: 'रिजेक्शन का कारण समझें, "Aadhaar FaceRD" ऐप से दोबारा सही रोशनी में फेस स्कैन करें, आधार सेवा केंद्र पर नाम सुधारें, अथवा 14555 और CGRMS पोर्टल पर आधिकारिक शिकायत दर्ज करें।',
+    sections: [
+      {
+        heading_en: 'Common Reasons for Ayushman Card Application Rejection & Delays',
+        heading_hi: 'आयुष्मान कार्ड पेंडिंग या रिजेक्ट होने के प्रमुख कारण',
+        content_en: 'When applying for general PM-JAY or the 70+ Ayushman Vay Vandana Card, applications are typically flagged or held in pending status due to three core issues:\n1. Demographic Name Mismatch: The spelling of the beneficiary\'s name in the SECC/ration database differs significantly from the name in their Aadhaar card.\n2. Photo Match Score Below Threshold: The live photograph captured during mobile registration does not sufficiently match the historical biometric image stored in UIDAI records.\n3. Age Determination Below 70 Years: For Ayushman Vay Vandana, the Aadhaar birth year reflects 1957 or later, meaning the applicant has not yet officially completed 70 years.',
+        content_hi: 'सामान्य आयुष्मान या 70+ वय वंदना कार्ड आवेदन के समय फॉर्म पेंडिंग रहने या रिजेक्ट होने के तीन मुख्य कारण होते हैं:\n1. नाम की स्पेलिंग में अंतर: सरकारी रिकॉर्ड (राशन कार्ड/एसईसीसी) में दर्ज नाम और आधार कार्ड के नाम में अंतर होना।\n2. फोटो मैच स्कोर कम होना: मोबाइल कैमरे से ली गई लाइव सेल्फी का आधार में दर्ज पुरानी फोटो से पर्याप्त मिलान न होना।\n3. आयु 70 वर्ष से कम होना: वय वंदना योजना में आधार में दर्ज जन्म वर्ष 1956 के बाद (जैसे 1957 या 1958) होने पर सिस्टम आवेदन स्वीकार नहीं करता।'
+      },
+      {
+        heading_en: 'Fix 1: How to Resolve e-KYC Photo Mismatch & FaceRD Errors',
+        heading_hi: 'समाधान 1: e-KYC फोटो मिसमैच व फेस आरडी (FaceRD) एरर कैसे ठीक करें',
+        content_en: 'If your e-KYC fails with a photo mismatch error:\n• Install the official "Aadhaar FaceRD" app developed by UIDAI from Google Play Store alongside the "Ayushman App". Do not open FaceRD directly; it functions as a background verification service for the Ayushman App.\n• Position the applicant in a well-lit room facing natural daylight against a plain white or light-colored wall. Avoid shadows, hats, or dark spectacles.\n• When prompted during the camera scan, ensure the applicant blinks naturally to register liveliness.\n• If facial authentication continues to fail due to elderly facial changes, visit a Common Service Centre (CSC) or hospital Ayushman Mitra desk for Biometric Fingerprint or Iris authentication.',
+        content_hi: 'यदि e-KYC के दौरान फोटो मिसमैच का एरर आता है:\n• गूगल प्ले स्टोर से UIDAI का आधिकारिक "Aadhaar FaceRD" ऐप इंस्टॉल करें। इसे अलग से खोलने की जरूरत नहीं है, यह आयुष्मान ऐप के बैकग्राउंड में काम करता है।\n• बुजुर्ग को अच्छी रोशनी वाले कमरे में सादे बैकग्राउंड के सामने बैठाएं। चेहरे पर परछाईं या चश्मा न हो।\n• कैमरा स्कैन के दौरान आंखें झपकाने (Blink) को कहें ताकि लाइवनेस डिटेक्ट हो सके।\n• यदि चेहरे से ऑथेंटिकेशन बार-बार फेल हो, तो नजदीकी प्रज्ञा केंद्र (CSC) या अस्पताल के आयुष्मान मित्र काउंटर पर जाकर फिंगरप्रिंट या आइरिस (आंखों की पुतली) से बायोमेट्रिक सत्यापन कराएं।'
+      },
+      {
+        heading_en: 'Fix 2: Resolving Name and Date of Birth Differences with Aadhaar',
+        heading_hi: 'समाधान 2: आधार में नाम और जन्मतिथि का अंतर कैसे सुधारें',
+        content_en: 'The NHA portal algorithm pulls identity data directly from UIDAI. If an applicant is legally 70 years old but their Aadhaar records an incorrect birth year (e.g., 1958 instead of 1954), the portal will reject the Vay Vandana application automatically.\nTo rectify this: visit an official Aadhaar Seva Kendra with valid age documentation (such as a PAN card, voter ID, school leaving certificate, or birth certificate) to update the date of birth in UIDAI records. Once the updated Aadhaar is generated, re-apply on beneficiary.nha.gov.in.',
+        content_hi: 'एनएचए पोर्टल सीधे आधार डेटाबेस से आयु पढ़ता है। यदि बुजुर्ग वास्तव में 70 वर्ष के हैं लेकिन आधार में जन्म वर्ष गलती से 1956 के बाद का दर्ज है, तो पोर्टल आवेदन तुरंत रोक देगा।\nइसे सुधारने के लिए: नजदीकी आधार सेवा केंद्र जाकर वैध दस्तावेज (पैन कार्ड, वोटर आईडी, या जन्म प्रमाण पत्र) देकर आधार में सही जन्मतिथि अपडेट कराएं। आधार अपडेट होते ही beneficiary.nha.gov.in पर दोबारा आवेदन करें।'
+      },
+      {
+        heading_en: 'Fix 3: What to Do If Status Is Stuck in "Pending Approval"',
+        heading_hi: 'समाधान 3: आवेदन कई दिनों से "Pending Approval" में अटका हो तो क्या करें',
+        content_en: 'When a card displays "Pending Approval", it is waiting in the digital queue of the State Health Authority (SHA) or district verification officer. While most applications clear within 48 hours, high application volumes can cause backlogs of 7 to 14 days.\nIf your status remains pending beyond 7 business days:\n1. Log in to beneficiary.nha.gov.in and confirm no "Redo e-KYC" action alert is displayed.\n2. Call the National Health Authority toll-free helpline at 14555, provide your Aadhaar number, and request a status escalation.\n3. If unresolved, register a formal complaint on the official Central Grievance Redressal Management System (CGRMS) at cgrms.pmjay.gov.in.',
+        content_hi: 'यदि स्टेटस "Pending Approval" दिखा रहा है, तो आवेदन राज्य स्वास्थ्य एजेंसी (SHA) या जिला सत्यापन अधिकारी के स्तर पर कतार में है। आमतौर पर 48 घंटे में अप्रूवल मिल जाता है, लेकिन भीड़ के समय 7 से 10 दिन लग सकते हैं।\nयदि 7 दिनों से अधिक समय से पेंडिंग रहे:\n1. beneficiary.nha.gov.in पर लॉगिन कर देखें कि कहीं "Redo e-KYC" का विकल्प तो नहीं आया है।\n2. राष्ट्रीय टोल-फ्री हेल्पलाइन 14555 पर कॉल करें, अपना आधार नंबर बताएं और शिकायत दर्ज कराएं।\n3. इसके अलावा आधिकारिक शिकायत पोर्टल cgrms.pmjay.gov.in पर जाकर ऑनलाइन ग्रीवेंस दर्ज करें।'
+      },
+      {
+        heading_en: 'Cross-Verification & Related Guides',
+        heading_hi: 'संबंधित सत्यापन व कार्ड गाइड',
+        content_en: 'To check whether your application status has moved to approved, refer to our step-by-step check Vay Vandana card status and download guide. To review the universal eligibility and enrollment guidelines for senior citizens, see our Ayushman Vay Vandana Card for seniors 70+ hub. For general family coverage rules, read our Ayushman Bharat PM-JAY (general family cover) guide.',
+        content_hi: 'अपना लाइव स्टेटस दोबारा जांचने हेतु हमारा आयुष्मान कार्ड स्टेटस चेक और आधार से PDF डाउनलोड गाइड देखें। 70+ बुजुर्गों के सार्वभौमिक नियमों के लिए 70+ बुजुर्गों के लिए आयुष्मान वय वंदना कार्ड हब देखें। परिवार के सामान्य कोटे की जानकारी हेतु आयुष्मान भारत PM-JAY (सामान्य योजना) पढ़ें।'
+      }
+    ],
+    steps_en: [
+      'Identify the error message on beneficiary.nha.gov.in (Photo mismatch, Name mismatch, or SHA pending).',
+      'For photo issues: use Aadhaar FaceRD app in bright lighting or complete biometric verification at CSC.',
+      'For date of birth issues: update birth year at an Aadhaar Seva Kendra prior to portal re-submission.',
+      'If pending over 7 days: call NHA national helpline 14555 with your 12-digit Aadhaar number.',
+      'File an online escalation ticket at cgrms.pmjay.gov.in if the application remains blocked.'
+    ],
+    steps_hi: [
+      'beneficiary.nha.gov.in पर एरर का कारण जांचें (फोटो मिसमैच, नाम का अंतर या पेंडिंग अप्रूवल)।',
+      'फोटो समस्या हेतु: दिन की रोशनी में Aadhaar FaceRD ऐप इस्तेमाल करें या CSC पर फिंगरप्रिंट सत्यापन कराएं।',
+      'उम्र की गड़बड़ी हेतु: आधार सेवा केंद्र पर जन्म वर्ष सही कराने के बाद ही पुनः आवेदन करें।',
+      '7 दिन से अधिक पेंडिंग होने पर: 14555 पर आधार नंबर देकर स्टेटस शिकायत दर्ज कराएं।',
+      'समस्या न सुलझने पर cgrms.pmjay.gov.in पोर्टल पर आधिकारिक ऑनलाइन टिकट दर्ज करें।'
+    ],
+    faqs_en: [
+      {
+        q: 'Why does Ayushman Card e-KYC say "Photo Matching Failed"?',
+        a: 'The portal requires an algorithmic match between your live captured selfie and your official Aadhaar database photograph. Poor lighting, shadows, or major physical changes can cause this. Retake in daylight against a white wall or visit a CSC for fingerprint authentication.'
+      },
+      {
+        q: 'How can I fix a name spelling difference between my ration card and Aadhaar?',
+        a: 'If the name difference is minor, the biometric e-KYC algorithm can often validate the record. If the spelling difference is substantial, update your name at an Aadhaar Seva Kendra or apply through a CSC operator where demographic override can be submitted with supporting documents.'
+      },
+      {
+        q: 'What should I do if my 70+ Vay Vandana application shows rejected?',
+        a: 'Check the rejection reason displayed on the portal. The most common cause is an Aadhaar birth year after 1956. Correct your birth year in Aadhaar or call 14555 for specific state nodal office instructions.'
+      },
+      {
+        q: 'How do I lodge a complaint for a delayed Ayushman card?',
+        a: 'Visit the official Central Grievance Redressal Management System at cgrms.pmjay.gov.in, select "Register Grievance AB-PMJAY", input your details, or call toll-free 14555.'
+      },
+      {
+        q: 'Can I re-apply if my initial e-KYC was rejected?',
+        a: 'Yes. You can re-open beneficiary.nha.gov.in at any time, log in with mobile OTP, and submit fresh e-KYC once demographic or photo issues are resolved.'
+      },
+      {
+        q: 'Is there any fee to fix Ayushman e-KYC errors?',
+        a: 'No. Enrolment and e-KYC correction on beneficiary.nha.gov.in and the official Ayushman App are completely free of cost.'
+      }
+    ],
+    faqs_hi: [
+      {
+        q: 'आयुष्मान कार्ड e-KYC में "Photo Matching Failed" एरर क्यों आता है?',
+        a: 'सिस्टम आपकी लाइव सेल्फी का आधार डेटाबेस की पुरानी फोटो से मिलान करता है। खराब रोशनी, परछाईं या उम्र के बदलाव से मिलान स्कोर कम हो सकता है। दिन की रोशनी में दोबारा फोटो लें या सीएससी पर फिंगरप्रिंट से कराएं।'
+      },
+      {
+        q: 'राशन कार्ड और आधार में नाम की स्पेलिंग अलग होने पर क्या करें?',
+        a: 'यदि अंतर मामूली है, तो बायोमेट्रिक ई-केवाईसी से सत्यापन हो जाता है। यदि अंतर ज्यादा है, तो आधार केंद्र जाकर नाम सुधरवाएं अथवा सीएससी पर संबंधित पहचान पत्र देकर फॉर्म अग्रसारित कराएं।'
+      },
+      {
+        q: '70+ वय वंदना कार्ड रिजेक्ट होने पर क्या करना चाहिए?',
+        a: 'पोर्टल पर रिजेक्शन का कारण देखें। इसका 95% कारण आधार में जन्म वर्ष 1956 के बाद का होना होता है। आधार में जन्मतिथि सही कराएं या 14555 पर शिकायत दर्ज कराएं।'
+      },
+      {
+        q: 'आयुष्मान कार्ड बनने में देरी होने पर ऑनलाइन शिकायत कहां करें?',
+        a: 'आधिकारिक निवारण पोर्टल cgrms.pmjay.gov.in पर जाकर "Register Grievance AB-PMJAY" चुनें या टोल-फ्री 14555 पर सीधे कॉल करें।'
+      },
+      {
+        q: 'क्या रिजेक्ट होने के बाद दोबारा e-KYC की जा सकती है?',
+        a: 'हाँ, बिल्कुल। आप beneficiary.nha.gov.in पर कभी भी लॉगिन करके दोबारा e-KYC सबमिट कर सकते हैं।'
+      },
+      {
+        q: 'e-KYC त्रुटि सुधारने के लिए कोई सरकारी शुल्क लगता है?',
+        a: 'नहीं। आधिकारिक पोर्टल और आयुष्मान ऐप पर e-KYC व कार्ड निर्माण पूर्णतः निःशुल्क (Free) है।'
+      }
+    ],
+    relatedSchemeSlug: 'senior-citizen-ayushman-card-70-plus',
+    officialLinks: [
+      {
+        title_en: 'Central Grievance Redressal Management System (CGRMS)',
+        title_hi: 'केंद्रीय शिकायत निवारण प्रबंधन प्रणाली (CGRMS)',
+        url: 'https://cgrms.pmjay.gov.in'
+      },
+      {
+        title_en: 'Official NHA Beneficiary Verification Portal',
+        title_hi: 'राष्ट्रीय स्वास्थ्य प्राधिकरण आधिकारिक लाभार्थी पोर्टल',
+        url: 'https://beneficiary.nha.gov.in'
+      }
+    ]
   }
 ];
 
