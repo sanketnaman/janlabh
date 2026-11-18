@@ -641,7 +641,7 @@ IPPB का सीधा डिजिटल कनेक्शन NPCI सर्
       'ayushman card download online',
       'beneficiary nha gov in card status'
     ],
-    bannerImage: '/images/schemes/ayushman-bharat-pmjay-health-card.png',
+    bannerImage: '/images/articles/ayushman-card-status-check-download-online.webp',
     problemHighlight_en: 'Many applicants apply for Ayushman Card or 70+ Vay Vandana Card but do not know how to track whether their e-KYC was approved by the State Health Authority or how to save the final PDF card.',
     problemHighlight_hi: 'कई नागरिक व 70+ बुजुर्ग आयुष्मान या वय वंदना कार्ड हेतु आवेदन करने के बाद यह नहीं जान पाते कि उनका कार्ड अप्रूव हुआ या पेंडिंग है, और मूल डिजिटल कार्ड कैसे डाउनलोड करें।',
     solutionSummary_en: 'Log in to beneficiary.nha.gov.in with mobile OTP, search by Aadhaar number, verify your card status badge (Approved / Pending / Action Required), and click the download icon to save the verified PDF card.',
