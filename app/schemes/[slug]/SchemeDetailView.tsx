@@ -452,7 +452,7 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
             <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs text-slate-600 dark:text-slate-400 border-y border-slate-100 dark:border-slate-800/80 py-2.5">
               <span className="flex items-center gap-1.5 font-medium">
                 <UserCheck className="h-3.5 w-3.5 text-amber-600 dark:text-amber-400" />
-                <span>{isHi ? 'अनुसंधान एवं समीक्षा:' : 'Researched & Reviewed by:'}</span>
+                <span>{isHi ? 'लेखक एवं संपादक:' : 'Author & Editor:'}</span>
                 <Link
                   href={isHi ? '/hi/about' : '/about'}
                   className="font-bold text-slate-900 dark:text-slate-200 hover:text-amber-600 dark:hover:text-amber-400 underline decoration-amber-500/40 underline-offset-2"
@@ -473,6 +473,53 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                 </span>
               </span>
             </div>
+
+            {/* Dedicated Senior Citizen Callout on General PM-JAY Page */}
+            {scheme.slug === 'ayushman-bharat-pmjay-health-card' && (
+              <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 font-bold text-amber-900 dark:text-amber-300">
+                    <Sparkles className="h-4 w-4 text-amber-600 dark:text-amber-400 shrink-0" />
+                    <span>{isHi ? 'क्या आपकी आयु 70 वर्ष या उससे अधिक है?' : 'Are you aged 70 or above?'}</span>
+                  </div>
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    {isHi
+                      ? '70+ वरिष्ठ नागरिकों के लिए बिना किसी आय सीमा के ₹5 लाख का अलग से आयुष्मान वय वंदना कार्ड जारी किया जा रहा है।'
+                      : 'Senior citizens aged 70+ are entitled to an exclusive ₹5 Lakh Ayushman Vay Vandana Card with zero income limits.'}
+                  </p>
+                </div>
+                <Link
+                  href={isHi ? '/hi/schemes/senior-citizen-ayushman-card-70-plus' : '/schemes/senior-citizen-ayushman-card-70-plus'}
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  <span>{isHi ? '70+ बुजुर्गों के लिए आयुष्मान वय वंदना कार्ड' : 'Ayushman Vay Vandana Card for seniors 70+'}</span>
+                  <ChevronRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            )}
+
+            {/* Dedicated General Family PM-JAY Link on 70+ Page */}
+            {scheme.slug === 'senior-citizen-ayushman-card-70-plus' && (
+              <div className="p-3.5 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 text-xs">
+                <div className="text-slate-700 dark:text-slate-300">
+                  <span className="font-semibold text-blue-950 dark:text-blue-300">
+                    {isHi ? 'पारिवारिक आयुष्मान कार्ड: ' : 'General Family Cover: '}
+                  </span>
+                  <span>
+                    {isHi
+                      ? 'यदि आप 70 वर्ष से कम आयु के परिवार के सदस्यों हेतु ₹5 लाख स्वास्थ्य सुरक्षा की जानकारी चाहते हैं:'
+                      : 'Looking for ₹5 Lakh family health assurance for members under 70 years?'}
+                  </span>
+                </div>
+                <Link
+                  href={isHi ? '/hi/schemes/ayushman-bharat-pmjay-health-card' : '/schemes/ayushman-bharat-pmjay-health-card'}
+                  className="shrink-0 font-semibold text-blue-700 dark:text-blue-400 hover:underline flex items-center gap-1"
+                >
+                  <span>{isHi ? 'आयुष्मान भारत PM-JAY (सामान्य योजना)' : 'Ayushman Bharat PM-JAY (general family cover)'}</span>
+                  <ChevronRight className="h-3 w-3" />
+                </Link>
+              </div>
+            )}
 
             {/* Quick Answer Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 text-xs">

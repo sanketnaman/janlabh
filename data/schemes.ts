@@ -246,8 +246,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'ayushman-bharat',
     slug: 'ayushman-bharat-pmjay-health-card',
-    title_en: 'Ayushman Card 2026: Online Apply, Download PDF, Hospital List & ₹5 Lakh Free Cover',
-    title_hi: 'आयुष्मान कार्ड 2026: ऑनलाइन कैसे बनाएं? ₹5 लाख मुफ्त इलाज, डाउनलोड PDF व लिस्ट',
+    title_en: 'Ayushman Bharat PM-JAY: Eligibility & ₹5 Lakh Cover',
+    title_hi: 'आयुष्मान भारत PM-JAY: ₹5 लाख मुफ्त इलाज व पात्रता नियम',
     shortTitle_en: 'Ayushman Card (PM-JAY)',
     shortTitle_hi: 'आयुष्मान भारत कार्ड (PM-JAY)',
     category: 'health',
@@ -255,14 +255,14 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Central (All India)',
     stateLabel_hi: 'केंद्र सरकार (अखिल भारतीय)',
     status: 'Updated',
-    lastVerified: 'November 2026',
+    lastVerified: 'November 18, 2026',
     
-    benefitSummary_en: 'Cashless inpatient medical treatment up to ₹5,00,000 per family per year in empanelled private and public hospitals across India. Special expanded coverage provides free ₹5 Lakh top-up for every senior citizen aged 70+ regardless of family income.',
-    benefitSummary_hi: 'देश भर के सूचीबद्ध सरकारी व निजी अस्पतालों में प्रति परिवार प्रति वर्ष ₹5,00,000 तक का मुफ्त कैशलेस इलाज। 70 वर्ष या अधिक उम्र के सभी बुजुर्गों के लिए अलग से ₹5 लाख तक का विशेष सुरक्षा टॉप-अप (वय वंदना कार्ड)।',
-    benefitAmount_en: '₹5 Lakh / family / year (plus ₹5 Lakh for 70+ seniors)',
-    benefitAmount_hi: '₹5 लाख प्रति परिवार प्रति वर्ष (70+ बुजुर्गों हेतु अतिरिक्त ₹5 लाख)',
-    whoCanApply_en: 'Families listed in SECC 2011/NFSA Ration Card, and all Indian senior citizens aged 70 years and above (under Ayushman Vaya Vandana Card).',
-    whoCanApply_hi: 'एसईसीसी 2011 सूची या पात्र राशन कार्डधारी परिवार, तथा 70 वर्ष या उससे अधिक आयु के सभी भारतीय नागरिक (वय वंदना कार्ड)।',
+    benefitSummary_en: 'Cashless inpatient medical treatment up to ₹5,00,000 per family per year in empanelled private and public hospitals across India. Eligible families are identified based on SECC 2011 and active NFSA Ration Card criteria. Senior citizens aged 70+ receive a separate dedicated cover under the Ayushman Vay Vandana Card.',
+    benefitSummary_hi: 'देश भर के सूचीबद्ध सरकारी व निजी अस्पतालों में प्रति परिवार प्रति वर्ष ₹5,00,000 तक का मुफ्त कैशलेस इलाज। पात्र परिवारों का चयन एसईसीसी 2011 और राष्ट्रीय खाद्य सुरक्षा (NFSA) राशन कार्ड के आधार पर होता है। 70+ वरिष्ठ नागरिकों हेतु समर्पित आयुष्मान वय वंदना कार्ड अलग से उपलब्ध है।',
+    benefitAmount_en: '₹5,00,000 / family / year (Cashless Inpatient Hospitalization)',
+    benefitAmount_hi: '₹5,00,000 प्रति परिवार / वर्ष (कैशलेस अस्पताल इलाज)',
+    whoCanApply_en: 'Families listed in SECC 2011 or holding an active NFSA Ration Card (Antyodaya AAY / Priority PHH). Senior citizens aged 70+ should apply under the dedicated Ayushman Vay Vandana Card.',
+    whoCanApply_hi: 'एसईसीसी 2011 सूची में दर्ज अथवा सक्रिय एनएफएसए राशन कार्ड (अंत्योदय AAY / प्राथमिकता PHH) धारक परिवार। 70 वर्ष से अधिक उम्र के बुजुर्ग समर्पित आयुष्मान वय वंदना कार्ड के तहत आवेदन करें।',
     applicationMode: 'Online (beneficiary.nha.gov.in / Ayushman App) & Offline (CSC / Hospital)',
     bannerImage: '/images/schemes/ayushman-bharat-pmjay-health-card.png',
     secondaryImage: '/images/schemes/ayushman-bharat-pmjay-en.png',
@@ -275,36 +275,36 @@ export const SCHEMES: Scheme[] = [
       'All pre-existing medical conditions covered from Day 1 without any waiting periods or medical checkups.',
       'No cap on family size, gender, or age of family members.',
       '100% Nationwide Portability: an Ayushman card made in Bihar, Jharkhand, UP, or MP is fully honored in empanelled private & govt hospitals in Delhi, Mumbai, or Bengaluru.',
-      'Ayushman Vaya Vandana Card: Every senior citizen aged 70+ receives an independent ₹5 Lakh medical cover regardless of family income.'
+      'Dedicated Senior Citizen Expansion: Eligible seniors aged 70+ receive their own independent ₹5 Lakh Ayushman Vay Vandana Card top-up.'
     ],
     benefitsList_hi: [
       '1,950+ मेडिकल और सर्जिकल प्रक्रियाओं (हार्ट सर्जरी, कैंसर कीमो/रेडियोथेरेपी, न्यूरो, घुटना प्रत्यारोपण) का पूर्ण कैशलेस इलाज।',
       'पुरानी और गंभीर बीमारियां (Pre-existing diseases) पहले दिन से ही बिना किसी वेटिंग पीरियड के कवर होती हैं।',
       'परिवार के सदस्यों की संख्या, आयु या लिंग की कोई सीमा नहीं है।',
       'देशव्यापी 100% पोर्टेबिलिटी: बिहार, झारखंड, यूपी या एमपी का बना कार्ड दिल्ली, मुंबई या हैदराबाद के बड़े निजी व सरकारी अस्पतालों में भी मान्य है।',
-      'आयुष्मान वय वंदना कार्ड: 70 वर्ष से अधिक उम्र के सभी बुजुर्गों के लिए पारिवारिक सीमा और आय से अलग ₹5 लाख का समर्पित कार्ड।'
+      'वरिष्ठ नागरिक विशेष विस्तार: 70 वर्ष से अधिक उम्र के बुजुर्गों के लिए पारिवारिक सीमा से अलग समर्पित ₹5 लाख का आयुष्मान वय वंदना कार्ड उपलब्ध है।'
     ],
     
     eligibility: {
       eligibleIf_en: [
         'Family name is included in the Socio-Economic Caste Census (SECC 2011) database.',
         'Family holds an active Antyodaya Anna Yojana (AAY) or Priority Household (PHH) Ration Card in participating states.',
-        'Any Indian citizen aged 70 years or older (authenticated via Aadhaar date of birth) qualifies for the Senior Citizen Vaya Vandana Card regardless of economic status or income.',
+        'Family is enrolled under recognized state-sponsored health insurance convergence programs.',
         'Registered construction workers (BOCW) in state-specific linked implementations.'
       ],
       eligibleIf_hi: [
         'परिवार का नाम सामाजिक-आर्थिक जाति जनगणना (SECC 2011) की सूची में दर्ज हो।',
         'परिवार के पास अंत्योदय (AAY) या प्राथमिकता राशन कार्ड (PHH/लाल-पीला कार्ड) उपलब्ध हो।',
-        '70 वर्ष या अधिक उम्र का कोई भी भारतीय नागरिक (आधार में दर्ज जन्मतिथि अनुसार) आय सीमा की बाध्यता के बिना वय वंदना कार्ड हेतु पात्र है।',
+        'राज्य सरकार द्वारा संचालित स्वास्थ्य बीमा अभिसरण योजनाओं के तहत पंजीकृत परिवार।',
         'कई राज्यों में पंजीकृत निर्माण श्रमिक (BOCW कार्डधारक)।'
       ],
       notEligibleIf_en: [
-        'Families paying income tax or holding government employee insurance (CGHS/ECHS) are not eligible for general SECC quota (except 70+ seniors who can choose between CGHS and Ayushman).',
+        'Families paying income tax or holding government employee insurance (CGHS/ECHS) under general family quota.',
         'Households owning motorized 3/4-wheeler fishing boats or mechanized agricultural equipment (under general rural criteria).',
         'Citizens who already hold corporate health insurance and are not in SECC/Ration card database.'
       ],
       notEligibleIf_hi: [
-        'सामान्य कोटे में आयकरदाता या केंद्र/राज्य सरकारी स्वास्थ्य योजना (CGHS/ECHS) के लाभार्थी (सिवाय 70+ बुजुर्ग जो विकल्प चुन सकते हैं)।',
+        'सामान्य पारिवारिक कोटे में आयकरदाता या सरकारी स्वास्थ्य योजना (CGHS/ECHS) के लाभार्थी परिवार।',
         'सामान्य ग्रामीण मानकों में चार पहिया वाहन या बड़े यंत्रीकृत उपकरण वाले परिवार।',
         'जो परिवार एसईसीसी अथवा राज्य राशन कार्ड सूची में शामिल नहीं हैं।'
       ]
@@ -482,8 +482,8 @@ export const SCHEMES: Scheme[] = [
       'आयुष्मान कार्ड कैसे बनाएं', 'आयुष्मान कार्ड पात्रता', 'आयुष्मान कार्ड लिस्ट', 'आयुष्मान भारत योजना 2026',
       'आयुष्मान वय वंदना कार्ड 70 प्लस', 'गोल्डन कार्ड डाउनलोड', 'फ्री ₹5 लाख इलाज'
     ],
-    metaDescription_en: '✅ Ayushman Card 2026: How to apply online & download PDF in 5 minutes? Check ₹5 Lakh free cashless treatment, 70+ senior citizen card, eligibility & private hospital list.',
-    metaDescription_hi: '✅ आयुष्मान कार्ड 2026: मोबाइल से 5 मिनट में आयुष्मान कार्ड कैसे बनाएं व PDF डाउनलोड करें? जानिए ₹5 लाख मुफ्त इलाज, 70+ बुजुर्ग वय वंदना कार्ड, पात्रता व प्राइवेट हॉस्पिटल लिस्ट।'
+    metaDescription_en: 'Understand Ayushman Bharat PM-JAY family eligibility, ₹5 lakh annual cashless hospitalization cover, empanelled hospitals, and helpline 14555. Verified Nov 2026.',
+    metaDescription_hi: 'आयुष्मान भारत PM-JAY योजना की पात्रता, प्रति परिवार ₹5 लाख सालाना मुफ्त इलाज, जरूरी दस्तावेज और हेल्पलाइन 14555 की पूरी जानकारी। सत्यापित नवंबर 2026.'
   },
   {
     id: 'jharkhand-maiya-samman',
@@ -763,7 +763,7 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Central (All India)',
     stateLabel_hi: 'केंद्र सरकार (अखिल भारतीय)',
     status: 'Updated',
-    lastVerified: 'November 2026',
+    lastVerified: 'November 18, 2026',
     
     benefitSummary_en: 'Financial grant of ₹1,20,000 (plain areas) to ₹1,30,000 (hilly/NE states) for rural pucca house construction + 90-95 days of MGNREGA wages (₹25,000+) and ₹12,000 toilet grant. PMAY-Urban 2.0 provides interest subsidies and construction grants up to ₹2.5 Lakh.',
     benefitSummary_hi: 'ग्रामीण क्षेत्रों में पक्का मकान बनाने हेतु ₹1,20,000 (मैदानी) से ₹1,30,000 (पहाड़ी/पूर्वोत्तर) की सीधी आर्थिक सहायता, 90-95 दिनों की मनरेगा मजदूरी (₹25,000+) और ₹12,000 शौचालय सहायता। शहरी 2.0 में ₹2.5 लाख तक की ब्याज सब्सिडी व अनुदान।',
@@ -4213,7 +4213,7 @@ export const SCHEMES: Scheme[] = [
   "stateLabel_en": "Central (All India)",
   "stateLabel_hi": "केंद्र सरकार (अखिल भारतीय)",
   "status": "Active",
-  "lastVerified": "November 2026",
+  "lastVerified": "November 18, 2026",
   "benefitSummary_en": "Guaranteed 100 days of wage employment per financial year for rural households at government-notified daily wages (₹234 to ₹374/day), paid directly into Aadhaar-seeded bank accounts via ABPS DBT.",
   "benefitSummary_hi": "ग्रामीण परिवारों के वयस्क सदस्यों को प्रति वित्तीय वर्ष 100 दिनों के अकुशल शारीरिक रोजगार की कानूनी गारंटी, सरकारी अधिसूचित दैनिक मजदूरी (₹234 से ₹374/दिन) पर सीधे आधार-सीडेड बैंक खाते में डीबीटी (DBT) द्वारा भुगतान।",
   "benefitAmount_en": "100 Days Guaranteed Wage Work (₹234 to ₹374/day state-wise) + Statutory Unemployment Allowance",
@@ -4491,7 +4491,7 @@ export const SCHEMES: Scheme[] = [
   "stateLabel_en": "Gujarat",
   "stateLabel_hi": "गुजरात",
   "status": "Active",
-  "lastVerified": "November 2026",
+  "lastVerified": "November 18, 2026",
   "benefitSummary_en": "0% interest-free, collateral-free group loans up to ₹1,00,000 for women Joint Liability Earning and Saving Groups (JLESG / Sakhi Mandal) of 10 members. The Government of Gujarat pays the complete bank interest as subvention, waives 100% stamp duty, and provides a ₹3,000 incentive bonus directly to the group account upon on-time repayment over 12 months.",
   "benefitSummary_hi": "10 महिलाओं के संयुक्त देयता समूह (सखी मंडल / JLESG) को ₹1,00,000 (1 लाख) तक का 0% ब्याज-मुक्त व बिना गारंटी ऋण। बैंक के पूरे ब्याज का भुगतान गुजरात सरकार सीधे वहन करती है, स्टाम्प शुल्क 100% माफ है तथा 12 माह में नियमित किश्तें चुकाने पर समूह के खाते में ₹3,000 की अतिरिक्त प्रोत्साहन राशि मिलती है।",
   "benefitAmount_en": "Up to ₹1,00,000 (0% Interest-Free Loan) + ₹3,000 Incentive",
@@ -4756,8 +4756,8 @@ export const SCHEMES: Scheme[] = [
 {
   "id": "senior-citizen-ayushman-card-70-plus",
   "slug": "senior-citizen-ayushman-card-70-plus",
-  "title_en": "Ayushman Vay Vandana Card (70+): How to Apply Online 2026",
-  "title_hi": "70+ आयुष्मान कार्ड: राशन कार्ड नहीं, सिर्फ आधार से अप्लाई करें",
+  "title_en": "Ayushman Vay Vandana Card (70+): Apply Online 2026",
+  "title_hi": "आयुष्मान वय वंदना कार्ड: 70+ बुजुर्ग ऐसे करें अप्लाई",
   "shortTitle_en": "Senior Citizen Ayushman Card (70+)",
   "shortTitle_hi": "सीनियर सिटीजन आयुष्मान कार्ड (70+)",
   "category": "health",
@@ -4765,7 +4765,7 @@ export const SCHEMES: Scheme[] = [
   "stateLabel_en": "Central (All India)",
   "stateLabel_hi": "केंद्र सरकार (अखिल भारतीय)",
   "status": "Active",
-  "lastVerified": "November 2026",
+  "lastVerified": "November 18, 2026",
   "benefitSummary_en": "Universal free hospitalization healthcare cover of ₹5,00,000 per year for all senior citizens aged 70 years and above across India, regardless of income, caste, or ration card status. Senior citizens from existing Ayushman PM-JAY families receive an additional distinct ₹5 Lakh top-up cover exclusively for their individual medical care. Instant digital Golden Ayushman Vay Vandana Card generation via beneficiary.nha.gov.in and the Ayushman App using Aadhaar e-KYC.",
   "benefitSummary_hi": "70 वर्ष और उससे अधिक आयु के देश के सभी वरिष्ठ नागरिकों को ₹5,00,000 (5 लाख) प्रति वर्ष का सार्वभौमिक मुफ्त कैशलेस स्वास्थ्य सुरक्षा कवच। यह आय, जाति या राशन कार्ड के बिना प्रत्येक बुजुर्ग को मिलता है। पहले से आयुष्मान कार्ड धारक परिवारों के बुजुर्गों को पारिवारिक 5 लाख के अतिरिक्त अलग से ₹5 लाख का विशेष टॉप-अप कार्ड मिलता है। beneficiary.nha.gov.in और आयुष्मान ऐप से आधार ई-केवाईसी द्वारा तुरंत गोल्डन वय वंदना कार्ड बन जाता है।",
   "benefitAmount_en": "₹5,00,000 / year (Universal Free Hospitalization)",
@@ -4973,7 +4973,7 @@ export const SCHEMES: Scheme[] = [
     "ayushman card add new family member online",
     "ayushman 5 lakh free treatment for senior citizens"
   ],
-  "metaDescription_en": "All citizens aged 70+ are eligible for ₹5 lakh/year cashless cover, with no income limit. How to apply for the Vay Vandana Card with Aadhaar e-KYC.",
-  "metaDescription_hi": "70+ बुजुर्गों का वय वंदना कार्ड कैसे बनता है? पात्रता, ज़रूरी दस्तावेज़, आधार e-KYC के स्टेप और CGHS/ECHS वालों के लिए नियम।"
+  "metaDescription_en": "Step-by-step guide to apply for Ayushman Vay Vandana Card for seniors 70+. Check ₹5 lakh coverage rules, Aadhaar e-KYC steps, and helpline 14555. Verified Nov 2026.",
+  "metaDescription_hi": "70 वर्ष से अधिक उम्र के वरिष्ठ नागरिकों हेतु आयुष्मान वय वंदना कार्ड ऑनलाइन आवेदन, ₹5 लाख अतिरिक्त कवर नियम और हेल्पलाइन 14555। सत्यापित नवंबर 2026."
 }
 ];
