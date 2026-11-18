@@ -37,6 +37,16 @@ const nextConfig: NextConfig = {
         destination: 'https://janlabh.in/:path*',
         permanent: true,
       },
+      {
+        source: '/updates/ayushman-vaya-vandana-card-seniors-70-plus-rollout',
+        destination: '/schemes/senior-citizen-ayushman-card-70-plus',
+        permanent: true,
+      },
+      {
+        source: '/hi/updates/ayushman-vaya-vandana-card-seniors-70-plus-rollout',
+        destination: '/hi/schemes/senior-citizen-ayushman-card-70-plus',
+        permanent: true,
+      },
     ];
   },
   webpack: (config, {dev}) => {
