@@ -35,7 +35,8 @@ import {
   UserCheck,
   BookOpen,
   MapPin,
-  Printer
+  Printer,
+  TrendingUp
 } from 'lucide-react';
 import { ARTICLES } from '@/data/articles';
 
@@ -623,6 +624,103 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               ))}
             </ul>
           </section>
+
+          {/* Dedicated APY Contribution Chart Section */}
+          {scheme.slug === 'atal-pension-yojana-apy-retirement' && (
+            <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <TrendingUp className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                    <span>{isHi ? 'अटल पेंशन योजना प्रीमियम चार्ट 2026 (Contribution Chart)' : 'Atal Pension Yojana Contribution Chart 2026'}</span>
+                  </h2>
+                  <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">
+                    {isHi
+                      ? 'अपनी उम्र और इच्छित पेंशन (₹1,000 से ₹5,000) के अनुसार आवश्यक मासिक अंशदान तालिका (PFRDA अधिकृत):'
+                      : 'PFRDA-authorized monthly contribution required based on your entry age and target pension (₹1,000 to ₹5,000):'}
+                  </p>
+                </div>
+                <span className="shrink-0 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-100 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                  {isHi ? '100% सरकारी गारंटी' : '100% Govt Guaranteed'}
+                </span>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr className="bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200 dark:border-slate-700">
+                      <th className="py-2.5 px-3">{isHi ? 'प्रवेश आयु (Entry Age)' : 'Entry Age'}</th>
+                      <th className="py-2.5 px-3">{isHi ? '₹1,000 पेंशन / माह' : '₹1,000 / mo'}</th>
+                      <th className="py-2.5 px-3">{isHi ? '₹2,000 पेंशन / माह' : '₹2,000 / mo'}</th>
+                      <th className="py-2.5 px-3">{isHi ? '₹3,000 पेंशन / माह' : '₹3,000 / mo'}</th>
+                      <th className="py-2.5 px-3">{isHi ? '₹4,000 पेंशन / माह' : '₹4,000 / mo'}</th>
+                      <th className="py-2.5 px-3 bg-amber-50 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 font-extrabold">{isHi ? '₹5,000 पेंशन / माह' : '₹5,000 / mo'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'नॉमिनी को वापसी (Corpus)' : 'Nominee Return Corpus'}</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">18 वर्ष</td>
+                      <td className="py-2.5 px-3">₹42 / माह</td>
+                      <td className="py-2.5 px-3">₹84 / माह</td>
+                      <td className="py-2.5 px-3">₹126 / माह</td>
+                      <td className="py-2.5 px-3">₹168 / माह</td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400 bg-amber-50/50 dark:bg-amber-950/20">₹210 / माह</td>
+                      <td className="py-2.5 px-3 font-medium">₹1.7 लाख – ₹8.5 लाख</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">25 वर्ष</td>
+                      <td className="py-2.5 px-3">₹76 / माह</td>
+                      <td className="py-2.5 px-3">₹151 / माह</td>
+                      <td className="py-2.5 px-3">₹226 / माह</td>
+                      <td className="py-2.5 px-3">₹301 / माह</td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400 bg-amber-50/50 dark:bg-amber-950/20">₹376 / माह</td>
+                      <td className="py-2.5 px-3 font-medium">₹1.7 लाख – ₹8.5 लाख</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">30 वर्ष</td>
+                      <td className="py-2.5 px-3">₹116 / माह</td>
+                      <td className="py-2.5 px-3">₹231 / माह</td>
+                      <td className="py-2.5 px-3">₹347 / माह</td>
+                      <td className="py-2.5 px-3">₹462 / माह</td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400 bg-amber-50/50 dark:bg-amber-950/20">₹577 / माह</td>
+                      <td className="py-2.5 px-3 font-medium">₹1.7 लाख – ₹8.5 लाख</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">35 वर्ष</td>
+                      <td className="py-2.5 px-3">₹181 / माह</td>
+                      <td className="py-2.5 px-3">₹362 / माह</td>
+                      <td className="py-2.5 px-3">₹543 / माह</td>
+                      <td className="py-2.5 px-3">₹722 / माह</td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400 bg-amber-50/50 dark:bg-amber-950/20">₹902 / माह</td>
+                      <td className="py-2.5 px-3 font-medium">₹1.7 लाख – ₹8.5 लाख</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">40 वर्ष (अधिकतम)</td>
+                      <td className="py-2.5 px-3">₹291 / माह</td>
+                      <td className="py-2.5 px-3">₹582 / माह</td>
+                      <td className="py-2.5 px-3">₹873 / माह</td>
+                      <td className="py-2.5 px-3">₹1,164 / माह</td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400 bg-amber-50/50 dark:bg-amber-950/20">₹1,454 / माह</td>
+                      <td className="py-2.5 px-3 font-medium">₹1.7 लाख – ₹8.5 लाख</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="p-3 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-[11px] text-amber-950 dark:text-amber-200 space-y-1">
+                <div className="font-bold flex items-center gap-1">
+                  <Sparkles className="h-3.5 w-3.5 text-amber-600 shrink-0" />
+                  <span>{isHi ? 'महत्वपूर्ण नियम व सलाह:' : 'Key Rules & Advisory:'}</span>
+                </div>
+                <p>
+                  {isHi
+                    ? 'अटल पेंशन योजना में जितनी कम उम्र में जुड़ेंगे, मासिक प्रीमियम उतना ही कम होगा। 60 वर्ष पूरे होने तक अंशदान स्वतः बैंक खाते से कटता रहेगा। यदि ग्राहक की मृत्यु होती है, तो जीवनसाथी को आजीवन समान पेंशन मिलेगी और दोनों के बाद नॉमिनी को ₹8.5 लाख तक की पूरी संचित राशि वापस मिलेगी।'
+                    : 'Joining APY at a younger age locks in significantly lower lifetime monthly premiums. Contributions are automatically auto-debited until age 60. In case of subscriber death, spouse receives the same monthly pension, and upon both demises, nominee receives up to ₹8.5 Lakh.'}
+                </p>
+              </div>
+            </section>
+          )}
 
           {/* AdSense Unit / Advisory Slot */}
           <AdBannerSlot lang={lang} format="in-article" adSlot="scheme-detail-mid" />

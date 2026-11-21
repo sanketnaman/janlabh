@@ -1645,8 +1645,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'atal-pension-yojana',
     slug: 'atal-pension-yojana-apy-retirement',
-    title_en: 'Atal Pension Yojana (APY): Guaranteed ₹1,000–₹5,000 Monthly Pension',
-    title_hi: 'अटल पेंशन योजना (APY): 60 वर्ष बाद ₹1,000 से ₹5,000 की गारंटीड मासिक पेंशन',
+    title_en: 'Atal Pension Yojana (APY) 2026: Benefits, Contribution Chart & ₹5,000 Rules',
+    title_hi: 'अटल पेंशन योजना (APY) 2026: फायदे (Benefits), प्रीमियम चार्ट व ₹5000 नियम',
     shortTitle_en: 'Atal Pension Yojana (APY)',
     shortTitle_hi: 'अटल पेंशन योजना (APY)',
     category: 'pension',
@@ -1654,7 +1654,7 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Central (All India)',
     stateLabel_hi: 'केंद्र सरकार (अखिल भारतीय)',
     status: 'Active',
-    lastVerified: 'October 25, 2026',
+    lastVerified: 'November 21, 2026',
     
     benefitSummary_en: 'Guaranteed lifetime monthly pension of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000 from age 60 based on modest monthly contributions starting between ages 18 and 40. Continued pension to spouse upon subscriber death and return of entire corpus to nominee.',
     benefitSummary_hi: '18 से 40 वर्ष की आयु में मामूली मासिक अंशदान जमा करने पर 60 वर्ष की आयु के बाद आजीवन ₹1,000 से ₹5,000 की पक्की मासिक पेंशन। सब्सक्राइबर के बाद जीवनसाथी को पेंशन व नॉमिनी को पूरा फंड वापस।',
@@ -1669,16 +1669,20 @@ export const SCHEMES: Scheme[] = [
     whatIsThis_hi: 'अटल पेंशन योजना (APY) भारत सरकार द्वारा संचालित प्रमुख सामाजिक सुरक्षा योजना है, जिसका नियमन पीएफआरडीए (PFRDA) द्वारा किया जाता है। इसका उद्देश्य असंगठित क्षेत्र के कामगारों और युवाओं को वृद्धावस्था में सुरक्षित मासिक आय की गारंटी देना है।',
     
     benefitsList_en: [
-      'Government of India guarantees the minimum pension amount irrespective of market return fluctuations.',
-      'Same pension amount continues to the spouse for life upon subscriber’s demise.',
-      'Upon demise of both subscriber and spouse, the entire accumulated pension wealth (up to ₹8.5 Lakh for ₹5,000 pension) is handed over to the nominee.',
-      'Automated auto-debit facility from bank savings account.'
+      '100% Government Guaranteed Pension: Lifelong fixed monthly pension of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000 from age 60, backed by sovereign guarantee irrespective of market fluctuations.',
+      'Lifelong Spousal Pension: Upon subscriber’s demise, the exact same monthly pension continues to the spouse for life without reduction.',
+      'Return of Full Pension Corpus to Nominee: Upon the demise of both subscriber and spouse, the total accumulated pension wealth (up to ₹8.5 Lakh for ₹5,000 pension) is handed over to the nominee.',
+      'Tax Deduction under Section 80CCD(1B): Eligible subscribers enjoy tax deductions up to ₹50,000, over and above the standard Section 80C limit of ₹1.5 Lakh.',
+      'Affordable Entry from ₹42/Month: Start saving as low as ₹42/month (at age 18) with hassle-free auto-debit directly from your savings bank account.',
+      'Instant e-PRAN & Online Statement: Download your official e-PRAN card and monitor transaction statements anytime on Protean CRA (npscra.nsdl.co.in) without login password.'
     ],
     benefitsList_hi: [
-      'बाजार के उतार-चढ़ाव से बेअसर, सरकार द्वारा न्यूनतम पेंशन राशि की 100% गारंटी।',
-      'सब्सक्राइबर की मृत्यु के पश्चात उसके पति/पत्नी को आजीवन समान पेंशन का भुगतान।',
-      'दोनों के निधन के बाद जमा संपूर्ण संचित कोष (₹5,000 पेंशन पर लगभग ₹8.5 लाख) कानूनी उत्तराधिकारी/नॉमिनी को वापस।',
-      'बचत खाते से ऑटो-डेबिट की आसान सुविधा।'
+      '100% सरकारी गारंटीड मासिक पेंशन: बाजार के उतार-चढ़ाव से पूरी तरह सुरक्षित, 60 वर्ष की आयु से आजीवन ₹1,000 से ₹5,000 प्रति माह की पक्की पेंशन।',
+      'जीवनसाथी को आजीवन समान पेंशन: सब्सक्राइबर के निधन के बाद पति/पत्नी को आजीवन बिना किसी कटौती के समान पेंशन का भुगतान।',
+      'नॉमिनी को ₹8.5 लाख का संपूर्ण संचित कोष वापस: दोनों के निधन के बाद जमा संपूर्ण पेंशन कॉर्पस (₹1.7 लाख से ₹8.5 लाख) कानूनी उत्तराधिकारी/नॉमिनी को वापस।',
+      'Section 80CCD(1B) के तहत ₹50,000 तक की अतिरिक्त टैक्स छूट: 80C की ₹1.5 लाख की सीमा से अलग ₹50,000 तक की आयकर छूट का लाभ।',
+      'मात्र ₹42 प्रति माह से शुरुआत: 18 वर्ष की आयु में मामूली अंशदान और बैंक बचत खाते से ऑटो-डेबिट (Auto-Debit) की आसान सुविधा।',
+      'डिजिटल ई-प्रान व ऑनलाइन स्टेटमेंट: Protean CRA (nsdl) पोर्टल पर बिना पासवर्ड केवल प्रान नंबर या बैंक खाते से ई-कार्ड और पासबुक डाउनलोड।'
     ],
     
     eligibility: {
@@ -1732,33 +1736,81 @@ export const SCHEMES: Scheme[] = [
       'आप अपनी बैंक शाखा में जाकर भी सरल APY फॉर्म जमा कर सकते हैं।'
     ],
     
-    statusCheckGuide_en: 'Subscribers can check their APY account e-PRAN and transaction statement on the Protean CRA portal (npscra.nsdl.co.in) using their PRAN or Savings Bank Account number.',
-    statusCheckGuide_hi: 'nsdl.co.in / npscra.nsdl.co.in पर जाकर अपने प्रान नंबर या बैंक खाता संख्या द्वारा अपना ई-प्रान और जमा राशि का स्टेटमेंट कभी भी डाउनलोड कर सकते हैं।',
+    statusCheckGuide_en: 'How to check your Atal Pension Yojana (APY) account status and download e-PRAN card online:\n\n1. Visit the official Protean CRA portal at npscra.nsdl.co.in and navigate to "APY e-PRAN / Master View".\n\n2. Select your search mode: "Search with PRAN" (enter your 12-digit PRAN and Bank Account Number) or "Search without PRAN" (enter Subscriber Name, Bank Account Number, and Date of Birth).\n\n3. Select view type as "e-PRAN Card" or "Statement of Transaction", enter the captcha, and click Submit.\n\n4. Your digital e-PRAN card with total accumulated contribution, auto-debit dates, and nominee details will be displayed for instant PDF download.',
+    statusCheckGuide_hi: 'अटल पेंशन योजना (APY) का स्टेटस चेक करने और ई-प्रान कार्ड डाउनलोड करने का तरीका:\n\n1. आधिकारिक Protean CRA पोर्टल npscra.nsdl.co.in पर जाएं और "APY e-PRAN / Master View" विकल्प चुनें।\n\n2. सर्च मोड चुनें: "Search with PRAN" (12 अंकों का प्रान नंबर और बैंक खाता संख्या दर्ज करें) अथवा "Search without PRAN" (सब्सक्राइबर का नाम, जन्मतिथि और बैंक खाता संख्या दर्ज करें)।\n\n3. "e-PRAN Card View" या "Statement of Transaction" चुनें और कैप्चा कोड भरकर सबमिट करें।\n\n4. आपका डिजिटल ई-प्रान कार्ड, संचित अंशदान और नॉमिनी का पूरा विवरण स्क्रीन पर आ जाएगा, जिसे आप PDF के रूप में डाउनलोड व प्रिंट कर सकते हैं।',
     officialStatusUrl: 'https://www.npscra.nsdl.co.in',
     
     commonProblems_en: [
       {
         problem: 'Overdue penalty charged due to low balance',
         solution: 'Ensure sufficient balance in your bank on the designated monthly debit date. Overdue interest is minimal (₹1 per ₹100 per month).'
+      },
+      {
+        problem: 'Unable to trace PRAN (Permanent Retirement Account Number)',
+        solution: 'Visit npscra.nsdl.co.in > APY e-PRAN search > choose "Search without PRAN", enter your registered bank account number and date of birth to instantly retrieve your PRAN.'
       }
     ],
     commonProblems_hi: [
       {
         problem: 'खाते में बैलेंस न होने से किस्त छूट गई',
         solution: 'खाते में पर्याप्त राशि रखें। छूटी हुई किस्त पर मामूली ब्याज (₹1 प्रति ₹100 प्रति माह) काटकर अगली तारीख पर खाता पुनः नियमित हो जाता है।'
+      },
+      {
+        problem: 'प्रान (PRAN) नंबर खो गया है या नहीं मिला',
+        solution: 'npscra.nsdl.co.in पर जाएं > "Search without PRAN" चुनें > अपना बैंक खाता नंबर और जन्मतिथि दर्ज करके तुरंत अपना मूल प्रान नंबर प्राप्त करें।'
       }
     ],
     
     faqs_en: [
       {
-        q: 'What is the monthly contribution for an 18-year-old for ₹5,000 pension?',
-        a: 'For an 18-year-old, the monthly contribution is just ₹210 per month until age 60 to secure a guaranteed ₹5,000 monthly pension.'
+        q: 'What are the main benefits of Atal Pension Yojana (APY)?',
+        a: 'The key benefits of Atal Pension Yojana include: 1) Guaranteed minimum monthly pension of ₹1,000 to ₹5,000 for life starting at age 60, backed 100% by the Central Government. 2) In the event of the subscriber’s demise, the spouse continues to receive the exact same pension for life. 3) Upon demise of both subscriber and spouse, the entire accumulated pension corpus (up to ₹8.5 Lakh) is returned to the nominee. 4) Eligible for additional income tax deduction up to ₹50,000 under Section 80CCD(1B).'
+      },
+      {
+        q: 'How much is the monthly contribution in the APY chart for ₹5,000 pension?',
+        a: 'The monthly contribution depends entirely on your entry age. At age 18, it is just ₹210 per month; at age 25, it is ₹376 per month; at age 30, it is ₹577 per month; at age 35, it is ₹902 per month; and at age 40 (maximum entry age), it is ₹1,454 per month until you turn 60.'
+      },
+      {
+        q: 'Can income tax payers join Atal Pension Yojana?',
+        a: 'No. Effective 1 October 2022, the Ministry of Finance amended the APY guidelines: any citizen who is or has been an income tax payer is not eligible to open a new APY account. Existing accounts opened before 1 October 2022 remain active and continue to receive full benefits.'
+      },
+      {
+        q: 'How to download APY e-PRAN card without login using bank account?',
+        a: 'Go to the official Protean CRA portal (npscra.nsdl.co.in) > APY e-PRAN Search > select "Search without PRAN" > enter your subscriber name, registered bank account number, and date of birth > select "e-PRAN View" > submit to download the verified digital card PDF.'
+      },
+      {
+        q: 'What happens to the APY pension corpus after the death of both subscriber and spouse?',
+        a: 'Under APY rules, if both the subscriber and spouse pass away, the entire pension wealth accumulated in the account (₹1.7 Lakh for ₹1,000 pension, up to ₹8.5 Lakh for ₹5,000 pension) is handed over directly to the registered nominee without tax deductions or legal delays.'
+      },
+      {
+        q: 'What tax deduction is available under Section 80CCD for APY contributions?',
+        a: 'Subscribers can claim tax deductions for their APY contributions under Section 80CCD(1) within the overall ₹1.5 Lakh limit of Section 80C. Additionally, subscribers can claim an exclusive deduction of up to ₹50,000 under Section 80CCD(1B), enabling total annual deductions up to ₹2.0 Lakh.'
       }
     ],
     faqs_hi: [
       {
-        q: '18 वर्ष के युवा को ₹5,000 पेंशन पाने के लिए हर महीने कितना जमा करना होगा?',
-        a: 'मात्र ₹210 प्रति माह! 18 वर्ष की आयु में शुरू करने पर 60 वर्ष तक हर महीने ₹210 जमा करने पर आजीवन ₹5,000 मासिक पेंशन मिलती है।'
+        q: 'अटल पेंशन योजना (APY) के मुख्य फायदे (Benefits) क्या हैं?',
+        a: 'अटल पेंशन योजना के 4 सबसे बड़े फायदे हैं: 1) 60 वर्ष की आयु से आजीवन ₹1,000 से ₹5,000 प्रति माह की 100% सरकारी गारंटीड पेंशन। 2) सब्सक्राइबर के निधन के बाद जीवनसाथी (पति/पत्नी) को आजीवन समान मासिक पेंशन। 3) दोनों के निधन के बाद संपूर्ण संचित फंड (₹5,000 पेंशन पर लगभग ₹8.5 लाख) नॉमिनी को वापस। 4) आयकर अधिनियम की धारा 80CCD(1B) के तहत ₹50,000 तक की अतिरिक्त टैक्स छूट।'
+      },
+      {
+        q: 'अटल पेंशन योजना चार्ट के अनुसार ₹5,000 पेंशन पाने के लिए हर महीने कितना जमा करना होगा?',
+        a: 'मासिक अंशदान आपकी जुड़ने की उम्र पर निर्भर करता है: यदि आप 18 वर्ष की उम्र में जुड़ते हैं तो मात्र ₹210 प्रति माह; 25 वर्ष की उम्र में ₹376 प्रति माह; 30 वर्ष की उम्र में ₹577 प्रति माह; 35 वर्ष की उम्र में ₹902 प्रति माह; और 40 वर्ष की अधिकतम उम्र में ₹1,454 प्रति माह 60 वर्ष की आयु तक जमा करना होता है।'
+      },
+      {
+        q: 'क्या इनकम टैक्स भरने वाले (Taxpayers) अटल पेंशन योजना का खाता खुलवा सकते हैं?',
+        a: 'नहीं। वित्त मंत्रालय के 1 अक्टूबर 2022 के नए नियम के अनुसार, जो नागरिक आयकर (Income Tax) भरते हैं, वे अटल पेंशन योजना में नया खाता नहीं खोल सकते। यदि 1 अक्टूबर 2022 से पहले खाता खुल चुका है, तो वह पूरी तरह सुरक्षित और चालू रहेगा।'
+      },
+      {
+        q: 'प्रान (PRAN) नंबर से ई-प्रान कार्ड और स्टेटमेंट ऑनलाइन कैसे डाउनलोड करें?',
+        a: 'Protean CRA की आधिकारिक वेबसाइट (npscra.nsdl.co.in) पर जाएं > "APY e-PRAN / Master View" पर क्लिक करें > अपना 12 अंकों का प्रान नंबर और बैंक खाता संख्या दर्ज करें (या नाम, बैंक खाता और जन्मतिथि से सर्च करें) > ई-प्रान कार्ड व्यू चुनें और पीडीएफ डाउनलोड करें।'
+      },
+      {
+        q: 'सब्सक्राइबर और जीवनसाथी दोनों के निधन के बाद पेंशन फंड का क्या होता है?',
+        a: 'अटल पेंशन योजना के नियमों के अनुसार, यदि सब्सक्राइबर और उसके जीवनसाथी दोनों का निधन हो जाता है, तो बैंक में जमा पूरा संचित कोष (₹5,000 मासिक पेंशन के मामले में ₹8,50,000) बिना किसी कानूनी उलझन के सीधे पंजीकृत नॉमिनी के बैंक खाते में ट्रांसफर कर दिया जाता है।'
+      },
+      {
+        q: 'अटल पेंशन योजना में टैक्स छूट (Section 80CCD) का क्या नियम है?',
+        a: 'APY में जमा किए गए अंशदान पर आयकर की धारा 80CCD(1) के तहत 80C की ₹1.5 लाख की सीमा में छूट मिलती है। इसके अलावा, धारा 80CCD(1B) के तहत ₹50,000 की विशेष अतिरिक्त टैक्स छूट भी ली जा सकती है, जिससे कुल ₹2 लाख तक की आय पर टैक्स बचाया जा सकता है।'
       }
     ],
     
@@ -1767,15 +1819,28 @@ export const SCHEMES: Scheme[] = [
         name: 'Pension Fund Regulatory and Development Authority (PFRDA)',
         authority: 'Government of India',
         url: 'https://www.pfrda.org.in',
-        verificationDate: 'October 25, 2026'
+        verificationDate: 'November 21, 2026'
       }
     ],
     keywords: [
-      'atal pension yojana', 'apy chart', 'apy calculator', 'guaranteed pension',
-      'apy status check', 'pfrda pension scheme', 'अटल पेंशन योजना', 'मासिक पेंशन', 'एपीवाई चार्ट'
+      'atal pension yojana',
+      'atal pension yojana benefits',
+      'atal pension yojana chart',
+      'atal pension yojana premium chart',
+      'atal pension yojana details',
+      'atal pension yojana login with pran',
+      'atal pension yojana pran number',
+      'atal pension yojana status',
+      'अटल पेंशन योजना',
+      'अटल पेंशन योजना फायदे',
+      'अटल पेंशन योजना चार्ट',
+      'apy chart',
+      'apy calculator',
+      'guaranteed pension',
+      'pfrda pension scheme'
     ],
-    metaDescription_en: 'Atal Pension Yojana (APY) complete guide: ₹1,000–₹5,000 guaranteed monthly pension chart, age eligibility (18–40), nomination rules, and netbanking application.',
-    metaDescription_hi: 'अटल पेंशन योजना (APY): ₹1,000 से ₹5,000 मासिक पेंशन चार्ट, 18-40 वर्ष आयु पात्रता नियम, अंशदान तालिका, नॉमिनी अधिकार और ऑनलाइन आवेदन गाइड।'
+    metaDescription_en: 'Atal Pension Yojana (APY) 2026: Check benefits, age-wise monthly contribution chart, ₹1,000–₹5,000 pension rules, e-PRAN download, and tax benefits under 80CCD.',
+    metaDescription_hi: 'अटल पेंशन योजना (APY) 2026: मुख्य फायदे (Benefits), उम्र अनुसार प्रीमियम चार्ट, 60 वर्ष बाद ₹5,000 मासिक पेंशन नियम, ई-प्रान डाउनलोड और 80CCD टैक्स छूट की पूरी जानकारी।'
   },
   {
     id: 'bihar-student-credit-card',
