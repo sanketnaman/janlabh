@@ -604,6 +604,34 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               </div>
             )}
 
+            {/* Dedicated Live Alert on Bihar Mukhyamantri Kanya Utthan Yojana Page */}
+            {scheme.slug === 'bihar-mukhyamantri-kanya-utthan-yojana' && (
+              <div className="p-4 rounded-xl bg-gradient-to-r from-pink-50 via-rose-50 to-slate-50 dark:from-pink-950/40 dark:via-rose-950/30 dark:to-slate-900 border border-pink-200 dark:border-pink-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 font-bold text-pink-950 dark:text-pink-300">
+                    <GraduationCap className="h-4 w-4 text-pink-600 dark:text-pink-400 shrink-0" />
+                    <span>
+                      {isHi ? 'कन्या उत्थान योजना: स्नातक ₹50,000 व 12वीं ₹25,000 मेधासॉफ्ट पोर्टल अपडेट 2026' : 'Bihar Kanya Utthan: ₹50,000 Graduation & ₹25,000 12th Medhasoft DBT Update 2026'}
+                    </span>
+                  </div>
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    {isHi
+                      ? 'स्नातक पास ₹50,000 हेतु विवाहित व अविवाहित दोनों छात्राएं 100% पात्र हैं। बैंक खाता अनिवार्य रूप से बिहार राज्य में और NPCI आधार डीबीटी सीडेड होना चाहिए।'
+                      : 'Both married and unmarried female graduates are 100% eligible for the ₹50,000 grant. Bank account must be situated in a Bihar branch and mapped with NPCI Aadhaar DBT.'}
+                  </p>
+                </div>
+                <a
+                  href="https://medhasoft.bih.nic.in"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-pink-600 hover:bg-pink-700 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  <span>{isHi ? 'मेधासॉफ्ट आधिकारिक पोर्टल' : 'Official Medhasoft Portal'}</span>
+                  <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              </div>
+            )}
+
             {/* Quick Answer Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 text-xs">
               <div>
@@ -1024,6 +1052,129 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                     {isHi
                       ? 'यदि आप बिहार राज्य से बाहर किसी निजी कॉलेज/यूनिवर्सिटी में बीटेक, एमबीए, नर्सिंग या अन्य कोर्स कर रहे हैं, तो वह संस्थान अनिवार्य रूप से NAAC "A" ग्रेड या संबंधित कोर्स NBA प्रत्यायित होना चाहिए। गैर-मान्यता प्राप्त बाहरी संस्थानों के आवेदन DRCC स्तर पर सीधे निरस्त कर दिए जाते हैं।'
                       : 'For private colleges and universities located outside Bihar, the institution must hold NAAC "A" accreditation or NBA course approval. Applications for non-accredited private outside institutions are directly rejected at the DRCC verification level.'}
+                  </p>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* Bihar Mukhyamantri Kanya Utthan Yojana Status Matrix & Ground Reality Guide */}
+          {scheme.slug === 'bihar-mukhyamantri-kanya-utthan-yojana' && (
+            <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-pink-200 dark:border-pink-900/60 shadow-sm space-y-5">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-4">
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <GraduationCap className="h-5 w-5 text-pink-600 dark:text-pink-400" />
+                    <span>{isHi ? 'मेधासॉफ्ट (Medhasoft) एप्लीकेशन स्टेटस, PFMS कोड व समाधान' : 'Medhasoft Application Status Meaning, PFMS Codes & Resolution'}</span>
+                  </h2>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                    {isHi ? 'यूनिवर्सिटी अप्रूवल से लेकर बैंक खाते में ₹50,000 क्रेडिट होने के हर चरण की स्थिति व समाधान' : 'Decoding each stage from university approval to final ₹50,000 credit in bank account'}
+                  </p>
+                </div>
+                <span className="self-start sm:self-auto px-3 py-1 bg-pink-100 dark:bg-pink-950/60 text-pink-800 dark:text-pink-300 font-bold text-xs rounded-full">
+                  {isHi ? '100% डीबीटी भुगतान' : '100% Direct DBT'}
+                </span>
+              </div>
+
+              {/* Status Meaning Table */}
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr className="bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200 dark:border-slate-700">
+                      <th className="py-2.5 px-3">{isHi ? 'पोर्टल स्टेटस (Portal Status)' : 'Portal Status Message'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'वास्तविक स्थिति (Meaning)' : 'Meaning / Current Stage'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'अनुमानित समय' : 'Estimated Time'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'छात्रा को क्या करना होगा? (Action Required)' : 'Action Required by Student'}</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-amber-600 dark:text-amber-400">
+                        Waiting for Approval by University / College
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'कॉलेज या यूनिवर्सिटी द्वारा डिग्री मार्कशीट और रजिस्ट्रेशन नंबर का मिलान जारी है।' : 'University/College is cross-verifying degree marks and registration records.'}
+                      </td>
+                      <td className="py-2.5 px-3">15 – 30 {isHi ? 'दिन' : 'Days'}</td>
+                      <td className="py-2.5 px-3 text-slate-600 dark:text-slate-400">
+                        {isHi ? 'कुछ नहीं करना; यूनिवर्सिटी स्तर पर स्वतः सत्यापन होगा।' : 'No action needed; university approves master roll in tranches.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-blue-600 dark:text-blue-400">
+                        Pending at PFMS / Bank Verification
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'बैंक खाता संख्या, IFSC कोड और आधार नाम का PFMS व UIDAI से सत्यापन हो रहा है।' : 'PFMS and UIDAI are validating bank account name and Aadhaar seeding.'}
+                      </td>
+                      <td className="py-2.5 px-3">7 – 15 {isHi ? 'दिन' : 'Days'}</td>
+                      <td className="py-2.5 px-3 text-slate-600 dark:text-slate-400">
+                        {isHi ? 'सत्यापन के बाद रजिस्टर्ड मोबाइल पर User ID व Password SMS द्वारा आएगा।' : 'Wait for User ID & Password SMS once verified.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-indigo-600 dark:text-indigo-400">
+                        Ready for Payment
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'सभी स्तरों से जांच पूरी हो चुकी है। शिक्षा विभाग द्वारा वित्तीय स्वीकृति (Sanction) दी जा चुकी है।' : 'All verifications passed. Education Department has sanctioned fund file.'}
+                      </td>
+                      <td className="py-2.5 px-3">7 – 20 {isHi ? 'दिन' : 'Days'}</td>
+                      <td className="py-2.5 px-3 text-slate-600 dark:text-slate-400">
+                        {isHi ? 'फंड लॉट जारी होने का इंतजार करें, कोई दस्तावेज जमा नहीं करना है।' : 'Wait for batch fund clearance; no manual document submission.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">
+                        Payment in Process
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'ट्रेजरी द्वारा PFMS के जरिए बैंक को भुगतान आदेश भेजा जा चुका है।' : 'Treasury has released payment advice through PFMS to RBI/Bank.'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">3 – 7 {isHi ? 'कार्यदिवस' : 'Working Days'}</td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">
+                        {isHi ? '₹50,000 आपके बिहार स्थित बैंक खाते में क्रेडिट हो जाएंगे।' : '₹50,000 will be credited directly to your registered bank account.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 bg-rose-50/40 dark:bg-rose-950/20">
+                      <td className="py-2.5 px-3 font-bold text-rose-600 dark:text-rose-400">
+                        Rejected by PFMS / Bank Name Mismatch
+                      </td>
+                      <td className="py-2.5 px-3 text-rose-900 dark:text-rose-300">
+                        {isHi ? 'बैंक में आधार NPCI लिंक न होना, जॉइंट खाता होना या शाखा बिहार से बाहर होना।' : 'Bank account not NPCI Aadhaar seeded, joint account, or out-of-Bihar branch.'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-rose-600 dark:text-rose-400">{isHi ? 'तुरंत सुधारें' : 'Immediate Fix'}</td>
+                      <td className="py-2.5 px-3 text-rose-800 dark:text-rose-300 font-semibold">
+                        {isHi ? 'बिहार स्थित बैंक शाखा जाकर आधार DBT मैंडेट फॉर्म भरें और पोर्टल पर अपडेट करें।' : 'Visit Bihar home branch, submit NPCI DBT mandate form, re-verify.'}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Crucial Ground Realities: Marital Status & Bank Mandate */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px]">
+                <div className="p-3.5 rounded-xl bg-pink-50/80 dark:bg-pink-950/30 border border-pink-200 dark:border-pink-800 text-pink-950 dark:text-pink-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-pink-900 dark:text-pink-300">
+                    <Sparkles className="h-3.5 w-3.5 text-pink-600 shrink-0" />
+                    <span>{isHi ? 'विवाहित बनाम अविवाहित पात्रता स्पष्टीकरण' : 'Marital Status Clarification (Married vs Unmarried)'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? 'बिहार की छात्राओं में सबसे बड़ा भ्रम यह रहता है कि शादी हो जाने पर क्या पैसा मिलेगा? नियम स्पष्ट है: 12वीं पास (₹25,000) योजना में केवल अविवाहित छात्राएं पात्र हैं। लेकिन स्नातक पास (₹50,000) योजना में विवाहित और अविवाहित दोनों छात्राएं 100% पात्र हैं। विवाह होने के आधार पर स्नातक का आवेदन निरस्त नहीं किया जा सकता।'
+                      : 'The biggest confusion among female students is whether married girls get the grant. The rule is unambiguous: For Class 12 (₹25,000), only UNMARRIED girls are eligible. However, for Graduation (₹50,000), BOTH married and unmarried women are 100% eligible. Marriage is never a ground for rejection in graduation.'}
+                  </p>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-amber-950 dark:text-amber-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-amber-900 dark:text-amber-300">
+                    <Info className="h-3.5 w-3.5 text-amber-600 shrink-0" />
+                    <span>{isHi ? 'बैंक शाखा बिहार में होना और एकल (Single) खाता अनिवार्य' : 'Bank Branch Inside Bihar & Sole Account Mandate'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? 'मेधासॉफ्ट पर दो कारणों से सबसे ज्यादा आवेदन रिजेक्ट होते हैं: 1) माता-पिता या पति के साथ जॉइंट बैंक खाता देना। 2) बैंक शाखा बिहार राज्य के बाहर स्थित होना। आवेदन करने से पहले सुनिश्चित करें कि खाता केवल छात्रा के व्यक्तिगत नाम पर हो और शाखा बिहार में स्थित हो तथा आधार से NPCI डीबीटी लिंक्ड हो।'
+                      : 'The top two causes for application rejection on Medhasoft are: 1) Providing joint accounts with parents/husband. 2) Bank branch located outside Bihar state. Always ensure the account is in the single name of the student, branch is in Bihar, and NPCI Aadhaar DBT mapping is active.'}
                   </p>
                 </div>
               </div>

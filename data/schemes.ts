@@ -4178,129 +4178,274 @@ export const SCHEMES: Scheme[] = [
 {
   "id": "bihar-kanya-utthan",
   "slug": "bihar-mukhyamantri-kanya-utthan-yojana",
-  "title_en": "Mukhyamantri Kanya Utthan Yojana – Bihar Direct Financial Grant for Girls",
-  "title_hi": "मुख्यमंत्री कन्या उत्थान योजना – बिहार बालिकाओं हेतु जन्म से स्नातक तक ₹50,000 अनुदान",
-  "shortTitle_en": "Kanya Utthan Yojana (Bihar)",
-  "shortTitle_hi": "कन्या उत्थान योजना (बिहार)",
+  "title_en": "Bihar Mukhyamantri Kanya Utthan Yojana 2026 – ₹50,000 Graduation Scholarship, Medhasoft Online Apply, Status Check & Eligibility",
+  "title_hi": "मुख्यमंत्री कन्या उत्थान योजना बिहार 2026 – स्नातक ₹50,000 व 12वीं ₹25,000 प्रोत्साहन, मेधासॉफ्ट ऑनलाइन आवेदन व पेमेंट स्टेटस",
+  "shortTitle_en": "Bihar Kanya Utthan Yojana (Medhasoft ₹50k)",
+  "shortTitle_hi": "कन्या उत्थान योजना (मेधासॉफ्ट ₹50,000)",
   "category": "women",
   "state": "bihar",
   "stateLabel_en": "Bihar State Scheme",
   "stateLabel_hi": "बिहार राज्य योजना",
   "status": "Active",
-  "lastVerified": "October 15, 2026",
-  "benefitSummary_en": "Direct financial assistance of up to ₹54,100 from birth until graduation (including ₹50,000 lump-sum grant upon passing graduation) for girl students in Bihar.",
-  "benefitSummary_hi": "बिहार में बेटियों के जन्म से लेकर स्नातक (Graduation) उत्तीर्ण करने तक कुल ₹54,100 की सरकारी प्रोत्साहन राशि (स्नातक पास करने पर एकमुश्त ₹50,000)।",
-  "benefitAmount_en": "Up to ₹54,100 total (₹50,000 on graduation)",
-  "benefitAmount_hi": "जन्म से स्नातक तक कुल ₹54,100 (स्नातक पर ₹50,000)",
-  "whoCanApply_en": "Permanent resident girl students of Bihar studying in recognized schools, colleges, and state universities.",
-  "whoCanApply_hi": "बिहार की स्थायी निवासी छात्राएं जिन्होंने राज्य के मान्यता प्राप्त कॉलेज/विश्वविद्यालय से इंटरमीडिएट अथवा स्नातक उत्तीर्ण किया हो।",
-  "applicationMode": "Online via medhasoft.bih.nic.in portal",
+  "lastVerified": "November 2026",
+  "benefitSummary_en": "Direct DBT incentive of up to ₹54,100 from birth through graduation, including a one-time ₹50,000 grant for female graduates (both married & unmarried) and ₹25,000 for unmarried 12th pass girls via the Medhasoft portal.",
+  "benefitSummary_hi": "बिहार की बेटियों को जन्म से स्नातक तक कुल ₹54,100 की सरकारी सहायता। स्नातक उत्तीर्ण छात्राओं (विवाहित व अविवाहित दोनों) को एकमुश्त ₹50,000 तथा 12वीं पास अविवाहित छात्राओं को ₹25,000 सीधे बैंक खाते में (डीबीटी)।",
+  "benefitAmount_en": "Up to ₹54,100 total (₹50,000 on graduation, ₹25,000 on 12th pass)",
+  "benefitAmount_hi": "जन्म से स्नातक तक कुल ₹54,100 (स्नातक पर ₹50,000, 12वीं पर ₹25,000)",
+  "whoCanApply_en": "Permanent female residents of Bihar who have passed 12th (unmarried) or Graduation (married/unmarried) from recognized colleges/universities in Bihar.",
+  "whoCanApply_hi": "बिहार की स्थायी निवासी छात्राएं जिन्होंने राज्य के मान्यता प्राप्त कॉलेज/विश्वविद्यालय से 12वीं (अविवाहित) अथवा स्नातक (विवाहित/अविवाहित) उत्तीर्ण किया हो।",
+  "applicationMode": "Online via Medhasoft Portal (medhasoft.bih.nic.in)",
   "bannerImage": "/images/schemes/bihar-kanya-utthan.webp",
-  "whatIsThis_en": "Mukhyamantri Kanya Utthan Yojana is Bihar's flagship initiative to reduce maternal/infant mortality, eradicate child marriage, and achieve universal higher education for women.",
-  "whatIsThis_hi": "कन्या उत्थान योजना बिहार सरकार की क्रांतिकारी योजना है जिसका उद्देश्य बाल विवाह रोकना, कन्या भ्रूण हत्या समाप्त करना और बेटियों को उच्च शिक्षा दिलाना है।",
+  "whatIsThis_en": "Mukhyamantri Kanya Utthan Yojana is Bihar Government's flagship initiative administered by the Education and Social Welfare Departments to promote female education, prevent child marriage, and eliminate female foeticide. Under this scheme, financial assistance is disbursed at milestone educational stages from birth up to graduation. The largest component is the ₹50,000 direct bank transfer awarded to every female student graduating from any recognized university or college located in Bihar, regardless of marks, category, or marital status.",
+  "whatIsThis_hi": "मुख्यमंत्री कन्या उत्थान योजना बिहार सरकार के शिक्षा एवं समाज कल्याण विभाग द्वारा संचालित एक अत्यंत महत्वाकांक्षी योजना है। इसका मुख्य उद्देश्य कन्या भ्रूण हत्या रोकना, बाल विवाह समाप्त करना और बेटियों को उच्च शिक्षा के लिए प्रोत्साहित करना है। योजना के तहत जन्म से लेकर स्नातक (Graduation) स्तर तक अलग-अलग चरणों में कुल ₹54,100 तक का वित्तीय सहयोग दिया जाता है। इसका सबसे प्रमुख घटक स्नातक पास छात्राओं को मिलने वाली ₹50,000 की एकमुश्त प्रोत्साहन राशि है, जो बिहार के किसी भी मान्यता प्राप्त विश्वविद्यालय/कॉलेज से उत्तीर्ण सभी छात्राओं (विवाहित व अविवाहित दोनों) को बिना किसी जाति या डिवीजन भेदभाव के सीधे बैंक खाते में दी जाती है।",
   "benefitsList_en": [
-    "₹2,000 on birth and ₹1,000 on 1st birthday registration.",
-    "₹2,000 on complete immunization up to 2 years.",
-    "₹25,000 one-time grant upon passing Class 12 (Intermediate) unmarried.",
-    "₹50,000 one-time grant upon passing Graduation (B.A./B.Sc./B.Com/equivalent) for both married and unmarried women."
+    "₹50,000 One-time Graduation Grant: Disbursed to every female graduate (B.A., B.Sc., B.Com., B.Tech, MBBS, BBA, BCA, etc.) passed from Bihar-based recognized universities.",
+    "Marital Status Flexibility for Graduates: Unlike intermediate, married female graduates are 100% eligible for the full ₹50,000 amount.",
+    "₹25,000 Intermediate (12th Pass) Grant: Awarded to unmarried girl students passing Class 12 exams from BSEB/recognized boards in Bihar.",
+    "Early Childhood Assistance: ₹2,000 on birth registration, ₹1,000 on Aadhaar registration at age 1, and ₹2,000 on complete 2-year vaccination.",
+    "School Uniform & Sanitary Napkin Allowance: Annual stipend for uniforms (Class 1 to 12) and ₹300 per year for menstrual hygiene napkins.",
+    "100% Direct Bank Transfer (DBT): Money credited directly via PFMS into the student's personal bank account situated in a Bihar bank branch, eliminating middle-men."
   ],
   "benefitsList_hi": [
-    "जन्म के समय ₹2,000 तथा 1 वर्ष की उम्र पूरी होने पर ₹1,000।",
-    "2 वर्ष तक पूर्ण टीकाकरण पर ₹2,000।",
-    "अविवाहित रहते हुए इंटरमीडिएट (12वीं) उत्तीर्ण करने पर ₹25,000।",
-    "स्नातक (Graduation) उत्तीर्ण करने पर ₹50,000 की एकमुश्त सम्मान राशि (विवाहित/अविवाहित दोनों हेतु)।"
+    "स्नातक उत्तीर्ण पर एकमुश्त ₹50,000: बिहार के किसी भी मान्यता प्राप्त विश्वविद्यालय से स्नातक (B.A., B.Sc., B.Com., B.Tech, MBBS, BBA, BCA आदि) उत्तीर्ण करने पर ₹50,000 का सीधा अनुदान।",
+    "विवाहित व अविवाहित दोनों स्नातक छात्राएं पात्र: 12वीं के विपरीत, स्नातक पास ₹50,000 योजना में शादीशुदा छात्राओं को भी पूरा लाभ मिलता है।",
+    "इंटरमीडिएट (12वीं पास) पर ₹25,000: बिहार बोर्ड अथवा मान्यता प्राप्त संस्थान से 12वीं उत्तीर्ण अविवाहित छात्राओं को ₹25,000 की प्रोत्साहन राशि।",
+    "जन्म से प्रारंभिक सहायता: जन्म पर ₹2,000, 1 वर्ष पर आधार पंजीकरण होने पर ₹1,000 तथा 2 वर्ष तक पूर्ण टीकाकरण पर ₹2,000।",
+    "पोशाक व सेनेटरी नैपकिन भत्ता: कक्षा 1 से 12वीं तक पोशाक राशि एवं माहवारी स्वच्छता हेतु ₹300 प्रति वर्ष सेनेटरी नैपकिन भत्ता।",
+    "100% डायरेक्ट बेनिफिट ट्रांसफर (DBT): बिना किसी बिचौलिए के PFMS प्रणाली द्वारा सीधे छात्रा के बिहार स्थित व्यक्तिगत बैंक खाते में पैसा ट्रांसफर।"
   ],
   "eligibility": {
     "eligibleIf_en": [
-      "Permanent domicile resident of Bihar state.",
-      "Girl child passed Intermediate (unmarried) or Graduation (from recognized Bihar university).",
-      "Personal bank account in a bank branch situated within Bihar."
+      "Must be a permanent domicile resident of Bihar.",
+      "Must have completed Graduation (or equivalent degree) from a recognized state university, constituent college, or affiliated college located in Bihar.",
+      "All academic divisions (1st Division, 2nd Division, 3rd Division/Pass) are equally eligible.",
+      "For Graduation ₹50,000: Both married and unmarried female graduates are fully eligible.",
+      "For Intermediate ₹25,000: Must be unmarried at the time of 12th results.",
+      "Student must hold a sole/single bank account in her own name in a bank branch situated inside Bihar.",
+      "Bank account must be actively linked with Aadhaar and mapped for NPCI DBT payments.",
+      "Student's degree and result records must be uploaded and verified by the respective university on the Medhasoft portal."
     ],
     "eligibleIf_hi": [
-      "बिहार की मूल निवासी छात्रा।",
-      "इंटरमीडिएट पास (अविवाहित) अथवा स्नातक पास (विवाहित/अविवाहित)।",
-      "छात्रा का बैंक खाता बिहार स्थित किसी बैंक शाखा में होना अनिवार्य।"
+      "छात्रा अनिवार्य रूप से बिहार राज्य की मूल/स्थायी निवासी होनी चाहिए।",
+      "बिहार स्थित किसी भी मान्यता प्राप्त विश्वविद्यालय, अंगीभूत (Constituent) या संबद्ध (Affiliated) कॉलेज से स्नातक उत्तीर्ण होना अनिवार्य।",
+      "सभी डिवीजन (प्रथम, द्वितीय अथवा तृतीय श्रेणी पास) समान रूप से ₹50,000 पाने के पात्र हैं।",
+      "स्नातक ₹50,000 हेतु: विवाहित और अविवाहित दोनों छात्राएं 100% पात्र हैं।",
+      "इंटरमीडिएट (12वीं) ₹25,000 हेतु: 12वीं पास होने के समय छात्रा का अविवाहित होना अनिवार्य है।",
+      "छात्रा का अपना व्यक्तिगत (सिंगल) बैंक खाता होना चाहिए, जो बिहार राज्य में स्थित किसी बैंक शाखा में हो।",
+      "बैंक खाते में आधार सीडिंग और NPCI डीबीटी मैपिंग सक्रिय (Active) होनी चाहिए।",
+      "छात्रा का रिजल्ट संबंधित विश्वविद्यालय द्वारा मेधासॉफ्ट पोर्टल (medhasoft.bih.nic.in) पर अपलोड व सत्यापित होना चाहिए।"
     ],
     "notEligibleIf_en": [
-      "Non-residents of Bihar or degrees from non-recognized fraudulent universities.",
-      "Bank accounts located outside Bihar."
+      "Male candidates are strictly not eligible.",
+      "Students holding permanent domicile outside Bihar state.",
+      "Graduates from open/private distance universities outside Bihar not officially notified by the Bihar Education Department.",
+      "Joint bank accounts (with parents or spouse) or bank branches located outside the territorial boundary of Bihar.",
+      "Students whose bank account has inactive NPCI Aadhaar mapping leading to PFMS rejection."
     ],
     "notEligibleIf_hi": [
-      "बिहार राज्य के बाहर के निवासी।",
-      "बिहार के बाहर की बैंक शाखाओं में खाता होना।"
+      "छात्र (पुरुष अभ्यर्थी) इस योजना के लिए पात्र नहीं हैं।",
+      "बिहार राज्य के बाहर के स्थायी निवासी।",
+      "बिहार से बाहर के ऐसे निजी/दूरस्थ विश्वविद्यालय जो बिहार सरकार के शिक्षा विभाग द्वारा अधिसूचित नहीं हैं।",
+      "माता-पिता या पति के साथ संयुक्त (Joint) बैंक खाता अथवा बिहार राज्य के बाहर की बैंक शाखाओं में स्थित खाता मान्य नहीं होगा।",
+      "बैंक खाते में NPCI आधार मैपिंग निष्क्रिय होने पर PFMS द्वारा आवेदन निरस्त कर दिया जाएगा।"
     ]
   },
   "requiredDocuments_en": [
-    "Graduation/12th Marks Sheet and Admit Card",
-    "Aadhaar card of student",
-    "Bihar Domicile (Niwas Praman Patra)",
-    "Bank passbook copy (Aadhaar linked with IFSC)",
-    "Passport size photograph and signature"
+    "Graduation Final Year Marksheet / Degree Certificate (bearing University Registration Number and Roll Number)",
+    "Student's Aadhaar Card (Name, DOB & Father's Name should strictly match academic records)",
+    "Bihar Domicile Certificate (निवास प्रमाण पत्र - issued by Revenue Officer/SDO in Bihar)",
+    "Personal Bank Passbook (Showing Account Number, Bank Name, and IFSC of a branch inside Bihar)",
+    "Active Mobile Number (For receiving OTP, User ID & Password via SMS)",
+    "Active Personal Email ID",
+    "Recent passport-size colour photograph and scanned signature of the student"
   ],
   "requiredDocuments_hi": [
-    "स्नातक अथवा 12वीं की अंकतालिका व प्रवेश पत्र",
-    "छात्रा का आधार कार्ड",
-    "बिहार का मूल निवास प्रमाण पत्र",
-    "बिहार में स्थित बैंक खाते की पासबुक",
-    "पासपोर्ट साइज फोटो और हस्ताक्षर"
+    "स्नातक अंतिम वर्ष की अंकतालिका (Marksheet) व प्रवेश पत्र (जिसमें यूनिवर्सिटी रजिस्ट्रेशन नंबर व रोल नंबर अंकित हो)",
+    "छात्रा का आधार कार्ड (जिसमें नाम, जन्मतिथि व पिता का नाम मार्कशीट के अनुरूप हो)",
+    "बिहार का स्थायी निवास प्रमाण पत्र (सक्षम प्राधिकारी / अंचल अधिकारी / SDO द्वारा निर्गत)",
+    "व्यक्तिगत बैंक पासबुक (जिसमें खाता संख्या, बैंक शाखा का नाम व IFSC कोड स्पष्ट हो, शाखा बिहार में होनी चाहिए)",
+    "सक्रिय मोबाइल नंबर (रजिस्ट्रेशन, OTP, यूजर आईडी व पासवर्ड प्राप्त करने हेतु)",
+    "सक्रिय व्यक्तिगत ईमेल आईडी",
+    "हाल की पासपोर्ट साइज रंगीन फोटो और स्पष्ट डिजिटल हस्ताक्षर (Signature)"
   ],
   "howToApply_en": [
-    "Visit medhasoft.bih.nic.in and select \"Mukhyamantri Kanya Utthan Yojana (Snathak)\".",
-    "Search your University, College, and University Registration number to verify college upload.",
-    "Fill bank details, verify Aadhaar with OTP, and submit online.",
-    "Upon university level verification, ₹50,000 is credited directly via DBT."
+    "Step 1: Check Name on Portal: Visit medhasoft.bih.nic.in, click 'Mukhyamantri Kanya Utthan Yojana (Snathak)', and search your University, College, and Registration Number to verify if your result is uploaded.",
+    "Step 2: Student Online Registration: Click 'Student Registration'. Enter University Registration No., Roll No., Father's Name, DOB, Aadhaar Number, and Bank details (IFSC & A/c). Verify mobile with OTP.",
+    "Step 3: Department & Bank Verification (7-15 Days): The Education Department verifies Aadhaar with UIDAI, bank details with PFMS, and marks with the university. No action needed during this waiting period.",
+    "Step 4: Receive User ID & Password: Once PFMS and University verify your application, User ID and Password are sent via SMS to your registered mobile phone.",
+    "Step 5: Finalize Application: Login with received User ID and Password, verify uploaded details, check bank account preview, click 'Finalize Application', and submit the final verification OTP.",
+    "Step 6: Payment Disbursement (DBT): Status progresses from 'Ready for Payment' to 'Payment in Process', and ₹50,000 is directly credited to your Bihar bank account."
   ],
   "howToApply_hi": [
-    "medhasoft.bih.nic.in पोर्टल पर जाकर \"मुख्यमंत्री कन्या उत्थान योजना (स्नातक)\" चुनें।",
-    "विश्वविद्यालय, कॉलेज और रजिस्ट्रेशन नंबर डालकर पोर्टल पर अपना नाम चेक करें।",
-    "आधार व बैंक खाता विवरण दर्ज कर सबमिट करें।",
-    "विश्वविद्यालय द्वारा सत्यापन के बाद ₹50,000 की राशि सीधे बैंक खाते में ट्रांसफर की जाती है।"
+    "चरण 1: पोर्टल पर रिजल्ट चेक करें: आधिकारिक वेबसाइट medhasoft.bih.nic.in पर जाएं, 'मुख्यमंत्री कन्या उत्थान योजना (स्नातक)' पर क्लिक करें और अपनी यूनिवर्सिटी, कॉलेज व रजिस्ट्रेशन नंबर डालकर चेक करें कि रिजल्ट अपलोड है या नहीं।",
+    "चरण 2: ऑनलाइन छात्रा पंजीकरण (Registration): 'Student Registration' लिंक पर क्लिक करें। अपना यूनिवर्सिटी रजिस्ट्रेशन नंबर, रोल नंबर, जन्मतिथि, आधार विवरण व बैंक खाता (IFSC व A/c नंबर) दर्ज करें और OTP से सत्यापित करें।",
+    "चरण 3: विभाग व PFMS सत्यापन (7 से 15 दिन): विभाग आपके आधार का UIDAI से, बैंक खाते का PFMS से तथा अंकों का यूनिवर्सिटी से मिलान करता है। इस अवधि में यूजर आईडी का इंतजार करें।",
+    "चरण 4: User ID और Password प्राप्त करें: सत्यापन सफल होते ही आपके रजिस्टर्ड मोबाइल नंबर पर SMS द्वारा यूजर आईडी और पासवर्ड भेजा जाएगा।",
+    "चरण 5: आवेदन को फाइनलाइज करें (Finalize Application): यूजर आईडी और पासवर्ड से लॉगिन करें, सभी विवरण जांचें, 'Finalize Application' पर क्लिक करें और मोबाइल OTP दर्ज कर अंतिम रूप से सबमिट करें।",
+    "चरण 6: खाते में ₹50,000 क्रेडिट (DBT): पोर्टल पर स्टेटस 'Ready for Payment' से 'Payment in Process' में बदलेगा और कुछ ही दिनों में ₹50,000 की राशि सीधे आपके बैंक खाते में क्रेडिट हो जाएगी।"
   ],
-  "statusCheckGuide_en": "Enter your University Registration Number on medhasoft.bih.nic.in to track payment in-process, university verification, and bank rejection status.",
-  "statusCheckGuide_hi": "medhasoft.bih.nic.in पर अपना यूनिवर्सिटी रजिस्ट्रेशन नंबर दर्ज कर \"Payment Status\" ट्रैक करें।",
+  "statusCheckGuide_en": "Open medhasoft.bih.nic.in -> Select 'Mukhyamantri Kanya Utthan Yojana (Graduation)' -> Click 'Reports' menu and select 'Click Here to View Application Status' -> Enter your University Registration Number and click 'Search'. Key statuses explained: 1) 'Pending at University': College/University must approve your uploaded result. 2) 'Ready for Payment': Financial sanction completed, pending clearing. 3) 'Payment in Process': Amount initiated via PFMS DBT, credited within 3-7 working days. 4) 'Rejected by PFMS': Bank account seeding or NPCI mapping issue requiring bank branch visit.",
+  "statusCheckGuide_hi": "मेधासॉफ्ट पोर्टल (medhasoft.bih.nic.in) पर जाएं -> 'मुख्यमंत्री कन्या उत्थान योजना (स्नातक)' चुनें -> 'Reports' मेन्यू में जाकर 'Click Here to View Application Status' पर क्लिक करें -> अपना यूनिवर्सिटी रजिस्ट्रेशन नंबर दर्ज कर 'Search' दबाएं। स्टेटस के मुख्य अर्थ: 1) 'Pending at University': यूनिवर्सिटी द्वारा सत्यापन प्रक्रियाधीन। 2) 'Ready for Payment': वित्तीय स्वीकृति मिल चुकी है, भुगतान सूची में शामिल। 3) 'Payment in Process': PFMS द्वारा भुगतान भेजा जा चुका है, 3-7 कार्यदिवसों में खाते में पहुंचेगा। 4) 'Rejected by PFMS': बैंक में NPCI आधार सीडिंग न होने के कारण रिजेक्ट हुआ है।",
   "officialStatusUrl": "https://medhasoft.bih.nic.in",
   "commonProblems_en": [
     {
-      "problem": "Name not found in University result list on Medhasoft",
-      "solution": "Contact your college/university examination department to upload your finalized degree result to the portal."
+      "problem": "Name not found in University list / 'Result Not Uploaded' error on Medhasoft",
+      "solution": "Universities upload finalized degree results in batches. If your registration number displays 'Result Not Uploaded' or 'Data Not Found', contact your college examination controller or University Medhasoft Nodal Desk. Once the university uploads your consolidated marksheet data to the portal, the registration form unlocks automatically."
+    },
+    {
+      "problem": "Bank Account Rejected by PFMS / 'Aadhaar Not Seeded with NPCI' error",
+      "solution": "This is the #1 reason for delayed payment. Visit your home bank branch situated in Bihar and submit an 'Aadhaar Mandate DBT Seeding Form'. Ensure your account is not a joint account or basic zero-balance account with deposit caps. Once seeded, update your bank status in Medhasoft or submit an grievance ticket on the portal."
+    },
+    {
+      "problem": "User ID and Password not received after initial registration",
+      "solution": "Credentials are sent only AFTER UIDAI, PFMS, and University complete back-end verification (which takes 7 to 15 days). If 15 days have passed without an SMS, click 'Student' -> 'Get User ID & Password' on the Medhasoft portal, enter your Registration Number & registered Mobile, and your credentials will be resent instantly."
+    },
+    {
+      "problem": "Father's Name or Student Name Spelling Mismatch between Aadhaar and Marksheet",
+      "solution": "Medhasoft automatically checks the exact spelling of student name and father name against UIDAI data. If rejected for mismatch, update your Aadhaar card at your nearest Aadhaar Seva Kendra to match your graduation marksheet exactly, then re-verify on Medhasoft."
     }
   ],
   "commonProblems_hi": [
     {
-      "problem": "मेधासॉफ्ट पोर्टल पर नाम या रिजल्ट न दिखना",
-      "solution": "अपने कॉलेज या यूनिवर्सिटी के परीक्षा विभाग से संपर्क कर मेधासॉफ्ट पोर्टल पर रिजल्ट डाटा अपलोड कराएं।"
+      "problem": "मेधासॉफ्ट पोर्टल पर नाम या रिजल्ट न दिखना ('Result Not Uploaded / Data Not Found')",
+      "solution": "विश्वविद्यालय परीक्षा विभाग रिजल्ट का डेटा कई चरणों (Batches) में पोर्टल पर अपलोड करता है। यदि आपका रजिस्ट्रेशन नंबर डालने पर रिजल्ट नहीं दिख रहा है, तो अपने कॉलेज या यूनिवर्सिटी के मेधासॉफ्ट नोडल अधिकारी से संपर्क करें। यूनिवर्सिटी द्वारा मास्टर डेटाशीट अपलोड होते ही आपका रजिस्ट्रेशन शुरू हो जाएगा।"
+    },
+    {
+      "problem": "PFMS द्वारा बैंक खाता रिजेक्ट होना ('Bank Account Rejected by PFMS / NPCI Not Seeded')",
+      "solution": "पैसा अटकने का सबसे बड़ा कारण बैंक खाते में आधार NPCI लिंक न होना है। तुरंत अपनी बिहार स्थित बैंक शाखा में जाएं और 'Aadhaar DBT Mandate Form' जमा करें। सुनिश्चित करें कि खाता सिंगल (व्यक्तिगत) हो, जॉइंट खाता न हो। आधार सीडिंग होने के बाद मेधासॉफ्ट पर स्टेटस स्वतः अपडेट हो जाता है।"
+    },
+    {
+      "problem": "रजिस्ट्रेशन के बाद यूजर आईडी और पासवर्ड (User ID & Password) SMS न मिलना",
+      "solution": "रजिस्ट्रेशन करते ही पासवर्ड नहीं आता; विभाग, बैंक और यूनिवर्सिटी के सत्यापन में 7 से 15 दिन लगते हैं। यदि 15 दिन से अधिक हो गए हैं, तो पोर्टल के 'Student' मेन्यू में जाकर 'Get User ID & Password' पर क्लिक करें और अपना रजिस्ट्रेशन नंबर व मोबाइल नंबर डालकर पासवर्ड पुनः प्राप्त करें।"
+    },
+    {
+      "problem": "पिता के नाम या छात्रा के नाम में स्पेलिंग का अंतर (Name / Father Name Mismatch)",
+      "solution": "मेधासॉफ्ट पोर्टल आधार और मार्कशीट के नाम का अक्षरशः मिलान करता है। यदि स्पेलिंग में अंतर के कारण रिजेक्ट हुआ है, तो नजदीकी आधार सेवा केंद्र पर जाकर आधार में वही नाम या पिता का नाम सही करवाएं जो स्नातक मार्कशीट में दर्ज है, उसके बाद पोर्टल पर री-वेरिफिकेशन करें।"
     }
   ],
   "faqs_en": [
     {
-      "q": "Can married female students receive the ₹50,000 graduation incentive?",
-      "a": "Yes. For the graduation incentive of ₹50,000, both married and unmarried female graduates from Bihar are eligible."
+      "q": "Are married female graduates eligible for the ₹50,000 scholarship in Bihar?",
+      "a": "Yes, absolutely! For the ₹50,000 Graduation component, the Bihar Government permits BOTH married and unmarried female graduates. The unmarried restriction applies solely to the ₹25,000 Intermediate (12th pass) incentive."
+    },
+    {
+      "q": "What does 'Ready for Payment' and 'Payment in Process' mean on Medhasoft?",
+      "a": "'Ready for Payment' means your university, Aadhaar, and bank account have been 100% verified and the Education Department has approved your file for fund release. 'Payment in Process' means the fund advice has been submitted to PFMS/RBI, and ₹50,000 will be credited to your bank account within 3 to 15 working days."
+    },
+    {
+      "q": "Can female students from private colleges or technical universities get this ₹50,000 grant?",
+      "a": "Yes, provided the private college is affiliated with a recognized Bihar state university or the institution is recognized under the Bihar State Higher Education Council (such as B.Tech, MBBS, B.Sc Nursing, B.Com, B.A., B.Sc., BCA, BBA)."
+    },
+    {
+      "q": "Can I provide a bank account from a bank branch located outside Bihar?",
+      "a": "No. The scheme rules strictly mandate that the beneficiary's bank account must belong to a bank branch located within the territorial boundaries of Bihar state. Accounts from other states are automatically rejected by the portal."
+    },
+    {
+      "q": "Is there any division or marks restriction (1st, 2nd, or 3rd division)?",
+      "a": "No marks or division bar exists. Every girl student who passes graduation with 1st, 2nd, or 3rd Division/Pass is eligible for the identical ₹50,000 assistance."
+    },
+    {
+      "q": "What should I do if my college says 'University has not uploaded result data'?",
+      "a": "Colleges do not directly upload results; the central University Examination Department (e.g., PPU, LNMU, BRABU, Magadh University) creates the master Excel data file and submits it to the Medhasoft server. If your session result is pending, contact your university examination department nodal desk."
+    },
+    {
+      "q": "Can a student receive both 12th ₹25,000 and Graduation ₹50,000 incentives?",
+      "a": "Yes! If an eligible girl student passed 12th unmarried, she received ₹25,000, and subsequently upon completing graduation from a Bihar university, she is entitled to an additional ₹50,000."
+    },
+    {
+      "q": "Is income certificate or caste certificate mandatory for Kanya Utthan ₹50,000?",
+      "a": "No, income certificates and caste certificates are NOT required for the ₹50,000 graduation grant. The benefit is completely universal across all categories (General, EWS, OBC, EBC, SC, ST) with zero family income ceiling."
     }
   ],
   "faqs_hi": [
     {
-      "q": "क्या विवाहित छात्राएं भी स्नातक पास ₹50,000 के लिए पात्र हैं?",
-      "a": "हाँ। स्नातक प्रोत्साहन राशि हेतु छात्रा का विवाहित होना कोई बाधा नहीं है; विवाहित व अविवाहित दोनों को ₹50,000 मिलते हैं।"
+      "q": "क्या शादीशुदा (विवाहित) छात्राएं भी स्नातक ₹50,000 के लिए पात्र हैं?",
+      "a": "हाँ, बिल्कुल! स्नातक ₹50,000 प्रोत्साहन राशि हेतु विवाहित और अविवाहित दोनों छात्राएं 100% पात्र हैं। अविवाहित होने की शर्त केवल इंटरमीडिएट (12वीं ₹25,000) योजना पर लागू होती है।"
+    },
+    {
+      "q": "मेधासॉफ्ट पर 'Ready for Payment' और 'Payment in Process' का क्या मतलब है और पैसा कब तक आएगा?",
+      "a": "'Ready for Payment' का अर्थ है कि आपके कॉलेज, आधार और बैंक का सत्यापन पूरा हो चुका है और शिक्षा विभाग ने बिल पास कर दिया है। 'Payment in Process' का अर्थ है कि PFMS/ट्रेजरी द्वारा बैंक को भुगतान आदेश भेजा जा चुका है; इसके 3 से 15 कार्यदिवसों के भीतर ₹50,000 सीधे आपके बैंक खाते में क्रेडिट हो जाते हैं।"
+    },
+    {
+      "q": "क्या प्राइवेट कॉलेज या तकनीकी कोर्स (B.Tech, MBBS, BCA, BBA, Nursing) की छात्राओं को ₹50,000 मिलेंगे?",
+      "a": "हाँ। यदि आपका प्राइवेट कॉलेज या संस्थान बिहार के किसी मान्यता प्राप्त विश्वविद्यालय अथवा तकनीकी शिक्षा पर्षद से संबद्ध है, तो पारंपरिक डिग्री (BA, BSc, BCom) के साथ-साथ B.Tech, MBBS, Nursing, BCA, BBA की सभी छात्राएं पात्र हैं।"
+    },
+    {
+      "q": "क्या बिहार से बाहर की किसी बैंक शाखा का खाता दिया जा सकता है?",
+      "a": "नहीं। योजना की नियमावली के अनुसार छात्रा का बैंक खाता अनिवार्य रूप से बिहार राज्य की भौगोलिक सीमा में स्थित किसी बैंक शाखा का ही होना चाहिए। बिहार से बाहर की शाखाओं वाले खाते मेधासॉफ्ट पर सीधे रिजेक्ट हो जाते हैं।"
+    },
+    {
+      "q": "क्या 1st, 2nd या 3rd डिवीजन पास छात्राओं में राशि का कोई अंतर है?",
+      "a": "कोई अंतर नहीं है। स्नातक परीक्षा में चाहे छात्रा प्रथम (1st), द्वितीय (2nd) अथवा तृतीय (3rd/Pass) श्रेणी में उत्तीर्ण हुई हो, सभी पात्र छात्राओं को एक समान पूरी ₹50,000 की राशि दी जाती है।"
+    },
+    {
+      "q": "अगर पोर्टल पर 'Result Not Uploaded' बता रहा हो तो क्या करें?",
+      "a": "कॉलेज स्वयं डेटा अपलोड नहीं करते, बल्कि विश्वविद्यालय (जैसे PPU, BRABU, LNMU, मगध, VKSU आदि) का परीक्षा विभाग मेधासॉफ्ट पोर्टल पर अंतिम रिजल्ट का मास्टर डेटा अपलोड करता है। अपने कॉलेज के परीक्षा विभाग या यूनिवर्सिटी के मेधासॉफ्ट नोडल काउंटर पर संपर्क करें।"
+    },
+    {
+      "q": "क्या एक छात्रा को 12वीं का ₹25,000 और स्नातक का ₹50,000 दोनों लाभ मिल सकते हैं?",
+      "a": "हाँ! यदि छात्रा ने अविवाहित रहते हुए 12वीं पास की तो उसे ₹25,000 मिले, और आगे चलकर जब वह बिहार से स्नातक उत्तीर्ण करती है तो उसे पुनः ₹50,000 की अलग सहायता राशि मिलती है।"
+    },
+    {
+      "q": "क्या कन्या उत्थान स्नातक ₹50,000 के लिए आय प्रमाण पत्र या जाति प्रमाण पत्र जरूरी है?",
+      "a": "नहीं। स्नातक ₹50,000 के लिए आय प्रमाण पत्र या जाति प्रमाण पत्र की कोई आवश्यकता नहीं है। यह योजना सभी वर्गों (General, EWS, OBC, EBC, SC, ST) के लिए बिना किसी पारिवारिक आय सीमा के समान रूप से लागू है।"
     }
   ],
   "officialSources": [
     {
-      "name": "Education Department",
+      "name": "Education Department (Higher Education)",
       "authority": "Government of Bihar",
       "url": "https://medhasoft.bih.nic.in",
-      "verificationDate": "October 15, 2026"
+      "verificationDate": "November 2026"
+    },
+    {
+      "name": "Medhasoft Snathak Portal",
+      "authority": "NIC Bihar State Centre",
+      "url": "https://medhasoft.bih.nic.in/medhasoft/Index.aspx",
+      "verificationDate": "November 2026"
     }
   ],
   "keywords": [
-    "kanya utthan yojana bihar",
+    "kanya utthan yojana",
+    "mukhyamantri kanya utthan yojana",
+    "mukhyamantri kanya utthan yojana bihar",
+    "kanya utthan yojana bihar graduation 50000",
+    "bihar kanya utthan yojana 50000 online apply",
     "medhasoft bihar nic in",
-    "graduation 50000 scheme bihar",
-    "snatak kanya utthan",
-    "कन्या उत्थान योजना",
-    "मेधासॉफ्ट 50000 स्टेटस"
+    "medhasoft snatak scholarship 50000",
+    "bihar graduation scholarship 50000",
+    "bihar graduation scholarship status check",
+    "kanya utthan yojana payment status check",
+    "medhasoft status check bihar",
+    "medhasoft graduation status check online",
+    "kanya utthan yojana list kaise dekhe",
+    "medhasoft student list bihar 2026",
+    "kanya utthan payment in process kab tak aayega",
+    "medhasoft ready for payment meaning",
+    "kanya utthan name not found in list solution",
+    "medhasoft user id and password nahi aaya",
+    "kanya utthan bank account rejected by pfms",
+    "bihar graduation 50000 married girl eligible",
+    "kanya utthan yojana me document kya kya lagta hai",
+    "kanya utthan yojana me aavedan kaise kare",
+    "medhasoft portal me result kab upload hoga",
+    "kanya utthan yojana 12th pass 25000",
+    "mukhyamantri balika madhyamik protsahan yojana",
+    "kanya utthan yojana patliputra university",
+    "brabu kanya utthan 50000 online apply",
+    "lnmu kanya utthan yojana graduation",
+    "magadh university kanya utthan yojana 50000",
+    "vksu kanya utthan yojana graduation list",
+    "bihar mukhyamantri kanya utthan yojana 2026",
+    "मुख्यमंत्री कन्या उत्थान योजना बिहार",
+    "कन्या उत्थान योजना स्नातक 50000",
+    "मेधासॉफ्ट बिहार 50000 स्टेटस चेक",
+    "कन्या उत्थान योजना का पैसा कब तक आएगा",
+    "कन्या उत्थान योजना लिस्ट में नाम कैसे देखें",
+    "मेधासॉफ्ट स्नातक पेमेंट स्टेटस"
   ],
-  "metaDescription_en": "Bihar Mukhyamantri Kanya Utthan Yojana: ₹50,000 grant for female graduates. Eligibility criteria, Medhasoft online registration, and payment status tracking.",
-  "metaDescription_hi": "मुख्यमंत्री कन्या उत्थान योजना बिहार: स्नातक पास छात्राओं हेतु ₹50,000 की सरकारी सहायता, मेधासॉफ्ट ऑनलाइन फॉर्म व स्टेटस।"
+  "metaDescription_en": "Bihar Mukhyamantri Kanya Utthan Yojana 2026: Apply online for ₹50,000 graduation grant on Medhasoft portal. Check payment status, university list, eligibility for married/unmarried girls, and PFMS solutions.",
+  "metaDescription_hi": "मुख्यमंत्री कन्या उत्थान योजना बिहार 2026: स्नातक पास छात्राओं हेतु ₹50,000 व 12वीं हेतु ₹25,000। मेधासॉफ्ट ऑनलाइन फॉर्म, पेमेंट स्टेटस ट्रैकिंग, विवाहित पात्रता नियम व PFMS समाधान।"
 },
 
 {
