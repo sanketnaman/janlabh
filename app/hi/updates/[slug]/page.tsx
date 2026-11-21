@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: HindiUpdatePageProps): Promis
   const pageTitle = update.title_hi.length > 55
     ? update.title_hi
     : `${update.title_hi} | JanLabh`;
-  const pageDescription = update.summary_hi.slice(0, 155);
+  const pageDescription = update.metaDescription_hi || update.summary_hi.slice(0, 155);
 
   return {
     title: pageTitle,
@@ -122,6 +122,21 @@ export default async function HindiUpdatePage({ params }: HindiUpdatePageProps) 
         },
         'inLanguage': 'hi-IN',
       },
+      ...(update.faqs_hi && update.faqs_hi.length > 0
+        ? [
+            {
+              '@type': 'FAQPage',
+              'mainEntity': update.faqs_hi.map((faq) => ({
+                '@type': 'Question',
+                'name': faq.q,
+                'acceptedAnswer': {
+                  '@type': 'Answer',
+                  'text': faq.a,
+                },
+              })),
+            },
+          ]
+        : []),
     ],
   };
 

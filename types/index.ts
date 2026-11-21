@@ -95,6 +95,8 @@ export interface UpdateArticle {
   slug: string;
   title_en: string;
   title_hi: string;
+  metaDescription_en?: string;
+  metaDescription_hi?: string;
   category: 'scheme-update' | 'scholarship' | 'announcement' | 'recruitment';
   publishedDate: string;
   updatedDate: string;
@@ -112,6 +114,8 @@ export interface UpdateArticle {
   officialSource: OfficialSource;
   relatedSchemeSlug?: string;
   bannerImage?: string;
+  faqs_en?: { q: string; a: string }[];
+  faqs_hi?: { q: string; a: string }[];
 }
 
 export interface CategoryInfo {

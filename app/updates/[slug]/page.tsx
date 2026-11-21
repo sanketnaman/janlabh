@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: UpdatePageProps): Promise<Met
   const pageTitle = update.title_en.length > 55
     ? update.title_en
     : `${update.title_en} | JanLabh`;
-  const pageDescription = update.summary_en.slice(0, 155);
+  const pageDescription = update.metaDescription_en || update.summary_en.slice(0, 155);
 
   return {
     title: pageTitle,
@@ -122,6 +122,21 @@ export default async function UpdatePage({ params }: UpdatePageProps) {
         },
         'inLanguage': 'en-IN',
       },
+      ...(update.faqs_en && update.faqs_en.length > 0
+        ? [
+            {
+              '@type': 'FAQPage',
+              'mainEntity': update.faqs_en.map((faq) => ({
+                '@type': 'Question',
+                'name': faq.q,
+                'acceptedAnswer': {
+                  '@type': 'Answer',
+                  'text': faq.a,
+                },
+              })),
+            },
+          ]
+        : []),
     ],
   };
 

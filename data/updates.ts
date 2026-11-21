@@ -60,55 +60,128 @@ export const UPDATES: UpdateArticle[] = [
   {
     id: 'pm-kisan-24th-installment-released-25th-status',
     slug: 'pm-kisan-24th-installment-released-25th-status',
-    title_en: 'PM Kisan 24th Installment Released: ₹18,690 Cr, 25th Date Status',
-    title_hi: 'पीएम किसान 24वीं किस्त जारी: ₹18,690 करोड़ ट्रांसफर, 25वीं किस्त की स्थिति',
+    title_en: 'PM Kisan 25th Installment Date 2026: 24th Release Status, Registration Number & Land Seeding Fix',
+    title_hi: 'पीएम किसान 25वीं किस्त कब आएगी 2026: 24वीं किस्त स्टेटस, रजिस्ट्रेशन नंबर कैसे निकालें व लैंड सीडिंग सुधार',
+    metaDescription_en: 'PM Kisan 25th installment date 2026 expected schedule, ₹2,000 DBT release status, how to find registration number by mobile/Aadhaar, and Land Seeding YES solution.',
+    metaDescription_hi: 'पीएम किसान 25वीं किस्त 2026 कब आएगी, 24वीं किस्त का स्टेटस, मोबाइल व आधार से रजिस्ट्रेशन नंबर कैसे निकालें और लैंड सीडिंग NO को YES करने का पक्का समाधान।',
     category: 'scheme-update',
     publishedDate: 'November 09, 2026',
-    updatedDate: 'November 09, 2026',
-    lastVerified: 'November 09, 2026',
-    summary_en: 'Prime Minister Narendra Modi released the 24th installment of PM-KISAN on 30 October 2026 from Banaskantha, Gujarat, transferring over ₹18,690 crore to 9.34+ crore farmers. As of 9 November 2026, the 25th installment date is not officially announced. Check reasons and solutions if your ₹2,000 is delayed.',
-    summary_hi: 'प्रधानमंत्री नरेंद्र मोदी ने 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से पीएम-किसान की 24वीं किस्त जारी कर दी है, जिसके तहत 9.34 करोड़ से अधिक किसानों को ₹18,690 करोड़ से ज्यादा सीधे डीबीटी द्वारा भेजे गए। 9 नवंबर 2026 तक 25वीं किस्त की आधिकारिक तारीख घोषित नहीं हुई है। यदि ₹2,000 नहीं मिले, तो तुरंत यह चेकलिस्ट देखें।',
+    updatedDate: 'November 21, 2026',
+    lastVerified: 'November 21, 2026',
+    bannerImage: '/images/schemes/pm-kisan-samman-nidhi.png',
+    summary_en: 'Prime Minister Narendra Modi released the 24th installment of PM-KISAN on 30 October 2026 from Banaskantha, Gujarat, transferring over ₹18,690 crore directly into the bank accounts of 9.34+ crore eligible farmers. With the 24th tranche successfully disbursed, farmers are tracking the expected release window for the 25th installment (scheduled between December 2026 and March 2027). If your ₹2,000 was not credited, follow our step-by-step guide to retrieve your Registration Number by mobile/Aadhaar, convert Land Seeding: NO to YES with your local Patwari, complete Face e-KYC on mobile, and ensure Aadhaar-NPCI bank mapping.',
+    summary_hi: 'प्रधानमंत्री नरेंद्र मोदी ने 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से पीएम-किसान की 24वीं किस्त जारी कर दी है, जिसके तहत 9.34 करोड़ से अधिक पात्र किसानों को ₹18,690 करोड़ से ज्यादा की राशि सीधे डीबीटी द्वारा उनके बैंक खातों में ट्रांसफर की गई। 24वीं किस्त के बाद अब किसान 25वीं किस्त की संभावित तारीख (दिसंबर 2026 – मार्च 2027 चक्र) का इंतजार कर रहे हैं। यदि आपकी 24वीं किस्त का ₹2,000 रुका हुआ है, तो मोबाइल या आधार से अपना रजिस्ट्रेशन नंबर निकालें और लैंड सीडिंग (NO) को YES करवाने तथा फेस e-KYC पूरा करने का पक्का समाधान नीचे देखें।',
     keyFacts_en: [
       '24th installment was released on 30 October 2026 from Banaskantha, Gujarat, disbursing over ₹18,690 crore directly to 9.34+ crore farmers.',
-      'Cumulative disbursals under PM-KISAN have officially crossed ₹4.64 lakh crore across 24 installments.',
-      '25th installment date is NOT officially announced as of 9 November 2026 (expected between December 2026 and March 2027 based on 4-month cycle).',
-      'Primary prerequisites: active e-KYC (OTP/Biometric/Face Auth), Land Seeding = YES, and Aadhaar-Bank NPCI mapping. In participating states, AgriStack Farmer ID is being linked to simplify ongoing records.'
+      'Cumulative disbursals under PM-KISAN have officially crossed ₹4.64 lakh crore across 24 installments since inception in 2019.',
+      '25th installment date is expected between December 2026 and March 2027 based on the standard 4-month DBT disbursement calendar.',
+      'Mandatory 3 Green Signals: To receive ₹2,000, your portal status must show e-KYC: YES, Land Seeding: YES, and Aadhaar Bank Account Seeding: YES.',
+      'Lost Registration Number? Farmers can retrieve their unique Registration Number (e.g. UPXXXXXXXX, JHXXXXXXXX) in 60 seconds on pmkisan.gov.in using Aadhaar number or registered mobile.',
+      'Fastest Fix for Inactive Bank NPCI: Opening a DBT-enabled Digital Savings Account at your local India Post Payments Bank (IPPB) automatically links to NPCI within 24 hours.'
     ],
     keyFacts_hi: [
-      '24वीं किस्त 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से जारी हुई, जिसमें 9.34 करोड़ से अधिक किसानों को ₹18,690 करोड़ से अधिक भेजे गए।',
+      '24वीं किस्त 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से जारी हुई, जिसमें 9.34 करोड़ से अधिक किसानों को ₹18,690 करोड़ से अधिक सीधे बैंक खाते में भेजे गए।',
       'योजना के तहत अब तक कुल संचयी सहायता राशि ₹4.64 लाख करोड़ के पार पहुँच चुकी है।',
-      '9 नवंबर 2026 तक 25वीं किस्त की आधिकारिक तिथि घोषित नहीं हुई है (4 महीने के नियमित चक्र अनुसार दिसंबर 2026 से मार्च 2027 के बीच संभावित)।',
-      'प्राथमिक अनिवार्य शर्तें: सक्रिय e-KYC, लैंड सीडिंग (YES) और एनपीसीआई बैंक सीडिंग। जिन राज्यों में फार्मर रजिस्ट्री लागू हो रही है, वहां एग्रीस्टैक फार्मर आईडी को जोड़ा जा रहा है।'
+      '25वीं किस्त की संभावित तिथि: 4 महीने के नियमित चक्र अनुसार दिसंबर 2026 से मार्च 2027 के बीच ₹2,000 की अगली किस्त जारी होगी।',
+      '3 अनिवार्य ग्रीन सिग्नल: ₹2,000 पाने के लिए स्टेटस में e-KYC: YES, Land Seeding: YES, और Aadhaar Bank Account Seeding: YES होना अनिवार्य है।',
+      'रजिस्ट्रेशन नंबर भूल गए? किसान pmkisan.gov.in पर अपने आधार नंबर या रजिस्टर्ड मोबाइल से सिर्फ 1 मिनट में अपना रजिस्ट्रेशन नंबर निकाल सकते हैं।',
+      'बैंक में NPCI लिंक न होने का सबसे तेज़ समाधान: नजदीकी डाकघर (Post Office) जाकर IPPB में नया डीबीटी बचत खाता खुलवाएं, जो 24 घंटे में स्वतः लिंक हो जाता है।'
     ],
     importantDates_en: [
-      '24th Installment Release Date: 30 October 2026 (Disbursed nationwide)',
-      '25th Installment Release Date: Not officially announced as of 9 November 2026 (Expected Period: Dec 2026 – Mar 2027)',
-      'Correction Window: Active on pmkisan.gov.in & PM-KISAN App'
+      '24th Installment Release Date: 30 October 2026 (Successfully disbursed to 9.34 Cr farmers nationwide)',
+      '25th Installment Expected Period: December 2026 – March 2027 (Official date announcement pending from Ministry)',
+      'e-KYC & Land Seeding Window: Active 24x7 on pmkisan.gov.in & PM-KISAN Mobile App',
+      'Registration Number Retrieval: Active on official Know Your Registration Number portal'
     ],
     importantDates_hi: [
-      '24वीं किस्त जारी होने की तिथि: 30 अक्टूबर 2026 (सफलतापूर्वक वितरित)',
-      '25वीं किस्त जारी होने की तिथि: 9 नवंबर 2026 तक आधिकारिक घोषणा नहीं (संभावित अवधि: दिसंबर 2026 – मार्च 2027)',
-      'स्टेटस सुधार व ई-केवाईसी विंडो: pmkisan.gov.in व पीएम-किसान ऐप पर सक्रिय'
+      '24वीं किस्त जारी होने की तिथि: 30 अक्टूबर 2026 (देश भर के 9.34 करोड़ किसानों के खातों में हस्तांतरित)',
+      '25वीं किस्त जारी होने की संभावित अवधि: दिसंबर 2026 – मार्च 2027 (कृषि मंत्रालय द्वारा आधिकारिक घोषणा प्रतीक्षित)',
+      'ई-केवाईसी व लैंड सीडिंग सुधार: pmkisan.gov.in व पीएम-किसान मोबाइल ऐप पर 24 घंटे सक्रिय',
+      'रजिस्ट्रेशन नंबर जानने की सुविधा: आधिकारिक "Know Your Registration Number" लिंक पर लाइव'
     ],
-    whoIsAffected_en: 'All enrolled landholding farmers in India awaiting verification or seeking confirmation of their 24th/25th installment DBT payment status.',
-    whoIsAffected_hi: 'देश भर के सभी पंजीकृत भूमिधारक किसान जो अपनी 24वीं किस्त के क्रेडिट स्टेटस अथवा 25वीं किस्त के नियमों की पुष्टि करना चाहते हैं।',
+    whoIsAffected_en: 'All small, marginal, and enrolled landholding farmers across India tracking their ₹2,000 24th/25th installment status, facing Land Seeding: NO issues, or needing to retrieve their lost Registration Number.',
+    whoIsAffected_hi: 'देश भर के सभी छोटे, सीमांत व पंजीकृत किसान जो अपनी ₹2,000 की 24वीं/25वीं किस्त का स्टेटस ट्रैक कर रहे हैं, जिनका लैंड सीडिंग NO है, या जो अपना रजिस्ट्रेशन नंबर भूल गए हैं।',
     whatShouldUsersDo_en: [
-      'Visit pmkisan.gov.in and select "Know Your Status" using your Registration Number.',
-      'Confirm that e-KYC, Land Seeding, and Aadhaar Bank Account Seeding all show green "YES".',
-      'Use Face Authentication on the official PM-KISAN mobile app if fingerprint or OTP e-KYC is failing.',
-      'If your bank account is not NPCI mapped, visit your bank branch for DBT mandate submission or open an IPPB account.'
+      'Step 1: If you do not remember your Registration Number, visit pmkisan.gov.in > "Know Your Registration Number" and enter your Aadhaar or mobile number.',
+      'Step 2: Go to "Know Your Status" and enter your Registration Number + Captcha to view your live payment and eligibility ledger.',
+      'Step 3: Verify the 3 Green Signals: e-KYC (YES), Land Seeding (YES), and Aadhaar Bank Seeding (YES).',
+      'Step 4: If Land Seeding shows "NO", carry your Khatauni/Jamabandi revenue land record copy and Aadhaar to your local Patwari/Tehsildar for portal verification.',
+      'Step 5: If e-KYC is incomplete and OTP fails, download the PM-KISAN mobile app and complete Face Authentication in 2 minutes without visiting a CSC center.',
+      'Step 6: If Aadhaar-Bank mapping shows "NO", visit your bank branch for DBT mandate submission or open an IPPB account at your nearest post office.'
     ],
     whatShouldUsersDo_hi: [
-      'pmkisan.gov.in पर "Know Your Status" में जाकर अपना रजिस्ट्रेशन नंबर दर्ज करें।',
-      'जांचें कि e-KYC, Land Seeding, और Aadhaar Bank Account Seeding तीनों में हरा "YES" दिखाई दे रहा है।',
-      'यदि बायोमेट्रिक या ओटीपी में समस्या आ रही है, तो आधिकारिक PM-KISAN ऐप में फेस ऑथेंटिकेशन का उपयोग करें।',
-      'यदि बैंक खाता एनपीसीआई से मैप नहीं है, तो बैंक शाखा में डीबीटी मैंडेट जमा करें या डाकघर (IPPB) में खाता खुलवाएं।'
+      'चरण 1: यदि आपको रजिस्ट्रेशन नंबर याद नहीं है, तो pmkisan.gov.in पर "Know Your Registration Number" पर जाएं और आधार या मोबाइल नंबर से नंबर निकालें।',
+      'चरण 2: "Know Your Status" विकल्प पर क्लिक करें और रजिस्ट्रेशन नंबर + कैप्चा डालकर अपना लाइव भुगतान स्टेटस देखें।',
+      'चरण 3: स्टेटस में 3 ग्रीन टिक जांचें: e-KYC (YES), Land Seeding (YES), और Aadhaar Bank Seeding (YES)।',
+      'चरण 4: यदि Land Seeding "NO" है, तो अपनी जमीन की खतौनी/जमाबंदी नकल और आधार कार्ड लेकर हल्का पटवारी/लेखपाल से सत्यापन कराएं।',
+      'चरण 5: यदि ई-केवाईसी अधूरी है और ओटीपी नहीं आ रहा, तो PM-KISAN मोबाइल ऐप में Face Authentication से 2 मिनट में ई-केवाईसी पूरी करें।',
+      'चरण 6: यदि बैंक में आधार सीडिंग "NO" है, तो बैंक जाकर डीबीटी मैंडेट जमा करें या डाकघर (IPPB) में नया डीबीटी बचत खाता खुलवाएं।'
+    ],
+    faqs_en: [
+      {
+        q: 'When will the PM Kisan 25th installment be released in 2026-27 (25th installment date 2026)?',
+        a: 'Under the PM-KISAN operational calendar, financial support is disbursed in 3 tranches every four months: Period 1 (April-July), Period 2 (August-November), and Period 3 (December-March). Following the 24th installment release on 30 October 2026, the 25th installment is expected to be released between December 2026 and March 2027. The exact date will be officially announced by the Ministry of Agriculture.'
+      },
+      {
+        q: 'How to find PM Kisan Registration Number if forgotten or lost (registration number kaise nikale)?',
+        a: 'Visit the official portal at pmkisan.gov.in and click on "Know Your Registration Number" in the Farmer Corner. You have two options: 1) Enter your registered mobile number and verify via OTP, or 2) Enter your 12-digit Aadhaar number and verify via Aadhaar OTP. Your official PM Kisan Registration Number (e.g. UP123456789 or JH123456789) will appear instantly on the screen.'
+      },
+      {
+        q: 'How to fix PM Kisan Land Seeding "NO" to "YES" (land seeding yes kaise kare)?',
+        a: 'If your status displays Land Seeding: NO, your payment is withheld because state revenue records have not verified your cultivable land ownership. To fix this: 1) Take a certified physical copy of your land revenue record (Khatauni / Jamabandi / RoR / Khasra), Aadhaar card, and bank passbook. 2) Visit your local Patwari, Lekhpal, or Circle Revenue Officer. 3) The revenue officer verifies land records on the state Bhulekh portal and approves land seeding through the officer login portal (Rev_Staff / Tehsildar), turning it to green "YES" in the next update cycle.'
+      },
+      {
+        q: 'Why was the 24th installment of ₹2,000 not credited to my bank account?',
+        a: 'The ₹2,000 installment is typically withheld due to one of four reasons: 1) Land Seeding is marked "NO" in your portal status. 2) Aadhaar e-KYC was not completed. 3) Bank account is not mapped with NPCI for Direct Benefit Transfer (DBT). 4) Name spelling mismatch between Aadhaar and bank/revenue records. Check "Know Your Status" on pmkisan.gov.in to identify the exact pending requirement.'
+      },
+      {
+        q: 'How to complete PM Kisan e-KYC on mobile using Face Authentication?',
+        a: 'Download the official "PM-KISAN" app and the "AadhaarFaceRD" app from Google Play Store. Open the PM-KISAN app, select "e-KYC with Face Authentication", enter your Aadhaar number, allow camera permissions, and look directly into the camera. Once your face scan is verified against UIDAI biometrics, your e-KYC will be marked "YES" instantly without requiring an OTP or fingerprint device.'
+      },
+      {
+        q: 'Can both husband and wife receive ₹6,000 each under PM-KISAN?',
+        a: 'No. As per PM-KISAN scheme operational guidelines, the benefit of ₹6,000 per year is designated for the entire "farmer family" (defined as husband, wife, and minor children). Only one adult member of the landholding family can receive the installment. If both receive funds, one account will be deemed ineligible and recovery proceedings may be initiated.'
+      },
+      {
+        q: 'What is the fastest way to solve Aadhaar Bank Account Seeding / NPCI inactive problem?',
+        a: 'The fastest, foolproof solution is visiting your nearest Post Office or contacting your local Gramin Dak Sevak (GDS) to open a paperless Digital Savings Account with India Post Payments Bank (IPPB). While opening the account, choose the option "Link Aadhaar for receiving DBT benefits". IPPB accounts are automatically mapped with NPCI within 24 hours, guaranteeing uninterrupted PM-KISAN installment credits.'
+      }
+    ],
+    faqs_hi: [
+      {
+        q: 'पीएम किसान 25वीं किस्त कब तक आएगी 2026 में (PM Kisan 25th Installment Date 2026)?',
+        a: 'पीएम किसान योजना के 4-मासिक नियमित चक्र के अनुसार साल में 3 किस्तों का भुगतान होता है: अप्रैल-जुलाई, अगस्त-नवंबर, और दिसंबर-मार्च। 30 अक्टूबर 2026 को 24वीं किस्त जारी होने के बाद, 25वीं किस्त (दिसंबर 2026 से मार्च 2027) के बीच किसानों के खातों में भेजी जाएगी। कृषि मंत्रालय द्वारा आधिकारिक तिथि की घोषणा जल्द ही की जाएगी।'
+      },
+      {
+        q: 'पीएम किसान का रजिस्ट्रेशन नंबर कैसे निकालें अगर भूल गए हैं (Registration Number Kaise Nikale)?',
+        a: 'आधिकारिक वेबसाइट pmkisan.gov.in पर जाएं और "Farmers Corner" में "Know Your Registration Number" पर क्लिक करें। इसके बाद दो विकल्प मिलेंगे: 1) अपना रजिस्टर्ड मोबाइल नंबर डालकर OTP से निकालें, या 2) अपना 12 अंकों का आधार नंबर डालें और मोबाइल पर आए OTP को दर्ज करें। स्क्रीन पर आपका रजिस्ट्रेशन नंबर (जैसे UPXXXXXXXX या JHXXXXXXXX) तुरंत प्रदर्शित हो जाएगा।'
+      },
+      {
+        q: 'पीएम किसान में Land Seeding "NO" को "YES" कैसे करें (Land Seeding Yes Kaise Kare)?',
+        a: 'यदि आपके स्टेटस में Land Seeding: NO दिख रहा है, तो इसका मतलब है कि राजस्व विभाग के पास आपकी जमीन का ऑनलाइन रिकॉर्ड सत्यापित नहीं है। इसे सही करने के लिए: 1) अपनी जमीन की खतौनी/जमाबंदी/खतियान की प्रमाणित प्रति, आधार कार्ड और बैंक पासबुक लें। 2) अपने क्षेत्र के हल्का पटवारी, लेखपाल या अंचल कृषि पदाधिकारी (CO/Tehsildar) से मिलें। 3) राजस्व अधिकारी अपने लॉगिन पोर्टल (Rev_Staff / Tehsildar) से आपके भू-अभिलेख का भौतिक सत्यापन कर लैंड सीडिंग को "YES" कर देगा।'
+      },
+      {
+        q: '24वीं किस्त का ₹2,000 बैंक खाते में नहीं आया तो क्या करें?',
+        a: 'किस्त रुकने के 4 मुख्य कारण होते हैं: 1) Land Seeding का NO होना, 2) e-KYC अधूरा होना, 3) बैंक खाते में NPCI आधार डीबीटी लिंक न होना, या 4) आधार और बैंक खाते में नाम की स्पेलिंग में अंतर। सबसे पहले pmkisan.gov.in पर "Know Your Status" में जाकर चेक करें कि इन तीनों में से किस बिंदु पर लाल क्रॉस लगा है, और उसी के अनुसार सुधार करें।'
+      },
+      {
+        q: 'पीएम किसान e-KYC मोबाइल से फेस ऑथेंटिकेशन (Face RD) द्वारा कैसे करें?',
+        a: 'गूगल प्ले स्टोर से आधिकारिक "PM-KISAN" ऐप और "AadhaarFaceRD" ऐप डाउनलोड करें। PM-KISAN ऐप खोलकर "Face e-KYC" विकल्प चुनें, अपना आधार नंबर दर्ज करें और कैमरे के सामने देखकर पलकें झपकाएं। चेहरा स्कैन होते ही बिना किसी फिंगरप्रिंट स्कैनर या आधार ओटीपी के आपकी ई-केवाईसी 2 मिनट में पूरी हो जाएगी।'
+      },
+      {
+        q: 'क्या एक ही परिवार में पति और पत्नी दोनों को ₹6,000 की किस्त मिल सकती है?',
+        a: 'नहीं। पीएम किसान योजना के नियमों के अनुसार "किसान परिवार" (पति, पत्नी और नाबालिग बच्चे) को एक इकाई माना जाता है। परिवार में से केवल किसी एक सदस्य (जिसके नाम पर जमीन दर्ज है) को ही ₹6,000 सालाना का लाभ मिल सकता है। यदि दोनों लेते हैं तो इसे अपात्र मानकर रिकवरी की जा सकती है।'
+      },
+      {
+        q: 'बैंक खाते में आधार सीडिंग / NPCI लिंक न होने का सबसे तेज़ व पक्का उपाय क्या है?',
+        a: 'सबसे आसान और 100% पक्का उपाय यह है कि आप अपने नजदीकी डाकघर (Post Office) जाएं या डाकिया (डाक सेवक) से मिलकर इंडिया पोस्ट पेमेंट्स बैंक (IPPB) में नया डीबीटी बचत खाता खुलवाएं। खाता खोलते समय डीबीटी सहमति (DBT Mandate) पर टिक करें। IPPB खाता 24 घंटे के भीतर स्वतः NPCI से मैप हो जाता है और रुकी हुई किस्तें इसी खाते में आ जाती हैं।'
+      }
     ],
     officialSource: {
       name: 'PIB Press Release: PM releases 24th instalment of PM-KISAN from Banaskantha, Gujarat (PRID 2330171)',
       authority: 'Press Information Bureau, Government of India',
       url: 'https://www.pib.gov.in/PressReleasePage.aspx?PRID=2330171',
-      verificationDate: 'November 09, 2026'
+      verificationDate: 'November 21, 2026'
     },
     relatedSchemeSlug: 'pm-kisan-samman-nidhi'
   },
