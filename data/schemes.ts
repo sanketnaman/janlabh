@@ -1871,8 +1871,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'bihar-student-credit-card',
     slug: 'bihar-student-credit-card-yojana',
-    title_en: 'Bihar Student Credit Card (MNSSBY): ₹4 Lakh Education Loan at 1% for Girls',
-    title_hi: 'बिहार स्टूडेंट क्रेडिट कार्ड योजना: उच्च शिक्षा हेतु ₹4 लाख तक का रियायती ऋण',
+    title_en: 'Bihar Student Credit Card (MNSSBY) 2026: Apply Online, Status Check, 1% Interest Rate & DRCC Guide',
+    title_hi: 'बिहार स्टूडेंट क्रेडिट कार्ड 2026: ऑनलाइन आवेदन, स्टेटस चेक, 1% ब्याज दर, DRCC व ₹4 लाख लोन गाइड',
     shortTitle_en: 'Bihar Student Credit Card',
     shortTitle_hi: 'बिहार स्टूडेंट क्रेडिट कार्ड',
     category: 'students',
@@ -1880,133 +1880,268 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Bihar State',
     stateLabel_hi: 'बिहार राज्य',
     status: 'Active',
-    lastVerified: 'October 28, 2026',
+    lastVerified: 'November 22, 2026',
     
-    benefitSummary_en: 'State government guaranteed education loan up to ₹4,00,000 for 12th pass students pursuing higher education in technical, medical, and general courses. Subsidized interest rate of 4% for male students and just 1% for female, transgender, and divyang students, with repayment starting 1 year after course completion.',
-    benefitSummary_hi: '12वीं पास छात्रों को तकनीकी, मेडिकल और सामान्य उच्च शिक्षा हेतु ₹4,00,000 तक का सरकारी गारंटी युक्त शिक्षा ऋण। छात्राओं, दिव्यांगों और ट्रांसजेंडरों हेतु मात्र 1% और छात्रों हेतु 4% सरल ब्याज दर, जिसकी वापसी पढ़ाई पूरी होने के 1 साल बाद शुरू होती है।',
-    benefitAmount_en: 'Up to ₹4,00,000 education loan',
-    benefitAmount_hi: '₹4,00,000 तक का रियायती शिक्षा ऋण',
-    whoCanApply_en: '12th pass permanent residents of Bihar aged up to 25 years enrolled in recognized colleges or technical institutes across India.',
-    whoCanApply_hi: 'बिहार के स्थायी निवासी 12वीं उत्तीर्ण छात्र जिनकी आयु 25 वर्ष से कम हो और जो देश भर के मान्यता प्राप्त संस्थानों में नामांकित हों।',
-    applicationMode: 'Online via MNSSBY Portal + DRCC Verification',
+    benefitSummary_en: 'State government-guaranteed education loan up to ₹4,00,000 for 12th pass students pursuing higher technical, medical, and professional education across India. Subsidized simple interest rate of just 1% for female, transgender, and PwD students, and 4% for male students, with repayment starting 1 year after course completion.',
+    benefitSummary_hi: '12वीं पास छात्रों को बी.टेक, एमबीबीएस, नर्सिंग, पॉलिटेक्निक और 40+ उच्च शिक्षण पाठ्यक्रमों हेतु ₹4,00,000 तक का राज्य सरकार की गारंटी पर शिक्षा ऋण। छात्राओं, दिव्यांगों व ट्रांसजेंडरों हेतु मात्र 1% और छात्रों हेतु 4% साधारण ब्याज, जिसकी ईएमआई पढ़ाई पूरी होने के 1 साल बाद शुरू होती है।',
+    benefitAmount_en: 'Up to ₹4,00,000 (Tuition fees + Hostel + Laptop + Books)',
+    benefitAmount_hi: '₹4,00,000 तक का शिक्षा ऋण (फीस + हॉस्टल + लैपटॉप + पुस्तकें)',
+    whoCanApply_en: '12th pass or diploma holding permanent residents of Bihar aged up to 25 years (up to 30 years for PG courses) enrolled in approved institutions across India.',
+    whoCanApply_hi: 'बिहार के 12वीं या पॉलिटेक्निक पास स्थायी निवासी छात्र जिनकी आयु 25 वर्ष (पीजी हेतु 30 वर्ष) तक हो और जो मान्यता प्राप्त संस्थानों में नामांकित हों।',
+    applicationMode: 'Online (7nishchay-yuvaupmission.bihar.gov.in) + DRCC Physical Verification',
     bannerImage: '/images/schemes/bihar-student-credit-card.webp',
     
-    whatIsThis_en: 'Bihar Student Credit Card Scheme is a flagship scheme under Bihar Chief Minister Nitish Kumar’s "Saat Nischay" initiative (Aarthik Hal, Yuvaon Ko Bal), managed by the Bihar State Education Finance Corporation (BSEFC) to eliminate financial barriers to higher education.',
-    whatIsThis_hi: 'बिहार स्टूडेंट क्रेडिट कार्ड योजना मुख्यमंत्री के सात निश्चय कार्यक्रम के तहत संचालित है। इसका उद्देश्य राज्य के गरीब और मेधावी युवाओं को उच्च शिक्षण संस्थानों में प्रवेश के समय आर्थिक तंगी के कारण पढ़ाई छोड़ने से बचाना है।',
+    whatIsThis_en: 'Bihar Student Credit Card Scheme (BSCC) is a flagship higher education initiative under Chief Minister Nitish Kumar’s "Saat Nischay" program (Aarthik Hal, Yuvaon Ko Bal), executed by the Bihar State Education Finance Corporation (BSEFC). The scheme provides collateral-free, government-backed education loans up to ₹4 Lakh to ensure financial hardship never prevents talented youth from pursuing professional, medical, engineering, or general degrees in Bihar or anywhere across India.',
+    whatIsThis_hi: 'बिहार स्टूडेंट क्रेडिट कार्ड योजना मुख्यमंत्री नीतीश कुमार के "सात निश्चय" (आर्थिक हल, युवाओं को बल) कार्यक्रम के तहत संचालित एक ऐतिहासिक उच्च शिक्षा वित्तीय सहायता योजना है। इसका संचालन बिहार राज्य शिक्षा वित्त निगम (BSEFC) द्वारा किया जाता है। इसके तहत गरीब और मध्यमवर्गीय परिवारों के मेधावी 12वीं पास युवाओं को बिना किसी संपत्ति बंधक (Collateral-Free) के ₹4 लाख तक का शिक्षा ऋण 100% सरकारी गारंटी पर उपलब्ध कराया जाता है, ताकि पैसे की तंगी से किसी छात्र की उच्च शिक्षा न छूटे।',
     
     benefitsList_en: [
-      'Collateral-free loan up to ₹4 Lakh backed 100% by the State Government of Bihar.',
-      'Covers tuition fees, hostel expenses, books, and laptop costs.',
-      'Ultra-low interest rate: only 1% for female and divyang students; 4% for boys.',
-      'Moratorium period: Repayment starts only 1 year after course completion or 6 months after getting a job, whichever is earlier.'
+      'Collateral-free, third-party-guarantee-free education loan up to ₹4,00,000 backed 100% by the State Government of Bihar.',
+      'Ultra-subsidized simple interest: Just 1% for female, transgender, and PwD students; 4% simple interest for male students.',
+      'Moratorium benefit: Zero EMI and zero repayment burden during the entire study tenure plus 1 full year after course completion (or 6 months after getting a job).',
+      'Comprehensive expense coverage: Direct payment of tuition fees to the college, plus living/hostel mess expenses, course textbooks, stationery, and a dedicated ₹35,000 laptop purchase grant directly into the student bank account.',
+      'Coverage for 40+ recognized courses: Engineering (B.Tech), Medicine (MBBS, BDS, BAMS), B.Sc Nursing, GNM, Pharmacy (B.Pharm, D.Pharm), Polytechnic Diploma, Management (BBA, MBA), Computer Applications (BCA, MCA), Agriculture, Hotel Management, and Law (LLB).',
+      'Subsequent year payment facility: Seamless disbursement for 2nd, 3rd, and 4th years through the online Subsequent Payment Form PDF upload process without re-applying.'
     ],
     benefitsList_hi: [
-      'बिहार सरकार की 100% गारंटी पर बिना किसी गिरवी या बंधक के ₹4 लाख तक का ऋण।',
-      'कॉलेज फीस, हॉस्टल मेस खर्च, किताबें और लैपटॉप खरीदने का खर्च शामिल।',
-      'अत्यंत कम ब्याज दर: छात्राओं व दिव्यांगों के लिए केवल 1% और छात्रों के लिए 4%।',
-      'कोर्स पूरा होने के एक साल बाद अथवा नौकरी लगने के 6 महीने बाद ही किस्तों की शुरुआत।'
+      'बिना किसी बैंक गारंटी, गिरवी या बंधक के ₹4,00,000 तक का शिक्षा ऋण, जिसकी 100% गारंटी बिहार सरकार लेती है।',
+      'अत्यंत रियायती साधारण ब्याज दर: छात्राओं, दिव्यांगों और थर्ड जेंडर हेतु मात्र 1% और छात्रों हेतु 4% सरल ब्याज।',
+      'मोराटोरियम का बड़ा लाभ: पूरी पढ़ाई के दौरान और कोर्स पूरा होने के 1 साल बाद (या नौकरी मिलने के 6 महीने बाद) तक कोई ईएमआई नहीं भरनी होती।',
+      'समग्र खर्चों की प्रतिपूर्ति: कॉलेज ट्यूशन फीस सीधे संस्थान के बैंक खाते में, तथा हॉस्टल मेस खर्च, पुस्तकें, स्टेशनरी और ₹35,000 तक का लैपटॉप भत्ता सीधे छात्र के बैंक खाते में।',
+      '40 से अधिक प्रमुख पाठ्यक्रमों में मान्य: बी.टेक, एमबीबीएस, बी.एससी नर्सिंग, जीएनएम, बी.फार्मा, डी.फार्मा, पॉलिटेक्निक डिप्लोमा, बीसीए, बीबीए, होटल मैनेजमेंट, कृषि और लॉ (LLB)।',
+      'सबसीक्वेंट पेमेंट (अगली किस्त) की आसान सुविधा: दूसरे, तीसरे और चौथे साल की फीस पाने के लिए दोबारा आवेदन नहीं करना पड़ता, केवल सबसीक्वेंट पेमेंट फॉर्म और मार्कशीट अपलोड करनी होती है।'
     ],
     
     eligibility: {
       eligibleIf_en: [
-        'Applicant must be a permanent resident of Bihar.',
-        'Must have passed Intermediate (12th grade) from a recognized board in Bihar or bordering area.',
-        'Age must not exceed 25 years on the date of application.',
-        'Admission must be secured in a recognized institution listed on the official BSEFC portal.'
+        'Applicant must be a permanent resident of Bihar state with a valid Residential Certificate (Niwas Praman Patra).',
+        'Must have passed Intermediate (12th grade) from a recognized board in Bihar (BSEB, CBSE, ICSE) or Polytechnic Diploma from SBTE Bihar.',
+        'Age must not exceed 25 years on the application date for undergraduate/diploma courses (relaxed up to 30 years for postgraduate courses like M.Tech, MBA, MCA).',
+        'Admission must be confirmed in a recognized college/university listed on the official BSEFC portal (out-of-state institutes must hold NAAC "A" rating, NBA accreditation, or NIRF ranking).',
+        'A co-applicant (Father, Mother, Husband, or legal guardian) is mandatory.'
       ],
       eligibleIf_hi: [
-        'आवेदक बिहार राज्य का मूल निवासी हो।',
-        'बिहार अथवा सीमावर्ती मान्यता प्राप्त बोर्ड से 12वीं कक्षा उत्तीर्ण की हो।',
-        'आवेदन तिथि को अधिकतम आयु 25 वर्ष से अधिक न हो।',
-        'बीहार शिक्षा वित्त निगम की अनुमोदित सूची में शामिल मान्यता प्राप्त कॉलेज में प्रवेश लिया हो।'
+        'आवेदक बिहार राज्य का स्थायी निवासी होना चाहिए और उसके पास वैध स्थानीय निवास प्रमाण पत्र हो।',
+        'बिहार में स्थित मान्यता प्राप्त बोर्ड (BSEB, CBSE, ICSE) से 12वीं (इंटरमीडिएट) अथवा SBTE से पॉलिटेक्निक डिप्लोमा उत्तीर्ण किया हो।',
+        'अंडरग्रेजुएट/डिप्लोमा पाठ्यक्रमों हेतु आवेदन तिथि को आयु 25 वर्ष से अधिक न हो (पीजी कोर्स जैसे एमबीए/एमटेक हेतु अधिकतम 30 वर्ष)।',
+        'बिहार राज्य शिक्षा वित्त निगम (BSEFC) द्वारा अनुमोदित कॉलेज में प्रवेश (Admission) सुनिश्चित हो चुका हो (बिहार के बाहर वाले कॉलेजों के पास NAAC "A" ग्रेड या NBA मान्यता अनिवार्य है)।',
+        'सह-आवेदक (माता/पिता/पति/अभिभावक) का होना अनिवार्य है।'
       ],
       notEligibleIf_en: [
-        'Students taking admission in unapproved or fake colleges not listed on MNSSBY.',
-        'Already availing another government education loan for the same degree.'
+        'Students taking admission in non-accredited, fake, or unapproved colleges not listed on the MNSSBY portal.',
+        'Applicants already availing another education loan from commercial banks or central government subsidy schemes for the same course.',
+        'Students who have completed graduation and are re-applying for an equivalent level bachelor degree.',
+        'Age exceeding the stipulated limits (25 years for UG, 30 years for PG) at the time of admission.'
       ],
       notEligibleIf_hi: [
-        'गैर-मान्यता प्राप्त संस्थानों में नामांकित छात्र।',
-        'उसी डिग्री हेतु पहले से किसी अन्य सरकारी बैंक शिक्षा ऋण का लाभ ले रहे छात्र।'
+        'गैर-मान्यता प्राप्त, ब्लैकलिस्टेड या MNSSBY पोर्टल पर गैर-अनुमोदित निजी संस्थानों में पढ़ने वाले छात्र।',
+        'उसी डिग्री हेतु पहले से किसी वाणिज्यिक बैंक के शिक्षा ऋण अथवा सरकारी छात्रवृत्ति से पूरी फीस प्राप्त कर रहे छात्र।',
+        'एक बार स्नातक की डिग्री पूरी करने के बाद दोबारा उसी स्तर की दूसरी स्नातक डिग्री हेतु आवेदन करने वाले।',
+        'आवेदन के समय निर्धारित आयु सीमा (25 वर्ष यूजी हेतु, 30 वर्ष पीजी हेतु) पार कर चुके छात्र।'
       ]
     },
     
     requiredDocuments_en: [
-      'Aadhaar Card of student and co-applicant (Father/Mother/Guardian)',
-      '10th and 12th Board Marksheets and Certificates',
-      'Proof of Admission and Fee Structure from the College / University',
-      'Residential Certificate (Niwas Praman Patra) of Bihar',
-      'Bank Account Passbook (Student and Co-applicant)',
-      'PAN Card of student and co-applicant'
+      '10th and 12th Board Marksheets and Passing Certificates (Original + 2 self-attested photocopies)',
+      'Proof of Admission (Admission Letter / Allotment Order / College ID Card)',
+      'Official Fee Structure & Bonafide Certificate on College Letterhead with authorized seal and signature',
+      'Permanent Residential Certificate (Niwas Praman Patra) of Bihar issued by Circle Officer (CO) / SDO',
+      'Aadhaar Card of the Student and Co-applicant (Father/Mother/Guardian)',
+      'PAN Card of the Student and Co-applicant',
+      'Bank Account Passbook / Cancelled Cheque of Student and Co-applicant (Aadhaar-seeded savings account)',
+      'Two recent passport-size color photographs of Student and Co-applicant',
+      'Family Income Affidavit / Income Certificate (if applicable for interest subsidy records)'
     ],
     requiredDocuments_hi: [
+      '10वीं और 12वीं बोर्ड की मूल अंकतालिका और उत्तीर्ण प्रमाण पत्र (Original + 2 स्व-हस्ताक्षरित फोटोकॉपी)',
+      'कॉलेज का आधिकारिक एडमिशन लेटर / सीट अलॉटमेंट लेटर / कॉलेज आईडी कार्ड',
+      'कॉलेज लेटरहेड पर मुहर व हस्ताक्षर युक्त बोनाफाइड सर्टिफिकेट और पूरा फीस स्ट्रक्चर (ट्यूशन, हॉस्टल व अन्य खर्च)',
+      'अंचलाधिकारी (CO) अथवा अनुमंडल पदाधिकारी (SDO) द्वारा निर्गत बिहार का स्थायी निवास प्रमाण पत्र',
       'छात्र एवं सह-आवेदक (माता/पिता/अभिभावक) का आधार कार्ड',
-      '10वीं और 12वीं बोर्ड की मूल अंकतालिका व प्रमाण पत्र',
-      'कॉलेज/विश्वविद्यालय का आधिकारिक एडमिशन लेटर व फीस स्ट्रक्चर',
-      'बिहार का स्थानीय निवास प्रमाण पत्र',
-      'छात्र व सह-आवेदक का बैंक पासबुक',
-      'छात्र व अभिभावक का पैन कार्ड'
+      'छात्र एवं सह-आवेदक का पैन कार्ड (PAN Card)',
+      'छात्र व सह-आवेदक का बैंक पासबुक अथवा रद्द चेक (आधार से लिंक बचत खाता)',
+      'छात्र और सह-आवेदक के 2-2 पासपोर्ट साइज रंगीन फोटोग्राफ',
+      'अभिभावक का आय प्रमाण पत्र / आय स्व-घोषणा पत्र'
     ],
     
     howToApply_en: [
-      'Register on the official 7 Nischay portal at 7nishchay-yuvaupmission.bihar.gov.in.',
-      'Fill out the online application for Bihar Student Credit Card and book an appointment slot at your District Registration and Counseling Centre (DRCC).',
-      'Visit your DRCC on the scheduled date with original documents and photocopies for physical verification.',
-      'BSEFC verifies documents and issues a sanction order.',
-      'Tuition fees are disbursed directly to the college account, and living expenses to the student account.'
+      'Step 1: Online Registration on MNSSBY Portal\nVisit the official 7 Nischay portal at 7nishchay-yuvaupmission.bihar.gov.in and click on "New Applicant Registration". Enter your name, mobile number, email ID, and Aadhaar number. Verify via OTP to receive your login credentials.',
+      'Step 2: Fill Bihar Student Credit Card (BSCC) Application\nLog in to the portal, select "Bihar Student Credit Card" under scheme options, and enter your personal details, academic qualifications (10th/12th roll code and roll number), co-applicant details, approved college name, course, and loan amount requested (tuition fee + hostel mess + laptop allowance).',
+      'Step 3: Book DRCC Appointment Slot\nSelect your home district and choose a convenient appointment date and time slot to visit your District Registration and Counseling Centre (DRCC). Download and print the Appointment Confirmation Receipt.',
+      'Step 4: Physical Verification at DRCC\nVisit your designated DRCC on the scheduled appointment date along with your co-applicant (parent/guardian). Carry all original documents and two sets of self-attested photocopies. DRCC officials verify documents, capture biometrics, and provide an Acknowledgement Slip (पावती रसीद).',
+      'Step 5: TPA Verification & BSEFC Sanction Order\nA Nominated Third-Party Agency (TPA) conducts field verification of your admission with the college administration. Upon approval, Bihar State Education Finance Corporation (BSEFC) issues an official Loan Sanction Letter.',
+      'Step 6: Agreement Signing & Fund Disbursement\nVisit the DRCC to sign the tripartite loan agreement. Tuition fees are transferred directly to the College bank account semester/annual-wise, while hostel and book/laptop allowances are credited directly to the student’s bank account.'
     ],
     howToApply_hi: [
-      '7nishchay-yuvaupmission.bihar.gov.in पोर्टल पर नया पंजीकरण करें।',
-      'स्टूडेंट क्रेडिट कार्ड फॉर्म भरकर अपने गृह जिले के डीआरसीसी (DRCC) केंद्र का अपॉइंटमेंट स्लॉट बुक करें।',
-      'निर्धारित तिथि पर सभी मूल कागजात और फोटोकॉपी लेकर डीआरसीसी केंद्र में भौतिक सत्यापन करवाएं।',
-      'शिक्षा वित्त निगम द्वारा जांच के बाद ऋण स्वीकृति आदेश जारी किया जाता है।',
-      'कॉलेज फीस सीधे संस्थान के बैंक खाते में और हॉस्टल/किताब खर्च छात्र के खाते में भेजा जाता है।'
+      'चरण 1: MNSSBY पोर्टल पर नया ऑनलाइन पंजीकरण\nआधिकारिक पोर्टल 7nishchay-yuvaupmission.bihar.gov.in पर जाएं और "New Applicant Registration" पर क्लिक करें। अपना नाम, मोबाइल नंबर, ईमेल और आधार नंबर दर्ज करें। ओटीपी सत्यापन के बाद यूजरनेम व पासवर्ड प्राप्त करें।',
+      'चरण 2: स्टूडेंट क्रेडिट कार्ड आवेदन फॉर्म भरना\nपोर्टल पर लॉगिन कर "Bihar Student Credit Card" योजना चुनें। अपनी व्यक्तिगत जानकारी, 10वीं/12वीं का रोल कोड व रोल नंबर, सह-आवेदक का विवरण, अनुमोदित कॉलेज, कोर्स और आवश्यक लोन राशि (ट्यूशन फीस + हॉस्टल + लैपटॉप) भरें।',
+      'चरण 3: डीआरसीसी (DRCC) अपॉइंटमेंट स्लॉट बुक करना\nफॉर्म सबमिट करने के बाद अपने गृह जिले के जिला निबंधन एवं परामर्श केंद्र (DRCC) की सुविधाजनक तारीख और समय स्लॉट चुनें। अपॉइंटमेंट रसीद डाउनलोड कर प्रिंट निकालें।',
+      'चरण 4: DRCC केंद्र पर मूल दस्तावेजों का भौतिक सत्यापन\nनिर्धारित तिथि पर अपने सह-आवेदक (माता/पिता) के साथ सभी मूल कागजात और 2-2 फोटोकॉपी लेकर डीआरसीसी केंद्र जाएं। वहां अधिकारियों द्वारा दस्तावेजों की जांच, फोटो व बायोमेट्रिक स्कैन किया जाएगा और पावती रसीद दी जाएगी।',
+      'चरण 5: थर्ड पार्टी (TPA) कॉलेज सत्यापन व ऋण स्वीकृति आदेश\nथर्ड पार्टी एजेंसी (TPA) द्वारा कॉलेज प्रशासन से आपके एडमिशन का सत्यापन किया जाता है। सत्यापन सफल होते ही बिहार राज्य शिक्षा वित्त निगम (BSEFC) द्वारा ऋण स्वीकृति पत्र (Sanction Letter) जारी किया जाता है।',
+      'चरण 6: एग्रीमेंट साइन व खाते में राशि का अंतरण\nस्वीकृति के बाद डीआरसीसी जाकर 3-पक्षीय अनुबंध (Agreement) साइन करें। इसके बाद कॉलेज की ट्यूशन फीस सीधे कॉलेज के बैंक खाते में और हॉस्टल/लैपटॉप खर्च सीधे छात्र के बैंक खाते में ट्रांसफर कर दिया जाता है।'
     ],
     
-    statusCheckGuide_en: 'Track application stage on 7nishchay-yuvaupmission.bihar.gov.in under "Track Application Status" using your Registration ID or Aadhaar number.',
-    statusCheckGuide_hi: '7nishchay-yuvaupmission.bihar.gov.in पर "Track Application Status" में जाकर रजिस्ट्रेशन नंबर या आधार डालकर स्टेटस ट्रैक करें।',
+    statusCheckGuide_en: `Step 1: Track Online Application Status on MNSSBY Portal\nVisit the official portal at 7nishchay-yuvaupmission.bihar.gov.in and click on "Track Application Status". Enter your Registration ID (BSCC Registration Number) or 12-digit Aadhaar Number, Date of Birth, and the Captcha code to view your real-time processing stage.\n\nStep 2: Understand the 5 Key Application Processing Stages\nYour status progress moves through 5 distinct checkpoints: 1) Application Submitted, 2) DRCC Document Verification Completed, 3) Field Verification by Third-Party Agency (TPA) Pending/Completed, 4) BSEFC Assistant Manager / DPM Sanction Approval, and 5) Disbursement Advice Issued.\n\nStep 3: DRCC Helpdesk & Discrepancy Resolution\nIf your status shows "Discrepancy at DRCC" or "TPA Verification Pending for over 30 days", contact your district DRCC manager or call the toll-free helpline at 1800-345-6444. Often, out-of-state colleges delay replying to the official verification email sent by BSEFC, which can be resolved by asking your college registrar/scholarship cell to reply to the state portal query.\n\nStep 4: Subsequent Year Payment Status (2nd, 3rd & 4th Year)\nFor multi-year degree courses, second and third-year fee installments are released only after you upload the Subsequent Payment Request Form PDF along with your latest passed semester/annual marksheet and updated college fee demand letter on the portal. Track your subsequent disbursement under the student dashboard login.`,
+    statusCheckGuide_hi: `चरण 1: MNSSBY पोर्टल पर ऑनलाइन स्टेटस चेक करें\nआधिकारिक पोर्टल 7nishchay-yuvaupmission.bihar.gov.in पर जाएं और "Track Application Status" लिंक पर क्लिक करें। अपना रजिस्ट्रेशन नंबर (BSCC Registration ID) अथवा 12 अंकों का आधार कार्ड नंबर, जन्मतिथि और कैप्चा कोड दर्ज करें। सबमिट करते ही आपकी फाइल की लाइव स्थिति स्क्रीन पर दिखाई देगी।\n\nचरण 2: आवेदन के 5 प्रमुख चरणों (Stages) को समझें\nआपका आवेदन 5 चरणों से गुजरता है: 1) फॉर्म ऑनलाइन सबमिट, 2) डीआरसीसी (DRCC) भौतिक सत्यापन पूर्ण, 3) थर्ड पार्टी एजेंसी (TPA) कॉलेज सत्यापन, 4) बिहार राज्य शिक्षा वित्त निगम (BSEFC) द्वारा ऋण स्वीकृति (Sanction Order), और 5) कॉलेज व छात्र खाते में राशि का भुगतान (Disbursement)।\n\nचरण 3: डीआरसीसी हेल्पडेस्क व समस्या का निवारण\nयदि स्टेटस में "TPA Verification Pending" या "College Record Not Verified" 30 दिनों से अधिक समय से दिख रहा है, तो अपने कॉलेज के रजिस्ट्रार या स्कॉलरशिप सेल से संपर्क करें। कई बार बाहर के कॉलेज बिहार सरकार की वेरिफिकेशन ईमेल का जवाब नहीं देते हैं। कॉलेज से रिप्लाई करवाते ही स्टेटस क्लियर हो जाता है। किसी भी सहायता के लिए टोल-फ्री नंबर 1800-345-6444 पर कॉल कर सकते हैं।\n\nचरण 4: दूसरे, तीसरे व चौथे वर्ष की फीस का स्टेटस (Subsequent Payment)\nपहले साल का लोन मिलने के बाद अगले साल की फीस स्वतः नहीं आती। छात्र को MNSSBY लॉगिन में जाकर "Subsequent Payment Request Form PDF" डाउनलोड करना होता है, उस पर कॉलेज से पासिंग मार्कशीट और अगले साल का फीस डिमांड लेटर लगाकर पोर्टल पर अपलोड करना होता है।`,
     officialStatusUrl: 'https://www.7nishchay-yuvaupmission.bihar.gov.in',
     
     commonProblems_en: [
       {
-        problem: 'College not visible in approved institute drop-down list',
-        solution: 'The institution must have NAAC "A" rating or NBA accreditation to be eligible for state funds. Check the institution eligibility register.'
+        problem: 'College not visible in approved institute list on MNSSBY portal',
+        solution: 'For colleges located outside Bihar, the institution must possess NAAC "A" rating, NBA accreditation, or NIRF top-ranking. For colleges located within Bihar, state university affiliation is required. Request your college administration to register on the Bihar BSEFC portal if eligible.'
+      },
+      {
+        problem: 'Application stuck at Third-Party Agency (TPA) verification for weeks',
+        solution: 'The TPA contacts your college registrar to physically confirm your genuine enrollment. Meet your college accounts/scholarship nodal officer and request them to promptly reply to the verification inquiry email sent by BSEFC Patna.'
+      },
+      {
+        problem: 'How to release 2nd, 3rd, or 4th year tuition fee (Subsequent Payment)',
+        solution: 'Log in to your MNSSBY student portal, download the Subsequent Payment Request Form, get it certified by your college authority with your latest semester passing marksheet, and re-upload it online or submit it at your home district DRCC.'
+      },
+      {
+        problem: 'College insisting on fee payment before Student Credit Card approval',
+        solution: 'Submit a copy of your DRCC Acknowledgement Receipt and the official Bihar Government BSEFC Notification to the college accounts department. As per education department guidelines, colleges are requested not to cancel admission during loan sanction processing.'
       }
     ],
     commonProblems_hi: [
       {
-        problem: 'पोर्टल पर कॉलेज का नाम सूची में नहीं आ रहा',
-        solution: 'संस्थान के पास नैक (NAAC) या एनबीए की निर्धारित मान्यता होना आवश्यक है। अपने कॉलेज प्रशासन से संपर्क कर उन्हें पोर्टल पर निबंधन हेतु कहें।'
+        problem: 'पोर्टल पर कॉलेज का नाम अनुमोदित सूची (Approved List) में नहीं आ रहा',
+        solution: 'बिहार के बाहर वाले कॉलेजों के पास नैक (NAAC) "A" ग्रेड या एनबीए (NBA) मान्यता होना अनिवार्य है। यदि कॉलेज इन मानकों को पूरा करता है, तो कॉलेज रजिस्ट्रार से संपर्क कर उन्हें बिहार शिक्षा वित्त निगम (BSEFC) के पोर्टल पर संस्थान निबंधन कराने का अनुरोध करें।'
+      },
+      {
+        problem: 'आवेदन कई हफ्तों से TPA (थर्ड पार्टी कॉलेज सत्यापन) पर अटका हुआ है',
+        solution: 'TPA एजेंसी आपके कॉलेज को ईमेल भेजकर पुष्टि करती है कि आपने वास्तव में एडमिशन लिया है या नहीं। अपने कॉलेज के स्कॉलरशिप या एकाउंट्स नोडल अधिकारी से मिलकर कहें कि वे बिहार सरकार की वेरिफिकेशन ईमेल का तुरंत जवाब (Reply) भेजें।'
+      },
+      {
+        problem: 'दूसरे, तीसरे या चौथे साल की फीस (Subsequent Payment) कैसे जारी कराएं?',
+        solution: 'MNSSBY पोर्टल पर लॉगिन करें और "Subsequent Payment Request Form PDF" डाउनलोड करें। इस पर कॉलेज से मुहर लगवाएं, पिछले सेमेस्टर की पासिंग मार्कशीट और फीस डिमांड स्लिप संलग्न कर पोर्टल पर अपलोड करें अथवा डीआरसीसी में जमा करें।'
+      },
+      {
+        problem: 'लोन पास होने से पहले कॉलेज तुरंत पूरी फीस जमा करने का दबाव बना रहा है',
+        solution: 'डीआरसीसी से मिली पावती रसीद (Acknowledgement Receipt) और बिहार सरकार की आधिकारिक अधिसूचना की प्रति कॉलेज एकाउंट्स विभाग में जमा करें। सरकारी निर्देशानुसार लोन प्रक्रियाधीन होने पर कॉलेज एडमिशन रद्द नहीं कर सकते।'
       }
     ],
     
     faqs_en: [
       {
-        q: 'What happens if a student does not get a job immediately after college?',
-        a: 'The moratorium period allows 1 full year after graduation before repayment starts. If unemployed, the applicant can apply for loan deferment as per BSEFC rules.'
+        q: 'How much loan is provided under Bihar Student Credit Card and what is the interest rate?',
+        a: 'The scheme provides collateral-free education loans up to ₹4,00,000. The simple interest rate is highly subsidized: only 1% per annum for female students, transgender individuals, and Persons with Disabilities (PwD), and 4% simple interest per annum for male students. Zero interest and zero EMI apply during the entire course duration.'
+      },
+      {
+        q: 'How to check Bihar Student Credit Card status online by registration or Aadhaar number?',
+        a: 'Visit the official portal at 7nishchay-yuvaupmission.bihar.gov.in and click on "Track Application Status". Enter your BSCC Registration Number or 12-digit Aadhaar Card Number along with your Date of Birth and Captcha to view your live processing status from DRCC to BSEFC sanction.'
+      },
+      {
+        q: 'What original documents are required for physical verification at DRCC?',
+        a: 'You must bring original 10th and 12th board marksheets and passing certificates, college admission letter, college fee structure and bonafide certificate on letterhead, Bihar residential certificate (Niwas Praman Patra), Aadhaar cards and PAN cards of both student and co-applicant, bank passbooks, and 2 passport-size photographs each.'
+      },
+      {
+        q: 'How can students studying in colleges outside Bihar avail the Student Credit Card?',
+        a: 'Students enrolled in colleges outside Bihar can avail the loan provided their institution is recognized and holds NAAC "A" grade accreditation, NBA accreditation (for technical courses), or is an institute of national importance (IIT, NIT, AIIMS, IIM, Central Universities). Check the approved institution register on the MNSSBY website.'
+      },
+      {
+        q: 'When does loan repayment start and what are the EMI rules (repayment rules)?',
+        a: 'Repayment starts only after the Moratorium Period ends — which is 1 full year after completing your course or 6 months after securing employment, whichever occurs earlier. The loan can be repaid in up to 84 flexible monthly installments (7 years) depending on the principal amount.'
+      },
+      {
+        q: 'Is Bihar Student Credit Card loan waived off if the student remains unemployed (Loan Mafi)?',
+        a: 'The loan is not automatically waived off upon graduation. If a student remains unemployed after the 1-year moratorium, they must submit a notarized unemployment affidavit (बेरोजगारी शपथ पत्र) to the Bihar State Education Finance Corporation (BSEFC). The corporation will extend the moratorium period without penal interest. However, fraudulent defaults are subject to recovery proceedings.'
+      },
+      {
+        q: 'How to submit the Subsequent Payment Form PDF for 2nd, 3rd, and 4th-year college fees?',
+        a: 'Log in to your MNSSBY portal student dashboard, download the "Subsequent Payment Form PDF", get it certified by your college authority, and attach your latest semester passing marksheet and current session fee demand slip. Upload these documents online or submit them at your home district DRCC to release the next academic year fee.'
+      },
+      {
+        q: 'Are laptop purchase, books, and hostel mess expenses covered under the ₹4 Lakh loan?',
+        a: 'Yes. In addition to college tuition fees paid directly to the institute, the loan includes allowances for hostel accommodation, food mess expenses, textbooks, and a dedicated grant of up to ₹35,000 for purchasing a personal laptop. These living and study expenses are disbursed directly into the student’s bank account.'
       }
     ],
     faqs_hi: [
       {
-        q: 'यदि पढ़ाई पूरी होने के तुरंत बाद नौकरी न लगे तो क्या तुरंत किस्त भरनी होगी?',
-        a: 'नहीं। डिग्री पूरी होने के 1 साल बाद तक कोई ईएमआई नहीं लगती (Moratorium Period), जिससे छात्र को रोजगार ढूंढने का पर्याप्त समय मिलता है।'
+        q: 'बिहार स्टूडेंट क्रेडिट कार्ड में कितना लोन मिलता है और ब्याज दर (Interest Rate) कितनी है?',
+        a: 'योजना के तहत उच्च शिक्षा हेतु ₹4,00,000 तक का शिक्षा ऋण बिना किसी गारंटी या बंधक के मिलता है। ब्याज दर अत्यंत रियायती है: छात्राओं, दिव्यांगों व थर्ड जेंडर के लिए मात्र 1% साधारण ब्याज, और छात्रों के लिए 4% साधारण ब्याज। पूरी पढ़ाई के दौरान कोई ब्याज या ईएमआई नहीं लगती है।'
+      },
+      {
+        q: 'बिहार स्टूडेंट क्रेडिट कार्ड का स्टेटस ऑनलाइन (Aadhaar या Registration Number से) कैसे चेक करें?',
+        a: 'आधिकारिक पोर्टल 7nishchay-yuvaupmission.bihar.gov.in पर जाएं और "Track Application Status" पर क्लिक करें। अपना रजिस्ट्रेशन नंबर अथवा 12 अंकों का आधार कार्ड नंबर, जन्मतिथि और कैप्चा कोड डालकर सबमिट करें। आपकी फाइल डीआरसीसी से लेकर ऋण स्वीकृति तक किस स्तर पर है, यह तुरंत दिख जाएगा।'
+      },
+      {
+        q: 'डीआरसीसी (DRCC) में सत्यापन के लिए कौन-कौन से मूल दस्तावेज ले जाने होते हैं?',
+        a: 'डीआरसीसी केंद्र पर 10वीं और 12वीं की मूल मार्कशीट व प्रमाण पत्र, कॉलेज का एडमिशन लेटर, लेटरहेड पर मुहर युक्त फीस स्ट्रक्चर व बोनाफाइड सर्टिफिकेट, बिहार का निवास प्रमाण पत्र, छात्र व अभिभावक का आधार कार्ड, पैन कार्ड, बैंक पासबुक और 2-2 पासपोर्ट साइज फोटो ले जाना अनिवार्य है।'
+      },
+      {
+        q: 'बिहार के बाहर (Outside Bihar) पढ़ने वाले छात्रों को स्टूडेंट क्रेडिट कार्ड का लाभ कैसे मिलता है?',
+        a: 'बिहार के बाहर के संस्थानों में पढ़ने वाले छात्र तभी पात्र होते हैं जब उनका कॉलेज NAAC "A" ग्रेड, NBA मान्यता प्राप्त हो या राष्ट्रीय महत्व का संस्थान (जैसे IIT, NIT, AIIMS, केंद्रीय विश्वविद्यालय) हो। कॉलेज की पात्रता आधिकारिक MNSSBY पोर्टल पर कॉलेज लिस्ट में देखी जा सकती है।'
+      },
+      {
+        q: 'पढ़ाई पूरी होने के बाद लोन वापसी (Repayment Rules) कब और कैसे शुरू होती है?',
+        a: 'लोन की ईएमआई पढ़ाई पूरी होने के 1 साल बाद (या नौकरी मिलने के 6 महीने बाद, जो भी पहले हो) शुरू होती है। इस समय को मोराटोरियम अवधि कहा जाता है। लोन वापसी अधिकतम 84 आसान मासिक किस्तों (7 वर्ष) में की जा सकती है।'
+      },
+      {
+        q: 'क्या नौकरी न लगने पर बिहार स्टूडेंट क्रेडिट कार्ड का लोन माफ हो जाता है (Loan Mafi)?',
+        a: 'लोन स्वतः या पूरी तरह माफ नहीं होता है। यदि कोर्स पूरा होने के 1 साल बाद भी छात्र को नौकरी नहीं मिलती है, तो उसे बिहार राज्य शिक्षा वित्त निगम (BSEFC) को बेरोजगारी का शपथ पत्र (Affidavit) देना होता है। निगम मोराटोरियम अवधि को आगे बढ़ा देता है और कोई दंडात्मक ब्याज नहीं लेता, लेकिन नौकरी लगने पर लोन चुकाना होता है।'
+      },
+      {
+        q: 'दूसरे, तीसरे और चौथे साल की फीस (Subsequent Payment) के लिए फॉर्म कैसे भरें?',
+        a: 'MNSSBY पोर्टल पर छात्र लॉगिन करें और "Subsequent Payment Form PDF" डाउनलोड करें। इस फॉर्म पर अपने कॉलेज से सत्यापन कराएं, पिछले सेमेस्टर की उत्तीर्ण अंकतालिका (Marksheet) और अगले साल का फीस डिमांड लेटर संलग्न कर पोर्टल पर अपलोड करें अथवा अपने गृह जिले के डीआरसीसी में जमा करें।'
+      },
+      {
+        q: 'क्या लैपटॉप, हॉस्टल मेस और किताबों का खर्च भी इस ₹4 लाख में शामिल होता है?',
+        a: 'हाँ, कॉलेज की ट्यूशन फीस के अलावा हॉस्टल फीस, मेस का खाना, किताबें, स्टेशनरी और ₹35,000 तक का पर्सनल लैपटॉप खरीदने का खर्च भी इस ₹4 लाख के लोन में शामिल होता है। यह रहने और पढ़ाई का खर्च सीधे छात्र के बैंक खाते में भेजा जाता है।'
       }
     ],
     
     officialSources: [
       {
-        name: 'Bihar State Education Finance Corporation & MNSSBY',
+        name: 'Bihar State Education Finance Corporation (BSEFC) & MNSSBY',
         authority: 'Education Department, Government of Bihar',
         url: 'https://www.7nishchay-yuvaupmission.bihar.gov.in',
-        verificationDate: 'October 28, 2026'
+        verificationDate: 'November 22, 2026'
       }
     ],
     keywords: [
-      'bihar student credit card', 'mnssby bihar', 'drcc appointment',
-      'student credit card status', 'bihar education loan', 'bihar higher education scheme',
-      'बिहार स्टूडेंट क्रेडिट कार्ड', 'डीआरसीसी बिहार', 'शिक्षा ऋण योजना'
+      'bihar student credit card',
+      'bihar student credit card yojana',
+      'bihar credit card',
+      'bihar credit card loan',
+      'bihar credit card scheme',
+      'bihar student credit card interest rate',
+      'student credit card bihar interest rate',
+      'bihar student credit card loan interest rate',
+      'bihar student credit card status',
+      'student credit card status bihar',
+      'bihar student credit card status check online',
+      'bihar student credit card status check aadhar number',
+      'bihar student credit card apply online',
+      'student credit card bihar online apply',
+      'bihar student credit card online apply 2026',
+      'bihar student credit card form kaise bhare',
+      'drcc bihar student credit card',
+      'drcc bihar student credit card document list',
+      'drcc patna student credit card',
+      'bihar student credit card subsequent payment',
+      'bihar student credit card subsequent payment form pdf',
+      'bihar student credit card loan status',
+      'bihar student credit card college list 2026',
+      'bihar student credit card approved college list outside bihar',
+      'bihar student credit card eligible courses list pdf',
+      'bihar student credit card loan mafi 2026',
+      'bihar student credit card repayment rules',
+      'bihar student credit card kitna paisa milta hai',
+      'bihar student credit card app',
+      'mnssby bihar',
+      'mnssby student credit card',
+      '7 nishchay bihar student credit card',
+      'www 7nishchay yuvaupmission bihar gov in',
+      'बिहार स्टूडेंट क्रेडिट कार्ड',
+      'बिहार स्टूडेंट क्रेडिट कार्ड योजना',
+      'बिहार स्टूडेंट क्रेडिट कार्ड स्टेटस कैसे चेक करें',
+      'बिहार स्टूडेंट क्रेडिट कार्ड कॉलेज लिस्ट 2026',
+      'डीआरसीसी बिहार स्टूडेंट क्रेडिट कार्ड',
+      'क्या बिहार स्टूडेंट क्रेडिट कार्ड का लोन माफ होगा',
+      'बिहार स्टूडेंट क्रेडिट कार्ड ब्याज दर'
     ],
-    metaDescription_en: 'Bihar Student Credit Card Scheme: ₹4 Lakh education loan at 1% interest for girls / 4% for boys, eligible courses, DRCC appointment, and application tracking.',
-    metaDescription_hi: 'बिहार स्टूडेंट क्रेडिट कार्ड योजना: ₹4 लाख तक का शिक्षा ऋण, छात्राओं हेतु मात्र 1% ब्याज, पात्रता, डीआरसीसी सत्यापन, आवश्यक दस्तावेज और स्टेटस।'
+    metaDescription_en: 'Bihar Student Credit Card 2026: Get up to ₹4 Lakh education loan at 1% interest for girls & 4% for boys. Check approved college list, DRCC verification, online status & subsequent payment form.',
+    metaDescription_hi: 'बिहार स्टूडेंट क्रेडिट कार्ड योजना 2026: उच्च शिक्षा हेतु ₹4 लाख तक का शिक्षा ऋण, छात्राओं को 1% व छात्रों को 4% ब्याज, DRCC सत्यापन, ऑनलाइन स्टेटस व 2nd/3rd ईयर फीस फॉर्म की पूरी जानकारी।'
   },
 
 {

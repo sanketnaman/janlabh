@@ -36,7 +36,9 @@ import {
   BookOpen,
   MapPin,
   Printer,
-  TrendingUp
+  TrendingUp,
+  GraduationCap,
+  Info
 } from 'lucide-react';
 import { ARTICLES } from '@/data/articles';
 
@@ -574,6 +576,34 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               </div>
             )}
 
+            {/* Dedicated Live Alert on Bihar Student Credit Card Page */}
+            {scheme.slug === 'bihar-student-credit-card-yojana' && (
+              <div className="p-4 rounded-xl bg-gradient-to-r from-blue-50 via-indigo-50 to-slate-50 dark:from-blue-950/40 dark:via-indigo-950/30 dark:to-slate-900 border border-blue-200 dark:border-blue-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 font-bold text-blue-950 dark:text-blue-300">
+                    <GraduationCap className="h-4 w-4 text-blue-600 dark:text-blue-400 shrink-0" />
+                    <span>
+                      {isHi ? 'बिहार स्टूडेंट क्रेडिट कार्ड: ₹4 लाख शिक्षा ऋण, 1% ब्याज व DRCC अपडेट 2026' : 'Bihar Student Credit Card: ₹4 Lakh Education Loan, 1% Interest & DRCC Updates 2026'}
+                    </span>
+                  </div>
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    {isHi
+                      ? 'छात्राओं व दिव्यांगों हेतु मात्र 1% और छात्रों हेतु 4% साधारण ब्याज। ट्यूशन फीस के साथ हॉस्टल, मेस और ₹35,000 लैपटॉप भत्ता शामिल। पूरी पढ़ाई और कोर्स समाप्ति के 1 साल बाद तक 0 EMI।'
+                      : 'Just 1% simple interest for female & PwD students, 4% for male students. Covers tuition, hostel mess, and ₹35,000 laptop grant with zero EMI during studies plus 1-year moratorium.'}
+                  </p>
+                </div>
+                <a
+                  href="https://www.7nishchay-yuvaupmission.bihar.gov.in"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  <span>{isHi ? 'MNSSBY आधिकारिक पोर्टल' : 'Official MNSSBY Portal'}</span>
+                  <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              </div>
+            )}
+
             {/* Quick Answer Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 text-xs">
               <div>
@@ -900,6 +930,102 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                     ? 'यदि निर्माण कार्य पूरा होने के बाद भी किस्त का पैसा नहीं आया है, तो दो प्रमुख कारण होते हैं: 1) पंचायत सेवक द्वारा संबंधित चरण (Plinth/Lintel/Roof) का जियो-टैग फोटो पोर्टल पर अपलोड न होना। 2) बैंक खाते में NPCI आधार डीबीटी मैपिंग निष्क्रिय होना। तुरंत अपने पंचायत सचिव से जियो-टैगिंग करवाएं और बैंक में आधार सीडिंग चेक करें।'
                     : 'If an installment is delayed after construction, the two most common reasons are: 1) Panchayat Secretary has not uploaded milestone stage geotagged photos on the portal. 2) The bank account has an inactive NPCI Aadhaar DBT link. Immediately contact your Panchayat Secretary for geotagging and verify Aadhaar mapping at your bank.'}
                 </p>
+              </div>
+            </section>
+          )}
+
+          {/* Bihar Student Credit Card Special Rates & Terms Table */}
+          {scheme.slug === 'bihar-student-credit-card-yojana' && (
+            <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-blue-200 dark:border-blue-900/60 shadow-sm space-y-5">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-4">
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <GraduationCap className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                    <span>{isHi ? 'बिहार स्टूडेंट क्रेडिट कार्ड ब्याज दर, लोन सीमा व शर्तें' : 'Bihar Student Credit Card Interest Rate, Loan Limit & Terms'}</span>
+                  </h2>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                    {isHi ? 'बिहार राज्य शिक्षा वित्त निगम (BSEFC) द्वारा ₹4 लाख तक बिना गारंटी व 1% सरल ब्याज पर ऋण' : 'Collateral-free loan up to ₹4 Lakh by BSEFC with simple interest starting at 1%'}
+                  </p>
+                </div>
+                <span className="self-start sm:self-auto px-3 py-1 bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 font-bold text-xs rounded-full">
+                  {isHi ? '100% सरकारी गारंटी' : '100% State Guarantee'}
+                </span>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr className="bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200 dark:border-slate-700">
+                      <th className="py-2.5 px-3">{isHi ? 'छात्र श्रेणी / वर्ग' : 'Category / Beneficiary'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'ब्याज दर (Interest Rate)' : 'Interest Rate'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'अधिकतम लोन' : 'Max Loan Limit'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'मोराटोरियम (EMI छूट)' : 'Moratorium Period'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'पैसा भुगतान का माध्यम' : 'Disbursement Method'}</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'महिला छात्राएं (Girls / Female Students)' : 'Female Students (Girls)'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">
+                        1% {isHi ? 'साधारण ब्याज (Simple Interest)' : 'Simple Interest'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">₹4,00,000</td>
+                      <td className="py-2.5 px-3">{isHi ? 'कोर्स + 1 वर्ष (0 EMI)' : 'Course + 1 Year (0 EMI)'}</td>
+                      <td className="py-2.5 px-3">{isHi ? 'कॉलेज + छात्र बैंक खाता' : 'College + Student Bank A/c'}</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'दिव्यांग व थर्ड जेंडर (PwD & Transgender)' : 'PwD & Transgender Students'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">
+                        1% {isHi ? 'साधारण ब्याज (Simple Interest)' : 'Simple Interest'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">₹4,00,000</td>
+                      <td className="py-2.5 px-3">{isHi ? 'कोर्स + 1 वर्ष (0 EMI)' : 'Course + 1 Year (0 EMI)'}</td>
+                      <td className="py-2.5 px-3">{isHi ? 'कॉलेज + छात्र बैंक खाता' : 'College + Student Bank A/c'}</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'सामान्य / ओबीसी / एससी / एसटी छात्र (Boys)' : 'Male Students (General/OBC/SC/ST)'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-blue-600 dark:text-blue-400">
+                        4% {isHi ? 'साधारण ब्याज (Simple Interest)' : 'Simple Interest'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">₹4,00,000</td>
+                      <td className="py-2.5 px-3">{isHi ? 'कोर्स + 1 वर्ष (0 EMI)' : 'Course + 1 Year (0 EMI)'}</td>
+                      <td className="py-2.5 px-3">{isHi ? 'कॉलेज + छात्र बैंक खाता' : 'College + Student Bank A/c'}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Crucial Ground Realities: Subsequent Payment & Out-of-State College Rules */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px]">
+                <div className="p-3.5 rounded-xl bg-blue-50/80 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 text-blue-950 dark:text-blue-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-blue-900 dark:text-blue-300">
+                    <Sparkles className="h-3.5 w-3.5 text-blue-600 shrink-0" />
+                    <span>{isHi ? 'सब्सिक्वेंट पेमेंट (अगली किस्त / फीस) कैसे जारी करवाएं?' : 'How to Release Subsequent Year Payment / Installments?'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? 'हर साल या सेमेस्टर की अगली किस्त अपने आप ट्रांसफर नहीं होती। इसके लिए छात्र को पिछले सेमेस्टर की अंकतालिका (Marksheet/Promotion Certificate) और संस्थान का डिमांड स्लिप लेकर आधिकारिक पोर्टल (7nishchay-yuvaupmission.bihar.gov.in) पर "Subsequent Payment" फॉर्म भरना होता है या DRCC काउंटर पर भौतिक रूप से जमा करना पड़ता है।'
+                      : 'Next semester or annual tranches are not released automatically. Students must submit their previous semester marksheet / promotion certificate along with the college demand fee structure either online via the MNSSBY portal ("Subsequent Payment" tab) or in person at their district DRCC.'}
+                  </p>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-amber-950 dark:text-amber-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-amber-900 dark:text-amber-300">
+                    <Info className="h-3.5 w-3.5 text-amber-600 shrink-0" />
+                    <span>{isHi ? 'बिहार से बाहर कॉलेज हेतु NAAC "A" व NBA मान्यता अनिवार्य' : 'Outside Bihar College Accreditation Rule (NAAC "A" / NBA)'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? 'यदि आप बिहार राज्य से बाहर किसी निजी कॉलेज/यूनिवर्सिटी में बीटेक, एमबीए, नर्सिंग या अन्य कोर्स कर रहे हैं, तो वह संस्थान अनिवार्य रूप से NAAC "A" ग्रेड या संबंधित कोर्स NBA प्रत्यायित होना चाहिए। गैर-मान्यता प्राप्त बाहरी संस्थानों के आवेदन DRCC स्तर पर सीधे निरस्त कर दिए जाते हैं।'
+                      : 'For private colleges and universities located outside Bihar, the institution must hold NAAC "A" accreditation or NBA course approval. Applications for non-accredited private outside institutions are directly rejected at the DRCC verification level.'}
+                  </p>
+                </div>
               </div>
             </section>
           )}
