@@ -521,6 +521,32 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               </div>
             )}
 
+            {/* Dedicated Live Installment & Status Alert on Maiya Samman Page */}
+            {scheme.slug === 'jharkhand-mukhyamantri-maiya-samman-yojana' && (
+              <div className="p-4 rounded-xl bg-gradient-to-r from-emerald-50 via-teal-50 to-slate-50 dark:from-emerald-950/40 dark:via-teal-950/30 dark:to-slate-900 border border-emerald-200 dark:border-emerald-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 font-bold text-emerald-950 dark:text-emerald-300">
+                    <Sparkles className="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                    <span>
+                      {isHi ? 'मंईयां सम्मान योजना: अगली किस्त व DBT स्टेटस अपडेट' : 'Maiya Samman Yojana: Next Installment & DBT Status'}
+                    </span>
+                  </div>
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    {isHi
+                      ? 'स्वीकृत लाभार्थियों के खाते में मासिक किस्त सीधे डीबीटी द्वारा ट्रांसफर की जाती है। यदि पैसा नहीं आया, तो बैंक में आधार-NPCI लिंक की स्थिति तुरंत जांचें।'
+                      : 'Monthly installments are credited directly via DBT to approved beneficiaries. If payment is delayed, verify your bank account’s Aadhaar-NPCI seeding.'}
+                  </p>
+                </div>
+                <Link
+                  href={isHi ? '/hi/articles/bank-account-aadhaar-npci-link-dbt-status-check-online' : '/articles/bank-account-aadhaar-npci-link-dbt-status-check-online'}
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  <span>{isHi ? 'बैंक आधार NPCI लिंक गाइड' : 'Aadhaar NPCI Linking Guide'}</span>
+                  <ChevronRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            )}
+
             {/* Quick Answer Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 text-xs">
               <div>
@@ -734,9 +760,14 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               <Clock className="h-5 w-5 text-blue-600 dark:text-blue-400" />
               <span>{isHi ? 'आवेदन की स्थिति कैसे जांचें (Status Check)' : 'Application Status Tracking Guide'}</span>
             </h2>
-            <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-              {isHi ? scheme.statusCheckGuide_hi : scheme.statusCheckGuide_en}
-            </p>
+            <div className="space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+              {(isHi ? scheme.statusCheckGuide_hi : scheme.statusCheckGuide_en)
+                ?.split('\n\n')
+                .filter(Boolean)
+                .map((paragraph, idx) => (
+                  <p key={idx}>{paragraph}</p>
+                ))}
+            </div>
           </section>
 
           {/* Common Problems / Pitfalls (if available) */}

@@ -488,8 +488,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'jharkhand-maiya-samman',
     slug: 'jharkhand-mukhyamantri-maiya-samman-yojana',
-    title_en: 'Jharkhand Maiya Samman Yojana 2026: Payment Date, DBT Status Check & Form PDF',
-    title_hi: 'मंईयां सम्मान योजना 2026: पैसा कब मिलेगा? अगली किस्त तारीख, DBT स्टेटस चेक व फॉर्म PDF',
+    title_en: 'Jharkhand Maiya Samman Yojana 2026: Status Check, Next Installment & Form PDF',
+    title_hi: 'मंईयां सम्मान योजना 2026: स्टेटस चेक, अगली किस्त तारीख व ₹2500 फॉर्म PDF',
     shortTitle_en: 'Jharkhand Maiya Samman Yojana',
     shortTitle_hi: 'मुख्यमंत्री मंईयां सम्मान योजना (झारखंड)',
     category: 'women',
@@ -497,7 +497,7 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Jharkhand State',
     stateLabel_hi: 'झारखंड राज्य',
     status: 'Updated',
-    lastVerified: 'November 06, 2026',
+    lastVerified: 'November 21, 2026',
     
     benefitSummary_en: 'Direct monthly financial assistance of ₹1,000 (up to ₹2,500) transferred via DBT to eligible women aged 18 to 50 in Jharkhand to support financial independence, nutrition, and family health.',
     benefitSummary_hi: 'झारखंड की 18 से 50 वर्ष की पात्र महिलाओं के बैंक खाते में ₹1,000 से ₹2,500 प्रतिमाह सीधे डीबीटी (DBT) के माध्यम से आर्थिक सहायता।',
@@ -585,8 +585,8 @@ export const SCHEMES: Scheme[] = [
       'आवेदन जमा करने के बाद पावती रसीद (Acknowledgement Slip) अनिवार्य रूप से प्राप्त करें, जिस पर आपका आवेदन क्रमांक (Tracking ID) लिखा होता है।'
     ],
     
-    statusCheckGuide_en: 'To check your Maiya Samman Yojana payment & DBT status: 1) Verify that your bank account is Aadhaar-NPCI mapped by visiting your bank branch or checking via Aadhaar DBT portal. 2) Visit your local Block Development Office (BDO) or CDPO desk with your Aadhaar number or Application ID to check your approval list status. 3) For payment credit alerts, ensure SMS service is active on your registered mobile number.',
-    statusCheckGuide_hi: 'मंईयां सम्मान योजना का पेमेंट और डीबीटी स्टेटस चेक करने के लिए: 1) अपनी बैंक शाखा में जाकर सुनिश्चित करें कि आपका खाता आधार से एनपीसीआई (NPCI) मैप्ड है। 2) अपने प्रखंड विकास पदाधिकारी (BDO) या बाल विकास परियोजना (CDPO) कार्यालय में आधार नंबर अथवा पावती रसीद दिखाकर लाभार्थी सूची में नाम जांचें। 3) बैंक खाते में डीबीटी राशि क्रेडिट होते ही पंजीकृत मोबाइल नंबर पर एसएमएस प्राप्त होता है।',
+    statusCheckGuide_en: 'How to check your Jharkhand Mukhyamantri Maiya Samman Yojana (JMMSY) payment and DBT status in 4 easy steps:\n\n1. Digital Entry Verification (via Acknowledgement Slip): Use the Application Tracking ID on your stamped acknowledgement receipt to confirm your record’s digital upload at your local CSC Pragya Kendra or Gram Panchayat camp.\n\n2. Bank Aadhaar-NPCI Seeding Verification: Government benefits flow exclusively through Aadhaar Payment Bridge. Ensure your personal bank account has active NPCI Aadhaar seeding. Inactive seeding is responsible for over 90% of pending payments.\n\n3. Block (BDO) & CDPO Approved Beneficiary List: The verified Panchayat beneficiary approval roster is published at your local Block Development Office (BDO) and Child Development Project Office (CDPO), where sanctions can be confirmed by Aadhaar number.\n\n4. Bank Passbook & SMS Credit Alerts: When monthly installments are processed, automated DBT credit notifications are dispatched to registered mobile numbers. Beneficiaries can also update their bank passbook to confirm JMMSY credits.',
+    statusCheckGuide_hi: 'मंईयां सम्मान योजना (JMMSY) का पेमेंट और डीबीटी स्टेटस 4 आसान चरणों में चेक करें:\n\n1. डिजिटल एंट्री स्थिति (पावती रसीद से): आवेदन जमा करते समय मिली पावती रसीद (Acknowledgement Slip) के आवेदन क्रमांक (Tracking ID) से अपने नजदीकी प्रज्ञा केंद्र (CSC) अथवा पंचायत शिविर में डिजिटल एंट्री की पुष्टि करवाएं।\n\n2. आधार-NPCI बैंक सीडिंग स्टेटस: सरकारी सहायता सीधे आधार से जुड़े खाते में भेजी जाती है। सुनिश्चित करें कि आपका व्यक्तिगत बैंक खाता NPCI मैपर पर सक्रिय (Active) है। यदि डीबीटी सक्रिय नहीं है, तो पैसा खाते में नहीं आएगा।\n\n3. प्रखंड (BDO) व आंगनबाड़ी (CDPO) अनुमोदित सूची: आपके पंचायत की अंतिम सत्यापित लाभार्थी सूची प्रखंड कार्यालय तथा आंगनबाड़ी केंद्रों पर उपलब्ध कराई जाती है, जहाँ आप अपने आधार नंबर अथवा नाम से स्वीकृति जांच सकते हैं।\n\n4. बैंक पासबुक व एसएमएस अलर्ट: किस्त जारी होते ही पंजीकृत मोबाइल पर राज्य सरकार का डीबीटी क्रेडिट एसएमएस आता है। आप अपनी बैंक पासबुक प्रिंट करवाकर अथवा मिनी स्टेटमेंट निकालकर JMMSY क्रेडिट चेक कर सकते हैं।',
     officialStatusUrl: 'https://jharkhand.gov.in',
     
     commonProblems_en: [
@@ -620,61 +620,69 @@ export const SCHEMES: Scheme[] = [
     
     faqs_en: [
       {
-        q: 'When will Maiya Samman Yojana payment come into the bank account?',
-        a: 'Approved beneficiaries receive their monthly DBT payment directly into their Aadhaar-linked bank accounts between the 7th and 15th of every month. If payment is delayed, verify your bank’s active NPCI Aadhaar seeding status.'
+        q: 'When will the next installment of Maiya Samman Yojana be credited?',
+        a: 'Monthly installments under Maiya Samman Yojana are typically disbursed between the 7th and 15th of each month directly to approved beneficiaries via Aadhaar DBT. If an installment is delayed, verify your bank’s active Aadhaar-NPCI seeding status immediately.'
       },
       {
-        q: 'How to check Maiya Samman Yojana payment and DBT status online?',
-        a: 'You can verify your approval and DBT status by presenting your Aadhaar number or Application ID at your local Block Development Office (BDO), CDPO office, or Gram Panchayat camp. Also check your bank passbook/SMS for DBT credit under JMMSY.'
+        q: 'How to check Maiya Samman Yojana payment and DBT status using Aadhaar number?',
+        a: 'To check your status using your 12-digit Aadhaar number or Acknowledgement ID, visit your local CSC Pragya Kendra, Gram Panchayat camp, or Block Development Office (BDO) / CDPO desk. Officials can check the centralized portal for your approval status and payment release details. You can also monitor your DBT credits through your bank passbook or PFMS.'
       },
       {
-        q: 'How to download Maiya Samman Yojana Satyapan Form PDF and apply?',
-        a: 'The physical application and verification form (सत्यापन फॉर्म) can be collected 100% free of charge from any Gram Panchayat Bhawan, Ward Office, or Pragya Kendra camp across Jharkhand. Completed forms with Aadhaar, Ration card, and bank passbook copies are submitted at Panchayat camps for digital entry.'
+        q: 'When will the ₹2,500 monthly benefit under Maiya Samman Yojana start?',
+        a: 'The Jharkhand Cabinet approved enhancing the monthly financial assistance from ₹1,000 to ₹2,500 per month (totaling ₹30,000 annually). The enhanced disbursement commences following required budgetary allocation and administrative orders for subsequent monthly cycles.'
       },
       {
-        q: 'How much financial assistance is provided under Maiya Samman Yojana?',
-        a: 'The scheme provides ₹1,000 per month directly via DBT to eligible women aged 18 to 50 years. The state government has also proposed enhancing this financial assistance up to ₹2,500 per month.'
+        q: 'What should you do if your Acknowledgement Slip is lost?',
+        a: 'If you have misplaced your acknowledgement receipt, carry your original Aadhaar card and Ration card to your local Block Development Office (BDO) or CDPO desk. Social welfare officials can retrieve your enrollment status directly from the beneficiary database using your Aadhaar number.'
+      },
+      {
+        q: 'How to download the Maiya Samman Yojana Satyapan Form PDF and apply?',
+        a: 'The official physical application and verification form (सत्यापन फॉर्म) can be collected 100% free of charge from any Gram Panchayat Bhawan, Ward Office, or Pragya Kendra camp across Jharkhand. Completed forms with Aadhaar, Ration card, and bank passbook copies are submitted at Panchayat camps for digital entry.'
       },
       {
         q: 'Who is eligible to receive benefits under Maiya Samman Yojana?',
-        a: 'Women who are permanent residents of Jharkhand, aged between 18 and 50 years, whose families hold an active state ration card and have no member employed in permanent government service or paying income tax.'
+        a: 'Women permanent residents of Jharkhand aged between 18 and 50 years, whose families hold an active state ration card and have no member employed in permanent government service or paying income tax.'
       },
       {
-        q: 'Is Maiya Samman Yojana closed or still accepting applications?',
-        a: 'No, the scheme is NOT closed. It is an active, ongoing flagship welfare program in Jharkhand. Eligible women can register at special Panchayat camps or through their local CDPO / Block administration.'
+        q: 'Why was my Maiya Samman application rejected or payment stopped?',
+        a: 'Common reasons include inactive Aadhaar-NPCI bank mapping, name spelling discrepancies between Aadhaar and Ration card, or exceeding the age limit (50 years). These can be resolved by updating bank seeding, submitting an affidavit, or appealing at the Block CDPO desk.'
       },
       {
-        q: 'What is the official helpline or toll-free number for Maiya Samman Yojana?',
-        a: 'Beneficiaries can contact the official state welfare helpline or visit their local Block Development Office (BDO) and Child Development Project Office (CDPO) for immediate assistance with rejected forms or pending DBT payments.'
+        q: 'What is the official helpline number for Maiya Samman Yojana in Jharkhand?',
+        a: 'Beneficiaries can contact the state social welfare helpline or visit their local Block Development Office (BDO) and Child Development Project Office (CDPO) for immediate help with rejected forms or pending DBT payments.'
       }
     ],
     faqs_hi: [
       {
-        q: 'मंईयां सम्मान योजना का पैसा कब मिलेगा और अगली किस्त कब आएगी?',
-        a: 'स्वीकृत पात्र महिलाओं के बैंक खाते में योजना का पैसा हर महीने की 7 से 15 तारीख के बीच सीधे डीबीटी (DBT) के जरिए भेजा जाता है। यदि आपके खाते में किस्त नहीं आई है, तो तुरंत अपनी बैंक शाखा में जाकर आधार-एनपीसीआई सीडिंग की जांच करवाएं।'
+        q: 'मंईयां सम्मान योजना की अगली किस्त कब आएगी और पैसा कब मिलेगा?',
+        a: 'मंईयां सम्मान योजना के तहत स्वीकृत पात्र महिलाओं के बैंक खाते में मासिक किस्त सामान्यतः प्रत्येक माह की 7 से 15 तारीख के बीच सीधे डीबीटी (DBT) के माध्यम से ट्रांसफर की जाती है। यदि निर्धारित तारीख के बाद भी पैसा न आए, तो अपने बैंक खाते में आधार-एनपीसीआई लिंक की स्थिति जांचें।'
       },
       {
-        q: 'मंईयां सम्मान योजना का पेमेंट और डीबीटी स्टेटस ऑनलाइन कैसे चेक करें?',
-        a: 'आप अपने आधार नंबर अथवा पावती रसीद (Acknowledgement ID) के माध्यम से अपने नजदीकी प्रखंड विकास कार्यालय (BDO), बाल विकास परियोजना (CDPO) अथवा पंचायत कैंप में जाकर अपना नाम व भुगतान स्टेटस देख सकते हैं।'
+        q: 'मंईयां सम्मान योजना स्टेटस चेक आधार नंबर से कैसे करें?',
+        a: 'मंईयां सम्मान योजना का स्टेटस जांचने के लिए अपने नजदीकी सीएससी प्रज्ञा केंद्र (CSC Pragya Kendra) अथवा प्रखंड (BDO/CDPO) कार्यालय में अपना 12 अंकों का आधार नंबर या पावती रसीद (Acknowledgement ID) दिखाएं। अधिकारी आपके आवेदन की स्वीकृति (Approved) या सत्यापन स्थिति की जांच करके बता देंगे। साथ ही बैंक पासबुक प्रिंट कराकर भी खाते में डीबीटी क्रेडिट की पुष्टि की जा सकती है।'
+      },
+      {
+        q: 'मंईयां सम्मान योजना में ₹2500 कब से मिलना शुरू होगा?',
+        a: 'झारखंड मंत्रिमंडल (Cabinet) द्वारा मंईयां सम्मान योजना की मासिक सहायता राशि को ₹1,000 से बढ़ाकर ₹2,500 प्रतिमाह (सालाना ₹30,000) करने का ऐतिहासिक फैसला लिया गया है। इस बढ़ी हुई राशि का भुगतान नई प्रशासनिक प्रक्रिया और बजटीय आवंटन पूरा होते ही आगामी किस्तों में सीधे डीबीटी द्वारा शुरू किया जा रहा है।'
+      },
+      {
+        q: 'पावती रसीद (Acknowledgement Slip) खो जाने पर स्टेटस कैसे पता करें?',
+        a: 'यदि आपकी पावती रसीद खो गई है, तो घबराने की आवश्यकता नहीं है। आप अपने मूल आधार कार्ड और राशन कार्ड के साथ अपने संबंधित प्रखंड विकास पदाधिकारी (BDO) या बाल विकास परियोजना कार्यालय (CDPO) के समाज कल्याण पटल पर जाकर अपने नाम और आधार नंबर से सूची में अपनी स्थिति देख सकते हैं।'
       },
       {
         q: 'मंईयां सम्मान योजना का सत्यापन फॉर्म PDF कैसे डाउनलोड करें और आवेदन कैसे करें?',
         a: 'मंईयां सम्मान योजना का आवेदन व सत्यापन फॉर्म (Satyapan Form) अपनी ग्राम पंचायत, वार्ड कार्यालय अथवा प्रज्ञा केंद्र से पूरी तरह निःशुल्क प्राप्त किया जा सकता है। फॉर्म भरकर आधार, राशन कार्ड और बैंक पासबुक की प्रति के साथ पंचायत शिविर में जमा करना होता है।'
       },
       {
-        q: 'मंईयां सम्मान योजना में कितनी राशि मिलती है (₹1000 या ₹2500)?',
-        a: 'योजना के तहत पात्र महिलाओं को ₹1,000 प्रतिमाह सीधे बैंक खाते में प्रदान किया जाता है। राज्य सरकार द्वारा इस सहायता राशि को बढ़ाकर ₹2,500 प्रतिमाह करने की घोषणा की गई है।'
-      },
-      {
         q: 'मंईयां सम्मान योजना किसको मिलेगी और क्या पात्रता है?',
         a: 'झारखंड की 18 से 50 वर्ष की वह महिलाएं जिनके पास राज्य का राशन कार्ड (पीला/गुलाबी/सफेद) है और जिनके परिवार का कोई सदस्य आयकरदाता या सरकारी सेवा में नहीं है, वे सभी इस योजना के पात्र हैं।'
       },
       {
-        q: 'क्या मंईयां सम्मान योजना बंद हो गई है?',
-        a: 'नहीं, मंईयां सम्मान योजना बिल्कुल बंद नहीं हुई है। यह झारखंड सरकार की निरंतर चलने वाली प्रमुख कल्याणकारी योजना है और पात्र महिलाओं के खाते में नियमित रूप से किस्तें भेजी जा रही हैं।'
+        q: 'आवेदन स्वीकृत होने के बाद भी खाते में पैसा न आने पर क्या करें?',
+        a: '90% मामलों में बैंक खाते में NPCI आधार मैपिंग (DBT) सक्रिय न होने से पैसा रुकता है। अपनी बैंक शाखा में जाकर "Aadhaar NPCI Seeding Form" जमा करें अथवा पोस्ट ऑफिस बैंक (IPPB) में नया डीबीटी खाता खुलवाएं, जिसके बाद अगली किस्त से पैसा स्वतः आने लगेगा।'
       },
       {
-        q: 'मंईयां सम्मान योजना का आधिकारिक हेल्पलाइन या शिकायत नंबर क्या है?',
+        q: 'मंईयां सम्मान योजना का आधिकारिक हेल्पलाइन या शिकायत केंद्र कहाँ है?',
         a: 'योजना से जुड़ी किसी भी समस्या, पेंडिंग पेमेंट या रिजेक्टेड फॉर्म की शिकायत के लिए लाभार्थी अपने प्रखंड के BDO अथवा CDPO कार्यालय के समाज कल्याण पटल पर संपर्क कर सकते हैं।'
       }
     ],
@@ -748,8 +756,8 @@ export const SCHEMES: Scheme[] = [
       'is maiya samman yojana closed',
       'क्या मंईयां सम्मान योजना बंद हो गई है'
     ],
-    metaDescription_en: '✅ Jharkhand Maiya Samman Yojana 2026: Is scheme closed? No, ₹2,500 DBT assistance is active! Check next installment payment date, Aadhaar status online & download PDF form.',
-    metaDescription_hi: '✅ मंईयां सम्मान योजना 2026: क्या योजना बंद है? नहीं, ₹2,500 सहायता चालू है! जानिए अगली किस्त कब आएगी, DBT पेमेंट स्टेटस चेक, नई लिस्ट व सत्यापन फॉर्म PDF डाउनलोड करें।'
+    metaDescription_en: 'Jharkhand Maiya Samman Yojana 2026: Check payment and DBT status with Aadhaar, next installment release date, ₹2,500 benefit update, and satyapan form PDF.',
+    metaDescription_hi: 'मंईयां सम्मान योजना 2026: आधार नंबर से पेमेंट स्टेटस कैसे चेक करें, अगली किस्त कब आएगी, ₹2,500 सहायता राशि की स्थिति और सत्यापन फॉर्म PDF डाउनलोड करें।'
   },
   {
     id: 'pm-awas-yojana',
