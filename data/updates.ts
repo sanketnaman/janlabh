@@ -68,7 +68,7 @@ export const UPDATES: UpdateArticle[] = [
     publishedDate: 'November 09, 2026',
     updatedDate: 'November 21, 2026',
     lastVerified: 'November 21, 2026',
-    bannerImage: '/images/schemes/pm-kisan-samman-nidhi.png',
+    bannerImage: '/images/updates/pm-kisan-24th-installment-released-25th-status-banner.webp',
     summary_en: 'Prime Minister Narendra Modi released the 24th installment of PM-KISAN on 30 October 2026 from Banaskantha, Gujarat, transferring over ₹18,690 crore directly into the bank accounts of 9.34+ crore eligible farmers. With the 24th tranche successfully disbursed, farmers are tracking the expected release window for the 25th installment (scheduled between December 2026 and March 2027). If your ₹2,000 was not credited, follow our step-by-step guide to retrieve your Registration Number by mobile/Aadhaar, convert Land Seeding: NO to YES with your local Patwari, complete Face e-KYC on mobile, and ensure Aadhaar-NPCI bank mapping.',
     summary_hi: 'प्रधानमंत्री नरेंद्र मोदी ने 30 अक्टूबर 2026 को बनासकांठा (गुजरात) से पीएम-किसान की 24वीं किस्त जारी कर दी है, जिसके तहत 9.34 करोड़ से अधिक पात्र किसानों को ₹18,690 करोड़ से ज्यादा की राशि सीधे डीबीटी द्वारा उनके बैंक खातों में ट्रांसफर की गई। 24वीं किस्त के बाद अब किसान 25वीं किस्त की संभावित तारीख (दिसंबर 2026 – मार्च 2027 चक्र) का इंतजार कर रहे हैं। यदि आपकी 24वीं किस्त का ₹2,000 रुका हुआ है, तो मोबाइल या आधार से अपना रजिस्ट्रेशन नंबर निकालें और लैंड सीडिंग (NO) को YES करवाने तथा फेस e-KYC पूरा करने का पक्का समाधान नीचे देखें।',
     keyFacts_en: [
