@@ -548,6 +548,32 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               </div>
             )}
 
+            {/* Dedicated Live Installment & Status Alert on Abua Awas Page */}
+            {scheme.slug === 'jharkhand-abua-awas-yojana-housing' && (
+              <div className="p-4 rounded-xl bg-gradient-to-r from-amber-50 via-orange-50 to-slate-50 dark:from-amber-950/40 dark:via-orange-950/30 dark:to-slate-900 border border-amber-200 dark:border-amber-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 font-bold text-amber-950 dark:text-amber-300">
+                    <Sparkles className="h-4 w-4 text-amber-600 dark:text-amber-400 shrink-0" />
+                    <span>
+                      {isHi ? 'अबुआ आवास योजना: 4 किस्तें (₹2 लाख), जियो-टैगिंग व लिस्ट अपडेट 2026' : 'Abua Awas Yojana: 4 Installments (₹2 Lakh), Geotagging & 2026 List Updates'}
+                    </span>
+                  </div>
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    {isHi
+                      ? 'मकान निर्माण की प्रगति (प्लिंथ, लिंटेल, छत) के आधार पर 4 किस्तों में ₹2 लाख डीबीटी द्वारा जारी किए जाते हैं। किस्त का पैसा समय पर पाने हेतु निर्माण स्थल की जियो-टैगिंग और बैंक खाते में आधार NPCI डीबीटी सक्रिय होना अनिवार्य है।'
+                      : '₹2 Lakh is released in 4 DBT tranches based on construction progress (Plinth, Lintel, Roof). Mandatory site geotagging by Panchayat Secretary and active Aadhaar-NPCI bank mapping are required for payment clearance.'}
+                  </p>
+                </div>
+                <Link
+                  href={isHi ? '/hi/articles/bank-account-aadhaar-npci-link-dbt-status-check-online' : '/articles/bank-account-aadhaar-npci-link-dbt-status-check-online'}
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  <span>{isHi ? 'आधार NPCI डीबीटी स्थिति जांचें' : 'Check Aadhaar NPCI DBT Status'}</span>
+                  <ChevronRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            )}
+
             {/* Quick Answer Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 text-xs">
               <div>
@@ -717,6 +743,162 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                   {isHi
                     ? 'अटल पेंशन योजना में जितनी कम उम्र में जुड़ेंगे, मासिक प्रीमियम उतना ही कम होगा। 60 वर्ष पूरे होने तक अंशदान स्वतः बैंक खाते से कटता रहेगा। यदि ग्राहक की मृत्यु होती है, तो जीवनसाथी को आजीवन समान पेंशन मिलेगी और दोनों के बाद नॉमिनी को ₹8.5 लाख तक की पूरी संचित राशि वापस मिलेगी।'
                     : 'Joining APY at a younger age locks in significantly lower lifetime monthly premiums. Contributions are automatically auto-debited until age 60. In case of subscriber death, spouse receives the same monthly pension, and upon both demises, nominee receives up to ₹8.5 Lakh.'}
+                </p>
+              </div>
+            </section>
+          )}
+
+          {/* Dedicated Abua Awas 4-Installment Milestone Table */}
+          {scheme.slug === 'jharkhand-abua-awas-yojana-housing' && (
+            <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <Building className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+                    <span>{isHi ? 'अबुआ आवास योजना 4-किस्त भुगतान व निर्माण प्रगति विवरण (₹2,00,000 DBT)' : 'Abua Awas Yojana 4-Installment Milestone & Payment Schedule'}</span>
+                  </h2>
+                  <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">
+                    {isHi
+                      ? 'झारखंड सरकार द्वारा 3 कमरों के पक्के मकान निर्माण हेतु 4 चरणों में सीधे बैंक खाते में भुगतान की आधिकारिक समय-सारणी:'
+                      : 'Official Jharkhand Rural Development Department schedule for 4-phase DBT fund disbursement for 3-room housing construction:'}
+                  </p>
+                </div>
+                <span className="self-start sm:self-auto inline-flex items-center gap-1 text-[11px] font-semibold text-amber-800 dark:text-amber-300 bg-amber-100/70 dark:bg-amber-950/40 px-2.5 py-1 rounded-full border border-amber-300 dark:border-amber-800">
+                  <ShieldCheck className="h-3 w-3 text-amber-600 shrink-0" />
+                  <span>{isHi ? '100% राज्य-पोषित योजना' : '100% State Funded'}</span>
+                </span>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-xs border-collapse">
+                  <thead>
+                    <tr className="border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-semibold">
+                      <th className="py-3 px-3">किस्त (Installment)</th>
+                      <th className="py-3 px-3">निर्माण चरण (Construction Stage)</th>
+                      <th className="py-3 px-3">राशि व प्रतिशत (Amount)</th>
+                      <th className="py-3 px-3">भौतिक सत्यापन (Geotagging Requirement)</th>
+                      <th className="py-3 px-3">पैसा कब आएगा (Disbursement Timeline)</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-600 dark:text-slate-300">
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'पहली किस्त (1st)' : '1st Installment'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        <span className="font-semibold text-slate-800 dark:text-slate-200">
+                          {isHi ? 'स्वीकृति व प्लिंथ (नींव) निर्माण' : 'Sanction & Plinth Foundation'}
+                        </span>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          {isHi ? 'पुराना कच्चा घर तोड़कर नींव की खुदाई व भराई' : 'Old kutcha house demolition & plinth filling'}
+                        </div>
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-amber-600 dark:text-amber-400">
+                        ₹30,000 <span className="text-[10px] text-slate-500 font-normal">(15%)</span>
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'कच्चे मकान व स्वीकृत स्थल की प्रारंभिक जियो-टैगिंग' : 'Initial site geotagging by Panchayat Secretary'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'ग्राम सभा स्वीकृति व स्वीकृति पत्र जारी होने के 15-30 दिन में' : 'Within 15-30 days of Gram Sabha sanction'}
+                      </td>
+                    </tr>
+
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'दूसरी किस्त (2nd)' : '2nd Installment'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        <span className="font-semibold text-slate-800 dark:text-slate-200">
+                          {isHi ? 'लिंटेल स्तर (दीवारों का निर्माण)' : 'Lintel Level Construction'}
+                        </span>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          {isHi ? '3 कमरों व रसोई की दीवारें खिड़की/दरवाजे के ऊपरी स्तर तक' : 'Brick walls of 3 rooms & kitchen up to lintel height'}
+                        </div>
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-amber-600 dark:text-amber-400">
+                        ₹50,000 <span className="text-[10px] text-slate-500 font-normal">(25%)</span>
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'प्लिंथ पूर्णता की भौतिक फोटो पोर्टल पर अपलोड' : 'Plinth stage geotag verification on portal'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'प्लिंथ स्तर सत्यापन के 2-3 सप्ताह में बैंक खाते में' : '2-3 weeks after plinth verification approval'}
+                      </td>
+                    </tr>
+
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 bg-amber-50/30 dark:bg-amber-950/20">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'तीसरी किस्त (3rd)' : '3rd Installment'}
+                        <div className="text-[10px] text-amber-700 dark:text-amber-400 font-medium">
+                          {isHi ? '★ सबसे बड़ी किस्त' : '★ Largest tranche'}
+                        </div>
+                      </td>
+                      <td className="py-2.5 px-3">
+                        <span className="font-semibold text-slate-800 dark:text-slate-200">
+                          {isHi ? 'छत ढलाई (Roof Casting / RCC)' : 'RCC Roof Casting'}
+                        </span>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          {isHi ? 'पक्की कंक्रीट छत की ढलाई (3 कमरे + रसोई = 31 वर्ग मीटर)' : 'Permanent concrete roof casting for all 3 rooms & kitchen'}
+                        </div>
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400 text-sm">
+                        ₹1,00,000 <span className="text-[10px] text-slate-500 font-normal">(50%)</span>
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'लिंटेल स्तर और शटरिंग कार्य की जियो-टैग पुष्टि' : 'Lintel height and shuttering geotag inspection'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'लिंटेल जियो-टैग सत्यापन के 15-20 दिन में' : 'Within 15-20 days of lintel stage approval'}
+                      </td>
+                    </tr>
+
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'चौथी किस्त (4th)' : '4th Installment'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        <span className="font-semibold text-slate-800 dark:text-slate-200">
+                          {isHi ? 'प्लास्टर, खिड़की-दरवाजे व पूर्णता' : 'Finishing, Doors, Windows & Plaster'}
+                        </span>
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                          {isHi ? 'आंतरिक-बाहरी प्लास्टर, फर्श, खिड़की-दरवाजे व पेंट' : 'Plastering, flooring, doors, windows & paint completion'}
+                        </div>
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-amber-600 dark:text-amber-400">
+                        ₹20,000 <span className="text-[10px] text-slate-500 font-normal">(10%)</span>
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'छत ढलाई व पूर्ण मकान का अंतिम जियो-टैग निरीक्षण' : 'Final completed house geotag & BDO sign-off'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'छत ढलाई उपरांत अंतिम निरीक्षण पर' : 'Upon final inspection after roof completion'}
+                      </td>
+                    </tr>
+
+                    <tr className="bg-slate-100/60 dark:bg-slate-800/60 font-semibold text-slate-900 dark:text-white">
+                      <td className="py-2.5 px-3">{isHi ? 'कुल सहायता (Total)' : 'Total Grant'}</td>
+                      <td className="py-2.5 px-3">{isHi ? '3 कमरों का पक्का मकान + रसोईघर' : '3-Room Pucca House + Kitchen (31 sq. m)'}</td>
+                      <td className="py-2.5 px-3 font-bold text-amber-600 dark:text-amber-400 text-sm">₹2,00,000 (100%)</td>
+                      <td className="py-2.5 px-3" colSpan={2}>
+                        {isHi
+                          ? '+ मनरेगा (MGNREGA) मजदूरी ~₹26,000+ एवं शौचालय प्रोत्साहन ₹12,000 अतिरिक्त'
+                          : '+ MGNREGA wages ~₹26,000+ and SBM-G toilet incentive ₹12,000 extra'}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="p-3 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-[11px] text-amber-950 dark:text-amber-200 space-y-1">
+                <div className="font-bold flex items-center gap-1">
+                  <Sparkles className="h-3.5 w-3.5 text-amber-600 shrink-0" />
+                  <span>{isHi ? 'किस्त का पैसा अटकने या देरी होने का कारण व समाधान:' : 'Reasons for Payment Delay & Immediate Fix:'}</span>
+                </div>
+                <p>
+                  {isHi
+                    ? 'यदि निर्माण कार्य पूरा होने के बाद भी किस्त का पैसा नहीं आया है, तो दो प्रमुख कारण होते हैं: 1) पंचायत सेवक द्वारा संबंधित चरण (Plinth/Lintel/Roof) का जियो-टैग फोटो पोर्टल पर अपलोड न होना। 2) बैंक खाते में NPCI आधार डीबीटी मैपिंग निष्क्रिय होना। तुरंत अपने पंचायत सचिव से जियो-टैगिंग करवाएं और बैंक में आधार सीडिंग चेक करें।'
+                    : 'If an installment is delayed after construction, the two most common reasons are: 1) Panchayat Secretary has not uploaded milestone stage geotagged photos on the portal. 2) The bank account has an inactive NPCI Aadhaar DBT link. Immediately contact your Panchayat Secretary for geotagging and verify Aadhaar mapping at your bank.'}
                 </p>
               </div>
             </section>

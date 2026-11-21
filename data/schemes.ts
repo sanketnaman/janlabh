@@ -1247,8 +1247,8 @@ export const SCHEMES: Scheme[] = [
   {
     id: 'jharkhand-abua-awas',
     slug: 'jharkhand-abua-awas-yojana-housing',
-    title_en: 'Jharkhand Abua Awas Yojana 2026: New Beneficiary List, ₹2 Lakh Grant & Status Check',
-    title_hi: 'अबुआ आवास योजना 2026: नई लिस्ट में अपना नाम देखें, ₹2 लाख सहायता, स्टेटस चेक व फॉर्म PDF',
+    title_en: 'Jharkhand Abua Awas Yojana 2026: List Check Online, Installment Dates & Status',
+    title_hi: 'अबुआ आवास योजना 2026: नई लिस्ट में नाम देखें, किस्त का पैसा कब आएगा, स्टेटस व फॉर्म PDF',
     shortTitle_en: 'Jharkhand Abua Awas',
     shortTitle_hi: 'अबुआ आवास योजना (झारखंड)',
     category: 'housing',
@@ -1256,10 +1256,10 @@ export const SCHEMES: Scheme[] = [
     stateLabel_en: 'Jharkhand State',
     stateLabel_hi: 'झारखंड राज्य',
     status: 'Active',
-    lastVerified: 'November 06, 2026',
+    lastVerified: 'November 21, 2026',
     
-    benefitSummary_en: 'State-funded grant of ₹2,00,000 disbursed in 4 installments to construct a modern 3-room pucca house with a kitchen for families left out of central housing schemes, plus MGNREGA wages.',
-    benefitSummary_hi: 'केंद्र की आवास योजना से वंचित परिवारों के लिए 3 कमरों और पक्की रसोई युक्त मकान हेतु 4 किस्तों में ₹2,00,000 की शत-प्रतिशत राज्य सरकार द्वारा आर्थिक सहायता।',
+    benefitSummary_en: 'State-funded grant of ₹2,00,000 disbursed in 4 DBT installments to build a modern 3-room pucca house with kitchen (31 sq. m) for low-income rural families left out of central housing schemes, plus MGNREGA wages.',
+    benefitSummary_hi: 'केंद्र की आवास योजना से वंचित गरीब परिवारों के लिए 3 कमरों और पक्की रसोई युक्त मकान (31 वर्ग मीटर) हेतु 4 किस्तों में ₹2,00,000 की शत-प्रतिशत राज्य सरकार द्वारा आर्थिक सहायता, साथ में मनरेगा मजदूरी।',
     benefitAmount_en: '₹2,00,000 (in 4 installments) + MGNREGA wages',
     benefitAmount_hi: '₹2,00,000 (4 किस्तों में) + मनरेगा मजदूरी',
     whoCanApply_en: 'Permanent residents of Jharkhand living in kutcha/dilapidated homes who did not receive PMAY or Baba Saheb Ambedkar housing grants.',
@@ -1268,19 +1268,23 @@ export const SCHEMES: Scheme[] = [
     bannerImage: '/images/schemes/jharkhand-abua-awas.webp',
     
     whatIsThis_en: 'Abua Awas Yojana (AAY) is a 100% Jharkhand State funded housing initiative launched to ensure that vulnerable, tribal, and rural families deprived of Central PMAY housing build spacious 3-room pucca homes with permanent concrete roofing.',
-    whatIsThis_hi: 'अबुआ आवास योजना झारखंड सरकार द्वारा शुरू की गई 100% राज्य-पोषित योजना है। इसका उद्देश्य केंद्र सरकार की प्रधानमंत्री आवास योजना से छूट गए जरूरतमंद, गरीब और ग्रामीण परिवारों को 3 कमरों का पक्का मकान उपलब्ध कराना है।',
+    whatIsThis_hi: 'अबुआ आवास योजना झारखंड सरकार द्वारा शुरू की गई 100% राज्य-पोषित योजना है। इसका मुख्य उद्देश्य केंद्र सरकार की प्रधानमंत्री आवास योजना (PMAY-G) से वंचित जरूरतमंद, गरीब और ग्रामीण परिवारों को 3 कमरों का पक्का मकान और रसोईघर उपलब्ध कराना है।',
     
     benefitsList_en: [
-      'Substantial ₹2,00,000 financial support (significantly higher than typical rural housing schemes).',
-      'Mandates a spacious 3-room layout with an integrated kitchen for comfortable family living (minimum 31 sq. meters).',
-      'Direct Benefit Transfer (DBT) into 4 milestone installments: 15% on plinth level, 25% on lintel, 50% on roof casting, and 10% on completion.',
-      'Additional wage assistance under MGNREGS for family members contributing unskilled labor during construction.'
+      'Substantial ₹2,00,000 financial support (significantly higher than typical rural housing schemes like PMAY-G ₹1.20L).',
+      'Mandates a spacious 3-room layout with an integrated kitchen for comfortable family living (minimum 31 sq. meters built-up area).',
+      'Direct Benefit Transfer (DBT) into 4 milestone installments: 15% (₹30,000) on plinth, 25% (₹50,000) on lintel, 50% (₹1,00,000) on roof casting, and 10% (₹20,000) on completion.',
+      'Additional wage assistance under MGNREGS (approx. 95 persondays unskilled labor = ~₹26,000+ directly to job card holder).',
+      'Additional incentive for individual household latrine (IHHL) under Swachh Bharat Mission (approx. ₹12,000).',
+      '100% state government funded with zero bank loan liability or interest burden on the beneficiary family.'
     ],
     benefitsList_hi: [
-      '₹2,00,000 की बड़ी वित्तीय सहायता जो आम ग्रामीण आवास योजनाओं से काफी अधिक है।',
-      'परिवार के गरिमापूर्ण जीवन हेतु 3 पक्के कमरे तथा स्वच्छ रसोईघर का अनिवार्य प्रावधान (न्यूनतम 31 वर्ग मीटर)।',
-      'निर्माण की प्रगति के अनुसार 4 पारदर्शी किस्तों में सीधे बैंक खाते में भुगतान: प्लिंथ पर 15%, लिंटेल पर 25%, छत ढलाई पर 50%, और प्लास्टर/पूर्णता पर 10%।',
-      'मकान निर्माण में श्रम करने वाले परिवार को मनरेगा की अकुशल मजदूरी का अतिरिक्त आर्थिक लाभ।'
+      '₹2,00,000 की बड़ी सरकारी वित्तीय सहायता जो सामान्य ग्रामीण आवास योजनाओं (जैसे पीएम आवास ₹1.20 लाख) से काफी अधिक है।',
+      'परिवार के गरिमापूर्ण जीवन हेतु 3 पक्के कमरे तथा स्वच्छ रसोईघर का अनिवार्य प्रावधान (न्यूनतम 31 वर्ग मीटर यानी लगभग 334 वर्ग फीट)।',
+      'पारदर्शी डीबीटी भुगतान 4 किस्तों में: पहली किस्त (15% - ₹30,000) प्लिंथ पर, दूसरी किस्त (25% - ₹50,000) लिंटेल स्तर पर, तीसरी किस्त (50% - ₹1,00,000) छत ढलाई पर, और चौथी किस्त (10% - ₹20,000) प्लास्टर/पूर्णता पर।',
+      'मकान निर्माण में श्रम करने वाले परिवार को मनरेगा (MGNREGA) के तहत लगभग 95 मानव दिवस की मजदूरी (लगभग ₹26,000+) का अतिरिक्त सीधा लाभ।',
+      'स्वच्छ भारत मिशन ग्रामीण (SBM-G) के अंतर्गत पक्के शौचालय निर्माण हेतु ₹12,000 की अतिरिक्त प्रोत्साहन राशि।',
+      'शत-प्रतिशत झारखंड राज्य सरकार द्वारा वित्तपोषित — लाभार्थी परिवार पर किसी भी प्रकार के बैंक ऋण या ब्याज का कोई बोझ नहीं।'
     ],
     
     eligibility: {
@@ -1342,8 +1346,8 @@ export const SCHEMES: Scheme[] = [
       'ग्राम सभा द्वारा भौतिक सत्यापन कर अभाव अंकों के आधार पर वरीयता सूची (Waiting List) तैयार कर स्वीकृति दी जाती है।'
     ],
     
-    statusCheckGuide_en: 'To check your Abua Awas Yojana list & approval status: 1) Visit the official portal or your local Gram Panchayat Bhawan to view the published Gram Sabha Priority Waiting List. 2) Visit your local Block Development Office (BDO) with your Aadhaar number or Application Acknowledgment Slip to inspect the Sanction Register. 3) Upon approval, the BDO issues an official Sanction Letter (Swikriti Patra) and geotagging begins for installment disbursement.',
-    statusCheckGuide_hi: 'अबुआ आवास योजना की नई लिस्ट और स्टेटस चेक करने के लिए: 1) अपने ग्राम पंचायत भवन या प्रखंड कार्यालय में चस्पा की गई अनुमोदित ग्राम सभा प्रतीक्षा सूची (Waiting List) में अपना नाम देखें। 2) अपने प्रखंड विकास पदाधिकारी (BDO) कार्यालय में आधार नंबर अथवा पावती रसीद दिखाकर स्वीकृति रजिस्टर में अपनी स्थिति जांचें। 3) स्वीकृति मिलने पर प्रखंड कार्यालय द्वारा आधिकारिक स्वीकृति पत्र जारी किया जाता है और जियो-टैगिंग के बाद किस्तें जारी होती हैं।',
+    statusCheckGuide_en: `Step 1: Check Published Gram Sabha Priority Waiting List at Panchayat Bhawan\nVisit your local Gram Panchayat Bhawan or Block Development Office (BDO). The Rural Development Department publishes the verified Gram Sabha Priority Waiting List (वरीयता सूची) categorizing households by deprivation points (0 to 8 points). Families at the top of the waiting list are sanctioned houses in the current financial phase.\n\nStep 2: Track District & Block Sanction Register Online & Offline\nCheck the sanction register at your Block Development Office (BDO) housing counter by providing your 12-digit Aadhaar number or Application Acknowledgement Slip issued during "Aapki Sarkar Aapke Dwar" camp. Upon selection, the BDO issues an official Sanction Letter (Swikriti Patra) containing your unique Abua Awas Beneficiary ID.\n\nStep 3: Site Geotagging & Verification by Panchayat Secretary / JE\nBefore any installment is released, the Panchayat Secretary (पंचायत सेवक) and Junior Engineer (JE) conduct mandatory site inspection and upload geotagged photographs of your construction stage (Initial site -> Plinth -> Lintel -> Roof casting) on the state rural housing portal.\n\nStep 4: DBT Installment Tracking & Bank Aadhaar-NPCI Seeding\nInstallments are credited directly to your bank account via Direct Benefit Transfer (DBT). Ensure your bank account has active NPCI Aadhaar mapping. If you received SMS confirmation of disbursement but funds are not showing in your primary account, check all accounts linked to your Aadhaar or verify your DBT status via PFMS/bank branch.`,
+    statusCheckGuide_hi: `चरण 1: पंचायत भवन में ग्राम सभा द्वारा अनुमोदित वरीयता सूची (Waiting List) देखें\nअपने ग्राम पंचायत भवन या प्रखंड विकास पदाधिकारी (BDO) कार्यालय के सूचना पट्ट पर चस्पा की गई अनुमोदित ग्राम सभा प्रतीक्षा सूची देखें। इस सूची में अभाव अंकों (0 से 8 अंक) के आधार पर नाम प्राथमिकता क्रम में दर्ज होते हैं। उच्च प्राथमिकता वाले परिवारों को चालू वित्तीय वर्ष में आवास स्वीकृत किए जाते हैं।\n\nचरण 2: प्रखंड कार्यालय (BDO) में स्वीकृति रजिस्टर व स्टेटस जांचें\nअपने प्रखंड कार्यालय के आवास पटल पर जाकर "आपकी योजना, आपकी सरकार, आपके द्वार" शिविर में मिली पावती रसीद (Acknowledgement Slip) या अपना 12 अंकों का आधार कार्ड नंबर दिखाकर स्वीकृति रजिस्टर (Sanction Register) में अपनी स्थिति जांचें। स्वीकृति होने पर BDO कार्यालय द्वारा आधिकारिक स्वीकृति पत्र जारी किया जाता है।\n\nचरण 3: पंचायत सेवक व कनीय अभियंता (JE) द्वारा जियो-टैगिंग (Geotagging)\nप्रत्येक किस्त जारी होने से पहले पंचायत सेवक और कनीय अभियंता द्वारा निर्माण स्थल का भौतिक निरीक्षण कर जियो-टैग युक्त फोटो पोर्टल पर अपलोड की जाती है (पुराना कच्चा घर -> प्लिंथ स्तर -> लिंटेल स्तर -> छत ढलाई)। जियो-टैगिंग की पुष्टि होते ही अगली किस्त का भुगतान प्रोसेस होता है।\n\nचरण 4: डीबीटी बैंक खाता व आधार-NPCI लिंक स्टेटस की पुष्टि करें\nअबुआ आवास का पैसा सीधे डीबीटी (DBT) के माध्यम से बैंक खाते में भेजा जाता है। यदि पहली या अगली किस्त जारी होने का सरकारी आदेश आ चुका है लेकिन आपके खाते में पैसा नहीं आया, तो तुरंत अपने बैंक जाकर जांचें कि आपका खाता आधार से NPCI डीबीटी के लिए मैप (Active Seeding) है या नहीं।`,
     officialStatusUrl: 'https://jharkhand.gov.in',
     
     commonProblems_en: [
@@ -1378,53 +1382,69 @@ export const SCHEMES: Scheme[] = [
     faqs_en: [
       {
         q: 'How to check your name in the new Abua Awas Yojana List 2026 online?',
-        a: 'You can check your name by inspecting the published Gram Sabha Priority Waiting List at your local Gram Panchayat Bhawan or Block Development Office (BDO). The state rural development department also publishes district-wise approved beneficiary registers.'
+        a: 'You can check your name by inspecting the published Gram Sabha Priority Waiting List at your local Gram Panchayat Bhawan or Block Development Office (BDO). District-wise approved beneficiary registers are published by the state rural development department following Gram Sabha social audit verifications.'
       },
       {
-        q: 'How much money is provided under Abua Awas Yojana and what are the installments?',
-        a: 'The scheme provides a total financial assistance of ₹2,00,000 in 4 milestone-based DBT installments: 1st installment (15% on plinth level), 2nd installment (25% on lintel completion), 3rd installment (50% on roof casting), and 4th installment (10% on completion and plaster), plus additional daily labor wages under MGNREGS.'
+        q: 'When will the next installment money be credited in 2026 (paisa kab aayega)?',
+        a: 'Installment disbursement follows your construction milestone geotagging. 1st installment (₹30,000) arrives within 15-30 days of sanction and initial geotagging. 2nd installment (₹50,000) arrives upon verified plinth foundation completion. 3rd installment (₹1,00,000) is released when walls reach lintel height and shuttering is ready. 4th installment (₹20,000) is transferred upon final roof and plaster inspection.'
       },
       {
-        q: 'How to check Abua Awas Yojana status by Aadhaar number?',
-        a: 'You can track your application and payment status by presenting your Aadhaar Card and Application Acknowledgement Slip at your Block Development Office (BDO) housing desk or by consulting your Panchayat Secretary.'
+        q: 'How much total money is provided under Abua Awas Yojana and what are the installments?',
+        a: 'The scheme provides a total direct financial grant of ₹2,00,000 in 4 milestone-based DBT installments: 1st installment (15% - ₹30,000 at plinth level), 2nd installment (25% - ₹50,000 at lintel level), 3rd installment (50% - ₹1,00,000 for roof casting), and 4th installment (10% - ₹20,000 upon finishing and plaster), plus additional MGNREGA wages (~₹26,000) and toilet incentive (₹12,000).'
       },
       {
-        q: 'How to download Abua Awas Yojana Form PDF and how to fill it?',
-        a: 'The official physical application and verification form is available 100% free of charge at all Gram Panchayat offices and "Aapki Yojana Aapki Sarkar Aapke Dwar" camps. Fill in personal details, Aadhaar, land details, and submit it along with photographs of your kutcha house.'
+        q: 'How to track Abua Awas Yojana application status by Aadhaar number?',
+        a: 'You can track your status by presenting your 12-digit Aadhaar Card number or your Application Acknowledgment Slip at your Block Development Office (BDO) housing cell or by consulting your Gram Panchayat Secretary, who accesses the administrative beneficiary monitoring portal.'
       },
       {
-        q: 'What is the required layout, naksha, and room size under Abua Awas?',
-        a: 'Unlike older housing schemes with only 1 or 2 rooms, Abua Awas mandates a spacious 3-room pucca house with a separate permanent kitchen, requiring a minimum plinth area of 31 square meters.'
+        q: 'Where to download Abua Awas Yojana Form PDF and how to submit it?',
+        a: 'The official physical application and field verification form is distributed free of cost at Gram Panchayat offices and special "Aapki Yojana, Aapki Sarkar, Aapke Dwar" camps. Fill in personal details, Aadhaar numbers of family members, land/house condition, attach required documents, and submit it to collect an official acknowledgement receipt.'
       },
       {
-        q: 'Who is eligible to get a house under Abua Awas Yojana?',
-        a: 'Permanent residents of Jharkhand living in kutcha, mud, or thatched houses who have never received benefits under PMAY-G, PMAY-U, or Ambedkar Awas, and whose families do not own a four-wheeler, permanent government job, or income tax filing status.'
+        q: 'What is the required layout, naksha, and room size under Abua Awas Yojana?',
+        a: 'Unlike central housing schemes with smaller carpet areas, Abua Awas mandates a spacious 3-room pucca house with an attached permanent kitchen, requiring a minimum plinth area of 31 square meters (approx. 334 sq. ft).'
+      },
+      {
+        q: 'What should you do if your name is omitted from the waiting list despite living in a kutcha house?',
+        a: 'If your family was wrongfully marked ineligible or missed in the priority waiting list, submit an objection during the Gram Sabha social audit meeting or submit a written petition along with kutcha house photographs to the Block Development Officer (BDO) or Sub-Divisional Officer (SDO) for re-verification.'
+      },
+      {
+        q: 'Do beneficiaries receive extra MGNREGA wages and toilet construction assistance?',
+        a: 'Yes. Beneficiaries are entitled to approximately 95 persondays of unskilled wage employment under MGNREGS (worth ~₹26,000+) deposited directly into their job card bank accounts, plus an additional ₹12,000 grant for toilet construction under the Swachh Bharat Mission (Grameen).'
       }
     ],
     faqs_hi: [
       {
-        q: 'अबुआ आवास योजना की नई लिस्ट 2026 में अपना नाम कैसे चेक करें?',
-        a: 'आप अपनी ग्राम पंचायत भवन या प्रखंड विकास पदाधिकारी (BDO) कार्यालय में चस्पा की गई अनुमोदित ग्राम सभा प्रतीक्षा सूची (Waiting List) में अपना नाम देख सकते हैं। इसके अलावा ग्रामीण विकास विभाग द्वारा स्वीकृत लाभार्थियों का रजिस्टर भी पंचायत स्तर पर उपलब्ध रहता है।'
+        q: 'अबुआ आवास योजना की नई लिस्ट 2026 में अपना नाम ऑनलाइन कैसे चेक करें?',
+        a: 'आप अपनी ग्राम पंचायत भवन या प्रखंड विकास पदाधिकारी (BDO) कार्यालय के सूचना पट्ट पर चस्पा की गई अनुमोदित ग्राम सभा प्रतीक्षा सूची (Waiting List) में अपना नाम देख सकते हैं। इसके अलावा ग्रामीण विकास विभाग द्वारा स्वीकृत लाभार्थियों का रजिस्टर पंचायत स्तर पर उपलब्ध कराया जाता है।'
       },
       {
-        q: 'अबुआ आवास योजना में कुल कितना पैसा मिलता है और किस्तें कैसे आती हैं?',
-        a: 'योजना के तहत 3 कमरों के पक्के मकान के लिए कुल ₹2,00,000 की सरकारी सहायता 4 किस्तों में सीधे बैंक खाते में मिलती है: पहली किस्त 15% (प्लिंथ निर्माण पर), दूसरी किस्त 25% (लिंटेल स्तर पर), तीसरी किस्त 50% (छत ढलाई पर), और चौथी किस्त 10% (प्लास्टर व पूर्णता पर), साथ ही मनरेगा मजदूरी अलग से मिलती है।'
+        q: 'अबुआ आवास योजना का पैसा (अगली किस्त) कब तक आएगा 2026 में?',
+        a: 'किस्त का भुगतान निर्माण प्रगति की जियो-टैगिंग पर निर्भर करता है। पहली किस्त (₹30,000) स्वीकृति व प्रारंभिक जियो-टैगिंग के 15-30 दिन में आती है। दूसरी किस्त (₹50,000) प्लिंथ (नींव) का सत्यापन होने पर, तीसरी किस्त (₹1,00,000) लिंटेल स्तर पूरा होने पर, और चौथी किस्त (₹20,000) छत ढलाई व प्लास्टर पूर्ण होने पर डीबीटी द्वारा खाते में भेजी जाती है।'
       },
       {
-        q: 'अबुआ आवास योजना का स्टेटस (Aadhaar Number से) कैसे चेक करें?',
-        a: 'अपने प्रखंड कार्यालय (BDO) के आवास पटल अथवा पंचायत सचिव के पास जाकर आधार नंबर और आवेदन पावती रसीद (Acknowledgement Slip) दिखाकर अपनी स्वीकृति और जियो-टैगिंग का लाइव स्टेटस चेक कर सकते हैं।'
+        q: 'अबुआ आवास योजना में कुल कितना पैसा मिलता है और 4 किस्तें कैसे आती हैं?',
+        a: 'योजना के तहत 3 कमरों के पक्के मकान के लिए कुल ₹2,00,000 की सरकारी सहायता 4 किस्तों में सीधे बैंक खाते में मिलती है: पहली किस्त 15% (₹30,000 प्लिंथ पर), दूसरी किस्त 25% (₹50,000 लिंटेल पर), तीसरी किस्त 50% (₹1,00,000 छत ढलाई पर), और चौथी किस्त 10% (₹20,000 प्लास्टर व पूर्णता पर), साथ में मनरेगा मजदूरी (~₹26,000) और शौचालय प्रोत्साहन (₹12,000) अतिरिक्त मिलता है।'
+      },
+      {
+        q: 'अबुआ आवास योजना का स्टेटस आधार कार्ड नंबर से कैसे चेक करें?',
+        a: 'अपने प्रखंड विकास पदाधिकारी (BDO) कार्यालय के आवास पटल अथवा पंचायत सचिव के पास जाकर अपना 12 अंकों का आधार नंबर और आवेदन पावती रसीद दिखाकर अपनी स्वीकृति, जियो-टैगिंग और डीबीटी भुगतान का लाइव स्टेटस चेक कर सकते हैं।'
       },
       {
         q: 'अबुआ आवास योजना का आवेदन फॉर्म PDF कैसे डाउनलोड करें और कैसे भरें?',
-        a: 'अबुआ आवास योजना का फॉर्म अपनी ग्राम पंचायत अथवा "आपकी योजना आपकी सरकार आपके द्वार" शिविर से पूरी तरह निःशुल्क प्राप्त किया जा सकता है। फॉर्म में अपना नाम, आधार नंबर, परिवार के सदस्यों का विवरण, जमीन का ब्योरा भरकर कच्चे घर के फोटो के साथ जमा करना होता है।'
+        a: 'अबुआ आवास योजना का फॉर्म अपनी ग्राम पंचायत अथवा "आपकी योजना आपकी सरकार आपके द्वार" शिविर से पूरी तरह निःशुल्क प्राप्त किया जा सकता है। फॉर्म में अपना नाम, आधार नंबर, परिवार के सदस्यों का विवरण, जमीन का ब्योरा और बैंक खाता भरकर कच्चे घर के फोटो के साथ जमा कर पावती रसीद जरूर लें।'
       },
       {
         q: 'अबुआ आवास योजना के मकान का नक्शा (Naksha) और कमरे का आकार क्या है?',
         a: 'इस योजना में 3 पक्के कमरे और एक अलग पक्की रसोई का निर्माण अनिवार्य है, जिसका न्यूनतम कारपेट एरिया 31 वर्ग मीटर (लगभग 334 वर्ग फीट) होना जरूरी है।'
       },
       {
-        q: 'अबुआ आवास योजना के लिए कौन पात्र है और किसको प्राथमिकता मिलती है?',
-        a: 'झारखंड के वह सभी गरीब परिवार जो कच्चे मकान या झोपड़ी में रहते हैं और जिन्हें कभी पीएम आवास या आंबेडकर आवास नहीं मिला, वे पात्र हैं। आदिम जनजाति (PVTG), विधवा, और प्राकृतिक आपदा पीड़ितों को चयन में पहली प्राथमिकता मिलती है।'
+        q: 'कच्चे मकान में रहने के बावजूद लिस्ट में नाम न आने पर शिकायत कहाँ करें?',
+        a: 'यदि जरूरतमंद होने के बाद भी नाम सूची में नहीं आया है, तो ग्राम सभा की सामाजिक अंकेक्षण (Social Audit) बैठक में आपत्ति दर्ज कराएं अथवा सीधे प्रखंड विकास पदाधिकारी (BDO) या अनुमंडल पदाधिकारी (SDO) को पुनः भौतिक सत्यापन हेतु लिखित आवेदन दें।'
+      },
+      {
+        q: 'क्या अबुआ आवास के साथ मनरेगा मजदूरी और शौचालय का पैसा भी अलग से मिलता है?',
+        a: 'हाँ, अबुआ आवास योजना के लाभार्थी को मकान निर्माण में श्रम करने हेतु मनरेगा के तहत लगभग 95 मानव दिवस की अकुशल मजदूरी (~₹26,000+) सीधे जॉब कार्ड खाते में मिलती है, और स्वच्छ भारत मिशन ग्रामीण के तहत ₹12,000 शौचालय निर्माण हेतु अतिरिक्त दिया जाता है।'
       }
     ],
     
@@ -1433,7 +1453,7 @@ export const SCHEMES: Scheme[] = [
         name: 'Rural Development Department, Govt. of Jharkhand',
         authority: 'Government of Jharkhand',
         url: 'https://jharkhand.gov.in',
-        verificationDate: 'November 06, 2026'
+        verificationDate: 'November 21, 2026'
       }
     ],
     keywords: [
@@ -1444,13 +1464,27 @@ export const SCHEMES: Scheme[] = [
       'abua awas yojana list 2026',
       'abua awas yojana jharkhand list check online 2026',
       'abua awas yojana jharkhand list check online',
-      'abua awas yojana list pdf',
       'abua awas yojana list 2026 jharkhand',
+      'abua awas yojana list 2026 jharkhand online',
+      'abua awas yojana jharkhand list kaise check kare',
+      'अबुआ आवास योजना झारखंड लिस्ट',
+      'अबुआ आवास योजना झारखंड',
+      'अबुआ आवास योजना झारखंड लिस्ट चेक ऑनलाइन 2026',
+      'अबुआ आवास योजना झारखंड लिस्ट चेक ऑनलाइन',
+      'अबुआ आवास लिस्ट 2026',
+      'abuwa awas list',
+      'abuwa awas yojana',
+      'abua awas yojana ranchi',
+      'abua awas yojana list pdf',
       'abua awas yojana status check',
       'abua awas yojana status check by aadhaar number',
       'abua awas yojana track status',
       'abua awas yojana payment status',
       'abua awas yojana official website',
+      'abua आवास योजना का पैसा कब तक आएगा 2026',
+      'abua awas yojana jharkhand paisa kab milega',
+      'abua awas ka paisa kab milega 2026',
+      'अबुआ आवास का पैसा कब तक आएगा',
       'abua awas yojana me kitna paisa milta hai',
       'abua awas yojana kitna paisa milta hai',
       'abua awas yojana amount',
@@ -1463,10 +1497,6 @@ export const SCHEMES: Scheme[] = [
       'abua awas yojana form kaise bhare',
       'how to fill abua awas yojana form',
       'abua awas yojana jharkhand online apply',
-      'abua awas yojana jharkhand online registration',
-      'अबुआ आवास योजना झारखंड',
-      'अबुआ आवास योजना झारखंड लिस्ट चेक ऑनलाइन',
-      'अबुआ आवास लिस्ट 2026',
       'abua awas yojana gramin list',
       'abua awas yojana naksha',
       'abua awas yojana kisko milega',
@@ -1476,19 +1506,15 @@ export const SCHEMES: Scheme[] = [
       'how to check abua awas yojana status',
       'how to check abua awas yojana status online',
       'abua awas yojana online list jharkhand',
-      'abua awas yojana list app',
       'abua awas yojana kya hai',
       'what is abua awas yojana',
-      'what is abua awas yojana in jharkhand',
       'abua awas yojana benefits',
       'abua awas yojana me kya kya document chahiye',
       'abua awas yojana 2026',
-      'abua awas yojana - ग्रामीण list',
-      'abua awas ka paisa kab milega 2026',
-      'abua awas yojana list pdf'
+      'abua awas yojana - ग्रामीण list'
     ],
-    metaDescription_en: '✅ Jharkhand Abua Awas Yojana 2026: Check your name in new Gramin list PDF online, ₹2 Lakh grant installment dates, paisa kab milega, Aadhaar status check & PDF form.',
-    metaDescription_hi: '✅ अबुआ आवास योजना झारखंड 2026: नई ग्रामीण लिस्ट PDF डाउनलोड करें, अगली किस्त का पैसा कब मिलेगा, 3 कमरों हेतु ₹2 लाख सहायता व स्टेटस चेक करने की पूरी जानकारी।'
+    metaDescription_en: 'Check your name in Jharkhand Abua Awas Yojana 2026 new list online, 4 installment payment release dates (paisa kab aayega), Aadhaar status check, and PDF form download.',
+    metaDescription_hi: 'अबुआ आवास योजना झारखंड 2026: नई ग्रामीण लिस्ट ऑनलाइन कैसे चेक करें, 4 किस्तों का पैसा कब आएगा (₹2 लाख), आधार स्टेटस और सत्यापन फॉर्म PDF डाउनलोड की पूरी जानकारी।'
   },
   {
     id: 'national-scholarship-portal',
