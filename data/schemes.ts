@@ -3690,133 +3690,268 @@ export const SCHEMES: Scheme[] = [
 {
   "id": "maharashtra-ladki-bahin",
   "slug": "maharashtra-ladki-bahin-yojana",
-  "title_en": "Mukhyamantri Majhi Ladki Bahin Yojana – Maharashtra Women Monthly Assistance",
-  "title_hi": "मुख्यमंत्री माझी लाड़की बहिन योजना – महाराष्ट्र महिलाओं हेतु ₹1500 मासिक सहायता",
-  "shortTitle_en": "Majhi Ladki Bahin (Maharashtra)",
-  "shortTitle_hi": "माझी लाड़की बहिन (महाराष्ट्र)",
+  "title_en": "Majhi Ladki Bahin Yojana Maharashtra 2026 – ₹1,500 Monthly Installment, Status Check Online, List, Hamipatra & Nari Shakti Doot App",
+  "title_hi": "मुख्यमंत्री माझी लाडकी बहीण योजना महाराष्ट्र 2026 – ₹1500 हप्ता स्टेटस, लाडकी बहीण यादी, हमीपत्र PDF, नारी शक्ती दूत ॲप व अर्ज",
+  "shortTitle_en": "Majhi Ladki Bahin (Maharashtra ₹1,500)",
+  "shortTitle_hi": "माझी लाडकी बहीण योजना (₹1,500)",
   "category": "women",
   "state": "maharashtra",
   "stateLabel_en": "Maharashtra State Scheme",
   "stateLabel_hi": "महाराष्ट्र राज्य योजना",
   "status": "Active",
-  "lastVerified": "October 20, 2026",
-  "benefitSummary_en": "Direct monthly financial assistance of ₹1,500 transferred via DBT directly into the bank accounts of economically backward women aged 21 to 65 years in Maharashtra.",
-  "benefitSummary_hi": "महाराष्ट्र की 21 से 65 वर्ष की आर्थिक रूप से कमजोर महिलाओं को प्रति माह ₹1,500 की प्रत्यक्ष बैंक सहायता (सालाना ₹18,000)।",
-  "benefitAmount_en": "₹1,500 per month directly in bank account",
-  "benefitAmount_hi": "₹1,500 प्रति माह (सालाना ₹18,000) सीधा बैंक खाते में",
-  "whoCanApply_en": "Resident women of Maharashtra aged 21 to 65 years whose family annual income is up to ₹2.5 Lakh.",
-  "whoCanApply_hi": "महाराष्ट्र की स्थायी निवासी महिलाएं (21 से 65 वर्ष) जिनकी पारिवारिक वार्षिक आय ₹2.5 लाख तक हो।",
-  "applicationMode": "Online via ladkibahin.maharashtra.gov.in or Nari Shakti Doot App",
+  "lastVerified": "November 2026",
+  "benefitSummary_en": "Direct monthly financial grant of ₹1,500 (total ₹18,000 annually) transferred via DBT into Aadhaar-linked bank accounts of women aged 21 to 65 in Maharashtra through ladkibahin.maharashtra.gov.in and Nari Shakti Doot App.",
+  "benefitSummary_hi": "महाराष्ट्र की 21 से 65 वर्ष की महिलाओं को प्रति माह ₹1,500 की सीधी आर्थिक सहायता (सालाना ₹18,000)। ladkibahin.maharashtra.gov.in व नारी शक्ती दूत ॲप के माध्यम से आधार लिंक बैंक खाते में डीबीटी (DBT)।",
+  "benefitAmount_en": "₹1,500 per month (₹18,000 annually via DBT)",
+  "benefitAmount_hi": "₹1,500 प्रति माह (सालाना ₹18,000 डीबीटी द्वारा)",
+  "whoCanApply_en": "Permanent resident women of Maharashtra aged 21 to 65 years from families holding Yellow/Orange ration cards or annual income up to ₹2.5 Lakh.",
+  "whoCanApply_hi": "महाराष्ट्र की स्थायी निवासी महिलाएं (21 से 65 वर्ष) जिनके परिवार के पास पीला या केसरी राशन कार्ड हो अथवा वार्षिक आय ₹2.5 लाख तक हो।",
+  "applicationMode": "Online via ladkibahin.maharashtra.gov.in or Nari Shakti Doot Mobile App",
   "bannerImage": "/images/schemes/maharashtra-ladki-bahin.webp",
-  "whatIsThis_en": "Mukhyamantri Majhi Ladki Bahin Yojana is Maharashtra's pioneering social welfare scheme providing direct financial independence and nutritional safety net to over 2 crore women.",
-  "whatIsThis_hi": "माझी लाड़की बहिन योजना महाराष्ट्र सरकार की प्रमुख पहल है जिसका उद्देश्य महिलाओं को आर्थिक स्वावलंबन और सामाजिक सुरक्षा प्रदान करना है।",
+  "whatIsThis_en": "Mukhyamantri Majhi Ladki Bahin Yojana is Maharashtra's landmark direct benefit transfer (DBT) welfare initiative launched by the Women and Child Development Department. Providing unconditional financial security of ₹1,500 per month directly into bank accounts, the scheme covers married, unmarried, widowed, divorced, deserted, and destitute women aged 21 to 65. The program aims to ensure nutritional self-reliance, emergency healthcare autonomy, and economic dignity for more than 2.3 crore women across urban and rural Maharashtra.",
+  "whatIsThis_hi": "मुख्यमंत्री माझी लाडकी बहीण योजना महाराष्ट्र शासनाच्या महिला व बालविकास विभागाची अत्यंत क्रांतिकारी थेट लाभ हस्तांतरण (DBT) योजना आहे। या योजनेअंतर्गत 21 ते 65 वयोगटातील पात्र महिलांना दरमहा ₹1,500 (वार्षिक ₹18,000) थेट त्यांच्या आधार-लिंक्ड बँक खात्यात जमा केले जातात। ही योजना विवाहित, अविवाहित, विधवा, घटस्फोटित आणि निराधार महिलांना आर्थिक स्वावलंबन, आरोग्य आणि पोषण सुरक्षा प्रदान करण्यासाठी सुरू करण्यात आली आहे।",
   "benefitsList_en": [
-    "₹1,500 per month deposited directly into Aadhaar-linked bank accounts.",
-    "Annual financial empowerment support of ₹18,000 per beneficiary.",
-    "Paperless mobile application process through the dedicated portal and app.",
-    "Autonomous discretion for women to spend on personal health, family nutrition, and child education."
+    "₹1,500 Fixed Monthly Allowance: Deposited directly into Aadhaar-seeded bank accounts on a recurring monthly schedule (totaling ₹18,000 per year).",
+    "Inclusive Coverage: Applicable to married, unmarried, widowed, divorced, abandoned, and destitute women.",
+    "Ration Card Exemption for Income: Families holding Yellow or Orange Ration Cards do not need a separate Tehsildar income certificate.",
+    "Simplified Digital Application: Paperless submission via the official portal ladkibahin.maharashtra.gov.in or the Nari Shakti Doot mobile application.",
+    "No Intermediary / 100% Direct DBT: Cash transferred through RBI/PFMS directly, eliminating commission and corruption.",
+    "Financial Security: Autonomous funds for personal medical expenses, nutrition, and domestic essentials without financial dependency."
   ],
   "benefitsList_hi": [
-    "प्रति माह ₹1,500 की सम्मान राशि सीधे आधार-लिंक बैंक खाते में।",
-    "प्रति वर्ष कुल ₹18,000 की वित्तीय सहायता।",
-    "नारी शक्ति दूत ऐप अथवा आधिकारिक पोर्टल से पेपरलेस आवेदन की सुविधा।",
-    "दवाइयों, पोषण और बच्चों की शिक्षा में महिलाओं को आत्मनिर्भरता।"
+    "दरमहा ₹1,500 निश्चित आर्थिक सहाय्य: लाभार्थी महिलांच्या आधार-लिंक बँक खात्यात दर महिन्याला ₹1,500 थेट जमा (वार्षिक ₹18,000 ची मदत)।",
+    "सर्वसमावेशक महिला वर्ग: विवाहित, अविवाहित, विधवा, घटस्फोटित, परित्यक्ता आणि निराधार महिला या योजनेसाठी पात्र।",
+    "राशन कार्ड असणाऱ्यांना उत्पन्नाच्या दाखल्याची सूट: ज्या कुटुंबांकडे पिवळे (Yellow) किंवा केशरी (Orange) रेशन कार्ड आहे, त्यांना स्वतंत्र उत्पन्न प्रमाणपत्राची गरज नाही।",
+    "सुलभ डिजिटल अर्ज प्रक्रिया: ladkibahin.maharashtra.gov.in पोर्टल अथवा 'नारी शक्ती दूत ॲप' (Nari Shakti Doot App) द्वारे मोबाईलवरून घरबसल्या अर्ज।",
+    "100% डीबीटी (DBT) हस्तांतरण: कोणत्याही दलालाशिवाय थेट बँक खात्यात पैसे जमा, एसएमएस अलर्टची सुविधा।",
+    "आरोग्य व पोषण सुरक्षा: महिलांना स्वतःच्या औषधोपचार, मुलांचे शिक्षण आणि घरगुती गरजांसाठी आर्थिक स्वातंत्र्य।"
   ],
   "eligibility": {
     "eligibleIf_en": [
-      "Resident of Maharashtra holding state domicile or yellow/orange ration card.",
-      "Age between 21 and 65 years.",
-      "Family annual income less than or equal to ₹2.5 Lakh.",
-      "Married, widowed, divorced, deserted, or single women."
+      "Permanent domicile resident of Maharashtra state.",
+      "Women in the age bracket of 21 to 65 years (completed 21 years on the date of application).",
+      "Family annual income from all sources must not exceed ₹2,50,000 (relaxed if holding Yellow/Orange Ration Card).",
+      "Beneficiary must hold an active individual bank account in her own name with Aadhaar NPCI DBT mapping enabled.",
+      "Eligible categories: Married women, unmarried adult girls (21+), widows, divorcees, deserted wives, and destitute single women.",
+      "Family may own a two-wheeler, tractor, or small agricultural implement."
     ],
     "eligibleIf_hi": [
-      "महाराष्ट्र की स्थायी निवासी महिला (अथवा पीला/केसरी राशन कार्ड धारक)।",
-      "आयु 21 से 65 वर्ष के मध्य हो।",
-      "पारिवारिक वार्षिक आय ₹2.5 लाख से कम हो।",
-      "विवाहित, विधवा, तलाकशुदा अथवा अविवाहित महिलाएं।"
+      "अर्जदार महिला अनिवार्यपणे महाराष्ट्र राज्याची कायमस्वरूपी रहिवासी असणे आवश्यक (अधिवास प्रमाणपत्र किंवा 15 वर्षांपूर्वीचे रेशन कार्ड/मतदार ओळखपत्र)।",
+      "महिलेचे वय 21 ते 65 वर्षे पूर्ण असावे (अर्ज करण्याच्या दिनांकास 21 वर्षे पूर्ण आणि 65 वर्षांपेक्षा जास्त नसावे)।",
+      "कुटुंबाचे सर्व मार्गांनी मिळणारे वार्षिक उत्पन्न ₹2,50,000 (अडीच लाख) पेक्षा जास्त नसावे (पिवळे/केशरी रेशन कार्ड असल्यास उत्पन्न दाखला आवश्यक नाही)।",
+      "महिलेचे स्वतःच्या नावावर बँक खाते असावे आणि ते आधार क्रमांकाशी NPCI DBT द्वारे सक्रियपणे जोडलेले (Aadhaar Seeded) असावे।",
+      "विवाहित, अविवाहित (21+ वय), विधवा, घटस्फोटित, परित्यक्ता आणि निराधार महिला या योजनेसाठी पूर्णपणे पात्र आहेत।",
+      "कुटुंबाकडे दुचाकी (Two-wheeler) किंवा शेतीचा ट्रॅक्टर असल्यास अपात्र मानले जात नाही।"
     ],
     "notEligibleIf_en": [
-      "Family member paying income tax.",
-      "Family member is a permanent government employee or pensioner.",
-      "Family owns a four-wheeler (excluding tractor)."
+      "Family annual income exceeds ₹2,50,000 (White Ration Card holders without income proof below ₹2.5L).",
+      "Any member of the family is an active Income Tax payer.",
+      "Any family member is a regular/permanent employee or pensioner in Central/State Government, PSU, or autonomous body.",
+      "Family owns a four-wheeler light motor vehicle (car, jeep, SUV), excluding farm tractors.",
+      "Beneficiary already receives ₹1,500 or more per month under Sanjay Gandhi Niradhar Yojana or other government pension schemes.",
+      "Bank account has disabled NPCI Aadhaar DBT mapping or joint bank accounts with husband/relatives."
     ],
     "notEligibleIf_hi": [
-      "परिवार का कोई सदस्य आयकरदाता हो।",
-      "परिवार का सदस्य नियमित सरकारी कर्मचारी या पेंशनभोगी हो।",
-      "परिवार में चार पहिया वाहन (ट्रैक्टर को छोड़कर) पंजीकृत हो।"
+      "कुटुंबाचे वार्षिक उत्पन्न ₹2.5 लाखांपेक्षा जास्त असणे (पांढरे रेशन कार्ड धारक ज्यांचे उत्पन्न ₹2.5 लाखांपेक्षा जास्त आहे)।",
+      "कुटुंबातील कोणताही सदस्य आयकर (Income Tax) भरणारा असणे।",
+      "कुटुंबातील कोणताही सदस्य नियमित/कायमस्वरूपी सरकारी नोकरीत असणे किंवा निवृत्तीवेतन (Pension) घेत असणे।",
+      "कुटुंबाच्या नावावर चारचाकी वाहन (कार, जीप, एसयूव्ही) नोंदणीकृत असणे (शेतीसाठीचा ट्रॅक्टर वगळून)।",
+      "महिला आधीपासूनच संजय गांधी निराधार योजना किंवा अन्य शासकीय पेन्शन योजनेतून ₹1,500 किंवा त्यापेक्षा जास्त मासिक लाभ घेत असल्यास।",
+      "बँक खाते आधारशी NPCI लिंक नसणे किंवा पती/इतरांसोबतचे संयुक्त (Joint) बँक खाते असणे।"
     ]
   },
   "requiredDocuments_en": [
-    "Aadhaar card of the woman",
-    "Maharashtra Domicile Certificate / Ration Card (Yellow or Orange)",
-    "Income Certificate (below ₹2.5 Lakh) or Yellow/Orange Ration Card proof",
-    "Aadhaar-seeded Bank Account Passbook",
-    "Hamipatra (Self-declaration form)"
+    "Aadhaar Card of the applicant woman (clear front and back copy with updated phone number)",
+    "Maharashtra Domicile Certificate (अधिवास प्रमाणपत्र) OR 15-year-old Ration Card / Voter ID / School Leaving Certificate",
+    "Yellow or Orange Ration Card copy (if available, waives separate income certificate) OR Competent Authority Income Certificate (below ₹2.5 Lakh)",
+    "Active Bank Passbook copy (Showing Account Number, Beneficiary Name, and IFSC code; must be single account)",
+    "Hamipatra (हमीपत्र - Self-Declaration Form) signed by the applicant woman",
+    "Active Mobile Number registered with Aadhaar (for receiving OTP and SMS installment alerts)",
+    "Passport-size colour photograph of the woman"
   ],
   "requiredDocuments_hi": [
-    "महिला का आधार कार्ड",
-    "महाराष्ट्र का अधिवास प्रमाण पत्र (Domicile) अथवा राशन कार्ड",
-    "आय प्रमाण पत्र (सालाना ₹2.5 लाख से कम)",
-    "डीबीटी-सक्षम व्यक्तिगत बैंक पासबुक",
-    "हमीपत्र (स्व-घोषणा पत्र)"
+    "1. अर्जदार महिलेचे आधार कार्ड (दोन्ही बाजूंची स्पष्ट प्रत, आधारशी मोबाईल नंबर जोडलेला असावा)",
+    "2. महाराष्ट्र अधिवास प्रमाणपत्र (Domicile) किंवा 15 वर्षांपूर्वीचे रेशन कार्ड / मतदार ओळखपत्र / शाळा सोडल्याचा दाखला (TC)",
+    "3. पिवळे (Yellow) किंवा केशरी (Orange) रेशन कार्ड (रेशन कार्ड असल्यास उत्पन्नाचा दाखला लागत नाही) किंवा अधिकृत ₹2.5 लाखांखालील उत्पन्न दाखला",
+    "4. स्वतःच्या नावाचे बँक पासबुक (खाते क्रमांक, नाव आणि IFSC कोड स्पष्ट असावा, NPCI DBT सक्रिय असावे)",
+    "5. स्वाक्षरी केलेले हमीपत्र (Hamipatra - Self Declaration Form)",
+    "6. आधार लिंक असलेला चालू मोबाईल नंबर (ओटीपी व हप्ता जमा झाल्याचा एसएमएस मिळण्यासाठी)",
+    "7. अर्जदार महिलेचा पासपोर्ट आकाराचा रंगीत फोटो"
   ],
   "howToApply_en": [
-    "Visit the official website ladkibahin.maharashtra.gov.in or download the Nari Shakti Doot mobile app.",
-    "Register with mobile number and complete Aadhaar OTP verification.",
-    "Fill personal details, bank information, and upload ration card/domicile copy.",
-    "Submit the application and download the digital acknowledgment receipt."
+    "Step 1: Choose Application Mode: You can apply online through the official web portal (ladkibahin.maharashtra.gov.in), via the 'Nari Shakti Doot' mobile app, or offline at Anganwadi / CSC Seva Kendras.",
+    "Step 2: Citizen Registration: On ladkibahin.maharashtra.gov.in, click 'Applicant Login' -> 'Create Account'. Enter full name, mobile number, district, taluka, village, and set password. Verify mobile with OTP.",
+    "Step 3: Fill Scheme Application Form: Login to the portal. Enter Aadhaar number, verify demographic details. Enter bank account number and IFSC (ensure it is single account and Aadhaar seeded).",
+    "Step 4: Upload Required Documents: Upload Aadhaar card copy, Yellow/Orange Ration Card (or Income Certificate), and domicile/residence proof.",
+    "Step 5: Sign & Upload Hamipatra: Download Hamipatra (Self-Declaration), fill details, sign by hand, capture clear photo/PDF, and upload to the portal.",
+    "Step 6: Submit & Track Status: Submit form and download the digital acknowledgment receipt with Application ID. Status can be tracked under 'Submitted Applications'."
   ],
   "howToApply_hi": [
-    "ladkibahin.maharashtra.gov.in वेबसाइट पर जाएं या नारी शक्ति दूत ऐप डाउनलोड करें।",
-    "मोबाइल नंबर दर्ज कर आधार ओटीपी के जरिए सत्यापन करें।",
-    "व्यक्तिगत विवरण, बैंक खाता भरें और राशन कार्ड/अधिवास प्रमाण पत्र अपलोड करें।",
-    "आवेदन सबमिट कर पावती रसीद प्राप्त करें।"
+    "चरण 1: अर्जाचा पर्याय निवडा: आपण ladkibahin.maharashtra.gov.in पोर्टलवरून, 'नारी शक्ती दूत' मोबाईल ॲपवरून किंवा जवळच्या अंगणवाडी केंद्र / सेतू केंद्र (CSC) वरून अर्ज करू शकता.",
+    "चरण 2: पोर्टलवर नवीन नोंदणी: ladkibahin.maharashtra.gov.in वर जाऊन 'Applicant Login' वर क्लिक करा. 'Create Account' निवडून संपूर्ण नाव, मोबाईल नंबर, जिल्हा, तालुका आणि पासवर्ड सेट करा. मोबाईलवर आलेला OTP टाकून खाते सक्रिय करा.",
+    "चरण 3: योजनेचा मुख्य अर्ज भरा: लॉगिन करून 'मुख्यमंत्री माझी लाडकी बहीण योजना अर्ज' वर क्लिक करा. आधार क्रमांक, वैयक्तिक माहिती आणि स्वतःचा बँक खाते क्रमांक व IFSC कोड भरा.",
+    "चरण 4: आवश्यक कागदपत्रे अपलोड करा: आधार कार्ड, पिवळे/केशरी रेशन कार्ड (किंवा उत्पन्न प्रमाणपत्र) आणि अधिवास पुरावा अपलोड करा.",
+    "चरण 5: हमीपत्र (Hamipatra) स्वाक्षरी करून अपलोड करा: हमीपत्र डाऊनलोड करा, माहिती भरा, स्वतःची स्वाक्षरी करा आणि मोबाईलने फोटो काढून पोर्टलवर अपलोड करा.",
+    "चरण 6: अर्ज सबमिट करा व पोचपावती घ्या: अर्ज अंतिम सबमिट करा आणि ॲप्लिकेशन आयडी असलेली पोचपावती डाऊनलोड करा. 'Submitted Applications' मेन्यूमध्ये जाऊन अर्जाची स्थिती तपासा."
   ],
-  "statusCheckGuide_en": "Log in to ladkibahin.maharashtra.gov.in with your mobile number to view application approval and DBT installment credit history.",
-  "statusCheckGuide_hi": "ladkibahin.maharashtra.gov.in पर लॉगिन कर आवेदन स्वीकृति और मासिक किस्त का विवरण जांचें।",
+  "statusCheckGuide_en": "Visit ladkibahin.maharashtra.gov.in -> Click 'Applicant Login' -> Enter registered Mobile Number, Password, and Captcha -> Navigate to 'Submitted Applications' menu -> View stage status. Key statuses decoded: 1) 'Approved (मंजूर)': Your application has passed scrutiny and bank mapping is active; monthly ₹1,500 is credited on installment date. 2) 'Pending (प्रलंबित)': Scrutiny by Anganwadi/WCD committee in progress. 3) 'Disapproved / Rejected (नामंजूर)': Ineligible reason displayed (e.g., 4-wheeler, Aadhaar-bank mismatch, or outside MH domicile). 4) 'Edit Application': Allows re-uploading clear documents or corrected bank IFSC.",
+  "statusCheckGuide_hi": "ladkibahin.maharashtra.gov.in पोर्टलवर जा -> 'Applicant Login' वर क्लिक करा -> नोंदणीकृत मोबाईल नंबर, पासवर्ड आणि कॅप्चा टाकून लॉगिन करा -> 'Submitted Applications' मेन्यूवर जा -> अर्जाची सद्यस्थिती तपासा. स्टेटसचे अर्थ: 1) 'Approved (मंजूर)': अर्ज मंजूर झाला आहे, दरमहा ₹1,500 हप्ता थेट बँकेत जमा होईल. 2) 'Pending (प्रलंबित)': अंगणवाडी सेविका/तालुका समिती स्तरावर अर्जाची छाननी सुरू आहे. 3) 'Rejected / Disapproved (नामंजूर)': अपात्रतेचे कारण (उदा. चारचाकी वाहन, बँकेत नाव मिसमॅच किंवा उत्पन्नाची मर्यादा) दाखवले जाते. 4) 'Edit': त्रुटी असल्यास दुरुस्ती करून पुन्हा हमीपत्र व कागदपत्रे अपलोड करण्याची संधी मिळते.",
   "officialStatusUrl": "https://ladkibahin.maharashtra.gov.in",
   "commonProblems_en": [
     {
-      "problem": "Application pending due to name mismatch between Aadhaar and Bank passbook",
-      "solution": "Ensure bank passbook name matches Aadhaar exactly and update Aadhaar-NPCI mapping at your bank."
+      "problem": "Payment not received ('हप्ता जमा झाला नाही / ₹1,500 nahi aaya') despite Approved status",
+      "solution": "This happens when the bank account has inactive NPCI Aadhaar DBT mapping. The fund is transferred via Aadhaar DBT, not standard IFSC account transfer. Visit your bank branch, submit an 'Aadhaar DBT Mandate Form' to link NPCI, and check status on the UIDAI/NPCI Aadhaar banking status portal."
+    },
+    {
+      "problem": "Hamipatra (हमीपत्र) PDF: Where to download and what to write?",
+      "solution": "Do NOT purchase expensive affidavit stamp papers. The standardized Hamipatra is a 1-page Marathi self-declaration stating family income is below ₹2.5 Lakh, no family member pays income tax, and no 4-wheeler is owned. Download the format from ladkibahin.maharashtra.gov.in, take a printout, fill details by hand, sign, take a photo, and upload."
+    },
+    {
+      "problem": "Yellow or Orange Ration Card name mismatch with Aadhaar",
+      "solution": "If the married woman's surname has changed after marriage, submit an affidavit or marriage certificate, or provide father's/husband's ration card where the name is mentioned. Ration card issuance prior to cut-off proves permanent Maharashtra residency."
+    },
+    {
+      "problem": "Application stuck or Rejected due to Four-Wheeler (चारचाकी वाहन) in family",
+      "solution": "The rules strictly prohibit 4-wheelers (cars, SUVs, taxis registered under family members' names). However, agricultural tractors are explicitly EXEMPTED. If an erroneous vehicle flag was raised for a tractor, upload tractor RC proof in the grievance window."
     }
   ],
   "commonProblems_hi": [
     {
-      "problem": "आधार और बैंक खाते के नाम में अंतर होने से पेंडिंग होना",
-      "solution": "बैंक जाकर आधार कार्ड के अनुसार नाम सही कराएं और एनपीसीआई डीबीटी मैपिंग सक्रिय कराएं।"
+      "problem": "अर्ज मंजूर (Approved) असूनही ₹1,500 हप्ता खात्यात जमा न होणे (पैसे न येण्याचे कारण)",
+      "solution": "याचे 95% कारण बँकेत आधार NPCI डीबीटी (Aadhaar Seeding) सक्रिय नसणे हे असते. सरकारी पैसे खात्यात थेट आधार क्रमांकाद्वारे जमा होतात. त्वरित आपल्या बँकेच्या शाखेत जा, 'Aadhaar DBT Mandate Form' भरून द्या आणि बँकेला NPCI मॅपिंग सक्रिय करण्यास सांगा. बँक स्टेटस अपडेट होताच रखडलेले सर्व हप्ते खात्यात जमा होतात."
+    },
+    {
+      "problem": "हमीपत्र (Hamipatra PDF) कुठून डाउनलोड करावे आणि त्यात काय भरावे?",
+      "solution": "हमीपत्रासाठी कोणत्याही स्टॅम्प पेपरची गरज नाही. हे साधे 1 पानाचे स्व-घोषणापत्र आहे, ज्यामध्ये कुटुंबाचे उत्पन्न ₹2.5 लाखांपेक्षा कमी असणे, चारचाकी वाहन नसणे आणि आयकर न भरण्याची हमी दिली जाते. हे पोर्टलवरून मोफत डाउनलोड करा, त्यावर सही करा आणि मोबाईलने फोटो काढून अर्जात अपलोड करा."
+    },
+    {
+      "problem": "लग्नानंतर नावात बदल झाल्यामुळे रेशन कार्ड किंवा आधारमध्ये नाव न जुळणे",
+      "solution": "लग्नानंतर आडनाव बदलले असल्यास विवाह नोंदणी प्रमाणपत्र (Marriage Certificate) किंवा वडिलांच्या 15 वर्षांपूर्वीच्या रेशन कार्डचा पुरावा जोडावा. पिवळे किंवा केशरी रेशन कार्ड असेल तर वेगळा उत्पन्नाचा दाखला लागत नाही."
+    },
+    {
+      "problem": "कुटुंबात चारचाकी वाहन (कार/जीप) असल्याचे कारण दाखवून अर्ज नामंजूर (Rejected) होणे",
+      "solution": "योजनेच्या नियमानुसार कुटुंबाच्या नावावर चारचाकी हलकी वाहने (कार, जीप, टॅक्सी) असणाऱ्यांना लाभ मिळत नाही. परंतु, शेतीसाठी वापरला जाणारा ट्रॅक्टर (Tractor) यातून पूर्णपणे वगळण्यात आला आहे. ट्रॅक्टर असताना अर्ज बाद झाला असल्यास पोर्टलवर ग्रीव्हन्स टाकून ट्रॅक्टर आरसी बुक जोडावे."
     }
   ],
   "faqs_en": [
     {
-      "q": "Is a domicile certificate compulsory if the family has a ration card?",
-      "a": "If a woman possesses a Yellow or Orange Ration Card issued before the prescribed cutoff, it serves as acceptable proof of residence."
+      "q": "What is the monthly installment amount and schedule under Majhi Ladki Bahin Yojana?",
+      "a": "Beneficiary women receive ₹1,500 per month (total ₹18,000 annually) deposited directly into their Aadhaar-linked bank accounts, typically between the 10th and 15th of each month."
+    },
+    {
+      "q": "Is an Income Certificate compulsory if the family possesses a Yellow or Orange Ration Card?",
+      "a": "No! Families possessing a Yellow (पिवळे) or Orange (केशरी) Ration Card are legally exempted from submitting a separate Tehsildar income certificate."
+    },
+    {
+      "q": "Can unmarried adult girls (above 21 years) apply for this scheme?",
+      "a": "Yes! Unmarried women aged 21 to 65 years living with their families are fully eligible, provided the total family annual income does not exceed ₹2.5 Lakh."
+    },
+    {
+      "q": "What is the official website and mobile app to apply and check status?",
+      "a": "The official web portal is ladkibahin.maharashtra.gov.in, and the official mobile application on Google Play Store is 'Nari Shakti Doot' developed by the Government of Maharashtra."
+    },
+    {
+      "q": "Is a court notary stamp required for Hamipatra (हमीपत्र)?",
+      "a": "No, absolutely not. The standard one-page Self-Declaration (स्व-घोषणापत्र / हमीपत्र) signed by the applicant on plain paper is 100% valid. No court stamp or lawyer notarization is necessary."
+    },
+    {
+      "q": "If my application was rejected, can I edit and reapply?",
+      "a": "Yes! Log in to ladkibahin.maharashtra.gov.in or the Nari Shakti Doot app, go to 'Submitted Applications', click 'Edit', rectify the objection (such as re-uploading clear bank passbook or corrected Hamipatra), and resubmit."
+    },
+    {
+      "q": "Can women whose bank account is joint with their husband receive the ₹1,500 grant?",
+      "a": "No. The scheme strictly requires an individual (single) savings bank account in the woman's own name with active Aadhaar NPCI DBT mapping."
+    },
+    {
+      "q": "What is the family income limit and four-wheeler vehicle rule?",
+      "a": "Total annual household income from all sources must be ₹2,50,000 or less. Families must not own personal four-wheelers (cars/jeeps), but agricultural tractors are specifically permitted."
     }
   ],
   "faqs_hi": [
     {
-      "q": "क्या राशन कार्ड होने पर भी अधिवास (Domicile) प्रमाण पत्र अनिवार्य है?",
-      "a": "यदि परिवार के पास पीला अथवा केसरी राशन कार्ड है, तो इसे निवास प्रमाण के रूप में स्वीकार किया जाता है।"
+      "q": "माझी लाडकी बहीण योजनेचा हप्ता किती मिळतो आणि कधी जमा होतो?",
+      "a": "पात्र महिलांना दरमहा ₹1,500 (वार्षिक ₹18,000) थेट आधार-लिंक बँक खात्यात दिले जातात. हा हप्ता दर महिन्याच्या 10 ते 15 तारखेच्या दरम्यान थेट बँक खात्यात डीबीटीद्वारे जमा होतो."
+    },
+    {
+      "q": "पिवळे किंवा केशरी रेशन कार्ड असल्यास उत्पन्नाचा दाखला आवश्यक आहे का?",
+      "a": "नाही! ज्या कुटुंबांकडे पिवळे (Yellow) किंवा केशरी (Orange) रेशन कार्ड आहे, त्यांना स्वतंत्र तहसीलदार उत्पन्न दाखला सादर करण्याची आवश्यकता नाही; रेशन कार्ड हीच उत्पन्नाची पावती मानली जाते."
+    },
+    {
+      "q": "21 वर्षांवरील अविवाहित मुलींना या योजनेचा लाभ मिळू शकतो का?",
+      "a": "होय! 21 ते 65 वयोगटातील अविवाहित तरुणी या योजनेसाठी पूर्णपणे पात्र आहेत, फक्त त्यांच्या कुटुंबाचे वार्षिक उत्पन्न ₹2.5 लाखांपेक्षा कमी असावे."
+    },
+    {
+      "q": "ऑनलाइन अर्ज करण्यासाठी आणि स्टेटस तपासण्यासाठी अधिकृत वेबसाईट व ॲप कोणते?",
+      "a": "अधिकृत वेबसाईट ladkibahin.maharashtra.gov.in ही आहे, आणि मोबाईलवरून अर्ज करण्यासाठी गुगल प्ले स्टोअरवर 'नारी शक्ती दूत' (Nari Shakti Doot) ॲप उपलब्ध आहे."
+    },
+    {
+      "q": "हमीपत्रासाठी (Hamipatra) कोर्टाचा स्टॅम्प पेपर किंवा नोटरी लागते का?",
+      "a": "नाही, अजिबात नाही! पोर्टलवर उपलब्ध असलेल्या साध्या 1 पानांच्या हमीपत्रावर (स्व-घोषणापत्र) स्वतःची सही करून फोटो अपलोड करणे पुरेसे आहे. स्टॅम्प पेपरची कोणतीही गरज नाही."
+    },
+    {
+      "q": "अर्ज नामंजूर (Rejected) झाल्यास दुरुस्ती करून पुन्हा अर्ज कसा करावा?",
+      "a": "पोर्टल किंवा नारी शक्ती दूत ॲपवर लॉगिन करून 'Submitted Applications' मध्ये जा. तेथे 'Edit' पर्याय निवडून ज्या त्रुटीमुळे अर्ज नाकारला गेला (उदा. बँक पासबुक किंवा हमीपत्र), ती कागदपत्रे पुन्हा स्पष्टपणे अपलोड करून अर्ज सबमिट करा."
+    },
+    {
+      "q": "पतीसोबत संयुक्त (Joint) बँक खाते असल्यास ₹1,500 जमा होतील का?",
+      "a": "नाही. शासनाच्या नियमानुसार महिलांचे स्वतःच्या नावावर स्वतंत्र (Single) बँक खाते असणे आणि ते आधार क्रमांकाशी NPCI लिंक असणे बंधनकारक आहे."
+    },
+    {
+      "q": "कुटुंबाच्या उत्पन्नाची मर्यादा आणि चारचाकी वाहनाचा नियम काय आहे?",
+      "a": "कुटुंबाचे वार्षिक उत्पन्न ₹2,50,000 पेक्षा कमी असावे. कुटुंबाच्या नावावर चारचाकी वाहन (कार/जीप) नसावे; मात्र शेतीसाठी वापरला जाणारा ट्रॅक्टर असल्यास अर्ज बाद केला जात नाही."
     }
   ],
   "officialSources": [
     {
-      "name": "Women & Child Development Department",
+      "name": "Women and Child Development Department",
       "authority": "Government of Maharashtra",
       "url": "https://ladkibahin.maharashtra.gov.in",
-      "verificationDate": "October 20, 2026"
+      "verificationDate": "November 2026"
+    },
+    {
+      "name": "Nari Shakti Doot Application",
+      "authority": "Government of Maharashtra",
+      "url": "https://play.google.com/store/apps/details?id=com.cgd.narishakti",
+      "verificationDate": "November 2026"
     }
   ],
   "keywords": [
+    "ladkibahin maharashtra gov in",
+    "ladki bahin yojana",
     "majhi ladki bahin yojana",
-    "ladki bahin 1500 status",
-    "maharashtra women scheme",
+    "mukhyamantri majhi ladki bahin yojana",
+    "ladki bahin yojana status check",
+    "ladki bahin yojana status check online",
+    "ladki bahin yojana list",
+    "ladki bahin yojana list maharashtra",
+    "ladki bahin yojana installment date",
+    "ladki bahin yojana next installment date",
+    "ladki bahin yojana payment status",
     "nari shakti doot app",
-    "माझी लाड़की बहिन",
-    "लाड़की बहिन योजना महाराष्ट्र"
+    "nari shakti doot app login",
+    "ladki bahin yojana online apply",
+    "ladki bahin yojana login",
+    "ladki bahin yojana official website",
+    "ladki bahin yojana hamipatra pdf download",
+    "ladki bahin yojana eligibility criteria",
+    "ladki bahin yojana documents required",
+    "ladki bahin yojana rejected form re apply",
+    "ladki bahin yojana bank account aadhaar link",
+    "ladki bahin yojana 1500 nahi aaya to kya kare",
+    "लाडकी बहीण योजना यादी 2026",
+    "माझी लाडकी बहीण योजना",
+    "मुख्यमंत्री माझी लाडकी बहीण योजना",
+    "लाडकी बहीण योजना स्टेटस चेक",
+    "लाडकी बहीण योजना पैसे कधी येणार",
+    "लाडकी बहीण योजनेचा हप्ता कधी जमा होणार",
+    "हमीपत्र pdf download",
+    "नारी शक्ती दूत ॲप",
+    "लाडकी बहीण योजना अपात्र यादी",
+    "लाडकी बहीण योजना अर्ज कसा करावा",
+    "लाडकी बहीण योजना नवीन अपडेट"
   ],
-  "metaDescription_en": "Majhi Ladki Bahin Yojana Maharashtra: ₹1,500 monthly DBT financial assistance for women. Eligibility criteria, application portal, and payment tracking.",
-  "metaDescription_hi": "मुख्यमंत्री माझी लाड़की बहिन योजना महाराष्ट्र: महिलाओं हेतु ₹1500 मासिक सहायता, पात्रता, आवश्यक दस्तावेज और ऑनलाइन आवेदन।"
+  "metaDescription_en": "Majhi Ladki Bahin Yojana Maharashtra 2026: Check ₹1,500 installment date, application status, beneficiary list, Hamipatra PDF download, and Nari Shakti Doot app login.",
+  "metaDescription_hi": "मुख्यमंत्री माझी लाडकी बहीण योजना महाराष्ट्र 2026: ₹1500 मासिक हप्ता स्टेटस, लाडकी बहीण यादी 2026, हमीपत्र PDF डाऊनलोड, नारी शक्ती दूत ॲप लॉगिन व अर्ज प्रक्रिया।"
 },
 
 {

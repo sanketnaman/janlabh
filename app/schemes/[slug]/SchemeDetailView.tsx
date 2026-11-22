@@ -660,6 +660,34 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               </div>
             )}
 
+            {/* Dedicated Live Alert on Majhi Ladki Bahin Yojana Page */}
+            {scheme.slug === 'maharashtra-ladki-bahin-yojana' && (
+              <div className="p-4 rounded-xl bg-gradient-to-r from-rose-50 via-pink-50 to-slate-50 dark:from-rose-950/40 dark:via-pink-950/30 dark:to-slate-900 border border-rose-200 dark:border-rose-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 font-bold text-rose-950 dark:text-rose-300">
+                    <Sparkles className="h-4 w-4 text-rose-600 dark:text-rose-400 shrink-0" />
+                    <span>
+                      {isHi ? 'माझी लाडकी बहीण योजना: दरमहा ₹1,500 हप्ता, यादी 2026 व हमीपत्र अपडेट' : 'Majhi Ladki Bahin: ₹1,500 Monthly Installment, 2026 List & Hamipatra Updates'}
+                    </span>
+                  </div>
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    {isHi
+                      ? 'पात्र महिलांच्या खात्यात दर महिन्याला ₹1,500 थेट DBT द्वारे जमा। पिवळे/केशरी रेशन कार्ड असल्यास उत्पन्नाचा दाखला लागत नाही। अधिकृत पोर्टल किंवा नारी शक्ती दूत ॲपद्वारे स्टेटस तपासा।'
+                      : 'Direct monthly credit of ₹1,500 via DBT into Aadhaar-linked bank accounts. Yellow/Orange ration card holders exempted from separate income certificate.'}
+                  </p>
+                </div>
+                <a
+                  href="https://ladkibahin.maharashtra.gov.in"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  <span>{isHi ? 'लाडकी बहीण अधिकृत पोर्टल' : 'Official Portal Login'}</span>
+                  <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              </div>
+            )}
+
             {/* Quick Answer Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 text-xs">
               <div>
@@ -1333,6 +1361,134 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                     {isHi
                       ? 'चरण 1 से 4 (जन्म से कक्षा 6 तक) में माता का बैंक खाता सबसे पहली प्राथमिकता है (माता न होने पर पिता का खाता)। लेकिन कक्षा 9 (चरण 5) और स्नातक/डिप्लोमा (चरण 6) में बैंक खाता अनिवार्य रूप से छात्रा के नाम पर (एकल खाता या माता/पिता के साथ संयुक्त) होना चाहिए और आधार से NPCI डीबीटी लिंक्ड होना चाहिए।'
                       : 'For Stages 1 through 4 (Birth to Class 6), the mother\'s bank account is mandatory (father\'s account only if mother is deceased). For Class 9 (Stage 5) and College/Diploma (Stage 6), the bank account MUST be in the student\'s name (sole or joint with parents) and mapped with NPCI Aadhaar DBT.'}
+                  </p>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* Majhi Ladki Bahin Yojana Installment Calendar, Status & Hamipatra Guide */}
+          {scheme.slug === 'maharashtra-ladki-bahin-yojana' && (
+            <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-rose-200 dark:border-rose-900/60 shadow-sm space-y-5">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-4">
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <Sparkles className="h-5 w-5 text-rose-600 dark:text-rose-400" />
+                    <span>{isHi ? 'माझी लाडकी बहीण योजना: दरमहा ₹1,500 हप्ता, यादी व हमीपत्र तपशील' : 'Majhi Ladki Bahin: ₹1,500 Monthly Installment, List & Hamipatra Guide'}</span>
+                  </h2>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                    {isHi ? 'हप्ता जमा होण्याची तारीख, ॲप्लिकेशन स्टेटसचे अर्थ, हमीपत्र नियम व पैसे न येण्याचे कारण' : 'Installment credit calendar, application status meanings, Hamipatra rules & troubleshooting'}
+                  </p>
+                </div>
+                <span className="self-start sm:self-auto px-3 py-1 bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 font-bold text-xs rounded-full">
+                  {isHi ? 'दरमहा ₹1,500 DBT' : '₹1,500 Monthly DBT'}
+                </span>
+              </div>
+
+              {/* Status and Parameters Table */}
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr className="bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200 dark:border-slate-700">
+                      <th className="py-2.5 px-3">{isHi ? 'तपशील / घटक (Parameter)' : 'Parameter'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'अधिकृत नियम / स्थिती (Rule / Status)' : 'Official Rule / Status'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'लाभार्थी महिलांसाठी सूचना (Important Guidance)' : 'Guidance for Beneficiaries'}</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'मासिक आर्थिक सहाय्य (हप्ता)' : 'Monthly Grant (Installment)'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">
+                        ₹1,500 {isHi ? 'दरमहा (वार्षिक ₹18,000)' : 'Per Month (₹18,000/yr)'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'दर महिन्याच्या 10 ते 15 तारखेदरम्यान थेट आधार-लिंक्ड बँक खात्यात जमा होतो।' : 'Credited between the 10th and 15th of each month directly via Aadhaar DBT.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'रेशन कार्ड व उत्पन्नाचा दाखला' : 'Ration Card & Income Proof'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'पिवळे (Yellow) किंवा केशरी (Orange) रेशन कार्ड' : 'Yellow or Orange Ration Card'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'स्वतंत्र उत्पन्नाच्या दाखल्याची गरज नाही; रेशन कार्ड हाच उत्पन्नाचा वैध पुरावा मानला जातो।' : 'No separate income certificate required; ration card serves as valid income proof.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'हमीपत्र (Hamipatra Format)' : 'Hamipatra (Self-Declaration)'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-blue-600 dark:text-blue-400">
+                        {isHi ? 'साध्या कागदावरील 1 पानाचे स्व-घोषणापत्र' : '1-Page Simple Self-Declaration'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'कोर्टाच्या स्टॅम्प पेपरची गरज नाही; पोर्टलवरून मोफत डाऊनलोड करून सही करून अपलोड करावे।' : 'No court stamp or notary needed; download free, sign by hand, and upload.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">
+                        {isHi ? 'स्टेटस: Approved (मंजूर)' : 'Status: Approved'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'अर्जाची सर्व छाननी यशस्वीपणे पूर्ण' : 'Scrutiny passed and bank active'}
+                      </td>
+                      <td className="py-2.5 px-3 text-emerald-700 dark:text-emerald-300 font-medium">
+                        {isHi ? 'नियमित ₹1,500 हप्ता सुरू आहे; कोणत्याही ऑफिसमध्ये जाण्याची गरज नाही।' : 'Active beneficiary; monthly ₹1,500 credited automatically.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-amber-600 dark:text-amber-400">
+                        {isHi ? 'स्टेटस: Pending (प्रलंबित)' : 'Status: Pending'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'अंगणवाडी/तालुका स्तरावर कागदपत्रांची पडताळणी सुरू' : 'Verification underway at Taluka committee'}
+                      </td>
+                      <td className="py-2.5 px-3 text-slate-600 dark:text-slate-400">
+                        {isHi ? 'काही दिवस प्रतीक्षा करा; पडताळणी पूर्ण होताच स्टेटस मंजूर होईल।' : 'Wait a few days; approval updates once committee validates data.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 bg-rose-50/40 dark:bg-rose-950/20">
+                      <td className="py-2.5 px-3 font-bold text-rose-600 dark:text-rose-400">
+                        {isHi ? 'स्टेटस: Disapproved / Rejected (नामंजूर)' : 'Status: Disapproved / Rejected'}
+                      </td>
+                      <td className="py-2.5 px-3 text-rose-900 dark:text-rose-300">
+                        {isHi ? 'त्रुटी किंवा अपात्रतेचे कारण (उदा. चारचाकी वाहन किंवा अस्पष्ट कागदपत्र)' : 'Rejection reason shown on portal'}
+                      </td>
+                      <td className="py-2.5 px-3 text-rose-800 dark:text-rose-300 font-semibold">
+                        {isHi ? 'पोर्टलवर "Edit" पर्यायावर जाऊन कागदपत्रांची दुरुस्ती करून पुन्हा सबमिट करा।' : 'Click "Edit" on portal, correct discrepancies, and re-submit.'}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Crucial Ground Realities: NPCI Aadhaar Seeding & 4-Wheeler Rules */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px]">
+                <div className="p-3.5 rounded-xl bg-rose-50/80 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-800 text-rose-950 dark:text-rose-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-rose-900 dark:text-rose-300">
+                    <Sparkles className="h-3.5 w-3.5 text-rose-600 shrink-0" />
+                    <span>{isHi ? 'अर्ज मंजूर असूनही ₹1,500 हप्ता न येण्याचे कारण व उपाय' : 'Why ₹1,500 Installment Fails Despite "Approved" Status'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? 'अर्ज मंजूर असूनही पैसे न येण्याचे 95% कारण बँकेत आधार NPCI डीबीटी (Aadhaar Seeding) सक्रिय नसणे हे असते। सरकार पैसे थेट आधार क्रमांकाद्वारे पाठवते, खाते क्रमांकाने नाही। तात्काळ आपल्या बँकेच्या शाखेत जाऊन "Aadhaar DBT Mandate Form" भरून द्या। बँक मॅपिंग सक्रिय होताच रखडलेले सर्व हप्ते खात्यात जमा होतात।'
+                      : '95% of payment failures occur because the bank account lacks active NPCI Aadhaar DBT mapping. Government funds are routed via Aadhaar DBT, not standard IFSC account transfers. Visit your home bank branch, submit an "Aadhaar DBT Mandate Form", and once mapped, all pending tranches will credit.'}
+                  </p>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-amber-950 dark:text-amber-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-amber-900 dark:text-amber-300">
+                    <Info className="h-3.5 w-3.5 text-amber-600 shrink-0" />
+                    <span>{isHi ? 'चारचाकी वाहन (कार/जीप) व ट्रॅक्टरचा नियम' : 'Four-Wheeler vs Agricultural Tractor Rule'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? 'नियमानुसार कुटुंबाच्या नावावर चारचाकी वाहन (कार, जीप, एसयूव्ही किंवा टॅक्सी) नोंदणीकृत असल्यास अपात्र मानले जाते। परंतु, शेतीसाठी वापरला जाणारा ट्रॅक्टर (Tractor) यातून पूर्णपणे वगळण्यात आला आहे। कुटुंबात ट्रॅक्टर असूनही अर्ज नामंजूर झाला असल्यास ग्रीव्हन्स टाकून ट्रॅक्टर आरसी बुक अपलोड करा।'
+                      : 'Families owning personal four-wheelers (cars, SUVs, commercial taxis) are ineligible. However, agricultural tractors are explicitly exempted. If an application was mistakenly rejected for owning a tractor, submit a grievance attaching the tractor RC.'}
                   </p>
                 </div>
               </div>
