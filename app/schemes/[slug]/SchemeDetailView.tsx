@@ -632,6 +632,34 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               </div>
             )}
 
+            {/* Dedicated Live Alert on UP Kanya Sumangala Yojana Page */}
+            {scheme.slug === 'up-mukhyamantri-kanya-sumangala-yojana' && (
+              <div className="p-4 rounded-xl bg-gradient-to-r from-orange-50 via-amber-50 to-slate-50 dark:from-orange-950/40 dark:via-amber-950/30 dark:to-slate-900 border border-orange-200 dark:border-orange-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 font-bold text-orange-950 dark:text-orange-300">
+                    <GraduationCap className="h-4 w-4 text-orange-600 dark:text-orange-400 shrink-0" />
+                    <span>
+                      {isHi ? 'कन्या सुमंगला योजना: सहायता राशि बढ़कर ₹25,000, 6 किस्तें व सिटिजन पोर्टल लॉगिन' : 'UP Kanya Sumangala: Enhanced ₹25,000 Grant, 6 Milestone Stages & Portal Login'}
+                    </span>
+                  </div>
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    {isHi
+                      ? 'उत्तर प्रदेश सरकार द्वारा ₹15,000 से बढ़ाकर कुल ₹25,000 की सहायता। जन्म से लेकर डिग्री तक 6 किस्तों में सीधे बैंक खाते में DBT। सिटिजन पोर्टल (mksy.up.gov.in) पर ऑनलाइन क्लेम करें।'
+                      : 'Grant increased from ₹15,000 to ₹25,000 across 6 developmental milestones from birth to graduation. Direct DBT transfer via Citizen Service Portal (mksy.up.gov.in).'}
+                  </p>
+                </div>
+                <a
+                  href="https://mksy.up.gov.in/mksy/index.php"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  <span>{isHi ? 'MKSY सिटिजन पोर्टल लॉगिन' : 'MKSY Citizen Login'}</span>
+                  <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              </div>
+            )}
+
             {/* Quick Answer Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 text-xs">
               <div>
@@ -1175,6 +1203,136 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                     {isHi
                       ? 'मेधासॉफ्ट पर दो कारणों से सबसे ज्यादा आवेदन रिजेक्ट होते हैं: 1) माता-पिता या पति के साथ जॉइंट बैंक खाता देना। 2) बैंक शाखा बिहार राज्य के बाहर स्थित होना। आवेदन करने से पहले सुनिश्चित करें कि खाता केवल छात्रा के व्यक्तिगत नाम पर हो और शाखा बिहार में स्थित हो तथा आधार से NPCI डीबीटी लिंक्ड हो।'
                       : 'The top two causes for application rejection on Medhasoft are: 1) Providing joint accounts with parents/husband. 2) Bank branch located outside Bihar state. Always ensure the account is in the single name of the student, branch is in Bihar, and NPCI Aadhaar DBT mapping is active.'}
+                  </p>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* UP Mukhyamantri Kanya Sumangala Yojana 6-Stage Matrix & Ground Reality Guide */}
+          {scheme.slug === 'up-mukhyamantri-kanya-sumangala-yojana' && (
+            <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-orange-200 dark:border-orange-900/60 shadow-sm space-y-5">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-4">
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <GraduationCap className="h-5 w-5 text-orange-600 dark:text-orange-400" />
+                    <span>{isHi ? 'कन्या सुमंगला योजना: संशोधित ₹25,000 की 6 किस्तें व पात्रता विवरण' : 'UP Kanya Sumangala: Enhanced ₹25,000 in 6 Milestone Stages & Eligibility'}</span>
+                  </h2>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                    {isHi ? 'बालिका के जन्म से लेकर स्नातक/डिप्लोमा तक हर चरण की नई संशोधित राशि, समय सीमा व आवश्यक दस्तावेज' : 'Comprehensive breakdown of enhanced milestone tranches from birth to degree with claim limits'}
+                  </p>
+                </div>
+                <span className="self-start sm:self-auto px-3 py-1 bg-orange-100 dark:bg-orange-950/60 text-orange-800 dark:text-orange-300 font-bold text-xs rounded-full">
+                  {isHi ? 'संशोधित ₹25,000 अनुदान' : 'Revised ₹25,000 Grant'}
+                </span>
+              </div>
+
+              {/* 6 Stages Table */}
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr className="bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200 dark:border-slate-700">
+                      <th className="py-2.5 px-3">{isHi ? 'चरण (Milestone Stage)' : 'Milestone Stage'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'पात्रता मानदंड / शैक्षणिक स्तर' : 'Eligibility Benchmark'}</th>
+                      <th className="py-2.5 px-3 font-bold text-orange-600 dark:text-orange-400">{isHi ? 'नई राशि (New)' : 'New Amount'}</th>
+                      <th className="py-2.5 px-3 text-slate-400">{isHi ? 'पूर्व राशि' : 'Old Amount'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'अनिवार्य दस्तावेज (Proof)' : 'Mandatory Proof'}</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'प्रथम चरण (Stage 1)' : 'Stage 1 (At Birth)'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'नवजात बालिका के जन्म पर (01-04-2019 के बाद जन्मी; 6 माह के भीतर आवेदन)' : 'Newborn girl child (born on/after 01-04-2019; claim within 6 months of birth)'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">₹5,000</td>
+                      <td className="py-2.5 px-3 text-slate-400 line-through">₹2,000</td>
+                      <td className="py-2.5 px-3">{isHi ? 'जन्म प्रमाण पत्र, अस्पताल डिस्चार्ज स्लिप' : 'Birth Certificate, Hospital Discharge slip'}</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'द्वितीय चरण (Stage 2)' : 'Stage 2 (Immunization)'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? '1 वर्ष तक के पूर्ण टीकाकरण पर (2 वर्ष की आयु से पूर्व दावा अनिवार्य)' : 'Complete vaccination up to 1 year of age (claim before age 2)'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">₹2,000</td>
+                      <td className="py-2.5 px-3 text-slate-400 line-through">₹1,000</td>
+                      <td className="py-2.5 px-3">{isHi ? 'एमसीपी कार्ड (MCP Card) / पूर्ण टीका कार्ड' : 'MCP Card / Complete Vaccination Record'}</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'तृतीय चरण (Stage 3)' : 'Stage 3 (Class 1)'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'मान्यता प्राप्त स्कूल में कक्षा 1 में विधिवत दाखिला लेने पर' : 'Admission into Class 1 in any recognized school'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">₹3,000</td>
+                      <td className="py-2.5 px-3 text-slate-400 line-through">₹2,000</td>
+                      <td className="py-2.5 px-3">{isHi ? 'स्कूल प्रवेश प्रमाण पत्र, UDISE फीस रसीद' : 'Admission Certificate, UDISE Fee Receipt'}</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'चतुर्थ चरण (Stage 4)' : 'Stage 4 (Class 6)'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'मान्यता प्राप्त स्कूल में कक्षा 6 में प्रवेश लेने पर' : 'Admission into Class 6 in a recognized upper primary school'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">₹3,000</td>
+                      <td className="py-2.5 px-3 text-slate-400 line-through">₹2,000</td>
+                      <td className="py-2.5 px-3">{isHi ? 'कक्षा 5 की अंकतालिका, कक्षा 6 प्रवेश रसीद' : 'Class 5 Marksheet, Class 6 Admission Receipt'}</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'पंचम चरण (Stage 5)' : 'Stage 5 (Class 9)'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'मान्यता प्राप्त हाई स्कूल में कक्षा 9 में नामांकन पर' : 'Enrollment in Class 9 in a recognized secondary school'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">₹5,000</td>
+                      <td className="py-2.5 px-3 text-slate-400 line-through">₹3,000</td>
+                      <td className="py-2.5 px-3">{isHi ? 'कक्षा 8 की अंकतालिका, कक्षा 9 प्रवेश रसीद' : 'Class 8 Marksheet, Class 9 Admission Receipt'}</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40 bg-orange-50/40 dark:bg-orange-950/20">
+                      <td className="py-2.5 px-3 font-bold text-orange-600 dark:text-orange-400">
+                        {isHi ? 'छठा चरण (Stage 6)' : 'Stage 6 (Degree/Diploma)'}
+                      </td>
+                      <td className="py-2.5 px-3 font-medium">
+                        {isHi ? '12वीं उत्तीर्ण कर स्नातक या कम से कम 2 वर्षीय डिप्लोमा कोर्स में दाखिला' : 'Class 12 passed & admitted in undergraduate degree or 2-year diploma'}
+                      </td>
+                      <td className="py-2.5 px-3 font-extrabold text-orange-600 dark:text-orange-400 text-sm">₹7,000</td>
+                      <td className="py-2.5 px-3 text-slate-400 line-through">₹5,000</td>
+                      <td className="py-2.5 px-3">{isHi ? '12वीं मार्कशीट, कॉलेज फीस रसीद व आईडी कार्ड' : '12th Marksheet, College Fee Receipt & ID Card'}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Crucial Ground Realities: Affidavit & Bank Rules */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px]">
+                <div className="p-3.5 rounded-xl bg-orange-50/80 dark:bg-orange-950/30 border border-orange-200 dark:border-orange-800 text-orange-950 dark:text-orange-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-orange-900 dark:text-orange-300">
+                    <Sparkles className="h-3.5 w-3.5 text-orange-600 shrink-0" />
+                    <span>{isHi ? 'शपथ पत्र (Affidavit) व आय प्रमाण पत्र का सही नियम' : 'Affidavit & Income Certificate Format Rules'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? 'अभिभावकों को कचहरी से महंगा स्टाम्प पेपर बनवाने की आवश्यकता नहीं होती। mksy.up.gov.in पोर्टल पर निर्धारित स्व-घोषणा पत्र (Self-Declaration) प्रारूप उपलब्ध है, जिस पर अभिभावक के हस्ताक्षर व आधार विवरण मान्य होते हैं। परिवार का आय प्रमाण पत्र तहसीलदार द्वारा जारी होना चाहिए और वह 3 वर्ष से अधिक पुराना नहीं होना चाहिए।'
+                      : 'Parents do not require expensive notary/court stamp papers. The standardized self-declaration format available on mksy.up.gov.in signed by the parent is officially valid. The family income certificate must be issued by the Tehsildar and must not be older than 3 years.'}
+                  </p>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-amber-950 dark:text-amber-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-amber-900 dark:text-amber-300">
+                    <Info className="h-3.5 w-3.5 text-amber-600 shrink-0" />
+                    <span>{isHi ? 'बैंक खाता अपलोड नियम (चरण 1-4 vs चरण 5-6)' : 'Bank Passbook Upload Mandate (Stages 1-4 vs 5-6)'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? 'चरण 1 से 4 (जन्म से कक्षा 6 तक) में माता का बैंक खाता सबसे पहली प्राथमिकता है (माता न होने पर पिता का खाता)। लेकिन कक्षा 9 (चरण 5) और स्नातक/डिप्लोमा (चरण 6) में बैंक खाता अनिवार्य रूप से छात्रा के नाम पर (एकल खाता या माता/पिता के साथ संयुक्त) होना चाहिए और आधार से NPCI डीबीटी लिंक्ड होना चाहिए।'
+                      : 'For Stages 1 through 4 (Birth to Class 6), the mother\'s bank account is mandatory (father\'s account only if mother is deceased). For Class 9 (Stage 5) and College/Diploma (Stage 6), the bank account MUST be in the student\'s name (sole or joint with parents) and mapped with NPCI Aadhaar DBT.'}
                   </p>
                 </div>
               </div>

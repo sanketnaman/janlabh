@@ -3409,137 +3409,282 @@ export const SCHEMES: Scheme[] = [
 {
   "id": "up-kanya-sumangala-yojana",
   "slug": "up-mukhyamantri-kanya-sumangala-yojana",
-  "title_en": "Mukhyamantri Kanya Sumangala Yojana – Uttar Pradesh Girl Child Financial Support",
-  "title_hi": "मुख्यमंत्री कन्या सुमंगला योजना – उत्तर प्रदेश बालिकाओं हेतु ₹25,000 की वित्तीय सहायता",
-  "shortTitle_en": "Kanya Sumangala Yojana (UP)",
-  "shortTitle_hi": "कन्या सुमंगला योजना (UP)",
+  "title_en": "UP Mukhyamantri Kanya Sumangala Yojana 2026 – ₹25,000 Grant, 6 Milestone Stages, MKSY Portal Login, Online Form & Status Check",
+  "title_hi": "मुख्यमंत्री कन्या सुमंगला योजना उत्तर प्रदेश 2026 – ₹25,000 अनुदान, 6 किस्त विवरण, mksy.up.gov.in लॉगिन, ऑनलाइन आवेदन व स्टेटस",
+  "shortTitle_en": "UP Kanya Sumangala Yojana (₹25k MKSY)",
+  "shortTitle_hi": "कन्या सुमंगला योजना (UP ₹25,000)",
   "category": "women",
   "state": "uttar-pradesh",
   "stateLabel_en": "Uttar Pradesh State Scheme",
   "stateLabel_hi": "उत्तर प्रदेश राज्य योजना",
   "status": "Active",
-  "lastVerified": "October 21, 2026",
-  "benefitSummary_en": "Total financial grant of ₹25,000 given in 6 milestone stages from birth to graduation for the education, healthcare, and empowerment of daughters in Uttar Pradesh.",
-  "benefitSummary_hi": "उत्तर प्रदेश में बेटियों के जन्म से लेकर स्नातक तक की पढ़ाई के लिए 6 चरणों में कुल ₹25,000 की सरकारी आर्थिक सहायता।",
-  "benefitAmount_en": "Total ₹25,000 in 6 installment stages",
-  "benefitAmount_hi": "कुल ₹25,000 की वित्तीय सहायता (6 चरणों में)",
-  "whoCanApply_en": "Permanent residents of UP with a family annual income of less than ₹3 Lakh (maximum 2 daughters per family).",
-  "whoCanApply_hi": "उत्तर प्रदेश के मूल निवासी परिवार जिनकी वार्षिक आय ₹3 लाख से कम हो (प्रति परिवार अधिकतम 2 बेटियां)।",
-  "applicationMode": "Online via mksy.up.gov.in",
+  "lastVerified": "November 2026",
+  "benefitSummary_en": "Total financial grant of ₹25,000 (increased from ₹15,000) disbursed in 6 milestone stages from birth to graduation/diploma for the healthcare, nutrition, and higher education of daughters in Uttar Pradesh via mksy.up.gov.in.",
+  "benefitSummary_hi": "उत्तर प्रदेश में बेटियों के जन्म से लेकर स्नातक/डिप्लोमा तक की पढ़ाई के लिए 6 महत्वपूर्ण चरणों में कुल ₹25,000 (पूर्व में ₹15,000) की सरकारी वित्तीय सहायता सीधे बैंक खाते में (डीबीटी)।",
+  "benefitAmount_en": "Total ₹25,000 across 6 milestone stages (Birth to Graduation)",
+  "benefitAmount_hi": "कुल ₹25,000 की वित्तीय सहायता (6 चरणों में जन्म से स्नातक तक)",
+  "whoCanApply_en": "Permanent resident families of Uttar Pradesh with an annual income below ₹3,00,000 (maximum two biological or legally adopted daughters per household).",
+  "whoCanApply_hi": "उत्तर प्रदेश के मूल निवासी परिवार जिनकी कुल वार्षिक आय ₹3 लाख से कम हो (प्रति परिवार अधिकतम 2 सगी या कानूनी रूप से गोद ली गई बेटियां)।",
+  "applicationMode": "Online via Citizen Service Portal (mksy.up.gov.in)",
   "bannerImage": "/images/schemes/up-kanya-sumangala-yojana.webp",
-  "whatIsThis_en": "Kanya Sumangala Yojana is a milestone-based conditional cash transfer program by the Government of Uttar Pradesh to eradicate female foeticide and promote girls' higher education.",
-  "whatIsThis_hi": "कन्या सुमंगला योजना उत्तर प्रदेश सरकार की बालिकाओं के जन्म, टीकाकरण, प्राथमिक, माध्यमिक व उच्च शिक्षा को प्रोत्साहित करने वाली ऐतिहासिक योजना है।",
+  "whatIsThis_en": "Mukhyamantri Kanya Sumangala Yojana (MKSY) is the flagship conditional cash transfer initiative launched by the Women and Child Development Department, Government of Uttar Pradesh under Chief Minister Yogi Adityanath. Designed to prevent female foeticide, eliminate child marriage, and achieve universal secondary and higher education for girls, the government enhanced the total grant from ₹15,000 to ₹25,000. The funds are released directly to the bank account of the mother/father or the student in 6 milestone instalments as the child achieves critical developmental and educational benchmarks.",
+  "whatIsThis_hi": "मुख्यमंत्री कन्या सुमंगला योजना (MKSY) उत्तर प्रदेश सरकार के महिला एवं बाल विकास विभाग द्वारा संचालित एक ऐतिहासिक सशर्त नकद हस्तांतरण (Conditional Cash Transfer) योजना है। इसका मुख्य उद्देश्य कन्या भ्रूण हत्या रोकना, बाल विवाह समाप्त करना, बेटियों के स्वास्थ्य व टीकाकरण को मजबूत बनाना और उच्च शिक्षा को बढ़ावा देना है। मुख्यमंत्री योगी आदित्यनाथ द्वारा इस योजना की कुल सहायता राशि ₹15,000 से बढ़ाकर ₹25,000 कर दी गई है। यह राशि जन्म से लेकर 12वीं/डिप्लोमा/स्नातक तक कुल 6 किस्तों में सीधे बैंक खाते में DBT के माध्यम से ट्रांसफर की जाती है।",
   "benefitsList_en": [
-    "Stage 1: ₹5,000 at the birth of the girl child.",
-    "Stage 2: ₹2,000 upon complete immunization within 1 year.",
-    "Stage 3: ₹3,000 upon admission in Class 1.",
-    "Stage 4: ₹3,000 upon admission in Class 6.",
-    "Stage 5: ₹5,000 upon admission in Class 9.",
-    "Stage 6: ₹7,000 upon passing Class 12 and taking admission in Graduation/Diploma."
+    "Stage 1 (At Birth): ₹5,000 one-time grant upon birth of the girl child (born on or after April 1, 2019; application within 6 months of birth).",
+    "Stage 2 (Complete 1-Year Immunization): ₹2,000 upon complete vaccination within 1 year (BCG, OPV, DPT, Measles/MR, etc.; claim within 2 years of age).",
+    "Stage 3 (Class 1 Admission): ₹3,000 upon taking formal admission into Class 1 in any recognized primary school.",
+    "Stage 4 (Class 6 Admission): ₹3,000 upon admission into Class 6 in a recognized upper primary/middle school.",
+    "Stage 5 (Class 9 Admission): ₹5,000 upon enrolling in Class 9 in a recognized secondary/high school.",
+    "Stage 6 (Graduation / 2-Year Diploma): ₹7,000 upon passing Class 12 and taking admission in a minimum 2-year undergraduate degree or polytechnic/ITI diploma.",
+    "Universal Direct Benefit Transfer: 100% funds transferred directly via PFMS into beneficiary's verified bank account without intermediaries."
   ],
   "benefitsList_hi": [
-    "प्रथम चरण: बेटी के जन्म के समय ₹5,000 की एकमुश्त सहायता।",
-    "द्वितीय चरण: 1 वर्ष तक के पूर्ण टीकाकरण पर ₹2,000।",
-    "तृतीय चरण: कक्षा 1 में प्रवेश लेने पर ₹3,000।",
-    "चतुर्थ चरण: कक्षा 6 में प्रवेश लेने पर ₹3,000।",
-    "पंचम चरण: कक्षा 9 में प्रवेश लेने पर ₹5,000।",
-    "छठा चरण: 12वीं उत्तीर्ण कर स्नातक या डिप्लोमा में प्रवेश पर ₹7,000।"
+    "प्रथम चरण (जन्म के समय): बालिका के जन्म पर ₹5,000 की एकमुश्त सहायता (1 अप्रैल 2019 के बाद जन्मी बेटियां; जन्म के 6 माह के भीतर आवेदन)।",
+    "द्वितीय चरण (1 वर्ष पर पूर्ण टीकाकरण): 1 वर्ष की आयु तक पूर्ण टीकाकरण (BCG, OPV, हेपेटाइटिस, पेंटावेलेंट, मीजल्स आदि) पर ₹2,000।",
+    "तृतीय चरण (कक्षा 1 में प्रवेश): किसी भी मान्यता प्राप्त प्राथमिक विद्यालय में कक्षा 1 में विधिवत दाखिला लेने पर ₹3,000।",
+    "चतुर्थ चरण (कक्षा 6 में प्रवेश): मान्यता प्राप्त जूनियर हाई स्कूल/मिडिल स्कूल में कक्षा 6 में प्रवेश लेने पर ₹3,000।",
+    "पंचम चरण (कक्षा 9 में प्रवेश): हाई स्कूल/माध्यमिक विद्यालय में कक्षा 9 में नामांकन कराने पर ₹5,000।",
+    "छठा चरण (स्नातक / 2 वर्षीय डिप्लोमा में दाखिला): 12वीं पास करके किसी मान्यता प्राप्त कॉलेज/विश्वविद्यालय में स्नातक अथवा कम से कम 2 वर्षीय डिप्लोमा कोर्स में प्रवेश पर ₹7,000।",
+    "100% डीबीटी (DBT) भुगतान: बिना किसी बिचौलिए के PFMS प्रणाली द्वारा राशि सीधे लाभार्थी के बैंक खाते में सुरक्षित ट्रांसफर।"
   ],
   "eligibility": {
     "eligibleIf_en": [
-      "Resident of Uttar Pradesh with permanent domicile.",
-      "Family annual income must not exceed ₹3,00,000.",
-      "Maximum two daughters per family (relaxable in case of twin girls)."
+      "Permanent resident of Uttar Pradesh holding valid Domicile / Niwas Praman Patra.",
+      "Family's gross annual income from all sources must not exceed ₹3,00,000 (verified by Tehsildar income certificate).",
+      "Maximum two daughters per household are eligible.",
+      "Exception 1 (Twins): If second childbirth results in twin daughters, all three daughters are eligible.",
+      "Exception 2 (Adoption): Legally adopted orphan daughters (with legal court adoption decree) are fully eligible within the two-child ceiling.",
+      "Active bank account with Aadhaar DBT seeding (Mother/Father's account for Stages 1-4; Student's single or joint account for Stages 5-6)."
     ],
     "eligibleIf_hi": [
-      "उत्तर प्रदेश का स्थायी निवासी होना अनिवार्य।",
-      "परिवार की कुल वार्षिक आय ₹3,00,000 से कम हो।",
-      "एक परिवार से अधिकतम दो बालिकाओं को लाभ।"
+      "उत्तर प्रदेश का स्थायी निवासी होना और वैध निवास प्रमाण पत्र होना अनिवार्य।",
+      "परिवार की सभी स्रोतों से कुल वार्षिक आय ₹3,00,000 (₹3 लाख) से अधिक नहीं होनी चाहिए (तहसीलदार द्वारा निर्गत आय प्रमाण पत्र मान्य)।",
+      "एक परिवार से अधिकतम 2 सगी बालिकाओं को ही इस योजना का लाभ मिल सकता है।",
+      "जुड़वां बहनों का अपवाद: यदि पहली संतान बेटी है और दूसरी डिलीवरी में जुड़वां बेटियां पैदा होती हैं, तो तीनों बेटियों को पूरा लाभ मिलेगा।",
+      "कानूनी रूप से गोद ली गई बालिका: यदि परिवार ने विधिवत न्यायालय के आदेश द्वारा अनाथ बेटी को गोद लिया है, तो वह भी इस योजना की पूर्ण पात्र है।",
+      "बैंक खाते में आधार सीडिंग और NPCI डीबीटी सक्रिय होना अनिवार्य (चरण 1-4 हेतु माता/पिता का खाता; चरण 5-6 हेतु बालिका का एकल या संयुक्त खाता)।"
     ],
     "notEligibleIf_en": [
-      "Annual income exceeds ₹3 Lakh.",
-      "Third daughter born without twins exception."
+      "Families with annual household income exceeding ₹3,00,000.",
+      "Permanent residents of other states living temporarily in UP without permanent domicile.",
+      "Third biological daughter born where the twin exemption does not apply.",
+      "Non-recognized private schools/coaching centers where formal board enrollment does not exist.",
+      "Bank accounts without Aadhaar NPCI seeding or out-of-state bank branches."
     ],
     "notEligibleIf_hi": [
-      "परिवार की वार्षिक आय ₹3 लाख से अधिक हो।",
-      "परिवार की तीसरी संतान (जुड़वां बहनों को छोड़कर)।"
+      "परिवार की कुल वार्षिक आय ₹3,00,000 से अधिक होना।",
+      "उत्तर प्रदेश के बाहर के स्थायी निवासी।",
+      "परिवार की तीसरी संतान (जुड़वां बहनों के अपवाद को छोड़कर)।",
+      "गैर-मान्यता प्राप्त शिक्षण संस्थान जहां विधिवत यू-डाइस (UDISE) कोड या बोर्ड पंजीकरण न हो।",
+      "बैंक खाते में NPCI आधार सीडिंग न होना या उत्तर प्रदेश से बाहर की बैंक शाखाओं में खाता होना।"
     ]
   },
   "requiredDocuments_en": [
-    "Birth Certificate of girl child",
-    "UP Domicile / Niwas Praman Patra",
-    "Family Income Certificate (below ₹3 Lakh)",
-    "School admission certificate / fees receipt for academic stages",
-    "Immunization card (for Stage 2)",
-    "Aadhaar card of parents and daughter",
-    "Bank passbook copy (joint or mother's account)"
+    "Birth Certificate of the girl child (issued by Municipal Corporation / Gram Panchayat / Registrar)",
+    "Uttar Pradesh Permanent Residence Certificate (निवास प्रमाण पत्र - issued by Tehsildar / SDO)",
+    "Family Income Certificate (सालाना आय ₹3 लाख से कम - issued by competent authority)",
+    "Aadhaar Card of the girl child (mandatory for school stages) and Parents' Aadhaar Cards",
+    "Mother's / Father's / Girl's Bank Account Passbook (Showing Account No., Branch Name, and IFSC)",
+    "Self-Declaration / Affidavit Format (निर्धारित प्रारूप में अभिभावक का स्व-घोषणा पत्र)",
+    "Stage-specific Proof: Complete Immunization / MCP Card (Stage 2), Admission Certificate / UDISE Fees Receipt (Stages 3, 4, 5), 12th Marksheet & College Admission Receipt / Identity Card (Stage 6)",
+    "Recent joint photograph of the girl child with mother/father"
   ],
   "requiredDocuments_hi": [
-    "बालिका का जन्म प्रमाण पत्र",
-    "उत्तर प्रदेश का निवास प्रमाण पत्र",
-    "आय प्रमाण पत्र (सालाना ₹3 लाख से कम)",
-    "स्कूल/कॉलेज में प्रवेश का प्रमाण पत्र व फीस रसीद",
-    "टीकाकरण कार्ड (द्वितीय चरण हेतु)",
-    "माता-पिता व बालिका का आधार कार्ड",
-    "बैंक खाता पासबुक"
+    "बालिका का जन्म प्रमाण पत्र (नगर निगम / ग्राम पंचायत / रजिस्ट्रार द्वारा निर्गत)",
+    "उत्तर प्रदेश का स्थायी निवास प्रमाण पत्र (तहसीलदार / उपजिलाधिकारी द्वारा जारी)",
+    "परिवार का आय प्रमाण पत्र (सालाना आय ₹3 लाख से कम, 3 वर्ष से अधिक पुराना न हो)",
+    "बालिका का आधार कार्ड (स्कूल चरणों हेतु) तथा माता व पिता दोनों का आधार कार्ड",
+    "बैंक पासबुक की छायाप्रति (जिसमें खाता संख्या, बैंक शाखा व IFSC कोड स्पष्ट हो)",
+    "निर्धारित प्रारूप में अभिभावक का स्व-घोषणा / शपथ पत्र (Affidavit Format)",
+    "चरणवार शैक्षणिक प्रमाण पत्र: टीकाकरण कार्ड/MCP कार्ड (चरण 2 हेतु), स्कूल प्रवेश प्रमाण पत्र व फीस रसीद (चरण 3, 4, 5 हेतु), 12वीं मार्कशीट व कॉलेज एडमिशन रसीद/आईडी कार्ड (चरण 6 हेतु)",
+    "बालिका की माता/पिता के साथ संयुक्त नवीनतम पासपोर्ट साइज फोटो"
   ],
   "howToApply_en": [
-    "Visit the official portal mksy.up.gov.in and click on \"Citizen Service Portal\".",
-    "Register with mobile number and create user login credentials.",
-    "Choose the relevant stage (Birth, Vaccination, Class 1, 6, 9, or Degree).",
-    "Upload required certificates and submit. Applications are verified by Block/SDM officers."
+    "Step 1: Citizen Registration on MKSY Portal: Visit mksy.up.gov.in and click on 'Citizen Service Portal (Apply Here)'. Read terms, accept declaration, and register with applicant's name, mobile number, and relation to girl child.",
+    "Step 2: Generate Login Credentials: Enter OTP sent to registered mobile number to generate your unique Login ID and Password.",
+    "Step 3: Add Beneficiary Girl Child Profile: Log in with credentials, navigate to 'Add Beneficiary', enter girl's details (Name, DOB, Aadhaar, Bank account IFSC & A/c), and upload family joint photo.",
+    "Step 4: Select Applicable Milestone Stage (Stages 1 to 6): Choose the specific stage based on eligibility (e.g., Stage 1 for newborn, Stage 3 for Class 1, Stage 6 for Degree/Diploma). Upload stage-specific certificates (Birth, Vaccine card, School admission receipt).",
+    "Step 5: Upload Affidavit & Domicile: Attach signed Self-Declaration/Affidavit form and valid income certificate, then click 'Submit Application'.",
+    "Step 6: Multilevel Department Verification: Application is reviewed and approved by Block Development Officer (BDO) / Sub-Divisional Magistrate (SDM) -> District Probation Officer (DPO) -> Fund disbursement directly to bank account via DBT."
   ],
   "howToApply_hi": [
-    "आधिकारिक पोर्टल mksy.up.gov.in पर जाकर \"नागरिक सेवा पोर्टल\" पर क्लिक करें।",
-    "मोबाइल नंबर दर्ज कर नया पंजीकरण करें और लॉगिन आईडी बनाएं।",
-    "संबंधित चरण (जन्म, टीकाकरण, कक्षा 1, 6, 9 या स्नातक) का चयन कर विवरण भरें।",
-    "दस्तावेज अपलोड करें; बीडीओ व एसडीएम द्वारा सत्यापन के बाद राशि सीधे बैंक खाते में आएगी।"
+    "चरण 1: MKSY पोर्टल पर नया पंजीकरण: आधिकारिक वेबसाइट mksy.up.gov.in पर जाएं और 'नागरिक सेवा पोर्टल (यहां आवेदन करें)' पर क्लिक करें। दिशा-निर्देश पढ़कर सहमति दें और आवेदक का नाम, मोबाइल नंबर व बालिका से संबंध दर्ज करें।",
+    "चरण 2: लॉगिन आईडी व पासवर्ड बनाएं: मोबाइल पर प्राप्त 6 अंकों का OTP दर्ज करें और अपना लॉगिन आईडी व पासवर्ड सुरक्षित बनाएं।",
+    "चरण 3: लाभार्थी बालिका (Beneficiary) का विवरण जोड़ें: यूजर आईडी और पासवर्ड से लॉगिन करें। 'Add Beneficiary' पर क्लिक करके बेटी का नाम, जन्मतिथि, आधार नंबर, बैंक खाता (IFSC व A/c) और परिवार की संयुक्त फोटो अपलोड करें।",
+    "चरण 4: संबंधित किस्त/चरण (Stage 1 से 6) का चयन करें: अपनी बेटी की वर्तमान स्थिति के अनुसार सही चरण चुनें (जैसे जन्म पर Stage 1, पहली कक्षा पर Stage 3, स्नातक पर Stage 6)। संबंधित शैक्षणिक प्रमाण पत्र (जैसे फीस रसीद या टीका कार्ड) अपलोड करें।",
+    "चरण 5: शपथ पत्र व आय प्रमाण पत्र अपलोड करें: निर्धारित स्व-घोषणा/शपथ पत्र (Affidavit) तथा वैध आय प्रमाण पत्र संलग्न कर 'Submit Application' पर क्लिक करें।",
+    "चरण 6: ब्लॉक, एसडीएम व जिला स्तर पर सत्यापन: फॉर्म खंड विकास अधिकारी (BDO) / एसडीएम (SDM) स्तर से सत्यापित होकर जिला प्रोबेशन अधिकारी (DPO) के पास जाता है। स्वीकृति मिलते ही किस्त की राशि सीधे बैंक खाते में ट्रांसफर हो जाती है।"
   ],
-  "statusCheckGuide_en": "Log in to mksy.up.gov.in with your User ID to check verification status and payment release details.",
-  "statusCheckGuide_hi": "mksy.up.gov.in पर यूजर आईडी से लॉगिन कर आवेदन व किस्त अंतरण का स्टेटस ट्रैक करें।",
+  "statusCheckGuide_en": "Open mksy.up.gov.in -> Click 'Citizen Service Portal' -> Log in with your Login ID, Password, and Captcha code. Click on 'Application Status' to view stage-wise tracking. Key statuses decoded: 1) 'Pending at BDO / SDM': Local verification of income and domicile in progress. 2) 'Pending at DPO': File forwarded to District Probation Officer for final financial clearance. 3) 'Approved by DPO / Payment in Process': Sanction order issued; funds initiated via PFMS. 4) 'Query / Objection Raised': Officer has requested document re-upload (e.g., clear school receipt or updated income certificate); click 'Modify/Clarify' to resolve.",
+  "statusCheckGuide_hi": "mksy.up.gov.in पोर्टल पर जाएं -> 'नागरिक सेवा पोर्टल' पर क्लिक करें -> अपनी लॉगिन आईडी, पासवर्ड और कैप्चा कोड डालकर लॉगिन करें। मेन्यू में 'Application Status' पर क्लिक करें। स्टेटस कोड के अर्थ: 1) 'Pending at BDO / SDM': ब्लॉक विकास अधिकारी या तहसील स्तर पर आय व निवास का सत्यापन चल रहा है। 2) 'Pending at DPO': जिला प्रोबेशन अधिकारी के पास अंतिम वित्तीय अनुमोदन हेतु लंबित है। 3) 'Approved by DPO / Payment in Process': जिला स्तर से स्वीकृति मिल चुकी है, PFMS द्वारा पैसा खाते में भेजा जा रहा है। 4) 'Query / Objection Raised': अधिकारी ने किसी दस्तावेज पर आपत्ति लगाई है (जैसे अस्पष्ट रसीद या पुराना आय प्रमाण पत्र); लॉगिन करके 'Modify' पर जाकर नया दस्तावेज अपलोड करें।",
   "officialStatusUrl": "https://mksy.up.gov.in",
   "commonProblems_en": [
     {
-      "problem": "Application rejected due to expired income certificate",
-      "solution": "Renew your Tehsildar income certificate and re-upload before submitting the stage claim."
+      "problem": "Application stuck at 'Pending at BDO / SDM' for several months",
+      "solution": "Physical verification by lekhpal/gram pradhan or heavy pendency at block level causes this delay. Visit your block development office (BDO) or Tehsil SDM office with your application printout, Aadhaar, and original income certificate to fast-track verification."
+    },
+    {
+      "problem": "Confusion over Bank Account Rule: Whose passbook should be uploaded?",
+      "solution": "For Stages 1 through 4 (Birth, Vaccine, Class 1, Class 6), the mother's bank account is preferred (father's account permitted if mother is deceased). For Stages 5 and 6 (Class 9 and Graduation/Diploma), the bank account MUST be opened in the name of the girl child (either single or joint with mother/father)."
+    },
+    {
+      "problem": "Affidavit (शपथ पत्र) Format Rejection on MKSY portal",
+      "solution": "Parents often submit a generic court stamp paper. MKSY has a standardized self-declaration format available directly on the mksy.up.gov.in portal. It only requires the parent's signature, Aadhaar details, and declaration of having not more than two daughters; an expensive notary stamp is not mandatory unless specifically queried by the DPO."
+    },
+    {
+      "problem": "Application rejected due to expired Income Certificate (आय प्रमाण पत्र)",
+      "solution": "In Uttar Pradesh, Tehsildar income certificates are legally valid for exactly 3 years from issuance date. If your certificate is older than 3 years, obtain a new digital certificate from edistrict.up.gov.in and update it in your MKSY beneficiary profile before applying for the next stage."
     }
   ],
   "commonProblems_hi": [
     {
-      "problem": "पुराने आय प्रमाण पत्र के कारण आवेदन निरस्त होना",
-      "solution": "तहसील से 3 साल के भीतर का वैध आय प्रमाण पत्र बनवाकर पुनः अपलोड करें।"
+      "problem": "महीनों से आवेदन 'Pending at BDO / SDM' पर अटका रहना",
+      "solution": "ब्लॉक स्तर पर लेखपाल या ग्राम विकास अधिकारी द्वारा स्थलीय सत्यापन में देरी के कारण ऐसा होता है। अपने आवेदन पत्र का प्रिंटआउट, आधार कार्ड और मूल आय प्रमाण पत्र लेकर संबंधित विकास खंड कार्यालय (BDO) अथवा तहसील के एसडीएम कार्यालय में संपर्क करें ताकि वेरिफिकेशन तुरंत पूरा हो सके।"
+    },
+    {
+      "problem": "बैंक खाते को लेकर संशय: माता, पिता या बेटी किसका खाता अपलोड करें?",
+      "solution": "चरण 1 से 4 (जन्म से कक्षा 6 तक) में माता का बैंक खाता सबसे प्राथमिकता पर रखा जाता है (माता के न होने पर पिता का खाता मान्य)। लेकिन चरण 5 और 6 (कक्षा 9 तथा 12वीं/स्नातक) में बैंक खाता अनिवार्य रूप से बालिका के नाम पर (एकल खाता या माता-पिता के साथ संयुक्त) होना चाहिए।"
+    },
+    {
+      "problem": "शपथ पत्र (Affidavit / Self Declaration) रिजेक्ट होना",
+      "solution": "कई अभिभावक कचहरी से गलत प्रारूप का स्टाम्प पेपर लगा देते हैं। कन्या सुमंगला योजना का आधिकारिक स्व-घोषणा प्रारूप mksy.up.gov.in पोर्टल पर उपलब्ध है। इसमें केवल अभिभावक के हस्ताक्षर, आधार संख्या और परिवार में 2 से अधिक बेटियां न होने की घोषणा भरनी होती है; महंगे नोटरी स्टाम्प की आवश्यकता नहीं होती।"
+    },
+    {
+      "problem": "पुराने आय प्रमाण पत्र के कारण आवेदन निरस्त (Rejected) होना",
+      "solution": "उत्तर प्रदेश में तहसीलदार द्वारा जारी आय प्रमाण पत्र जारी होने की तिथि से केवल 3 वर्ष तक वैध होता है। यदि आपका प्रमाण पत्र 3 वर्ष से अधिक पुराना है, तो edistrict.up.gov.in या जनसेवा केंद्र से नया डिजिटल आय प्रमाण पत्र बनवाएं और पोर्टल पर अपलोड करें।"
     }
   ],
   "faqs_en": [
     {
-      "q": "Can a family claim Kanya Sumangala for adopted daughters?",
-      "a": "Yes. If a family has adopted a daughter legally, she is fully eligible under the scheme guidelines."
+      "q": "What is the newly revised financial assistance under UP Kanya Sumangala Yojana?",
+      "a": "The Uttar Pradesh Government has officially increased the total assistance from ₹15,000 to ₹25,000 across 6 milestone stages: Stage 1 (Birth) ₹5,000, Stage 2 (Vaccine) ₹2,000, Stage 3 (Class 1) ₹3,000, Stage 4 (Class 6) ₹3,000, Stage 5 (Class 9) ₹5,000, and Stage 6 (Graduation/Diploma) ₹7,000."
+    },
+    {
+      "q": "Can a family apply for Kanya Sumangala Yojana if they already have sons?",
+      "a": "Yes! The restriction is on the number of daughters—a maximum of two daughters per family are eligible, irrespective of the number of male children."
+    },
+    {
+      "q": "What should parents do if twin daughters are born in the second childbirth?",
+      "a": "Under special rules of MKSY, if a family has an elder daughter and the second pregnancy results in twin daughters, all three daughters are fully eligible to receive the entire ₹25,000 grant."
+    },
+    {
+      "q": "Is an expensive judicial stamp paper mandatory for the Kanya Sumangala affidavit?",
+      "a": "No. The department accepts a standard Self-Declaration (स्व-प्रमाणित घोषणा पत्र) on plain paper signed by parents/guardians stating family income, residence, and number of children as per the official portal format."
+    },
+    {
+      "q": "Can girls studying in private schools or private colleges receive the grant?",
+      "a": "Yes! The school or college can be private or government, provided it is recognized by the state education department/board or university and possesses a valid U-DISE / AISHE code."
+    },
+    {
+      "q": "What is the family income limit for Kanya Sumangala Yojana in UP?",
+      "a": "The maximum annual family income from all sources must not exceed ₹3,00,000 (Three Lakh Rupees), verified via a digital certificate from the Tehsildar."
+    },
+    {
+      "q": "If a girl child missed applying at birth, can she apply directly for Class 1, 6, 9, or College?",
+      "a": "Yes, absolutely! Each milestone stage has an independent application window. If you missed Stage 1 or 2, you can directly register and claim Stage 3 (Class 1), Stage 4 (Class 6), Stage 5 (Class 9), or Stage 6 (Graduation/Diploma) whenever the girl attains that educational level."
+    },
+    {
+      "q": "How can I recover my forgotten Login ID or Password on mksy.up.gov.in?",
+      "a": "Go to mksy.up.gov.in -> 'Citizen Service Portal' -> click 'Forgot User ID' or 'Forgot Password'. Enter your registered mobile number and captcha to receive an OTP and reset your credentials instantly."
     }
   ],
   "faqs_hi": [
     {
-      "q": "क्या गोद ली गई बालिका को भी इस योजना का लाभ मिल सकता है?",
-      "a": "हाँ। यदि परिवार ने कानूनी रूप से बेटी को गोद लिया है, तो वह भी इस योजना की पूर्ण पात्र है।"
+      "q": "मुख्यमंत्री कन्या सुमंगला योजना की नई संशोधित राशि कितनी है?",
+      "a": "उत्तर प्रदेश सरकार ने इस योजना की कुल सहायता राशि ₹15,000 से बढ़ाकर ₹25,000 कर दी है: प्रथम चरण (जन्म) ₹5,000, द्वितीय चरण (टीकाकरण) ₹2,000, तृतीय चरण (कक्षा 1) ₹3,000, चतुर्थ चरण (कक्षा 6) ₹3,000, पंचम चरण (कक्षा 9) ₹5,000, और छठा चरण (स्नातक/डिप्लोमा) ₹7,000।"
+    },
+    {
+      "q": "यदि परिवार में पहले से बेटा है, तो क्या बेटियों को कन्या सुमंगला का लाभ मिलेगा?",
+      "a": "हाँ, बिल्कुल! नियम केवल बेटियों की संख्या पर है—एक परिवार से अधिकतम दो बेटियों को लाभ मिल सकता है, चाहे परिवार में कितने भी बेटे हों।"
+    },
+    {
+      "q": "यदि दूसरी डिलीवरी में जुड़वां बेटियां पैदा हों, तो क्या नियम है?",
+      "a": "विशेष नियम के तहत, यदि पहली संतान बेटी है और दूसरी डिलीवरी में जुड़वां बेटियां जन्म लेती हैं, तो तीनों बेटियों को अलग-अलग पूरी ₹25,000 की सहायता राशि मिलेगी।"
+    },
+    {
+      "q": "क्या कन्या सुमंगला के शपथ पत्र (Affidavit) के लिए महंगा स्टाम्प पेपर जरूरी है?",
+      "a": "नहीं। विभाग की आधिकारिक वेबसाइट पर उपलब्ध निर्धारित प्रारूप में सादे कागज पर अभिभावक के हस्ताक्षरयुक्त स्व-घोषणा पत्र (Self Declaration) पूरी तरह मान्य है। महंगे नोटरी स्टाम्प की जरूरत नहीं होती।"
+    },
+    {
+      "q": "क्या प्राइवेट स्कूल या प्राइवेट कॉलेज में पढ़ने वाली छात्राएं भी पात्र हैं?",
+      "a": "हाँ! स्कूल या कॉलेज सरकारी हो या प्राइवेट, बस वह संबंधित शिक्षा बोर्ड या विश्वविद्यालय से मान्यता प्राप्त होना चाहिए और उसका वैध U-DISE अथवा कॉलेज कोड होना चाहिए।"
+    },
+    {
+      "q": "कन्या सुमंगला योजना में पारिवारिक वार्षिक आय की अधिकतम सीमा क्या है?",
+      "a": "परिवार की सभी स्रोतों से कुल वार्षिक आय ₹3,00,000 (तीन लाख रुपये) से अधिक नहीं होनी चाहिए, जिसे तहसीलदार द्वारा जारी आय प्रमाण पत्र से प्रमाणित किया जाता है।"
+    },
+    {
+      "q": "अगर जन्म के समय आवेदन छूट गया हो, तो क्या कक्षा 1, 6, 9 या कॉलेज में सीधे आवेदन कर सकते हैं?",
+      "a": "हाँ! योजना के सभी 6 चरणों का आवेदन स्वतंत्र (Independent) होता है। यदि जन्म या टीकाकरण का लाभ छूट भी गया हो, तो जैसे ही बेटी कक्षा 1, 6, 9 या स्नातक/डिप्लोमा में प्रवेश लेती है, आप सीधे उस चरण का लाभ ले सकते हैं।"
+    },
+    {
+      "q": "mksy.up.gov.in पर लॉगिन आईडी या पासवर्ड भूल जाने पर क्या करें?",
+      "a": "पोर्टल पर जाएं -> 'नागरिक सेवा पोर्टल' पर क्लिक करें -> 'Forgot User ID' या 'Forgot Password' चुनें। अपना पंजीकृत मोबाइल नंबर दर्ज करें; मोबाइल पर OTP आएगा जिसके जरिए आप तुरंत नया पासवर्ड सेट कर सकते हैं।"
     }
   ],
   "officialSources": [
     {
-      "name": "Women & Child Development Department",
+      "name": "Women and Child Development Department",
       "authority": "Government of Uttar Pradesh",
       "url": "https://mksy.up.gov.in",
-      "verificationDate": "October 21, 2026"
+      "verificationDate": "November 2026"
+    },
+    {
+      "name": "Citizen Service Portal (MKSY)",
+      "authority": "NIC Uttar Pradesh State Centre",
+      "url": "https://mksy.up.gov.in/mksy/index.php",
+      "verificationDate": "November 2026"
     }
   ],
   "keywords": [
+    "kanya sumangala yojana",
+    "mukhyamantri kanya sumangala yojana",
+    "mksyup",
+    "sumangala yojana",
     "kanya sumangala yojana up",
     "mksy up gov in",
-    "up girl child scheme 25000",
-    "kanya sumangala stages",
-    "कन्या सुमंगला योजना",
-    "यूपी कन्या सुमंगला स्टेटस"
+    "mksy up gov in login",
+    "sumangala kanya yojana",
+    "sumangla kanya yojana",
+    "kanya sumangala yojana online apply",
+    "kanya sumangala yojana status check",
+    "kanya sumangala yojana 25000",
+    "kanya sumangala yojana status check online by application number",
+    "mksy citizen service portal",
+    "kanya sumangala yojana me kitna paisa milta hai",
+    "kanya sumangala yojana eligibility",
+    "kanya sumangala yojana documents required",
+    "kanya sumangala yojana affidavit format pdf",
+    "kanya sumangala yojana apply online 2026",
+    "kanya sumangala yojana form pdf download",
+    "kanya sumangala yojana me aavedan kaise kare",
+    "kanya sumangala yojana 6 kiste details",
+    "kanya sumangala yojana login id password",
+    "kanya sumangala yojana helpline number",
+    "kanya sumangala yojana income limit",
+    "kanya sumangala yojana bank passbook rule",
+    "kanya sumangala yojana payment status check",
+    "kanya sumangala yojana pending at bdo sdm solution",
+    "kanya sumangala yojana correction kaise kare",
+    "mukhyamantri kanya sumangala yojana list kaise dekhe",
+    "pradhan mantri sumangala yojana",
+    "pradhanmantri kanya sumangala yojana",
+    "sukanya sumangala yojana",
+    "sumangala samriddhi yojana",
+    "sumangala yojana online form",
+    "uttar pradesh kanya yojana",
+    "मुख्यमंत्री कन्या सुमंगला योजना",
+    "कन्या सुमंगला योजना उत्तर प्रदेश",
+    "कन्या सुमंगला योजना स्टेटस चेक",
+    "कन्या सुमंगला योजना 25000 ऑनलाइन आवेदन",
+    "कन्या सुमंगला योजना का पैसा कब आएगा",
+    "कन्या सुमंगला योजना में दस्तावेज क्या क्या लगेंगे",
+    "कन्या सुमंगला योजना की किस्त कैसे चेक करें",
+    "कन्या सुमंगला योजना शपथ पत्र प्रारूप pdf",
+    "कन्या सुमंगला योजना 6 किस्त विवरण"
   ],
-  "metaDescription_en": "Mukhyamantri Kanya Sumangala Yojana UP: ₹25,000 grant in 6 stages for daughters in Uttar Pradesh. Eligibility, required documents, and online portal guide.",
-  "metaDescription_hi": "मुख्यमंत्री कन्या सुमंगला योजना उत्तर प्रदेश: बेटियों को 6 चरणों में ₹25,000 की सहायता, पात्रता, आवश्यक दस्तावेज व ऑनलाइन आवेदन।"
+  "metaDescription_en": "UP Mukhyamantri Kanya Sumangala Yojana 2026: Apply online for ₹25,000 grant in 6 stages on mksy.up.gov.in. Check portal login, status by application number, documents, and affidavit format.",
+  "metaDescription_hi": "मुख्यमंत्री कन्या सुमंगला योजना उत्तर प्रदेश 2026: 6 किस्तों में ₹25,000 सहायता। mksy.up.gov.in पर ऑनलाइन आवेदन, सिटिजन लॉगिन, स्टेटस चेक, शपथ पत्र प्रारूप व नियम।"
 },
 
 {
