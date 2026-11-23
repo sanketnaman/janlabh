@@ -304,4 +304,22 @@ export interface Article {
   
   // Downloadable PDFs & Forms
   downloadablePdfs?: ArticleDownloadablePdf[];
+
+  // Master Comparison Matrix (for directory & comprehensive guide articles)
+  schemesMatrix?: SchemeMatrixItem[];
+}
+
+export interface SchemeMatrixItem {
+  id: number;
+  name_en: string;
+  name_hi: string;
+  category_en: string;
+  category_hi: string;
+  benefit_en: string;
+  benefit_hi: string;
+  eligibility_en: string;
+  eligibility_hi: string;
+  portalName: string;
+  portalUrl: string;
+  slug?: string;
 }
