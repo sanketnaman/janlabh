@@ -399,7 +399,7 @@ export default function HeroSection({
             onClick={onOpenFinder}
             className="w-full sm:w-auto px-6 py-3 text-sm font-bold text-white bg-amber-600 hover:bg-amber-700 active:bg-amber-800 rounded-xl shadow-sm transition-colors flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer"
           >
-            <span>{isHi ? '🔍 योजना खोजें' : '🔍 Find Schemes for You'}</span>
+            <span>{isHi ? 'योजना खोजें' : 'Find Schemes for You'}</span>
             <ArrowRight className="h-4 w-4" />
           </button>
 
@@ -407,8 +407,13 @@ export default function HeroSection({
             onClick={onOpenChecker}
             className="w-full sm:w-auto px-6 py-3 text-sm font-bold text-emerald-900 dark:text-emerald-200 bg-emerald-100/90 dark:bg-emerald-950/70 hover:bg-emerald-200 dark:hover:bg-emerald-900/80 border border-emerald-300 dark:border-emerald-800 rounded-xl transition-colors flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer"
           >
-            <CheckCircle2 className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-            <span>{isHi ? '✅ पात्रता जांचें (Check Eligibility)' : '✅ Check Scheme Eligibility'}</span>
+            <img
+              src="/icons/more_icons/guarantee.svg"
+              alt=""
+              className="h-5 w-5 object-contain shrink-0"
+              aria-hidden="true"
+            />
+            <span>{isHi ? 'पात्रता जांचें (Check Eligibility)' : 'Check Scheme Eligibility'}</span>
           </button>
 
           <button

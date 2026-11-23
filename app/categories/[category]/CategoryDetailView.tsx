@@ -32,6 +32,17 @@ interface CategoryDetailViewProps {
   initialLang?: Language;
 }
 
+const CATEGORY_CUSTOM_ICONS: Record<string, string> = {
+  farmers: '/icons/more_icons/farmer.svg',
+  women: '/icons/more_icons/women_empowerment.svg',
+  students: '/icons/more_icons/students.svg',
+  scholarships: '/icons/more_icons/scholarships.svg',
+  health: '/icons/more_icons/health.svg',
+  housing: '/icons/more_icons/housing.svg',
+  pension: '/icons/more_icons/social_security.svg',
+  employment: '/icons/more_icons/skills_employment.svg',
+};
+
 const CATEGORY_ICON_MAP: Record<string, React.ElementType> = {
   farmers: Tractor,
   women: HeartHandshake,
@@ -105,7 +116,15 @@ export default function CategoryDetailView({
             <div className="space-y-3 max-w-3xl">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-100 dark:bg-amber-950/70 text-amber-900 dark:text-amber-300 border border-amber-200 dark:border-amber-800">
-                  <IconComp className="h-3.5 w-3.5 text-amber-600 dark:text-amber-400" />
+                  {CATEGORY_CUSTOM_ICONS[categoryInfo.id] ? (
+                    <img
+                      src={CATEGORY_CUSTOM_ICONS[categoryInfo.id]}
+                      alt={isHi ? categoryInfo.name_hi : categoryInfo.name_en}
+                      className="h-4 w-4 object-contain"
+                    />
+                  ) : (
+                    <IconComp className="h-3.5 w-3.5 text-amber-600 dark:text-amber-400" />
+                  )}
                   {isHi ? 'श्रेणी कल्याण पोर्टल' : 'Welfare Category Portal'}
                 </span>
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">

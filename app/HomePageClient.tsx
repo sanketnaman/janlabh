@@ -49,6 +49,17 @@ interface HomePageClientProps {
   initialLang?: Language;
 }
 
+const CATEGORY_CUSTOM_ICONS: Record<string, string> = {
+  farmers: '/icons/more_icons/farmer.svg',
+  women: '/icons/more_icons/women_empowerment.svg',
+  students: '/icons/more_icons/students.svg',
+  scholarships: '/icons/more_icons/scholarships.svg',
+  health: '/icons/more_icons/health.svg',
+  housing: '/icons/more_icons/housing.svg',
+  pension: '/icons/more_icons/social_security.svg',
+  employment: '/icons/more_icons/skills_employment.svg',
+};
+
 export default function HomePageClient({ initialLang = 'en' }: HomePageClientProps) {
   const router = useRouter();
   const isHi = initialLang === 'hi';
@@ -102,7 +113,16 @@ export default function HomePageClient({ initialLang = 'en' }: HomePageClientPro
     }
   };
 
-  const getCategoryIcon = (iconName: string) => {
+  const getCategoryIcon = (iconName: string, categoryId?: string) => {
+    if (categoryId && CATEGORY_CUSTOM_ICONS[categoryId]) {
+      return (
+        <img
+          src={CATEGORY_CUSTOM_ICONS[categoryId]}
+          alt={categoryId}
+          className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
+        />
+      );
+    }
     switch (iconName) {
       case 'Tractor': return <Tractor className="h-5 w-5 text-amber-700 dark:text-amber-400" />;
       case 'HeartHandshake': return <HeartHandshake className="h-5 w-5 text-rose-700 dark:text-rose-400" />;
@@ -144,9 +164,14 @@ export default function HomePageClient({ initialLang = 'en' }: HomePageClientPro
           {/* Section 1: Official Data Trust Banner */}
           <div className="bg-linear-to-r from-amber-50 to-orange-50 dark:from-slate-900 dark:to-slate-900/80 rounded-2xl border border-amber-200/80 dark:border-slate-800 p-5 sm:p-6 shadow-xs">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div className="flex items-start sm:items-center gap-3">
-                <div className="p-2.5 bg-amber-600 text-white rounded-xl shrink-0">
-                  <ShieldAlert className="h-5 w-5" />
+              <div className="flex items-start sm:items-center gap-4">
+                <div className="shrink-0 flex items-center justify-center">
+                  <img
+                    src="/icons/more_icons/public_civic.svg"
+                    alt=""
+                    className="h-16 w-16 sm:h-20 sm:w-20 object-contain"
+                    aria-hidden="true"
+                  />
                 </div>
                 <div>
                   <h2 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
@@ -314,29 +339,42 @@ export default function HomePageClient({ initialLang = 'en' }: HomePageClientPro
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {CATEGORIES.map((cat) => (
-                <Link
-                  key={cat.id}
-                  href={isHi ? `/hi/categories/${cat.id}` : `/categories/${cat.id}`}
-                  className="group p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 dark:hover:border-amber-500/50 hover:shadow-sm transition-all flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="p-2.5 bg-slate-50 dark:bg-slate-800 rounded-lg inline-block mb-3 group-hover:scale-105 transition-transform">
-                      {getCategoryIcon(cat.iconName)}
+              {CATEGORIES.map((cat) => {
+                const customIcon = CATEGORY_CUSTOM_ICONS[cat.id];
+                return (
+                  <Link
+                    key={cat.id}
+                    href={isHi ? `/hi/categories/${cat.id}` : `/categories/${cat.id}`}
+                    className="group p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 dark:hover:border-amber-500/50 hover:shadow-sm transition-all flex flex-col justify-between"
+                  >
+                    <div>
+                      {customIcon ? (
+                        <div className="mb-3 group-hover:scale-110 transition-transform inline-flex items-center justify-center h-12 w-12 sm:h-14 sm:w-14">
+                          <img
+                            src={customIcon}
+                            alt={isHi ? cat.name_hi : cat.name_en}
+                            className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
+                          />
+                        </div>
+                      ) : (
+                        <div className="p-2.5 bg-slate-50 dark:bg-slate-800 rounded-lg inline-block mb-3 group-hover:scale-105 transition-transform">
+                          {getCategoryIcon(cat.iconName, cat.id)}
+                        </div>
+                      )}
+                      <h3 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
+                        {isHi ? cat.name_hi : cat.name_en}
+                      </h3>
+                      <p className="mt-1 text-[11px] text-slate-500 dark:text-slate-400 line-clamp-2">
+                        {isHi ? cat.description_hi : cat.description_en}
+                      </p>
                     </div>
-                    <h3 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
-                      {isHi ? cat.name_hi : cat.name_en}
-                    </h3>
-                    <p className="mt-1 text-[11px] text-slate-500 dark:text-slate-400 line-clamp-2">
-                      {isHi ? cat.description_hi : cat.description_en}
-                    </p>
-                  </div>
-                  <div className="mt-3 text-[11px] text-amber-700 dark:text-amber-400 font-semibold flex items-center gap-1">
-                    <span>{isHi ? 'योजनाएं देखें' : 'Explore'}</span>
-                    <ChevronRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
-                  </div>
-                </Link>
-              ))}
+                    <div className="mt-3 text-[11px] text-amber-700 dark:text-amber-400 font-semibold flex items-center gap-1">
+                      <span>{isHi ? 'योजनाएं देखें' : 'Explore'}</span>
+                      <ChevronRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </section>
 

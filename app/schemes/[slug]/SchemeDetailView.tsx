@@ -760,9 +760,14 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
 
               <Link
                 href={`${prefix}/checker?scheme=${scheme.slug}`}
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-bold text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 transition-colors cursor-pointer shadow-xs"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-bold text-emerald-950 dark:text-emerald-100 bg-emerald-100 hover:bg-emerald-200 dark:bg-emerald-950/80 dark:hover:bg-emerald-900/80 border border-emerald-400 dark:border-emerald-700 transition-colors cursor-pointer shadow-xs"
               >
-                <CheckCircle2 className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+                <img
+                  src="/icons/more_icons/guarantee.svg"
+                  alt=""
+                  className="h-5 w-5 object-contain shrink-0"
+                  aria-hidden="true"
+                />
                 <span>{isHi ? 'विस्तृत पात्रता जांचें' : 'Evaluate Full Eligibility'}</span>
               </Link>
             </div>
@@ -1704,9 +1709,14 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
             <div className="pt-2 flex justify-start">
               <Link
                 href={`${prefix}/checker?scheme=${scheme.slug}`}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 transition-colors cursor-pointer shadow-xs"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-emerald-950 dark:text-emerald-100 bg-emerald-100 hover:bg-emerald-200 dark:bg-emerald-950/80 dark:hover:bg-emerald-900/80 border border-emerald-400 dark:border-emerald-700 transition-colors cursor-pointer shadow-xs"
               >
-                <CheckCircle2 className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+                <img
+                  src="/icons/more_icons/guarantee.svg"
+                  alt=""
+                  className="h-5 w-5 object-contain shrink-0"
+                  aria-hidden="true"
+                />
                 <span>{isHi ? 'क्या आप पात्र हैं? अपनी पात्रता तुरंत जांचें →' : 'Are You Eligible? Test Your Eligibility Now →'}</span>
               </Link>
             </div>

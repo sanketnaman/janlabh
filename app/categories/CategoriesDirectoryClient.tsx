@@ -30,6 +30,17 @@ interface CategoriesDirectoryClientProps {
   initialLang?: Language;
 }
 
+const CATEGORY_CUSTOM_ICONS: Record<string, string> = {
+  farmers: '/icons/more_icons/farmer.svg',
+  women: '/icons/more_icons/women_empowerment.svg',
+  students: '/icons/more_icons/students.svg',
+  scholarships: '/icons/more_icons/scholarships.svg',
+  health: '/icons/more_icons/health.svg',
+  housing: '/icons/more_icons/housing.svg',
+  pension: '/icons/more_icons/social_security.svg',
+  employment: '/icons/more_icons/skills_employment.svg',
+};
+
 const CATEGORY_ICON_MAP: Record<string, React.ElementType> = {
   farmers: Tractor,
   women: HeartHandshake,
@@ -127,9 +138,19 @@ export default function CategoriesDirectoryClient({
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="p-3 bg-amber-50 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 rounded-xl group-hover:scale-110 transition-transform">
-                      <Icon className="h-6 w-6" />
-                    </div>
+                    {CATEGORY_CUSTOM_ICONS[cat.id] ? (
+                      <div className="group-hover:scale-110 transition-transform inline-flex items-center justify-center h-14 w-14 sm:h-16 sm:w-16">
+                        <img
+                          src={CATEGORY_CUSTOM_ICONS[cat.id]}
+                          alt={isHi ? cat.name_hi : cat.name_en}
+                          className="h-14 w-14 sm:h-16 sm:w-16 object-contain"
+                        />
+                      </div>
+                    ) : (
+                      <div className="p-3 bg-amber-50 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 rounded-xl group-hover:scale-110 transition-transform">
+                        <Icon className="h-6 w-6" />
+                      </div>
+                    )}
                     <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
                       <CheckCircle2 className="h-3 w-3 text-emerald-600" />
                       {count} {isHi ? 'योजनाएं' : 'Schemes'}

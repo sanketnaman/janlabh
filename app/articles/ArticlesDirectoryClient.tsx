@@ -475,10 +475,14 @@ export default function ArticlesDirectoryClient({
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
+            <div className="group p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
               <div className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-950/60 text-teal-700 dark:text-teal-400 flex items-center justify-center font-bold">
-                  <Building className="h-5 w-5" />
+                <div className="inline-flex items-center justify-center h-12 w-12 sm:h-14 sm:w-14 group-hover:scale-110 transition-transform">
+                  <img
+                    src="/icons/more_icons/bankseeding.svg"
+                    alt={isHi ? 'डीबीटी व बैंक सीडिंग' : 'DBT & Bank Seeding'}
+                    className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
+                  />
                 </div>
                 <h3 className="text-sm font-bold text-slate-900 dark:text-white">
                   {isHi ? '1. डीबीटी व बैंक सीडिंग' : '1. DBT & Bank Seeding'}
@@ -495,10 +499,14 @@ export default function ArticlesDirectoryClient({
               </div>
             </div>
 
-            <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
+            <div className="group p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
               <div className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 flex items-center justify-center font-bold">
-                  <FileText className="h-5 w-5" />
+                <div className="inline-flex items-center justify-center h-12 w-12 sm:h-14 sm:w-14 group-hover:scale-110 transition-transform">
+                  <img
+                    src="/icons/more_icons/identify_ekyc.svg"
+                    alt={isHi ? 'डेमोग्राफिक व ई-केवाईसी' : 'Identity & e-KYC Sync'}
+                    className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
+                  />
                 </div>
                 <h3 className="text-sm font-bold text-slate-900 dark:text-white">
                   {isHi ? '2. डेमोग्राफिक व ई-केवाईसी' : '2. Identity & e-KYC Sync'}
@@ -515,10 +523,14 @@ export default function ArticlesDirectoryClient({
               </div>
             </div>
 
-            <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
+            <div className="group p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
               <div className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400 flex items-center justify-center font-bold">
-                  <ShieldAlert className="h-5 w-5" />
+                <div className="inline-flex items-center justify-center h-12 w-12 sm:h-14 sm:w-14 group-hover:scale-110 transition-transform">
+                  <img
+                    src="/icons/more_icons/grievance.svg"
+                    alt={isHi ? 'अपील व शिकायत अधिकार' : 'Grievance & Appeal Rights'}
+                    className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
+                  />
                 </div>
                 <h3 className="text-sm font-bold text-slate-900 dark:text-white">
                   {isHi ? '3. अपील व शिकायत अधिकार' : '3. Grievance & Appeal Rights'}
@@ -535,10 +547,14 @@ export default function ArticlesDirectoryClient({
               </div>
             </div>
 
-            <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
+            <div className="group p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
               <div className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 flex items-center justify-center font-bold">
-                  <Download className="h-5 w-5" />
+                <div className="inline-flex items-center justify-center h-12 w-12 sm:h-14 sm:w-14 group-hover:scale-110 transition-transform">
+                  <img
+                    src="/icons/more_icons/standardformat.svg"
+                    alt={isHi ? 'स्व-घोषणा व प्रपत्र प्रारूप' : 'Standard Formats & Affidavits'}
+                    className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
+                  />
                 </div>
                 <h3 className="text-sm font-bold text-slate-900 dark:text-white">
                   {isHi ? '4. स्व-घोषणा व प्रपत्र प्रारूप' : '4. Standard Formats & Affidavits'}
