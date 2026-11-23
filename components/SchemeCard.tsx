@@ -23,12 +23,13 @@ export default function SchemeCard({
 }: SchemeCardProps) {
   const router = useRouter();
   const isHi = lang === 'hi';
+  const schemeUrl = isHi ? `/hi/schemes/${scheme.slug}` : `/schemes/${scheme.slug}`;
 
   const handleCardClick = () => {
     if (onSelect) {
       onSelect(scheme);
     } else {
-      router.push(`/schemes/${scheme.slug}`);
+      router.push(schemeUrl);
     }
   };
 
@@ -73,7 +74,7 @@ export default function SchemeCard({
 
           {/* Primary Scheme Title */}
           <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white group-hover:text-amber-800 dark:group-hover:text-amber-400 transition-colors leading-snug">
-            <Link href={`/schemes/${scheme.slug}`}>
+            <Link href={schemeUrl}>
               {isHi ? scheme.shortTitle_hi : scheme.shortTitle_en}
             </Link>
           </h3>
@@ -123,7 +124,7 @@ export default function SchemeCard({
             </span>
           )}
           <Link
-            href={`/schemes/${scheme.slug}`}
+            href={schemeUrl}
             className="flex items-center gap-1 font-semibold text-amber-700 dark:text-amber-400 group-hover:text-amber-800 dark:group-hover:text-amber-300 transition-colors"
           >
             <span>{isHi ? 'पूरी जानकारी देखें' : 'View Full Guide'}</span>
