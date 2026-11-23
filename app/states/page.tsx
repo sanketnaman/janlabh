@@ -2,23 +2,26 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { STATES } from '@/data/categories';
 import StatesDirectoryClient from './StatesDirectoryClient';
+import { STATES_FAQS } from './statesData';
 
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'State Government Schemes 2026: State-Wise Yojana Directory | राज्य सरकार योजनाएं | JanLabh',
-  description: 'Explore state-wise government welfare schemes across India (Gujarat, Jharkhand, Uttar Pradesh, Madhya Pradesh, Maharashtra, Bihar, Rajasthan & Central Schemes). Check local subsidies, pensions, and eligibility.',
+  title: 'State Government Schemes 2026: State-Wise Yojana Directory, Portals & DBT | JanLabh',
+  description: 'Complete directory of state government welfare schemes in India (Gujarat, Jharkhand, Uttar Pradesh, Madhya Pradesh, Maharashtra, Bihar, Rajasthan & Central). Compare DBT cash benefits, resident domicile rules, and official e-District portals.',
   keywords: [
-    'state government schemes India',
+    'state government schemes India 2026',
     'state wise yojana list 2026',
+    'state welfare schemes directory',
+    'central vs state schemes difference',
+    'state dbt portal list',
     'gujarat government schemes',
-    'gujarat yojana list',
     'jharkhand government schemes',
     'up yojana list',
-    'mp sarkari yojana',
-    'maharashtra yojana',
-    'bihar sarkar yojana',
-    'rajasthan scheme list',
+    'mp ladli behna yojana portal',
+    'maharashtra ladki bahin yojana',
+    'bihar sarkar yojana list',
+    'rajasthan jan aadhaar schemes',
     'राज्य सरकार योजनाएं 2026'
   ],
   alternates: {
@@ -30,8 +33,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'State Government Schemes 2026: State-Wise Yojana Directory | JanLabh',
-    description: 'Explore state-wise government welfare schemes across India. Find cash benefits, student subsidies, farmer assistance, and direct welfare links.',
+    title: 'State Government Schemes 2026: State-Wise Yojana Directory & Portals | JanLabh',
+    description: 'Explore state-wise welfare initiatives, direct cash transfers, official e-District portals, and residency guidelines across India.',
     url: 'https://janlabh.in/states',
     siteName: 'JanLabh India',
     locale: 'en_IN',
@@ -64,7 +67,7 @@ export default function StatesDirectoryPage() {
         '@type': 'CollectionPage',
         'name': 'State-Wise Government Schemes Directory 2026',
         'url': 'https://janlabh.in/states',
-        'description': 'Directory of state government welfare schemes across Indian states.',
+        'description': 'Comprehensive directory of state government welfare schemes, DBT cash transfers, and official citizen e-District portals across Indian states.',
         'mainEntity': {
           '@type': 'ItemList',
           'numberOfItems': STATES.length,
@@ -75,6 +78,17 @@ export default function StatesDirectoryPage() {
             'url': `https://janlabh.in/states/${st.id}`,
           })),
         },
+      },
+      {
+        '@type': 'FAQPage',
+        'mainEntity': STATES_FAQS.map((faq) => ({
+          '@type': 'Question',
+          'name': faq.q_en,
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': faq.a_en,
+          },
+        })),
       },
     ],
   };
