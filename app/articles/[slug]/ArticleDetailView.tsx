@@ -27,7 +27,8 @@ import {
   Download,
   FileDown,
   MapPin,
-  Search
+  Search,
+  ArrowLeftRight
 } from 'lucide-react';
 import { ARTICLES } from '@/data/articles';
 import CommunityCallout from '@/components/CommunityCallout';
@@ -225,7 +226,7 @@ export default function ArticleDetailView({
         onToggleTheme={toggleTheme}
       />
 
-      <main className="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+      <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400 mb-6">
           <Link href={isHi ? '/hi' : '/'} className="hover:text-amber-700 dark:hover:text-amber-400 flex items-center gap-1">
@@ -472,16 +473,29 @@ export default function ArticleDetailView({
                 </div>
               </div>
 
+              {/* Responsive Header for Table */}
+              <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 px-0.5 pt-1">
+                <span className="font-semibold text-slate-700 dark:text-slate-300">
+                  {isHi
+                    ? `${filteredMatrix.length} योजनाएं सूचीबद्ध`
+                    : `Showing ${filteredMatrix.length} schemes`}
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-slate-500 dark:text-slate-400">
+                  <ArrowLeftRight className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                  <span>{isHi ? 'दाएं-बाएं स्क्रॉल करें' : 'Scroll table horizontally if needed'}</span>
+                </span>
+              </div>
+
               {/* Responsive Data Table */}
-              <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
-                <table className="w-full text-left border-collapse text-xs sm:text-sm">
+              <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 scrollbar-thin">
+                <table className="w-full text-left border-collapse text-xs sm:text-sm min-w-[720px]">
                   <thead>
                     <tr className="bg-slate-100/90 dark:bg-slate-800/90 border-b border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-xs uppercase tracking-wider font-bold">
-                      <th className="py-3 px-3 w-12 text-center">#</th>
-                      <th className="py-3 px-4 min-w-[200px]">{isHi ? 'योजना का नाम व श्रेणी' : 'Scheme Name & Category'}</th>
-                      <th className="py-3 px-4 min-w-[200px]">{isHi ? 'सहायता / लाभ राशि' : 'Cash / Grant Benefit'}</th>
-                      <th className="py-3 px-4 min-w-[220px]">{isHi ? 'मुख्य पात्रता मानदंड' : 'Key Eligibility'}</th>
-                      <th className="py-3 px-3 min-w-[130px]">{isHi ? 'आधिकारिक पोर्टल' : 'Official Portal'}</th>
+                      <th className="py-2.5 px-2.5 w-10 text-center">#</th>
+                      <th className="py-2.5 px-3 sm:px-4 min-w-[170px] sm:min-w-[190px]">{isHi ? 'योजना का नाम व श्रेणी' : 'Scheme Name & Category'}</th>
+                      <th className="py-2.5 px-3 sm:px-4 min-w-[150px] sm:min-w-[170px]">{isHi ? 'सहायता / लाभ राशि' : 'Cash / Grant Benefit'}</th>
+                      <th className="py-2.5 px-3 sm:px-4 min-w-[180px] sm:min-w-[210px]">{isHi ? 'मुख्य पात्रता मानदंड' : 'Key Eligibility'}</th>
+                      <th className="py-2.5 px-3 sm:px-4 min-w-[140px] whitespace-nowrap">{isHi ? 'आधिकारिक पोर्टल' : 'Official Portal'}</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 dark:divide-slate-800 bg-white dark:bg-slate-900">
@@ -490,11 +504,11 @@ export default function ArticleDetailView({
                         key={item.id}
                         className="hover:bg-emerald-50/40 dark:hover:bg-emerald-950/20 transition-colors"
                       >
-                        <td className="py-3 px-3 text-center font-bold text-slate-500 dark:text-slate-400">
+                        <td className="py-2.5 px-2.5 text-center font-bold text-slate-500 dark:text-slate-400">
                           {item.id}
                         </td>
-                        <td className="py-3 px-4">
-                          <div className="font-bold text-slate-900 dark:text-white">
+                        <td className="py-2.5 px-3 sm:px-4">
+                          <div className="font-bold text-slate-900 dark:text-white leading-snug">
                             {isHi ? item.name_hi : item.name_en}
                           </div>
                           <div className="text-[11px] text-emerald-700 dark:text-emerald-400 font-semibold mt-0.5">
@@ -503,29 +517,29 @@ export default function ArticleDetailView({
                           {item.slug && (
                             <Link
                               href={isHi ? `/hi/schemes/${item.slug}` : `/schemes/${item.slug}`}
-                              className="inline-flex items-center gap-1 text-[11px] text-amber-700 dark:text-amber-400 hover:underline mt-1 font-semibold"
+                              className="inline-flex items-center gap-0.5 text-[11px] text-amber-700 dark:text-amber-400 hover:underline mt-1 font-semibold"
                             >
                               <span>{isHi ? 'विस्तृत गाइड' : 'Full Guide'}</span>
                               <ChevronRight className="h-3 w-3" />
                             </Link>
                           )}
                         </td>
-                        <td className="py-3 px-4">
-                          <span className="inline-block px-2.5 py-1 rounded-md bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-900 dark:text-emerald-200 font-bold text-xs leading-relaxed">
+                        <td className="py-2.5 px-3 sm:px-4">
+                          <span className="inline-block px-2.5 py-1 rounded-md bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-900 dark:text-emerald-200 font-bold text-xs leading-normal">
                             {isHi ? item.benefit_hi : item.benefit_en}
                           </span>
                         </td>
-                        <td className="py-3 px-4 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                        <td className="py-2.5 px-3 sm:px-4 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
                           {isHi ? item.eligibility_hi : item.eligibility_en}
                         </td>
-                        <td className="py-3 px-3">
+                        <td className="py-2.5 px-3 sm:px-4 whitespace-nowrap">
                           <a
                             href={item.portalUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-xs font-bold text-sky-700 dark:text-sky-400 hover:underline"
+                            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-sky-50 dark:bg-sky-950/60 hover:bg-sky-100 dark:hover:bg-sky-900/60 text-sky-700 dark:text-sky-300 font-semibold text-xs border border-sky-200 dark:border-sky-800 transition-colors whitespace-nowrap"
                           >
-                            <span className="truncate max-w-[120px]">{item.portalName}</span>
+                            <span>{item.portalName}</span>
                             <ExternalLink className="h-3 w-3 shrink-0" />
                           </a>
                         </td>
