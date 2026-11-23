@@ -63,19 +63,25 @@ export default function StateDetailView({
 
   type FilterType = 'state' | 'all' | 'central';
   const isAllIndia = stateInfo.id === 'all-india';
-  const hasStateSpecific = schemes.some((s) => s.state === stateInfo.id);
+  const hasStateSpecific = !isAllIndia && schemes.some((s) => s.state === stateInfo.id);
 
   const [filter, setFilter] = useState<FilterType>(() => {
     if (isAllIndia) return 'all';
     return hasStateSpecific ? 'state' : 'all';
   });
 
-  const stateSpecificSchemes = schemes.filter((s) => s.state === stateInfo.id);
-  const centralSchemes = schemes.filter((s) => s.state === 'all-india');
+  const stateSpecificSchemes = React.useMemo(() => {
+    if (isAllIndia) return [];
+    return schemes.filter((s) => s.state === stateInfo.id);
+  }, [schemes, stateInfo.id, isAllIndia]);
+
+  const centralSchemes = React.useMemo(() => {
+    return schemes.filter((s) => s.state === 'all-india');
+  }, [schemes]);
 
   const displayedSchemes = React.useMemo(() => {
-    if (isAllIndia || filter === 'all') {
-      return [...stateSpecificSchemes, ...centralSchemes];
+    if (isAllIndia) {
+      return centralSchemes;
     }
     if (filter === 'state') {
       return stateSpecificSchemes;
@@ -83,8 +89,14 @@ export default function StateDetailView({
     if (filter === 'central') {
       return centralSchemes;
     }
-    return schemes;
-  }, [filter, schemes, isAllIndia, stateSpecificSchemes, centralSchemes]);
+    const combined = [...stateSpecificSchemes, ...centralSchemes];
+    const seen = new Set<string>();
+    return combined.filter((s) => {
+      if (seen.has(s.id)) return false;
+      seen.add(s.id);
+      return true;
+    });
+  }, [filter, isAllIndia, stateSpecificSchemes, centralSchemes]);
 
   const portal = STATE_OFFICIAL_PORTALS[stateInfo.id] || {
     name: 'National Portal of India',
@@ -296,7 +308,9 @@ export default function StateDetailView({
             <div>
               <h2 id="schemes-title" className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
                 {isAllIndia
-                  ? (isHi ? 'केंद्रीय सरकार की प्रमुख कल्याणकारी योजनाएं' : 'Central Flagship Welfare Schemes')
+                  ? (isHi
+                      ? `केंद्रीय सरकार की प्रमुख कल्याणकारी योजनाएं (${displayedSchemes.length})`
+                      : `Central Flagship Welfare Schemes (${displayedSchemes.length})`)
                   : filter === 'state'
                   ? (isHi
                       ? `${stateInfo.name_hi} सरकार की विशेष योजनाएं (${displayedSchemes.length})`
@@ -364,7 +378,7 @@ export default function StateDetailView({
                       : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
                   }`}
                 >
-                  {schemes.length}
+                  {stateSpecificSchemes.length + centralSchemes.length}
                 </span>
               </button>
 

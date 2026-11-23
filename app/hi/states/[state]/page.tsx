@@ -78,12 +78,19 @@ export default async function HindiStatePage({ params }: HindiStatePageProps) {
     notFound();
   }
 
-  const stateSchemes = SCHEMES.filter(
-    (s) =>
-      s.state === stateInfo.id ||
-      (stateInfo.id !== 'all-india' && s.state === 'all-india') ||
-      (stateInfo.id === 'all-india' && s.state === 'all-india')
-  );
+  // Filter schemes: state-specific schemes PLUS central flagship schemes active in the state (strictly deduplicated)
+  const rawStateSchemes = SCHEMES.filter((s) => {
+    if (stateInfo.id === 'all-india') {
+      return s.state === 'all-india';
+    }
+    return s.state === stateInfo.id || s.state === 'all-india';
+  });
+  const seenIds = new Set<string>();
+  const stateSchemes = rawStateSchemes.filter((s) => {
+    if (seenIds.has(s.id)) return false;
+    seenIds.add(s.id);
+    return true;
+  });
 
   const hubProfile = STATE_HUB_PROFILES[stateInfo.id] || STATE_HUB_PROFILES['all-india'];
 
