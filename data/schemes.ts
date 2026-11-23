@@ -2781,111 +2781,215 @@ export const SCHEMES: Scheme[] = [
 {
   "id": "ladli-behna-yojana",
   "slug": "ladli-behna-yojana-madhya-pradesh",
-  "title_en": "Mukhyamantri Ladli Behna Yojana – Madhya Pradesh Women Financial Aid",
-  "title_hi": "मुख्यमंत्री लाड़ली बहना योजना – मध्य प्रदेश ₹1250 मासिक आर्थिक सहायता",
-  "shortTitle_en": "Ladli Behna Yojana (MP)",
-  "shortTitle_hi": "लाड़ली बहना योजना (MP)",
+  "title_en": "MP Mukhyamantri Ladli Behna Yojana 2026 – ₹1,250 Installment Date, Status Check Online, Samagra e-KYC & 3rd Round Apply",
+  "title_hi": "मुख्यमंत्री लाड़ली बहना योजना मध्य प्रदेश 2026 – ₹1250 किस्त कब आएगी, स्टेटस चेक, समग्र e-KYC, तीसरा चरण व अंतिम सूची",
+  "shortTitle_en": "Ladli Behna Yojana (MP ₹1,250)",
+  "shortTitle_hi": "लाड़ली बहना योजना (MP ₹1,250)",
   "category": "women",
   "state": "madhya-pradesh",
   "stateLabel_en": "Madhya Pradesh State Scheme",
   "stateLabel_hi": "मध्य प्रदेश राज्य योजना",
   "status": "Active",
-  "lastVerified": "October 26, 2026",
-  "benefitSummary_en": "Direct monthly financial assistance of ₹1,250 transferred via DBT directly into the bank accounts of married, widowed, divorced, and abandoned women in MP.",
-  "benefitSummary_hi": "मध्य प्रदेश की 21 से 60 वर्ष की विवाहित, विधवा व तलाकशुदा महिलाओं को प्रति माह ₹1,250 की प्रत्यक्ष आर्थिक सहायता (सालाना ₹15,000)।",
-  "benefitAmount_en": "₹1,250 per month directly in bank account",
-  "benefitAmount_hi": "₹1,250 प्रति माह (सालाना ₹15,000) सीधा बैंक खाते में",
-  "whoCanApply_en": "Resident women of Madhya Pradesh aged 21 to 60 years whose family annual income is below ₹2.5 Lakh.",
-  "whoCanApply_hi": "मध्य प्रदेश की स्थायी निवासी महिलाएं (21-60 वर्ष) जिनके परिवार की वार्षिक आय ₹2.5 लाख से कम हो।",
+  "lastVerified": "November 2026",
+  "benefitSummary_en": "Direct monthly grant of ₹1,250 (total ₹15,000 annually) transferred via Aadhaar DBT directly on the 10th of every month into bank accounts of married, widowed, divorced, and deserted women aged 21 to 60 in Madhya Pradesh via cmladlibahna.mp.gov.in.",
+  "benefitSummary_hi": "मध्य प्रदेश की 21 से 60 वर्ष की पात्र बहनों को हर महीने की 10 तारीख को ₹1,250 की निश्चित आर्थिक सहायता (सालाना ₹15,000)। cmladlibahna.mp.gov.in पोर्टल पर समग्र आईडी व आधार डीबीटी द्वारा सीधा भुगतान।",
+  "benefitAmount_en": "₹1,250 per month (₹15,000 annually, planned up to ₹3,000)",
+  "benefitAmount_hi": "₹1,250 प्रति माह (सालाना ₹15,000, भविष्य में ₹3,000 तक)",
+  "whoCanApply_en": "Permanent resident women of Madhya Pradesh aged 21 to 60 years whose family combined annual income is less than ₹2.5 Lakh.",
+  "whoCanApply_hi": "मध्य प्रदेश की 21 से 60 वर्ष की स्थायी निवासी महिलाएं (विवाहित, विधवा, तलाकशुदा व परित्यक्ता) जिनके परिवार की वार्षिक आय ₹2.5 लाख से कम हो।",
   "applicationMode": "Gram Panchayat & Ward Camps via cmladlibahna.mp.gov.in",
   "bannerImage": "/images/schemes/ladli-behna-yojana.webp",
-  "whatIsThis_en": "Mukhyamantri Ladli Behna Yojana is Madhya Pradesh's landmark direct benefit transfer scheme empowering women economically and supporting healthcare and nutritional autonomy.",
-  "whatIsThis_hi": "लाड़ली बहना योजना मध्य प्रदेश शासन की प्रमुख योजना है जिसका उद्देश्य प्रदेश की बहनों को आर्थिक रूप से स्वावलंबी और सशक्त बनाना है।",
+  "whatIsThis_en": "Mukhyamantri Ladli Behna Yojana is Madhya Pradesh Government's flagship direct benefit transfer (DBT) scheme launched by the Women and Child Development Department. Administered to provide financial independence, improve maternal healthcare, and strengthen domestic decision-making, the scheme credits ₹1,250 every single month directly into the Aadhaar-linked bank account of over 1.29 crore women across MP. The state government has also laid out a phased roadmap to increase this assistance progressively to ₹1,500, ₹1,750, and eventually up to ₹3,000 per month.",
+  "whatIsThis_hi": "मुख्यमंत्री लाड़ली बहना योजना मध्य प्रदेश सरकार के महिला एवं बाल विकास विभाग द्वारा संचालित प्रदेश की सबसे बड़ी और ऐतिहासिक डीबीटी (DBT) कल्याणकारी योजना है। इसका मुख्य उद्देश्य प्रदेश की 1.29 करोड़ से अधिक बहनों को आर्थिक रूप से आत्मनिर्भर बनाना, उनके स्वास्थ्य व पोषण स्तर में सुधार करना और परिवार के निर्णयों में उनकी भागीदारी को मजबूत करना है। इस योजना के तहत प्रत्येक माह की 10 तारीख को बहनों के बैंक खाते में ₹1,250 की राशि डीबीटी द्वारा ट्रांसफर की जाती है। राज्य सरकार ने इसे चरणबद्ध तरीके से बढ़ाकर ₹1,500, ₹1,750 और भविष्य में ₹3,000 प्रति माह तक ले जाने का आधिकारिक संकल्प लिया है।",
   "benefitsList_en": [
-    "Guaranteed ₹1,250 credited on the 10th of every calendar month.",
-    "Annual financial cushion of ₹15,000 per eligible woman.",
-    "No physical queue required—processed through Aadhaar DBT enabled bank accounts.",
-    "Special priority during regional nutrition and health initiatives."
+    "₹1,250 Guaranteed Monthly Transfer: Credited reliably on the 10th of every calendar month (or pre-advanced during major festivals like Raksha Bandhan/Diwali).",
+    "Progressive Hike Roadmap: Policy framework to enhance monthly assistance incrementally from ₹1,250 to ₹1,500, ₹1,750, and up to ₹3,000 per month.",
+    "₹15,000 Annual Financial Support: Direct financial cushion enabling women to meet personal health, medical, child education, and self-employment needs.",
+    "Paperless Digital Disbursement: 100% money transferred via NPCI Aadhaar DBT directly to the beneficiary's individual account, eliminating all middle-men.",
+    "Subsidized Domestic LPG Cylinders: Eligible Ladli Behna beneficiaries additionally qualify for ₹450 subsidized LPG domestic gas refills.",
+    "Tractor Ownership Exemption: Families owning an agricultural tractor are explicitly permitted to benefit from the scheme."
   ],
   "benefitsList_hi": [
-    "प्रत्येक माह की 10 तारीख को सीधे बैंक खाते में ₹1,250 का गारंटीड अंतरण।",
-    "प्रति पात्र महिला को सालाना ₹15,000 की वित्तीय संबलता।",
-    "आधार-लिंक डीबीटी बैंक खाते के जरिए पारदर्शी भुगतान।",
-    "परिवार के पोषण, स्वास्थ्य व स्वरोजगार में प्रत्यक्ष सहयोग।"
+    "हर महीने की 10 तारीख को ₹1,250 का निश्चित भुगतान: प्रत्येक माह की 10 तारीख को (या रक्षाबंधन/त्योहारों पर समय से पूर्व) सीधे बैंक खाते में गारंटीड क्रेडिट।",
+    "₹3,000 तक बढ़ोतरी का रोडमैप: योजना की राशि को चरणबद्ध तरीके से ₹1,250 से बढ़ाकर ₹1,500 और अंततः ₹3,000 प्रति माह करने का नीतिगत संकल्प।",
+    "सालाना ₹15,000 की वित्तीय संबलता: बहनों को अपने व्यक्तिगत स्वास्थ्य, पोषण, बच्चों की पढ़ाई और स्वरोजगार के लिए आत्मनिर्भरता।",
+    "100% डीबीटी (DBT) भुगतान: बिना किसी बिचौलिए या कमीशन के सीधे आधार-सीडेड बैंक खाते में सुरक्षित राशि ट्रांसफर।",
+    "₹450 में गैस सिलेंडर का अतिरिक्त लाभ: लाड़ली बहना योजना की पात्र बहनों को प्रधानमंत्री उज्ज्वला योजना या गैर-उज्ज्वला के तहत ₹450 में गैस सिलेंडर रीफिल।",
+    "ट्रैक्टर मालिक परिवारों को विशेष छूट: कृषि उपयोग के लिए 1 ट्रैक्टर रखने वाले परिवारों की बहनों को भी योजना में शामिल किया गया है।"
   ],
   "eligibility": {
     "eligibleIf_en": [
-      "Permanent resident of Madhya Pradesh.",
-      "Age between 21 and 60 years on the date of application.",
-      "Married, widowed, divorced, or legally separated women.",
-      "Family combined annual income less than ₹2.5 Lakh."
+      "Permanent resident of Madhya Pradesh holding valid local domicile.",
+      "Age between 21 and 60 years on the cutoff date of the application round.",
+      "Marital status: Married, widowed, divorced, deserted, or legally separated women.",
+      "Family's combined gross annual income from all sources must not exceed ₹2,50,000 (Two Lakh Fifty Thousand).",
+      "Family combined agricultural land holding must be less than 5 acres.",
+      "Family may own one agricultural tractor (explicitly exempted from four-wheeler disqualification).",
+      "Beneficiary must possess an active individual bank account with Aadhaar NPCI DBT mapping enabled.",
+      "Samagra Family ID and Member ID must be 100% e-KYC compliant with Aadhaar."
     ],
     "eligibleIf_hi": [
-      "मध्य प्रदेश की स्थानीय निवासी महिला।",
-      "आवेदन के समय आयु 21 से 60 वर्ष के बीच हो।",
-      "विवाहित, विधवा, तलाकशुदा अथवा परित्यक्ता महिला।",
-      "परिवार की कुल वार्षिक आय ₹2.5 लाख से कम हो।"
+      "महिला अनिवार्य रूप से मध्य प्रदेश की स्थानीय निवासी होनी चाहिए।",
+      "आवेदन वर्ष के कटऑफ दिनांक को आयु 21 से 60 वर्ष के मध्य होनी चाहिए।",
+      "वैवाहिक स्थिति: विवाहित, विधवा, तलाकशुदा, परित्यक्ता एवं कानूनी रूप से अलग रह रही महिलाएं।",
+      "परिवार की सभी स्रोतों से कुल वार्षिक आय ₹2,50,000 (ढाई लाख रुपये) से कम होनी चाहिए।",
+      "परिवार के पास कुल कृषि भूमि 5 एकड़ (लगभग 2 हेक्टेयर) से कम होनी चाहिए।",
+      "परिवार के पास कृषि कार्य हेतु 1 ट्रैक्टर होने पर भी महिला पूर्ण रूप से पात्र है।",
+      "महिला का अपना व्यक्तिगत (सिंगल) बैंक खाता होना चाहिए, जिसमें NPCI आधार डीबीटी सक्रिय हो।",
+      "महिला की समग्र परिवार आईडी एवं 9 अंकों की समग्र सदस्य आईडी का आधार से ई-केवाईसी (e-KYC) पूर्ण होना अनिवार्य है।"
     ],
     "notEligibleIf_en": [
-      "Any family member is an income tax payee.",
+      "Unmarried girls under 21 years of age or women aged 60 years and above (covered under Old Age Pension).",
+      "Any member of the family is an active Income Tax payer.",
+      "Any family member is a regular/contractual/permanent government employee or pensioner in Central/State Government, local bodies, or public sector undertakings.",
       "Family owns more than 5 acres of agricultural land.",
-      "Family owns a four-wheeler (excluding tractor)."
+      "Family owns a four-wheeler light motor vehicle (car, jeep, SUV, commercial vehicle), excluding agricultural tractors.",
+      "Women already receiving ₹1,250 or more per month under other government welfare pensions.",
+      "Bank accounts with disabled NPCI DBT mapping or joint accounts with husband/relatives."
     ],
     "notEligibleIf_hi": [
-      "परिवार का कोई सदस्य आयकरदाता हो।",
-      "परिवार के पास कुल 5 एकड़ से अधिक कृषि भूमि हो।",
-      "परिवार में चार पहिया वाहन (ट्रैक्टर को छोड़कर) पंजीकृत हो।"
+      "21 वर्ष से कम उम्र की अविवाहित बेटियां अथवा 60 वर्ष से अधिक आयु की महिलाएं (जो वृद्धावस्था पेंशन के दायरे में आती हैं)।",
+      "परिवार का कोई भी सदस्य आयकरदाता (Income Tax Payer) हो।",
+      "परिवार का कोई सदस्य केंद्र, राज्य सरकार, निगम, मंडल या स्थानीय निकाय में नियमित, संविदा या स्थायी कर्मचारी अथवा पेंशनभोगी हो।",
+      "परिवार के पास संयुक्त रूप से 5 एकड़ से अधिक कृषि भूमि हो।",
+      "परिवार में ट्रैक्टर को छोड़कर अन्य कोई चार पहिया वाहन (कार, जीप, एसयूव्ही, टैक्सी) पंजीकृत हो।",
+      "महिला किसी अन्य शासकीय पेंशन योजना से पहले से ही ₹1,250 या उससे अधिक मासिक पेंशन प्राप्त कर रही हो।",
+      "बैंक खाते में NPCI आधार डीबीटी निष्क्रिय होना या पति के साथ संयुक्त (Joint) खाता होना।"
     ]
   },
   "requiredDocuments_en": [
-    "Samagra Family ID and Member ID (e-KYC verified)",
-    "Aadhaar Card linked with mobile number",
-    "Aadhaar-seeded personal bank account (DBT enabled)",
-    "Passport size photograph"
+    "Samagra Family ID and 9-digit Member ID (समग्र परिवार व सदस्य आईडी - fully e-KYC linked with Aadhaar)",
+    "Aadhaar Card of the applicant woman (Name, DOB & gender matching Samagra data)",
+    "Mobile Number linked with Aadhaar & Samagra (for receiving OTP and installment credit alerts)",
+    "Active Single Savings Bank Account Passbook (Aadhaar linked and NPCI DBT mapped in MP branch)",
+    "Passport-size photograph (captured live during camp biometric verification)"
   ],
   "requiredDocuments_hi": [
-    "समग्र परिवार आईडी व सदस्य आईडी (ई-केवाईसी पूर्ण)",
-    "आधार कार्ड (मोबाइल नंबर से लिंक)",
-    "व्यक्तिगत आधार-सीडेड डीबीटी बैंक खाता",
-    "पासपोर्ट साइज फोटो"
+    "1. समग्र परिवार आईडी एवं 9 अंकों की समग्र सदस्य आईडी (आधार से ई-केवाईसी पूर्ण)",
+    "2. महिला का आधार कार्ड (जिसमें नाम, जन्मतिथि व विवरण समग्र पोर्टल से मेल खाता हो)",
+    "3. आधार एवं समग्र से लिंक सक्रिय मोबाइल नंबर (ओटीपी एवं किस्त क्रेडिट SMS प्राप्त करने हेतु)",
+    "4. स्वयं के नाम का बैंक पासबुक (जिसमें खाता संख्या, IFSC कोड स्पष्ट हो और NPCI आधार डीबीटी सक्रिय हो)",
+    "5. पासपोर्ट साइज फोटो (ग्राम पंचायत/वार्ड शिविर में लाइव फोटो ली जाती है)"
   ],
   "howToApply_en": [
-    "Ensure your Samagra ID is e-KYC compliant and your bank account is DBT seeded.",
-    "Attend the designated Ladli Behna camp in your Gram Panchayat or Urban Ward.",
-    "Submit the application form with Samagra ID and Aadhaar.",
-    "The camp official takes your photo and registers biometric KYC, generating an acknowledgment slip."
+    "Step 1: Complete Samagra e-KYC: Visit samagra.gov.in or nearest CSC/Kiosk. Enter 9-digit Samagra Member ID and Aadhaar Number, verify via OTP/Biometric, and ensure your name, DOB, and gender strictly match.",
+    "Step 2: Activate Bank Aadhaar DBT: Visit your home bank branch. Submit the 'Aadhaar DBT Mandate Form' and confirm that your account is mapped on the NPCI clearing house (single account only).",
+    "Step 3: Attend Local Camp: When new application rounds (Round 3) are officially notified, visit your Gram Panchayat office or Urban Ward Camp.",
+    "Step 4: Form Submission & Live Photo: Present your Samagra Member ID and Aadhaar to the camp official. The official logs into the departmental portal, enters details, takes your live webcam photo, and submits.",
+    "Step 5: Collect Acknowledgment Slip: The portal generates an official acknowledgment slip containing your Application Number. Retain this slip safely for status tracking."
   ],
   "howToApply_hi": [
-    "अपनी समग्र आईडी का ई-केवाईसी और बैंक खाते में डीबीटी सक्रिय कराएं।",
-    "अपनी ग्राम पंचायत या वार्ड में आयोजित लाड़ली बहना शिविर में जाएं।",
-    "समग्र आईडी और आधार कार्ड के साथ आवेदन फॉर्म जमा करें।",
-    "अधिकारी द्वारा बायोमेट्रिक सत्यापन और फोटो खींचकर पावती रसीद दी जाएगी।"
+    "चरण 1: समग्र ई-केवाईसी (e-KYC) पूर्ण करें: सबसे पहले samagra.gov.in पोर्टल पर जाएं या नजदीकी एमपी ऑनलाइन / सीएससी कियोस्क पर जाकर अपनी 9 अंकों की समग्र सदस्य आईडी का आधार ई-केवाईसी कराएं।",
+    "चरण 2: बैंक खाते में आधार डीबीटी सक्रिय कराएं: अपनी बैंक शाखा में जाएं और 'Aadhaar NPCI DBT Mandate Form' भरकर जमा करें। सुनिश्चित करें कि खाता सिंगल हो और आधार से डीबीटी इनेबल हो।",
+    "चरण 3: ग्राम पंचायत या वार्ड शिविर में जाएं: जब सरकार द्वारा नए चरण (तीसरा चरण) के आवेदन की घोषणा हो, तब अपनी ग्राम पंचायत या नगर पालिका/वार्ड शिविर में उपस्थित हों।",
+    "चरण 4: फॉर्म प्रविष्टि व लाइव फोटो: शिविर में तैनात नोडल कर्मचारी को समग्र आईडी और आधार कार्ड दें। कर्मचारी पोर्टल पर विवरण दर्ज कर आपकी लाइव वेबकैम फोटो खींचेगा।",
+    "चरण 5: पावती रसीद (Acknowledgment Slip) प्राप्त करें: फॉर्म सबमिट होते ही सिस्टम द्वारा एक ऑनलाइन पावती रसीद जारी की जाएगी, जिसमें आपका लाड़ली बहना आवेदन क्रमांक अंकित होगा।"
   ],
-  "statusCheckGuide_en": "Visit cmladlibahna.mp.gov.in, click on \"आवेदन एवं भुगतान की स्थिति\", enter your Application Number or Samagra ID to verify monthly installment credits.",
-  "statusCheckGuide_hi": "cmladlibahna.mp.gov.in पोर्टल पर \"आवेदन एवं भुगतान की स्थिति\" पर क्लिक कर समग्र आईडी दर्ज करें और मासिक किस्त का स्टेटस देखें।",
+  "statusCheckGuide_en": "Visit cmladlibahna.mp.gov.in -> Click on 'आवेदन एवं भुगतान की स्थिति' (Application & Payment Status) -> Enter your 9-digit Samagra Member ID or Application Number -> Enter Captcha and click 'ओटीपी भेजें' (Send OTP) -> Enter OTP received on your registered mobile number and click Search. View complete stage status: 1) 'Approved / पात्र': You are an active beneficiary receiving monthly ₹1,250. 2) 'DBT Active: Yes / No': Indicates whether your bank account is clearing DBT payments. 3) 'भुगतान स्थिति': View month-wise installment credits, transaction UTR numbers, and credit dates.",
+  "statusCheckGuide_hi": "आधिकारिक पोर्टल cmladlibahna.mp.gov.in पर जाएं -> मुख्य मेन्यू में 'आवेदन एवं भुगतान की स्थिति' पर क्लिक करें -> अपना 9 अंकों का समग्र सदस्य आईडी अथवा लाड़ली बहना आवेदन क्रमांक दर्ज करें -> कैप्चा कोड भरकर 'ओटीपी भेजें' पर क्लिक करें -> रजिस्टर्ड मोबाइल पर प्राप्त OTP दर्ज कर 'खोजें' दबाएं। आपके सामने पूरा विवरण आ जाएगा: 1) पात्रता स्थिति: 'पात्र (Eligible)' होने पर हर महीने ₹1,250 मिलते रहेंगे। 2) बैंक डीबीटी स्थिति: 'डीबीटी सक्रिय: हाँ' होना अनिवार्य है। 3) भुगतान पावती: प्रत्येक महीने की किस्त का विवरण, भुगतान दिनांक और यूटीआर (UTR) नंबर देख सकते हैं।",
   "officialStatusUrl": "https://cmladlibahna.mp.gov.in",
   "commonProblems_en": [
     {
-      "problem": "Installment failed due to inactive DBT in bank",
-      "solution": "Visit your home bank branch and request an immediate Aadhaar-NPCI DBT mandate linking."
+      "problem": "Installment not credited / 'किस्त का पैसा नहीं आया' despite Eligible status",
+      "solution": "98% of payment failures occur because the bank account has inactive NPCI Aadhaar DBT mapping. Government funds are disbursed via Aadhaar DBT, not standard account numbers. Visit your bank branch in MP, submit an Aadhaar DBT Mandate Form, and verify your Aadhaar-banking mapping status on UIDAI or the Samagra portal."
+    },
+    {
+      "problem": "Third Round (तीसरा चरण) Online Application: When will it start and who can apply?",
+      "solution": "Applications for Ladli Behna Yojana are opened in designated administrative rounds by the MP Government. Women who turned 21 after previous cutoffs, newly married brides coming into MP, or those who missed Rounds 1 and 2 can apply during the upcoming Third Phase. Registration is carried out free of cost at Gram Panchayat and Ward camps."
+    },
+    {
+      "problem": "Samagra ID and Aadhaar Name / DOB Mismatch error",
+      "solution": "If your name spelling or birth date in Samagra does not match your Aadhaar card exactly, the camp system blocks submission. First, visit samagra.gov.in, initiate Aadhaar e-KYC to pull correct details from UIDAI into Samagra, and wait for Secretary/Ward Officer digital approval."
+    },
+    {
+      "problem": "Name missing from Final List ('अंतिम सूची में नाम नहीं है')",
+      "solution": "On cmladlibahna.mp.gov.in, navigate to 'अंतिम सूची' (Antim Suchi). Select your District, Local Body, Gram Panchayat/Ward, and Village. If your name is absent, verify your rejection reason under 'आपत्ति / निरस्त आवेदन सूची' and file an appeal at your Janpad Panchayat or Tehsil office."
     }
   ],
   "commonProblems_hi": [
     {
-      "problem": "किस्त खाते में न आना (DBT Inactive)",
-      "solution": "अपने बैंक में जाकर NPCI आधार मैपिंग फॉर्म भरकर डीबीटी सक्रिय कराएं।"
+      "problem": "पात्र (Eligible) होने के बाद भी ₹1,250 किस्त न आना (पैसा न आने का कारण)",
+      "solution": "इसका 98% कारण बैंक खाते में आधार NPCI डीबीटी (Aadhaar Seeding) निष्क्रिय होना होता है। सरकारी पैसा बैंक खाता नंबर से नहीं, बल्कि आधार नंबर से DBT द्वारा भेजा जाता है। तुरंत अपनी बैंक शाखा जाएं, 'Aadhaar DBT Mandate Form' जमा करें और बैंक से NPCI मैपिंग एक्टिव करवाएं।"
+    },
+    {
+      "problem": "लाड़ली बहना योजना तीसरा चरण (3rd Round): कब शुरू होगा और कौन पात्र होगा?",
+      "solution": "मध्य प्रदेश सरकार द्वारा तीसरे चरण के आवेदन शिविरों के माध्यम से खोले जाएंगे। 21 वर्ष की आयु पूरी कर चुकी नई बहनें, नवविवाहित बहुएं और पहले दो चरणों में छूटी हुई बहनें तीसरे चरण में आवेदन कर सकेंगी। आवेदन पूरी तरह निःशुल्क ग्राम पंचायत व वार्ड शिविरों में होता है।"
+    },
+    {
+      "problem": "समग्र आईडी और आधार में नाम या जन्मतिथि का अंतर (Mismatch Error)",
+      "solution": "यदि समग्र में दर्ज नाम या उम्र आधार कार्ड से मेल नहीं खाती, तो सिस्टम फॉर्म स्वीकार नहीं करता। samagra.gov.in पर जाकर 'ई-केवाईसी करें' विकल्प चुनें। आधार ओटीपी के जरिए समग्र डेटा को आधार के अनुसार अपडेट करें; पंचायत सचिव के अनुमोदन के बाद डेटा सही हो जाता है।"
+    },
+    {
+      "problem": "पोर्टल की अंतिम सूची (Antim Suchi) में नाम न दिखना",
+      "solution": "cmladlibahna.mp.gov.in पर जाकर 'अंतिम सूची' पर क्लिक करें। अपना जिला, स्थानीय निकाय, ग्राम पंचायत/वार्ड और गांव चुनें। यदि नाम नहीं है, तो 'आवेदन की स्थिति' में जाकर रिजेक्शन का कारण देखें और जनपद पंचायत कार्यालय में आपत्ति दर्ज कराएं।"
     }
   ],
   "faqs_en": [
     {
-      "q": "On which day of the month is the Ladli Behna amount credited?",
-      "a": "The installment of ₹1,250 is transferred directly on the 10th of every month into verified DBT accounts."
+      "q": "On which date of the month is the Ladli Behna ₹1,250 installment credited?",
+      "a": "The monthly installment of ₹1,250 is transferred directly into Aadhaar DBT bank accounts on the 10th of every calendar month. Prior to major festivals such as Raksha Bandhan, payments may be pre-advanced."
+    },
+    {
+      "q": "Will the monthly installment increase from ₹1,250 to ₹1,500 and ₹3,000?",
+      "a": "Yes! The Madhya Pradesh Government has committed to an official phased roadmap to escalate the monthly grant incrementally from ₹1,250 to ₹1,500 and eventually up to ₹3,000 per month."
+    },
+    {
+      "q": "Can women apply online from home using a mobile phone?",
+      "a": "No. To eliminate fraudulent entries and ensure biometric authenticity, application forms are accepted exclusively through designated Gram Panchayat and Urban Ward camps with live photo capture."
+    },
+    {
+      "q": "What should a woman do if her bank account is joint with her husband?",
+      "a": "Joint accounts are rejected by the DBT clearing house. The woman must hold an individual (single) savings bank account in her own name with active Aadhaar NPCI seeding."
+    },
+    {
+      "q": "Is Samagra e-KYC mandatory to receive the scheme benefits?",
+      "a": "Yes, 100% mandatory. The applicant's Samagra Family ID and 9-digit Member ID must be e-KYC compliant with Aadhaar on the samagra.gov.in portal."
+    },
+    {
+      "q": "Can families owning a tractor receive the Ladli Behna amount?",
+      "a": "Yes! While families owning commercial four-wheelers or passenger cars are disqualified, agricultural tractors are explicitly exempted."
+    },
+    {
+      "q": "Who is eligible to apply in the upcoming Third Round (तीसरा चरण)?",
+      "a": "Women aged 21 to 60 who missed the 1st and 2nd rounds, newly married brides entering MP families, and newly eligible 21-year-olds can apply during the 3rd phase."
+    },
+    {
+      "q": "How can I check my Ladli Behna payment history and UTR status online?",
+      "a": "Visit cmladlibahna.mp.gov.in, navigate to 'आवेदन एवं भुगतान की स्थिति', enter your Samagra ID, and verify with mobile OTP to view complete transaction UTRs and credit dates."
     }
   ],
   "faqs_hi": [
     {
-      "q": "लाड़ली बहना योजना का पैसा महीने की किस तारीख को आता है?",
-      "a": "योजना की ₹1,250 की मासिक किस्त प्रत्येक माह की 10 तारीख को बैंक खाते में डीबीटी द्वारा ट्रांसफर की जाती है।"
+      "q": "लाड़ली बहना योजना की ₹1,250 की किस्त महीने की किस तारीख को आती है?",
+      "a": "योजना की ₹1,250 की मासिक किस्त हर महीने की 10 तारीख को सीधे आधार-लिंक बैंक खाते में डीबीटी द्वारा ट्रांसफर की जाती है। रक्षाबंधन या विशेष त्योहारों पर इसे पहले भी जारी किया जाता है।"
+    },
+    {
+      "q": "क्या लाड़ली बहना की राशि ₹1,250 से बढ़कर ₹1,500 और ₹3,000 होगी?",
+      "a": "हाँ! मध्य प्रदेश शासन द्वारा इस सहायता राशि को चरणबद्ध तरीके से बढ़ाकर ₹1,500 और अंततः ₹3,000 प्रति माह करने का आधिकारिक संकल्प घोषित किया गया है।"
+    },
+    {
+      "q": "क्या महिलाएं घर बैठे मोबाइल से ऑनलाइन फॉर्म भर सकती हैं?",
+      "a": "नहीं। फर्जीवाड़े को रोकने और बायोमेट्रिक लाइव फोटो सत्यापन के लिए आवेदन केवल ग्राम पंचायत व नगरीय वार्ड स्तर पर आयोजित अधिकृत शिविरों में ही भरे जाते हैं।"
+    },
+    {
+      "q": "यदि बैंक खाता पति के साथ संयुक्त (Joint) हो, तो क्या किस्त का पैसा आएगा?",
+      "a": "नहीं। संयुक्त खाते में डीबीटी ट्रांसफर रिजेक्ट हो जाता है। महिला का स्वयं के नाम पर व्यक्तिगत (सिंगल) बचत बैंक खाता होना और उसमें आधार NPCI लिंक होना अनिवार्य है।"
+    },
+    {
+      "q": "क्या समग्र ई-केवाईसी (Samagra e-KYC) कराना अनिवार्य है?",
+      "a": "हाँ, 100% अनिवार्य है। समग्र पोर्टल (samagra.gov.in) पर 9 अंकों की समग्र सदस्य आईडी का आधार ई-केवाईसी पूरा होना चाहिए, जिसमें नाम व जन्मतिथि आधार के अनुरूप हो।"
+    },
+    {
+      "q": "क्या जिस परिवार में ट्रैक्टर है, उस परिवार की महिलाएं पात्र हैं?",
+      "a": "हाँ, बिल्कुल! चार पहिया वाहन के नियम में कृषि उपयोग के ट्रैक्टर को विशेष छूट दी गई है। जिन किसान परिवारों के पास ट्रैक्टर है, उनकी बहनें भी पूरी पात्र हैं।"
+    },
+    {
+      "q": "तीसरे चरण (3rd Round) में कौन-कौन सी बहनें आवेदन कर सकेंगी?",
+      "a": "जो बहनें पहले व दूसरे चरण में किसी कारणवश छूट गई थीं, जिनकी आयु हाल ही में 21 वर्ष पूरी हुई है, या जो नवविवाहित बहुएं हैं, वे तीसरे चरण के शिविरों में आवेदन कर सकेंगी।"
+    },
+    {
+      "q": "लाड़ली बहना पेमेंट स्टेटस और यूटीआर (UTR) नंबर ऑनलाइन कैसे चेक करें?",
+      "a": "पोर्टल cmladlibahna.mp.gov.in पर जाएं -> 'आवेदन एवं भुगतान की स्थिति' चुनें -> अपनी 9 अंकों की समग्र सदस्य आईडी दर्ज करें और मोबाइल OTP डालकर पूरा भुगतान विवरण देखें।"
     }
   ],
   "officialSources": [
@@ -2893,19 +2997,52 @@ export const SCHEMES: Scheme[] = [
       "name": "Women & Child Development Department",
       "authority": "Government of Madhya Pradesh",
       "url": "https://cmladlibahna.mp.gov.in",
-      "verificationDate": "October 26, 2026"
+      "verificationDate": "November 2026"
+    },
+    {
+      "name": "Samagra Social Security Mission",
+      "authority": "Government of Madhya Pradesh",
+      "url": "https://samagra.gov.in",
+      "verificationDate": "November 2026"
     }
   ],
   "keywords": [
-    "ladli behna yojana mp",
-    "ladli behna 1250 status",
+    "ladli behna yojana",
+    "mukhyamantri ladli behna yojana",
     "cmladlibahna mp gov in",
-    "mp women scheme",
+    "ladli behna yojana mp",
+    "ladli behna yojana kist kab aayegi",
+    "ladli behna yojana status check",
+    "cmladlibahna mp gov in login",
+    "ladli behna yojana online apply 2026",
+    "ladli behna yojana payment status",
+    "ladli behna yojana list",
+    "ladli behna yojana installment date",
+    "ladli behna yojana next installment date",
+    "ladli behna yojana eligibility",
+    "ladli behna yojana antim suchi",
+    "ladli behna yojana 1250",
+    "ladli behna yojana teesra charan kab shuru hoga",
+    "ladli behna yojana samagra ekyc",
+    "ladli behna yojana dbt status",
+    "ladli behna yojana paisa nahi aaya to kya kare",
+    "ladli behna yojana documents required",
+    "ladli behna yojana 1500 kab se milega",
+    "ladli behna yojana 3000 kab honge",
+    "ladli behna yojana 3rd round online apply",
+    "ladli behna yojana aavedan sthiti samagra id",
+    "मुख्यमंत्री लाड़ली बहना योजना",
     "लाड़ली बहना योजना",
-    "लाड़ली बहना स्टेटस"
+    "लाड़ली बहना योजना स्टेटस चेक",
+    "लाड़ली बहना योजना की किस्त कब आएगी",
+    "लाड़ली बहना योजना तीसरा चरण",
+    "लाड़ली बहना योजना अंतिम सूची 2026",
+    "लाड़ली बहना योजना पेमेंट स्टेटस",
+    "लाड़ली बहना योजना समग्र ईकेवाईसी",
+    "लाड़ली बहना योजना का पैसा नहीं आया तो क्या करें"
   ],
-  "metaDescription_en": "Ladli Behna Yojana MP: ₹1,250 monthly assistance for women in Madhya Pradesh. Eligibility criteria, Samagra e-KYC, installment payment status, and portal guide.",
-  "metaDescription_hi": "लाड़ली बहना योजना मध्य प्रदेश: ₹1250 मासिक सहायता, समग्र ई-केवाईसी, पात्रता नियम, आवश्यक दस्तावेज और भुगतान स्टेटस।"
+  "metaDescription_en": "MP Mukhyamantri Ladli Behna Yojana 2026: Check ₹1,250 installment date, online payment status by Samagra ID, 3rd round application camps, and e-KYC guidelines on cmladlibahna.mp.gov.in.",
+  "metaDescription_hi": "मुख्यमंत्री लाड़ली बहना योजना मध्य प्रदेश 2026: ₹1250 किस्त कब आएगी, समग्र आईडी से स्टेटस चेक, तीसरा चरण आवेदन, ₹3000 बढ़ोतरी रोडमैप व समग्र e-KYC समाधान।"
 },
 
 {

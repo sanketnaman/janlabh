@@ -688,6 +688,34 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               </div>
             )}
 
+            {/* Dedicated Live Alert on MP Ladli Behna Yojana Page */}
+            {scheme.slug === 'ladli-behna-yojana-madhya-pradesh' && (
+              <div className="p-4 rounded-xl bg-gradient-to-r from-teal-50 via-emerald-50 to-amber-50 dark:from-teal-950/40 dark:via-emerald-950/30 dark:to-slate-900 border border-teal-200 dark:border-teal-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 font-bold text-teal-950 dark:text-teal-300">
+                    <Sparkles className="h-4 w-4 text-teal-600 dark:text-teal-400 shrink-0" />
+                    <span>
+                      {isHi ? 'लाड़ली बहना योजना: हर माह 10 तारीख को ₹1,250 किस्त, अंतिम सूची एवं समग्र ई-केवाईसी अपडेट' : 'Ladli Behna Yojana MP: ₹1,250 Monthly Installment on 10th, Antim Suchi & Samagra e-KYC Guide'}
+                    </span>
+                  </div>
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    {isHi
+                      ? 'हर महीने 10 तारीख को बहनों के एकल बैंक खाते में ₹1,250 की किस्त DBT द्वारा ट्रांसफर होती है। तीसरे चरण (3rd Round) के नए आवेदन व ई-केवाईसी समग्र पोर्टल (samagra.gov.in) पर एक्टिव बायोमेट्रिक/ओटीपी से जुड़े हैं। ₹450 एलपीजी सिलेंडर रिफिल का लाभ भी प्राप्त करें।'
+                      : 'Guaranteed credit of ₹1,250 every month on the 10th directly to single Aadhaar-linked accounts via DBT. Check antim suchi name list and Samagra e-KYC status at cmladlibahna.mp.gov.in.'}
+                  </p>
+                </div>
+                <a
+                  href="https://cmladlibahna.mp.gov.in"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs shadow-xs transition-colors"
+                >
+                  <span>{isHi ? 'लाड़ली बहना पोर्टल लॉगिन' : 'Official MP Portal Login'}</span>
+                  <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              </div>
+            )}
+
             {/* Quick Answer Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 text-xs">
               <div>
@@ -1489,6 +1517,134 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                     {isHi
                       ? 'नियमानुसार कुटुंबाच्या नावावर चारचाकी वाहन (कार, जीप, एसयूव्ही किंवा टॅक्सी) नोंदणीकृत असल्यास अपात्र मानले जाते। परंतु, शेतीसाठी वापरला जाणारा ट्रॅक्टर (Tractor) यातून पूर्णपणे वगळण्यात आला आहे। कुटुंबात ट्रॅक्टर असूनही अर्ज नामंजूर झाला असल्यास ग्रीव्हन्स टाकून ट्रॅक्टर आरसी बुक अपलोड करा।'
                       : 'Families owning personal four-wheelers (cars, SUVs, commercial taxis) are ineligible. However, agricultural tractors are explicitly exempted. If an application was mistakenly rejected for owning a tractor, submit a grievance attaching the tractor RC.'}
+                  </p>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* MP Mukhyamantri Ladli Behna Yojana Installment Calendar, Status & Samagra e-KYC Guide */}
+          {scheme.slug === 'ladli-behna-yojana-madhya-pradesh' && (
+            <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-teal-200 dark:border-teal-900/60 shadow-sm space-y-5">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-4">
+                <div>
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <Sparkles className="h-5 w-5 text-teal-600 dark:text-teal-400" />
+                    <span>{isHi ? 'मुख्यमंत्री लाड़ली बहना योजना (MP): ₹1,250 मासिक किस्त, 3rd राउंड आवेदन व समग्र ई-केवाईसी गाइड' : 'MP Ladli Behna: ₹1,250 Monthly Installment, 3rd Round Camps & Samagra e-KYC Guide'}</span>
+                  </h2>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                    {isHi ? 'हर माह 10 तारीख को किस्त ट्रांसफर, समग्र आईडी से अंतिम सूची व स्टेटस चेक, ₹450 गैस सिलेंडर सब्सिडी एवं समस्या समाधान' : '10th of every month installment calendar, antim suchi name check via Samagra ID, ₹450 LPG subsidy & troubleshooting'}
+                  </p>
+                </div>
+                <span className="self-start sm:self-auto px-3 py-1 bg-teal-100 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 font-bold text-xs rounded-full">
+                  {isHi ? 'हर माह ₹1,250 DBT' : '₹1,250 Monthly DBT'}
+                </span>
+              </div>
+
+              {/* Status and Parameters Table */}
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr className="bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200 dark:border-slate-700">
+                      <th className="py-2.5 px-3">{isHi ? 'घटक / विषय (Parameter)' : 'Parameter'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'नियम व ताज़ा स्थिति (Official Rule / Status)' : 'Official Rule / Status'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'लाड़ली बहनों के लिए आवश्यक दिशानिर्देश (Crucial Guidance)' : 'Guidance for Beneficiaries'}</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'मासिक आर्थिक सहायता (किस्त कैलेंडर)' : 'Monthly Grant (Installment Calendar)'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-teal-600 dark:text-teal-400">
+                        ₹1,250 {isHi ? 'प्रति माह (हर माह 10 तारीख)' : 'Per Month (10th of every month)'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'हर माह की 10 तारीख को बैंक खाते में सीधे ट्रांसफर। त्योहारों (जैसे रक्षाबंधन) पर अग्रिम भुगतान या अतिरिक्त बोनस भी मिलता है। सरकार का आगामी लक्ष्य इसे ₹3,000/माह करना है।' : 'Direct Aadhaar DBT transfer on the 10th of each month. Advanced or bonus payments during festive seasons. Target escalation up to ₹3,000/month.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'तीसरा चरण नया आवेदन (3rd Round)' : '3rd Round New Applications'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'ग्राम पंचायत व वार्ड कैंप्स (ऑनलाइन घर बैठे नहीं)' : 'In-Person Panchayat & Ward Camps'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'आवेदन केवल अधिकृत ग्राम पंचायत या आंगनवाड़ी कैंप में लाइव फोटो खींचकर जमा होता है। फॉर्म भरने के बाद पावती पर्ची (Acknowledgement Slip) अवश्य लें।' : 'Registrations require in-person camp attendance with live webcam photo. Do not fall for unauthorized private mobile apps or cyber cafe scams.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'समग्र आईडी व ई-केवाईसी (Samagra Mandate)' : 'Samagra ID & e-KYC Mandate'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-emerald-600 dark:text-emerald-400">
+                        {isHi ? '9 अंकों की सदस्य समग्र आईडी में आधार ई-केवाईसी अनिवार्य' : 'Aadhaar e-KYC on 9-digit Samagra ID'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'samagra.gov.in पर समग्र-आधार लिंक स्थिति जांचें। नाम, जन्मतिथि और पिता/पति के नाम में अंतर होने पर पहले समग्र में सुधार कराएं, तभी फॉर्म स्वीकार होगा।' : 'Verify Samagra-Aadhaar linking at samagra.gov.in. Any discrepancy between Aadhaar and Samagra records must be corrected prior to application.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'अंतिम सूची व स्टेटस चेक (Antim Suchi)' : 'Antim Suchi & Status Check'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'cmladlibahna.mp.gov.in पर सार्वजनिक सूची' : 'Public List on Official Portal'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'पोर्टल पर "अंतिम सूची" मेनू में जिला, तहसील, ग्राम पंचायत या वार्ड चुनकर पूरे गांव की स्वीकृत बहनों की सूची बिना किसी पासवर्ड के पीडीएफ में देख सकते हैं।' : 'Access full village/ward beneficiary lists under "अंतिम सूची" on cmladlibahna.mp.gov.in without requiring login credentials.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? '₹450 घरेलू एलपीजी गैस सिलेंडर (LPG Subsidy)' : '₹450 Domestic LPG Cylinder Refill'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-amber-600 dark:text-amber-400">
+                        {isHi ? 'उज्ज्वला व गैर-उज्ज्वला पात्र लाड़ली बहनें' : 'PMUY & Non-PMUY Eligible Women'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'जिन लाड़ली बहनों के नाम गैस कनेक्शन है, उन्हें ₹450 में सिलेंडर मिलता है। अपनी 17 अंकों की एलपीजी उपभोक्ता आईडी को पोर्टल पर लिंक कराएं; सब्सिडी सीधे खाते में आती है।' : 'Beneficiaries with LPG connection in their own name pay net ₹450. Link 17-digit LPG ID with Ladli Behna portal; subsidy differential is credited via DBT.'}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'चारपहिया वाहन vs कृषि ट्रैक्टर नियम' : 'Four-Wheeler vs Agricultural Tractor'}
+                      </td>
+                      <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'कार/जीप अपात्र, 1 ट्रैक्टर की पूर्ण छूट' : 'Cars Ineligible, 1 Tractor Permitted'}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {isHi ? 'परिवार के पास चारपहिया वाहन (कार, टैक्सी) होने पर अपात्र माना जाता है, लेकिन 1 कृषि ट्रैक्टर रखने वाले परिवारों को योजना में पात्र घोषित किया गया है।' : 'Owning personal four-wheelers (cars, SUVs, commercial taxis) disqualifies, but households owning one agricultural tractor are explicitly eligible.'}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Crucial Ground Realities: Single Account Mandate & Samagra e-KYC DBT Check */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px]">
+                <div className="p-3.5 rounded-xl bg-teal-50/80 dark:bg-teal-950/30 border border-teal-200 dark:border-teal-800 text-teal-950 dark:text-teal-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-teal-900 dark:text-teal-300">
+                    <Sparkles className="h-3.5 w-3.5 text-teal-600 shrink-0" />
+                    <span>{isHi ? 'एकल (Single) बैंक खाता अनिवार्य — संयुक्त खाते (Joint Accounts) में किस्त क्यों रुकती है?' : 'Single Bank Account Mandate — Joint Account Rejection Warning'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? 'लाड़ली बहना योजना की ₹1,250 की किस्त केवल महिला के स्वयं के नाम वाले एकल (Individual) बैंक खाते में ही भेजी जाती है। यदि खाता पति या परिवार के किसी अन्य सदस्य के साथ संयुक्त (Joint) है, तो पीएफएमएस और एनपीसीआई डीबीटी क्लियरिंग सिस्टम लेनदेन को निरस्त कर देता है। समाधान: किसी भी बैंक या पोस्ट ऑफिस (IPPB) में नया एकल शून्य-शेष खाता खुलवाकर तुरंत आधार डीबीटी सीडिंग फॉर्म जमा करें।'
+                      : 'The ₹1,250 monthly installment is cleared solely into an individual (single) account in the applicant\'s own name. Joint accounts shared with spouses or family members fail DBT clearing due to name-mismatch validations. Open an individual zero-balance account (e.g. at IPPB or any public bank) and enable NPCI Aadhaar DBT mapping immediately.'}
+                  </p>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-amber-950 dark:text-amber-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-amber-900 dark:text-amber-300">
+                    <Info className="h-3.5 w-3.5 text-amber-600 shrink-0" />
+                    <span>{isHi ? 'समग्र ई-केवाईसी और डीबीटी सक्रियता (DBT Inactive) कैसे जांचें?' : 'How to Check Samagra e-KYC & Bank DBT Status'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? 'किस्त रुकने का 90% कारण बैंक में डीबीटी इनएक्टिव होना या समग्र में आधार लिंक न होना होता है। samagra.gov.in पर "ई-केवाईसी स्थिति जानें" में अपनी 9 अंकों की समग्र आईडी दर्ज करके जांचें कि: (1) समग्र में आधार: हाँ, (2) बैंक में आधार: हाँ, और (3) डीबीटी सक्रिय स्थिति: हाँ। यदि कोई भी स्टेटस "नहीं" दिखे, तो तुरंत बैंक शाखा या एमपी ऑनलाइन कियोस्क पर संपर्क करें।'
+                      : 'Over 90% of payment failures stem from inactive Aadhaar DBT seeding or missing Samagra linkage. On samagra.gov.in, check "Know e-KYC Status" using your 9-digit member ID. Confirm that Aadhaar linkage, Bank linkage, and DBT status all reflect "Yes". If any is marked "No", submit an Aadhaar DBT mandate at your home bank branch immediately.'}
                   </p>
                 </div>
               </div>
