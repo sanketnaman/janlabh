@@ -38,7 +38,10 @@ import {
   Printer,
   TrendingUp,
   GraduationCap,
-  Info
+  Info,
+  Calculator,
+  Percent,
+  PhoneCall
 } from 'lucide-react';
 import { ARTICLES } from '@/data/articles';
 
@@ -61,6 +64,12 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
   const shareRef = useRef<HTMLDivElement>(null);
   const [checkedDocs, setCheckedDocs] = useState<Record<number, boolean>>({});
   const [slipModalOpen, setSlipModalOpen] = useState(false);
+
+  // Dedicated State for Bihar Student Credit Card EMI & Moratorium Calculator
+  const [bsccLoanAmount, setBsccLoanAmount] = useState<number>(400000);
+  const [bsccIsFemaleOrPwD, setBsccIsFemaleOrPwD] = useState<boolean>(true);
+  const [bsccRepayTenureYears, setBsccRepayTenureYears] = useState<number>(5);
+  const [bsccCourseDurationYears, setBsccCourseDurationYears] = useState<number>(4);
 
   const relevantArticles = React.useMemo(() => {
     return ARTICLES.filter((a) => {
@@ -716,6 +725,38 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
               </div>
             )}
 
+            {/* Dedicated Live Alert on Bihar Student Credit Card Page */}
+            {scheme.slug === 'bihar-student-credit-card-yojana' && (
+              <div className="p-4 rounded-xl bg-gradient-to-r from-amber-50 via-emerald-50 to-sky-50 dark:from-amber-950/40 dark:via-emerald-950/30 dark:to-slate-900 border border-amber-200 dark:border-amber-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-1.5 font-bold text-amber-950 dark:text-amber-300">
+                    <Sparkles className="h-4 w-4 text-amber-600 dark:text-amber-400 shrink-0" />
+                    <span>
+                      {isHi
+                        ? 'बिहार छात्र क्रेडिट कार्ड 2026: ₹4 लाख शिक्षा ऋण, 1% ब्याज दर व ₹35,000 लैपटॉप भत्ता'
+                        : 'Bihar Student Credit Card (BSCC) 2026: ₹4 Lakh Education Loan, 1% Interest & ₹35k Laptop Grant'}
+                    </span>
+                  </div>
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    {isHi
+                      ? '12वीं पास छात्रों को बी.टेक, नर्सिंग, एमबीबीएस, पॉलिटेक्निक और 42+ कोर्स हेतु 100% सरकारी गारंटी। छात्राओं को मात्र 1% व छात्रों को 4% साधारण ब्याज। पढ़ाई पूरी होने के 1 साल बाद तक कोई ईएमआई नहीं। टोल-फ्री हेल्पलाइन: 1800-345-6444।'
+                      : 'Collateral-free loan up to ₹4 Lakh for B.Tech, Nursing, MBBS, Polytechnic & 42+ courses. 1% interest for girls/PwD & 4% for boys. Zero EMI during course + 1 year moratorium. Helpline: 1800-345-6444.'}
+                  </p>
+                </div>
+                <div className="shrink-0 flex items-center gap-2">
+                  <a
+                    href="https://www.7nishchay-yuvaupmission.bihar.gov.in"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-xs transition-colors"
+                  >
+                    <span>{isHi ? 'MNSSBY पोर्टल लॉगिन' : 'MNSSBY Portal Login'}</span>
+                    <ExternalLink className="h-3.5 w-3.5" />
+                  </a>
+                </div>
+              </div>
+            )}
+
             {/* Quick Answer Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 text-xs">
               <div>
@@ -1051,33 +1092,43 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
             </section>
           )}
 
-          {/* Bihar Student Credit Card Special Rates & Terms Table */}
+          {/* Bihar Student Credit Card Special Rates, Terms & Interactive EMI Calculator */}
           {scheme.slug === 'bihar-student-credit-card-yojana' && (
-            <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-blue-200 dark:border-blue-900/60 shadow-sm space-y-5">
+            <section className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-blue-200 dark:border-blue-900/60 shadow-sm space-y-6">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-4">
                 <div>
                   <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
                     <GraduationCap className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-                    <span>{isHi ? 'बिहार स्टूडेंट क्रेडिट कार्ड ब्याज दर, लोन सीमा व शर्तें' : 'Bihar Student Credit Card Interest Rate, Loan Limit & Terms'}</span>
+                    <span>{isHi ? 'बिहार छात्र क्रेडिट कार्ड ब्याज दर, ईएमआई कैलकुलेटर व नियम' : 'Bihar Student Credit Card Interest Rate, EMI Calculator & Terms'}</span>
                   </h2>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                    {isHi ? 'बिहार राज्य शिक्षा वित्त निगम (BSEFC) द्वारा ₹4 लाख तक बिना गारंटी व 1% सरल ब्याज पर ऋण' : 'Collateral-free loan up to ₹4 Lakh by BSEFC with simple interest starting at 1%'}
+                    {isHi ? 'बिहार राज्य शिक्षा वित्त निगम (BSEFC) द्वारा ₹4 लाख तक 100% सरकारी गारंटी, 1% सरल ब्याज व ₹35,000 लैपटॉप भत्ता' : 'Collateral-free loan up to ₹4 Lakh by BSEFC with simple interest starting at 1% and ₹35,000 laptop grant'}
                   </p>
                 </div>
-                <span className="self-start sm:self-auto px-3 py-1 bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 font-bold text-xs rounded-full">
-                  {isHi ? '100% सरकारी गारंटी' : '100% State Guarantee'}
-                </span>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 font-bold text-xs rounded-full border border-blue-200 dark:border-blue-800">
+                    {isHi ? '100% सरकारी गारंटी' : '100% State Guarantee'}
+                  </span>
+                  <a
+                    href="tel:18003456444"
+                    className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200 border border-amber-300 dark:border-amber-800 hover:bg-amber-200 transition-colors"
+                  >
+                    <PhoneCall className="h-3 w-3 text-amber-700 dark:text-amber-400" />
+                    <span>1800-345-6444 {isHi ? '(टोल-फ्री)' : '(Toll-Free)'}</span>
+                  </a>
+                </div>
               </div>
 
+              {/* Rates & Entitlement Table */}
               <div className="overflow-x-auto">
                 <table className="w-full text-xs text-left border-collapse">
                   <thead>
                     <tr className="bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200 dark:border-slate-700">
                       <th className="py-2.5 px-3">{isHi ? 'छात्र श्रेणी / वर्ग' : 'Category / Beneficiary'}</th>
                       <th className="py-2.5 px-3">{isHi ? 'ब्याज दर (Interest Rate)' : 'Interest Rate'}</th>
-                      <th className="py-2.5 px-3">{isHi ? 'अधिकतम लोन' : 'Max Loan Limit'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'अधिकतम लोन सीमा' : 'Max Loan Limit'}</th>
                       <th className="py-2.5 px-3">{isHi ? 'मोराटोरियम (EMI छूट)' : 'Moratorium Period'}</th>
-                      <th className="py-2.5 px-3">{isHi ? 'पैसा भुगतान का माध्यम' : 'Disbursement Method'}</th>
+                      <th className="py-2.5 px-3">{isHi ? 'लैपटॉप व मेस भत्ता' : 'Laptop & Mess Allowance'}</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
@@ -1090,7 +1141,9 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                       </td>
                       <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">₹4,00,000</td>
                       <td className="py-2.5 px-3">{isHi ? 'कोर्स + 1 वर्ष (0 EMI)' : 'Course + 1 Year (0 EMI)'}</td>
-                      <td className="py-2.5 px-3">{isHi ? 'कॉलेज + छात्र बैंक खाता' : 'College + Student Bank A/c'}</td>
+                      <td className="py-2.5 px-3 font-semibold text-emerald-700 dark:text-emerald-400">
+                        ₹35,000 {isHi ? 'लैपटॉप + हॉस्टल मेस' : 'Laptop + Hostel Mess'}
+                      </td>
                     </tr>
                     <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
                       <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
@@ -1101,7 +1154,9 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                       </td>
                       <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">₹4,00,000</td>
                       <td className="py-2.5 px-3">{isHi ? 'कोर्स + 1 वर्ष (0 EMI)' : 'Course + 1 Year (0 EMI)'}</td>
-                      <td className="py-2.5 px-3">{isHi ? 'कॉलेज + छात्र बैंक खाता' : 'College + Student Bank A/c'}</td>
+                      <td className="py-2.5 px-3 font-semibold text-emerald-700 dark:text-emerald-400">
+                        ₹35,000 {isHi ? 'लैपटॉप + हॉस्टल मेस' : 'Laptop + Hostel Mess'}
+                      </td>
                     </tr>
                     <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
                       <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">
@@ -1112,35 +1167,252 @@ export default function SchemeDetailView({ scheme, initialLang = 'en' }: SchemeD
                       </td>
                       <td className="py-2.5 px-3 font-bold text-slate-900 dark:text-white">₹4,00,000</td>
                       <td className="py-2.5 px-3">{isHi ? 'कोर्स + 1 वर्ष (0 EMI)' : 'Course + 1 Year (0 EMI)'}</td>
-                      <td className="py-2.5 px-3">{isHi ? 'कॉलेज + छात्र बैंक खाता' : 'College + Student Bank A/c'}</td>
+                      <td className="py-2.5 px-3 font-semibold text-emerald-700 dark:text-emerald-400">
+                        ₹35,000 {isHi ? 'लैपटॉप + हॉस्टल मेस' : 'Laptop + Hostel Mess'}
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
-              {/* Crucial Ground Realities: Subsequent Payment & Out-of-State College Rules */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px]">
+              {/* Interactive BSCC EMI & Moratorium Calculator */}
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-50 via-sky-50/40 to-blue-50/60 dark:from-slate-800/80 dark:via-slate-800/60 dark:to-blue-950/30 border border-blue-200/80 dark:border-blue-900/60 space-y-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-blue-100 dark:border-blue-900/40 pb-3">
+                  <div className="flex items-center gap-2">
+                    <div className="p-2 rounded-xl bg-blue-600 text-white">
+                      <Calculator className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h3 className="text-base font-bold text-slate-900 dark:text-white">
+                        {isHi ? 'स्टूडेंट क्रेडिट कार्ड ईएमआई कैलकुलेटर (1% / 4% ब्याज दर)' : 'Student Credit Card EMI & Interest Calculator'}
+                      </h3>
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400">
+                        {isHi ? 'अपनी ऋण राशि और श्रेणी चुनकर मासिक ईएमआई व ब्याज बचत की लाइव गणना करें:' : 'Calculate your monthly EMI and interest savings under subsidized simple interest:'}
+                      </p>
+                    </div>
+                  </div>
+                  <span className="self-start sm:self-auto px-2.5 py-1 bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 font-bold text-[11px] rounded-full border border-emerald-300 dark:border-emerald-800">
+                    {isHi ? 'साधारण ब्याज (No Compound)' : 'Simple Interest'}
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {/* Left Controls */}
+                  <div className="space-y-4">
+                    {/* Category Toggle */}
+                    <div>
+                      <label className="text-xs font-semibold text-slate-700 dark:text-slate-300 block mb-1.5">
+                        {isHi ? 'आवेदक श्रेणी (Applicant Category):' : 'Applicant Category:'}
+                      </label>
+                      <div className="grid grid-cols-2 gap-2 text-xs">
+                        <button
+                          type="button"
+                          onClick={() => setBsccIsFemaleOrPwD(true)}
+                          className={`p-2.5 rounded-xl border text-left font-semibold transition-all cursor-pointer ${
+                            bsccIsFemaleOrPwD
+                              ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm'
+                              : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-emerald-400'
+                          }`}
+                        >
+                          <div>{isHi ? 'छात्राएं / दिव्यांग / थर्ड जेंडर' : 'Female / PwD / Transgender'}</div>
+                          <div className={`text-[10px] ${bsccIsFemaleOrPwD ? 'text-emerald-100' : 'text-emerald-600 dark:text-emerald-400'} font-bold`}>
+                            ★ मात्र 1% साधारण ब्याज
+                          </div>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setBsccIsFemaleOrPwD(false)}
+                          className={`p-2.5 rounded-xl border text-left font-semibold transition-all cursor-pointer ${
+                            !bsccIsFemaleOrPwD
+                              ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
+                              : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-blue-400'
+                          }`}
+                        >
+                          <div>{isHi ? 'सामान्य / ओबीसी / एससी छात्र' : 'Male Students (All Categories)'}</div>
+                          <div className={`text-[10px] ${!bsccIsFemaleOrPwD ? 'text-blue-100' : 'text-blue-600 dark:text-blue-400'} font-bold`}>
+                            ★ मात्र 4% साधारण ब्याज
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Loan Amount Slider */}
+                    <div>
+                      <div className="flex items-center justify-between text-xs mb-1">
+                        <span className="font-semibold text-slate-700 dark:text-slate-300">
+                          {isHi ? 'ऋण राशि (Loan Amount):' : 'Loan Amount:'}
+                        </span>
+                        <span className="font-extrabold text-blue-700 dark:text-blue-400 text-sm">
+                          ₹{bsccLoanAmount.toLocaleString('en-IN')}
+                        </span>
+                      </div>
+                      <input
+                        type="range"
+                        min={50000}
+                        max={400000}
+                        step={10000}
+                        value={bsccLoanAmount}
+                        onChange={(e) => setBsccLoanAmount(Number(e.target.value))}
+                        className="w-full accent-blue-600 h-2 bg-slate-200 dark:bg-slate-700 rounded-lg cursor-pointer"
+                      />
+                      <div className="flex justify-between text-[10px] text-slate-400 mt-1">
+                        <span>₹50,000</span>
+                        <span>₹2,00,000</span>
+                        <span>₹4,00,000 (Max)</span>
+                      </div>
+                    </div>
+
+                    {/* Course Duration Selector */}
+                    <div>
+                      <div className="flex items-center justify-between text-xs mb-1">
+                        <span className="font-semibold text-slate-700 dark:text-slate-300">
+                          {isHi ? 'कोर्स की अवधि (Course Duration):' : 'Course Duration:'}
+                        </span>
+                        <span className="font-bold text-slate-900 dark:text-white text-xs">
+                          {bsccCourseDurationYears} {isHi ? 'वर्ष' : 'Years'}
+                        </span>
+                      </div>
+                      <div className="grid grid-cols-3 gap-2 text-xs">
+                        {[
+                          { years: 3, label: isHi ? '3 वर्ष (पॉलिटेक्निक/BCA)' : '3 Yrs (Diploma/BCA)' },
+                          { years: 4, label: isHi ? '4 वर्ष (बीटेक/नर्सिंग)' : '4 Yrs (B.Tech/Nursing)' },
+                          { years: 5, label: isHi ? '5 वर्ष (MBBS/Law)' : '5 Yrs (MBBS/Law)' }
+                        ].map((item) => (
+                          <button
+                            key={item.years}
+                            type="button"
+                            onClick={() => setBsccCourseDurationYears(item.years)}
+                            className={`py-1.5 px-2 rounded-lg text-[11px] font-semibold border transition-all cursor-pointer ${
+                              bsccCourseDurationYears === item.years
+                                ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900 border-slate-900 dark:border-white shadow-xs'
+                                : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                            }`}
+                          >
+                            {item.label}
+                          </button>
+                        ))}
+                      </div>
+                      <p className="text-[10px] text-emerald-700 dark:text-emerald-400 mt-1 font-medium">
+                        ✓ {isHi ? `मोराटोरियम: ${bsccCourseDurationYears + 1} साल तक 0 ईएमआई (कोर्स पूरा होने के 1 साल बाद तक कोई भुगतान नहीं)` : `Moratorium: ${bsccCourseDurationYears + 1} years of 0 EMI (Zero repayment until 1 yr post-completion)`}
+                      </p>
+                    </div>
+
+                    {/* Repayment Tenure Slider */}
+                    <div>
+                      <div className="flex items-center justify-between text-xs mb-1">
+                        <span className="font-semibold text-slate-700 dark:text-slate-300">
+                          {isHi ? 'ऋण वापसी अवधि (Repayment Tenure):' : 'Repayment Tenure:'}
+                        </span>
+                        <span className="font-extrabold text-blue-700 dark:text-blue-400 text-sm">
+                          {bsccRepayTenureYears} {isHi ? 'वर्ष (84 माह अधिकतम)' : 'Years (84 mo max)'}
+                        </span>
+                      </div>
+                      <input
+                        type="range"
+                        min={1}
+                        max={7}
+                        step={1}
+                        value={bsccRepayTenureYears}
+                        onChange={(e) => setBsccRepayTenureYears(Number(e.target.value))}
+                        className="w-full accent-blue-600 h-2 bg-slate-200 dark:bg-slate-700 rounded-lg cursor-pointer"
+                      />
+                      <div className="flex justify-between text-[10px] text-slate-400 mt-1">
+                        <span>1 वर्ष (12 माह)</span>
+                        <span>5 वर्ष (60 माह)</span>
+                        <span>7 वर्ष (84 माह)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Right Results Box */}
+                  <div className="p-4 rounded-xl bg-white dark:bg-slate-900 border border-blue-200 dark:border-blue-800 flex flex-col justify-between space-y-3">
+                    <div className="space-y-2.5">
+                      <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-2 text-xs">
+                        <span className="text-slate-500 dark:text-slate-400">{isHi ? 'लागू ब्याज दर (Interest Rate):' : 'Applicable Interest Rate:'}</span>
+                        <span className="font-bold text-emerald-600 dark:text-emerald-400 text-sm">
+                          {bsccIsFemaleOrPwD ? '1% प्रति वर्ष (Simple)' : '4% प्रति वर्ष (Simple)'}
+                        </span>
+                      </div>
+
+                      <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-2 text-xs">
+                        <span className="text-slate-500 dark:text-slate-400">{isHi ? 'कुल ब्याज राशि (Total Interest):' : 'Total Simple Interest:'}</span>
+                        <span className="font-bold text-slate-900 dark:text-white">
+                          ₹{Math.round((bsccLoanAmount * (bsccIsFemaleOrPwD ? 1 : 4) * bsccRepayTenureYears) / 100).toLocaleString('en-IN')}
+                        </span>
+                      </div>
+
+                      <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-2 text-xs">
+                        <span className="text-slate-500 dark:text-slate-400">{isHi ? 'कुल वापसी राशि (Principal + Interest):' : 'Total Repayment Amount:'}</span>
+                        <span className="font-bold text-slate-900 dark:text-white">
+                          ₹{(bsccLoanAmount + Math.round((bsccLoanAmount * (bsccIsFemaleOrPwD ? 1 : 4) * bsccRepayTenureYears) / 100)).toLocaleString('en-IN')}
+                        </span>
+                      </div>
+
+                      <div className="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-center">
+                        <span className="text-[11px] font-semibold text-emerald-800 dark:text-emerald-300 block">
+                          {isHi ? 'अनुमानित मासिक ईएमआई (Monthly EMI):' : 'Estimated Monthly EMI:'}
+                        </span>
+                        <span className="text-2xl font-black text-emerald-700 dark:text-emerald-300">
+                          ₹{Math.round((bsccLoanAmount + Math.round((bsccLoanAmount * (bsccIsFemaleOrPwD ? 1 : 4) * bsccRepayTenureYears) / 100)) / (bsccRepayTenureYears * 12)).toLocaleString('en-IN')}
+                          <span className="text-xs font-normal text-emerald-600"> / {isHi ? 'माह' : 'mo'}</span>
+                        </span>
+                        <span className="text-[10px] text-emerald-600 dark:text-emerald-400 block mt-0.5">
+                          {isHi ? `(कुल ${bsccRepayTenureYears * 12} मासिक किस्तों में देय)` : `(Payable across ${bsccRepayTenureYears * 12} monthly installments)`}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Commercial Bank Comparison Note */}
+                    <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-[10px] text-slate-600 dark:text-slate-400 space-y-0.5">
+                      <span className="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1">
+                        <TrendingUp className="h-3 w-3 text-blue-600" />
+                        {isHi ? 'कमर्शियल बैंक बनाम बिहार स्टूडेंट क्रेडिट कार्ड बचत:' : 'Commercial Bank vs Bihar Student Credit Card:'}
+                      </span>
+                      <p>
+                        {isHi
+                          ? `कमर्शियल बैंकों में 11.5% चक्रवृद्धि ब्याज पर इसी लोन की ईएमआई ~₹${Math.round((bsccLoanAmount / (bsccRepayTenureYears * 12)) + (bsccLoanAmount * 0.007)).toLocaleString('en-IN')}/माह बनती है। बिहार सरकार की इस योजना से छात्र को ₹1,00,000+ से अधिक की सीधी ब्याज बचत होती है।`
+                          : 'Commercial banks charge 10.5%–12% compound interest with immediate interest capitalization. BSCC saves students over ₹1,00,000 in interest payments alone.'}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Crucial Ground Realities: Subsequent Payment, Out-of-State Colleges & Age Limit */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-[11px]">
                 <div className="p-3.5 rounded-xl bg-blue-50/80 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 text-blue-950 dark:text-blue-200 space-y-1.5">
                   <div className="font-bold flex items-center gap-1.5 text-xs text-blue-900 dark:text-blue-300">
                     <Sparkles className="h-3.5 w-3.5 text-blue-600 shrink-0" />
-                    <span>{isHi ? 'सब्सिक्वेंट पेमेंट (अगली किस्त / फीस) कैसे जारी करवाएं?' : 'How to Release Subsequent Year Payment / Installments?'}</span>
+                    <span>{isHi ? 'सब्सिक्वेंट पेमेंट फॉर्म (अगली किस्त)' : 'Subsequent Payment Form PDF'}</span>
                   </div>
                   <p className="leading-relaxed">
                     {isHi
-                      ? 'हर साल या सेमेस्टर की अगली किस्त अपने आप ट्रांसफर नहीं होती। इसके लिए छात्र को पिछले सेमेस्टर की अंकतालिका (Marksheet/Promotion Certificate) और संस्थान का डिमांड स्लिप लेकर आधिकारिक पोर्टल (7nishchay-yuvaupmission.bihar.gov.in) पर "Subsequent Payment" फॉर्म भरना होता है या DRCC काउंटर पर भौतिक रूप से जमा करना पड़ता है।'
-                      : 'Next semester or annual tranches are not released automatically. Students must submit their previous semester marksheet / promotion certificate along with the college demand fee structure either online via the MNSSBY portal ("Subsequent Payment" tab) or in person at their district DRCC.'}
+                      ? 'हर साल या सेमेस्टर की अगली फीस स्वतः नहीं आती। छात्र को MNSSBY पोर्टल से "Subsequent Payment Form PDF" डाउनलोड कर कॉलेज से पासिंग मार्कशीट और फीस डिमांड स्लिप लगाकर पोर्टल पर अपलोड करना होता है।'
+                      : 'Next semester or annual fees are not released automatically. Students must download the Subsequent Payment Form PDF, get it stamped by the college with the latest passed marksheet, and re-upload it on the MNSSBY portal.'}
                   </p>
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 text-amber-950 dark:text-amber-200 space-y-1.5">
                   <div className="font-bold flex items-center gap-1.5 text-xs text-amber-900 dark:text-amber-300">
                     <Info className="h-3.5 w-3.5 text-amber-600 shrink-0" />
-                    <span>{isHi ? 'बिहार से बाहर कॉलेज हेतु NAAC "A" व NBA मान्यता अनिवार्य' : 'Outside Bihar College Accreditation Rule (NAAC "A" / NBA)'}</span>
+                    <span>{isHi ? 'बिहार से बाहर कॉलेज नियम (NAAC "A")' : 'Outside Bihar College Rule (NAAC "A")'}</span>
                   </div>
                   <p className="leading-relaxed">
                     {isHi
-                      ? 'यदि आप बिहार राज्य से बाहर किसी निजी कॉलेज/यूनिवर्सिटी में बीटेक, एमबीए, नर्सिंग या अन्य कोर्स कर रहे हैं, तो वह संस्थान अनिवार्य रूप से NAAC "A" ग्रेड या संबंधित कोर्स NBA प्रत्यायित होना चाहिए। गैर-मान्यता प्राप्त बाहरी संस्थानों के आवेदन DRCC स्तर पर सीधे निरस्त कर दिए जाते हैं।'
-                      : 'For private colleges and universities located outside Bihar, the institution must hold NAAC "A" accreditation or NBA course approval. Applications for non-accredited private outside institutions are directly rejected at the DRCC verification level.'}
+                      ? 'बिहार से बाहर निजी संस्थानों (कर्नाटक, ओडिशा, राजस्थान, आदि) में पढ़ने वाले छात्रों का कॉलेज अनिवार्य रूप से NAAC "A" ग्रेड, NBA मान्यता अथवा NIRF रैंकिंग प्राप्त होना चाहिए।'
+                      : 'For private colleges located outside Bihar, the institution must hold NAAC "A" accreditation or NBA course approval. Applications for non-accredited private outside institutions are rejected at DRCC.'}
+                  </p>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-emerald-50/80 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 text-emerald-950 dark:text-emerald-200 space-y-1.5">
+                  <div className="font-bold flex items-center gap-1.5 text-xs text-emerald-900 dark:text-emerald-300">
+                    <UserCheck className="h-3.5 w-3.5 text-emerald-600 shrink-0" />
+                    <span>{isHi ? 'आयु सीमा (Age Limit) व बेरोजगारी शपथ पत्र' : 'Age Limit & Unemployment Affidavit'}</span>
+                  </div>
+                  <p className="leading-relaxed">
+                    {isHi
+                      ? '12वीं/डिप्लोमा छात्रों हेतु अधिकतम आयु 25 वर्ष (पीजी हेतु 30 वर्ष)। पढ़ाई के 1 साल बाद नौकरी न मिलने पर "बेरोजगारी शपथ पत्र" देने पर मोराटोरियम अवधि बिना किसी पेनाल्टी ब्याज के बढ़ाई जाती है।'
+                      : 'Age limit is 25 years for UG/diploma and 30 years for PG courses. If unemployed after 1 year post-course, submitting an unemployment affidavit extends the moratorium without penal interest.'}
                   </p>
                 </div>
               </div>
